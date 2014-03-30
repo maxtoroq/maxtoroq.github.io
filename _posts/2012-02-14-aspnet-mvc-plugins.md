@@ -1,6 +1,8 @@
 ---
-title: "ASP.NET MVC Plugins"
 layout: post
+title: ASP.NET MVC Plugins
+date: 2012-02-14T01:12:00-03:00
+tags: [asp.net mvc, mvccoderouting, plugin]
 ---
 
 There aren't many plugin solutions available for ASP.NET MVC, if you google *asp.net mvc plugins* you'll find many proof-of-concept on how to load views embedded as assembly resources, but few established projects. Loading embedded views is only one part of the puzzle, first we should focus on routing.
