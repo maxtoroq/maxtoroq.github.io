@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Hello World 2.0"
 layout: post
 ---
