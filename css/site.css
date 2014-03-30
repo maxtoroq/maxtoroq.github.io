@@ -146,10 +146,12 @@ pre {
 
 .highlight .csharp .k {
    color: blue;
+   font-weight: normal;
 }
 
 .highlight .csharp .kt {
    color: blue;
+   font-weight: normal;
 }
 
 .highlight .csharp .nf {
