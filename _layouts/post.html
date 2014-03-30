@@ -13,9 +13,9 @@ layout: default
 
    <footer>
       Posted by <span itemprop="author">Max Toro</span> at <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date }}</time>
-      {% if page.labels.length > 0 %}
+      {% if page.tags.length > 0 %}
       <br />
-      Labels: {{ page.labels | join: ', ' }}
+      Tags: {{ page.tags | join: ', ' }}
       {% endif %}
    </footer>
 
