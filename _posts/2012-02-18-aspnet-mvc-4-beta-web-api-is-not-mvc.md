@@ -13,7 +13,7 @@ You can find a better description on [this post][3]. In short, Web API is [WCF W
 
 The bad thing is that, even though Web API looks and feels like MVC, **it's not MVC**. All those great MVC features we all love, the Web API team decided to copy/re-implement, instead of building on top of MVC. **Web API does not depend on MVC**. It doesn't even depend on ASP.NET.
 
-The best thing about MVC is it's extensibility. Now all those great MVC extensions will have to be recompiled/adapted for Web API. This is a terrible design choice, all they had to do was provide more RESTful features directly in MVC, instead of creating the Web API beast.
+The best thing about MVC is its extensibility. Now all those great MVC extensions will have to be recompiled/adapted for Web API. This is a terrible design choice, all they had to do was provide more RESTful features directly in MVC, instead of creating the Web API beast.
 
 **Update (2014-03)**: This was my initial reaction. I don't think it was a bad design choice anymore, as the decoupling from *System.Web* improves the portability, modularity and extensibility of the framework. Also, adapting some of my MVC libraries for Web API wasn't so hard, as many of the features that were copied from MVC work pretty much the same.
 
