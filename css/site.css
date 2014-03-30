@@ -26,31 +26,31 @@ pre {
       word-wrap: normal;
    }
 
-.type-csharp .highlight .k {
+.highlight .csharp .k {
    color: blue;
 }
 
-.type-csharp .highlight .kt {
+.highlight .csharp .kt {
    color: blue;
 }
 
-.type-csharp .highlight .nf {
+.highlight .csharp .nf {
    color: #000;
    font-weight: normal;
 }
 
-.type-csharp .highlight .nc {
+.highlight .csharp .nc {
    color: #2b91af;
 }
 
-.type-csharp .highlight .nn {
+.highlight .csharp .nn {
    color: black;
 }
 
-.type-csharp .highlight .s {
+.highlight .csharp .s {
    color: #a31515;
 }
 
-.type-csharp .highlight .sc {
+.highlight .csharp .sc {
    color: #a31515;
 }
