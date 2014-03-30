@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET MVC Plugins
-date: 2012-02-14T01:12:00-03:00
+date: 2012-02-14 01:12:00 -0300
 tags: [asp.net mvc, mvccoderouting, plugin]
 ---
 
