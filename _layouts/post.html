@@ -20,3 +20,12 @@ layout: default
    </footer>
 
 </article>
+
+{% if page.previous %}
+<a href="{{ page.previous.url }}">← Previous post</a>
+{% endif %}
+
+{% if page.next %}
+{% if page.previous %}&nbsp;&nbsp;{% endif %}
+<a href="{{ page.next.url }}">Next post →</a>
+{% endif %}
