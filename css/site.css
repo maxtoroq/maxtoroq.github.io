@@ -18,6 +18,10 @@ article div[itemprop="articleBody"] img {
    max-width: 100%;
 }
 
+article footer {
+   font-size: 90%;
+}
+
 code,
 pre {
    font-family: Consolas, "Liberation Mono", Courier, monospace;
