@@ -12,10 +12,10 @@ layout: default
    </div>
 
    <footer>
-      Posted by <span itemprop="author">Max Toro</span> at <time datetime="{{ date | datetime | date_to_xmlschema }}" itemprop="datePublished">{{ date | date: "%b %e" }}</time>
-      {% if post.labels.length > 0 %}
+      Posted by <span itemprop="author">Max Toro</span> at <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date }}</time>
+      {% if page.labels.length > 0 %}
       <br />
-      Labels: {{ post.labels | join: ', ' }}
+      Labels: {{ page.labels | join: ', ' }}
       {% endif %}
    </footer>
 
