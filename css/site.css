@@ -5,6 +5,11 @@ body {
    color: #333;
 }
 
+.container {
+   max-width: 100px;
+   margin: 0 auto;
+}
+
 h1 {
    border-bottom: 1px solid #ddd;
 }
