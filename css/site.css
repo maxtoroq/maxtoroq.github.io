@@ -28,6 +28,12 @@ h2 {
    border-bottom: 1px solid #eee;
 }
 
+blockquote {
+   border-left: 4px solid #DDD;
+   padding: 0 15px;
+   color: #777;
+}
+
 article div[itemprop="articleBody"] img {
    height: auto;
    max-width: 100%;
