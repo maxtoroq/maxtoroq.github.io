@@ -1,6 +1,3 @@
----
----
-
 body {
    font-family: Helvetica, arial, freesans, clean, sans-serif;
    font-size: 15px;
@@ -8,15 +5,17 @@ body {
    color: #333;
 }
 
-code, pre {
+code,
+pre {
    font-family: Consolas, "Liberation Mono", Courier, monospace;
    font-size: 12px;
 }
 
 .highlight {
    background: #fff;
+}
 
-   pre {
+   .highlight pre {
       background-color: #f8f8f8;
       border: 1px solid #ddd;
       font-size: 13px;
@@ -26,16 +25,32 @@ code, pre {
       border-radius: 3px;
       word-wrap: normal;
    }
+
+.type-csharp .highlight .k {
+   color: blue;
 }
 
-.type-csharp {
-   .highlight {
-      .k { color: blue; }
-      .kt { color: blue; }
-      .nf { color: #000; font-weight: normal; }
-      .nc { color: #2b91af; }
-      .nn { color: black; }
-      .s { color: #a31515; }
-      .sc { color: #a31515; }
-   }
+.type-csharp .highlight .kt {
+   color: blue;
+}
+
+.type-csharp .highlight .nf {
+   color: #000;
+   font-weight: normal;
+}
+
+.type-csharp .highlight .nc {
+   color: #2b91af;
+}
+
+.type-csharp .highlight .nn {
+   color: black;
+}
+
+.type-csharp .highlight .s {
+   color: #a31515;
+}
+
+.type-csharp .highlight .sc {
+   color: #a31515;
 }
