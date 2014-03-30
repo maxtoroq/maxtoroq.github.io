@@ -161,6 +161,7 @@ pre {
 
 .highlight .csharp .nc {
    color: #2b91af;
+   font-weight: normal;
 }
 
 .highlight .csharp .nn {
