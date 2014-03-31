@@ -23,10 +23,10 @@ layout: default
 
 <br/>
 {% if page.previous %}
-<a href="{{ page.previous.url }}" title="{{ page.previous.title }}">← Previous post</a>
+<a href="{{ page.previous.url }}">← Previous: {{ page.previous.title }}</a>
 {% endif %}
 
 {% if page.next %}
 {% if page.previous %}&nbsp;&nbsp;{% endif %}
-<a href="{{ page.next.url }}" title="{{ page.next.title }}">Next post →</a>
+<a href="{{ page.next.url }}">Next: <em>{{ page.next.title }}</em> →</a>
 {% endif %}
