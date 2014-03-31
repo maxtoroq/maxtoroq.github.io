@@ -19,8 +19,6 @@ I’m on a mission to help developers write more maintainable code. **I’m not 
 Cross-platform interests
 ------------------------
 - XSLT
-- jQuery
-- MySQL
 - [Hypermedia APIs][5]
 - [Semantic HTML][6]
 - XML, Atom, OData
