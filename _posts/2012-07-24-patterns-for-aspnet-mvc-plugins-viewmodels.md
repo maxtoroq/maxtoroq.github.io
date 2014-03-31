@@ -212,8 +212,8 @@ Tying it all together
 ---------------------
 On the [next post][2] I'm going to dissect a sample plugin that implements most of the patterns presented on this series so far. Stay tuned.
 
-[1]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html
-[2]: /2012/10/implementing-contact-form-plugin-for-aspnet-mvc.html
+[1]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html
+[2]: {{ site.url }}/2012/10/implementing-contact-form-plugin-for-aspnet-mvc.html
 [3]: http://msdn.microsoft.com/library/system.componentmodel.dataannotations.displayattribute
 [4]: http://msdn.microsoft.com/library/system.componentmodel.displaynameattribute
 [5]: http://msdn.microsoft.com/library/system.componentmodel.dataannotations.datatype

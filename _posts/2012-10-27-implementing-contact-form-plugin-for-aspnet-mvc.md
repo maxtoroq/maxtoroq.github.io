@@ -292,7 +292,7 @@ public static void RegisterRoutes(RouteCollection routes) {
 
 If you visit /Contact you'll see the contact form.
 
-![Contact Form](/files/mvccontact_screenshot_1.png)
+![Contact Form][25]
 
 Adding a field to the form
 --------------------------
@@ -344,7 +344,7 @@ routes.MapCodeRoutes(
 
 Note I'm also using a different destination address (`To` configuration setting). If you visit /CustomContact you can see the form with the new field.
 
-![Custom field](/files/mvccontact_screenshot_2.png)
+![Custom field][26]
 
 Conclusions
 -----------
@@ -352,27 +352,29 @@ Hopefully seeing the patterns in action makes their utility more clear. The goal
 
 [Download source code][24]
 
-[1]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html
-[2]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
-[3]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-display-order
-[4]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-naming
-[5]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-virtual-properties
-[6]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-data-type-attr
-[7]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-class
-[8]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-resolver-properties
-[9]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-create
-[10]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-initialize
-[11]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-use
-[12]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-naming
-[13]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-separate-classes
-[14]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-htmlhelper-for-inputmodel
-[15]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-public
-[16]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-common-naming
-[17]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-minimize
-[18]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-default-constructor
-[19]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-constructor-dependencies
-[20]: /2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-data-token
-[21]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-inheritance
-[22]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-failure-status-code
+[1]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html
+[2]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
+[3]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-display-order
+[4]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-naming
+[5]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-virtual-properties
+[6]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-data-type-attr
+[7]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-class
+[8]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-resolver-properties
+[9]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-create
+[10]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-inputmodel-initialize
+[11]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-use
+[12]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-naming
+[13]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-separate-classes
+[14]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-htmlhelper-for-inputmodel
+[15]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-public
+[16]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-common-naming
+[17]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-minimize
+[18]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-default-constructor
+[19]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-controllers-constructor-dependencies
+[20]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html#pattern-configuration-data-token
+[21]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-inheritance
+[22]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-failure-status-code
 [23]: http://mvccoderouting.codeplex.com/
 [24]: http://maxtoroq.users.sourceforge.net/samples/mvccontact.zip
+[25]: {{ site.url }}/files/mvccontact_screenshot_1.png
+[26]: {{ site.url }}/files/mvccontact_screenshot_2.png

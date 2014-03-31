@@ -135,5 +135,5 @@ One year from now Microsoft will be eager to release Web Api v2 after recieving 
 
 > No new functionality will be added to the runtime components. Instead the area of focus will be enabling a richer set of templates for building various types of web applications developers need in addition to updating the current templates.
 
-[1]: /2012/02/aspnet-mvc-4-beta-web-api-is-not-mvc.html
+[1]: {{ site.url }}/2012/02/aspnet-mvc-4-beta-web-api-is-not-mvc.html
 [2]: http://aspnetwebstack.codeplex.com/wikipage?title=Roadmap&version=35

@@ -51,7 +51,7 @@ For MvcCodeRouting a plugin is **an assembly with controllers, and optionally em
 
 View resources must be named using the following format: `<assemblyName>.Views.<viewPath>`. That means you just need to create a 'Views' folder in root of your plugin project and put the views there (and set Build Action to 'Embedded Resource', of course):
 
-![MvcAccount Embedded Views](/files/mvcaccount_embedded_views.png)
+![MvcAccount Embedded Views][4]
 
 Conclusions
 -----------
@@ -60,3 +60,4 @@ Conclusions
 [1]: http://portableareas.codeplex.com/
 [2]: http://mvccoderouting.codeplex.com/
 [3]: http://msdn.microsoft.com/library/system.web.hosting.virtualpathprovider
+[4]: {{ site.url }}/files/mvcaccount_embedded_views.png

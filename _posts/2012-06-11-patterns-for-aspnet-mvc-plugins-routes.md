@@ -136,7 +136,7 @@ Conclusions
 -----------
 This post deals with what I think are the most important aspects of plugin development for ASP.NET MVC: routes, controllers and configuration. The MVC framework itself has a number of conventions that application developers are accustomed to; plugin developers should adhere to these conventions. This post proposes patterns that do not require a special infrastructure (e.g. common library for plugins) to work. Instead, it uses what the framework already provides. Plugins are just controllers exposed via routes, just like anything else in the host application. Hopefully these patterns will help you build plugins that are portable, flexible and easy to configure.
 
-[1]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
-[2]: /2012/10/implementing-contact-form-plugin-for-aspnet-mvc.html
+[1]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
+[2]: {{ site.url }}/2012/10/implementing-contact-form-plugin-for-aspnet-mvc.html
 [3]: https://github.com/autofac/Autofac
 [4]: http://mvccoderouting.codeplex.com/
