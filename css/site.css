@@ -5,7 +5,7 @@ body {
    color: #333;
 }
 
-header.site-header {
+header.site-header a {
    color: #bbb;
    font-size: 40px;
    line-height: 1.2;
