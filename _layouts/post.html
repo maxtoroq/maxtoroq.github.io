@@ -22,11 +22,11 @@ layout: default
 </article>
 
 <br/>
-{% if page.previous %}
-<a href="{{ page.previous.url }}">← Previous: {{ page.previous.title }}</a>
+{% if page.next %}
+<a href="{{ page.next.url }}"><strong>Next: </strong><em>{{ page.next.title }}</em> →</a>
 {% endif %}
 
-{% if page.next %}
-{% if page.previous %}&nbsp;&nbsp;{% endif %}
-<a href="{{ page.next.url }}">Next: <em>{{ page.next.title }}</em> →</a>
+{% if page.previous %}
+{% if page.next %}<br/>{% endif %}
+<a href="{{ page.previous.url }}">← <strong>Previous: </strong><em>{{ page.previous.title }}</em></a>
 {% endif %}
