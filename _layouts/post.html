@@ -23,10 +23,10 @@ layout: default
 
 <br/>
 {% if page.next %}
-<a href="{{ page.next.url }}"><strong>Next: </strong><em>{{ page.next.title }}</em> →</a>
+<a href="{{ page.next.url }}"><strong>(Next)</strong> → <em>{{ page.next.title }}</em></a>
 {% endif %}
 
 {% if page.previous %}
 {% if page.next %}<br/>{% endif %}
-<a href="{{ page.previous.url }}">← <strong>Previous: </strong><em>{{ page.previous.title }}</em></a>
+<a href="{{ page.previous.url }}">← <strong>(Previous)</strong> <em>{{ page.previous.title }}</em></a>
 {% endif %}
