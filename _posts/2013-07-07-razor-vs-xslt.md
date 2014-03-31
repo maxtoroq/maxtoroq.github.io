@@ -119,4 +119,4 @@ Razor and XSLT are both excellent tools. The following table compares their stre
 [3]: http://nuget.org/packages/SaxonViewEngine
 [4]: http://nuget.org/packages/SgmlReader
 [5]: http://www.onenaught.com/posts/8/xslt-in-server-side-web-frameworks
-[6]: /2014/02/using-razor-and-xslt-in-same-project.html
+[6]: {{ site.url }}/2014/02/using-razor-and-xslt-in-same-project.html

@@ -170,6 +170,6 @@ But that's fine, I'm not complaining. I don't expect Microsoft to deliver everyt
 [9]: http://blogs.msdn.com/b/webdev/archive/2013/10/17/attribute-routing-in-asp-net-mvc-5.aspx#default-route
 [10]: http://weblogs.asp.net/leftslipper/archive/2008/12/17/optimizing-your-route-collection-for-url-generation-in-asp-net-mvc-and-more.aspx
 [11]: http://www.nuget.org/packages/Mvc4Futures
-[12]: /2013/04/delegate-based-strongly-typed-url.html
+[12]: {{ site.url }}/2013/04/delegate-based-strongly-typed-url.html
 [13]: http://t4mvc.codeplex.com/
-[14]: /2013/02/aspnet-mvc-workflow-per-controller.html
+[14]: {{ site.url }}/2013/02/aspnet-mvc-workflow-per-controller.html
