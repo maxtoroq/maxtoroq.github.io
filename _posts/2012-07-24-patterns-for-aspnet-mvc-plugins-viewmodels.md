@@ -196,7 +196,7 @@ protected virtual SearchResult CreateSearchResult() {
 
 This method should be defined in the controller dependency that uses the output model. By overriding this method you can return a subclass of the output model.
 
-<strong id="pattern-viewmodels-outputmodel-bind">Provide a virtual method for the binding of output models, and name it after the type name plus the "Bind" prefix</<strong>. e.g.
+<strong id="pattern-viewmodels-outputmodel-bind">Provide a virtual method for the binding of output models, and name it after the type name plus the "Bind" prefix</strong>. e.g.
 
 ```csharp
 protected virtual void BindSearchResult(SearchResult result, object data) { }
