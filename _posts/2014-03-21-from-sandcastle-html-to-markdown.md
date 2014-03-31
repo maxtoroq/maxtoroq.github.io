@@ -47,7 +47,7 @@ Maybe there are Sandcastle alternatives out there that do support Markdown, and 
 
 So, what I did was convert the HTML that Sandcastle produced to Markdown. This was a bit tricky, since the generated HTML is quite bad, but nothing that 600 lines of XSLT 2 couldn't solve.
 
-So, [here it is][3]. You can find examples of the projects that use it at the end of the readme file.</div>
+So, [here it is][3]. You can find examples of the projects that use it at the end of the readme file.
 
 [1]: https://shfb.codeplex.com/
 [2]: http://programmers.stackexchange.com/a/231658/3552
