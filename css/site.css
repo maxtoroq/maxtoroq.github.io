@@ -8,6 +8,7 @@ body {
 header.site-header {
    color: #00A0FF;
    font-size: 40px;
+   line-height: 1.2;
 }
 
 .container {
