@@ -7,7 +7,7 @@ title: Tags
 
 <ul>
 {% for tag in site.tags %}
-    <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size }}%">
+    <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70 }}%">
         <a href="/{{ tag | first | slugize }}/">{{ tag | first }}</a>
     </li>
 {% endfor %}
