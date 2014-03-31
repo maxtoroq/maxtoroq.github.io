@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Blog Archives
 ---
 
-<h1>Blog Archives</h1>
 {% for post in site.posts reverse %}
    {% capture date %}{{ post.date }}{% endcapture %}
    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
