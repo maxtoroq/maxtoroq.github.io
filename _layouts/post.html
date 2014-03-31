@@ -12,7 +12,7 @@ layout: default
    </div>
 
    <footer>
-      Posted by <span itemprop="author">Max Toro</span> at <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date }}</time>
+      Posted by <a href="/p/about-me.html" itemprop="author">Max Toro</a> at <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date }}</time>
       {% if page.tags.size > 0 %}
       <br />
       Tags: <span itemprop="keywords">{{ page.tags | join: ', ' }}</span>
