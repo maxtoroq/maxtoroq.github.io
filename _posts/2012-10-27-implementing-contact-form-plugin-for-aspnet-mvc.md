@@ -152,7 +152,7 @@ public class ContactSender {
 Patterns used:
 
 - [Provide a virtual method for the creation of input models, and name it after the type name plus the "Create" prefix][9]
-- Provide a virtual method for the initialization of input models, and name it after the type name plus the "Initialize" prefix][10]
+- [Provide a virtual method for the initialization of input models, and name it after the type name plus the "Initialize" prefix][10]
 
 View Model
 ----------
