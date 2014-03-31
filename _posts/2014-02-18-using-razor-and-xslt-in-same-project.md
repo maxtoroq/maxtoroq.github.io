@@ -40,7 +40,7 @@ To use it from Razor we need to:
 
 This is the Razor view:
 
-```csharp
+```aspx-cs
 @layout ~/Views/Shared/_XsltLayout.cshtml
 @section head {
    <title>Razor / XSLT</title>
