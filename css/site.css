@@ -5,6 +5,11 @@ body {
    color: #333;
 }
 
+header.site-header {
+   color: silver;
+   font-size: 20px;
+}
+
 .container {
    max-width: 1000px;
    margin: 0 auto;
