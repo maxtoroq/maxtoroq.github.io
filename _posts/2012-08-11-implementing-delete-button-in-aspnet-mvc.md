@@ -47,5 +47,6 @@ Easy, right? X-HTTP-Method-Override is sent only when you click the delete butto
 There's one catch though, validation. If the form is not valid it won't submit. This is rarely an issue, but it can happen if the user made some changes that leaves the form in an invalid state and then decides to delete the resource. HTML5 supports this scenario using the `formnovalidate` attribute on the button. The jQuery validation plugin doesn't seem to recognize this attribute, but you can achieve the same behavior using the `cancel` class on the button. So, this is the final version of our 100% declarative delete button:
 
 ```html
-<button name="X-HTTP-Method-Override" value="DELETE" formnovalidate class="cancel" onclick="return confirm('Are you sure?')">Delete</button>
+<button name="X-HTTP-Method-Override" value="DELETE" formnovalidate 
+   class="cancel" onclick="return confirm('Are you sure?')">Delete</button>
 ```
