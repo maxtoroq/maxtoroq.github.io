@@ -23,7 +23,7 @@ MvcPages
 --------
 Forget about routes, forget about controllers, keep everything else. That's [MvcPages][1], a very small library with no original features, just a base page class that allows you to access MVC features directly from standalone Razor pages. For example, this is a standard Web Pages page:
 
-```aspx-cs
+```csharp
 @{
    if (!User.Identity.IsAuthenticated) {
       FormsAuthentication.RedirectToLoginPage();
@@ -95,7 +95,7 @@ Forget about routes, forget about controllers, keep everything else. That's [Mvc
 
 Ugly, long, terrible. This is the same page using MvcPages:
 
-```aspx-cs
+```csharp
 @using Samples.Account
 @model ChangePasswordModel
 @{
