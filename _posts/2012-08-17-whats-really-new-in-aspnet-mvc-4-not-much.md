@@ -45,7 +45,7 @@ Html.TextBoxFor(Expression<Func<TModel, TProperty>> expression, string format, I
 Html.TextBoxFor(Expression<Func<TModel, TProperty>> expression, string format, object htmlAttributes);
 ```
 
-These new overloads for rendering textboxes include an additional `format` parameter, which internally call `String.Format` to customize how the value is rendered.
+These new overloads for rendering textboxes include an additional *format* parameter, which internally call `String.Format` to customize how the value is rendered.
 
 ```csharp
 Html.Label(string expression, IDictionary<string, object> htmlAttributes);
