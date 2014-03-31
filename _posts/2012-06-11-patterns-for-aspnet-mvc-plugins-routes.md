@@ -138,5 +138,5 @@ This post deals with what I think are the most important aspects of plugin devel
 
 [1]: /2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
 [2]: /2012/10/implementing-contact-form-plugin-for-aspnet-mvc.html
-[3]: http://code.google.com/p/autofac/
+[3]: https://github.com/autofac/Autofac
 [4]: http://mvccoderouting.codeplex.com/
