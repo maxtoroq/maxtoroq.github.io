@@ -292,7 +292,7 @@ public static void RegisterRoutes(RouteCollection routes) {
 
 If you visit /Contact you'll see the contact form.
 
-![Contact Form][http://localhost:49441/images/mvccontact_screenshot_1.png]
+![Contact Form](/images/mvccontact_screenshot_1.png)
 
 Adding a field to the form
 --------------------------
@@ -344,7 +344,7 @@ routes.MapCodeRoutes(
 
 Note I'm also using a different destination address (`To` configuration setting). If you visit /CustomContact you can see the form with the new field.
 
-![Custom field][http://localhost:49441/images/mvccontact_screenshot_2.png]
+![Custom field](/images/mvccontact_screenshot_2.png)
 
 Conclusions
 -----------
