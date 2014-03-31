@@ -189,4 +189,4 @@ It imports the helper stylesheet that does the job of rendering the appropriate 
 
 Hope you like this.
 
-[1]: /2013/07/razor-vs-xslt.html
+[1]: {{ site.url }}/2013/07/razor-vs-xslt.html
