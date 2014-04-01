@@ -17,7 +17,7 @@ PayPal
 
 Flattr
 ------
-<script id='fbaibmu'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=maxtoro&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbaibmu');</script>
+<script id='fbviwul'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=maxtoro&url=http%3A%2F%2Fmaxtoroq.github.io%2F';f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbviwul');</script>
 
 Gittip
 ------
