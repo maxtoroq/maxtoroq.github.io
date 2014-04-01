@@ -56,7 +56,8 @@ article footer {
 }
 
 nav.post {
-   margin-top: 10px;
+   margin-top: 15px;
+   border-top: 1px dotted silver;
 }
 
 nav.post a[rel="next"] {
