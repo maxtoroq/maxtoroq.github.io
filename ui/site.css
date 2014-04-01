@@ -55,6 +55,15 @@ article footer {
    color: #777;
 }
 
+a[rel="next"] {
+   float: right;
+}
+
+a[rel="next"],
+a[rel="prev"] {
+   display: inline-block;
+}
+
 div#disqus_thread {
    margin-top: 20px;
 }
