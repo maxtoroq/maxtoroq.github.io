@@ -41,6 +41,10 @@ blockquote {
    margin-left: 0;
 }
 
+table {
+   overflow: auto;
+}
+
 article div[itemprop="articleBody"] img {
    height: auto;
    max-width: 100%;
