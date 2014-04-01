@@ -55,6 +55,10 @@ article footer {
    color: #777;
 }
 
+div#disqus_thread {
+   margin-top: 20px;
+}
+
 code,
 pre {
    font-family: Consolas, "Liberation Mono", Courier, monospace;
