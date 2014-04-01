@@ -5,7 +5,7 @@ body {
    color: #333;
 }
 
-header.site-header a {
+header.main a {
    color: #bbb;
    font-size: 40px;
    line-height: 1.2;
@@ -55,12 +55,16 @@ article footer {
    color: #777;
 }
 
-a[rel="next"] {
-   float: right;
+nav.post {
+   margin-top: 10px;
 }
 
-a[rel="next"],
-a[rel="prev"] {
+nav.post a[rel="next"] {
+   float: right;
+}
+              
+nav.post a[rel="next"],
+nav.post a[rel="prev"] {
    display: inline-block;
 }
 
