@@ -107,13 +107,17 @@ pre {
 }
 
 .highlight pre {
+   padding: 6px 10px;
+   overflow: auto;
    background-color: #f8f8f8;
    border: 1px solid #ddd;
+   border-radius: 3px;
+}
+
+.highlight pre,
+.highlight code {
    font-size: 13px;
    line-height: 19px;
-   overflow: auto;
-   padding: 6px 10px;
-   border-radius: 3px;
    word-wrap: normal;
 }
 
