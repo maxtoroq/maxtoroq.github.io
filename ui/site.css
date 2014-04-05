@@ -64,12 +64,12 @@ nav.post {
    border-top: 1px dotted silver;
 }
 
-nav.post a[rel="next"] {
+nav.post a.next {
    float: right;
 }
               
-nav.post a[rel="next"],
-nav.post a[rel="prev"] {
+nav.post a.next,
+nav.post a.prev {
    display: inline-block;
 }
 
