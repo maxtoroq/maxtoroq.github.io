@@ -90,7 +90,7 @@ public class ReviewsController : Controller {
 }
 ```
 
-<strike>Why do I need to specify "reviews" in the route prefix, if I could just take that information from the controller name? Same with parameter name and constraint.</strike> <span class="update"><strong>Update:</strong> Can use {controller} instead, but cannot avoid repeating the parameter name and type.</span>
+<del>Why do I need to specify "reviews" in the route prefix, if I could just take that information from the controller name? Same with parameter name and constraint.</del> <ins class="update"><strong>Update:</strong> Can use {controller} instead, but cannot avoid repeating the parameter name and type.</ins>
 
 Problem: Performance
 --------------------

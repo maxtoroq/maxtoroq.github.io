@@ -97,7 +97,7 @@ namespace MvcAccount.Password.Reset {
 
 ### Cons
 
-**Can produce longer routes**: In some cases, it won't change much. For example, using MvcCodeRouting `/Account/PasswordResetVerificationSent` becomes `/Account/Password/Reset/VerificationSent`. But `/Account/ResetPassword` becomes `/Account/Password/Reset/Reset`. Why Reset twice? First Reset for the controller, second for the action. This can be avoided by changing the action to `Index`, but I don't think that's a good name considering what the action does. Perhaps having a second convention for default actions, one where the action name is the same as the controller name, would help. In any case, when conventional routes are too long you can always resort to custom routes. <span class="update">**Update:** MvcCodeRouting v1.1 supports custom default actions.</span>
+**Can produce longer routes**: In some cases, it won't change much. For example, using MvcCodeRouting `/Account/PasswordResetVerificationSent` becomes `/Account/Password/Reset/VerificationSent`. But `/Account/ResetPassword` becomes `/Account/Password/Reset/Reset`. Why Reset twice? First Reset for the controller, second for the action. This can be avoided by changing the action to `Index`, but I don't think that's a good name considering what the action does. Perhaps having a second convention for default actions, one where the action name is the same as the controller name, would help. In any case, when conventional routes are too long you can always resort to custom routes. <ins class="update">**Update:** MvcCodeRouting v1.1 supports custom default actions.</ins>
 
 How to avoid going back
 -----------------------
