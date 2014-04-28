@@ -54,6 +54,10 @@ article .update {
    background-color: #FFFEE6;
 }
 
+article ins.update {
+   text-decoration: none;
+}
+
 article footer {
    font-size: 90%;
    color: #777;
