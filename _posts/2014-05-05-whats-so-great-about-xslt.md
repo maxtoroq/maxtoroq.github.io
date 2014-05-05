@@ -17,7 +17,7 @@ Aren't all languages designed to process data? I think most languages are design
 **2. XSLT has a default behavior**  
 Which is to keep processing data until your template matches, then you can decide whether to stop or continue.
 
-Being optimized for data makes XSLT *great for working with deep hierarchies and semi-structured content*.
+Being optimized for data makes XSLT **great for working with deep hierarchies and semi-structured content**.
 
 XSLT is in this way similar to CSS, you simply say what you want (selectors in CSS; XPath-based patterns in XSLT) and what you want to do with it. I cannot think of a more straightforward way to program.
 
