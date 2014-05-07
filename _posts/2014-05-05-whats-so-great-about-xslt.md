@@ -152,7 +152,7 @@ I've been thinking lately about how much of the C# I write is basically good onc
 
 Add to the mix extensible modules and you get the most reusable code you could ever write.
 
-This is by no means a complete list of everything that is great about XSLT, but is in my view what makes it such a powerful language. It's worth noting that I didn't mention XML; XSLT is great on its own, and not because (or in spite) of XML. I fact, I've been doing some experiments on XSLT-style transformations in C#.
+This is by no means a complete list of everything that is great about XSLT, but is in my view what makes it such a powerful language. It's worth noting that I didn't mention XML; XSLT is great on its own, and not because of XML. I fact, I've been doing some experiments on XSLT-style transformations in C#.
 
 Maybe I'll end up writing classes so I don't have to write classes.
 
