@@ -25,12 +25,12 @@ Workflow per Controller
 -----------------------
 So, what is a workflow? Let's take [MvcAccount][4] for example. There's a Reset Password function comprised of several actions:
 
-1. GET `/Account/ResetPassword`
-2. POST `/Account/ResetPassword`
-3. GET `/Account/PasswordResetVerificationSent`
-4. GET `/Account/RP` (by clicking on e-mail link)
-5. POST `/Account/RP`
-6. GET `/Account/PasswordReset`
+1. `GET /Account/ResetPassword`
+2. `POST /Account/ResetPassword`
+3. `GET /Account/PasswordResetVerificationSent`
+4. `GET /Account/RP` (by clicking on e-mail link)
+5. `POST /Account/RP`
+6. `GET /Account/PasswordReset`
 
 To successfully reset a password you have go through this sequence of actions from start to finish. This is the Reset Password workflow, and should be represented in code by its own controller. This means going from:
 
