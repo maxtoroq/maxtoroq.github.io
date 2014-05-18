@@ -76,7 +76,7 @@ public class SalutationProgram {
 }
 ```
 
-`SalutationProgram` defines it's own implementation of `Salutator` called `InformalSalutator`. It also defines two constructors, one for the default behavior and another that can be used to provide a different `Salutator` implementation.
+`SalutationProgram` defines its own implementation of `Salutator` called `InformalSalutator`. It also defines two constructors, one for the default behavior and another that can be used to provide a different `Salutator` implementation.
 
 Keep in mind this is the simplest example I could come up with, imagine larger more complex programs. In XSLT however:
 
