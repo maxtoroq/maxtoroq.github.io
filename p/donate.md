@@ -5,6 +5,10 @@ title: Donate
 
 Select your preferred payment method. Any amount is much appreciated. Donations support my open source work.
 
+Credit card
+-----------
+[Click here](https://load.payoneer.com/?email=maxtoroq%40googlemail.com)
+
 PayPal
 ------
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
