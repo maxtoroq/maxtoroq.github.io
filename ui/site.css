@@ -31,6 +31,10 @@ a:hover {
    text-decoration: underline;
 }
 
+nav a {
+   color: gray;
+}
+
 h1 {
    font-size: 2em;
    border-bottom: 1px solid #ddd;
