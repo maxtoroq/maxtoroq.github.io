@@ -10,7 +10,7 @@ I'm a web developer specialized in XSLT and C#. I like to work on Open Source, m
 - **[MvcCodeRouting][1]**: Namespace-based Modularity for ASP.NET MVC and Web API.
 - **[DbExtensions][2]**: Extension methods for ADO.NET, CRUD and dynamic SQL components.
 
-Feel free to [email me][3], or follow me on [@maxtoroq][4].
+Feel free to [email me][3], or follow me on [@maxtoroq][4]. If you'd like to show your appreciation you can [donate][5].
 
 Declarative Programmer
 ----------------------
@@ -18,14 +18,16 @@ I’m on a mission to help developers write more maintainable code. **I’m not 
 
 Other interests
 ---------------
-- [Hypermedia APIs][5]
-- [Semantic HTML][6]
-- [Structural typing][7]
+- [Hypermedia APIs][6]
+- [Semantic HTML][7]
+- [Structural typing][8]
 
 [1]: http://mvccoderouting.codeplex.com/
 [2]: https://github.com/maxtoroq/DbExtensions
 [3]: mailto:maxtoroq@gmail.com
 [4]: https://twitter.com/maxtoroq
-[5]: http://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State
-[6]: http://en.wikipedia.org/wiki/Semantic_HTML
-[7]: http://en.wikipedia.org/wiki/Structural_type_system
+[5]: donate.html
+[6]: http://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State
+[7]: http://en.wikipedia.org/wiki/Semantic_HTML
+[8]: http://en.wikipedia.org/wiki/Structural_type_system
+
