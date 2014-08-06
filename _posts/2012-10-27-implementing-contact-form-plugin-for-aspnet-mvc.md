@@ -87,21 +87,6 @@ public class ContactSender {
    readonly SmtpClient smtpClient;
    ContactConfiguration config;
       
-   public ContactConfiguration Configuration {
-      get { return config; }
-      set { config = value; }
-   }
-
-   public ContactSender() 
-      : this(new SmtpClient()) { }
-
-   public ContactSender(SmtpClient smtpClient) {
-
-      if (smtpClient == null) throw new ArgumentNullException("smtpClient");
-
-      this.smtpClient = smtpClient;
-   }
-
    public virtual ContactInput CreateContactInput() {
       return new ContactInput();
    }
@@ -122,17 +107,20 @@ public class ContactSender {
          To = { this.config.To },
          ReplyToList = { new MailAddress(input.Email, input.Name) },
          Subject = input.Subject,
-         Body = renderViewAsString("_MailHtml", input)
+         Body = RenderViewAsString("_Mail", input)
       };
 
-      if (this.config.From != null)
+      if (this.config.From != null) {
          message.From = new MailAddress(this.config.From);
+      }
 
-      if (this.config.CC != null)
+      if (this.config.CC != null) {
          message.CC.Add(this.config.CC);
+      }
 
-      if (this.config.Bcc != null)
+      if (this.config.Bcc != null) {
          message.Bcc.Add(this.config.Bcc);
+      }
 
       try {
          this.smtpClient.Send(message);
@@ -197,7 +185,6 @@ Controller
 [OutputCache(Location = OutputCacheLocation.None)]
 public class ContactController : Controller {
 
-   ContactConfiguration config;
    ContactSender service;
 
    public ContactController() { }
@@ -210,16 +197,9 @@ public class ContactController : Controller {
          
       base.Initialize(requestContext);
 
-      this.config = requestContext.RouteData.DataTokens["Configuration"] as ContactConfiguration
-         ?? new ContactConfiguration();
+      ContactConfiguration config = ContactConfiguration.Current(requestContext);
 
-      if (this.config.ContactSenderResolver != null)
-         this.service = this.config.ContactSenderResolver();
-
-      if (this.service == null)
-         this.service = new ContactSender();
-
-      this.service.Configuration = this.config;
+      this.service = config.RequireDependency(this.service);
    }
 
    [HttpGet]
@@ -350,7 +330,7 @@ Conclusions
 -----------
 Hopefully seeing the patterns in action makes their utility more clear. The goal is to provide a consistent experience for plugin consumers (application developers), minimize the amount of configuration required to get a plugin working in the host application and maximize the plugin's flexibility to customize its behavior.
 
-[Download source code][24]
+[Source code][24]
 
 [1]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html
 [2]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
@@ -375,6 +355,6 @@ Hopefully seeing the patterns in action makes their utility more clear. The goal
 [21]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-inheritance
 [22]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-failure-status-code
 [23]: http://mvccoderouting.codeplex.com/
-[24]: http://maxtoroq.users.sourceforge.net/samples/mvccontact.zip
+[24]: https://github.com/maxtoroq/MvcContact
 [25]: {{ site.url }}/files/mvccontact_screenshot_1.png
 [26]: {{ site.url }}/files/mvccontact_screenshot_2.png
