@@ -84,7 +84,7 @@ The following is the definition of `ContactSender` (some code ommited for clarit
 ```csharp
 public class ContactSender {
 
-   readonly SmtpClient smtpClient;
+   SmtpClient smtpClient;
    ContactConfiguration config;
       
    public virtual ContactInput CreateContactInput() {
