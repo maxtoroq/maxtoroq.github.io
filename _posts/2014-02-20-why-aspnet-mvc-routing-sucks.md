@@ -142,16 +142,12 @@ Areas doesn't really help you design a deep resource hierarchy, or organize your
 
 I guess you are stuck with areas if you want some kind of modularity.
 
-Why do we need URL templates anyways?
--------------------------------------
+Why do we need Routing anyways?
+-------------------------------
 Because the web server knows nothing about your code. It knows how to map URLs to files, but not to controllers. So, the real solution is having a tool that can deeply understand your code. In one word, Reflection. An abstraction on top of Routing.
 
-Is there any hope?
-------------------
-Not from Microsoft, I don't think so. I think attribute routing is a good enough solution, and that will be the end of it. The biggest problem of all is modularity, and that's just too advanced to be considered.
+But I don't see that coming from Microsoft. I think attribute routing is a good enough solution, and that will be the end of it. The biggest problem of all is modularity, and that's just too advanced to be considered.
 
-But, Why?
----------
 My theory is this: Microsoft produces great languages and tools. The teams that produce them also use those languages and tools on a daily basis, so they have a passion to make it right. The teams that produce frameworks are not in the business of building real-world solutions with the frameworks they build.
 
 But that's fine, I'm not complaining. I don't expect Microsoft to deliver everything I need.
