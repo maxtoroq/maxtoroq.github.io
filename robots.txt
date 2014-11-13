@@ -1,0 +1,3 @@
+# [Re]moved content
+User-agent: *
+Disallow: /xpath-ref/functions/
