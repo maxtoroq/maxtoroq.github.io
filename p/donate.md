@@ -5,10 +5,6 @@ title: Donate
 
 Select your preferred payment method. Any amount is much appreciated. Donations support my open source work.
 
-Credit card
------------
-[Click here](https://load.payoneer.com/?email=maxtoroq%40googlemail.com)
-
 PayPal
 ------
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -23,6 +19,6 @@ Flattr
 ------
 <script id='fbviwul'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=maxtoro&url=http%3A%2F%2Fmaxtoroq.github.io%2F';f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbviwul');</script>
 
-Gittip
-------
-<script src="//gttp.co/v1.js" data-gittip-username="maxtoroq"></script>
+Gratipay
+--------
+<script data-gratipay-username="maxtoroq" src="//grtp.co/v1.js"></script>
