@@ -23,7 +23,7 @@ Other interests
 - [Structural typing][8]
 
 [1]: http://mvccoderouting.codeplex.com/
-[2]: https://github.com/maxtoroq/DbExtensions
+[2]: {{ site.url }}/DbExtensions/
 [3]: mailto:maxtoroq@gmail.com
 [4]: https://twitter.com/maxtoroq
 [5]: donate.html
