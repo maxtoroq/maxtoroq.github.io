@@ -8,7 +8,7 @@ title: About me
 I'm a web developer specialized in XSLT and C#. I like to work on Open Source, my most popular projects are:
 
 - **[MvcCodeRouting][1]**: Namespace-based Modularity for ASP.NET MVC and Web API.
-- **[DbExtensions][2]**: Extension methods for ADO.NET, CRUD and dynamic SQL components.
+- **[DbExtensions][2]**: Data-access API with a strong focus on query composition, granularity and code aesthetics.
 
 Feel free to [email me][3], or follow me on [@maxtoroq][4]. If you'd like to show your appreciation you can [donate][5].
 
