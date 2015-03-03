@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What's so great about XSLT
 date: 2014-05-05 16:46:00 -0300
 tags: [xslt]

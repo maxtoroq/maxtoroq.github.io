@@ -6,3 +6,12 @@ timezone: America/Santiago
 permalink: /:year/:month/:title.html
 
 markdown: redcarpet
+
+defaults:
+   -
+      scope:
+         path: ""
+         type: post
+      values:
+         layout: post
+  
