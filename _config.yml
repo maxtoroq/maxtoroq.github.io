@@ -14,4 +14,10 @@ defaults:
          type: post
       values:
          layout: post
+   -
+      scope:
+         path: ""
+         type: page
+      values:
+         layout: page
   

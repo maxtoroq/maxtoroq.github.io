@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What's really new in ASP.NET MVC 4 (not much)
 date: 2012-08-17 21:51:00 -0400
 tags: [asp.net mvc, asp.net web api]

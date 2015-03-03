@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "MvcPages: ASP.NET MVC without routes and controllers"
 date: 2012-11-01 02:11:00 -0300
 tags: [asp.net mvc, asp.net web pages, mvcpages]

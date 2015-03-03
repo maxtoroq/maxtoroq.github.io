@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Razor vs. XSLT
 date: 2013-07-07 20:25:00 -0400
 tags: [asp.net mvc, asp.net web pages, razor, xslt]

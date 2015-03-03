@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using action-based and verb-based routing in the same ApiController
 date: 2013-11-18 16:22:00 -0300
 tags: [asp.net web api]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Why ASP.NET MVC Routing sucks
 date: 2014-02-20 17:20:00 -0300
 tags: [asp.net mvc, asp.net web api, routing]

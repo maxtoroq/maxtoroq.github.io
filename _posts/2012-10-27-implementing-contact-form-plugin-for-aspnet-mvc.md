@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Implementing a contact form plugin for ASP.NET MVC
 date: 2012-10-27 00:33:00 -0300
 tags: [asp.net mvc, patterns, plugin]

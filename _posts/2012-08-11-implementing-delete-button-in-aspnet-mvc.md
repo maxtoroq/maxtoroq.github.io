@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Implementing a Delete button in ASP.NET MVC
 date: 2012-08-11 18:17:00 -0400
 tags: [asp.net mvc, html]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Patterns for ASP.NET MVC Plugins: Routes, Controllers and Configuration"
 date: 2012-06-11 00:43:00 -0400
 tags: [asp.net mvc, patterns, plugin]

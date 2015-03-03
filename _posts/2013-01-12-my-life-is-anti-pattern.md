@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My life is an anti-pattern
 date: 2013-01-12 13:50:00 -0300
 tags: [culture, patterns]

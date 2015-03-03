@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Delegate-based strongly-typed URL generation in ASP.NET MVC
 date: 2013-04-18 20:04:00 -0300
 tags: [asp.net mvc]

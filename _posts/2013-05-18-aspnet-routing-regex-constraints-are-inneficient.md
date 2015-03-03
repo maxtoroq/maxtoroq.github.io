@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "ASP.NET Routing: Regex Constraints are inneficient"
 date: 2013-05-18 22:59:00 -0400
 tags: [asp.net, asp.net mvc, routing]

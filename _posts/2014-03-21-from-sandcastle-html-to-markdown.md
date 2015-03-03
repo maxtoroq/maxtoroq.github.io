@@ -1,5 +1,4 @@
 ---
-layout: post
 title: From Sandcastle HTML to Markdown
 date: 2014-03-21 17:00:00 -0300
 tags: [documentation, markdown, sandcastle]

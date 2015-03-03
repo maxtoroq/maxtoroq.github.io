@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Rethinking ASP.NET MVC: Workflow per Controller"
 date: 2013-02-08 19:50:00 -0300
 tags: [asp.net mvc, mvccoderouting, patterns, routing]

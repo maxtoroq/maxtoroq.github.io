@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Attribute-based routing coming to ASP.NET MVC and Web API v5
 date: 2013-03-29 01:36:00 -0300
 tags: [asp.net mvc, asp.net web api, routing]

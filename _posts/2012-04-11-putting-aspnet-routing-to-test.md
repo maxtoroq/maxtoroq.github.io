@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Putting ASP.NET Routing to test
 date: 2012-04-11 16:33:00 -0300
 tags: [asp.net, asp.net mvc, routing]

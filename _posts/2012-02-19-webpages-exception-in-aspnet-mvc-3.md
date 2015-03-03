@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Web Pages exception in ASP.NET MVC 3 application after installing MVC 4 Beta
 date: 2012-02-19 15:00:00 -0300
 tags: [asp.net mvc, asp.net web pages]

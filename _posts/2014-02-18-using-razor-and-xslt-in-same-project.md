@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using Razor and XSLT in the same project
 date: 2014-02-18 16:15:00 -0300
 tags: [asp.net mvc, razor, xslt]

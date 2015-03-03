@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 5 reasons why you should use MvcCodeRouting
 date: 2012-09-23 19:44:00 -0300
 tags: [asp.net mvc, mvccoderouting, routing]
