@@ -59,36 +59,39 @@ table {
    overflow: auto;
 }
 
-article div[itemprop="articleBody"] img {
-   height: auto;
-   max-width: 100%;
-}
+article {
 
-article .update {
-   background-color: #FFFEE6;
-}
-
-article ins.update {
-   text-decoration: none;
-}
-
-article footer {
-   font-size: 90%;
-   color: #777;
+   div[itemprop="articleBody"] img {
+      height: auto;
+      max-width: 100%;
+   }
+   
+   .update {
+      background-color: #FFFEE6;
+   }
+   
+   ins.update {
+      text-decoration: none;
+   }
+   
+   footer {
+      font-size: 90%;
+      color: #777;
+   }
 }
 
 nav.post {
+   
    margin-top: 15px;
    border-top: 1px dotted silver;
-}
-
-nav.post a.next {
-   float: right;
-}
-              
-nav.post a.next,
-nav.post a.prev {
-   display: inline-block;
+   
+   a.next {
+      float: right;
+   }
+   
+   a.next, a.prev {
+      display: inline-block;
+   }
 }
 
 div#disqus_thread {
@@ -108,10 +111,10 @@ pre {
    overflow: auto;
    vertical-align: middle;
    line-height: 1.3;
-   padding: 0;
+   padding: 0 .2em;
    font-family: monospace;
    font-size: 14px;
-   color: chocolate;
+   background-color: whitespace;
 }
 
 .highlight {
