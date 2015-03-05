@@ -10,7 +10,7 @@ I'm a web developer specialized in XSLT and C#. I like to work on Open Source, m
   <dt><a href="http://mvccoderouting.codeplex.com/"><b>MvcCodeRouting</b></a></dt>
   <dd>Namespace-based Modularity for ASP.NET MVC and Web API.</dd>
   
-  <dt><a href="{{ site.url }}/DbExtensions/"><b>[DbExtensions][2]</b></a></dt>
+  <dt><a href="{{ site.url }}/DbExtensions/"><b>DbExtensions</b></a></dt>
   <dd>Data-access API with a strong focus on query composition, granularity and code aesthetics.</dd>
 </dl>
 
