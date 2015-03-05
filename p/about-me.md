@@ -7,10 +7,10 @@ title: About me
 I'm a web developer specialized in XSLT and C#. I like to work on Open Source, my most popular projects are:
 
 <dl>
-  <dt><b>[MvcCodeRouting][1]</b></dt>
+  <dt><a href="http://mvccoderouting.codeplex.com/"><b>MvcCodeRouting</b></a></dt>
   <dd>Namespace-based Modularity for ASP.NET MVC and Web API.</dd>
   
-  <dt><b>[DbExtensions][2]</b></dt>
+  <dt><a href="{{ site.url }}/DbExtensions/"><b>[DbExtensions][2]</b></a></dt>
   <dd>Data-access API with a strong focus on query composition, granularity and code aesthetics.</dd>
 </dl>
 
@@ -26,8 +26,6 @@ Other interests
 - [Semantic HTML][7]
 - [Structural typing][8]
 
-[1]: http://mvccoderouting.codeplex.com/
-[2]: {{ site.url }}/DbExtensions/
 [3]: mailto:maxtoroq@gmail.com
 [4]: https://twitter.com/maxtoroq
 [5]: donate.html
