@@ -35,7 +35,7 @@ Let's say we have an XSLT layout like this:
 To use it from Razor we need to:
 
 - Use a helper stylesheet that imports the layout and injects the Razor content using `disable-output-escaping="yes"`.
-- Use a helper Razor layout that renders the Razor view and passes the content as parameters to the helper stylesheet.`
+- Use a helper Razor layout that renders the Razor view and passes the content as parameters to the helper stylesheet.
 
 This is the Razor view:
 
