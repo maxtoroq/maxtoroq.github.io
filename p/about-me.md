@@ -2,7 +2,7 @@
 title: About me
 ---
 
-<img src="http://1.gravatar.com/avatar/1056a38ecd323c658a8c9e93bb41b18d?s=200" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
+<img src="http://1.gravatar.com/avatar/1056a38ecd323c658a8c9e93bb41b18d?s=150" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
 
 I'm a web developer specialized in XSLT and C#. I like to work on Open Source, my most popular projects are:
 
@@ -14,7 +14,9 @@ I'm a web developer specialized in XSLT and C#. I like to work on Open Source, m
   <dd>Data-access API with a strong focus on query composition, granularity and code aesthetics.</dd>
 </dl>
 
-Feel free to [email me][3], or follow me on [@maxtoroq][4]. If you'd like to show your appreciation you can [donate][5].
+Feel free to [email me][3], or follow me on [@maxtoroq][4]. You can also find me on [GitHub][1] and [Stack Overflow][2].
+
+If you'd like to show your appreciation you can [donate][5].
 
 Declarative Programmer
 ----------------------
@@ -26,6 +28,8 @@ Other interests
 - [Semantic HTML][7]
 - [Structural typing][8]
 
+[1]: https://github.com/maxtoroq
+[2]: http://stackoverflow.com/users/39923
 [3]: mailto:maxtoroq@gmail.com
 [4]: https://twitter.com/maxtoroq
 [5]: donate.html
