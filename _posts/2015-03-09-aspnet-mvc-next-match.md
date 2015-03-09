@@ -106,7 +106,7 @@ If the new password is the same as one of the last four passwords then we add th
 
 ![Different than last four passwords policy][2]
 
-If the new password is **not** one of the last four password, we call the base action using the *NextMatch* extension method. If the *ModelState* is valid that means the password was successfully changed, we save the password to the history and return the result.
+If the new password is **not** one of the last four passwords, we call the base action using the *NextMatch* extension method. If the *ModelState* is valid that means the password was successfully changed, we save the password to the history and return the result.
 
 If none of our code runs simply return *NextMatch*.
 
