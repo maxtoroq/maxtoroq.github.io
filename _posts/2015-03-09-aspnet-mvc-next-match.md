@@ -154,7 +154,7 @@ This is not the only way to extend an MVC app. The alternatives are:
 
 ## What's next
 
-We need a better way to determine the outcome of calling a base action. Checking `ModelState.IsValid` works on this case, but that's not a general solution. There are many ways to represent errors and redirects in MVC, so the only way to unambiguously determine the outcome of an action is by using HTTP status codes. [ActionResult needs a StatusCode property][4].
+We need a better way to determine the outcome of calling a base action. Checking `ModelState.IsValid` works on this case, but it's not a general solution. There are many ways to represent errors and redirects in MVC, so the only way to unambiguously determine the outcome of an action is by using HTTP status codes. [ActionResult needs a StatusCode property][4].
 
 Hope you like this.
 
