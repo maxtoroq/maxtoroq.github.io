@@ -105,17 +105,21 @@ Razor and XSLT are both excellent tools. The following table compares their stre
 
 - [XSLT 2.0 Schema][1] (for intellisense)
 - [XSLT View Engine][2] (XslCompiledTransform)
-- [Saxon XSLT 2.0 and XQuery 1.0 View Engines][3]
+- [Saxon XSLT and XQuery View Engines][3]
 - [SgmlReader][4]
 
 ### Further Reading
 
-- [Why Use XSLT in Server Side Web Frameworks For Output Generation?][5]
-- [Using Razor and XSLT in the same project][6]
+- [Using Razor and XSLT in the same project][5]
+- [Why Use XSLT in Server Side Web Frameworks For Output Generation?][6]
+- [Razor sucks, XSLT rules!][7]
+- [Why I like XSLT][8]
 
 [1]: http://www.w3.org/2007/11/schema-for-xslt20.xsd
 [2]: http://nuget.org/packages/XsltViewEngine
 [3]: http://nuget.org/packages/SaxonViewEngine
 [4]: http://nuget.org/packages/SgmlReader
-[5]: http://www.onenaught.com/posts/8/xslt-in-server-side-web-frameworks
-[6]: {{ site.url }}/2014/02/using-razor-and-xslt-in-same-project.html
+[5]: {{ site.url }}/2014/02/using-razor-and-xslt-in-same-project.html
+[6]: http://www.onenaught.com/posts/8/xslt-in-server-side-web-frameworks
+[7]: https://graef.cc/2012/07/09/RazorSucksXSLTRules.aspx
+[8]: http://guy-murphy.github.io/2014/12/02/why-I-like-XSLT/
