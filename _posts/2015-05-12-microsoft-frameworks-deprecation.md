@@ -1,6 +1,7 @@
 ---
 title: Microsoft frameworks deprecation
 date: 2015-05-12 01:46:00 -0300
+tags: [.net]
 ---
 
 One thing I liked about .NET was its stability. Breaking API changes were not allowed. Breaking changes in behaviour were rare. I talk in past tense because today Microsoft doesn't include new libraries and frameworks in the .NET BCL. New stuff is distributed as NuGet packages. And in .NET Core, all of the BCL will become NuGet packages.
