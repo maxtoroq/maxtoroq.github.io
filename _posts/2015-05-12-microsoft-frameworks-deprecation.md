@@ -38,6 +38,14 @@ Sometimes small features are removed for no good reason. Take this [bug report][
 
 It does too little, rarely anyone uses it. Good reasons to remove a feature? I use it.
 
+**Update:** Here's [another one][6]:
+
+> We no longer support `[Authorize(Users="")]`.
+>
+> You should migrate to role based authorization, or implement your own authorization policy which authorizes based on user names.
+
+Roles is an overfkill for small businesses.
+
 ## Deprecation of complete products
 
 When Microsoft announced project *Astoria* I was very interested. I thought it was innovative, and mixed various technologies I was interested in, such as HTTP and Atom. But sometimes when you innovate you don't know if you have the correct direction or focus. A specification was born from this project, called *OData*, which gave the project more credibility and acceptance. Then Microsoft decided to [abandon WCF Data Services in favor of WebApi][5]:
@@ -79,3 +87,4 @@ If you ask me, frameworks don't need to be perfect, support every use case, or p
 [3]: https://msdn.microsoft.com/en-us/magazine/dn890367.aspx
 [4]: https://github.com/aspnet/Razor/issues/359
 [5]: https://visualstudiomagazine.com/blogs/data-driver/2014/04/wcf-data-services-and-odata.aspx
+[6]: https://github.com/aspnet/Announcements/issues/21
