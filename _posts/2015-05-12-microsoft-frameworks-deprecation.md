@@ -44,7 +44,7 @@ It does too little, rarely anyone uses it. Good reasons to remove a feature? I u
 >
 > You should migrate to role based authorization, or implement your own authorization policy which authorizes based on user names.
 
-Roles is an overfkill for small businesses.
+Roles is an overkill for small businesses.
 
 ## Deprecation of complete products
 
