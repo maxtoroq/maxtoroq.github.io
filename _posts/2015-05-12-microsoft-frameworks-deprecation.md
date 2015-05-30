@@ -76,7 +76,7 @@ This is why I don't like to call myself an ASP.NET developer anymore, it has los
 
 ## Conclusions
 
-There's a common trend to the cases presented in this post: Microsoft has shifted .NET's focus from Windows to " the cloud" (code for *Azure*). If you don't care about Azure then there's nothing really exciting in all these changes.
+There's a common trend to the cases presented in this post: Microsoft has shifted .NET's focus from Windows to "the cloud" (code for *Azure*). If you don't care about Azure then there's nothing really exciting in all these changes.
 
 In the end it's your responsibility to choose frameworks wisely. If Microsoft frameworks are unstable is because Microsoft itself is unstable. If they're not making money from these frameworks, or depending heavily on them, then nothing stops Microsoft from making breaking changes, even if that affects you.
 
