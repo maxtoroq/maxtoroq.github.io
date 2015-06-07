@@ -18,7 +18,7 @@ In Entity Framework 7, [DbContext completely replaces ObjectContext][3]:
 
 > EF4.1 introduced the DbContext API, which was much more focused on typical EF usage. Underneath, it still relied on the original ObjectContext that provides database interaction, manages transactions and tracks the state of objects. Since then, DbContext has become the default class to use and you’d dip down to the lower-level APIs if you wanted to do a rare interaction with the ObjectContext. EF7 will shed the obese ObjectContext; only the DbContext will remain. But some of those tasks you’ve relied on the ObjectContext for will still be accessible.
 
-Removal of big features represent a change in direction or philosophy of a framework:
+Removal of big features represent a [change in direction or philosophy][7] of a framework:
 
 > When Entity Framework began life, it’s charter was more to do with the Entity Data Model vision rather than being a best-of-breed O/RM. As a result, there are many seldom used features and capabilities in the code base that hamper performance and complicate development, but are not feasible to remove due to the monolithic nature of the implementation.
 
@@ -88,3 +88,4 @@ If you ask me, frameworks don't need to be perfect, support every use case, or p
 [4]: https://github.com/aspnet/Razor/issues/359
 [5]: https://visualstudiomagazine.com/blogs/data-driver/2014/04/wcf-data-services-and-odata.aspx
 [6]: https://github.com/aspnet/Announcements/issues/21
+[7]: http://blogs.msdn.com/b/adonet/archive/2014/05/19/ef7-new-platforms-new-data-stores.aspx
