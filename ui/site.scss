@@ -16,6 +16,7 @@ header.main a {
    color: #bbb;
    font-size: 40px;
    line-height: 1.2;
+   font-family: sans-serif;
 }
 
 .container {
@@ -39,12 +40,16 @@ nav.main a {
 
 h1, h2, h3, h4, h5, h6 {
    line-height: 1.4;
+   font-family: sans-serif;
 }
 
 h1 {
    font-size: 2em;
    border-bottom: 1px solid #ddd;
-   color: #555;
+}
+
+h1, h2 {
+   font-weight: normal;
 }
 
 blockquote {
