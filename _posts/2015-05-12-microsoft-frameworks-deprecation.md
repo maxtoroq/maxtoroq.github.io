@@ -82,6 +82,10 @@ In the end it's your responsibility to choose frameworks wisely. If Microsoft fr
 
 If you ask me, frameworks don't need to be perfect, support every use case, or please everyone. Frameworks can be boring but useful. **Frameworks need stability**. Being a .NET developer has taught me not to depend on frameworks too much.
 
+### Further Reading
+
+- [Microsoft and developer trust (or lack thereof)][8]
+
 [1]: http://semver.org/
 [2]: http://blogs.msdn.com/b/adonet/archive/2014/10/27/ef7-v1-or-v7.aspx
 [3]: https://msdn.microsoft.com/en-us/magazine/dn890367.aspx
@@ -89,3 +93,4 @@ If you ask me, frameworks don't need to be perfect, support every use case, or p
 [5]: https://visualstudiomagazine.com/blogs/data-driver/2014/04/wcf-data-services-and-odata.aspx
 [6]: https://github.com/aspnet/Announcements/issues/21
 [7]: http://blogs.msdn.com/b/adonet/archive/2014/05/19/ef7-new-platforms-new-data-stores.aspx
+[8]: http://weblogs.asp.net/fbouma/microsoft-and-developer-trust-or-lack-thereof
