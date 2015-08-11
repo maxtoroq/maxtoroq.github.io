@@ -68,7 +68,7 @@ In the beginning, *ASP.NET* was a runtime and an application framework based on 
 
 When MVC was released ASP.NET was now the runtime only and the frameworks were *ASP.NET WebForms* and *ASP.NET MVC*. Later, *ASP.NET Web Pages* was added, which is too generic of a name. After all, what are .aspx pages if not web pages?
 
-When WebApi was released, ASP.NET became was just a brand, because *ASP.NET Web API* did not depend on the old runtime, so it was necesary to make a distinction between old runtime, now refered to simply as *System.Web*, and the new frameworks.
+When WebApi was released, ASP.NET became just a brand, because *ASP.NET Web API* did not depend on the old runtime, so it was necesary to make a distinction between old runtime, now refered to simply as *System.Web*, and the new frameworks.
 
 Now we have *ASP.NET 5*, which includes MVC 6 and runs on .NET 4.6. ASP.NET versions no longer match the .NET version, so even though ASP.NET 5 contains the characters ".NET 5", it has nothing to do with .NET 5. I wonder what we'll call WebForms on .NET 5, maybe *ASP.NET WebForms 5*? (not to be confused with ASP.NET 5).
 
