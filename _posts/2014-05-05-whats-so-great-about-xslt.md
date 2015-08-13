@@ -156,9 +156,7 @@ This is by no means a complete list of everything that is great about XSLT, but 
 Maybe I'll end up writing classes so I don't have to write classes.
 
 <section class="footnotes">
-   <small id="fn1">
-   [\[1\]](#r1) Some languages have anonymous functions, but those are expressions not declarations.
-   </small><br/>
+   <span id="fn1">[\[1\]](#r1) Some languages have anonymous functions, but those are expressions not declarations.</span><br/>
    <small id="fn2">
    [\[2\]](#r2) Only feature that comes to mind is overload resolution.
    </small><br/>
