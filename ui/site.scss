@@ -82,6 +82,19 @@ article {
       text-decoration: none;
    }
    
+   .footnotes {
+      
+      font-size: 85%;
+      
+      hr {
+         display: none;
+      }
+      
+      p {
+         margin: 0;
+      }
+   }
+   
    footer {
       font-size: 90%;
       color: #777;
