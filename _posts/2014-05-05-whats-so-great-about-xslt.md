@@ -8,7 +8,7 @@ I like technologies that empower me. In programming, high-level languages and li
 
 Declarative programs
 --------------------
-In conventional languages, first you declare a function, then you call it by name<sup id="r1">[1](#fn1)</sup>. In XSLT, you don't need to name templates, templates are called for you, when the template's pattern matches. This tells us two very important things:
+In conventional languages, first you declare a function, then you call it by name[^1]. In XSLT, you don't need to name templates, templates are called for you, when the template's pattern matches. This tells us two very important things:
 
 **1. XSLT is designed to process data**  
 Aren't all languages designed to process data? I think most languages are designed to organize and expose behavior, rather than organize a program based on the data it takes as input<sup id="r2">[2](#fn2)</sup>.
@@ -168,7 +168,7 @@ Maybe I'll end up writing classes so I don't have to write classes.
    </small>
 </section>
 
-[1]: http://en.wikipedia.org/wiki/Single_responsibility_principle
+[^1]: http://en.wikipedia.org/wiki/Single_responsibility_principle
 [2]: https://roslyn.codeplex.com/discussions/540883
 [3]: http://en.wikipedia.org/wiki/Structural_type_system
 [4]: http://stackoverflow.com/a/844569/39923
