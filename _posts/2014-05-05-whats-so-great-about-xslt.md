@@ -11,7 +11,7 @@ Declarative programs
 In conventional languages, first you declare a function, then you call it by name[^1]. In XSLT, you don't need to name templates, templates are called for you, when the template's pattern matches. This tells us two very important things:
 
 **1. XSLT is designed to process data**  
-Aren't all languages designed to process data? I think most languages are designed to organize and expose behavior, rather than organize a program based on the data it takes as input<sup id="r2">[2](#fn2)</sup>.
+Aren't all languages designed to process data? I think most languages are designed to organize and expose behavior, rather than organize a program based on the data it takes as input[^2].
 
 **2. XSLT has a default behavior**  
 Which is to keep processing data until your template matches, then you can decide whether to stop or continue.
@@ -35,7 +35,7 @@ Modules in VB and F# are basically sealed classes with static members, which you
 
 Extensible programs
 -------------------
-In XSLT, **you don't have to design the extensibility of your program, you get it for free**. This is because all declarations are public and overridable by the importing module. In object-oriented languages, extensibility must be carefully and explicitly designed. Although this level of openess is sometimes not desired<sup id="r3">[3](#fn3)</sup>, it's a powerful feature.
+In XSLT, **you don't have to design the extensibility of your program, you get it for free**. This is because all declarations are public and overridable by the importing module. In object-oriented languages, extensibility must be carefully and explicitly designed. Although this level of openess is sometimes not desired[^3], it's a powerful feature.
 
 For example, take this very simple C# program:
 
@@ -135,7 +135,7 @@ This null-friendliness is not limited to templates. Most functions and operators
 url.Substring(url.IndexOf("://") + "://".Length)
 ```
 
-If `url` is null, the above code will fail at runtime<sup id="r4">[4](#fn4)</sup>. In XSLT however:
+If `url` is null, the above code will fail at runtime[^4]. In XSLT however:
 
 ```xslt
 <xsl:value-of select="substring-after(url, '://')"/>
@@ -155,20 +155,12 @@ This is by no means a complete list of everything that is great about XSLT, but 
 
 Maybe I'll end up writing classes so I don't have to write classes.
 
-<section class="footnotes">
-   <span id="fn1">[\[1\]](#r1) Some languages have anonymous functions, but those are expressions not declarations.</span><br/>
-   <small id="fn2">
-   [\[2\]](#r2) Only feature that comes to mind is overload resolution.
-   </small><br/>
-   <small id="fn3">
-   [\[3\]](#r3) Being addressed in XSLT 3.0 with the introduction of packages.
-   </small><br/>
-   <small id="fn4">
-   [\[4\]](#r4) Being addressed in C# 6 with the introduction of a [null-propagating operator][2].
-   </small>
-</section>
+[^1]: Some languages have anonymous functions, but those are expressions not declarations.
+[^2]: Only feature that comes to mind is overload resolution.
+[^3]: Being addressed in XSLT 3.0 with the introduction of packages.
+[^4]: Being addressed in C# 6 with the introduction of a [null-propagating operator][2].
 
-[^1]: <http://en.wikipedia.org/wiki/Single_responsibility_principle>
+[1]: http://en.wikipedia.org/wiki/Single_responsibility_principle
 [2]: https://roslyn.codeplex.com/discussions/540883
 [3]: http://en.wikipedia.org/wiki/Structural_type_system
 [4]: http://stackoverflow.com/a/844569/39923
