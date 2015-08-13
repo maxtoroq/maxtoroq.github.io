@@ -168,7 +168,7 @@ Maybe I'll end up writing classes so I don't have to write classes.
    </small>
 </section>
 
-[^1]: http://en.wikipedia.org/wiki/Single_responsibility_principle
+[^1]: <http://en.wikipedia.org/wiki/Single_responsibility_principle>
 [2]: https://roslyn.codeplex.com/discussions/540883
 [3]: http://en.wikipedia.org/wiki/Structural_type_system
 [4]: http://stackoverflow.com/a/844569/39923
