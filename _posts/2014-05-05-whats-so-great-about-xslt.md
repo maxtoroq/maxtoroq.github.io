@@ -156,10 +156,18 @@ This is by no means a complete list of everything that is great about XSLT, but 
 Maybe I'll end up writing classes so I don't have to write classes.
 
 <section class="footnotes">
-   <small id="fn1">[\[1\]](#r1) Some languages have anonymous functions, but those are expressions not declarations.</small><br/>
-   <small id="fn2">[\[2\]](#r2) Only feature that comes to mind is overload resolution.</small><br/>
-   <small id="fn3">[\[3\]](#r3) Being addressed in XSLT 3.0 with the introduction of packages.</small><br/>
-   <small id="fn4">[\[4\]](#r4) Being addressed in C# 6 with the introduction of a [null-propagating operator][2].</small>
+   <small id="fn1">
+   [\[1\]](#r1) Some languages have anonymous functions, but those are expressions not declarations.
+   </small><br/>
+   <small id="fn2">
+   [\[2\]](#r2) Only feature that comes to mind is overload resolution.
+   </small><br/>
+   <small id="fn3">
+   [\[3\]](#r3) Being addressed in XSLT 3.0 with the introduction of packages.
+   </small><br/>
+   <small id="fn4">
+   [\[4\]](#r4) Being addressed in C# 6 with the introduction of a [null-propagating operator][2].
+   </small>
 </section>
 
 [1]: http://en.wikipedia.org/wiki/Single_responsibility_principle
