@@ -5,7 +5,7 @@ feed: http://feeds.feedburner.com/maxtoroq
 timezone: America/Santiago
 permalink: /:year/:month/:title.html
 
-#markdown: redcarpet
+markdown: redcarpet
 
 defaults:
    -
