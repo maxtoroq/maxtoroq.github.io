@@ -2,18 +2,29 @@
 layout: default
 ---
 
-<h2>Reference</h2>
-<ul>
-   <li><a href="/xpath-ref/">XPath 3.0 Functions Reference</a></li>
-</ul>
+<aside>
+   <style scoped>
+      @media (min-width: 768px) {
+         aside {
+            float: right;
+            margin-bottom: 1em;
+            margin-right: 1em;
+         }
+      }
+   </style>
+   <h2>Reference</h2>
+   <ul>
+      <li><a href="/xpath-ref/">XPath 3.0 Functions Reference</a></li>
+   </ul>
 
-<h2>Projects</h2>
-<ul>
-   <li><a href="/XCST/">XCST</a></li>
-   <li><a href="https://mvccoderouting.codeplex.com/">MvcCodeRouting</a></li>
-   <li><a href="/DbExtensions/">DbExtensions</a></li>
-   <li><a href="{{site.github.owner_url}}">More...</a></li>
-</ul>
+   <h2>Projects</h2>
+   <ul>
+      <li><a href="/XCST/">XCST</a></li>
+      <li><a href="https://mvccoderouting.codeplex.com/">MvcCodeRouting</a></li>
+      <li><a href="/DbExtensions/">DbExtensions</a></li>
+      <li><a href="{{site.github.owner_url}}">More...</a></li>
+   </ul>
+</aside>
 
 {% for post in site.posts reverse %}
    {% capture date %}{{ post.date }}{% endcapture %}
