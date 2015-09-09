@@ -7,6 +7,14 @@ layout: default
    <li><a href="/xpath-ref/">XPath 3.0 Functions Reference</a></li>
 </ul>
 
+<h2>Projects</h2>
+<ul>
+   <li><a href="/XCST/">XCST</a></li>
+   <li><a href="https://mvccoderouting.codeplex.com/">MvcCodeRouting</a></li>
+   <li><a href="/DbExtensions/">DbExtensions</a></li>
+   <li><a href="{{site.github.owner_url}}">More...</a></li>
+</ul>
+
 {% for post in site.posts reverse %}
    {% capture date %}{{ post.date }}{% endcapture %}
    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
