@@ -24,5 +24,3 @@ defaults:
       values:
          layout: page
   
-gems:
-   - jekyll-feed
