@@ -191,4 +191,4 @@ Hope you like this.
 [Source code][2]
 
 [1]: {{ site.url }}/2013/07/razor-vs-xslt.html
-[2]: https://github.com/maxtoroq/razor-and-xslt
+[2]: https://github.com/maxtoroq/2014-02-using-razor-and-xslt-in-same-project
