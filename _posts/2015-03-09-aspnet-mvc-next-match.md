@@ -158,7 +158,7 @@ We need a better way to determine the outcome of calling a base action. Checking
 
 Hope you like this.
 
-[:emoji: Source code][5]
+[:octocat: Source code][5]
 
 [1]: {{ site.url }}/MvcAccount/
 [2]: {{ site.url }}/files/mvcnextmatch_screenshot_2.png
