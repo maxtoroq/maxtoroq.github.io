@@ -329,7 +329,7 @@ Conclusions
 -----------
 Hopefully seeing the patterns in action makes their utility more clear. The goal is to provide a consistent experience for plugin consumers (application developers), minimize the amount of configuration required to get a plugin working in the host application and maximize the plugin's flexibility to customize its behavior.
 
-[Source code][24]
+[:octocat: Source code][24]
 
 [1]: {{ site.url }}/2012/06/patterns-for-aspnet-mvc-plugins-routes.html
 [2]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html
