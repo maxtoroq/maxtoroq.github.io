@@ -186,7 +186,7 @@ It imports the helper stylesheet that does the job of rendering the appropriate 
 </xsl:stylesheet>
 ```
 
-Hope you like this.
+Hope you like this. 
 
 [:octocat: Source code][2]
 
