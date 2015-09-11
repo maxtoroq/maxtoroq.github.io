@@ -23,4 +23,7 @@ defaults:
          type: page
       values:
          layout: page
+
+gems:
+   - jemoji
   
