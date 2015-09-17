@@ -4,36 +4,18 @@ title: About me
 
 <img src="http://1.gravatar.com/avatar/1056a38ecd323c658a8c9e93bb41b18d?s=150" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
 
-I'm a web developer specialized in XSLT and C#. I like to work on Open Source, my most popular projects are:
+I do mostly server-side web programming. Like C#; love XSLT; [Trying to mix both](/XCST/).
 
-<dl>
-  <dt><a href="http://mvccoderouting.codeplex.com/"><b>MvcCodeRouting</b></a></dt>
-  <dd>Namespace-based Modularity for ASP.NET MVC and Web API.</dd>
-  
-  <dt><a href="{{ site.url }}/DbExtensions/"><b>DbExtensions</b></a></dt>
-  <dd>Data-access API with a strong focus on query composition, granularity and code aesthetics.</dd>
-</dl>
+Programming is hard because our tools are bad. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. Declarative is the answer.
 
-Feel free to [email me][3], or follow me on [@maxtoroq][4]. You can also find me on [GitHub][1] and [Stack Overflow][2].
+I’m on a mission to help developers write more maintainable code. I’m not satisfied with something that just works. If the standard solution to a problem does not translate in elegant code I will look for a better solution, or develop an alternative myself. Because code spends most of its lifespan in maintenance mode, bad decisions made in the earlier stages of development can largely increase the costs of maintenance later.
 
-If you'd like to show your appreciation you can [donate][5].
+Feel free to [email me](mailto:maxtoroq@gmail.com), or follow me on [@maxtoroq](https://twitter.com/maxtoroq). You can also find me on [GitHub](https://github.com/maxtoroq) and [Stack Overflow](http://stackoverflow.com/users/39923).
 
-Declarative Programmer
-----------------------
-I’m on a mission to help developers write more maintainable code. **I’m not satisfied with something that just works**. If the standard solution to a problem does not translate in elegant code I will look for a better solution, or develop an alternative myself. Because code spends most of its lifespan in maintenance mode, **bad decisions made in the earlier stages of development can largely increase the costs of maintenance later**.
+If you'd like to show your appreciation you can [donate](donate.html).
 
 Other interests
 ---------------
-- [Hypermedia APIs][6]
-- [Semantic HTML][7]
-- [Structural typing][8]
-
-[1]: https://github.com/maxtoroq
-[2]: http://stackoverflow.com/users/39923
-[3]: mailto:maxtoroq@gmail.com
-[4]: https://twitter.com/maxtoroq
-[5]: donate.html
-[6]: http://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State
-[7]: http://en.wikipedia.org/wiki/Semantic_HTML
-[8]: http://en.wikipedia.org/wiki/Structural_type_system
-
+- [Hypermedia APIs](http://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State)
+- [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML)
+- [Structural typing](http://en.wikipedia.org/wiki/Structural_type_system)
