@@ -12,19 +12,6 @@ body {
    color: #333;
 }
 
-header.main a {
-   color: #bbb;
-   font-size: 2.2em;
-   line-height: 1.2;
-   font-family: sans-serif;
-}
-
-.container {
-   max-width: 790px;
-   margin: 0 auto;
-   padding: 1em;
-}
-
 a, a:hover, a:focus {
    color: #0066c0;
    text-decoration: none;
@@ -34,14 +21,8 @@ a:hover {
    text-decoration: underline;
 }
 
-nav.main {
-
-   font-size: 15px;
-   font-family: sans-serif;
-
-   a {
-      color: gray;
-   }
+img {
+   border: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,6 +47,29 @@ blockquote {
 
 table {
    overflow: auto;
+}
+
+header.main a {
+   color: #bbb;
+   font-size: 2.2em;
+   line-height: 1.2;
+   font-family: sans-serif;
+}
+
+.container {
+   max-width: 790px;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+nav.main {
+
+   font-size: 15px;
+   font-family: sans-serif;
+
+   a {
+      color: gray;
+   }
 }
 
 article {
