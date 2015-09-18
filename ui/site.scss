@@ -34,8 +34,13 @@ a:hover {
    text-decoration: underline;
 }
 
-nav.main a {
-   color: gray;
+nav.main {
+
+   font-family: sans-serif;
+
+   a {
+      color: gray;
+   }
 }
 
 h1, h2, h3, h4, h5, h6 {
