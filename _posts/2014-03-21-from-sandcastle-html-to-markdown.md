@@ -36,7 +36,7 @@ Markdown is one of those great features about code hosting services like GitHub 
 
 And, since your documentation is versioned with your source code, you can simply use the branch/tag selector dropdown to change versions.
 
-And if all of the above wasn't enough, GitHub has an extra feature: your documentation is now fully searchable! <span class="update"><strong>Update:</strong> You also get a mobile UI!</span>
+And if all of the above wasn't enough, GitHub has an extra feature: your documentation is now fully searchable! <ins>**Update:** You also get a mobile UI!</ins>
 
 From Sandcastle HTML to Markdown
 --------------------------------

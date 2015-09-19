@@ -4,9 +4,7 @@ date: 2013-03-29 01:36:00 -0300
 tags: [asp.net mvc, asp.net web api, routing]
 ---
 
-<div class="update important">
-<strong>Update:</strong> This post is based on early bits that later changed when v5 RTM was released. I suggest you read my post <em><a href="/2014/02/why-aspnet-mvc-routing-sucks.html">Why ASP.NET MVC Routing sucks</a></em> instead.
-</div>
+<ins>**Update:** This post is based on early bits that later changed when v5 RTM was released. I suggest you read my post *[Why ASP.NET MVC Routing sucks][6]* instead.</ins>
 
 Attribute-based routing is coming to ASP.NET MVC and Web API, according to the [roadmap][1]. They are basing the solution on the popular [AttributeRouting][2] project. At the date of writing this post only Web API support is working, you can play with it by installing the [nightly packages][3].
 
@@ -44,3 +42,4 @@ The good thing is that, just like Areas, you can just ignore attribute routing.
 [3]: http://www.myget.org/gallery/aspnetwebstacknightly/
 [4]: http://samsaffron.com/archive/2011/10/13/optimising-asp-net-mvc3-routing
 [5]: http://mvccoderouting.codeplex.com/
+[6]: {{ site.url }}/2014/02/why-aspnet-mvc-routing-sucks.html
