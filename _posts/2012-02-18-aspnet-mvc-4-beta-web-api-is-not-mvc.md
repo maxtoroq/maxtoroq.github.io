@@ -14,7 +14,7 @@ The bad thing is that, even though Web API looks and feels like MVC, **it's not 
 
 The best thing about MVC is its extensibility. Now all those great MVC extensions will have to be recompiled/adapted for Web API. This is a terrible design choice, all they had to do was provide more RESTful features directly in MVC, instead of creating the Web API beast.
 
-<ins>**Update (2014-03)**: This was my initial reaction. I don't think it was a bad design choice anymore, as the decoupling from *System.Web* improves the portability, modularity and extensibility of the framework. Also, adapting some of my MVC libraries for Web API wasn't so hard, as many of the features that were copied from MVC work pretty much the same.</ins>
+<p><ins>**Update (2014-03)**: This was my initial reaction. I don't think it was a bad design choice anymore, as the decoupling from *System.Web* improves the portability, modularity and extensibility of the framework. Also, adapting some of my MVC libraries for Web API wasn't so hard, as many of the features that were copied from MVC work pretty much the same.</ins></p>
 
 [1]: http://www.asp.net/mvc/mvc4
 [2]: http://www.asp.net/web-api
