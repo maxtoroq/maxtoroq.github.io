@@ -18,7 +18,7 @@ For example, when your are reading more narrative documentation on the project's
 
 Sandcastle
 ----------
-The standard tool to generate an MSDN-like documentation website for your project is [Sandcastle][1]. While Sandcastle works, it's not very user friendly. Sandcastle hasn't evolved like MSDN has. Although its latest version includes the long-awaited feature of listing all of the type's members in the type's page, it still creates a lots of noise and duplicated information, like having special pages for the type's properties, methods and overloads.
+The standard tool to generate an MSDN-like documentation website for your project is [Sandcastle][1]. While Sandcastle works, it's not very user friendly. Sandcastle hasn't evolved like MSDN has. Although its latest version includes the long-awaited feature of listing all of the type's members in the type's page, it still creates a lot of noise and duplicated information, like having special pages for the type's properties, methods and overloads.
 
 Sandcastle is also not very machine friendly. It uses iframes, which makes it hard to share links, and if you navigate to a content page from Google you lose the menu. The generated HTML markup is very bad in terms of efficiency and semantics, and it puts all HTML in a single directory, you get no hierarchy.
 
