@@ -10,6 +10,12 @@ markdown: redcarpet
 redcarpet:
    extensions: [footnotes]
 
+sass:
+  style: compressed
+
+gems:
+   - jemoji
+
 defaults:
    -
       scope:
@@ -23,7 +29,3 @@ defaults:
          type: page
       values:
          layout: page
-
-gems:
-   - jemoji
-  
