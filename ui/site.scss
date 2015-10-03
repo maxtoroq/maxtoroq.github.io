@@ -147,8 +147,6 @@ pre {
 
 .highlight {
    
-   background: #fff;
-   
    pre, code {
       line-height: 19px;
       word-wrap: normal;
@@ -157,7 +155,7 @@ pre {
    pre {
       padding: 1em;
       overflow: auto;
-      background-color: #f8f8f8;
+      background-color: rgba(0,0,0,.04);
    }
    
    .c { color: #999988; font-style: italic } /* Comment */
