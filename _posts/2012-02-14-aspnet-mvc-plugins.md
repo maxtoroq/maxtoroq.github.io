@@ -59,4 +59,4 @@ Conclusions
 [1]: http://portableareas.codeplex.com/
 [2]: http://mvccoderouting.codeplex.com/
 [3]: http://msdn.microsoft.com/library/system.web.hosting.virtualpathprovider
-[4]: {{ site.url }}/files/mvcaccount_embedded_views.png
+[4]: {{ site.url }}/img/mvcaccount_embedded_views.png

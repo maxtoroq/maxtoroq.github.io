@@ -1,0 +1,89 @@
+---
+---
+
+@import "_base.scss";
+
+body {
+   
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: sans-serif;
+   color: rgba(255, 146, 0, 0.8);
+}
+
+header.main {
+
+   text-align: center;
+
+   a {
+      color: rgba(0, 0, 0, 0.3);
+      font-size: 2.2em;
+      line-height: 1.2;
+      font-family: "Courier New", monospace;
+   }
+}
+
+nav.main {
+
+   font-size: 15px;
+   font-family: sans-serif;
+   text-align: center;
+
+   a {
+      color: rgba(0, 0, 0, 0.3);
+   }
+}
+
+article {
+
+   font-size: 21px;
+
+   div[itemprop="articleBody"] img {
+      height: auto;
+      max-width: 100%;
+   }
+   
+   .footnotes {
+      
+      font-size: 85%;
+      
+      hr {
+         display: none;
+      }
+      
+      p {
+         margin: 0;
+      }
+   }
+   
+   footer {
+      font-size: 90%;
+      color: #777;
+   }
+}
+
+nav.post {
+   
+   margin-top: 15px;
+   border-top: 1px dotted silver;
+   
+   a.next, a.prev {
+      display: inline-block;
+   }
+   
+   a.next {
+      float: right;
+   }
+}
+
+div#disqus_thread {
+   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+
+   article {
+      font-size: inherit;
+   }
+}

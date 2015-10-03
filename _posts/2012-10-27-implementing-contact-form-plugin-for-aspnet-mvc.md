@@ -355,5 +355,5 @@ Hopefully seeing the patterns in action makes their utility more clear. The goal
 [22]: {{ site.url }}/2012/07/patterns-for-aspnet-mvc-plugins-viewmodels.html#pattern-viewmodels-modelbinding-failure-status-code
 [23]: http://mvccoderouting.codeplex.com/
 [24]: https://github.com/maxtoroq/2012-10-implementing-contact-form-plugin-for-aspnet-mvc
-[25]: {{ site.url }}/files/mvccontact_screenshot_1.png
-[26]: {{ site.url }}/files/mvccontact_screenshot_2.png
+[25]: {{ site.url }}/img/mvccontact_screenshot_1.png
+[26]: {{ site.url }}/img/mvccontact_screenshot_2.png
