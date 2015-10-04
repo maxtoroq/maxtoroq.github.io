@@ -173,6 +173,12 @@ pre {
    code,
    pre {
       font-size: 13px;
-      font-family: initial;
+   }
+}
+
+@media (min-width: 768px) {
+   code,
+   pre {
+      font-family: "Courier New";
    }
 }
