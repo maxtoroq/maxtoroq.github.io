@@ -28,7 +28,7 @@ Problem: MVC is matching the wrong route
 ----------------------------------------
 This is the most common issue you'll face when dealing with custom routes. This happens when one URL can be matched by more than one route. There are two solutions to this problem:
 
-### 1. Changing the order
+### A) Changing the order
 
 This typically means putting the routes with the most parameters/segments at the top.
 
@@ -41,7 +41,7 @@ This typically means putting the routes with the most parameters/segments at the
 - Can result in having the least used routes at the top, which is inefficient.
 - Every time you add a new route you have to test how it affects other routes.
 
-### 2. Adding more constraints
+### B) Adding more constraints
 
 If a parameter should only match a limited set of values you can add a constraint for that parameter.
 
