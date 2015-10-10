@@ -72,8 +72,11 @@ img {
    border: 0;
 }
 
-code,
 pre {
+   font-size: inherit;
+}
+
+code {
    font-size: 90%;
    line-height: 1.3;
 }
