@@ -1,4 +1,5 @@
 ---
+layout: XCST
 title: XCST
 ---
 
