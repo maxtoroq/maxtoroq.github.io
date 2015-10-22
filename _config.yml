@@ -42,9 +42,11 @@ defaults:
          type: page
       values:
          layout: MvcAccount
+         repository_url: https://github.com/maxtoroq/MvcAccount
    -
       scope:
          path: "XCST"
          type: page
       values:
          layout: XCST
+         repository_url: https://github.com/maxtoroq/XCST
