@@ -2,9 +2,9 @@
 title: myxsl
 ---
 
-<div class="update">
+<p class="update">
 Development of myxsl is suspended in favor of <a href="/XCST/">XCST</a>
-</div>
+</p>
 
 **myxsl** (formerly myxsl.net) helps you integrate XPath-based languages such as XSLT, XQuery, Schematron with your .NET code.
 
