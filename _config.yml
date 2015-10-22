@@ -31,6 +31,12 @@ defaults:
          layout: page
    -
       scope:
+         path: "DbExtensions"
+         type: page
+      values:
+         layout: DbExtensions
+   -
+      scope:
          path: "MvcAccount"
          type: page
       values:
