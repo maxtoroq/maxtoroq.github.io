@@ -1,6 +1,5 @@
 ---
 title: MvcAccount — Authentication and Account Management plugin for ASP.NET MVC
-layout: default
 ---
 
 MvcAccount is the simplest way to password-protect your ASP.NET MVC application. It consists of a single assembly which includes models, views, controllers, resources, etc. Add a bit of configuration and you are done!
