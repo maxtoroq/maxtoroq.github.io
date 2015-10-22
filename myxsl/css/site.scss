@@ -1,0 +1,32 @@
+---
+---
+
+@import "base";
+
+body {
+   font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: sans-serif;
+}
+
+header.main {
+
+   nav a {
+      color: gray;
+   }
+}
+
+a, a:hover, a:focus {
+   color: #08975c;
+   text-decoration: none;
+}
+
+a:hover {
+   background-color: #d1ede8;
+}
+
+.update {
+   background-color: #FFFEE6;
+}

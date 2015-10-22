@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>{{ page.title }}</title>
+   <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
+   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
+   <link rel="apple-touch-icon" href="{{ page.base_url }}apple-touch-icon.png"/>
+</head>
+<body>
+<div class="container">
+   <header class="main">
+      <nav>
+         <a href="{{ page.base_url }}">home</a>
+         · <a href="{{ page.repository_url }}">github</a>
+      </nav>
+   </header> 
+   <article>
+      <header>
+         <h1>{{ page.title }}</h1>
+      </header>
+      {{ content }}
+   </article>
+</div>
+</body>
+</html>

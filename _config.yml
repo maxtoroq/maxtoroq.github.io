@@ -45,6 +45,14 @@ defaults:
          repository_url: https://github.com/maxtoroq/MvcAccount
    -
       scope:
+         path: "myxsl"
+         type: page
+      values:
+         layout: myxsl
+         base_url: "/myxsl/"
+         repository_url: https://github.com/maxtoroq/myxsl
+   -
+      scope:
          path: "XCST"
          type: page
       values:
