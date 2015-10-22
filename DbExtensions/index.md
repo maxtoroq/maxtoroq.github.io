@@ -22,7 +22,7 @@ if (productsToReorder.Any()) {
    }
 }
 ```
-[SqlSet]({{ repository_url }}/blob/master/docs/SqlSet.md) provides a LINQish API for making queries, but using SQL instead of lambda expressions. The above code executes the following queries:
+[SqlSet]({{ page.repository_url }}/blob/master/docs/SqlSet.md) provides a LINQish API for making queries, but using SQL instead of lambda expressions. The above code executes the following queries:
 
 ```sql
 SELECT (CASE WHEN EXISTS (
@@ -82,7 +82,7 @@ var query = SQL
 
 IEnumerable<Product> products = db.Map<Product>(query);
 ```
-With [SqlBuilder]({{ repository_url }}/blob/master/docs/SqlBuilder.md) you have complete control of the executing SQL.
+With [SqlBuilder]({{ page.repository_url }}/blob/master/docs/SqlBuilder.md) you have complete control of the executing SQL.
 
 Changing data
 -------------
