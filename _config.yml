@@ -31,6 +31,12 @@ defaults:
          layout: page
    -
       scope:
+         path: "MvcAccount"
+         type: page
+      values:
+         layout: MvcAccount
+   -
+      scope:
          path: "XCST"
          type: page
       values:
