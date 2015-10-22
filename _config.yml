@@ -29,3 +29,8 @@ defaults:
          type: page
       values:
          layout: page
+   -
+      scrope:
+         path: "XCST"
+      values:
+         layout: XCST
