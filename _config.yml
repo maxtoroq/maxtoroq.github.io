@@ -30,7 +30,7 @@ defaults:
       values:
          layout: page
    -
-      scrope:
+      scope:
          path: "XCST"
          type: page
       values:
