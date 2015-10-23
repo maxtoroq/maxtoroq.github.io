@@ -17,7 +17,7 @@ h1, h2 {
 
 header.main {
 
-   font-family: "Courier New", monospace;
+   font-family: Consolas, monospace;
    font-size: 2.2em;
    line-height: 1.2;
    text-align: center;
@@ -84,4 +84,16 @@ nav.post {
 
 div#disqus_thread {
    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+   
+   h1, h2 {
+      font-family: Consolas, monospace;
+      font-weight: normal;
+   }
+   
+   h2 {
+      color: gray;
+   }
 }
