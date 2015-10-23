@@ -50,16 +50,32 @@ p {
    margin-top: 0;
 }
 
-blockquote {
-   border-left: 6px solid rgba(0, 0, 0, 0.1);
-   padding: 0 15px;
-   margin-left: 0;
-   margin-right: 0;
+blockquote, 
+div.note,
+table {
    font-size: 16px;
 }
 
+blockquote, 
+div.note {
+   border-left-width: 6px;
+   border-left-style: solid;
+}
+
+blockquote {
+   border-color: rgba(0, 0, 0, 0.1);
+   padding: 0 15px;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+div.note {
+   margin-bottom: 1em;
+   background: #fff4cc;
+   border-color: #ffe070;
+}
+
 table {
-   font-size: 16px;
    overflow: auto;
 }
 
@@ -117,7 +133,8 @@ pre code {
       line-height: 1.6;
    }
 
-   blockquote,
+   blockquote, 
+   div.note,
    table {
       font-size: 14px;
    }
