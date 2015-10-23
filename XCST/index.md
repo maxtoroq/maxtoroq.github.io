@@ -31,7 +31,9 @@ WriteStartElement("ul", @""); {
 WriteEndElement();
 ```
 
-> Note how interpolated strings is an essential feature to support attribute and text value templates.
+<div class="note">
+Note how interpolated strings is an essential feature to support attribute and text value templates.
+</div>
 
 The generated code is compatible with `System.Xml.XmlWriter`'s API.
 
