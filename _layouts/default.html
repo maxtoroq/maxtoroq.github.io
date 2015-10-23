@@ -15,17 +15,19 @@
    </script>
 </head>
 <body>
-    
+<header>
+   <div class="container">
+      <div class="site-title"><a href="/">{{ site.title }}</a></div>
+      <nav class="main">
+         <a href="/">home</a>
+          · <a href="/p/about-me.html">about</a>
+          · <a href="https://twitter.com/maxtoroq">twitter</a>
+          · <a href="{{ site.feed }}">feed</a>
+      </nav>
+   </div>
+</header>
 <div class="container">
-   <header class="main"><a href="/">{{ site.title }}</a></header>
-   <nav class="main">
-       <a href="/">home</a>
-       · <a href="/p/about-me.html">about</a>
-       · <a href="https://twitter.com/maxtoroq">twitter</a>
-       · <a href="{{ site.feed }}">feed</a>
-    </nav>
    {{ content }}
 </div>
-
 </body>
 </html>
