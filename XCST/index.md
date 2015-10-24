@@ -98,11 +98,12 @@ You can use the `[c:]expand-text` standard attribute to enable text value templa
 
 ### Creating Processing Instructions
 
-```
+```xml
 <c:processing-instruction name='xml-stylesheet' expand-text='yes'>href='{Href("style.css")}' type='text/css'</c:processing-instruction>
 <doc>
    ...
 </doc>
+```
 
 ###  Creating Namespace Nodes
 
