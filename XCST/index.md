@@ -54,7 +54,7 @@ Here's a more complete example of an XCST module:
 </c:module>
 ```
 
-XCST modules are XML files with declarations (`c:template`s, `c:function`s, `c:variable`s, etc.) that can import other modules. Declarations are like methods, fields and classes in C#. Instructions are like statements (`if`, `foreach`, variable declarations) in C#.
+XCST modules are XML files with declarations (`c:template`, `c:function`, `c:variable`, etc.) that can import other modules. Declarations are like methods, fields and classes in C#. Instructions are like statements (`if`, `foreach`, variable declarations) in C#.
 
 Creating Nodes
 --------------
@@ -202,7 +202,7 @@ Variables and Parameters
 ```xml
 <c:variable name='number' value='1'/><!-- System.Int32 -->
 <c:variable name='color' value='"red"'/><!-- System.String -->
-<c:variable name='another-color'>blue</c:variable><!-- System.String -->
+<c:variable name='anotherColor'>blue</c:variable><!-- System.String -->
 <c:variable name='date' value='DateTime.Today' as='DateTime'/>
 ```
 
