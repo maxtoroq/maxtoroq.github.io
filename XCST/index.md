@@ -103,6 +103,8 @@ You can use the `[c:]expand-text` standard attribute to enable text value templa
 </doc>
 ```
 
+Processing instructions (`<?foo ?>`) in XCST modules are ignored and not copied to the output.
+
 ###  Creating Namespace Nodes
 
 ```xml
@@ -112,11 +114,15 @@ You can use the `[c:]expand-text` standard attribute to enable text value templa
 </doc>
 ```
 
+Namespace nodes in XCST modules are not copied to the output. This is different from XSLT.
+
 ### Creating Comments
 
 ```xml
 <c:comment>This is a comment</c:comment>
 ```
+
+Comments (`<!-- -->`) in XCST modules are ignored and not copied to the output.
 
 Repetition
 ----------
