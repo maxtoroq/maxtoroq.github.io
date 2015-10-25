@@ -4,10 +4,6 @@ title: XCST
 
 **XCST (eXtensible C-Sharp Templates)** is a language for transforming objects into XML documents. It is based on a subset of XSLT (no `apply-templates`) but using C# as expression language and data model, instead of XPath.
 
-XCST programs are organized in modules. A module is an XML file with declarations (templates, functions, variables, etc.) that can import other modules. Modules are extensible; an importing module can override declarations of an imported module.
-
-XCST itself is also extensible, using extension instructions, which are elements in a namespace designated as an extension namespace (using the standard `[c:]extension-element-prefixes` attribute).
-
 XCST compiles to C#. The XCST compiler transforms XCST instructions to C# statements, using the expressions contained in the instructions. Here's an example:
 
 ```xml
@@ -57,6 +53,8 @@ Here's a more complete example of an XCST module:
 
 </c:module>
 ```
+
+XCST modules are XML files with declarations (`c:template`s, `c:function`s, `c:variable`s, etc.) that can import other modules. Declarations are like methods, fields and classes in C#. Instructions are like statements (`if`, `foreach`, variable declarations) in C#.
 
 Creating Nodes
 --------------
@@ -152,6 +150,60 @@ While `c:for-each` supports sorting, `c:iterate` supports what in C# is known as
       <c:with-param name='balance' value='newBalance'/>
    </c:next-iteration>
 </c:iterate>
+```
+
+Conditional Processing
+----------------------
+
+### The `c:if` instruction
+
+```xml
+<li>
+   <c:if test='isActive'>
+      <c:attribute name='class'>active</c:attribute>
+   </c:if>
+   ...
+</li>
+```
+
+### The `c:choose` instruction
+
+```xml
+<input>
+   <c:choose>
+      <c:when test='isDisabled'>
+         <c:attribute name='disabled'>disabled</c:attribute>
+      </c:when>
+      <c:when test='isReadonly'>
+         <c:attribute name='readonly'>readonly</c:attribute>
+      </c:when>
+   </c:choose>
+</input>
+```
+
+### The `c:try` instruction
+
+```xml
+<c:try>
+   <c:call-template name='make-the-world-a-better-place'/>
+   <c:catch exception='InvalidOperationException'>
+      <c:message>Houston, we have a problem</c:message>
+   </c:catch>
+</c:try>
+```
+
+Variables and Parameters
+------------------------
+
+### Variables
+
+`c:variable` is both an instruction (for local variables) and a declaration (for global variables).
+
+```xml
+<c:variable name='number' value='1'/><!-- System.Int32 -->
+<c:variable name='color' value='"red"'/><!-- System.String -->
+<c:variable name='another-color'>blue</c:variable><!-- System.String -->
+<c:variable name='date' value='DateTime.Today' as='DateTime'/>
 ```
 
 <div class="note">This page is Work In Progress</div>
