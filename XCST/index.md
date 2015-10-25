@@ -62,7 +62,7 @@ Creating Nodes
 ### Creating Element Nodes
 
 ```xml
-<c:element name='{(url != null) ? "a" else "span"}'>
+<c:element name='{(url != null) ? "a" : "span"}'>
    ...
 </c:element>
 ```
