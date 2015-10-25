@@ -50,7 +50,6 @@ p {
    margin-top: 0;
 }
 
-blockquote, 
 div.note,
 table {
    font-size: 16px;
@@ -58,20 +57,25 @@ table {
 
 blockquote, 
 div.note {
+   
+   padding: 0.5em 1em;
    border-left-width: 6px;
    border-left-style: solid;
+   
+   > *:last-child {
+      margin-bottom: 0;
+   }
 }
 
 blockquote {
+   font-size: 20px;
    border-color: rgba(0, 0, 0, 0.1);
-   padding: 0 1em;
    margin-left: 0;
    margin-right: 0;
 }
 
 div.note {
    margin-bottom: 1em;
-   padding: 0.7em 1em;
    background: #fff4cc;
    border-color: #ffe070;
 }
@@ -133,8 +137,11 @@ pre code {
       font-family: sans-serif !important;
       line-height: 1.6;
    }
+   
+   blockquote {
+      font-size: 17px;
+   }
 
-   blockquote, 
    div.note,
    table {
       font-size: 13px;
