@@ -89,9 +89,9 @@ public static class HtmlHelperFactoryExtensions {
       return new HtmlHelper<TModel>(newViewContext, viewDataContainer, htmlHelper.RouteCollection);
    }
 
-   static IViewDataContainer CreateViewDataContainer(ViewDataDictionary viewData, object model) {
+   static IViewDataContainer CreateViewDataContainer<TModel>(ViewDataDictionary viewData, TModel model) {
 
-      var newViewData = new ViewDataDictionary(viewData) {
+      var newViewData = new ViewDataDictionary<TModel>(viewData) {
          Model = model
       };
 
