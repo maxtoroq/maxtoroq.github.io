@@ -212,6 +212,53 @@ Variables and Parameters
 <c:variable name='date' value='DateTime.Today' as='DateTime'/>
 ```
 
+### Parameters
+
+Parameters can be defined for `c:module`, `c:template`, `c:function` and `c:iterate`.
+
+```xml
+<c:template name='mail-body'>
+   <c:param name='contact' as='Contact' required='yes'/>
+   ...
+</c:template>
+```
+
+Callable Components
+-------------------
+
+### Calling Templates
+
+```xml
+<c:call-template name='mail-body'>
+   <c:with-param name='contact' value='contact'/>
+</c:call-template>
+```
+
+One of the most interesting features, if you are not familiar with XSLT 2.0, are tunnel parameters. From the [XSLT spec](http://www.w3.org/TR/xslt-30/#tunnel-params):
+
+> A parameter passed to a template may be defined as a tunnel parameter. Tunnel parameters have the property that they are automatically passed on by the called template to any further templates that it calls, and so on recursively. Tunnel parameters thus allow values to be set that are accessible during an entire phase of stylesheet processing, without the need for each template that is used during that phase to be aware of the parameter.
+
+```xml
+<c:template name='c:initial-template'>
+   <c:call-template name='html'>
+      <c:with-param name='contact' value='new Contact()' tunnel='yes'/>
+   </c:call-template>
+</c:template>
+
+<c:template name='html'>
+   <html>
+      <body>
+         <c:call-template name='content'/>
+      </body>
+   </html>
+</c:template>
+
+<c:template name='content'>
+   <c:param name='contact' as='Contact' tunnel='yes'/>
+   ...
+</c:template>
+```
+
 <div class="note">This page is Work In Progress</div>
 
 <div style="text-align: center">
