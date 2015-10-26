@@ -101,6 +101,7 @@ Use the `c:script` instruction for inline C#.
 // This is C#
 ]]>
 </c:script>
+```
 
 ### Application extension
 
