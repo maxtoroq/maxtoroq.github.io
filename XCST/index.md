@@ -78,20 +78,24 @@ Original features
 
 ### Type definitions
 
-Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are also several attributes that map to presentation and validation attributes in C#.
+Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in C#. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
 
 ```xml
-<c:type name='Contact' required-error-message='Required field cannot be left blank.'>
-   <c:member name='Name' as='string' required='yes' min-length='2' max-length='50'/>
-   <c:member name='Email' as='string' required='yes' max-length='255' data-type='EmailAddress' display-name='E-mail'/>
-   <c:member name='Telephone' as='string' required='yes' min-length='8' max-length='20' data-type='PhoneNumber'/>
-   <c:member name='Message' as='string' required='yes' max-length='2000' data-type='MultilineText'/>
+<c:type name='Order'>
+   <c:member name='Name' as='string' required='yes'/>
+   <c:member name='Email' as='string' required='yes' display-name='E-mail'/>
+   <c:member name='Telephone' as='string' required='yes'/>
+   <c:member name='ShippingAddress' required='yes'>
+      <c:member name='Line1' as='string' required='yes'/>
+      <c:member name='Line2' as='string' required='yes'/>
+      <c:member name='City' as='string' required='yes'/>
+      <c:member name='Region' as='string' required='yes'/>
+      <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
+   </c:member>
 </c:type>
 ```
 
-If you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
-
-### Inline C#
+### Inline C&#35;
 
 Use the `c:script` instruction for inline C#.
 
@@ -105,9 +109,7 @@ Use the `c:script` instruction for inline C#.
 
 ### Application extension
 
-The XCST implementation supports a set of extensions for web application development based on ASP.NET MVC 5. Here's a sample contact form module:
-
-<script src="http://gist-it.appspot.com/https://github.com/maxtoroq/XCST/blob/master/samples/aspnet/contact.xcst"></script>
+The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5. See the [contact form](https://github.com/maxtoroq/XCST/blob/master/samples/aspnet/contact.xcst) sample.
 
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
