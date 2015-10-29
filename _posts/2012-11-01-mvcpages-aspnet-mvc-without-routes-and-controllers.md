@@ -130,7 +130,7 @@ Same ol' MVC. You know the features: model binding, model validation, strongly-t
 
 Also, a new feature: Layout compatibility. Ever tried using an MVC layout from Web Pages? you get:
 
-<div style="background-color: white;">
+<div style="background-color: white; margin-bottom: 1em;">
 <div style="color: red; font-family: Verdana; font-size: 18pt; font-weight: normal;">
 Server Error in '/' Application.<br />
 <hr color="silver" size="1" width="100%" />
