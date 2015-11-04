@@ -16,7 +16,7 @@ If you'd like to show your appreciation you can [donate](donate.html).
 
 Other interests
 ---------------
-- [Hypermedia APIs](http://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State)
+- [Hypermedia APIs](https://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State)
 - [Relax NG](https://en.wikipedia.org/wiki/RELAX_NG)
-- [Semantic HTML](http://en.wikipedia.org/wiki/Semantic_HTML)
-- [Structural typing](http://en.wikipedia.org/wiki/Structural_type_system)
+- [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML)
+- [Structural typing](https://en.wikipedia.org/wiki/Structural_type_system)
