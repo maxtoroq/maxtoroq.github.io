@@ -2,7 +2,7 @@
 title: About me
 ---
 
-<img src="http://1.gravatar.com/avatar/1056a38ecd323c658a8c9e93bb41b18d?s=150" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
+<img src="//1.gravatar.com/avatar/1056a38ecd323c658a8c9e93bb41b18d?s=150" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
 
 I do mostly server-side web programming. Like C#; love XSLT; [Trying to mix both](/XCST/).
 
