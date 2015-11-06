@@ -39,7 +39,7 @@ Detecting the use of an unknown extension element is a whole different story. If
 ```
 
 <div class="note">
-This solution works when extension templates have lower [import precedence][2]. Also, you can use `xsl:next-match` instead of `xsl:apply-imports`, although the effect should be the same.
+This solution works when extension templates have lower <a href="http://www.w3.org/TR/xslt-30/#dt-import-precedence">import precedence</a>. Also, you can use <code>xsl:next-match</code> instead of <code>xsl:apply-imports</code>, although the effect should be the same.
 </div>
 
 The above is a catch-all template for extensions. The idea is that it matches before the extension's template (if there is one). When `$s:extension-recurse` is `false()`, we call `xsl:apply-imports` with `s:extension-recurse` set to `true()`. If the extension's template exists, everything is fine. If the extension's template does not exist, the built-in template rule for elements kicks in. The built-in template rule will call `xsl:apply-templates` to process the extension's child nodes in the same mode, **passing along any parameters it recieved**. This would translate into something like this:
@@ -66,4 +66,3 @@ Just in case extensions have text nodes, it's a good idea to ignore those too:
 I hope this use case wasn't too complicated to illustrate deep-skip in XSLT 2.0, but it was an interesting one to me, and a clear example why it's a great new feature in XSLT 3.0.
 
 [1]: http://www.w3.org/TR/xslt-30/#element-mode
-[2]: http://www.w3.org/TR/xslt-30/#dt-import-precedence
