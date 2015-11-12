@@ -2,7 +2,7 @@
 title: About me
 ---
 
-<img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"/>
+<img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em; width: 200px; max-width: 100%"/>
 
 I do mostly server-side web programming. Like C#; love XSLT; [Trying to mix both](/XCST/).
 
