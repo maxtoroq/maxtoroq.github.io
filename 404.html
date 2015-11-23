@@ -10,16 +10,20 @@ layout: null
    <link href="/css/site.css" rel="stylesheet" />
 </head>
 <body>
+<header>
    <div class="container">
-      <header class="main"><a href="/">{{ site.title }}</a></header>
+      <div class="site-title"><a href="/">{{ site.title }}</a></div>
       <nav class="main">
          <a href="/">home</a>
       </nav>
-      <main>
-         <header>
-            <h1>{{ page.title }}</h1>
-         </header>
-      </main>
    </div>
+</header>
+<main>
+   <div class="container">
+      <header>
+         <h1>{{ page.title }}</h1>
+      </header>
+   </div>
+</main>
 </body>
 </html>
