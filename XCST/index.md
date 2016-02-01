@@ -63,7 +63,7 @@ At least not for now. Only named templates.
 
 ### No qualified names for variables and functions
 
-Variable and function names are mapped directly to C# identifiers, therefore qualified names are not an option. You can still use qualified names for templates and output definitions.
+Variable and function names are mapped directly to C# identifiers, therefore qualified names are not an option. You can still use qualified names for templates, output and attribute set definitions.
 
 ### Not structured, not immutable
 
