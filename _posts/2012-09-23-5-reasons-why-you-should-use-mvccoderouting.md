@@ -6,8 +6,8 @@ tags: [asp.net mvc, mvccoderouting, routing]
 
 [MvcCodeRouting][1] v1.0 is out, this post highlights the library's most important features and why I believe is a must have for all ASP.NET MVC developers.
 
-1. Convention over configuration
---------------------------------
+## 1. Convention over configuration
+
 Getting started with MvcCodeRouting in a new project, or integrating with an existing codebase, requires very little configuration, and many times no configuration at all. This is because the library recognizes that most of the time you follow the `{controller}/{action}` or `{controller}/{action}/{id}` convention. For example, let's take the [MvcMusicStore][2] application and use MvcCodeRouting on it:
 
 ```csharp
