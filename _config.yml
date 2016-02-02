@@ -5,11 +5,6 @@ feed: /feed.xml
 timezone: America/Santiago
 permalink: /:year/:month/:title.html
 
-markdown: redcarpet
-
-redcarpet:
-   extensions: [footnotes]
-
 sass:
   style: compressed
 
