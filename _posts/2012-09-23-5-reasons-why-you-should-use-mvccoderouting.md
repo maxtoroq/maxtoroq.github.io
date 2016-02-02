@@ -89,8 +89,8 @@ OK, so the application worked fine with 1 route and now we have 10, how is that 
 
 MvcMusicStore is actually not a very good case study, because it only uses the default route (`{controller}/{action}/{id}`). Routing presents no challenges when you only have one route, but real-world applications use more than one route, and that's when you start facing issues, since adding new routes can potentially break the existing ones.
 
-2. Automatic route grouping, ordering and constraining
-------------------------------------------------------
+## 2. Automatic route grouping, ordering and constraining
+
 Instead of creating one route per action MvcCodeRouting groups similar actions to minimize the number of routes created. For instance, the routes for the `StoreManager` controller are:
 
 ```csharp
@@ -119,8 +119,8 @@ MvcCodeRouting knows **how to order routes to avoid URL generation issues**.
 
 Using **constraints for the action token avoids route conflicts**. MvcCodeRouting also uses constraints for action parameters, which you can override on a per-parameter or per-site basis. Constraining also helps **keeping bad URLs out**, e.g. `/StoreManager/Edit/foo` doesn't match any route.
 
-3. Custom routes
-----------------
+## 3. Custom routes
+
 Now that we have conventional routes automatically created for us let's see how we can configure more customized routes. Let's change `Store/Details/{id}` to a more SEO friendly format, like `p/{id}/{slug}`.
 
 This is the current action code:
@@ -164,8 +164,8 @@ routes.MapRoute(null, "p/{id}/{slug}",
 
 As you can see, **custom routes are easy**.
 
-4. Route formatting
--------------------
+## 4. Route formatting
+
 Now that we have SEO friendly routes let's see if we can make our conventional routes look prettier. A very common URL formatting convention is lower case hyphenated, this is how we can an implement it:
 
 ```csharp
@@ -191,8 +191,8 @@ routes.MapRoute(null, "shopping-cart/{action}/{id}",
 
 The beauty of route formatting is that it doesn't affect URL generation. For instance, `Url.Action("AddToCart", "ShoppingCart")` continues to work, even though the route uses `add-to-cart` and not `AddToCart`. **Route formatting is easy**.
 
-5. Namespaces
--------------
+## 5. Namespaces
+
 Currently, the `StoreManager` controller only manages `Album`s, what about the other entities in our application, like `Artist` and `Genre`? Let's add actions for those too, but adding them to the `StoreManager` controller would make it grow too much and make the code hard to maintain, so instead let's create separate controllers in a sub-namespace:
 
 ```csharp
