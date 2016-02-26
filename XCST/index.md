@@ -78,7 +78,7 @@ Original features
 
 ### Type definitions
 
-Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in C#. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
+Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in .NET. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
 
 ```xml
 <c:type name='Order'>
