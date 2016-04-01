@@ -67,7 +67,7 @@ Variable and function names are mapped directly to C# identifiers, therefore qua
 
 ### Not structured, not immutable
 
-XCST does not change what *kind* of language C# is. You can do things you can't do in XSLT, like exit early from a template (using `c:return`) or changing the value of a variable (using `c:set`). Likewise, `c:next-iteration` and `c:break` are not required to be in a tail position.
+XCST does not change what *kind* of language C# is. You can do things you can't do in XSLT, like exit early from a template (using `c:return`) or changing the value of a variable (using `c:set`).
 
 Original features
 -----------------
