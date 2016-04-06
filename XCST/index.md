@@ -109,7 +109,7 @@ Use the `c:script` instruction for inline C#.
 
 ### Application extension
 
-The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5. See the [contact form](https://github.com/maxtoroq/XCST/blob/master/samples/aspnet/contact.xcst) sample.
+The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5. See [ASP.NET programming with XCST]({% post_url 2016-04-aspnet-programming-with-xcst %}).
 
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
