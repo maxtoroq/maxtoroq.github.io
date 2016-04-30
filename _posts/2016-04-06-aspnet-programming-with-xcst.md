@@ -150,7 +150,7 @@ The glue
 
          AntiForgery.Validate();
 
-         if (TryUpdate(contact)
+         if (TryBind(contact)
             && SendMail(contact)) {
 
             sent = true;
