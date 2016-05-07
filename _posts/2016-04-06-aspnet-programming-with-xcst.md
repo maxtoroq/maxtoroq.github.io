@@ -169,7 +169,7 @@ The glue
 </c:template>
 ```
 
-`c:initial-template` is a special template that is the stating point of the program, like the `Main` method in a console app.
+`c:initial-template` is a special template that is the starting point of the program, like the `Main` method in a console app.
 
 The code in the script is fairly simple.
 
