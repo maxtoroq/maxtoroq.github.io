@@ -114,7 +114,7 @@ The XCST implementation supports a set of extension instructions for web applica
 Installing
 ----------
 
-<table border="1" cellpadding="2">
+<table border="1" cellpadding="4">
 <thead>
 <tr>
 <th>Package</th>
