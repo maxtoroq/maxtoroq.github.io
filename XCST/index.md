@@ -111,6 +111,16 @@ Use the `c:script` instruction for inline C#.
 
 The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5. See [ASP.NET programming with XCST]({% post_url 2016-04-06-aspnet-programming-with-xcst %}).
 
+Installing
+----------
+
+Package                                                       | Description                                | Target Framework
+------------------------------------------------------------- |------------------------------------------- | ----------------
+[Xcst](https://www.nuget.org/packages/Xcst)                   | Runtime API                                | .NET 4.5
+[Xcst.Compiler](https://www.nuget.org/packages/Xcst.Compiler) | Compiler API                               | .NET 4.5
+[Xcst.Web](https://www.nuget.org/packages/Xcst.Web)           | XCST pages                                 | .NET 4.5
+[Xcst.Web.Mvc](https://www.nuget.org/packages/Xcst.Web.Mvc)   | XCST pages/views and application extension | .NET 4.5
+
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
 </div>
