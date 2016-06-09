@@ -114,12 +114,37 @@ The XCST implementation supports a set of extension instructions for web applica
 Installing
 ----------
 
-Package                                                       | Description                                | Target Framework
-------------------------------------------------------------- |------------------------------------------- | ----------------
-[Xcst](https://www.nuget.org/packages/Xcst)                   | Runtime API                                | .NET 4.5
-[Xcst.Compiler](https://www.nuget.org/packages/Xcst.Compiler) | Compiler API                               | .NET 4.5
-[Xcst.Web](https://www.nuget.org/packages/Xcst.Web)           | XCST pages                                 | .NET 4.5
-[Xcst.Web.Mvc](https://www.nuget.org/packages/Xcst.Web.Mvc)   | XCST pages/views and application extension | .NET 4.5
+<table border="1" cellpadding="2">
+<thead>
+<tr>
+<th>Package</th>
+<th>Description</th>
+<th>Target Framework</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.nuget.org/packages/Xcst">Xcst</a></td>
+<td>Runtime API</td>
+<td>.NET 4.5</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/Xcst.Compiler">Xcst.Compiler</a></td>
+<td>Compiler API</td>
+<td>.NET 4.5</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/Xcst.Web">Xcst.Web</a></td>
+<td>XCST pages</td>
+<td>.NET 4.5</td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/Xcst.Web.Mvc">Xcst.Web.Mvc</a></td>
+<td>XCST pages/views and application extension</td>
+<td>.NET 4.5</td>
+</tr>
+</tbody>
+</table>
 
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
