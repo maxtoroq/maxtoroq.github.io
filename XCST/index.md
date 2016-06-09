@@ -146,6 +146,6 @@ Installing
 </tbody>
 </table>
 
-<div style="text-align: center">
+<div style="text-align: center; margin-top: 2em">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
 </div>
