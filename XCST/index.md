@@ -54,6 +54,16 @@ Here's a more complete example of an XCST module:
 </c:module>
 ```
 
+Modules and Packages
+--------------------
+While mainstream languages allow you to combine objects or functions to build programs, building new programs from existing ones is not as easy. Code reuse, both in compiled and source form, is hard to achieve, unless the existing program is carefully designed for it. For instance, to override a function the existing program must accept it as a parameter so a different function can be passed in to be used instead. In other words, dependencies must be parameterized, something known as dependency injection. XCST solves this problem: the same function can be defined in different modules, and the one closest to the principal module is used (a mechanism called import precedence).
+
+Modules have two main disadvantages that packages solve. First, if you have many modules which import the same common module, and that need to be compiled independently, then you are wasting a lot of memory and compilation time by compiling the same common code over and over again. Each compiled module will have its own copy of the common code. The C# analogy are partial classes, which is how modules are implemented in XCST.
+
+Second, the visibility of functions. In modules, functions are always visible to other modules. This makes it hard to hide code, and avoid name clashes (e.g. accidentally override a function). The same problem with partial classes.
+
+Packages are implemented as classes, composed of all the partial classes that represent each module imported by the package. When a package uses another package, it's using another class, therefore solving the duplicate compilation and visibility issues.
+
 Notable differences with XSLT
 -----------------------------
 
