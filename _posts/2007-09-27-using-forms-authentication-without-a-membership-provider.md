@@ -12,9 +12,9 @@ ASP.NET comes with the built-in SqlMembershipProvider, which stores membership i
 - You don’t have SqlServer installed in you production server.
 - You only want to give access to a couple of trusting users, so a database is a bit too much.
 
-So, how to prevent the usage of SqlMembershipProvider, or any configured provider? All you need to do is handle the `Login.Authenticate` event:
+So, how to prevent the usage of SqlMembershipProvider, or any configured provider? All we need to do is handle the `Login.Authenticate` event:
 
-```aspx
+```csharp
 <script runat="server">
    protected void Login1_Authenticate(object sender, AuthenticateEventArgs e) { 
 
