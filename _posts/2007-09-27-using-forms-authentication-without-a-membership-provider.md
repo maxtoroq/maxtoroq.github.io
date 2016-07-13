@@ -1,6 +1,6 @@
 ---
 title: Using Forms Authentication without a Membership Provider
-date: 2007-09-27 00:00:00 -0300
+date: 2007-09-27 23:59:24 -0400
 tags: [asp.net webforms]
 originally_published_at: http://maxtoroq.wordpress.com/2007/09/27/using-forms-authentication-without-a-membership-provider/
 comments: off
