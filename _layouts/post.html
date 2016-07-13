@@ -17,6 +17,10 @@ layout: default
       <br />
       Tags: <span itemprop="keywords">{{ page.tags | join: ', ' }}</span>
       {% endif %}
+      {% if page.originally_published_at %}
+      <br/>
+      Originally published at {{ page.originally_published_at }}
+      {% } %}
    </footer>
 
 </article>
