@@ -15,7 +15,7 @@ ExecuteCommand("DELETE FROM Products WHERE ProductID = {0}", 5);
 
 One of the advantages for creating commands this way is that you can write provider-independent SQL, because you no longer need to use a marker like `@` or `?` in the command's text. Also, you don't need to assign the parameter names. Overall, it saves you a lot of repetitive code.
 
-The only real problem for implementing this method is how to get the correct parameter marker for the provider being used. My solution depends on the specific ADO.NET provider implementations of the [GetParameterPlaceholder][1] and [GetParameterName][2] methods.
+The only real problem for implementing this method is how to get the correct parameter marker for the provider being used. My solution depends on the specific ADO.NET provider implementations of the [GetParameterPlaceholder][2] and [GetParameterName][3] methods.
 
 Here's the source code:
 
