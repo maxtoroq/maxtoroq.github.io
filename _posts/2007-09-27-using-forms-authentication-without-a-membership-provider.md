@@ -1,9 +1,9 @@
 ---
 title: Using Forms Authentication without a Membership Provider
 date: 2007-09-27 00:00:00 -0300
+originally_published_at: http://maxtoroq.wordpress.com/2007/09/27/using-forms-authentication-without-a-membership-provider/
 comments: off
 ---
-<div class="note">This post was originally published at http://maxtoroq.wordpress.com/2007/09/27/using-forms-authentication-without-a-membership-provider/</div>
 
 This might seem obvious to some, but surely wasn't to me. How to use Forms Authentication (that is, use the Login control, LoginStatus, etc) without a Membership provider?
 
