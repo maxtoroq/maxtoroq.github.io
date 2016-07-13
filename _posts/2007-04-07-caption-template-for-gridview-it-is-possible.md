@@ -1,6 +1,6 @@
 ---
 title: "Caption Template for GridView: It is possible."
-date: 2007-04-07 01:02:00 -0300
+date: 2007-04-07 13:02:06 -0400
 tags: [asp.net webforms]
 originally_published_at: http://maxtoroq.wordpress.com/2007/04/07/caption-template-for-gridview-it-is-possible/
 comments: off
