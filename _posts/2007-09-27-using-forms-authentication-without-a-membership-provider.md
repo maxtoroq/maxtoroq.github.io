@@ -8,7 +8,7 @@ comments: off
 
 This might seem obvious to some, but surely wasn't to me. How to use Forms Authentication (that is, use the Login control, LoginStatus, etc) without a Membership provider?
 
-ASP.NET comes with the built-in SqlMembershipProvider, which stores membership info in a SqlServer Express database (and saves it in ~/App_Data). The are a couple of reasons why you might not want to use it:
+ASP.NET comes with the built-in SqlMembershipProvider, which stores membership info in a SqlServer Express database (and saves it in ~/App_Data). There are a couple of reasons why you might not want to use it:
 
 - You don’t have SqlServer installed in you production server.
 - You only want to give access to a couple of trusting users, so a database is a bit too much.
