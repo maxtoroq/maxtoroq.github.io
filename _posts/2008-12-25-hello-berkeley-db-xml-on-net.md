@@ -1,6 +1,6 @@
 ---
 title: Hello Berkeley DB XML on .NET
-date: 2008-12-25 02:39:00 -0300
+date: 2008-12-25 02:39:06 -0400
 tags: [bdb-xml]
 originally_published_at: http://maxtoroq.wordpress.com/2008/12/25/hello-berkeley-db-xml-on-net/
 comments: off
