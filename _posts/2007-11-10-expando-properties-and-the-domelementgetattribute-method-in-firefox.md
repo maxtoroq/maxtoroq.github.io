@@ -8,7 +8,7 @@ comments: off
 
 When working on a custom validator control with client-side script I had issues with the JavaScript code in Firefox. This is what I learnt.
 
-ASP.NET 2.0 uses expando properties to attach additional information to validators, properties like `controltovalidate`, `errormessage`, `evaluationfunction`, etc. This is done programatically at the client, instead of just rendering invalid HTML attributes. Expando properties in javascript are perfectly legal. Here's an example of the generated code for two validators:
+ASP.NET 2.0 uses expando properties to attach additional information to validators, properties like `controltovalidate`, `errormessage`, `evaluationfunction`, etc. This is done programatically at the client, instead of just rendering invalid HTML attributes. Expando properties in JavaScript are perfectly legal. Here's an example of the generated code for two validators:
 
 ```javascript
 var rutVal = document.all ? document.all["rutVal"] : document.getElementById("rutVal");
