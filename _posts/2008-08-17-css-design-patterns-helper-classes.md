@@ -48,7 +48,7 @@ I like the second rule very much, because it shows how helper classes can help u
 
 By using helper classes we are basically tagging the elements with style information that, as opposed with inline styling, it's not actually implemented. The last example looks very similar to an attribute selector, like `input[type="text"]`, which is almost the same as an XPath query with a predicate. In essence all selectors are queries against the document's structure and/or user-defined class names. If you use class names that describe a particular style then you can query against the document's style.
 
-### Further reading
+### Related reading
 
 - [CSS Reusable Classes][1]
 - [Multiple CSS Classes][2]
