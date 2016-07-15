@@ -5,7 +5,7 @@ tags: [ado.net]
 originally_published_at: http://maxtoroq.wordpress.com/2007/10/29/implementing-a-stringformat-like-createcommandstring-params-object-extension-method/
 comments: off
 ---
-<div class="note">This extension is now included in the <a href="/DbExtensions/">DbExtensions</a> library.</div>
+<div class="note">This extension is now included in the <a href="{{site.url}}/DbExtensions/">DbExtensions</a> library.</div>
 
 When first trying out Linq to Sql I was very impressed with the simple and concise [ExecuteCommand][1] method. This method take a SQL string plus zero or more of objects that represent the values of the parameters you wish to use in the command. The cool thing is that instead of writing in the string the name of the parameters, you use `string.Format` syntax. Using this technique, a simple call for deleting the Product that has ProductID set to 5 would be:
 
