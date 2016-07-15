@@ -82,7 +82,7 @@ In the end it's your responsibility to choose frameworks wisely. If Microsoft fr
 
 If you ask me, frameworks don't need to be perfect, support every use case, or please everyone. Frameworks can be boring but useful. **Frameworks need stability**. Being a .NET developer has taught me not to depend on frameworks too much.
 
-### Further Reading
+### Related Reading
 
 - [Microsoft and developer trust (or lack thereof)][8]
 
