@@ -6,7 +6,7 @@ originally_published_at: http://maxtoroq.wordpress.com/2008/10/19/linq-to-mysql-
 comments: off
 ---
 
-On each release Matt Warren's IQueryable provider is getting more and more interesting. On this post I'll show you how easy is to plug-in your custom QueryFormatter to start querying MySQL databases.
+On each release Matt Warren's IQueryable provider is getting more and more interesting. On this post I'll show you how easy it is to plug-in your custom QueryFormatter to start querying MySQL databases.
 
 ## Step 1: Download Matt Warren's provider
 The code on this post is based on [release 11][1]. Although I cannot ensure it will work with newer releases it is always recommended that you download the latest.
