@@ -6,6 +6,8 @@ originally_published_at: http://maxtoroq.wordpress.com/2007/07/24/querying-with-
 comments: off
 ---
 
+<div class="note">Source files are missing.</div>
+
 Too bad LINQ to SQL isn't a generic ADO.NET API. Although the difficult part is SQL translation, because of the differences in syntax between DBMSs, there are other features that shouldn't cause any trouble, like object tracking and object materializing. However, if you try for instance `DataContext.Translate<T>(DbDataReader)` and pass any reader except SqlDataReader you'll get an exception.
 
 So, what can we do besides rewriting the whole API? In my solution I take advantage of `DataContext.GetCommand(IQueryable)`, which returns a SqlCommand, then convert that command to another DbCommand, like MySqlCommand, and finally create the objects myself.
