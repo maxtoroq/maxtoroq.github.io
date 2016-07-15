@@ -55,3 +55,8 @@ using (NorthwindDB db = new NorthwindDB()) {
    } 
 }
 ```
+
+### 2007-07-31 Update
+Today I realized that LINQ to SQL was connecting to SqlServer when calling `DataContext.GetCommand()`. The reason is because it needed to figure out which version of SqlServer it's going to get the data from, and for that uses the `DbConnection.ServerVersion` property.
+
+You can avoid this by simply specifiying the provider metadata in your mapping info, so if you are using attributes you can add the ProviderAttribute to your DataContext class and pass either `typeof(Sql2000Provider)` or `typeof(Sql2005Provider)`.
