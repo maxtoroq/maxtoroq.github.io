@@ -108,7 +108,7 @@ Razor and XSLT are both excellent tools. The following table compares their stre
 - [Saxon XSLT and XQuery View Engines][3]
 - [SgmlReader][4]
 
-### Further Reading
+### Related Reading
 
 - [Using Razor and XSLT in the same project][5]
 - [Why Use XSLT in Server Side Web Frameworks For Output Generation?][6]
