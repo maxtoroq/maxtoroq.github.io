@@ -10,9 +10,9 @@ CSS can be one of the most frustrating technologies in web development. Things l
 
 Helper classes are reusable rules that use class selectors (sometimes combined with type/ID selectors). Helper classes are designed to let you:
 
-1. Apply style to an element without having to create a special rule for that element: This means you can write less CSS. You can apply multiple helper classes to an element, as opposed to creating a special class and declare multiple properties in it.
-2. Abstract away browser inconsistencies: One helper class can declare multiple properties that have the same effect, but target different browsers.
-3. Make documents more style readable: In server-side programming we are concerned to write readable programs, so by reading the code we can easily understand the program's behaviour. When using helper classes in a document, by reading the code you should easily visualise it's appearance. The class name should describe the effect of the rule, in other words, by knowing the class name we should have a solid idea of what the element will look like when that rule is applied.
+1. **Apply style to an element without having to create a special rule for that element**: This means you can write less CSS. You can apply multiple helper classes to an element, as opposed to creating a special class and declare multiple properties in it.
+2. **Abstract away browser inconsistencies**: One helper class can declare multiple properties that have the same effect, but target different browsers.
+3. **Make documents more style readable**: In server-side programming we are concerned to write readable programs, so by reading the code we can easily understand the program's behaviour. When using helper classes in a document, by reading the code you should easily visualise it's appearance. The class name should describe the effect of the rule, in other words, by knowing the class name we should have a solid idea of what the element will look like when that rule is applied.
 
 ### Example 1: Combining rules
 Given the following rules:
