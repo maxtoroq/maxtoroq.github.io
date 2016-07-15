@@ -1,7 +1,7 @@
 ---
 title: Expando properties and the DomElement.getAttribute method in Firefox
 date: 2007-11-10 00:52:50 -0400
-tags: [dom]
+tags: [dom, javascript]
 originally_published_at: http://maxtoroq.wordpress.com/2007/11/10/expando-properties-and-the-domelementgetattribute-method-in-firefox/
 comments: off
 ---
@@ -28,4 +28,4 @@ To write the validation function you need to access these properties, so my firs
 
 The example above matches the first case, the properties are not part of the definition for the element (validators use the `<span>` element), and these are set via code, not markup. So, how should I get the values? Easy, the object-oriented way. Just write `validator.propertyName`.
 
-The safest practice is to try both ways. First you can try the validator.propertyName and if it returns null then try the getAttribute method. You can't go wrong now.
+The safest practice is to try both ways. First you can try the `validator.propertyName` and if it returns null then try the getAttribute method. You can't go wrong now.
