@@ -4,7 +4,7 @@ title: About me
 
 <img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em; width: 250px; max-width: 100%"/>
 
-I do mostly server-side web programming. Like C#; love XSLT; [Trying to mix both](/XCST/).
+I do mostly server-side web programming. Over the years my application toolkit has mutated from *VBScript/XSLT* to *JScript/XSLT* to *WebForms* to *Dynamic Data* to *MVC/ASPX* to *MVC/Razor* to *MVC/XSLT* to *[MvcPages](/MvcPages/)* to *[XCST](/XCST/)*, the last two developed by myself. XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
 Programming is hard because our tools are bad. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. Declarative is the answer.
 
@@ -14,9 +14,18 @@ Feel free to [email me](mailto:maxtoroq@gmail.com), or follow me on [@maxtoroq](
 
 If you'd like to show your appreciation you can [donate](donate.html).
 
-Other interests
----------------
-- [Hypermedia APIs](https://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State)
-- [Relax NG](https://en.wikipedia.org/wiki/RELAX_NG)
+Likes
+-----
+- C#
+- XSLT
+- Relax NG
 - [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML)
 - [Structural typing](https://en.wikipedia.org/wiki/Structural_type_system)
+- [Hypermedia APIs](https://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State)
+
+Dislikes
+--------
+- JavaScript
+- VB
+- F#
+- Single-page apps
