@@ -20,4 +20,4 @@ C#, XSLT, Relax NG, PowerShell, [Semantic HTML](https://en.wikipedia.org/wiki/Se
 
 Dislikes
 --------
-JavaScript, VB, F#, Single-page apps.
+JavaScript, VB, F#.
