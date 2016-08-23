@@ -615,6 +615,12 @@ Any other Razor feature you are not sure how to translate to XCST? Let me know b
 
 - [ASP.NET programming with XCST][4] (or *How to build a contact form* with what you learned here)
 
+<script>
+   var disqus_shortname = "maxtoroq";
+   var disqus_title = "{{ page.title }}";
+   var disqus_url = "{{ site.url }}{{ page.url }}";
+</script>
+
 [1]: /XCST/
 [2]: https://msdn.microsoft.com/en-us/library/dn961160
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
