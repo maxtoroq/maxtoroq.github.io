@@ -60,3 +60,4 @@ defaults:
       values:
          layout: XCST
          repository_url: https://github.com/maxtoroq/XCST
+         support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
