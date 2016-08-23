@@ -18,7 +18,7 @@ title: XCST Introduction for the Razor Developer
 - [Layouts](#layouts)
 - [Working with data and postbacks](#working-with-data-and-postbacks)
 - [HTML helpers](#html-helpers)
-- [RenderPage/RenderPartial](#renderpage-renderpartial)
+- [RenderPage/RenderPartial](#renderpagerenderpartial)
 - [`model` directive](#model-directive)
 
 Modules
@@ -552,14 +552,14 @@ Razor                                                 | XCST
 `Html.Name("foo")`                                    | `this.ModelHelper.FieldName("foo")`
 `Html.NameFor(p => p.foo)`                            | `this.ModelHelper.FieldName(p => p.foo)`
 `Html.NameForModel()`                                 | `this.ModelHelper.FieldName()`
-`Html.Partial()`                                      | see [RenderPage/RenderPartial](#renderpage-renderpartial)
+`Html.Partial()`                                      | see [RenderPage/RenderPartial](#renderpagerenderpartial)
 `Html.Password("foo")`                                | `<a:password name='foo'/>`
 `Html.PasswordFor(p => p.foo)`                        | `<a:password for='foo'/>`
 `Html.RadioButton("foo")`                             | `<a:radio-button name='foo'/>`
 `Html.RadioButtonFor(p => p.foo)`                     | `<a:radio-button for='foo'/>`
 `Html.Raw("<foo>")`                                   | `<c:value-of value='"&lt;foo>"' disable-output-escaping='yes'/>`
 `Html.RenderAction()`                                 | n/a
-`Html.RenderPartial()`                                | see [RenderPage/RenderPartial](#renderpage-renderpartial)
+`Html.RenderPartial()`                                | see [RenderPage/RenderPartial](#renderpagerenderpartial)
 `Html.RouteLink()`                                    | n/a
 `Html.TextArea("foo")`                                | `<a:text-area name='foo'/>`
 `Html.TextAreaFor(p => p.foo)`                        | `<a:text-area for='foo'/>`
