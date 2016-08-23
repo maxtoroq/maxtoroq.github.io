@@ -121,6 +121,19 @@ Use the `c:script` instruction for inline C#.
 
 The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5.
 
+```xml
+<form method='post' class='form-horizontal'>
+   <a:anti-forgery-token/>
+   <a:validation-summary/>
+   <a:editor with-params='new { labelColumnClass = "col-md-3", fieldColumnClass = "col-md-9" }'/>
+   <div class='form-group'>
+      <div class='col-md-offset-3 col-md-9'>
+         <button type='submit' class='btn btn-primary'>Send</button>
+      </div>
+   </div>
+</form>
+```
+
 For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
