@@ -119,43 +119,12 @@ Use the `c:script` instruction for inline C#.
 
 ### Application extension
 
-The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5. See [ASP.NET programming with XCST]({% post_url 2016-04-06-aspnet-programming-with-xcst %}).
+The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5.
 
-Installing
-----------
-
-<table border="1" cellpadding="4">
-<thead>
-<tr>
-<th>Package</th>
-<th>Description</th>
-<th>Target Framework</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst">Xcst</a></td>
-<td>Runtime API</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Compiler">Xcst.Compiler</a></td>
-<td>Compiler API</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Web">Xcst.Web</a></td>
-<td>XCST pages</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Web.Mvc">Xcst.Web.Mvc</a></td>
-<td>XCST pages/views and application extension</td>
-<td>.NET 4.5</td>
-</tr>
-</tbody>
-</table>
+For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=XCST&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
 </div>
+
+[1]: {{ page.documentation_url }}
