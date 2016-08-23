@@ -2,7 +2,7 @@
 title: XCST Introduction for the Razor Developer
 ---
 
-[XCST][1] is a middle ground between XSLT and Razor. Being XML, it has a stricter syntax, but at the same time there's more flexibility with what you can do with your code. If you are familiar with XSLT and XML then picking up XCST should be easy. If you don't, then this guide is for you.
+XCST is a middle ground between XSLT and Razor. Being XML, it has a stricter syntax, but at the same time there's more flexibility with what you can do with your code. If you are familiar with XSLT and XML then picking up XCST should be easy. If you don't, then this guide is for you.
 
 **Contents**
 
