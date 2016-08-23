@@ -437,7 +437,7 @@ In XCST you have to call the `content` template instead.
 ```
 
 <div class="note">
-Razor has start pages where you can set the layout for the whole site if you want. XCST has no such mechanism, to use a layout you have to explicitly import it.
+Razor has <em>start pages</em> where you can set the layout for the whole site if you want. XCST has no such mechanism, to use a layout you have to explicitly import it.
 </div>
 
 Working with data and postbacks
