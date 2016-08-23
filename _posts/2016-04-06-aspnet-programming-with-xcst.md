@@ -179,5 +179,10 @@ Wrapping up
 -----------
 The complete page along with a runnable project can be found [here][2]. Questions, comments? below.
 
+### Related Reading
+
+- [XCST Introduction for the Razor Developer][3]
+
 [1]: {{ site.url }}/XCST/
 [2]: https://github.com/maxtoroq/XCST/blob/master/samples/aspnet/contact.xcst
+[3]: {{ site.url }}/XCST/docs/intro-for-razor-dev.html
