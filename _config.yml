@@ -59,6 +59,7 @@ defaults:
          type: page
       values:
          layout: XCST
-         base_url: "/XCST/"
+         base_url: /XCST/
          repository_url: https://github.com/maxtoroq/XCST
+         documentation_url: /XCST/docs/
          support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
