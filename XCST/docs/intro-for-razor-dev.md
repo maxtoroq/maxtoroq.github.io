@@ -609,19 +609,14 @@ In XCST you use the `model` processing instruction.
 
 Wrapping up
 -----------
-Any other Razor feature you are not sure how to translate to XCST? Let me know below.
+Any other Razor feature you are not sure how to translate to XCST? [Let me know][5].
 
 ### Related Reading
 
 - [ASP.NET programming with XCST][4] (or *How to build a contact form* with what you learned here)
 
-<script>
-   var disqus_shortname = "maxtoroq";
-   var disqus_title = "{{ page.title }}";
-   var disqus_url = "{{ site.url }}{{ page.url }}";
-</script>
-
 [1]: /XCST/
 [2]: https://msdn.microsoft.com/en-us/library/dn961160
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html
+[5]: {{ page.support_url }}
