@@ -76,9 +76,15 @@ blockquote {
 }
 
 div.note {
+   
    margin-bottom: 1em;
    background: #fff4cc;
    border-color: #ffe070;
+   
+   &.danger {
+      background: #fad7d4;
+      border-color: #f08a81;
+   }
 }
 
 table {
