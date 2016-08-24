@@ -2,34 +2,14 @@
 title: Installing
 ---
 
-<table border="1" cellpadding="4">
-<thead>
-<tr>
-<th>Package</th>
-<th>Description</th>
-<th>Target Framework</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst">Xcst</a></td>
-<td>Runtime API</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Compiler">Xcst.Compiler</a></td>
-<td>Compiler API</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Web">Xcst.Web</a></td>
-<td>XCST pages</td>
-<td>.NET 4.5</td>
-</tr>
-<tr>
-<td><a href="https://www.nuget.org/packages/Xcst.Web.Mvc">Xcst.Web.Mvc</a></td>
-<td>XCST pages/views and application extension</td>
-<td>.NET 4.5</td>
-</tr>
-</tbody>
-</table>
+Package            | Description                                | Framework
+------------------ | ------------------------------------------ | ---------
+[Xcst][1]          | Runtime API                                | .NET 4.5
+[Xcst.Compiler][2] | Compiler API                               | .NET 4.5
+[Xcst.Web][3]      | XCST pages                                 | .NET 4.5
+[Xcst.Web.Mvc][4]  | XCST pages/views and application extension | .NET 4.5
+
+[1]: https://www.nuget.org/packages/Xcst
+[2]: https://www.nuget.org/packages/Xcst.Compiler
+[3]: https://www.nuget.org/packages/Xcst.Web
+[4]: https://www.nuget.org/packages/Xcst.Web.Mvc
