@@ -1,9 +1,8 @@
 ---
-repository_url: "https://github.com/maxtoroq/MvcPages"
 title: MvcPages
 ---
 
-<div class="note">
+<div class="note danger">
 Development of MvcPages is suspended in favor of <a href="/XCST/">XCST</a>
 </div>
 
