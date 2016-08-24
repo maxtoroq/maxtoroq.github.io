@@ -96,6 +96,10 @@ table, td, th {
    border-style: solid;
 }
 
+td, th {
+   padding: .1em .3em;
+}
+
 ins {
    text-decoration: none;
    border-bottom: 1px dotted;
