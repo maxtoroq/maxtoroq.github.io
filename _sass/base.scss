@@ -91,6 +91,11 @@ table {
    overflow: auto;
 }
 
+table, td, th {
+   border-width: 1px;
+   border-style: solid;
+}
+
 ins {
    text-decoration: none;
    border-bottom: 1px dotted;
