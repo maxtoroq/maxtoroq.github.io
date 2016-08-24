@@ -51,7 +51,7 @@ defaults:
          type: page
       values:
          layout: myxsl
-         base_url: "/myxsl/"
+         base_url: /myxsl/
          repository_url: https://github.com/maxtoroq/myxsl
    -
       scope:
