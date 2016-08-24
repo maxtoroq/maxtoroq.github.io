@@ -2,7 +2,7 @@
 title: myxsl
 ---
 
-<div class="note">
+<div class="note danger">
 Development of myxsl is suspended in favor of <a href="/XCST/">XCST</a>
 </div>
 
