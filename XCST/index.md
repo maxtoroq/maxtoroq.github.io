@@ -27,10 +27,6 @@ WriteStartElement("ul", @""); {
 WriteEndElement();
 ```
 
-<div class="note">
-Note how interpolated strings is an essential feature to support attribute and text value templates.
-</div>
-
 The generated code is compatible with `System.Xml.XmlWriter`'s API.
 
 Here's a more complete example of an XCST module:
