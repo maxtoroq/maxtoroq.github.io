@@ -193,7 +193,7 @@ The output for all three examples is:
 <ul><li>Alpha</li><li>Tango</li><li>Charly</li></ul>
 ```
 
-...unless you enable indentation using an output definition:
+You can enable indentation using an output definition:
 
 ```xml
 <c:output indent='yes'/>
@@ -205,6 +205,18 @@ The output for all three examples is:
       <li>Charly</li>
    </ul>
 </c:template>
+```
+
+...or use `xml:space='preserve'` to make whitespace output unchanged:
+
+```xml
+<ul xml:space='preserve'>
+   <li>Alpha</li>
+   
+   <li>Tango</li>
+   
+   <li>Charly</li>
+</ul>
 ```
 
 Comments
