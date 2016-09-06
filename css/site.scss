@@ -7,8 +7,13 @@
    max-width: 700px;
 }
 
-body > header > .container {
-   padding-bottom: 0;
+body > header {
+   
+   background-color: yellow;
+   
+   > .container {
+      padding-bottom: 0;
+   }
 }
 
 .site-title {
