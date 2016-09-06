@@ -54,7 +54,7 @@ View resources must be named using the following format: `<assemblyName>.Views.<
 
 Conclusions
 -----------
-[MvcCodeRouting][1] makes it really easy to create and use plugins. The application developer (plugin user) is always in control of the URL space used by plugins, and can individually override views as needed. The plugin developer does not need to worry about how the plugin is exposed or how views are located.
+[MvcCodeRouting][2] makes it really easy to create and use plugins. The application developer (plugin user) is always in control of the URL space used by plugins, and can individually override views as needed. The plugin developer does not need to worry about how the plugin is exposed or how views are located.
 
 [1]: http://portableareas.codeplex.com/
 [2]: http://mvccoderouting.codeplex.com/
