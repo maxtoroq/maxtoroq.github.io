@@ -7,13 +7,18 @@
    max-width: 700px;
 }
 
-body > header {
+body {
    
-   background-color: rgba(255, 255, 0, 0.5);
+   color: #000;
+   background-color: #bfd7cf;
    
-   > .container {
-      padding-bottom: 0;
-   }
+   > header {
+      
+      background-color: rgba(255, 255, 0, 0.5);
+      
+      > .container {
+         padding-bottom: 0;
+      }
 }
 
 .site-title {
