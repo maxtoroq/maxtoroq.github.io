@@ -8,6 +8,10 @@ Getting Started
 - [SqlBuilder Tutorial](SqlBuilder.html)
 - [SqlSet Tutorial](SqlSet.html)
 
+Migrating
+---------
+- [To v6](migrating/to-v6.html)
+
 Reference
 ---------
 - [DbExtensions API Reference]({{ page.repository_url }}/blob/master/docs/api/README.md)
