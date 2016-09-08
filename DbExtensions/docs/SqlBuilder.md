@@ -54,7 +54,7 @@ The parameter placeholder is now replaced with a parameter name, and the paramet
 
 Keeping track of the last clause
 --------------------------------
-SqlBuilder keeps track of the last clause to determine when to use separators like commas (', '), logical operators (' AND '), etc, when building the clause body. This allows you to call the same method more than once:
+SqlBuilder keeps track of the last clause to determine when to use separators like commas (', '), logical operators (' AND '), etc, when building the clause's body. This allows you to call the same method more than once:
 
 ```csharp
 // SQL.SELECT is just a shortcut to new SqlBuilder().SELECT
@@ -76,7 +76,7 @@ FROM Products
 WHERE Name LIKE {0} AND CategoryID = {1}
 ```
 
-This is how you can dynamically construct the clause body. This *separator* feature does not apply for all clauses. For example, calling JOIN two times will append JOIN on both calls. Also notice we used a zero index for both parameter placeholders, but the output shows zero and one indexes. The format string must always use method-call-relative placeholders, SqlBuilder takes care of translating those into instance-relative.
+This is how you can dynamically construct the clause's body. This *separator* feature does not apply for all clauses. For example, calling JOIN two times will append JOIN on both calls. Also notice we used a zero index for both parameter placeholders, but the output shows zero and one indexes. The format string must always use method-call-relative placeholders, SqlBuilder takes care of translating those into instance-relative.
 
 To keep things DRY you can also use the [_][6] method for clause continuation:
 
