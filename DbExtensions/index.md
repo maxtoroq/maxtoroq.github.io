@@ -2,7 +2,7 @@
 title: DbExtensions — The SQL framework for .NET
 ---
 
-DbExtensions is a data-access API with a strong focus on **query composition, granularity and code aesthetics**. It supports both POCO and dynamic (untyped) mapping.
+DbExtensions is a data-access framework with a strong focus on **query composition, granularity and code aesthetics**. It supports both POCO and dynamic (untyped) mapping.
 
 Querying with SqlSet
 --------------------
