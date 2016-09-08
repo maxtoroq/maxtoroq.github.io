@@ -20,7 +20,7 @@ Most `SqlBuilder` and `SqlSet` methods had two overloads, e.g. `SELECT(string)` 
 
 Arrays in SqlBuilder and SqlSet are no longer *special*
 -----------------------------------------------------------
-`SqlBuilder` and `SqlSet` would automatically expand an array value as a list of parameters, e.g. `WHERE("foo IN ({0})", (object)new[] { "a", "b", "c" })` was equivalent to `WHERE("foo IN ({0}, {1}, {2})", "a", "b", "c")`. This turned out to be problematic for a couple of reasons. First, sometimes a cast was required (like in the given example) so the array was not to be interpreted as the full `params` array. Second, if you had array member in your models, e.g. binary columns that map to `byte[]`, then you had to workaround this feature.
+`SqlBuilder` and `SqlSet` would automatically expand an array value as a list of parameters, e.g. `WHERE("foo IN ({0})", (object)new[] { "a", "b", "c" })` was equivalent to `WHERE("foo IN ({0}, {1}, {2})", "a", "b", "c")`. This turned out to be problematic for a couple of reasons. First, sometimes a cast was required (like in the given example) so the array was not to be interpreted as the full `params` array. Second, if you had an array member in your model, e.g. binary columns that map to `byte[]`, then you had to workaround this feature.
 
 In v6 you have to call [SQL.List][1] to opt-in into this feature. See the [SqlBuilder tutorial][2] for more information.
 
