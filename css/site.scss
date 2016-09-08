@@ -9,12 +9,13 @@
 
 body {
    
-   color: #000;
    background-color: #cadbd5;
+   color: #000;
    
    > header {
       
-      background-color: rgba(255, 255, 0, 0.5);
+      //background-color: rgba(255, 255, 0, 0.5);
+      color: rgba(155, 155, 155, 0.6);
       
       > .container {
          padding-bottom: 0;
@@ -29,14 +30,13 @@ body {
    line-height: 1.2;
 
    a {
-      color: silver;
+      color: inherit;
    }
 }
 
 nav.main {
 
    font-size: 15px;
-   color: silver;
 
    a {
       color: inherit;
