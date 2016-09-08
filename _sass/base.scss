@@ -171,6 +171,10 @@ pre code {
 
 @media (min-width: 768px) {
 
+   b, strong {
+      font-weight: 600;
+   }
+
    pre, code {
       font-family: Consolas, "Source Code Pro", "Courier New", monospace;
    }
