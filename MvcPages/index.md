@@ -3,7 +3,7 @@ title: MvcPages
 ---
 
 <div class="note danger">
-Development of MvcPages is suspended in favor of <a href="/XCST/">XCST</a>
+Development of MvcPages has ceased in favor of <a href="/XCST/">XCST</a>
 </div>
 
 MvcPages combines the simplicity of ASP.NET Web Pages with the power of ASP.NET MVC. Use model binding, model validation, strongly-typed HTML helpers, editor and display templates, etc. directly from your Razor pages, no need for routes or controllers.
