@@ -14,7 +14,7 @@ Reference
 
 Older Versions
 --------------
-Documentation for older versions can be found here:
+Documentation for older versions can be found in the links below:
 
 - [v5]({{ page.repository_url }}/blob/v5/docs/README.md)
 - [v4]({{ page.repository_url }}/blob/v4/docs/README.md)
