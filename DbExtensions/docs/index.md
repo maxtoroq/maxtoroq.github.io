@@ -16,5 +16,5 @@ Older Versions
 --------------
 Documentation for older versions can be found here:
 
-- [v5](/blob/v5/docs/api/README.md)
-- [v4](/blob/v4/docs/api/README.md)
+- [v5](/blob/v5/docs/README.md)
+- [v4](/blob/v4/docs/README.md)
