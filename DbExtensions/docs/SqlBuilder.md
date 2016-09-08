@@ -317,7 +317,7 @@ Mapping to objects with DbExtensions
 SqlBuilder is part of the DbExtensions library, which also supports automatic mapping based on column aliases, including many-to-one associations:
 
 ```csharp
-readonly Database db = new Database("name=Northwind");
+readonly Database db = new Database("<connection string>", "<provider invariant name>");
 
 public IEnumerable<Product> GetProducts(int? categoryId) {
 
