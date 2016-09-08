@@ -175,7 +175,7 @@ If the sub-query contains any parameter values these are copied to the outer que
 
 Lists
 -----
-A very common requirement is to use a list of values as the right expression of the IN operator:
+A very common requirement is to use a list of values as the right expression of the `IN` operator:
 
 ```csharp
 var query = SQL
