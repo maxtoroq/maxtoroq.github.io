@@ -14,3 +14,6 @@ Most of the extension methods are gone, except those for `IDataRecord`. v5 had a
 
 So, if you can't find the extension method, look in `Database`.
 
+Removed superfluous overloads
+-----------------------------
+Most `SqlBuilder` and `SqlSet` methods had two overloads, e.g. `SELECT(string)` and `SELECT(string, params object[])`. The overloads without the `params` array were added as an optimization, to avoid creating array instances when not needed. However, it added a lot of noise to the API. Also, the optimization is now done by the C# compiler, so it's not needed anymore.
