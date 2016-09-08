@@ -4,6 +4,7 @@ title: Documentation
 
 Getting Started
 ---------------
+- [Installing](installing.html)
 - [SqlBuilder Tutorial](SqlBuilder.html)
 - [SqlSet Tutorial](SqlSet.html)
 
