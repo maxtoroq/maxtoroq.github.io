@@ -171,7 +171,7 @@ JOIN (
 ORDER BY t0.TotalProducts DESC
 ```
 
-If the sub-query contains any parameter values these are copied to the outer query. SqlBuilder doesn't keep any reference to sub-queries, all instances are completely independent and composability is achieved by copying state from one instance to the other.
+If the sub-query contains any parameter values, these are copied to the outer query. SqlBuilder doesn't keep any reference to sub-queries, all instances are completely independent and composability is achieved by copying state from one instance to the other.
 
 Lists
 -----
@@ -197,7 +197,7 @@ WHERE CategoryID IN ({0}, {1}, {2})
 By using the [SQL.List][9] method you can expand a collection of values into a list of parameters, instead of being treated as a single parameter.
 
 <div class="note">
-In <a href="https://github.com/maxtoroq/DbExtensions/blob/v5/docs/SqlBuilder.md#arrays">v5</a> SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling <a href="https://github.com/maxtoroq/DbExtensions/blob/master/docs/api/DbExtensions/SQL/List_1.md">SQL.List</a>.
+In <a href="https://github.com/maxtoroq/DbExtensions/blob/v5/docs/SqlBuilder.md#arrays">v5</a>, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling <a href="https://github.com/maxtoroq/DbExtensions/blob/master/docs/api/DbExtensions/SQL/List_1.md">SQL.List</a>.
 </div>
 
 Extending an existing query
