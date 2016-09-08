@@ -289,24 +289,18 @@ Mapping to objects with Entity Framework (DbContext)
 As stated in the design goals, getting and mapping data is beyond the scope of SqlBuilder, so to get data we need a data access component. SqlBuilder was inspired by LINQ to SQL's [ExecuteQuery][14] and [ExecuteCommand][15] methods. Entity Framework provides the same functionality with the [SqlQuery][16] and [ExecuteSqlCommand][17] methods:
 
 ```csharp
-public class NorthwindContext : DbContext {
+readonly NorthwindContext context = new NorthwindContext();
 
-   public DbSet<Product> Products { get; set; }
+public IEnumerable<Product> GetProducts(int? categoryId) {
 
-   public NorthwindContext() 
-      : base("name=Northwind") { }
+   var query = SQL
+      .SELECT("ProductID, ProductName, UnitPrice")
+      .FROM("Products")
+      .WHERE()
+      ._If(categoryId.HasValue, "CategoryID = {0}", categoryId)
+      .ORDER_BY("ProductName");
 
-   public IEnumerable<Product> GetProducts(int? categoryId) {
-
-      var query = SQL
-         .SELECT("ProductID, ProductName, UnitPrice")
-         .FROM("Products")
-         .WHERE()
-         ._If(categoryId.HasValue, "CategoryID = {0}", categoryId)
-         .ORDER_BY("ProductName");
-
-      return this.Database.SqlQuery<Product>(query.ToString(), query.ParameterValues.ToArray());
-   }
+   return this.context.Database.SqlQuery<Product>(query.ToString(), query.ParameterValues.ToArray());
 }
 ```
 
