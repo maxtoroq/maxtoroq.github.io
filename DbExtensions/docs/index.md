@@ -16,5 +16,5 @@ Older Versions
 --------------
 Documentation for older versions can be found here:
 
-- [v5](/blob/v5/docs/README.md)
-- [v4](/blob/v4/docs/README.md)
+- [v5]({{ page.repository_url }}/blob/v5/docs/README.md)
+- [v4]({{ page.repository_url }}/blob/v4/docs/README.md)
