@@ -24,13 +24,5 @@ Arrays in SqlBuilder and SqlSet are no longer *special*
 
 In v6 you have to call [SQL.List][1] to opt-in into this feature. See the [SqlBuilder tutorial][2] for more information.
 
-Other Removed/Renamed members
------------------------------
-Below is a table on how to port features from v5 to v6.
-
-v5 | v6
--- | --
-`SqlBuilder.ToCommand` | `Database.CreateCommand(SqlBuilder)`
-
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
 [2]: ../SqlBuilder.html#lists
