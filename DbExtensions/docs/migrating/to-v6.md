@@ -8,6 +8,7 @@ title: Migrating to v6
 - [General features](#general-features)
 - [Database](#database)
 - [SqlBuilder](#sqlbuilder)
+- [SqlSet](#sqlset)
 
 Overview
 --------
@@ -67,6 +68,15 @@ SqlBuilder and SqlSet would automatically expand an array value as a list of par
 
 In v6 you have to call [SQL.List][2] to opt-in into this feature. See the [SqlBuilder tutorial][3] for more information.
 
+SqlSet
+------
+
+### No public constructors
+
+Since extension methods were removed and every commands goes through Database now, use the [From][4] and [From&lt;TResult>][5] methods to get an instance of SqlSet.
+
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
 [3]: ../SqlBuilder.html#lists
+[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
+[5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
