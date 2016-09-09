@@ -2,7 +2,7 @@
 title: Migrating to v6
 ---
 
-**Less is more** is the theme for v6. No new big features are added, and there are no rewrites of internal code, so you can consider it stable. The focus has been to maximize the longevity and reusability of the code. To this end, **some features have been removed**, although most of the breaking changes are removal of methods where an alternative exists, or removal of non-essential features.
+**Less is more** is the theme for v6. No new big features were are added, and there were no rewrites of internal code, so you can consider it stable. The focus has been to maximize the longevity and reusability of the code. To this end, **some features have been removed**, although most of the breaking changes are removal of methods where an alternative exists, or removal of non-essential features.
 
 Some of the breaking changes are to ensure compatibility with .NET Core. Everything except `SqlTable` will be usable on .NET Core. `SqlTable` depends on `System.Data.Linq.Mapping` which is not available on .NET Core, so either a fork/port is required, or using/developing a new mapping library.
 
