@@ -33,9 +33,11 @@ var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 
 Removed dependency on DbCommandBuilder and added new configuration properties
 -----------------------------------------------------------------------------
+DbExtensions relied on `DbCommandBuilder` for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, `DbCommandBuilder` is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][1], with defaults for popular providers like `System.Data.SqlClient` and `MySql.Data.MySqlClient`.
 
 Depending on System.Data interfaces instead of System.Data.Common classes
 -------------------------------------------------------------------------
+Every reference to `DbConnection`, `DbCommand`, etc. was replaced with `IDbConnection`, `IDbCommand`, etc.
 
 Removed superfluous overloads
 -----------------------------
@@ -45,9 +47,9 @@ Arrays in SqlBuilder and SqlSet are no longer *special*
 -------------------------------------------------------
 `SqlBuilder` and `SqlSet` would automatically expand an array value as a list of parameters, e.g. `WHERE("foo IN ({0})", (object)new[] { "a", "b", "c" })` was equivalent to `WHERE("foo IN ({0}, {1}, {2})", "a", "b", "c")`. This turned out to be problematic for a couple of reasons. First, sometimes a cast was required (like in the given example) so the array was not to be interpreted as the full `params` array. Second, if you had an array member in your model, e.g. binary columns that map to `byte[]`, then you had to workaround this feature.
 
-In v6 you have to call [SQL.List][1] to opt-in into this feature. See the [SqlBuilder tutorial][2] for more information.
+In v6 you have to call [SQL.List][2] to opt-in into this feature. See the [SqlBuilder tutorial][3] for more information.
 
 
-
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
-[2]: ../SqlBuilder.html#lists
+[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
+[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
+[3]: ../SqlBuilder.html#lists
