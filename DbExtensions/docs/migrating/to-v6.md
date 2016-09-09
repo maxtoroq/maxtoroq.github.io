@@ -86,6 +86,7 @@ You no longer need to import the DbExtensions namespace to call [Find][7] and [I
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
 [3]: ../SqlBuilder.html#lists
+[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/CreateCommand.md
 [5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
 [6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
 [7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Find.md
