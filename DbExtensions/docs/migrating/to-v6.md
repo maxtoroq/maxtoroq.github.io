@@ -113,13 +113,13 @@ And the methods that used it. Behavior depends on [DatabaseConfiguration][3] pro
 
 Instead having methods that looked like SqlBuilder methods, it now has methods with proper naming and casing, e.g. `table.SQL.UPDATE_SET_WHERE(entity)` becomes `table.CommandBuilder.BuildUpdateStatementForEntity(entity)`.
 
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/Execute.md
-[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/ChangeConflictException/README.md
-[3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
-[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
+[1]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/Database/Execute.md
+[2]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/ChangeConflictException/README.md
+[3]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
+[4]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/SQL/List_1.md
 [5]: ../SqlBuilder.html#lists
-[6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/CreateCommand.md
-[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
-[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
-[9]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Find.md
-[10]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
+[6]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/Database/CreateCommand.md
+[7]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/Database/From.md
+[8]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/Database/From__1.md
+[9]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/SqlSet/Find.md
+[10]: {{ page.repository_url }}/blob/v6/docs/api/DbExtensions/SqlSet/Include.md
