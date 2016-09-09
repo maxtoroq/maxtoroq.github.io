@@ -9,6 +9,7 @@ title: Migrating to v6
 - [Database](#database)
 - [SqlBuilder](#sqlbuilder)
 - [SqlSet](#sqlset)
+- [SqlTable](#sqltable)
 
 Overview
 --------
@@ -82,6 +83,16 @@ Since extension methods were removed and every commands goes through Database no
 ### Find and Include extension methods are now instance methods
 
 You no longer need to import the DbExtensions namespace to call [Find][7] and [Include][8].
+
+SqlTable
+--------
+### Removed ConcurrencyConflictPolicy enumeration 
+
+And the methods that used it. Behavior depends on [DatabaseConfiguration][1] properties.
+
+### Renamed SQL property and all SqlCommandBuilder methods
+
+Instead having methods that looked like SqlBuilder methods, it now has methods with proper naming and casing, e.g. `table.SQL.UPDATE_SET_WHERE(entity)` becomes `table.CommandBuilder.BuildUpdateStatementForEntity(entity)`.
 
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
