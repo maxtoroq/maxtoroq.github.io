@@ -86,7 +86,8 @@ You no longer need to import the DbExtensions namespace to call [Find][7] and [I
 
 SqlTable
 --------
-### Removed ConcurrencyConflictPolicy enumeration 
+
+### Removed ConcurrencyConflictPolicy enumeration
 
 And the methods that used it. Behavior depends on [DatabaseConfiguration][1] properties.
 
