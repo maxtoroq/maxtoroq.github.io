@@ -52,9 +52,21 @@ static readonly ConnectionStringSetings connSettings = ConfigurationManager.Conn
 var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 ```
 
+### Removed Affect* methods
+
+*Affect* was a weird name to begin with. The [Execute][1] method now provides the same functionality. See the table below.
+
+v5                                                    | v6
+----------------------------------------------------- | -----------------------------------------
+`db.Affect(sql, 1)`                                   | `db.Execute(sql, affect: 1, exact: true)`
+`db.Affect(sql, 1, AffectedRecordsPolicy.AllowLower)` | `db.Execute(sql, affect: 1)`
+`db.AffectOne(sql)`                                   | `db.Execute(sql, affect: 1, exact: true)`
+`db.AffectOneOrNone(sql)`                             | `db.Execute(sql, affect: 1)`
+`db.Execute(sql)`                                     | `db.Execute(sql)`
+
 ### Removed dependency on DbCommandBuilder and added new configuration properties
 
-DbExtensions relied on **DbCommandBuilder** for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][1], with defaults for popular providers like **System.Data.SqlClient** and **MySql.Data.MySqlClient**.
+DbExtensions relied on **DbCommandBuilder** for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][2], with defaults for popular providers like **System.Data.SqlClient** and **MySql.Data.MySqlClient**.
 
 SqlBuilder
 ----------
@@ -67,22 +79,22 @@ Most **SqlBuilder** and **SqlSet** methods had two overloads, e.g. `SELECT(strin
 
 SqlBuilder and SqlSet would automatically expand an array value as a list of parameters, e.g. `WHERE("foo IN ({0})", (object)new[] { "a", "b", "c" })` was equivalent to `WHERE("foo IN ({0}, {1}, {2})", "a", "b", "c")`. This turned out to be problematic for a couple of reasons. First, sometimes a cast was required (like in the given example) so the array was not to be interpreted as the full `params` array. Second, if you had an array member in your model, e.g. binary columns that map to `byte[]`, then you had to workaround this feature.
 
-In v6 you have to call [SQL.List][2] to opt-in into this feature. See the [SqlBuilder tutorial][3] for more information.
+In v6 you have to call [SQL.List][3] to opt-in into this feature. See the [SqlBuilder tutorial][4] for more information.
 
 ### Removed ToCommand method
 
-Use [Database.CreateCommand(SqlBuilder)][4].
+Use [Database.CreateCommand(SqlBuilder)][5].
 
 SqlSet
 ------
 
 ### Removed public constructors
 
-Since extension methods were removed and every commands goes through Database now, use the [From][5] and [From&lt;TResult>][6] methods to get an instance of SqlSet.
+Since extension methods were removed and every commands goes through Database now, use the [From][6] and [From&lt;TResult>][7] methods to get an instance of SqlSet.
 
 ### Find and Include extension methods are now instance methods
 
-You no longer need to import the DbExtensions namespace to call [Find][7] and [Include][8].
+You no longer need to import the DbExtensions namespace to call [Find][8] and [Include][9].
 
 SqlTable
 --------
@@ -95,11 +107,12 @@ And the methods that used it. Behavior depends on [DatabaseConfiguration][1] pro
 
 Instead having methods that looked like SqlBuilder methods, it now has methods with proper naming and casing, e.g. `table.SQL.UPDATE_SET_WHERE(entity)` becomes `table.CommandBuilder.BuildUpdateStatementForEntity(entity)`.
 
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
-[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
-[3]: ../SqlBuilder.html#lists
-[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/CreateCommand.md
-[5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
-[6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
-[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Find.md
-[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
+[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/Execute.md
+[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
+[3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
+[4]: ../SqlBuilder.html#lists
+[5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/CreateCommand.md
+[6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
+[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
+[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Find.md
+[9]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
