@@ -96,6 +96,10 @@ Since extension methods were removed and every commands goes through Database no
 
 You no longer need to import the DbExtensions namespace to call [Find][8] and [Include][9].
 
+### Removed Oracle and SQL Server 2008 support
+
+These added complexity and were rarely used. However, I plan on adding support for pluggable formatters to make SqlSet extensible.
+
 SqlTable
 --------
 
