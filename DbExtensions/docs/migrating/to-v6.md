@@ -3,6 +3,7 @@ title: Migrating to v6
 ---
 
 **Contents**
+
 - [Overview](#overview)
 - [General features](#general-features)
 - [Database](#database)
