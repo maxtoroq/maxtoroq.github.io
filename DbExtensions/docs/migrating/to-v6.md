@@ -107,7 +107,7 @@ SqlTable
 
 ### Removed ConcurrencyConflictPolicy enumeration
 
-And the methods that used it. Behavior depends on [DatabaseConfiguration][1] properties.
+And the methods that used it. Behavior depends on [DatabaseConfiguration][2] properties.
 
 ### Renamed SQL property and all SqlCommandBuilder methods
 
