@@ -71,12 +71,18 @@ In v6 you have to call [SQL.List][2] to opt-in into this feature. See the [SqlBu
 SqlSet
 ------
 
-### No public constructors
+### Removed public constructors
 
 Since extension methods were removed and every commands goes through Database now, use the [From][4] and [From&lt;TResult>][5] methods to get an instance of SqlSet.
+
+### Find and Include extension methods are now instance methods
+
+You no longer need to import the DbExtensions namespace to call [Find][6] and [Include][7].
 
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/DatabaseConfiguration/README.md#properties
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
 [3]: ../SqlBuilder.html#lists
 [4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From.md
 [5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1.md
+[6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Find.md
+[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
