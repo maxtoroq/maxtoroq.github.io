@@ -89,9 +89,8 @@ Changing data
 ```csharp
 public class NorthwindDatabase : Database {
    
-   public SqlTable<Product> Products { // SqlTable inherits from SqlSet
-      get { return Table<Product>(); } 
-   }
+   public SqlTable<Product> Products // SqlTable inherits from SqlSet
+      => Table<Product>();
 
    public NorthwindDatabase() 
       : base("name=Northwind") { }
