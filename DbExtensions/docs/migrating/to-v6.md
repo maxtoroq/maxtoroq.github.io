@@ -30,7 +30,7 @@ So, if you can't find the extension method, look in Database.
 
 ### Depending on System.Data interfaces instead of System.Data.Common classes
 
-Every reference to **DbConnection**, **DbCommand**, etc. was replaced with **IDbConnection**, **IDbCommand**, etc.
+Every reference to **DbConnection**, **DbCommand**, etc. has been replaced with **IDbConnection**, **IDbCommand**, etc.
 
 Database
 --------
