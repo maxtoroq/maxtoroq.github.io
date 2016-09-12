@@ -1,7 +1,8 @@
 ---
 ---
-
 @import "base";
+
+$footer-height: 120px;
 
 body > header {
 
@@ -21,4 +22,23 @@ body > footer {
 
 h1 {
    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+
+   html {
+      position: relative;
+      min-height: 100%;
+   }
+
+   body {
+      margin-bottom: $footer-height;
+   }
+   
+   body > footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer-height;
+   }
 }
