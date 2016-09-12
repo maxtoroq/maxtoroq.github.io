@@ -22,9 +22,13 @@ The source code has also been re-organized so you can compile components indepen
 General features
 ----------------
 
+### Target frameworks
+
+v6 targets .NET 4.5, ending support for .NET 4.0. .NET Core support is coming (waiting for some missing APIs).
+
 ### Removed extension methods
 
-Most of the extension methods are gone, except those for **IDataRecord**. v5 had a lot of duplicated APIs, e.g. `Map(this DbConnection connection, ...)` and `Database.Map(...)`. Having two ways of doing the same thing is not only confusing, but also costly in terms of maintenance. Whether developing using extension methods is a good idea is also debatable. Having a centralized place where you can tweak things, e.g. configure profiling, is much better, and that is what **Database** provides.
+Most of the extension methods are gone, except those for **IDataRecord**. v5 had a lot of duplicated APIs, e.g. `Map(this DbCommand command, ...)` and `Database.Map(...)`. Having two ways of doing the same thing is not only confusing, but also costly in terms of maintenance. Whether developing using extension methods is a good idea is also debatable. Having a centralized place where you can tweak things, e.g. configure profiling, is much better, and that is what **Database** provides.
 
 So, if you can't find the extension method, look in Database.
 
