@@ -7,4 +7,4 @@ title: Documentation
 
 Blog Posts
 ----------
-- [ASP.NET programming with XCST]({% post_url 2016-04-06-aspnet-programming-with-xcst %})
+- [ASP.NET programming with XCST](/2016/04/aspnet-programming-with-xcst.html)
