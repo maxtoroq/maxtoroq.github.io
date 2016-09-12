@@ -50,4 +50,4 @@ So, [here it is][3]. You can find examples of the projects that use it at the en
 
 [1]: https://shfb.codeplex.com/
 [2]: http://programmers.stackexchange.com/a/231658/3552
-[3]: {{ site.url }}/sandcastle-md/
+[3]: {{ site.github.owner_url }}/sandcastle-md
