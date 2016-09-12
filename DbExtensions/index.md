@@ -7,7 +7,7 @@ DbExtensions is a data-access framework with a strong focus on **query compositi
 Querying with SqlSet
 --------------------
 ```csharp
-var db = new Database("name=Northwind");
+var db = new Database("<connection string>", "<provider invariant name>");
 
 SqlSet<Product> products = db.From<Product>("Products");
 SqlSet<Product> productsToReorder = products.Where("UnitsInStock < {0}", 10);
@@ -93,7 +93,7 @@ public class NorthwindDatabase : Database {
       => Table<Product>();
 
    public NorthwindDatabase() 
-      : base("name=Northwind") { }
+      : base("<connection string>", "<provider invariant name>") { }
 }
 
 var db = new NorthwindDatabase();
