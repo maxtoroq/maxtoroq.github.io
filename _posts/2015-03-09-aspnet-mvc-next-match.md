@@ -164,4 +164,4 @@ Hope you like this.
 [2]: {{ site.url }}/img/mvcnextmatch_screenshot_2.png
 [3]: {{ site.url }}/img/mvcnextmatch_screenshot_1.png
 [4]: https://github.com/aspnet/Mvc/issues/2109
-[5]: https://github.com/maxtoroq/2015-03-aspnet-mvc-next-match
+[5]: {{ site.github.owner_url }}/2015-03-aspnet-mvc-next-match
