@@ -340,7 +340,7 @@ SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A gen
 [5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/README.md
 [6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/_.md
 [7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/WHERE.md
-[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/_If_3.md
+[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/_If.md
 [9]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
 [10]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/VALUES.md
 [11]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/LIMIT_1.md
