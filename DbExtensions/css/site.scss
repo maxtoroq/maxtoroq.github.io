@@ -2,8 +2,6 @@
 ---
 @import "base";
 
-$footer-height: 120px;
-
 body > header {
 
    nav a {
@@ -26,6 +24,8 @@ h1 {
 }
 
 @media (min-width: 768px) {
+   
+   $footer-height: 120px;
 
    html {
       position: relative;
