@@ -55,7 +55,7 @@ var db = new Database("name=Northwind");
 Instead you can use a new constructor and pass in the connection string and provider invariant name. Your application can still use ConfigurationManager on .NET Full, e.g.:
 
 ```csharp
-static readonly ConnectionStringSetings connSettings = ConfigurationManager.ConnectionStrings["Northwind"];
+ConnectionStringSetings connSettings = ConfigurationManager.ConnectionStrings["Northwind"];
 
 var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 ```
