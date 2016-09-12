@@ -2,7 +2,7 @@
 title: Changes
 ---
 
-For more information about a specific issue go to `https://github.com/maxtoroq/DbExtensions/issues/{issue-number}`
+For more information about a specific issue go to `{{ page.repository_url }}/issues/{issue-number}`
 
 v6.0.0
 ------
