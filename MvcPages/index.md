@@ -16,8 +16,8 @@ Features
 
 Blog posts
 ----------
-- [MvcPages: ASP.NET MVC without routes and controllers]({% post_url 2012-11-01-mvcpages-aspnet-mvc-without-routes-and-controllers %})
-- [NoMVC]({% post_url 2015-06-08-nomvc %})
+- [MvcPages: ASP.NET MVC without routes and controllers](/2012/11/mvcpages-aspnet-mvc-without-routes-and-controllers.html)
+- [NoMVC](/2015/06/nomvc.html)
 
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=MvcPages&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
