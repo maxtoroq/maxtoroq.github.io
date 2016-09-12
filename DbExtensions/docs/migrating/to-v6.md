@@ -22,6 +22,10 @@ The source code has also been re-organized so you can compile components indepen
 General features
 ----------------
 
+### Removed strong name
+
+The DbExtensions assembly is no longer strong named.
+
 ### Target frameworks
 
 v6 targets .NET 4.5, ending support for .NET 4.0. .NET Core support is coming (waiting for some missing APIs).
