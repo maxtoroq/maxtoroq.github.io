@@ -164,4 +164,4 @@ Maybe I'll end up writing classes so I don't have to write classes.
 [2]: https://roslyn.codeplex.com/discussions/540883
 [3]: http://en.wikipedia.org/wiki/Structural_type_system
 [4]: http://stackoverflow.com/a/844569/39923
-[5]: {{ site.url }}/NTransform/
+[5]: {{ site.github.owner_url }}/NTransform
