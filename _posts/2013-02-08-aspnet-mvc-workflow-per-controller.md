@@ -109,5 +109,5 @@ Show me the code
 [1]: http://stackoverflow.com/a/1528571/39923
 [2]: http://mvccoderouting.codeplex.com/
 [3]: http://jeffreypalermo.com/blog/the-asp-net-mvc-actioncontroller-ndash-the-controllerless-action-or-actionless-controller/
-[4]: https://github.com/maxtoroq/MvcAccount/tree/v0.8/src/MvcAccount
-[5]: https://github.com/maxtoroq/MvcAccount/tree/master/src/MvcAccount
+[4]: {{ site.github.owner_url }}/MvcAccount/tree/v0.8/src/MvcAccount
+[5]: {{ site.github.owner_url }}/MvcAccount/tree/master/src/MvcAccount
