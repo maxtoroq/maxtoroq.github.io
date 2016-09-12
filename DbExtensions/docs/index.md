@@ -14,7 +14,7 @@ Migrating
 
 Reference
 ---------
-- [DbExtensions API Reference]({{ page.repository_url }}/blob/master/docs/api/README.md)
+- [DbExtensions API Reference]({{ page.repository_url }}/blob/master/docs/api/DbExtensions/README.md)
 - [Change History](changes.html)
 
 Older Versions
