@@ -184,5 +184,5 @@ The complete page along with a runnable project can be found [here][2]. Question
 - [XCST Introduction for the Razor Developer][3]
 
 [1]: {{ site.url }}/XCST/
-[2]: https://github.com/maxtoroq/XCST/blob/master/samples/aspnet/contact.xcst
+[2]: {{ site.github.owner_url }}/XCST/blob/master/samples/aspnet/contact.xcst
 [3]: {{ site.url }}/XCST/docs/intro-for-razor-dev.html
