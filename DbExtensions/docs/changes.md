@@ -26,7 +26,8 @@ v5.0.0
 - Fixed #18: Insert one-to-one associations (SqlTable.Add)
 - Improved #6: SqlBuilder.Append(SqlBuilder) and SqlBuilder.JoinSql generate unnecessary extra whitespace
 
-BREAKING CHANGES: 
+BREAKING CHANGES:
+
 - Removed .NET 3.5 support
 - Removed members deprecated in v4.x
 - Removed DbConnection extension methods (use Database instead)
