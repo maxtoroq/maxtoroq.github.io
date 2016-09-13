@@ -47,7 +47,7 @@ public class Supplier {
 }
 ```
 
-You can make the following query to return `Product`s that include `Category` and `Supplier`:
+You can use the following query to return `Product`s that include `Category` and `Supplier`:
 
 ```csharp
 var query = SQL
