@@ -78,7 +78,7 @@ return db.Map<EmployeeTerritory>(query);
 <div class="note">If all columns related to a complex property are null, the property is set to null.</div>
 
 
-
+*[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
 [2]: SqlSet.html
 [3]: explicit-mapping.html
