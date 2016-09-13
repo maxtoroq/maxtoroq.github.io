@@ -308,26 +308,7 @@ Entity Framework maps columns to properties based on the column aliases used.
 
 Mapping to objects with DbExtensions
 ------------------------------------
-SqlBuilder is part of the [DbExtensions][18] library, which also supports automatic mapping based on column aliases, including many-to-one associations:
-
-```csharp
-readonly Database db = new Database("<connection string>", "<provider invariant name>");
-
-public IEnumerable<Product> GetProducts(int? categoryId) {
-
-   var query = SQL
-      .SELECT("p.ProductID, p.ProductName, p.UnitPrice, p.CategoryID")
-      ._("c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName")
-      .FROM("Products p")
-      .JOIN("Categories c ON p.CategoryID = c.CategoryID")
-      .WHERE()
-      ._If(categoryId.HasValue, "p.CategoryID = {0}", categoryId);
-
-   return this.db.Map<Product>(query);      
-}
-```
-
-Note the aliases `Category$CategoryID` and `Category$CategoryName`, these are used to tell the mapper to set `CategoryID` and `CategoryName` on the `Product.Category` association property.
+SqlBuilder is part of the [DbExtensions][18] library, which also supports automatic mapping based on column aliases, see [Automatic Mapping][19].
 
 Conclusions
 -----------
@@ -351,3 +332,4 @@ SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A gen
 [16]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.sqlquery
 [17]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.executesqlcommand
 [18]: {{ page.base_url }}
+[19]: automatic-mapping.html
