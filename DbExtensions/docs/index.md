@@ -7,6 +7,7 @@ Getting Started
 - [Installing](installing.html)
 - [SqlBuilder Tutorial](SqlBuilder.html)
 - [SqlSet Tutorial](SqlSet.html)
+- [Automatic Mapping](automatic-mapping.html)
 
 Migrating
 ---------
