@@ -77,8 +77,28 @@ return db.Map<EmployeeTerritory>(query);
 
 <div class="note">If all columns related to a complex property are null, the property is set to null.</div>
 
+Constructors
+------------
+You can also map columns to constructor arguments, e.g.:
+
+```csharp
+public class SupplierInfo {
+  
+  public string CompanyName { get; set; }
+  public Uri CompanyWebsite { get; set; }
+}
+
+var query = SQL
+  .SELECT("CompanyName, CompanyWebsite AS CompanyWebsite$1")
+  .FROM("Supplier");
+
+return db.Map<SupplierInfo>(query);
+```
+
+In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the `CompanyWebsite` column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri][4] object.
 
 *[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
 [2]: SqlSet.html
 [3]: explicit-mapping.html
+[4]: https://msdn.microsoft.com/en-us/library/system.uri
