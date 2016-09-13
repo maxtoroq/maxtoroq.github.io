@@ -21,6 +21,12 @@ return db.Map<Product>(query);
 
 If the column names in your database exactly match your object's properties then there's nothing else to do. If a column name does not match a property it's simply ignored.
 
+To map to dynamic objects omit the type:
+
+```csharp
+return db.Map(query);
+```
+
 Complex properties
 ------------------
 Given the types:
@@ -148,6 +154,8 @@ return db.Map<SupplierInfo>(query);
 ```
 
 In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite column to the first constructor parameter (of Uri) of the second constructor parameter (of SupplierInfo)*.
+
+<div class="note">Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. It's the order that determines the mapping to a specific parameter.</div>
 
 *[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
