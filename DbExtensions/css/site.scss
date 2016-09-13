@@ -2,6 +2,11 @@
 ---
 @import "base";
 
+body > header,
+body > footer {
+   background-color: aliceblue;
+}
+
 body > header {
 
    nav a {
@@ -15,7 +20,6 @@ body > header {
 }
 
 body > footer {
-   background-color: aliceblue;
    text-align: center;
 }
 
