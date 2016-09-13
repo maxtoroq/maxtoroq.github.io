@@ -1,7 +1,7 @@
 ---
 title: Automatic Mapping
 ---
-**Automatic mapping** is about turning rows into objects, matching column names to property names. Automatic mapping is:
+**Automatic mapping** is about turning rows into objects, matching column names to properties and constructor parameters. Automatic mapping is:
 
 - Supported for both POCO and dynamic objects
 - Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
@@ -47,7 +47,7 @@ public class Supplier {
 }
 ```
 
-You can use the following query to return `Product`s that include `Category` and `Supplier`:
+You can use the following query to return **Product**s that include **Category** and **Supplier**:
 
 ```csharp
 var query = SQL
@@ -115,7 +115,7 @@ var query = SQL
 return db.Map<SupplierInfo>(query);
 ```
 
-In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the `CompanyWebsite` column to the first constructor parameter of the `CompanyWebsite` property*, which in this case is a [Uri][4] object.
+In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri][4] object.
 
 ```text
 CompanyWebsite AS CompanyWebsite$1
@@ -126,7 +126,28 @@ Supplier table    SupplierInfo    in property's
                   object          constructor
 ```
 
+Let's use the Uri type again, but as parameter in **SupplierInfo**:
 
+```csharp
+public class SupplierInfo {
+  
+  public string CompanyName { get; }
+  public Uri CompanyWebsite { get; }
+  
+  public SupplierInfo(string companyName, Uri companyWebsite) {
+    this.CompanyName = companyName;
+    this.CompanyWebsite = companyWebsite;
+  }
+}
+
+var query = SQL
+  .SELECT("CompanyName AS '1', CompanyWebsite AS '2$1'")
+  .FROM("Supplier");
+
+return db.Map<SupplierInfo>(query);
+```
+
+In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite column to the first constructor parameter (of Uri) of the second constructor parameter (of SupplierInfo)*.
 
 *[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
