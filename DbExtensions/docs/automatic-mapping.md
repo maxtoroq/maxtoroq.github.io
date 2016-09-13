@@ -5,7 +5,7 @@ title: Automatic Mapping
 
 - Supported for both POCO and dynamic objects
 - Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
-- One way only, to turn objects into rows you have to use [Explicit Mapping]
+- One way only, to turn objects into rows you have to use [explicit mapping]
 
 Basic mapping
 -------------
@@ -61,7 +61,21 @@ var query = SQL
 return db.Map<Product>(query);
 ```
 
+Use the `$` character in column aliases to specify a path into a complex property. There's no depth limit, e.g.:
 
+```csharp
+var query = SQL
+  .SELECT("et.EmployeeID, et.TerritoryID")
+  ._("t.TerritoryID AS Territory$TerritoryID, t.TerritoryDescription AS Territory$TerritoryDescription, t.RegionID AS Territory$RegionID")
+  ._("r.RegionID AS Territory$Region$RegionID, r.RegionDescription AS Territory$Region$RegionDescription")
+  .FROM("EmployeeTerritories et")
+  .LEFT_JOIN("Territories t ON et.TerritoryID = t.TerritoryID")
+  .LEFT_JOIN("Region r ON t.RegionID = r.RegionID");
+
+return db.Map<EmployeeTerritory>(query);
+```
+
+<div class="note">If all columns related to a complex property are null, the property is set to null.</div>
 
 [1]: SqlBuilder.html
 [2]: SqlSet.html
