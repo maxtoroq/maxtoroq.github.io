@@ -12,6 +12,15 @@ body > header {
    nav a {
 
       color: gray;
+      
+      &:first-child {
+         display: inline-block;
+         width: 48px;
+         height: 48px;
+         background-image: url(../favicon.ico);
+         background-size: 48px;
+         text-indent: -999em;
+      }
 
       &.donate {
          float: right;
