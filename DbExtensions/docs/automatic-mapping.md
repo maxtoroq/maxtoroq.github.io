@@ -79,7 +79,27 @@ return db.Map<EmployeeTerritory>(query);
 
 Constructors
 ------------
-You can also map columns to constructor arguments, e.g.:
+
+```csharp
+public class SupplierInfo {
+  
+  public string CompanyName { get; }
+  public string CompanyWebsite { get; }
+  
+  public SupplierInfo(string companyName, string companyWebsite) {
+    this.CompanyName = companyName;
+    this.CompanyWebsite = companyWebsite;
+  }
+}
+
+var query = SQL
+  .SELECT("CompanyName AS '1', CompanyWebsite AS '2'")
+  .FROM("Supplier");
+
+return db.Map<SupplierInfo>(query);
+```
+
+**Use numbers to map columns to constructor arguments**. This also works for complex properties, e.g:
 
 ```csharp
 public class SupplierInfo {
@@ -105,6 +125,8 @@ CompanyWebsite AS CompanyWebsite$1
 Supplier table    SupplierInfo    in property's
                   object          constructor
 ```
+
+
 
 *[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
