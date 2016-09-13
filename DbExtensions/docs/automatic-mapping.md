@@ -5,7 +5,7 @@ title: Automatic Mapping
 
 - Supported for both POCO and dynamic objects
 - Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
-- One way only, to turn objects into rows you have to use [explicit mapping]
+- One way only, to turn objects into rows you have to use [explicit mapping][3]
 
 Basic mapping
 -------------
@@ -79,3 +79,4 @@ return db.Map<EmployeeTerritory>(query);
 
 [1]: SqlBuilder.html
 [2]: SqlSet.html
+[3]: explicit-mapping.html
