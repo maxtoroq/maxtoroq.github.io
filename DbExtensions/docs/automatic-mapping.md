@@ -19,7 +19,7 @@ var query = SQL
 return db.Map<Product>(query);
 ```
 
-If the column names in your database exactly match your object then there's nothing else to do.
+If the column names in your database exactly match your object's properties then there's nothing else to do. If a column name does not match a property it's simply ignored.
 
 Complex properties
 ------------------
@@ -61,7 +61,7 @@ var query = SQL
 return db.Map<Product>(query);
 ```
 
-Use the `$` character in column aliases to specify a path into a complex property. There's no depth limit, e.g.:
+**Use the `$` character in column aliases to specify a path into a complex property**. There's no depth limit, e.g.:
 
 ```csharp
 var query = SQL
@@ -76,6 +76,8 @@ return db.Map<EmployeeTerritory>(query);
 ```
 
 <div class="note">If all columns related to a complex property are null, the property is set to null.</div>
+
+
 
 [1]: SqlBuilder.html
 [2]: SqlSet.html
