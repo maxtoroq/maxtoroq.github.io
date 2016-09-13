@@ -33,6 +33,7 @@ body > header {
 
       &.donate {
          float: right;
+         margin-top: .5em;
       }
    }
 }
@@ -43,6 +44,15 @@ body > footer {
 
 h1 {
    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+   
+   body > header {
+      a.donate {
+         display: none;
+      }
+   }
 }
 
 @media (min-width: 768px) {
