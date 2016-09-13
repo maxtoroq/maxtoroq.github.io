@@ -308,7 +308,7 @@ Entity Framework maps columns to properties based on the column aliases used.
 
 Mapping to objects with DbExtensions
 ------------------------------------
-SqlBuilder is part of the [DbExtensions][18] library, which also supports automatic mapping based on column aliases, see [Automatic Mapping][19].
+SqlBuilder is part of the [DbExtensions][18] library, which also supports mapping based on column aliases, see [Automatic Mapping][19].
 
 Conclusions
 -----------
