@@ -100,7 +100,7 @@ SqlSet
 
 ### Removed public constructors
 
-Since extension methods were removed and every commands goes through Database now, use the [From][7] and [From&lt;TResult>][8] methods to get an instance of SqlSet.
+Since extension methods were removed and every command goes through Database now, use the [From][7] and [From&lt;TResult>][8] methods to get an instance of SqlSet.
 
 ### Find and Include extension methods are now instance methods
 
