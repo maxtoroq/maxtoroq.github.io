@@ -17,7 +17,7 @@ body > header {
    nav a {
 
       color: gray;
-      margin: 0 1em;
+      margin-left: 1em;
       
       &:first-child {
          display: inline-block;
@@ -28,6 +28,7 @@ body > header {
          background-position-y: -4px;
          text-indent: -999em;
          vertical-align: middle;
+         margin-left: 0;
       }
 
       &.donate {
