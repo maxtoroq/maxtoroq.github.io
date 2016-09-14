@@ -3,7 +3,7 @@ title: Changes
 ---
 
 <form onsubmit="window.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value; return false;">
-<input id='issue_number' type='number' size='6' placeholder='issue number' required/>
+<input id='issue_number' type='number' placeholder='issue number' required min='1' style='width: 50px'/>
 <button>Go to issue tracker</button>
 </form>
 
