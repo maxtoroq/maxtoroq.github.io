@@ -2,7 +2,10 @@
 title: Changes
 ---
 
-For more information about a specific issue go to `{{ page.repository_url }}/issues/{issue-number}`
+<form onsubmit="windows.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value">
+<input id='issue_number' placeholder='issue number' required/>
+<button onclick="windows.location.href='{{ page.repository_url }}/issues/'">Go to issue tracker</button>
+</form>
 
 v6.0.0
 ------
