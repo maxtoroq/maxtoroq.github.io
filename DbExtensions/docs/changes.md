@@ -2,9 +2,9 @@
 title: Changes
 ---
 
-<form onsubmit="windows.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value; return false">
-<input id='issue_number' placeholder='issue number' required/>
-<button>Go to issue tracker</button>
+<form onsubmit='return false'>
+<input id='issue_number' size='3' placeholder='issue number' required/>
+<button onclick="window.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value">Go to issue tracker</button>
 </form>
 
 v6.0.0
