@@ -2,7 +2,7 @@
 title: Changes
 ---
 
-<input id='issue_number' size='3' placeholder='issue number' required/>
+<input id='issue_number' size='6' placeholder='issue number'/>
 <button onclick="window.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value">Go to issue tracker</button>
 
 v6.0.0
