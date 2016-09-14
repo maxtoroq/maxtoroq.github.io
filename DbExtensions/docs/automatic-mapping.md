@@ -5,7 +5,7 @@ title: Automatic Mapping
 
 - Supported for both POCO and dynamic objects
 - Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
-- One way only, to turn objects into rows (insert, update or delete) you have to use [explicit mapping][3]
+- One way only, to turn objects into rows (insert, update or delete) you have to use explicit mapping
 
 Basic mapping
 -------------
