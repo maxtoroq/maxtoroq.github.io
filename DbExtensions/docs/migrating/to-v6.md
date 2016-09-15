@@ -58,6 +58,10 @@ ConnectionStringSetings connSettings = ConfigurationManager.ConnectionStrings["N
 var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 ```
 
+### Removed dependency on DbCommandBuilder and added new configuration properties
+
+DbExtensions relied on **DbCommandBuilder** for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like **System.Data.SqlClient** and **MySql.Data.MySqlClient**.
+
 ### Removed Affect* methods
 
 *Affect* was a weird name to begin with. The [Execute][1] method now provides the same functionality. See the table below.
@@ -71,10 +75,6 @@ v5                                                    | v6
 `db.Execute(sql)`                                     | `db.Execute(sql)`
 
 `Execute` throws the new [ChangeConflictException][2] class.
-
-### Removed dependency on DbCommandBuilder and added new configuration properties
-
-DbExtensions relied on **DbCommandBuilder** for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like **System.Data.SqlClient** and **MySql.Data.MySqlClient**.
 
 SqlBuilder
 ----------
