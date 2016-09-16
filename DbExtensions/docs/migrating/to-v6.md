@@ -28,6 +28,10 @@ The DbExtensions assembly is no longer strong named.
 
 v6 targets .NET 4.5, ending support for .NET 4.0. .NET Core support is coming (waiting for some missing APIs).
 
+### Removed System.Data.Linq dependency
+
+The mapping (metadata) classes from LINQ to SQL are now included in DbExtensions, although most of them are internal except the attributes (`[Table]`, `[Column]`, `[Association]`). Only attribute mapping is supported, no XML.
+
 ### Removed extension methods
 
 Most of the extension methods are gone, except those for **IDataRecord**. v5 had a lot of duplicated APIs, e.g. `Map(this DbCommand command, ...)` and `Database.Map(...)`. Having two ways of doing the same thing is not only confusing, but also costly in terms of maintenance. Whether developing using extension methods is a good idea is also debatable. Having a centralized place where you can tweak things, e.g. configure profiling, is much better, and that is what **Database** provides.
