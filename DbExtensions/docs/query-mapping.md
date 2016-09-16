@@ -1,11 +1,10 @@
 ---
-title: Automatic Mapping
+title: Query Mapping
 ---
-**Automatic mapping** is about turning rows into objects, matching column names to properties and constructor parameters. Automatic mapping is:
+**Query mapping** is about turning rows into objects, matching column names to properties and constructor parameters. Query mapping is:
 
 - Supported for both POCO and dynamic objects
 - Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
-- One way only, to turn objects into rows (insert, update or delete) you have to use explicit mapping
 
 Basic mapping
 -------------
