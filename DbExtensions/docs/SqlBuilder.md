@@ -308,7 +308,7 @@ Entity Framework maps columns to properties based on the column aliases used.
 
 Querying with DbExtensions
 --------------------------
-SqlBuilder is part of the [DbExtensions][18] library, which also supports mapping based on column aliases, see [Automatic Mapping][19].
+SqlBuilder is part of the [DbExtensions][18] library, which also supports mapping based on column aliases, see [Query Mapping][19].
 
 Conclusions
 -----------
@@ -332,4 +332,4 @@ SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A gen
 [16]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.sqlquery
 [17]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.executesqlcommand
 [18]: {{ page.base_url }}
-[19]: automatic-mapping.html
+[19]: query-mapping.html
