@@ -204,12 +204,10 @@ SqlSet doesn't support joins or grouping. After all, the goal is not to complete
 public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, int take = 20) {
 
    var query = SQL
-      .SELECT("p.ProductID, p.ProductName, p.CategoryID, p.SupplierID")
+      .SELECT("p.ProductID, p.ProductName, p.CategoryID")
       ._("c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName")
-      ._("s.SupplierID AS Supplier$SupplierID, s.CompanyName AS Supplier$CompanyName")
       .FROM("Products p")
-      .LEFT_JOIN("Categories c ON p.CategoryID = c.CategoryID")
-      .LEFT_JOIN("Suppliers s ON p.SupplierID = s.SupplierID");
+      .LEFT_JOIN("Categories c ON p.CategoryID = c.CategoryID");
 
    return this.db
       .From<Product>(query)
@@ -227,10 +225,9 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
 -- SQL Server
 SELECT *
 FROM (
-   SELECT p.ProductID, p.ProductName, p.CategoryID, p.SupplierID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName, s.SupplierID AS Supplier$SupplierID, s.CompanyName AS Supplier$CompanyName
+   SELECT p.ProductID, p.ProductName, p.CategoryID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName
    FROM Products p
-   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID
-   LEFT JOIN Suppliers s ON p.SupplierID = s.SupplierID) dbex_set6
+   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID) dbex_set6
 WHERE CategoryID = @p0
 ORDER BY ProductID DESC
 OFFSET @p1 ROWS
@@ -243,10 +240,9 @@ FETCH NEXT @p2 ROWS ONLY
 -- MySQL, SQLite
 SELECT *
 FROM (
-   SELECT p.ProductID, p.ProductName, p.CategoryID, p.SupplierID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName, s.SupplierID AS Supplier$SupplierID, s.CompanyName AS Supplier$CompanyName
+   SELECT p.ProductID, p.ProductName, p.CategoryID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName
    FROM Products p
-   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID
-   LEFT JOIN Suppliers s ON p.SupplierID = s.SupplierID) dbex_set5
+   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID) dbex_set5
 WHERE CategoryID = @p0
 ORDER BY ProductID DESC
 LIMIT @p1
