@@ -112,7 +112,7 @@ Features
 - POCO and dynamic mapping for queries
   - Mapping to properties (including complex)
   - Mapping to constructor arguments
-- Attributes mapping for inserts, updates and deletes
+- Attribute mapping for inserts, updates and deletes
 - Generic and non-generic APIs (for when the type of the entity is not known at build time)
 - Automatic connection management (no need to explicitly open connection, but you are allowed to)
 - Eager loading
