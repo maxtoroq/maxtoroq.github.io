@@ -34,20 +34,20 @@ The mapping (metadata) classes from LINQ to SQL are now included in DbExtensions
 
 ### Removed extension methods
 
-Most of the extension methods are gone, except those for **IDataRecord**. v5 had a lot of duplicated APIs, e.g. `Map(this DbCommand command, ...)` and `Database.Map(...)`. Having two ways of doing the same thing is not only confusing, but also costly in terms of maintenance. Whether developing using extension methods is a good idea is also debatable. Having a centralized place where you can tweak things, e.g. configure profiling, is much better, and that is what **Database** provides.
+Most of the extension methods are gone, except those for IDataRecord. v5 had a lot of duplicated APIs, e.g. `Map(this DbCommand command, ...)` and `Database.Map(...)`. Having two ways of doing the same thing is not only confusing, but also costly in terms of maintenance. Whether developing using extension methods is a good idea is also debatable. Having a centralized place where you can tweak things, e.g. configure profiling, is much better, and that is what Database provides.
 
 So, if you can't find the extension method, look in Database.
 
 ### Depending on System.Data interfaces instead of System.Data.Common classes
 
-Every reference to **DbConnection**, **DbCommand**, etc. has been replaced with **IDbConnection**, **IDbCommand**, etc.
+Every reference to DbConnection, DbCommand, etc. has been replaced with IDbConnection, IDbCommand, etc.
 
 Database
 --------
 
 ### Removed named connection string support
 
-**ConfigurationManager** is not available on .NET Core, so all dependencies on **System.Configuration** were removed. That means you can no longer use a named connection string, e.g.:
+ConfigurationManager is not available on .NET Core, so all dependencies on System.Configuration were removed. That means you can no longer use a named connection string, e.g.:
 
 ```csharp
 // this doesn't work anymore
@@ -64,7 +64,7 @@ var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 
 ### Removed dependency on DbCommandBuilder and added new configuration properties
 
-DbExtensions relied on **DbCommandBuilder** for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like **System.Data.SqlClient** and **MySql.Data.MySqlClient**.
+DbExtensions relied on DbCommandBuilder for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like System.Data.SqlClient and MySql.Data.MySqlClient.
 
 ### Removed Affect* methods
 
@@ -85,7 +85,7 @@ SqlBuilder
 
 ### Removed superfluous overloads
 
-Most **SqlBuilder** and **SqlSet** methods had two overloads, e.g. `SELECT(string)` and `SELECT(string, params object[])`. The overloads without the `params` array were added as an optimization to avoid creating array instances when not needed. However, it added a lot of noise to the API. Also, the optimization is now done by the C# compiler, so it's not needed anymore.
+Most SqlBuilder and SqlSet methods had two overloads, e.g. `SELECT(string)` and `SELECT(string, params object[])`. The overloads without the `params` array were added as an optimization to avoid creating array instances when not needed. However, it added a lot of noise to the API. Also, the optimization is now done by the C# compiler, so it's not needed anymore.
 
 ### Arrays in SqlBuilder and SqlSet are no longer *special*
 
