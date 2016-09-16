@@ -259,7 +259,7 @@ OFFSET @p2
 
 Conclusions
 -----------
-Having the power to write your own SQL is great. Not having to write the same simple queries over and over is even better. SqlSet helps your compose and reuse SQL in a database independent way. While SqlBuilder is meant for private use, SqlSet can be shared, allowing the caller to further refine the query. LINQ lovers should feel right at home with SqlSet.
+Having the power to write your own SQL is great. Not having to write the same simple queries over and over is even better. SqlSet helps you compose and reuse SQL in a database independent way. While SqlBuilder is meant for private use, SqlSet can be shared, allowing the caller to further refine the query. LINQ lovers should feel right at home with SqlSet.
 
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/README.md
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1_2.md
