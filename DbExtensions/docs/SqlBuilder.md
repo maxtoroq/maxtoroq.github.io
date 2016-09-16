@@ -284,8 +284,8 @@ public SqlBuilder JOIN(string format, params object[] args) {
 
 As you can see implementing a clause can be as easy as writing one line of code, it all depends on the parameters you define and how much you need to analyze them to produce a format string. Alternatively, you can access the underlying [StringBuilder][12] directly to append text, through the [Buffer][13] property.
 
-Mapping to objects with Entity Framework (DbContext)
-----------------------------------------------------
+Querying with Entity Framework (DbContext)
+------------------------------------------
 As stated in the design goals, getting and mapping data is beyond the scope of SqlBuilder, so to get data we need a data access component. SqlBuilder was inspired by LINQ to SQL's [ExecuteQuery][14] and [ExecuteCommand][15] methods. Entity Framework provides the same functionality with the [SqlQuery][16] and [ExecuteSqlCommand][17] methods:
 
 ```csharp
@@ -306,8 +306,8 @@ public IEnumerable<Product> GetProducts(int? categoryId) {
 
 Entity Framework maps columns to properties based on the column aliases used.
 
-Mapping to objects with DbExtensions
-------------------------------------
+Querying with DbExtensions
+--------------------------
 SqlBuilder is part of the [DbExtensions][18] library, which also supports mapping based on column aliases, see [Automatic Mapping][19].
 
 Conclusions
