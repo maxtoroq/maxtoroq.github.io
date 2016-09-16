@@ -155,7 +155,7 @@ return db.Map<SupplierInfo>(query);
 
 In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite column to the first constructor parameter (of Uri) of the second constructor parameter (of SupplierInfo)*.
 
-<div class="note">Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. It's the <em>number of numeric column names</em> which determines what constructor to use (number of parameters), and the arguments are passed in <em>numeric column order</em>.</div>
+<div class="note">Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. The <em>number of numeric column names</em> determines which constructor to use (number of parameters), and the arguments are passed in <em>numeric column order</em>.</div>
 
 *[POCO]: Plain Old CLR Object
 [1]: SqlBuilder.html
