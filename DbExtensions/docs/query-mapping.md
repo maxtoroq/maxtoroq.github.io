@@ -52,7 +52,7 @@ public class Supplier {
 }
 ```
 
-You can use the following query to return **Product**s that include **Category** and **Supplier**:
+You can use the following query to return Product objects that include Category and Supplier:
 
 ```csharp
 var query = SQL
@@ -131,7 +131,7 @@ Supplier table    SupplierInfo    in property's
                   object          constructor
 ```
 
-Let's use the Uri type again, but as parameter in **SupplierInfo**:
+Let's use the Uri type again, but as parameter in SupplierInfo:
 
 ```csharp
 public class SupplierInfo {
