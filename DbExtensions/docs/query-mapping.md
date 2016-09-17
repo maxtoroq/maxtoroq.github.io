@@ -122,14 +122,14 @@ return db.Map<SupplierInfo>(query);
 
 In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri][4] object.
 
-```text
+<div style="white-space: pre">
 CompanyWebsite AS CompanyWebsite$1
 \____________/    \____________/  \
       |                  |         \
   column in       property in     first parameter
 Supplier table    SupplierInfo    in property's
                   object          constructor
-```
+</div>
 
 Let's use the Uri type again, but as parameter in SupplierInfo:
 
