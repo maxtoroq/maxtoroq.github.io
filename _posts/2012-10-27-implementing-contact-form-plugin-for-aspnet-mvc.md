@@ -162,7 +162,7 @@ Patterns used:
 
 View
 ----
-```aspx-cs
+```csharp
 @model IndexViewModel
 
 @using (Html.BeginForm()) { 
