@@ -34,7 +34,7 @@ public ActionResult Edit(int id, string foo) {
 
 ...like this:
 
-```aspx-cs
+```csharp
 @using (Html.BeginForm()) {
    <button>Save</button>
    <button name="X-HTTP-Method-Override" value="DELETE">Delete</button>
