@@ -79,7 +79,7 @@ public class SalutationProgram {
 
 Keep in mind this is the simplest example I could come up with, imagine larger more complex programs. In XSLT however:
 
-```xslt
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -90,7 +90,7 @@ Keep in mind this is the simplest example I could come up with, imagine larger m
 
 The above is `salutator.xsl`, and this is how you can use it in an extensible way:
 
-```xslt
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -113,7 +113,7 @@ NULL friendly
 -------------
 In conventional languages, when something is null you have to work around it. For example, in Razor:
 
-```aspx-cs
+```csharp
 @if (Model.Message != null) {
    <div class="alert">@Model.Message</div>
 }
@@ -121,7 +121,7 @@ In conventional languages, when something is null you have to work around it. Fo
 
 In XSLT you declare a template, and if the data is absent it simply won't get called:
 
-```xslt
+```xml
 <xsl:template match="message">
    <div class="alert">
       <xsl:value-of select="."/>
@@ -137,7 +137,7 @@ url.Substring(url.IndexOf("://") + "://".Length)
 
 If `url` is null, the above code will fail at runtime[^4]. In XSLT however:
 
-```xslt
+```xml
 <xsl:value-of select="substring-after(url, '://')"/>
 ```
 
