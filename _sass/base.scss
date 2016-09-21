@@ -110,13 +110,17 @@ img {
 }
 
 pre {
+   
    font-size: 14px;
    line-height: 1.4;
-   background-color: rgba(0, 0, 0, 0.04);
-   color: #000;
    padding: 1em;
    overflow: auto;
    word-wrap: normal;
+   
+   &.highlight {
+      background-color: rgba(0, 0, 0, 0.04);
+      color: #000;
+   }
 }
 
 *:not(pre) > code {
@@ -165,7 +169,11 @@ pre {
       font-weight: 600;
    }
    
-   h1, h2 {
+   h1 {
+      font-weight: 700;
+   }
+   
+   h2 {
       font-weight: 400;
    }
 
