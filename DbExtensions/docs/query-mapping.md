@@ -122,7 +122,7 @@ return db.Map<SupplierInfo>(query);
 
 In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri][4] object.
 
-<pre style="background-color: transparent">
+<pre>
 CompanyWebsite AS CompanyWebsite$1
 \____________/    \____________/  \
       |                  |         \
