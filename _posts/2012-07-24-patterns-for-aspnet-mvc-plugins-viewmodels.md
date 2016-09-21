@@ -113,7 +113,7 @@ public static class HtmlHelperFactoryExtensions {
 
 This is how you use it in a view:
 
-```aspx-cs
+```csharp
 @using (Html.BeginForm()) {
    var inputHtml = Html.HtmlHelperFor(Model.InputModel);
    @inputHtml.EditorForModel()
