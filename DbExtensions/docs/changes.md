@@ -1,5 +1,5 @@
 ---
-title: Changes
+title: Change History
 ---
 
 <form onsubmit="window.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value; return false;">
