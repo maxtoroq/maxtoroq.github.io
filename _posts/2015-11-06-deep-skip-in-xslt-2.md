@@ -18,7 +18,7 @@ Suppose you have a language *s* (standard) that allows the inclusion of *x* (ext
 
 Detecting the use of an unknown standard element is easy, you simply declare a *catch-all* template and throw an error:
 
-```xslt
+```xml
 <xsl:template match="s:*" mode="s:instruction">
    <xsl:sequence select="error((), concat('Unknown element: ', local-name()))"/>
 </xsl:template>
@@ -26,7 +26,7 @@ Detecting the use of an unknown standard element is easy, you simply declare a *
 
 Detecting the use of an unknown extension element is a whole different story. If the language is truly extensible, then you cannot know all the elements available in the extension. Even though the extension developer could declare its own catch-all template and throw an error, you cannot rely on all extensions do the same. Since extensions are out of your control, the robust thing to do is handle unknown elements and throw the error yourself. But how can you detect if an extension element doesn't have a template rule? You can rely on the built-in template rule for elements, like this:
 
-```xslt
+```xml
 <xsl:template match="*" mode="s:extension">
    <xsl:param name="s:extension-recurse" select="false()"/>
 
@@ -44,7 +44,7 @@ This solution works when extension templates have lower <a href="http://www.w3.o
 
 The above is a catch-all template for extensions. The idea is that it matches before the extension's template (if there is one). When `$s:extension-recurse` is `false()`, we call `xsl:apply-imports` with `s:extension-recurse` set to `true()`. If the extension's template exists, everything is fine. If the extension's template does not exist, the built-in template rule for elements kicks in. The built-in template rule will call `xsl:apply-templates` to process the extension's child nodes in the same mode, **passing along any parameters it recieved**. This would translate into something like this:
 
-```xslt
+```xml
 <!-- Built-in template rule for elements in the s:extension mode -->
 <xsl:template match="*" mode="s:extension">
    <xsl:param name="s:extension-recurse"/>
@@ -59,7 +59,7 @@ If the extension (which at this point we know to be unknown) has child elements,
 
 Just in case extensions have text nodes, it's a good idea to ignore those too:
 
-```xslt
+```xml
 <xsl:template match="text()" mode="s:extension"/>
 ```
 
