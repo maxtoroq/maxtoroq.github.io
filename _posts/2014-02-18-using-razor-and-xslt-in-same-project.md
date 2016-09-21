@@ -12,7 +12,7 @@ Razor view with XSLT layout
 ---------------------------
 Let's say we have an XSLT layout like this:
 
-```xslt
+```xml
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
    <xsl:template match="/" name="main">
@@ -39,7 +39,7 @@ To use it from Razor we need to:
 
 This is the Razor view:
 
-```aspx-cs
+```csharp
 @layout ~/Views/Shared/_XsltLayout.cshtml
 @section head {
    <title>Razor / XSLT</title>
@@ -61,7 +61,7 @@ It uses _XsltLayout.cshtml, which is the helper Razor layout:
 
 The helper Razor layout calls `RenderSection` and `RenderBody` and passes the result to _LayoutForRazor.xsl, which is the helper stylesheet:
 
-```xslt
+```xml
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
    <xsl:import href="_Layout.xsl"/>
@@ -136,7 +136,7 @@ _LayoutForXslt.cshtml uses the Razor layout and does the work of rendering the a
 
 This is the actual XSLT view:
 
-```xslt
+```xml
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
    <xsl:import href="../Shared/_RazorLayout.xsl"/>
@@ -156,7 +156,7 @@ This is the actual XSLT view:
 
 It imports the helper stylesheet that does the job of rendering the appropriate section based on a parameter:
 
-```xslt
+```xml
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
    <xsl:param name="layout-section"/>
