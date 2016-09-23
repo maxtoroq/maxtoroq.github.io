@@ -8,7 +8,6 @@ Getting Started
 - [SqlBuilder Tutorial](SqlBuilder.html)
 - [SqlSet Tutorial](SqlSet.html)
 - [Query Mapping](query-mapping.html)
-- [Annotations](annotations.html)
 
 Migrating
 ---------
