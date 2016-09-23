@@ -25,7 +25,22 @@ public int ProductID { get; set; }
 
 AssociationAttribute
 --------------------
+Use the AssociationAttribute to represent a database association, such as a foreign key relationship.
+
+```csharp
+[Association(ThisKey = nameof(CategoryID))]
+public Category Category { get; set; }
+```
+
+For one-to-many relationships, use a type that implements [IEnumerable&lt;T>][4], such as [Collection&lt;T>][5].
+
+```csharp
+[Association(OtherKey = nameof(OrderDetail.ProductID))]
+public Collection<OrderDetail> OrderDetails { get; } = new Collection<OrderDetail>();
+```
 
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/TableAttribute/README.md
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/ColumnAttribute/README.md
 [3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/AssociationAttribute/README.md
+[4]: https://msdn.microsoft.com/en-us/library/9eekhta0
+[5]: https://msdn.microsoft.com/en-us/library/ms132397
