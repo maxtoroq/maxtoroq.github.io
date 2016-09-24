@@ -39,7 +39,7 @@ For one-to-many relationships, use a type that implements [IEnumerable&lt;T>][4]
 public Collection<OrderDetail> OrderDetails { get; } = new Collection<OrderDetail>();
 ```
 
-The default for ThisKey and OtherKey, when not specified, is the type's primary key columns.
+The default for ThisKey and OtherKey, when not specified, is the type's primary key properties.
 
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/TableAttribute/README.md
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/ColumnAttribute/README.md
