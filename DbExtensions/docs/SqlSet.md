@@ -194,7 +194,7 @@ You can also provide a custom mapping function:
 SqlSet<string> productNames = products.Select(r => r.GetString(0), "ProductName");
 ```
 
-The function takes an [IDataRecord][9] and can return anything you want.
+The function takes an [IDataRecord][9] and can return anything you want, which means you can also use SqlSet for simple values like `string` or `int`.
 
 If you provide no result type or mapping function it turns into an untyped set:
 
