@@ -9,7 +9,7 @@ title: Change History
 
 v6.0.0
 ------
-See [Migrating to v6](migrating/to-v6.html) for information about the changes in v6.
+See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
 - Added #48: SqlBuilder.CROSS_JOIN
 - Added #46: Support explicit DbParameter on CreateCommand 
