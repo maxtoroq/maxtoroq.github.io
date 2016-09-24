@@ -188,13 +188,19 @@ SqlSet<Product> products = db.From<Product>("Products");
 SqlSet<ProductStock> productStocks = products.Select<ProductStock>("ProductID, ProductName, UnitsInStock");
 ```
 
-You can also provide a custom mapper delegate:
+You can also provide a custom mapping delegate:
 
 ```csharp
 SqlSet<string> productNames = products.Select(r => r.GetString(0), "ProductName");
 ```
 
 The mapper delegates takes an [IDataRecord][9] and can return anything you want.
+
+If you provide no result type or mapping delegate it turns into an untyped set:
+
+```csharp
+SqlSet productNames = products.Select("ProductName");
+```
 
 Complex queries
 ---------------
