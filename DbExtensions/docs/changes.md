@@ -11,6 +11,12 @@ v6.0.0
 ------
 See [Migrating to v6](migrating/to-v6.html) for information about the changes in v6.
 
+- Added #48: SqlBuilder.CROSS_JOIN
+- Added #46: Support explicit DbParameter on CreateCommand 
+- Fixed #37: Cannot use multipart identifier in Table annotation
+- Fixed #25: Setting container object when loading 1:n sometimes fails
+- Added #24: Allow eager loading n:1 and 1:1 when loading 1:n
+
 v5.1.0
 ------
 - Improved #30: Make SqlBuilder.cs a standalone file
