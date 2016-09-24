@@ -1,8 +1,6 @@
 ---
 title: Annotations
 ---
-<div class="note danger">This is preliminary documentation</div>
-
 Annotations provide metadata about your objects that allows DbExtensions generate commands for you. There are three attributes available for this purpose: [TableAttribute][1], [ColumnAttribute][2] and [AssociationAttribute][3]. The use of these attributes is always required, DbExtensions doesn't infer any mapping between your objects and your database (no conventions).
 
 TableAttribute
