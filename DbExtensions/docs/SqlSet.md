@@ -315,7 +315,7 @@ OFFSET @p2
 -- [-1] records affected.
 ```
 
-Note that I called the [Database.Table][12] method instead of Database.From. Although using Database.From would also work, with Database.Table&lt;TEntity> you don't need to specify the table name. Both Database.Table and Include only work for [annotated types][13].
+Note that I called the [Database.Table][12] method instead of Database.From. Although using Database.From would also work, with Database.Table you don't need to specify the table name. Both Database.Table and Include only work for [annotated types][13].
 
 Conclusions
 -----------
