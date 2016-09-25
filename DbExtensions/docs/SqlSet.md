@@ -139,6 +139,8 @@ ORDER BY UnitsInStock
 
 Again, if you know LINQ this shouldn't come as a surprise.
 
+For more about Select, see [Projections](#projections).
+
 SqlSet vs. SqlSet&lt;TResult>
 -----------------------------
 So far we've been using the generic [SqlSet&lt;TResult>][7]. There is also a non-generic [SqlSet][1] (inherited by SqlSet&lt;TResult>) which is useful when you don't know the type you are mapping to until runtime.
