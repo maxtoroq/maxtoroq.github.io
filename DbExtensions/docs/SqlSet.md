@@ -317,6 +317,34 @@ OFFSET @p2
 
 Note that I called the [Database.Table][12] method instead of Database.From. Although using Database.From would also work, with Database.Table you don't need to specify the table name. Both Database.Table and Include only work for [annotated types][13].
 
+Include can be called many times:
+
+```csharp
+return this.db
+   .Table<Product>()
+   .Include("Category")
+   .Include("Supplier")
+   .AsEnumerable();
+```
+
+And you can use a deep path:
+
+```csharp
+return this.db
+   .Table<EmployeeTerritory>()
+   .Include("Territory.Region")
+   .AsEnumerable();
+```
+
+And load one-to-many associations:
+
+```csharp
+return this.db
+   .Table<Order>()
+   .Include("OrderDetails.Product")
+   .AsEnumerable();
+```
+
 Conclusions
 -----------
 Having the power to write your own SQL is great. Not having to write the same simple queries over and over is even better. SqlSet helps you compose and reuse SQL in a database independent way. While SqlBuilder is meant for private use, SqlSet can be shared, allowing the caller to further refine the query. LINQ lovers should feel right at home with SqlSet.
