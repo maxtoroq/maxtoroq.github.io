@@ -363,6 +363,17 @@ return this.db
    .AsEnumerable();
 ```
 
+Find
+----
+Find is another method that only works for annotated types. You can use it to get a single result (or null) that matches the given primary key value.
+
+```csharp
+Order order = db
+   .Table<Order>()
+   .Include("OrderDetails.Product")
+   .Find(orderId);
+```
+
 Conclusions
 -----------
 Having the power to write your own SQL is great. Not having to write the same simple queries over and over is even better. SqlSet helps you compose and reuse SQL in a database independent way. While SqlBuilder is meant for private use, SqlSet can be shared, allowing the caller to further refine the query. LINQ lovers should feel right at home with SqlSet.
