@@ -283,11 +283,11 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
 -- SQL Server
 SELECT *
 FROM (
-        SELECT [dbex_l].*, [dbex_r1].[CategoryID] AS Category$CategoryID, [dbex_r1].[CategoryName] AS Category$CategoryName, [dbex_r1].[Description] AS Category$Description, [dbex_r1].[Picture] AS Category$Picture
-        FROM (
-                SELECT [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]
-                FROM [Products]) [dbex_l]
-        LEFT JOIN [Categories] [dbex_r1] ON ([dbex_l].[CategoryID] = [dbex_r1].[CategoryID])) dbex_set6
+   SELECT [dbex_l].*, [dbex_r1].[CategoryID] AS Category$CategoryID, [dbex_r1].[CategoryName] AS Category$CategoryName, [dbex_r1].[Description] AS Category$Description, [dbex_r1].[Picture] AS Category$Picture
+   FROM (
+      SELECT [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]
+      FROM [Products]) [dbex_l]
+   LEFT JOIN [Categories] [dbex_r1] ON ([dbex_l].[CategoryID] = [dbex_r1].[CategoryID])) dbex_set6
 WHERE CategoryID = @p0
 ORDER BY ProductID DESC
 OFFSET @p1 ROWS
@@ -300,11 +300,11 @@ FETCH NEXT @p2 ROWS ONLY
 -- MySQL
 SELECT *
 FROM (
-        SELECT `dbex_l`.*, `dbex_r1`.`CategoryID` AS Category$CategoryID, `dbex_r1`.`CategoryName` AS Category$CategoryName, `dbex_r1`.`Description` AS Category$Description, `dbex_r1`.`Picture` AS Category$Picture
-        FROM (
-                SELECT `ProductID`, `ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, `Discontinued`
-                FROM `Products`) `dbex_l`
-        LEFT JOIN `Categories` `dbex_r1` ON (`dbex_l`.`CategoryID` = `dbex_r1`.`CategoryID`)) dbex_set6
+   SELECT `dbex_l`.*, `dbex_r1`.`CategoryID` AS Category$CategoryID, `dbex_r1`.`CategoryName` AS Category$CategoryName, `dbex_r1`.`Description` AS Category$Description, `dbex_r1`.`Picture` AS Category$Picture
+   FROM (
+      SELECT `ProductID`, `ProductName`, `SupplierID`, `CategoryID`, `QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, `Discontinued`
+      FROM `Products`) `dbex_l`
+   LEFT JOIN `Categories` `dbex_r1` ON (`dbex_l`.`CategoryID` = `dbex_r1`.`CategoryID`)) dbex_set6
 WHERE CategoryID = @p0
 ORDER BY ProductID DESC
 LIMIT @p1
