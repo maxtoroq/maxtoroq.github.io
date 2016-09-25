@@ -315,7 +315,7 @@ OFFSET @p2
 -- [-1] records affected.
 ```
 
-Note that I called the [Database.Table&lt;T>][12] method instead of Database.From. Although using Database.From would also work, with Database.Table&lt;T> you don't need to specify the table name. Both Database.Table&lt;T> and Include only work for [annotated types][11].
+Note that I called the [Database.Table&lt;TEntity>][12] method instead of Database.From. Although using Database.From would also work, with Database.Table&lt;TEntity> you don't need to specify the table name. Both Database.Table&lt;T> and Include only work for [annotated types][13].
 
 Conclusions
 -----------
@@ -333,4 +333,4 @@ Having the power to write your own SQL is great. Not having to write the same si
 [10]: query-mapping.html
 [11]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
 [12]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/Table__1.md
-[11]: annotations.html
+[13]: annotations.html
