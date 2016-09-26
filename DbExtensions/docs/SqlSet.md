@@ -2,22 +2,6 @@
 title: SqlSet Tutorial
 ---
 
-### Contents
-
-- [Overview](#overview)
-- [AsEnumerable, ToArray, ToList](#asenumerable-toarray-tolist)
-- [First, FirstOrDefault, Single, SingleOrDefault](#first-firstordefault-single-singleordefault)
-- [All, Any](#all-any)
-- [Count, LongCount](#count-longcount)
-- [Where, OrderBy, Skip, Take, Select](#where-orderby-skip-take-select)
-- [SqlSet vs. SqlSet&lt;TResult>](#sqlset-vs-sqlsetlttresult)
-- [Typed vs. Untyped](#typed-vs-untyped)
-- [Projections](#projections)
-- [Complex queries](#complex-queries)
-- [Include](#include)
-- [Find](#find)
-- [Conclusions](#conclusions)
-
 Overview
 --------
 [SqlSet][1] is a class designed to build and optionally execute SQL queries. It's a LINQ-inspired query API that uses SQL instead of lambda expressions. The main design goals are:
