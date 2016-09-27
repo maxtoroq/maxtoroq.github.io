@@ -1,3 +1,7 @@
+---
+title: XCST Introduction for the XSLT Developer
+---
+
 XCST is heavily inspired in XSLT. The main difference is that it uses C# as expression language, instead of XPath. XCST is therefore not meant as a replacement of XSLT, but as a co
 
 Why XCST?
