@@ -60,60 +60,8 @@ Second, the visibility of functions. In modules, functions are always visible to
 
 Packages are implemented as classes, composed of all the partial classes that represent each module imported by the package. When a package uses another package, it's using another class, therefore solving the duplicate compilation and visibility issues.
 
-Notable differences with XSLT
------------------------------
-
-### No template rules
-
-At least not for now. Only named templates.
-
-### No qualified names for variables and functions
-
-Variable and function names are mapped directly to C# identifiers, therefore qualified names is not an option. You can still use qualified names for templates, output and attribute set definitions.
-
-### Not structured, not immutable
-
-XCST does not change what *kind* of language C# is. You can do things you can't do in XSLT, like exit early from a template (using `c:return`) or changing the value of a variable (using `c:set`).
-
-Original features
------------------
-
-### Call the next template or function
-
-`c:next-template` and `c:next-function` are like `xsl:next-match`, but for named templates and functions.
-
-### Type definitions
-
-Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in .NET. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
-
-```xml
-<c:type name='Order'>
-   <c:member name='Name' as='string' required='yes'/>
-   <c:member name='Email' as='string' required='yes' display-name='E-mail'/>
-   <c:member name='Telephone' as='string' required='yes'/>
-   <c:member name='ShippingAddress' required='yes'>
-      <c:member name='Line1' as='string' required='yes'/>
-      <c:member name='Line2' as='string' required='yes'/>
-      <c:member name='City' as='string' required='yes'/>
-      <c:member name='Region' as='string' required='yes'/>
-      <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
-   </c:member>
-</c:type>
-```
-
-### Inline C&#35;
-
-Use the `c:script` instruction for inline C#.
-
-```xml
-<c:script>
-<![CDATA[
-// This is C#
-]]>
-</c:script>
-```
-
-### Application extension
+Application extension
+---------------------
 
 The XCST implementation supports a set of extension instructions for web application development based on ASP.NET MVC 5.
 
