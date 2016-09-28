@@ -15,7 +15,6 @@ This guide focuses on the differences between XCST and XSLT. Not every XSLT elem
 - [Temporary trees](#temporary-trees)
 - [Templates](#templates)
 - [Functions](#functions)
-- [Type definitions](#type-definitions)
 - [Serialization](#serialization)
 - [Dynamic loading](#dynamic-loading)
 
@@ -49,6 +48,8 @@ In XCST, a module starts with `c:module`. In addition, the `language` attribute 
 While the implementation only supports C#, support for other languages, in this or other implementations, is possible.
 
 You can import other modules with `c:import`, given that they also use the same `language`.
+
+The `exclude-result-prefixes` attribute is not available because namespace nodes are not copied to the output.
 
 QNames
 ------
@@ -179,32 +180,13 @@ Functions are always compiled in statement mode, and **can** return values. An e
 
 ```xml
 <c:function name="foo" as="int">
-   <c:return value='1'/>
+   <c:return value="1"/>
 </c:function>
 ```
 
 Functions parameters can have default values (not allowed in XSLT), although the kind of expressions allowed is quite limited (a C# limitation).
 
 You can also call the next function based on import precedence, using `c:next-function`.
-
-Type definitions
-----------------
-Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in .NET. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
-
-```xml
-<c:type name='Order'>
-   <c:member name='Name' as='string' required='yes'/>
-   <c:member name='Email' as='string' required='yes' display-name='E-mail'/>
-   <c:member name='Telephone' as='string' required='yes'/>
-   <c:member name='ShippingAddress' required='yes'>
-      <c:member name='Line1' as='string' required='yes'/>
-      <c:member name='Line2' as='string' required='yes'/>
-      <c:member name='City' as='string' required='yes'/>
-      <c:member name='Region' as='string' required='yes'/>
-      <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
-   </c:member>
-</c:type>
-```
 
 Serialization
 -------------
