@@ -85,7 +85,7 @@ if (foo) {
 
 ...depending on the context. Using an instruction like `c:return` is not allowed in expression mode.
 
-Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. In XCST, **strings are a first class citizen**. For example, in XSLT it's not recommended to do this:
+Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. In XCST, **string is a first class citizen**. For example, in XSLT it's not recommended to do this:
 
 ```xml
 <xsl:attribute name="foo">foo</xsl:attribute>
