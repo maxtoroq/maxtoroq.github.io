@@ -16,6 +16,7 @@ This guide focuses on the differences between XCST and XSLT. Not every XSLT elem
 - [Templates](#templates)
 - [Functions](#functions)
 - [Type definitions](#type-definitions)
+- [Dynamic loading](#dynamic-loading)
 
 Why XCST?
 ---------
@@ -202,6 +203,45 @@ Instead of XSD schemas, you can define C# types using the `c:type` declaration. 
       <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
    </c:member>
 </c:type>
+```
+
+Dynamic loading
+---------------
+XPath 3.1 has the `fn:transform` function that allows you to dynamically load and execute an XSLT transformation.
+
+In XCST, you use the `c:using-module` instruction:
+
+```xml
+<c:using-module value='new OtherPackage()'>
+   <c:with-param name='foo'>foo</c:with-param>
+   <c:call-template name='c:initial-template'>
+      <c:with-param name='bar'>bar</c:with-param>
+   </c:call-template>
+</c:using-module>
+```
+
+The `value` attribute is used to provide an instance of a pre-compiled module/package. Loading a module using its URI is planned but currently not supported, as it requires a direct dependency on the C# compiler.
+
+You can send the results to another file with `c:result-document`:
+
+```xml
+<c:result-document href='foo.html' method='html'>
+   <c:using-module>
+      ...  
+   </c:using-module>
+</c:result-document>
+```
+
+Or create a string with `c:serialize`:
+
+```xml
+<c:variable name='resultString'>
+   <c:serialize method='html'>
+      <c:using-module>
+         ...  
+      </c:using-module>
+   </c:serialize>
+</c:variable>
 ```
 
 [1]: {{ page.repository_url }}/tree/master/schemas
