@@ -157,7 +157,7 @@ Templates are always compiled in statement mode, and cannot return values. For i
 
 ```xml
 <xsl:template name="foo" as="xs:integer">
-   <xsl:sequence select='1'/>
+   <xsl:sequence select="1"/>
 </xsl:template>
 ```
 
@@ -170,8 +170,8 @@ Functions
 Functions are always compiled in statement mode, and **can** return values. An explicit `c:return` is therefore required:
 
 ```xml
-<c:function name="foo" as="int">
-   <c:return value="1"/>
+<c:function name='foo' as='int'>
+   <c:return value='1'/>
 </c:function>
 ```
 
