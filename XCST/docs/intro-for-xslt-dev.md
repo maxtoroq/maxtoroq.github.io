@@ -47,7 +47,7 @@ You can import other modules with `c:import`, given that they also use the same 
 
 QNames
 ------
-`c:template`, `c:output` and `c:attribute-set` use qualified names. 
+`c:template`, `c:output` and `c:attribute-set` use qualified names. `http://maxtoroq.github.io/XCST` and any namespace that starts with `http://maxtoroq.github.io/XCST/` are reserved.
 
 Variable and function names are mapped directly to C# identifiers, therefore QNames is not an option.
 
