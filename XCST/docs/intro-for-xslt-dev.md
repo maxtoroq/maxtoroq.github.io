@@ -153,6 +153,7 @@ Variables
 The types and values for variables and parameters is summarized in the table below.
 
 value attribute | as attribute | content | Effect
+------- | ------- | -------- | -------
 present | absent | empty | Value is obtained by evaluating the `value` attribute. The type inferred by the expression (e.g. `var` in statement mode).
 present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute (Casted, not converted)
 present | absent | present | Compilation error
