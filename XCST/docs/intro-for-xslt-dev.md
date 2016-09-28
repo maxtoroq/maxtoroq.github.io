@@ -16,6 +16,7 @@ This guide focuses on the differences between XCST and XSLT. Not every XSLT elem
 - [Templates](#templates)
 - [Functions](#functions)
 - [Type definitions](#type-definitions)
+- [Serialization](#serialization)
 - [Dynamic loading](#dynamic-loading)
 
 Why XCST?
@@ -203,6 +204,20 @@ Instead of XSD schemas, you can define C# types using the `c:type` declaration. 
       <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
    </c:member>
 </c:type>
+```
+
+Serialization
+-------------
+XPath 3.1 has the `fn:serialize` transform that allows you to create a string from XML content.
+
+In XCST, you use the `c:serialize` instruction:
+
+```xml
+<c:variable name='fooString'>
+   <c:serialize>
+      <foo>foo</foo>
+   </c:serialize>
+</c:variable>
 ```
 
 Dynamic loading
