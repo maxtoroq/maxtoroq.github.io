@@ -117,6 +117,8 @@ The <code>select</code> attribute present in many XSLT instructions like <code>x
 
 Templates
 ---------
+Template rules are currently not supported, only named templates.
+
 Templates are always compiled in statement mode, and cannot return values. For instance, you cannot do this:
 
 ```xml
@@ -127,7 +129,7 @@ Templates are always compiled in statement mode, and cannot return values. For i
 
 This makes templates in XCST more like templates in XSLT 1.0 than 2.0/3.0.
 
-`c:next-template` and `c:next-function` are like `xsl:next-match`, but for named templates and functions.
+One thing you can do in XCST that XSLT doesn't support is calling the next template based on import precedence (something like `xsl:next-match` but for named templates), using `c:next-template`.
 
 Functions
 ---------
@@ -138,6 +140,8 @@ Functions are always compiled in statement mode, and **can** return values. An e
    <c:return value='1'/>
 </c:function>
 ```
+
+You can also call the next function based on import precedence, using `c:next-function`.
 
 Type definitions
 ----------------
