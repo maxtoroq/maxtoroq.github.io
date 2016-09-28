@@ -9,6 +9,8 @@ XCST is heavily inspired in XSLT. The main difference is that it uses C# as expr
 - [Modules](#modules)
 - [QNames](#qnames)
 - [Sequence constructors](#sequence-constructors)
+- [Templates](#templates)
+- [Functions](#functions)
 - [Type definitions](#type-definitions)
 
 Why XCST?
