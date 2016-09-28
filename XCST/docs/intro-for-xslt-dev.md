@@ -158,7 +158,7 @@ present | absent | empty | Value is obtained by evaluating the `value` attribute
 present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute (Casted, not converted)
 present | absent | present | Compilation error
 present | present | present | Compilation error
-absent | absent | empty | Variable is not initialized (no value)
+absent | absent | empty | Variable is not initialized, and the type is `object` (e.g. `object foo;`).
 absent | present | empty | Value is the default value of the type (`default(T)` in C#)
 absent | absent | present | Value is a `string` is the content is a text node. Otherwise, it's inferred from the content.
 absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute
