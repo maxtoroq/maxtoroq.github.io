@@ -4,6 +4,12 @@ title: XCST Introduction for the XSLT Developer
 
 XCST is heavily inspired in XSLT. The main difference is that it uses C# as expression language, instead of XPath. XCST is therefore not meant as a replacement of XSLT, but as an alternative, or even a complement (e.g. produce XML with XCST and transform it with XSLT).
 
+### Contents
+- [Why XCST?](#why-xcst)
+- [Modules](#modules)
+- [Sequence constructors](#sequence-constructors)
+- [QNames](#qnames)
+
 Why XCST?
 ---------
 While XSLT is a great tool, there are several reasons why it might not be a good choice.
@@ -19,17 +25,64 @@ For structured data, fill-in-the-blanks type of templating, XSLT is simply too p
 
 Depending on your scenario, there might be more reasons for choosing XCST over XSLT.
 
-Not structured, not immutable
------------------------------
-XCST does not change what *kind* of language C# is. You can do things you can't do in XSLT, like exit early from a template (using `c:return`) or changing the value of a variable (using `c:set`).
+Modules
+-------
+In XSLT, a module starts with `xsl:stylesheet` or `xsl:transform`.
 
-No template rules
------------------
-At least not for now. Only named templates.
+In XCST, a module starts with `c:module`.
 
-No qualified names for variables and functions
-----------------------------------------------
+QNames
+------
 Variable and function names are mapped directly to C# identifiers, therefore qualified names is not an option. You can still use qualified names for templates, output and attribute set definitions.
+
+Sequence constructors
+---------------------
+XCST is not a strictly structured language like XSLT. You can exit early from a template (using `c:return`), or from a loop (using `c:break` or `c:continue`). Sequence constructors are compiled in two modes: statement or expression. For instance, the following code:
+
+```xml
+<c:choose>
+   <c:when test='foo'>foo</c:when>
+   <c:otherwise>bar</c:otherwise>
+</c:choose>
+```
+
+...can be compiled to:
+
+```csharp
+if (foo) {
+   WriteString("foo");
+} else {
+   WriteString("bar");
+}
+```
+
+...or:
+
+```csharp
+(foo) ? "foo" : "bar"
+```
+
+Using an instruction like `c:return` is not allowed in expression mode.
+
+Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. XCST makes strings a first class citizen. For example, in XSLT it's not recommended to do this:
+
+```xml
+<xsl:attribute name="foo">foo</xsl:attribute>
+```
+
+...because you are creating a text node that has to be atomized. Instead, you should do this:
+
+```xml
+<xsl:attribute name="foo" select="'foo'"/>
+```
+
+In XCST, you can use a text node where a string is expected or desired:
+
+```xml
+<c:attribute name='foo'>foo</c:attribute>
+<c:variable name='bar'>bar</c:variable>
+<c:assert test='bar.GetType() == typeof(string)'/>
+```
 
 Call the next template or function
 ----------------------------------
