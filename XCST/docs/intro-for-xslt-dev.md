@@ -4,7 +4,7 @@ title: XCST Introduction for the XSLT Developer
 
 XCST is heavily inspired in XSLT. The main difference is that it uses C# as expression language, instead of XPath. XCST is therefore not meant as a replacement of XSLT, but as an alternative, or even a complement (e.g. produce XML with XCST and transform it with XSLT).
 
-This guide focuses on the differences between XCST and XSLT. If a feature is not mentioned here, it's safe to asume it works the same.
+This guide focuses on the differences between XCST and XSLT. If a feature is not mentioned here, it's safe to asume it works the same. Not every XSLT element has an XCST counterpart, for information about the available elements and attributes see the [schemas][1].
 
 ### Contents
 - [Why XCST?](#why-xcst)
@@ -198,3 +198,5 @@ Instead of XSD schemas, you can define C# types using the `c:type` declaration. 
    </c:member>
 </c:type>
 ```
+
+[1]: {{ page.repository_url }}/tree/master/schemas
