@@ -155,13 +155,13 @@ The types and values for variables and parameters is summarized in the table bel
 value attribute | as attribute | content | Effect
 ------- | ------- | -------- | -------
 present | absent | empty | Value is obtained by evaluating the `value` attribute. The type inferred by the expression (e.g. `var` in statement mode).
-present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute (Casted, not converted)
+present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute (Casted, not converted).
 present | absent | present | Compilation error
 present | present | present | Compilation error
 absent | absent | empty | Variable is not initialized, and the type is `object` (e.g. `object foo;`).
 absent | present | empty | Value is the default value of the type (`default(T)` in C#)
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (`string` for text nodes).
-absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute
+absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute.
 
 Type definitions
 ----------------
