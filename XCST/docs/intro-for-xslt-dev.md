@@ -102,7 +102,7 @@ var numbers = new[] { 1, 2, 3 };
 ```
 
 <div class="note">
-The `select` attribute present in many XSLT instructions like `xsl:attribute`, `xsl:value-of`, `xsl:sequence`, etc. is called `value` in XCST. The reason is that <em>select</em> doesn't make much sense when there's no such thing as a context item. Also, `c:object` serves the same purpose as `xsl:sequence`.
+The <code>select</code> attribute present in many XSLT instructions like <code>xsl:attribute</code>, <code>xsl:value-of</code>, <code>xsl:sequence</code>, etc. is called <code>value</code> in XCST. The reason is that <em>select</em> doesn't make much sense when there's no such thing as a context item. Also, <code>c:object</code> serves the same purpose as <code>xsl:sequence</code>.
 </div>
 
 Templates
