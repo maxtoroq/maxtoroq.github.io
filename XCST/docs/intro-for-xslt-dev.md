@@ -34,6 +34,7 @@ In XCST, a module starts with `c:module`. In addition, the `language` attribute 
 
 ```xml
 <c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
+   ...
 </c:module>
 ```
 
