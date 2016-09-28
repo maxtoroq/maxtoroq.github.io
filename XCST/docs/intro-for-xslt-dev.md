@@ -73,7 +73,7 @@ if (foo) {
 (foo) ? "foo" : "bar"
 ```
 
-Using an instruction like `c:return` is not allowed in expression mode.
+...depending on the context. Using an instruction like `c:return` is not allowed in expression mode.
 
 Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. XCST makes strings a first class citizen. For example, in XSLT it's not recommended to do this:
 
