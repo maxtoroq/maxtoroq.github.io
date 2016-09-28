@@ -9,6 +9,7 @@ XCST is heavily inspired in XSLT. The main difference is that it uses C# as expr
 - [Modules](#modules)
 - [QNames](#qnames)
 - [Sequence constructors](#sequence-constructors)
+- [Type definitions](#type-definitions)
 
 Why XCST?
 ---------
@@ -88,9 +89,9 @@ In expression mode, if a sequence constructor has more than one children it's co
 
 ```xml
 <c:variable name='numbers'>
-   <c:sequence value='1'/>
-   <c:sequence value='2'/>
-   <c:sequence value='3'/>
+   <c:object value='1'/>
+   <c:object value='2'/>
+   <c:object value='3'/>
 </c:variable>
 ```
 
@@ -100,9 +101,33 @@ In expression mode, if a sequence constructor has more than one children it's co
 var numbers = new[] { 1, 2, 3 };
 ```
 
-Call the next template or function
-----------------------------------
+<div class="note">
+The `select` attribute present in many XSLT instructions like `xsl:attribute`, `xsl:value-of`, `xsl:sequence`, etc. is called `value` in XCST. The reason is that <em>select</em> doesn't make much sense when there's no such thing as a context item. Also, `c:object` serves the same purpose as `xsl:sequence`.
+</div>
+
+Templates
+---------
+Templates are always compiled in statement mode, and cannot return values. For instance, you cannot do this:
+
+```xml
+<xsl:template name="foo" as="xs:integer">
+   <xsl:sequence select='1'/>
+</xsl:template>
+```
+
+This makes templates in XCST more like templates in XSLT 1.0 than 2.0/3.0.
+
 `c:next-template` and `c:next-function` are like `xsl:next-match`, but for named templates and functions.
+
+Functions
+---------
+Functions are always compiled in statement mode, and **can** return values. An explicit `c:return` is therefore required:
+
+```xml
+<c:function name="foo" as="int">
+   <c:return value='1'/>
+</c:function>
+```
 
 Type definitions
 ----------------
@@ -121,16 +146,4 @@ Instead of XSD schemas, you can define C# types using the `c:type` declaration. 
       <c:member name='Country' as='string' required='yes' min-length='2' max-length='2'/>
    </c:member>
 </c:type>
-```
-
-Inline C&#35;
--------------
-Use the `c:script` instruction for inline C#.
-
-```xml
-<c:script>
-<![CDATA[
-// This is C#
-]]>
-</c:script>
 ```
