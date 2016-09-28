@@ -7,8 +7,8 @@ XCST is heavily inspired in XSLT. The main difference is that it uses C# as expr
 ### Contents
 - [Why XCST?](#why-xcst)
 - [Modules](#modules)
-- [Sequence constructors](#sequence-constructors)
 - [QNames](#qnames)
+- [Sequence constructors](#sequence-constructors)
 
 Why XCST?
 ---------
@@ -82,6 +82,22 @@ In XCST, you can use a text node where a string is expected or desired:
 <c:attribute name='foo'>foo</c:attribute>
 <c:variable name='bar'>bar</c:variable>
 <c:assert test='bar.GetType() == typeof(string)'/>
+```
+
+In expression mode, if a sequence constructor has more than one children it's compiled into an array, e.g.:
+
+```xml
+<c:variable name='numbers'>
+   <c:sequence value='1'/>
+   <c:sequence value='2'/>
+   <c:sequence value='3'/>
+</c:variable>
+```
+
+...is compiled to:
+
+```
+var numbers = new[] { 1, 2, 3 };
 ```
 
 Call the next template or function
