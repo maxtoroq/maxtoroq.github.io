@@ -16,7 +16,7 @@ Why XCST?
 While XSLT is a great tool, there are several reasons why it might not be a good choice.
 
 ### #1. Your data is not XML
-Converting your objects to XML is possible, but it requires you to follow certain patterns imposed by serialization libraries.
+Converting your objects to XML is possible, but it requires you to follow certain patterns imposed by serialization libraries, and you lose type safety.
 
 ### #2. You want more than data
 Calling C# functions from XSLT is possible, but it requires special configuration and sometimes translation between XDM types and .NET types.
