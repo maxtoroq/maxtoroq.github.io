@@ -208,7 +208,7 @@ Instead of XSD schemas, you can define C# types using the `c:type` declaration. 
 
 Serialization
 -------------
-XPath 3.1 has the `fn:serialize` transform that allows you to create a string from XML content.
+XPath 3.1 has the `fn:serialize` function that allows you to create a string from XML content.
 
 In XCST, you use the `c:serialize` instruction:
 
