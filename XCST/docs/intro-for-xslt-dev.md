@@ -145,15 +145,6 @@ absent | present | present | Value is obtained by evaluating the sequence constr
 
 Two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
 
-Also, you can have variables that are not initialized, e.g.:
-
-```xml
-<c:variable name='i' as='int'/>
-<c:if test='int.TryParse("1", out i)'>
-   ...
-</c:if>
-```
-
 Temporary trees
 ---------------
 Temporary trees are currently not supported. Working with XML data is not a priority for XCST, since that's what XSLT is for. However, there might be use cases, so future support is to be considered.
