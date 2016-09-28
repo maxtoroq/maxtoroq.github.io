@@ -30,7 +30,16 @@ Modules
 -------
 In XSLT, a module starts with `xsl:stylesheet` or `xsl:transform`.
 
-In XCST, a module starts with `c:module`.
+In XCST, a module starts with `c:module`. In addition, the `language` attribute is required:
+
+```xml
+<c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
+</c:module>
+```
+
+While the implementation only supports C#, the XCST language can be used with other languages.
+
+You can import other modules with `c:import`, given that they also use the same `language`.
 
 QNames
 ------
