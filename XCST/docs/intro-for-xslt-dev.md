@@ -291,4 +291,9 @@ If the module below imports the module above:
 <foo>foobar</foo>
 ```
 
+Wrapping up
+-----------
+Any other XSLT feature you are not sure how to translate to XCST? [Let me know][2].
+
 [1]: {{ page.repository_url }}/tree/master/schemas
+[2]: {{ page.support_url }}
