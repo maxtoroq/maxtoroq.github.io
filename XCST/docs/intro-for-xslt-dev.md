@@ -17,6 +17,7 @@ This guide focuses on the differences between XCST and XSLT. Not every XSLT elem
 - [Functions](#functions)
 - [Serialization](#serialization)
 - [Dynamic loading](#dynamic-loading)
+- [Packages](#packages)
 
 Why XCST?
 ---------
@@ -230,6 +231,64 @@ Or create a string with `c:serialize`:
       </c:using-module>
    </c:serialize>
 </c:variable>
+```
+
+Packages
+--------
+In XCST, packages are identified by a fully-qualified class name:
+
+```xml
+<c:package name='com.example.MyPackage' version='1.0' language='C#'
+   xmlns:c='http://maxtoroq.github.io/XCST'>
+   ...
+</c:package>
+```
+
+Package versioning is not supported.
+
+In XSLT, the `xsl:use-package` can only be declared at the highest import precedence level, that is, the principal module or an included (not imported) module. XCST doesn't have this restriction, you can use `c:use-package` on any module. Furthermore, you can use import precedence to override an overriding component of a used package. For example:
+
+```xml
+<c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
+   
+   <c:use-package name='com.example.MyPackage'>
+      <c:override>
+         <c:template name='foo'>foo</c:template>
+      </c:override>
+   </c:use-package>
+   
+</c:module>
+```
+
+If the module below imports the module above:
+
+```xml
+<c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
+   
+   <c:import href='module.xcst'/>
+   
+   <c:use-package name='com.example.MyPackage'>
+      <c:override>
+         <c:template name='foo'>
+            <c:next-template/>
+            <c:text>bar</c:text>
+         </c:template>
+      </c:override>
+   </c:use-package>
+   
+   <c:template name='c:initial-template'>
+      <foo>
+         <c:call-template name='foo'/>
+      </foo>
+   </c:template>
+   
+</c:module>
+```
+
+...the output is:
+
+```xml
+<foo>foobar</foo>
 ```
 
 [1]: {{ page.repository_url }}/tree/master/schemas
