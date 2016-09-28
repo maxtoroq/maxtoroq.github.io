@@ -11,7 +11,7 @@ XCST is heavily inspired in XSLT. The main difference is that it uses C# as expr
 - [Sequence constructors](#sequence-constructors)
 - [Templates](#templates)
 - [Functions](#functions)
-- [Variables](#variables)
+- [Variables and parameters](#variables-and-parameters)
 - [Type definitions](#type-definitions)
 
 Why XCST?
@@ -150,8 +150,10 @@ Functions parameters can have default values (not allowed in XSLT), although the
 
 You can also call the next function based on import precedence, using `c:next-function`.
 
-Variables
----------
+Variables and parameters
+------------------------
+Variables are mutable in XCST, as they are in C#.
+
 The types and values for variables and parameters is summarized in the table below.
 
 value attribute | as attribute | content | Effect
@@ -165,7 +167,16 @@ absent | present | empty | Variables are not initialized. Parameters are initial
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (`string` for text nodes).
 absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute.
 
-There are two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
+Two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
+
+Also, you can have variables that are not initialized, e.g.:
+
+```xml
+<c:variable name='i' as='int'/>
+<c:if test='int.TryParse("1", out i)'>
+   ...
+</c:if>
+```
 
 Type definitions
 ----------------
