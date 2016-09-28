@@ -163,6 +163,8 @@ absent | present | empty | Value is the default value of the type (`default(T)` 
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (`string` for text nodes).
 absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute.
 
+There are two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
+
 Type definitions
 ----------------
 Instead of XSD schemas, you can define C# types using the `c:type` declaration. `c:type` is for data only, not behavior. There are several attributes available that map to presentation and validation attributes in .NET. Also, if you omit the `as` attribute in `c:member` you can define child members for a russian doll style of type definition.
