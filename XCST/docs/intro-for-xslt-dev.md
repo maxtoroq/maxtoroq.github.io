@@ -4,16 +4,17 @@ title: XCST Introduction for the XSLT Developer
 
 XCST is heavily inspired in XSLT. The main difference is that it uses C# as expression language, instead of XPath. XCST is therefore not meant as a replacement of XSLT, but as an alternative, or even a complement (e.g. produce XML with XCST and transform it with XSLT).
 
-This guide focuses on the differences between XCST and XSLT. If a feature is not mentioned here, it's safe to asume it works the same. Not every XSLT element has an XCST counterpart, for information about the available elements and attributes see the [schemas][1].
+This guide focuses on the differences between XCST and XSLT. Not every XSLT element has an XCST counterpart, for information about the available elements and attributes see the [schemas][1].
 
 ### Contents
 - [Why XCST?](#why-xcst)
 - [Modules](#modules)
 - [QNames](#qnames)
 - [Sequence constructors](#sequence-constructors)
+- [Variables and parameters](#variables-and-parameters)
+- [Temporary trees](#temporary-trees)
 - [Templates](#templates)
 - [Functions](#functions)
-- [Variables and parameters](#variables-and-parameters)
 - [Type definitions](#type-definitions)
 
 Why XCST?
@@ -122,6 +123,38 @@ var numbers = new[] { 1, 2, 3 };
 The <code>select</code> attribute present in many XSLT instructions like <code>xsl:attribute</code>, <code>xsl:value-of</code>, <code>xsl:sequence</code>, etc. is called <code>value</code> in XCST. The reason is that <em>select</em> doesn't make much sense when there's no such thing as a context item. Also, <code>c:object</code> serves the same purpose as <code>xsl:sequence</code>.
 </div>
 
+Variables and parameters
+------------------------
+Variables are mutable in XCST, as they are in C#.
+
+The types and values for variables and parameters is summarized in the table below.
+
+value attribute | as attribute | content | Effect
+------- | ------- | -------- | -------
+present | absent | empty | Value is obtained by evaluating the `value` attribute. The type inferred by the expression (e.g. `var` in statement mode).
+present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute.
+present | absent | present | Compilation error
+present | present | present | Compilation error
+absent | absent | empty | Variables are not initialized. Template parameters are initialized with `null`. The type is `object`.
+absent | present | empty | Variables are not initialized. Template parameters are initialized with the default value of the type (`default(T)` in C#).
+absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (`string` for text nodes).
+absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute.
+
+Two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
+
+Also, you can have variables that are not initialized, e.g.:
+
+```xml
+<c:variable name='i' as='int'/>
+<c:if test='int.TryParse("1", out i)'>
+   ...
+</c:if>
+```
+
+Temporary trees
+---------------
+Temporary trees are currently not supported. Working with XML data is not a priority for XCST, since that's what XSLT is for. However, there might be use cases, so future support is to be considered.
+
 Templates
 ---------
 Template rules are currently not supported, only named templates.
@@ -151,34 +184,6 @@ Functions are always compiled in statement mode, and **can** return values. An e
 Functions parameters can have default values (not allowed in XSLT), although the kind of expressions allowed is quite limited (a C# limitation).
 
 You can also call the next function based on import precedence, using `c:next-function`.
-
-Variables and parameters
-------------------------
-Variables are mutable in XCST, as they are in C#.
-
-The types and values for variables and parameters is summarized in the table below.
-
-value attribute | as attribute | content | Effect
-------- | ------- | -------- | -------
-present | absent | empty | Value is obtained by evaluating the `value` attribute. The type inferred by the expression (e.g. `var` in statement mode).
-present | present | empty | Value is obtained by evaluating the `value` attribute, adjusted to the type required by the `as` attribute.
-present | absent | present | Compilation error
-present | present | present | Compilation error
-absent | absent | empty | Variables are not initialized. Template parameters are initialized with `null`. The type is `object`.
-absent | present | empty | Variables are not initialized. Template parameters are initialized with the default value of the type (`default(T)` in C#).
-absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (`string` for text nodes).
-absent | present | present | Value is obtained by evaluating the sequence constructor, adjusted to the type required by the `as` attribute.
-
-Two notable differences with XSLT: no implicit document nodes and no implicit zero-length strings.
-
-Also, you can have variables that are not initialized, e.g.:
-
-```xml
-<c:variable name='i' as='int'/>
-<c:if test='int.TryParse("1", out i)'>
-   ...
-</c:if>
-```
 
 Type definitions
 ----------------
