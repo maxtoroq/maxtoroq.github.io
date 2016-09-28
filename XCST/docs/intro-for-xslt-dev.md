@@ -47,7 +47,9 @@ You can import other modules with `c:import`, given that they also use the same 
 
 QNames
 ------
-Variable and function names are mapped directly to C# identifiers, therefore qualified names is not an option. You can still use qualified names for templates, output and attribute set definitions.
+`c:template`, `c:output` and `c:attribute-set` use QNames. 
+
+Variable and function names are mapped directly to C# identifiers, therefore qualified names is not an option.
 
 Sequence constructors
 ---------------------
@@ -78,7 +80,7 @@ if (foo) {
 
 ...depending on the context. Using an instruction like `c:return` is not allowed in expression mode.
 
-Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. XCST makes strings a first class citizen. For example, in XSLT it's not recommended to do this:
+Also note another difference: in the first output, text nodes are compiled to `WriteString` calls, which also produce text nodes. In the second output, text nodes are compiled to `string`. In XCST, **strings are a first class citizen**. For example, in XSLT it's not recommended to do this:
 
 ```xml
 <xsl:attribute name="foo">foo</xsl:attribute>
