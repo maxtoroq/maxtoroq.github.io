@@ -46,7 +46,7 @@ In XCST, a module starts with `c:module`. In addition, the `language` attribute 
 </c:module>
 ```
 
-While the implementation only supports C#, support for other languages, in this or other implementations, is possible.
+While this implementation only supports C#, support for other languages, in this or other implementations, is possible.
 
 You can import other modules with `c:import`, given that they also use the same `language`.
 
