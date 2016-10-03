@@ -107,7 +107,7 @@ In XCST, you can use a text node where a string is expected or desired:
 <c:assert test='bar.GetType() == typeof(string)'/>
 ```
 
-In expression mode, if a sequence constructor has more than one children is compiled into an array, e.g.:
+In expression mode, if a sequence constructor has more than one children it's compiled into an array, e.g.:
 
 ```xml
 <c:variable name='numbers'>
