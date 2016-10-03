@@ -62,9 +62,9 @@ ConnectionStringSetings connSettings = ConfigurationManager.ConnectionStrings["N
 var db = new Database(connSettings.ConnectionString, connSettings.ProviderName);
 ```
 
-### Removed dependency on DbCommandBuilder and added new configuration properties
+### ~~Removed dependency on DbCommandBuilder and added new configuration properties~~
 
-DbExtensions relied on DbCommandBuilder for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like System.Data.SqlClient and MySql.Data.MySqlClient.
+~~DbExtensions relied on DbCommandBuilder for provider specific details, such as how to quote identifiers and what parameter prefix to use. This ensured maximum compatibility with providers. Sadly, DbCommandBuilder is not available on .NET Core. Instead, new configuration properties were added to [DatabaseConfiguration][3], with defaults for popular providers like System.Data.SqlClient and MySql.Data.MySqlClient.~~ <ins>A hibrid approach was finally decided: configuration properties are used for known providers, with a fallback on DbCommandBuilder for unknown providers.</ins>
 
 ### Removed Affect* methods
 
