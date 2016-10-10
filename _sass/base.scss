@@ -93,16 +93,11 @@ table {
    border-collapse: collapse;
    border-spacing: 0;
    background: #fff;
-   border-color: #dddddd;
+   border-color: 1px solid #dddddd;
    
    tr:nth-of-type(even) {
       background: #f9f9f9;
    }
-}
-
-table, td, th {
-   border-width: 1px;
-   border-style: solid;
 }
 
 td, th {
