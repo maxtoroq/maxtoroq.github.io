@@ -90,6 +90,14 @@ div.note {
 
 table {
    overflow: auto;
+   border-collapse: collapse;
+   border-spacing: 0;
+   background: #fff;
+   border-color: #dddddd;
+   
+   tr:nth-of-type(even) {
+      background: #f9f9f9;
+   }
 }
 
 table, td, th {
