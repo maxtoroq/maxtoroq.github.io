@@ -10,7 +10,7 @@ Over the years my application toolkit has mutated from *VBScript/XSLT* to *JScri
 
 I’m on a mission to help developers write more maintainable code. I’m not satisfied with something that just works. If the standard solution to a problem does not translate in elegant code I will look for a better solution, or develop an alternative myself. Because code spends most of its lifespan in maintenance mode, bad decisions made in the earlier stages of development can largely increase the costs of maintenance later.
 
-Feel free to [email me](mailto:maxtoroq@gmail.com), or follow me on [@maxtoroq](https://twitter.com/maxtoroq). You can also find me on [GitHub](https://github.com/maxtoroq) and [Stack Overflow](http://stackoverflow.com/users/39923).
+Feel free to [email me](mailto:maxtoroq@gmail.com), or follow me on [@maxtoroq](https://twitter.com/maxtoroq). You can also find me on [GitHub](https://github.com/maxtoroq), [Stack Overflow](http://stackoverflow.com/users/39923) and [UpWork](https://www.upwork.com/freelancers/~013968c95eab35c636).
 
 If you'd like to show your appreciation you can [donate](donate.html).
 
