@@ -10,7 +10,7 @@ Install-Package DbExtensions
 
 Target frameworks
 -----------------
-See the table below for DbExtension's framework support for each major version.
+See the table below for DbExtensions' framework support for each major version.
 
 Version | Frameworks
 ------- | ----------
