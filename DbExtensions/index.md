@@ -119,7 +119,7 @@ Features
 - Optimistic concurrency (using version column)
 - Batch commands
 - Profiling
-- Provider-independent (tested against SQL Server, SQL Server Compact, MySQL and SQLite)
+- Provider-independent (tested against SQL Server, MySQL and SQLite)
 
 Not included
 ------------------------
