@@ -487,7 +487,7 @@ If you need to fetch some data, work with URL parameters or handle form postback
    
    <h1>{product.title}</h1>
    ...
-</template>
+</c:template>
 ```
 
 The `c:next-template` instruction is like `c:call-template`, except you don't specify a name, it calls the template with the same name as the current template in an imported module. On this case it calls `c:initial-template` from our [layout module](#layouts), which in turn calls the `layout` template. It's like calling a base method in C#. We could have called `layout` directly:
@@ -510,9 +510,9 @@ In short, template parameters are a huge improvement from Razor's helper paramet
 
 HTML Helpers
 ------------
-Razor is used in two different but related frameworks: *ASP.NET Web Pages* and *ASP.NET MVC*. These frameworks provide each its own set of APIs. XCST integrates with MVC (v5) and provides a unified programming model for both standalone pages and MVC views. This means you can now use features like model binding, model validation, strongly-typed HTML helpers, editor and display templates, temp data, etc. directly from XCST pages, and you can also develop using the MVC pattern with the XCST view engine.
+In Razor, HTML helpers are provided usually as extension methods for the HtmlHelper class, e.g. `Html.TextBox("foo")`.
 
-HTML helpers in XCST are provided as extension instructions. To use them you have to declare the `http://maxtoroq.github.io/XCST/application` namespace and specify the prefix in the `[c:]extension-element-prefixes` standard attribute.
+In XCST, HTML helpers are provided as extension instructions. To use them you have to declare the `http://maxtoroq.github.io/XCST/application` namespace and specify the prefix in the `[c:]extension-element-prefixes` standard attribute.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -596,9 +596,9 @@ In XCST you use `c:using-module` in conjunction with the `LoadPage` method.
 
 ```xml
 <c:using-module value='LoadPage("~/mypartial.xcst")'>
-   <c:with-param name='foo'>foo</foo>
+   <c:with-param name='foo'>foo</c:with-param>
    <c:call-template name='c:initial-template'/>
-</c:using>
+</c:using-module>
 ```
 
 `model` directive
@@ -632,3 +632,4 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html
 [5]: {{ page.support_url }}
+[6]: https://github.com/maxtoroq/AspNetLib
