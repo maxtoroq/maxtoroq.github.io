@@ -1,14 +1,49 @@
 ---
 title: Installing
 ---
+XCST is distributed as a set of NuGet packages.
 
-Package            | Description                                | Framework
------------------- | ------------------------------------------ | ---------
-[Xcst][1]          | Runtime API                                | .NET 4.5
-[Xcst.Compiler][2] | Compiler API. Use this package to translate your XCST programs into C# code. | .NET 4.5
-[Xcst.Web][3]      | XCST pages for ASP.NET. This package provides only the most basic web functionality (e.g. Request/Response/Session ...). For new projects use the Xcst.AspNet package instead. For existing ASP.NET MVC 5 projects use the Xcst.Web.Mvc package. | .NET 4.5
-[Xcst.Web.Mvc][4] \*  | XCST pages and views for ASP.NET MVC 5. Use this package for existing ASP.NET MVC projects. For new projects use the Xcst.AspNet package instead. | .NET 4.5
-[Xcst.AspNet][5] \*   | XCST pages and views for ASP.NET (based on [AspNetLib][6]). | .NET 4.5
+[Xcst][1] package
+-----------------
+The Xcst package is the package that all other packages, directly or indirectly, depend on. It contains an API for executing pre-compiled XCST programs, as well as types that all XCST programs depend on.
+
+Uses:
+
+- Execute pre-compiled XCST programs
+- Distribute as dependency of pre-compiled XCST programs
+
+[Xcst.Compiler][2] package
+--------------------------
+The Xcst.Compiler package provides an API for translating your XCST programs into C# code.
+
+Uses:
+
+- Generate C# from XCST modules
+
+[Xcst.AspNet][5] package \*
+---------------------------
+The Xcst.AspNet package provides XCST web pages for ASP.NET. It's based on [AspNetLib][6].
+
+Uses:
+
+- Develop web applications with XCST pages
+
+[Xcst.Web.Mvc][4] package \*
+----------------------------
+The Xcst.Web.Mvc package provides XCST pages and views for ASP.NET MVC 5. If you are only interested in pages, it's recommended you use the Xcst.AspNet package instead.
+
+Uses:
+
+- Develop web applications with XCST pages
+- Develop web applications using the MVC pattern with the XCST view engine
+
+[Xcst.Web][3] package
+---------------------
+The Xcst.Web package provides basic XCST web pages for ASP.NET. This package is not usually referenced directly, but installed as a dependency on both Xcst.AspNet and Xcst.Web.Mvc, which are built on top of the functionality provided by Xcst.Web.
+
+Uses:
+
+- Develop web applications with XCST pages
 
 <small>* Includes the <a href="intro-for-razor-dev.html#html-helpers">application extension</a>.</small>
 
