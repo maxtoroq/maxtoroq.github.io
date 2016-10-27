@@ -632,4 +632,3 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html
 [5]: {{ page.support_url }}
-[6]: https://github.com/maxtoroq/AspNetLib
