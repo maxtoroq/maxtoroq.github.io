@@ -32,7 +32,7 @@ myxsl provides compile-time notification of static errors in Visual Studio. Just
 
 Similar to `.aspx` pages, you can use directives, in the form of processing instructions with pseudo attributes, to configure various aspects of your web page, e.g.:
 
-```xslt
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <?page validate-request="false" enable-session-state="false" ?>
 <?output-cache duration="60" vary-by-param="none" ?>
