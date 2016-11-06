@@ -191,3 +191,17 @@ pre {
       font-family: Consolas, "Source Code Pro", "Courier New", monospace;
    }
 }
+
+@media (min-width: 992px) {
+   
+   article > *[itemprop="articleBody"] {
+      
+      > table,
+      > pre,
+      > .highlighter-rouge {
+         
+         margin-left: -100px;
+         margin-right: -100px;
+      }
+   }
+}
