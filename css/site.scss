@@ -100,3 +100,11 @@ div#disqus_thread {
       color: rgba(81, 81, 81, 0.8);
    }
 }
+
+@media (min-width: 1200px) {
+   
+   div#disqus_thread {
+      margin-left: -100px;
+      margin-right: -100px;
+   }
+}
