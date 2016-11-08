@@ -1,5 +1,6 @@
 ---
 title: XCST Introduction for the Razor Developer
+support_url: https://github.com/maxtoroq/XCST-a/issues?q=is%3Aissue+label%3Aquestion
 ---
 
 XCST is a middle ground between XSLT and Razor. Being XML, it has a stricter syntax, but at the same time there's more flexibility with what you can do with your code. If you are familiar with XSLT and XML then picking up XCST should be easy. If you don't, then this guide is for you.
