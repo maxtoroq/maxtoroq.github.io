@@ -7,4 +7,4 @@ The [Installing][1] page lists all packages and their corresponding source repos
 For general support go [here][2].
 
 [1]: docs/installing.html
-[2]: page.support_url
+[2]: {{ page.support_url }}
