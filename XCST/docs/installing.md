@@ -12,6 +12,8 @@ Uses:
 - Execute pre-compiled XCST programs
 - Distribute as dependency of pre-compiled XCST programs
 
+Source: <{{site.github.owner_url}}/XCST>
+
 [Xcst.Compiler][2] package
 --------------------------
 The Xcst.Compiler package provides an API for translating your XCST programs into C# code.
@@ -19,6 +21,8 @@ The Xcst.Compiler package provides an API for translating your XCST programs int
 Uses:
 
 - Generate C# from XCST modules
+
+Source: <{{site.github.owner_url}}/XCST>
 
 [Xcst.AspNet][5] package
 ------------------------
@@ -28,6 +32,8 @@ Uses:
 
 - Develop web applications with XCST pages
 
+Source: <{{site.github.owner_url}}/XCST-a>
+
 [Xcst.Web.Mvc][4] package
 -------------------------
 The Xcst.Web.Mvc package provides XCST views for ASP.NET MVC 5.
@@ -35,6 +41,8 @@ The Xcst.Web.Mvc package provides XCST views for ASP.NET MVC 5.
 Uses:
 
 - Develop web applications using the MVC pattern with the XCST view engine
+
+Source: <{{site.github.owner_url}}/XCST-a>
 
 [1]: https://www.nuget.org/packages/Xcst
 [2]: https://www.nuget.org/packages/Xcst.Compiler
