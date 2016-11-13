@@ -122,4 +122,4 @@ For more information see the [documentation][1].
 
 [1]: {{ page.documentation_url }}
 [2]: /2016/04/aspnet-programming-with-xcst.html
-[3]: docs/xcst-intro-for-razor-dev.html
+[3]: docs/intro-for-razor-dev.html
