@@ -92,6 +92,9 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 ```xml
 <a:model as='RegisterViewModel'>
    <form action='{Url.Action("RegisterInput", "Demo")}' method='post'>
+      <a:anti-forgery-token/>
+      <a:validation-summary/>
+   
        Email:  <a:text-box for='Email' /><br />
        Password: <a:text-box for='Password' /><br />
        <button type="submit">Register</button>
