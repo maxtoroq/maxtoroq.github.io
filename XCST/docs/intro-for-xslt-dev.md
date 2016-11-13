@@ -7,7 +7,6 @@ XCST is heavily inspired in XSLT. The main difference is that it uses C# as expr
 This guide focuses on the differences between XCST and XSLT. Not every XSLT element has an XCST counterpart, for information about the available elements and attributes see the [schemas][1].
 
 ### Contents
-- [Why XCST?](#why-xcst)
 - [Modules](#modules)
 - [QNames](#qnames)
 - [Sequence constructors](#sequence-constructors)
@@ -18,21 +17,6 @@ This guide focuses on the differences between XCST and XSLT. Not every XSLT elem
 - [Serialization](#serialization)
 - [Dynamic loading](#dynamic-loading)
 - [Packages](#packages)
-
-Why XCST?
----------
-While XSLT is a great tool, there are several reasons why it might not be a good choice.
-
-### #1. Your data is not XML
-Converting your objects to XML is possible, but it requires you to follow certain patterns imposed by serialization libraries, and you lose type safety.
-
-### #2. You want more than data
-Calling C# functions from XSLT is possible, but it requires special configuration and sometimes translation between XDM types and .NET types.
-
-### #3. XSLT is an overkill
-For structured data, fill-in-the-blanks type of templating, XSLT is simply too powerful.
-
-Depending on your scenario, there might be more reasons for choosing XCST over XSLT.
 
 Modules
 -------
