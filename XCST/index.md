@@ -90,16 +90,13 @@ Razor treats markup as text that outputs unchanged. In XCST, elements, attribute
 Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This projects supports a [set of extension instructions for web application development based on ASP.NET MVC 5][2].
 
 ```xml
-<form method='post' class='form-horizontal'>
-   <a:anti-forgery-token/>
-   <a:validation-summary/>
-   <a:editor with-params='new { labelColumnClass = "col-md-3", fieldColumnClass = "col-md-9" }'/>
-   <div class='form-group'>
-      <div class='col-md-offset-3 col-md-9'>
-         <button type='submit' class='btn btn-primary'>Send</button>
-      </div>
-   </div>
-</form>
+<a:model as='RegisterViewModel'>
+   <form action='{Url.Action("RegisterInput", "Demo")}' method='post'>
+       Email:  <a:text-box for='Email' /><br />
+       Password: <a:text-box for='Password' /><br />
+       <button type="submit">Register</button>
+   </form>
+</a:model>
 ```
 
 This is only the tip of the iceberg, see [XCST Introduction for the Razor Developer][3].
