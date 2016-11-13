@@ -87,7 +87,7 @@ Razor treats markup as text that outputs unchanged. In XCST, elements, attribute
 
 ### #3. Extensible
 
-Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This projects supports a [set of extension instructions for web application development based on ASP.NET MVC 5][2].
+Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This projects supports a set of extension instructions for web application development based on ASP.NET MVC 5.
 
 ```xml
 <a:model as='RegisterViewModel'>
@@ -102,8 +102,6 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 </a:model>
 ```
 
-This is only the tip of the iceberg, see [XCST Introduction for the Razor Developer][3].
-
 For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
@@ -111,5 +109,3 @@ For more information see the [documentation][1].
 </div>
 
 [1]: {{ page.documentation_url }}
-[2]: /2016/04/aspnet-programming-with-xcst.html
-[3]: docs/intro-for-razor-dev.html
