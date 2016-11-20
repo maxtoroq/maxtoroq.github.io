@@ -12,7 +12,7 @@ Uses:
 - Execute pre-compiled XCST programs
 - Distribute as dependency of pre-compiled XCST programs
 
-Source: <{{site.github.owner_url}}/XCST>
+[:octocat: Source][7]
 
 [Xcst.Compiler][2] package
 --------------------------
@@ -22,7 +22,7 @@ Uses:
 
 - Generate C# from XCST modules
 
-Source: <{{site.github.owner_url}}/XCST>
+[:octocat: Source][7]
 
 [Xcst.AspNet][5] package
 ------------------------
@@ -32,7 +32,7 @@ Uses:
 
 - Develop web applications with XCST pages
 
-Source: <{{site.github.owner_url}}/XCST-a>
+[:octocat: Source][8]
 
 [Xcst.Web.Mvc][4] package
 -------------------------
@@ -42,10 +42,12 @@ Uses:
 
 - Develop web applications using the MVC pattern with the XCST view engine
 
-Source: <{{site.github.owner_url}}/XCST-a>
+[:octocat: Source][8]
 
 [1]: https://www.nuget.org/packages/Xcst
 [2]: https://www.nuget.org/packages/Xcst.Compiler
 [4]: https://www.nuget.org/packages/Xcst.Web.Mvc
 [5]: https://www.nuget.org/packages/Xcst.AspNet
-[6]: https://github.com/maxtoroq/AspNetLib
+[6]: {{ site.github.owner_url }}/AspNetLib
+[7]: {{ site.github.owner_url }}/XCST
+[8]: {{ site.github.owner_url }}/XCST-a
