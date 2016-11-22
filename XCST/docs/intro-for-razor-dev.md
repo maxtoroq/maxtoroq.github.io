@@ -137,11 +137,11 @@ If `isChecked` evaluates to `false` the attribute is omitted. If its `true`, the
 In XCST, like in the previous example, use `c:attribute` to conditionally output an attribute.
 
 ```xml
-<div>
+<input type='checkbox'>
    <c:if test='isChecked'>
       <c:attribute name='checked'>checked</c:attribute>
    </c:if>
-</div>
+</input>
 ```
 
 There are even more tricks related to attributes in Razor. It should be clear by now that Razor was designed specifically for HTML generation, while XCST is suitable for generating XML, HTML, XHTML and text.
