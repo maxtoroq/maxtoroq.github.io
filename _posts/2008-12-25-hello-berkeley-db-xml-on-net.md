@@ -60,7 +60,7 @@ return $h", qctx);
 
 ### 2009-05-26 Update
 
-On ASP.NET you might get an "Unable to load ikvm-native" error message. There are several ways to fix this: a) Add the ikvm-native.dll location to the *PATH*; b) Copy ikvm-native.dll to `%windir%\system32`; c) Add a `ikvm:java.library.path` appSetting to Web.config and set it's value to the ikvm-native.dll location.
+On ASP.NET you might get an "Unable to load ikvm-native" error message. There are several ways to fix this: a) Add the ikvm-native.dll location to the *PATH*; b) Copy ikvm-native.dll to `%windir%\system32`; c) Add a `ikvm:java.library.path` appSetting to Web.config and set its value to the ikvm-native.dll location.
 
 [1]: http://www.oracle.com/database/berkeley-db/xml
 [2]: http://www.parthcomp.com/dbxml_dotnet.html
