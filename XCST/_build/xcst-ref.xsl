@@ -65,10 +65,6 @@
          <xsl:value-of select="$name"/>
          <xsl:text>"&#xA;---&#xA;&#xA;</xsl:text>
 
-         <h1>
-            <xsl:value-of select="$name"/>
-         </h1>
-
          <xsl:apply-templates select="$elements" mode="doc"/>
       </xsl:result-document>
    </xsl:template>
