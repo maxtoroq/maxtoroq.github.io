@@ -40,12 +40,12 @@
          <xsl:text>title: XCST Elements Reference</xsl:text>
          <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
 
-         <h1>XCST Elements</h1>
+         <h2>XCST Elements</h2>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-c"/>
          </xsl:call-template>
 
-         <h1>Application Extension Elements</h1>
+         <h2>Application Extension Elements</h2>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-a"/>
          </xsl:call-template>
