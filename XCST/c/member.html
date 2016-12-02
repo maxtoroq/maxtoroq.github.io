@@ -1,0 +1,131 @@
+---
+---
+
+<h1>c:member</h1><pre><code>&lt;c:member
+  <b>name</b> = <i>Name</i>
+  <span>resource-type</span>? = <i>Type</i>
+  <span>disable-empty-string-to-null-conversion</span>? = <i>Boolean</i>
+  <span>allow-empty-string</span>? = <i>Boolean</i>
+  <span>display-text-member</span>? = <i>Name</i>
+  <span>error-resource-type</span>? = <i>Type</i>
+  <span>data-type-error-message</span>? = <i>String</i>
+  <span>data-type-error-resource</span>? = <i>String</i>
+  <span>required-error-message</span>? = <i>String</i>
+  <span>required-error-resource</span>? = <i>String</i>
+  <span>length-error-message</span>? = <i>String</i>
+  <span>length-error-resource</span>? = <i>String</i>
+  <span>pattern-error-message</span>? = <i>String</i>
+  <span>pattern-error-resource</span>? = <i>String</i>
+  <span>range-error-message</span>? = <i>String</i>
+  <span>range-error-resource</span>? = <i>String</i>
+  <span>equal-to-error-message</span>? = <i>String</i>
+  <span>equal-to-error-resource</span>? = <i>String</i>
+  <span>auto-initialize</span>? = <i>Boolean</i>
+  <span>display</span>? = "view-only" | "edit-only" | <i>Boolean</i>
+  <span>display-name</span>? = <i>String</i>
+  <span>description</span>? = <i>String</i>
+  <span>short-name</span>? = <i>String</i>
+  <span>place-holder</span>? = <i>String</i>
+  <span>order</span>? = <i>Integer</i>
+  <span>group</span>? = <i>String</i>
+  <span>format</span>? = <i>String</i>
+  <span>apply-format-in-edit-mode</span>? = <i>Boolean</i>
+  <span>disable-output-escaping</span>? = <i>Boolean</i>
+  <span>null-display-text</span>? = <i>String</i>
+  <span>template</span>? = <i>String</i>
+  <span>read-only</span>? = <i>Boolean</i>
+  <span>auto-generate-filter</span>? = <i>Boolean</i>
+  <span>data-type</span>? = "CreditCard" | "Currency" | "Date" | "DateTime" | "Duration" | "EmailAddress" | "Html" | "ImageUrl" | "MultilineText" | "Password" | "PhoneNumber" | "PostalCode" | "Text" | "Time" | "Upload" | "Url"
+  <span>required</span>? = <i>Boolean</i>
+  <span>max-length</span>? = <i>Expression</i>
+  <span>min-length</span>? = <i>Expression</i>
+  <span>pattern</span>? = <i>String</i>
+  <span>min</span>? = <i>Expression</i>
+  <span>max</span>? = <i>Expression</i>
+  <span>range-type</span>? = <i>Type</i>
+  <span>equal-to</span>? = <i>Name</i>
+  <span>value</span>? = <i>Expression</i>
+  <span>expression</span>? = <i>Expression</i>
+  <span>as</span>? = <i>Type</i> &gt;
+&lt;/c:member&gt;</code></pre><dl>
+   <dt><b>Permitted parent elements</b></dt>
+   <dd><a href="member.html">c:member</a></dd>
+   <dd><a href="type.html">c:type</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>allow-empty-string</code></dt>
+   <dd>Indicates if an empty string is a valid value for this member.</dd>
+   <dt><code>apply-format-in-edit-mode</code></dt>
+   <dd>Indicates if the display format should be used in an edit control for this member.</dd>
+   <dt><code>auto-generate-filter</code></dt>
+   <dd>Indicates if a filtering control should be automatically displayed for this member
+      in a UI.
+   </dd>
+   <dt><code>auto-initialize</code></dt>
+   <dd>Auto-assign an initial value to this member.</dd>
+   <dt><code>data-type-error-message</code></dt>
+   <dd>An error message for the data-type attribute.</dd>
+   <dt><code>data-type-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the data-type attribute.</dd>
+   <dt><code>description</code></dt>
+   <dd>A description of this member suitable for UI.</dd>
+   <dt><code>disable-empty-string-to-null-conversion</code></dt>
+   <dd>Indicates if empty strings should not be converted to null for this member.</dd>
+   <dt><code>disable-output-escaping</code></dt>
+   <dd>Indicates if this member should not be escaped when displaying in a UI (e.g. HTML
+      content).
+   </dd>
+   <dt><code>display</code></dt>
+   <dd>Indicates if this member should be displayed in a UI.</dd>
+   <dt><code>display-name</code></dt>
+   <dd>A name suitable for UI.</dd>
+   <dt><code>display-text-member</code></dt>
+   <dd>The name of the member to use as the text representation for this type.</dd>
+   <dt><code>equal-to-error-message</code></dt>
+   <dd>An error message for the equal-to attribute.</dd>
+   <dt><code>equal-to-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the equal-to attribute.</dd>
+   <dt><code>error-resource-type</code></dt>
+   <dd>A type that contains error message resources for validation attributes.</dd>
+   <dt><code>expression</code></dt>
+   <dd>An expression for computed members.</dd>
+   <dt><code>format</code></dt>
+   <dd>A formatting string that specifies the display format for the value of this member.</dd>
+   <dt><code>group</code></dt>
+   <dd>A name that is used to group members in a UI.</dd>
+   <dt><code>length-error-message</code></dt>
+   <dd>An error message for the min-length and max-length attributes.</dd>
+   <dt><code>length-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the min-length and max-length attributes.</dd>
+   <dt><code>null-display-text</code></dt>
+   <dd>A text that is displayed for this member when the value is null.</dd>
+   <dt><code>order</code></dt>
+   <dd>A number that indicates the relative position of this member in a UI.</dd>
+   <dt><code>pattern-error-message</code></dt>
+   <dd>An error message for the pattern attribute.</dd>
+   <dt><code>pattern-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the pattern attribute.</dd>
+   <dt><code>place-holder</code></dt>
+   <dd>A hint to the user of what can be entered in a control for this member.</dd>
+   <dt><code>range-error-message</code></dt>
+   <dd>An error message for the min and max attributes.</dd>
+   <dt><code>range-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the min and max attributes.</dd>
+   <dt><code>read-only</code></dt>
+   <dd>Indicates if editing should be disabled for this member in an editing UI.</dd>
+   <dt><code>required-error-message</code></dt>
+   <dd>An error message for the required attribute.</dd>
+   <dt><code>required-error-resource</code></dt>
+   <dd>A resource name that contains an error message for the required attribute.</dd>
+   <dt><code>resource-type</code></dt>
+   <dd>A type that contains resources for name, short-name, description and placeholder attributes.</dd>
+   <dt><code>short-name</code></dt>
+   <dd>A shorter name suitable for UI where the display name would be too long to fit (e.g.
+      a table column).
+   </dd>
+   <dt><code>template</code></dt>
+   <dd>The name of a template to use when displaying this member in a UI.</dd>
+   <dt><code>value</code></dt>
+   <dd>An initial value for this member.</dd>
+</dl>
