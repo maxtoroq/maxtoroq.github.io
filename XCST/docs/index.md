@@ -8,8 +8,7 @@ title: Documentation
 
 Reference
 ---------
-- [XCST Elements Reference](../c/)
-- [Application Extension Elements Reference](../a/)
+- [XCST Elements Reference](elements-ref.html)
 
 Blog Posts
 ----------

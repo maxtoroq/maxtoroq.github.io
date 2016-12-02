@@ -11,20 +11,74 @@
    <xsl:output method="html" indent="yes"/>
 
    <xsl:template name="main">
-      <xsl:apply-templates select="doc('/foss/XCST/schemas/xcst.rng')"/>
-      <xsl:apply-templates select="doc('/foss/XCST-a/schemas/xcst-app.rng')"/>
+
+      <xsl:variable name="grammar-c" select="doc('/foss/XCST/schemas/xcst.rng')"/>
+      <xsl:variable name="grammar-a" select="doc('/foss/XCST-a/schemas/xcst-app.rng')"/>
+      <xsl:variable name="elements-c" select="$grammar-c//rng:element[string(ref:name(.))]"/>
+      <xsl:variable name="elements-a" select="$grammar-a//rng:element[string(ref:name(.))]"/>
+
+      <xsl:call-template name="index-page">
+         <xsl:with-param name="elements-c" select="$elements-c"/>
+         <xsl:with-param name="elements-a" select="$elements-a"/>
+      </xsl:call-template>
+
+      <xsl:call-template name="output-elements">
+         <xsl:with-param name="elements" select="$elements-c"/>
+      </xsl:call-template>
+
+      <xsl:call-template name="output-elements">
+         <xsl:with-param name="elements" select="$elements-a"/>
+      </xsl:call-template>
    </xsl:template>
 
-   <xsl:template match="/rng:grammar">
+   <xsl:template name="index-page">
+      <xsl:param name="elements-c" as="element(rng:element)+"/>
+      <xsl:param name="elements-a" as="element(rng:element)+"/>
 
-      <xsl:variable name="elements" select=".//rng:element[string(ref:name(.))]"/>
+      <xsl:result-document href="{resolve-uri('../')}docs/elements-ref.html">
+         <xsl:text>---&#xA;</xsl:text>
+         <xsl:text>title: XCST Elements Reference</xsl:text>
+         <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
 
-      <xsl:for-each-group select="$elements" group-by="prefix-from-QName(ref:name(.))">
-         <xsl:call-template name="index-page">
-            <xsl:with-param name="prefix" select="current-grouping-key()"/>
-            <xsl:with-param name="elements" select="current-group()"/>
+         <h1>XCST Elements</h1>
+         <xsl:call-template name="elements-list">
+            <xsl:with-param name="elements" select="$elements-c"/>
          </xsl:call-template>
-      </xsl:for-each-group>
+
+         <h1>Application Extension Elements</h1>
+         <xsl:call-template name="elements-list">
+            <xsl:with-param name="elements" select="$elements-a"/>
+         </xsl:call-template>
+      </xsl:result-document>
+   </xsl:template>
+
+   <xsl:template name="elements-list">
+      <xsl:param name="elements" as="element(rng:element)+"/>
+
+      <ul>
+         <xsl:for-each-group select="$elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
+            <xsl:sort select="current-grouping-key()"/>
+
+            <xsl:variable name="prefix" select="prefix-from-QName(ref:name(.))"/>
+
+            <li>
+               <xsl:for-each-group select="current-group()" group-by="ref:name(.)">
+                  <xsl:sort select="string(current-grouping-key())"/>
+
+                  <xsl:if test="position() gt 1">
+                     <xsl:text> </xsl:text>
+                  </xsl:if>
+                  <a href="../{$prefix}/{ref:element-page(.)}">
+                     <xsl:value-of select="current-grouping-key()"/>
+                  </a>
+               </xsl:for-each-group>
+            </li>
+         </xsl:for-each-group>
+      </ul>
+   </xsl:template>
+
+   <xsl:template name="output-elements">
+      <xsl:param name="elements" as="element(rng:element)+"/>
 
       <xsl:for-each-group select="$elements" group-by="ref:name(.)">
          <xsl:call-template name="element-page">
@@ -32,28 +86,6 @@
             <xsl:with-param name="elements" select="current-group()"/>
          </xsl:call-template>
       </xsl:for-each-group>
-   </xsl:template>
-
-   <xsl:template name="index-page">
-      <xsl:param name="prefix" as="xs:string"/>
-      <xsl:param name="elements" as="element(rng:element)+"/>
-
-      <xsl:result-document href="{resolve-uri('../')}{$prefix}/index.html">
-         <xsl:text>---</xsl:text>
-         <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
-
-         <ul>
-            <xsl:for-each-group select="$elements" group-by="ref:name(.)">
-               <xsl:sort select="string(ref:name(.))"/>
-
-               <li>
-                  <a href="{ref:element-page(.)}">
-                     <xsl:value-of select="current-grouping-key()"/>
-                  </a>
-               </li>
-            </xsl:for-each-group>
-         </ul>
-      </xsl:result-document>
    </xsl:template>
 
    <xsl:template name="element-page">
