@@ -4,9 +4,9 @@ title: "c:serialize"
 
 <pre><code>&lt;c:serialize
   <span>format</span>? = { <i>EQName</i> }
-  <span>method</span>? = { "xml" | "html" | "xhtml" | "text" | <i>EQName</i> }
+  <span>method</span>? = { <span><span>"xml"</span> | <span>"html"</span> | <span>"xhtml"</span> | <span>"text"</span> | <i>EQName</i></span> }
   <span>byte-order-mark</span>? = { <i>Boolean</i> }
-  <span>cdata-section-elements</span>? = { <i>EQName</i>* }
+  <span>cdata-section-elements</span>? = { <span><i>EQName</i>*</span> }
   <span>doctype-public</span>? = { <i>string</i> }
   <span>doctype-system</span>? = { <i>string</i> }
   <span>encoding</span>? = { <i>string</i> }
@@ -18,10 +18,11 @@ title: "c:serialize"
   <span>item-separator</span>? = { <i>string</i> }
   <span>media-type</span>? = { <i>string</i> }
   <span>omit-xml-declaration</span>? = { <i>Boolean</i> }
-  <span>standalone</span>? = { <i>Boolean</i> | "omit" }
-  <span>suppress-indentation</span>? = { <i>EQName</i>* }
+  <span>standalone</span>? = { <span><i>Boolean</i> | <span>"omit"</span></span> }
+  <span>suppress-indentation</span>? = { <span><i>EQName</i>*</span> }
   <span>undeclare-prefixes</span>? = { <i>Boolean</i> }
   <span>output-version</span>? = { <i>NMTOKEN</i> } &gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 &lt;/c:serialize&gt;</code></pre><dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
