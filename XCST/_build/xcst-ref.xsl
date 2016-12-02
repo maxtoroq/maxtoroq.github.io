@@ -37,7 +37,7 @@
       <xsl:param name="prefix" as="xs:string"/>
       <xsl:param name="elements" as="element(rng:element)+"/>
 
-      <xsl:result-document href="../{$prefix}/index.html">
+      <xsl:result-document href="{resolve-uri('../')}{$prefix}/index.html">
          <xsl:text>---</xsl:text>
          <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
 
@@ -59,9 +59,11 @@
       <xsl:param name="name" as="xs:QName"/>
       <xsl:param name="elements" as="element(rng:element)+"/>
 
-      <xsl:result-document href="../{prefix-from-QName($name)}/{ref:element-page($elements[1])}">
-         <xsl:text>---</xsl:text>
-         <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
+      <xsl:result-document href="{resolve-uri('../')}{prefix-from-QName($name)}/{ref:element-page($elements[1])}">
+         <xsl:text>---&#xA;</xsl:text>
+         <xsl:text>title: "</xsl:text>
+         <xsl:value-of select="$name"/>
+         <xsl:text>"&#xA;---&#xA;&#xA;</xsl:text>
 
          <h1>
             <xsl:value-of select="$name"/>
