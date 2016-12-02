@@ -41,7 +41,7 @@
             </choose>
          </when>
          <otherwise>
-            
+
          </otherwise>
       </choose>
    </function>
@@ -109,9 +109,25 @@
       </if>
    </template>
 
+   <template match="rng:group" mode="ref:type-display">
+      <variable name="result" as="node()*">
+         <apply-templates select="rng:*" mode="#current"/>
+      </variable>
+      <if test="$result">
+         <element name="span" namespace="">
+            <if test="count($result) gt 1">(</if>
+            <for-each select="$result">
+               <if test="position() gt 1">, </if>
+               <sequence select="."/>
+            </for-each>
+            <if test="count($result) gt 1">)</if>
+         </element>
+      </if>
+   </template>
+
    <template match="rng:choice" mode="ref:type-display">
       <param name="ref:ignore-choice-parens" select="false()" as="xs:boolean" tunnel="yes"/>
-      
+
       <variable name="result" as="node()*">
          <apply-templates select="rng:*" mode="#current"/>
       </variable>
