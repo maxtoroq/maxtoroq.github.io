@@ -167,10 +167,8 @@
       <apply-templates select="key('define', @name)" mode="#current"/>
    </template>
 
-   <template match="rng:define[rng:data and not(@name = 'OutputVersion')]" mode="ref:type-display" priority="1">
-      <element name="i" namespace="">
-         <value-of select="@name"/>
-      </element>
+   <template match="rng:define[rng:data and not(@name = ('Version', 'OutputVersion'))]" mode="ref:type-display" priority="1">
+      <call-template name="ref:simple-type-display"/>
    </template>
 
    <template match="rng:define[@name = ('AVT', 'AVTExpr')]" mode="ref:type-display" priority="2">
@@ -180,20 +178,29 @@
    </template>
 
    <template match="rng:define[@name = ('sequence-constructor', 'Boolean', 'EQName')]" mode="ref:type-display" priority="2">
-      <element name="i" namespace="">
-         <value-of select="@name"/>
-      </element>
+      <call-template name="ref:simple-type-display"/>
    </template>
 
    <template match="rng:define[@name = ('QName-default', 'EQName-default')]" mode="ref:type-display" priority="2">
-      <element name="i" namespace="">
-         <value-of select="substring-before(@name, '-default')"/>
-      </element>
+      <call-template name="ref:simple-type-display">
+         <with-param name="name" select="substring-before(@name, '-default')"/>
+      </call-template>
    </template>
 
    <template match="rng:define[@name = 'instruction-element']" mode="ref:type-display" priority="2">
+      <call-template name="ref:simple-type-display">
+         <with-param name="name" select="substring-before(@name, '-element')"/>
+      </call-template>
+   </template>
+
+   <template name="ref:simple-type-display">
+      <param name="name" select="@name"/>
+
       <element name="i" namespace="">
-         <value-of select="substring-before(@name, '-element')"/>
+         <if test="ann:documentation">
+            <attribute name="title" select="ann:documentation"/>
+         </if>
+         <value-of select="$name"/>
       </element>
    </template>
 

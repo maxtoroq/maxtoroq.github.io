@@ -3,24 +3,24 @@ title: "c:serialize"
 ---
 
 <pre><code>&lt;c:serialize
-  <span>format</span>? = { <i>EQName</i> }
-  <span>method</span>? = { <span><span>"xml"</span> | <span>"html"</span> | <span>"xhtml"</span> | <span>"text"</span> | <i>EQName</i></span> }
-  <span>byte-order-mark</span>? = { <i>Boolean</i> }
-  <span>cdata-section-elements</span>? = { <span><i>EQName</i>*</span> }
+  <span>format</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
+  <span>method</span>? = { <span><span>"xml"</span> | <span>"html"</span> | <span>"xhtml"</span> | <span>"text"</span> | <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i></span> }
+  <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
+  <span>cdata-section-elements</span>? = { <span><i title="An EQName. Unprefixed QNames are in the default namespace.">EQName</i>*</span> }
   <span>doctype-public</span>? = { <i>string</i> }
   <span>doctype-system</span>? = { <i>string</i> }
   <span>encoding</span>? = { <i>string</i> }
-  <span>escape-uri-attributes</span>? = { <i>Boolean</i> }
+  <span>escape-uri-attributes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
   <span>html-version</span>? = { <i>Decimal</i> }
-  <span>include-content-type</span>? = { <i>Boolean</i> }
-  <span>indent</span>? = { <i>Boolean</i> }
+  <span>include-content-type</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
+  <span>indent</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
   <span>indent-spaces</span>? = { <i>Integer</i> }
   <span>item-separator</span>? = { <i>string</i> }
   <span>media-type</span>? = { <i>string</i> }
-  <span>omit-xml-declaration</span>? = { <i>Boolean</i> }
-  <span>standalone</span>? = { <span><i>Boolean</i> | <span>"omit"</span></span> }
-  <span>suppress-indentation</span>? = { <span><i>EQName</i>*</span> }
-  <span>undeclare-prefixes</span>? = { <i>Boolean</i> }
+  <span>omit-xml-declaration</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
+  <span>standalone</span>? = { <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> | <span>"omit"</span></span> }
+  <span>suppress-indentation</span>? = { <span><i title="An EQName. Unprefixed QNames are in the default namespace.">EQName</i>*</span> }
+  <span>undeclare-prefixes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
   <span>output-version</span>? = { <i>NMTOKEN</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 &lt;/c:serialize&gt;</code></pre><dl>
