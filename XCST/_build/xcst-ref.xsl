@@ -210,4 +210,38 @@
       </xsl:if>
    </xsl:template>
 
+   <xsl:template match="rng:ref[@name = ('standard-attributes', 'standard-attributes-except-version')]" mode="ref:attribs"/>
+
+   <xsl:template match="rng:choice[rng:*[2][self::rng:ref[@name = ('AVT', 'AVTExpr')]]]" mode="ref:type-display">
+      <xsl:text>{ </xsl:text>
+      <xsl:apply-templates select="rng:*[1]" mode="#current"/>
+      <xsl:text> }</xsl:text>
+   </xsl:template>
+   
+   <xsl:template match="rng:define[@name = ('Version', 'OutputVersion')]" mode="ref:type-display">
+      <xsl:apply-templates mode="#current"/>
+   </xsl:template>
+   
+   <xsl:template match="rng:define[@name = ('AVT', 'AVTExpr')]" mode="ref:type-display">
+      <xsl:text>{ </xsl:text>
+      <xsl:apply-templates mode="#current"/>
+      <xsl:text> }</xsl:text>
+   </xsl:template>
+
+   <xsl:template match="rng:define[@name = ('sequence-constructor', 'Boolean', 'EQName')]" mode="ref:type-display">
+      <xsl:call-template name="ref:simple-type-display"/>
+   </xsl:template>
+
+   <xsl:template match="rng:define[@name = ('QName-default', 'EQName-default')]" mode="ref:type-display">
+      <xsl:call-template name="ref:simple-type-display">
+         <xsl:with-param name="name" select="substring-before(@name, '-default')"/>
+      </xsl:call-template>
+   </xsl:template>
+
+   <xsl:template match="rng:define[@name = 'instruction-element']" mode="ref:type-display">
+      <xsl:call-template name="ref:simple-type-display">
+         <xsl:with-param name="name" select="substring-before(@name, '-element')"/>
+      </xsl:call-template>
+   </xsl:template>
+
 </xsl:stylesheet>

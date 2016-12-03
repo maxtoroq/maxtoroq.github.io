@@ -7,7 +7,7 @@
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
 
-   <key name="define" match="rng:define" use="@name"/>
+   <key name="ref:define" match="rng:define" use="@name"/>
 
    <template match="text()" mode="#all"/>
 
@@ -53,32 +53,24 @@
    </function>
 
    <function name="ref:attribs" as="element()*">
-      <param name="el" as="element()"/>
+      <param name="el" as="element(rng:element)"/>
 
-      <apply-templates select="$el/*" mode="ref:attribs">
+      <apply-templates select="$el/rng:*" mode="ref:attribs">
          <with-param name="optional" select="false()" tunnel="yes"/>
       </apply-templates>
    </function>
 
    <template match="rng:element" mode="ref:attribs"/>
 
-   <template match="rng:optional" mode="ref:attribs">
-      <apply-templates mode="#current">
-         <with-param name="optional" select="true()" tunnel="yes"/>
-      </apply-templates>
-   </template>
-
-   <template match="rng:zeroOrMore | rng:choice" mode="ref:attribs">
-      <apply-templates mode="#current">
+   <template match="rng:optional | rng:zeroOrMore | rng:choice" mode="ref:attribs">
+      <apply-templates select="rng:*" mode="#current">
          <with-param name="optional" select="true()" tunnel="yes"/>
       </apply-templates>
    </template>
 
    <template match="rng:ref" mode="ref:attribs">
-      <apply-templates select="key('define', @name)" mode="#current"/>
+      <apply-templates select="key('ref:define', @name)" mode="#current"/>
    </template>
-
-   <template match="rng:ref[@name = ('standard-attributes', 'standard-attributes-except-version')]" mode="ref:attribs"/>
 
    <template match="rng:attribute" mode="ref:attribs">
       <param name="optional" as="xs:boolean" tunnel="yes"/>
@@ -88,7 +80,7 @@
             <attribute name="description" select="ann:documentation"/>
          </if>
          <ref:as>
-            <apply-templates mode="ref:type-display">
+            <apply-templates select="rng:*" mode="ref:type-display">
                <with-param name="ref:ignore-choice-parens" select="true()" tunnel="yes"/>
             </apply-templates>
          </ref:as>
@@ -97,56 +89,54 @@
 
    <template match="rng:attribute" mode="ref:type-display"/>
 
-   <template match="rng:optional" mode="ref:type-display">
+   <template match="rng:element" mode="ref:type-display">
+      <element name="a" namespace="">
+         <attribute name="href" select="ref:element-page(.)"/>
+         <value-of select="ref:name(.)"/>
+      </element>
+   </template>
+
+   <template match="rng:element[empty(ref:name(.))]" mode="ref:type-display"/>
+
+   <template match="rng:zeroOrMore | rng:oneOrMore | rng:optional" mode="ref:type-display">
       <variable name="result" as="node()*">
-         <apply-templates mode="#current"/>
+         <apply-templates select="rng:*" mode="#current"/>
       </variable>
       <if test="$result">
          <element name="span" namespace="">
             <sequence select="$result"/>
-            <text>?</text>
+            <if test="self::rng:zeroOrMore">*</if>
+            <if test="self::rng:oneOrMore">+</if>
+            <if test="self::rng:optional">?</if>
          </element>
       </if>
    </template>
 
-   <template match="rng:group" mode="ref:type-display">
-      <variable name="result" as="node()*">
-         <apply-templates select="rng:*" mode="#current"/>
-      </variable>
-      <if test="$result">
-         <element name="span" namespace="">
-            <if test="count($result) gt 1">(</if>
-            <for-each select="$result">
-               <if test="position() gt 1">, </if>
-               <sequence select="."/>
-            </for-each>
-            <if test="count($result) gt 1">)</if>
-         </element>
-      </if>
-   </template>
-
-   <template match="rng:choice" mode="ref:type-display">
+   <template match="rng:group | rng:choice" mode="ref:type-display">
       <param name="ref:ignore-choice-parens" select="false()" as="xs:boolean" tunnel="yes"/>
 
+      <variable name="pattern" select="."/>
+
       <variable name="result" as="node()*">
          <apply-templates select="rng:*" mode="#current"/>
       </variable>
+
+      <variable name="use-parens" select="
+         ($pattern[self::rng:group] or not($ref:ignore-choice-parens)) and count($result) gt 1"/>
+
       <if test="$result">
          <element name="span" namespace="">
-            <if test="not($ref:ignore-choice-parens) and count($result) gt 1">(</if>
+            <if test="$use-parens">(</if>
             <for-each select="$result">
-               <if test="position() gt 1"> | </if>
+               <if test="position() gt 1">
+                  <if test="$pattern[self::rng:choice]"> | </if>
+                  <if test="$pattern[self::rng:group]">, </if>
+               </if>
                <sequence select="."/>
             </for-each>
-            <if test="not($ref:ignore-choice-parens) and count($result) gt 1">)</if>
+            <if test="$use-parens">)</if>
          </element>
       </if>
-   </template>
-
-   <template match="rng:choice[rng:*[2][self::rng:ref[@name = ('AVT', 'AVTExpr')]]]" mode="ref:type-display">
-      <text>{ </text>
-      <apply-templates select="rng:*[1]" mode="#current"/>
-      <text> }</text>
    </template>
 
    <template match="rng:value" mode="ref:type-display">
@@ -163,34 +153,16 @@
       </element>
    </template>
 
+   <template match="rng:text" mode="ref:type-display">
+      <element name="i" namespace="">text</element>
+   </template>
+
    <template match="rng:ref" mode="ref:type-display">
-      <apply-templates select="key('define', @name)" mode="#current"/>
+      <apply-templates select="key('ref:define', @name)" mode="#current"/>
    </template>
 
-   <template match="rng:define[rng:data and not(@name = ('Version', 'OutputVersion'))]" mode="ref:type-display" priority="1">
+   <template match="rng:define[rng:data]" mode="ref:type-display">
       <call-template name="ref:simple-type-display"/>
-   </template>
-
-   <template match="rng:define[@name = ('AVT', 'AVTExpr')]" mode="ref:type-display" priority="2">
-      <text>{ </text>
-      <apply-templates mode="#current"/>
-      <text> }</text>
-   </template>
-
-   <template match="rng:define[@name = ('sequence-constructor', 'Boolean', 'EQName')]" mode="ref:type-display" priority="2">
-      <call-template name="ref:simple-type-display"/>
-   </template>
-
-   <template match="rng:define[@name = ('QName-default', 'EQName-default')]" mode="ref:type-display" priority="2">
-      <call-template name="ref:simple-type-display">
-         <with-param name="name" select="substring-before(@name, '-default')"/>
-      </call-template>
-   </template>
-
-   <template match="rng:define[@name = 'instruction-element']" mode="ref:type-display" priority="2">
-      <call-template name="ref:simple-type-display">
-         <with-param name="name" select="substring-before(@name, '-element')"/>
-      </call-template>
    </template>
 
    <template name="ref:simple-type-display">
@@ -202,43 +174,6 @@
          </if>
          <value-of select="$name"/>
       </element>
-   </template>
-
-   <template match="rng:zeroOrMore" mode="ref:type-display">
-      <variable name="result" as="node()*">
-         <apply-templates mode="#current"/>
-      </variable>
-      <if test="$result">
-         <element name="span" namespace="">
-            <sequence select="$result"/>
-            <text>*</text>
-         </element>
-      </if>
-   </template>
-
-   <template match="rng:oneOrMore" mode="ref:type-display">
-      <variable name="result" as="node()*">
-         <apply-templates mode="#current"/>
-      </variable>
-      <if test="$result">
-         <element name="span" namespace="">
-            <sequence select="$result"/>
-            <text>+</text>
-         </element>
-      </if>
-   </template>
-
-   <template match="rng:element" mode="ref:type-display">
-      <element name="a" namespace="">
-         <attribute name="href" select="ref:element-page(.)"/>
-         <value-of select="ref:name(.)"/>
-      </element>
-   </template>
-
-   <template match="rng:element[empty(ref:name(.))]" mode="ref:type-display"/>
-
-   <template match="rng:text" mode="ref:type-display">
-      <element name="i" namespace="">text</element>
    </template>
 
    <function name="ref:parents" as="element()*">
@@ -267,7 +202,7 @@
 
       <choose>
          <when test="$el">
-            <sequence select="$el"/>
+            <sequence select="$el[not(empty(ref:name(.)))]"/>
          </when>
          <otherwise>
             <variable name="def" select="$r/ancestor::rng:define[1]"/>
