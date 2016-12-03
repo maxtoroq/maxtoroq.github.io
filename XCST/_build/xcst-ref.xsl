@@ -106,9 +106,9 @@
 
       <xsl:variable name="name" select="ref:name(.)"/>
       <xsl:variable name="attribs" select="ref:attribs(.)"/>
-      <xsl:variable name="parents" select="ref:parents(., true())"/>
+      <xsl:variable name="parents" select="ref:parents(., -1)"/>
       <xsl:variable name="category" select="
-         ref:parents(., false())[self::rng:define and not(@name = ('module-content', 'select-common'))]
+         ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]
             /@name
             /(if (ends-with(., '-element')) then substring-before(., '-element') else string())"/>
 
@@ -217,11 +217,11 @@
       <xsl:apply-templates select="rng:*[1]" mode="#current"/>
       <xsl:text> }</xsl:text>
    </xsl:template>
-   
+
    <xsl:template match="rng:define[@name = ('Version', 'OutputVersion')]" mode="ref:type-display">
       <xsl:apply-templates mode="#current"/>
    </xsl:template>
-   
+
    <xsl:template match="rng:define[@name = ('AVT', 'AVTExpr')]" mode="ref:type-display">
       <xsl:text>{ </xsl:text>
       <xsl:apply-templates mode="#current"/>

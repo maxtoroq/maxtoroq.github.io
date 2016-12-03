@@ -177,42 +177,33 @@
    </template>
 
    <function name="ref:parents" as="element()*">
-      <param name="el" as="element(rng:element)"/>
-      <param name="search" as="xs:boolean"/>
+      <param name="el" as="element()"/>
+      <param name="search-max" as="xs:integer"/>
+
+      <sequence select="ref:parents($el, $search-max, 0)"/>
+   </function>
+
+   <function name="ref:parents" as="element()*">
+      <param name="el" as="element()"/>
+      <param name="search-max" as="xs:integer"/>
+      <param name="search-depth" as="xs:integer"/>
 
       <variable name="parent" select="$el/ancestor::rng:element[1]"/>
 
       <choose>
          <when test="$parent">
-            <sequence select="$parent"/>
+            <sequence select="$parent[not(empty(ref:name(.)))]"/>
          </when>
          <otherwise>
             <variable name="def" select="$el/ancestor::rng:define[1]"/>
-            <variable name="refs" select="root($el)//rng:ref[@name eq $def/@name]"/>
-            <sequence select="$refs/(if (ancestor::rng:element) then ancestor::rng:element[1] else ref:referencing(., $search))"/>
-         </otherwise>
-      </choose>
-   </function>
-
-   <function name="ref:referencing" as="element()*">
-      <param name="r" as="element(rng:ref)"/>
-      <param name="search" as="xs:boolean"/>
-
-      <variable name="el" select="$r/ancestor::rng:element[1]"/>
-
-      <choose>
-         <when test="$el">
-            <sequence select="$el[not(empty(ref:name(.)))]"/>
-         </when>
-         <otherwise>
-            <variable name="def" select="$r/ancestor::rng:define[1]"/>
-            <variable name="refs" select="root($r)//rng:ref[@name eq $def/@name]"/>
+            <variable name="refs" select="root($def)//rng:ref[@name eq $def/@name]"/>
+            <variable name="search" select="$search-max eq -1 or $search-depth lt $search-max"/>
             <variable name="upstream" select="
                if (not($search) or $def/@name = ('sequence-constructor')) then ()
-               else $refs/ref:referencing(., true())"/>
+               else $refs/ref:parents(., $search-max, $search-depth + 1)"/>
             <sequence select="
-               if (not(empty($upstream))) then $upstream
-               else $def"/>
+               if ($upstream) then $upstream
+               else $def[$search-depth gt 0]"/>
          </otherwise>
       </choose>
    </function>
