@@ -67,7 +67,7 @@
                   <xsl:sort select="string(current-grouping-key())"/>
 
                   <xsl:if test="position() gt 1">
-                     <xsl:text>&#160;&#160;</xsl:text>
+                     <xsl:text> &#160;</xsl:text>
                   </xsl:if>
                   <a href="../{$prefix}/{ref:element-page(.)}">
                      <xsl:value-of select="current-grouping-key()"/>
