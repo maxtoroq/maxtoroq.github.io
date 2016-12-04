@@ -118,13 +118,15 @@
       <div class="language-xml highlighter-rouge">
          <pre class="highlight">
             <code>
-               <xsl:text>&lt;</xsl:text>
-               <xsl:value-of select="$name"/>
+               <xsl:element name="span">
+                  <xsl:attribute name="class" select="'nt'"/>
+                  <xsl:text>&lt;</xsl:text>
+                  <xsl:value-of select="$name"/>
+               </xsl:element>
                <xsl:for-each select="$attribs">
                   <xsl:text>&#xA;  </xsl:text>
                   <xsl:variable name="required" select="xs:boolean(@required)"/>
                   <xsl:element name="{(if ($required) then 'b' else 'span')}">
-                     <xsl:attribute name="class" select="'na'"/>
                      <xsl:value-of select="@name"/>
                   </xsl:element>
                   <xsl:if test="not($required)">?</xsl:if>
