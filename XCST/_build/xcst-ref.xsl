@@ -115,38 +115,44 @@
 
       <xsl:variable name="contents" select="ref:contents(.)"/>
 
-      <pre>
-         <code>
-            <xsl:text>&lt;</xsl:text>
-            <xsl:value-of select="$name"/>
-            <xsl:for-each select="$attribs">
-               <xsl:text>&#xA;  </xsl:text>
-               <xsl:variable name="required" select="xs:boolean(@required)"/>
-               <xsl:element name="{(if ($required) then 'b' else 'span')}">
-                  <xsl:value-of select="@name"/>
-               </xsl:element>
-               <xsl:if test="not($required)">?</xsl:if>
-               <xsl:text> = </xsl:text>
-               <xsl:copy-of select="ref:as/node()" copy-namespaces="no"/>
-            </xsl:for-each>
-            <xsl:if test="$attribs">
-               <xsl:text> </xsl:text>
-            </xsl:if>
-            <xsl:choose>
-               <xsl:when test="$contents">
-                  <xsl:text>></xsl:text>
-                  <xsl:text>&#xA;  &lt;!-- Content: </xsl:text>
-                  <xsl:copy-of select="$contents" copy-namespaces="no"/>
-                  <xsl:text> -->&#xA;</xsl:text>
-                  <xsl:text>&lt;/</xsl:text>
-                  <xsl:value-of select="$name"/>
-                  <xsl:text>></xsl:text>
-               </xsl:when>
-               <xsl:otherwise>/></xsl:otherwise>
-            </xsl:choose>
-         </code>
-      </pre>
-
+      <div class="language-xml highlighter-rouge">
+         <pre class="highlight">
+            <code>
+               <xsl:text>&lt;</xsl:text>
+               <xsl:value-of select="$name"/>
+               <xsl:for-each select="$attribs">
+                  <xsl:text>&#xA;  </xsl:text>
+                  <xsl:variable name="required" select="xs:boolean(@required)"/>
+                  <xsl:element name="{(if ($required) then 'b' else 'span')}">
+                     <xsl:attribute name="class" select="'na'"/>
+                     <xsl:value-of select="@name"/>
+                  </xsl:element>
+                  <xsl:if test="not($required)">?</xsl:if>
+                  <xsl:text> = </xsl:text>
+                  <xsl:copy-of select="ref:as/node()" copy-namespaces="no"/>
+               </xsl:for-each>
+               <xsl:if test="$attribs">
+                  <xsl:text> </xsl:text>
+               </xsl:if>
+               <xsl:choose>
+                  <xsl:when test="$contents">
+                     <xsl:text>></xsl:text>
+                     <xsl:text>&#xA;  &lt;!-- Content: </xsl:text>
+                     <xsl:copy-of select="$contents" copy-namespaces="no"/>
+                     <xsl:text> -->&#xA;</xsl:text>
+                     <xsl:element name="span">
+                        <xsl:attribute name="class" select="'nt'"/>
+                        <xsl:text>&lt;/</xsl:text>
+                        <xsl:value-of select="$name"/>
+                        <xsl:text>></xsl:text>
+                     </xsl:element>
+                  </xsl:when>
+                  <xsl:otherwise>/></xsl:otherwise>
+               </xsl:choose>
+            </code>
+         </pre>
+      </div>
+      
       <dl>
          <xsl:if test="not(empty($category))">
             <dt>

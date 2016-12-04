@@ -141,6 +141,7 @@
 
    <template match="rng:value" mode="ref:type-display">
       <element name="span" namespace="">
+         <attribute name="class" select="'s'"/>
          <text>"</text>
          <value-of select="."/>
          <text>"</text>
