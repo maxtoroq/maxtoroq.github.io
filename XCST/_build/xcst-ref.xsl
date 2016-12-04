@@ -154,7 +154,7 @@
             </code>
          </pre>
       </div>
-      
+
       <dl>
          <xsl:if test="not(empty($category))">
             <dt>
@@ -176,9 +176,9 @@
                <dd>None</dd>
             </xsl:when>
             <xsl:otherwise>
-               <xsl:for-each select="$parents">
-                  <xsl:sort select="self::rng:element" order="descending"/>
-                  <xsl:sort select="if (self::rng:element) then string(ref:name(.)) else ()"/>
+               <xsl:for-each-group select="$parents" group-by="if (self::rng:element) then string(ref:name(.)) else ''">
+                  <xsl:sort select="boolean(self::rng:element)" order="descending"/>
+                  <xsl:sort select="current-grouping-key()"/>
 
                   <dd>
                      <xsl:choose>
@@ -195,7 +195,7 @@
                         </xsl:otherwise>
                      </xsl:choose>
                   </dd>
-               </xsl:for-each>
+               </xsl:for-each-group>
             </xsl:otherwise>
          </xsl:choose>
       </dl>
