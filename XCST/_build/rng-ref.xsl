@@ -215,10 +215,16 @@
          <apply-templates select="$el/rng:*" mode="ref:type-display"/>
       </variable>
 
+      <variable name="use-parens" select="count($contents) gt 1"/>
+
+      <if test="$use-parens">(</if>
+
       <for-each select="$contents">
          <if test="position() gt 1">, </if>
          <sequence select="."/>
       </for-each>
+
+      <if test="$use-parens">)</if>
    </function>
 
 </stylesheet>

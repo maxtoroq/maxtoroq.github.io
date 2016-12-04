@@ -3,6 +3,7 @@
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   xmlns:a="http://maxtoroq.github.io/XCST/application"
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
 
@@ -12,8 +13,8 @@
 
    <xsl:template name="main">
 
-      <xsl:variable name="grammar-c" select="doc('/foss/XCST/schemas/xcst.rng')"/>
-      <xsl:variable name="grammar-a" select="doc('/foss/XCST-a/schemas/xcst-app.rng')"/>
+      <xsl:variable name="grammar-c" select="doc('../../../XCST/schemas/xcst.rng')"/>
+      <xsl:variable name="grammar-a" select="doc('../../../XCST-a/schemas/xcst-app.rng')"/>
       <xsl:variable name="elements-c" select="$grammar-c//rng:element[string(ref:name(.))]"/>
       <xsl:variable name="elements-a" select="$grammar-a//rng:element[string(ref:name(.))]"/>
 
@@ -106,7 +107,7 @@
 
       <xsl:variable name="name" select="ref:name(.)"/>
       <xsl:variable name="attribs" select="ref:attribs(.)"/>
-      <xsl:variable name="parents" select="ref:parents(., -1)"/>
+      <xsl:variable name="parents" select="ref:parents(., -1)[not(self::rng:element[ref:name(.) eq xs:QName('a:option')])]"/>
       <xsl:variable name="category" select="
          ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]
             /@name
