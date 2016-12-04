@@ -131,7 +131,12 @@ pre {
 }
 
 code {
+   
    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+
+   a {
+      text-decoration: underline;
+   }
 }
 
 *:not(pre) > code {
