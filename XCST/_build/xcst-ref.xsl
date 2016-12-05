@@ -116,7 +116,7 @@
       <xsl:variable name="contents" select="ref:contents(.)"/>
 
       <div class="language-xml highlighter-rouge">
-         <pre class="highlight">
+         <pre class="highlight element-syntax">
             <code>
                <xsl:element name="span">
                   <xsl:attribute name="class" select="'nt'"/>
