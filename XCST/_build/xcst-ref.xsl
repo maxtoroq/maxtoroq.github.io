@@ -109,9 +109,7 @@
       <xsl:variable name="attribs" select="ref:attribs(.)"/>
       <xsl:variable name="parents" select="ref:parents(., -1)[not(self::rng:element[ref:name(.) eq xs:QName('a:option')])]"/>
       <xsl:variable name="category" select="
-         ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]
-            /@name
-            /(if (ends-with(., '-element')) then substring-before(., '-element') else string())"/>
+         ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]/@name/string()"/>
 
       <xsl:variable name="contents" select="ref:contents(.)"/>
 
@@ -237,19 +235,13 @@
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('sequence-constructor', 'Boolean', 'EQName')]" mode="ref:type-display">
+   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'Boolean', 'EQName')]" mode="ref:type-display">
       <xsl:call-template name="ref:simple-type-display"/>
    </xsl:template>
 
    <xsl:template match="rng:define[@name = ('QName-default', 'EQName-default')]" mode="ref:type-display">
       <xsl:call-template name="ref:simple-type-display">
          <xsl:with-param name="name" select="substring-before(@name, '-default')"/>
-      </xsl:call-template>
-   </xsl:template>
-
-   <xsl:template match="rng:define[@name = 'instruction-element']" mode="ref:type-display">
-      <xsl:call-template name="ref:simple-type-display">
-         <xsl:with-param name="name" select="substring-before(@name, '-element')"/>
       </xsl:call-template>
    </xsl:template>
 
