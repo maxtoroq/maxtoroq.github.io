@@ -13,5 +13,9 @@ header.main {
 .highlight {
    &.element-syntax {
       background-color: #ffccff;
+
+      a {
+         color: #00C;
+      }
    }
 }
