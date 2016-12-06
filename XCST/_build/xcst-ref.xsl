@@ -36,40 +36,35 @@
       <xsl:param name="elements-c" as="element(rng:element)+"/>
       <xsl:param name="elements-a" as="element(rng:element)+"/>
 
-      <xsl:result-document href="{resolve-uri('../')}docs/elements-ref.md">
+      <xsl:result-document href="{resolve-uri('../')}docs/elements-ref.md" method="text">
          <xsl:text>---&#xA;</xsl:text>
          <xsl:text>title: XCST Elements Reference</xsl:text>
          <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
 
-         <h3>Namespace Bindings</h3>
-         <ul>
-            <li>
-               <xsl:value-of select="$elements-c[1]/prefix-from-QName(ref:name(.))"/>
-               <xsl:text> = </xsl:text>
-               <b>
-                  <xsl:value-of select="$elements-c[1]/namespace-uri-from-QName(ref:name(.))"/>
-               </b>
-            </li>
-            <li>
-               <xsl:value-of select="$elements-a[1]/prefix-from-QName(ref:name(.))"/>
-               <xsl:text> = </xsl:text>
-               <b>
-                  <xsl:value-of select="$elements-a[1]/namespace-uri-from-QName(ref:name(.))"/>
-               </b>
-            </li>
-         </ul>
+         <xsl:text>### Namespace Bindings&#xA;&#xA;</xsl:text>
+         <xsl:text>- </xsl:text>
+         <xsl:value-of select="$elements-c[1]/prefix-from-QName(ref:name(.))"/>
+         <xsl:text> = **</xsl:text>
+         <xsl:value-of select="$elements-c[1]/namespace-uri-from-QName(ref:name(.))"/>
+         <xsl:text>**&#xA;</xsl:text>
 
-         <h2>XCST Elements</h2>
+         <xsl:text>- </xsl:text>
+         <xsl:value-of select="$elements-a[1]/prefix-from-QName(ref:name(.))"/>
+         <xsl:text> = **</xsl:text>
+         <xsl:value-of select="$elements-a[1]/namespace-uri-from-QName(ref:name(.))"/>
+         <xsl:text>**&#xA;</xsl:text>
+
+         <xsl:text>&#xA;## XCST Elements&#xA;</xsl:text>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-c"/>
          </xsl:call-template>
 
-         <h2>Application Extension Elements</h2>
+         <xsl:text>&#xA;## Application Extension Elements&#xA;</xsl:text>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-a"/>
          </xsl:call-template>
 
-         <xsl:text disable-output-escaping="yes">
+         <xsl:text>
 <![CDATA[
 <div class="note" markdown="1">
 
@@ -94,26 +89,26 @@ Don't forget to register extension elements prefixes before you use them, using 
    <xsl:template name="elements-list">
       <xsl:param name="elements" as="element(rng:element)+"/>
 
-      <ul>
-         <xsl:for-each-group select="$elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
-            <xsl:sort select="current-grouping-key()"/>
+      <xsl:for-each-group select="$elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
+         <xsl:sort select="current-grouping-key()"/>
 
-            <xsl:variable name="prefix" select="prefix-from-QName(ref:name(.))"/>
+         <xsl:variable name="prefix" select="prefix-from-QName(ref:name(.))"/>
 
-            <li>
-               <xsl:for-each-group select="current-group()" group-by="ref:name(.)">
-                  <xsl:sort select="string(current-grouping-key())"/>
+         <xsl:text>- </xsl:text>
+         <xsl:for-each-group select="current-group()" group-by="ref:name(.)">
+            <xsl:sort select="string(current-grouping-key())"/>
 
-                  <xsl:if test="position() gt 1">
-                     <xsl:text> &#160;</xsl:text>
-                  </xsl:if>
-                  <a href="../{$prefix}/{ref:element-page(.)}">
-                     <xsl:value-of select="current-grouping-key()"/>
-                  </a>
-               </xsl:for-each-group>
-            </li>
+            <xsl:if test="position() gt 1">
+               <xsl:text> &#160;</xsl:text>
+            </xsl:if>
+            <xsl:text>[</xsl:text>
+            <xsl:value-of select="current-grouping-key()"/>
+            <xsl:text>](</xsl:text>
+            <xsl:value-of select="string-join(('..', $prefix, ref:element-page(.)), '/')"/>
+            <xsl:text>)</xsl:text>
          </xsl:for-each-group>
-      </ul>
+         <xsl:text>&#xA;</xsl:text>
+      </xsl:for-each-group>
    </xsl:template>
 
    <xsl:template name="output-elements">

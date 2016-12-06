@@ -2,47 +2,45 @@
 title: XCST Elements Reference
 ---
 
-<h3>Namespace Bindings</h3>
-<ul>
-   <li>c = <b>http://maxtoroq.github.io/XCST</b></li>
-   <li>a = <b>http://maxtoroq.github.io/XCST/application</b></li>
-</ul>
-<h2>XCST Elements</h2>
-<ul>
-   <li><a href="../c/assert.html">c:assert</a> &nbsp;<a href="../c/attribute.html">c:attribute</a> &nbsp;<a href="../c/attribute-set.html">c:attribute-set</a></li>
-   <li><a href="../c/break.html">c:break</a></li>
-   <li><a href="../c/call-template.html">c:call-template</a> &nbsp;<a href="../c/catch.html">c:catch</a> &nbsp;<a href="../c/choose.html">c:choose</a> &nbsp;<a href="../c/comment.html">c:comment</a> &nbsp;<a href="../c/continue.html">c:continue</a></li>
-   <li><a href="../c/delegate.html">c:delegate</a></li>
-   <li><a href="../c/element.html">c:element</a> &nbsp;<a href="../c/evaluate-delegate.html">c:evaluate-delegate</a></li>
-   <li><a href="../c/fallback.html">c:fallback</a> &nbsp;<a href="../c/finally.html">c:finally</a> &nbsp;<a href="../c/for-each.html">c:for-each</a> &nbsp;<a href="../c/for-each-group.html">c:for-each-group</a> &nbsp;<a href="../c/function.html">c:function</a></li>
-   <li><a href="../c/if.html">c:if</a> &nbsp;<a href="../c/import.html">c:import</a></li>
-   <li><a href="../c/member.html">c:member</a> &nbsp;<a href="../c/message.html">c:message</a> &nbsp;<a href="../c/metadata.html">c:metadata</a> &nbsp;<a href="../c/module.html">c:module</a></li>
-   <li><a href="../c/namespace.html">c:namespace</a> &nbsp;<a href="../c/next-function.html">c:next-function</a> &nbsp;<a href="../c/next-template.html">c:next-template</a></li>
-   <li><a href="../c/object.html">c:object</a> &nbsp;<a href="../c/otherwise.html">c:otherwise</a> &nbsp;<a href="../c/output.html">c:output</a> &nbsp;<a href="../c/override.html">c:override</a></li>
-   <li><a href="../c/package.html">c:package</a> &nbsp;<a href="../c/param.html">c:param</a> &nbsp;<a href="../c/processing-instruction.html">c:processing-instruction</a></li>
-   <li><a href="../c/result-document.html">c:result-document</a> &nbsp;<a href="../c/return.html">c:return</a></li>
-   <li><a href="../c/script.html">c:script</a> &nbsp;<a href="../c/serialize.html">c:serialize</a> &nbsp;<a href="../c/set.html">c:set</a> &nbsp;<a href="../c/sort.html">c:sort</a></li>
-   <li><a href="../c/template.html">c:template</a> &nbsp;<a href="../c/text.html">c:text</a> &nbsp;<a href="../c/try.html">c:try</a> &nbsp;<a href="../c/type.html">c:type</a></li>
-   <li><a href="../c/use-functions.html">c:use-functions</a> &nbsp;<a href="../c/use-package.html">c:use-package</a> &nbsp;<a href="../c/using.html">c:using</a> &nbsp;<a href="../c/using-module.html">c:using-module</a></li>
-   <li><a href="../c/validation.html">c:validation</a> &nbsp;<a href="../c/value-of.html">c:value-of</a> &nbsp;<a href="../c/variable.html">c:variable</a> &nbsp;<a href="../c/void.html">c:void</a></li>
-   <li><a href="../c/when.html">c:when</a> &nbsp;<a href="../c/while.html">c:while</a> &nbsp;<a href="../c/with-param.html">c:with-param</a></li>
-</ul>
-<h2>Application Extension Elements</h2>
-<ul>
-   <li><a href="../a/anti-forgery-token.html">a:anti-forgery-token</a></li>
-   <li><a href="../a/check-box.html">a:check-box</a></li>
-   <li><a href="../a/display.html">a:display</a> &nbsp;<a href="../a/display-name.html">a:display-name</a> &nbsp;<a href="../a/display-text.html">a:display-text</a> &nbsp;<a href="../a/drop-down-list.html">a:drop-down-list</a></li>
-   <li><a href="../a/editor.html">a:editor</a></li>
-   <li><a href="../a/hidden.html">a:hidden</a> &nbsp;<a href="../a/http-method-override.html">a:http-method-override</a></li>
-   <li><a href="../a/label.html">a:label</a> &nbsp;<a href="../a/list-box.html">a:list-box</a></li>
-   <li><a href="../a/member-template.html">a:member-template</a> &nbsp;<a href="../a/model.html">a:model</a></li>
-   <li><a href="../a/option.html">a:option</a></li>
-   <li><a href="../a/password.html">a:password</a></li>
-   <li><a href="../a/radio-button.html">a:radio-button</a></li>
-   <li><a href="../a/text-area.html">a:text-area</a> &nbsp;<a href="../a/text-box.html">a:text-box</a></li>
-   <li><a href="../a/validation-message.html">a:validation-message</a> &nbsp;<a href="../a/validation-summary.html">a:validation-summary</a></li>
-   <li><a href="../a/with-options.html">a:with-options</a></li>
-</ul>
+### Namespace Bindings
+
+- c = **http://maxtoroq.github.io/XCST**
+- a = **http://maxtoroq.github.io/XCST/application**
+
+## XCST Elements
+- [c:assert](../c/assert.html)  [c:attribute](../c/attribute.html)  [c:attribute-set](../c/attribute-set.html)
+- [c:break](../c/break.html)
+- [c:call-template](../c/call-template.html)  [c:catch](../c/catch.html)  [c:choose](../c/choose.html)  [c:comment](../c/comment.html)  [c:continue](../c/continue.html)
+- [c:delegate](../c/delegate.html)
+- [c:element](../c/element.html)  [c:evaluate-delegate](../c/evaluate-delegate.html)
+- [c:fallback](../c/fallback.html)  [c:finally](../c/finally.html)  [c:for-each](../c/for-each.html)  [c:for-each-group](../c/for-each-group.html)  [c:function](../c/function.html)
+- [c:if](../c/if.html)  [c:import](../c/import.html)
+- [c:member](../c/member.html)  [c:message](../c/message.html)  [c:metadata](../c/metadata.html)  [c:module](../c/module.html)
+- [c:namespace](../c/namespace.html)  [c:next-function](../c/next-function.html)  [c:next-template](../c/next-template.html)
+- [c:object](../c/object.html)  [c:otherwise](../c/otherwise.html)  [c:output](../c/output.html)  [c:override](../c/override.html)
+- [c:package](../c/package.html)  [c:param](../c/param.html)  [c:processing-instruction](../c/processing-instruction.html)
+- [c:result-document](../c/result-document.html)  [c:return](../c/return.html)
+- [c:script](../c/script.html)  [c:serialize](../c/serialize.html)  [c:set](../c/set.html)  [c:sort](../c/sort.html)
+- [c:template](../c/template.html)  [c:text](../c/text.html)  [c:try](../c/try.html)  [c:type](../c/type.html)
+- [c:use-functions](../c/use-functions.html)  [c:use-package](../c/use-package.html)  [c:using](../c/using.html)  [c:using-module](../c/using-module.html)
+- [c:validation](../c/validation.html)  [c:value-of](../c/value-of.html)  [c:variable](../c/variable.html)  [c:void](../c/void.html)
+- [c:when](../c/when.html)  [c:while](../c/while.html)  [c:with-param](../c/with-param.html)
+
+## Application Extension Elements
+- [a:anti-forgery-token](../a/anti-forgery-token.html)
+- [a:check-box](../a/check-box.html)
+- [a:display](../a/display.html)  [a:display-name](../a/display-name.html)  [a:display-text](../a/display-text.html)  [a:drop-down-list](../a/drop-down-list.html)
+- [a:editor](../a/editor.html)
+- [a:hidden](../a/hidden.html)  [a:http-method-override](../a/http-method-override.html)
+- [a:label](../a/label.html)  [a:list-box](../a/list-box.html)
+- [a:member-template](../a/member-template.html)  [a:model](../a/model.html)
+- [a:option](../a/option.html)
+- [a:password](../a/password.html)
+- [a:radio-button](../a/radio-button.html)
+- [a:text-area](../a/text-area.html)  [a:text-box](../a/text-box.html)
+- [a:validation-message](../a/validation-message.html)  [a:validation-summary](../a/validation-summary.html)
+- [a:with-options](../a/with-options.html)
+
 
 <div class="note" markdown="1">
 
