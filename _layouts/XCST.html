@@ -8,23 +8,23 @@
    {% include analytics.html %}
 </head>
 <body>
-<div class="container">
-   <header class="main">
+<header class="main">
+   <div class="container">
       <nav>
          <a href="{{ page.base_url }}">home</a>
          · <a href="{{ page.documentation_url }}">documentation</a>
          · <a href="{{ page.base_url }}support.html">support</a>
          · <a href="{{ page.repository_url }}">github</a>
       </nav>
-   </header> 
-   <article>
-      <header>
-         <h1>{{ page.title }}</h1>
-      </header>
-      <div itemprop="articleBody">
-         {{ content }}
-      </div>
-   </article>
-</div>
+   </div>
+</header> 
+<article class="container">
+   <header>
+      <h1>{{ page.title }}</h1>
+   </header>
+   <div itemprop="articleBody">
+      {{ content }}
+   </div>
+</article>
 </body>
 </html>
