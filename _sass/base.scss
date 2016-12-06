@@ -16,6 +16,10 @@ body {
    color: #333;
 }
 
+body > header {
+   font-size: 15px;
+}
+
 .container {
    max-width: 790px;
    margin: 0 auto;
