@@ -58,7 +58,7 @@
                </b>
             </li>
          </ul>
-         
+
          <h2>XCST Elements</h2>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-c"/>
@@ -69,9 +69,10 @@
             <xsl:with-param name="elements" select="$elements-a"/>
          </xsl:call-template>
 
-         <div class="note" markdown="1">
-            <xsl:text disable-output-escaping="yes">
+         <xsl:text disable-output-escaping="yes">
 <![CDATA[
+<div class="note" markdown="1">
+
 Don't forget to register extension elements prefixes before you use them, e.g.:
 
 ```xml
@@ -83,9 +84,10 @@ Don't forget to register extension elements prefixes before you use them, e.g.:
    ...
 </c:module>
 ```
+
+</div>
 ]]>
-            </xsl:text>
-         </div>
+         </xsl:text>
       </xsl:result-document>
    </xsl:template>
 

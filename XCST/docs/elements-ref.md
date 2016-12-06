@@ -43,6 +43,7 @@ title: XCST Elements Reference
    <li><a href="../a/validation-message.html">a:validation-message</a> &nbsp;<a href="../a/validation-summary.html">a:validation-summary</a></li>
    <li><a href="../a/with-options.html">a:with-options</a></li>
 </ul>
+
 <div class="note" markdown="1">
 
 Don't forget to register extension elements prefixes before you use them, e.g.:
@@ -57,4 +58,6 @@ Don't forget to register extension elements prefixes before you use them, e.g.:
 </c:module>
 ```
 
-            </div>
+</div>
+
+         
