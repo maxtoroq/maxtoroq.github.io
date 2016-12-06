@@ -70,11 +70,11 @@
          </xsl:call-template>
 
          <div class="note" markdown="1">
-            <xsl:text>&#xA;</xsl:text>
-            <xsl:text>Don't forget to register extension elements prefixes before you use them, e.g.:&#xA;</xsl:text>
-            <xsl:text>```xml&#xA;</xsl:text>
-            <xsl:text>
+            <xsl:text disable-output-escaping="yes">
 <![CDATA[
+Don't forget to register extension elements prefixes before you use them, e.g.:
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <c:module version='1.0' language='C#'
    xmlns:c='http://maxtoroq.github.io/XCST'
@@ -82,10 +82,9 @@
    extension-element-prefixes='a'>
    ...
 </c:module>
+```
 ]]>
             </xsl:text>
-            <xsl:text>```&#xA;</xsl:text>
-            <xsl:text>&#xA;</xsl:text>
          </div>
       </xsl:result-document>
    </xsl:template>

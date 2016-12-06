@@ -44,19 +44,17 @@ title: XCST Elements Reference
    <li><a href="../a/with-options.html">a:with-options</a></li>
 </ul>
 <div class="note" markdown="1">
-   Don't forget to register extension elements prefixes before you use them, e.g.:
-   ```xml
-   
-   
-   &lt;?xml version="1.0" encoding="utf-8"?&gt;
-   &lt;c:module version='1.0' language='C#'
+
+Don't forget to register extension elements prefixes before you use them, e.g.:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<c:module version='1.0' language='C#'
    xmlns:c='http://maxtoroq.github.io/XCST'
    xmlns:a='http://maxtoroq.github.io/XCST/application'
-   extension-element-prefixes='a'&gt;
+   extension-element-prefixes='a'>
    ...
-   &lt;/c:module&gt;
-   
-   ```
-   
-   
-</div>
+</c:module>
+```
+
+            </div>
