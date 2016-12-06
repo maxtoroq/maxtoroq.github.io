@@ -226,6 +226,10 @@ Don't forget to register extension elements prefixes before you use them, using 
                         </xsl:otherwise>
                      </xsl:choose>
                   </dd>
+
+                  <xsl:if test="self::rng:define[@name = 'sequence-constructor']">
+                     <dd>Any literal result element</dd>
+                  </xsl:if>
                </xsl:for-each-group>
             </xsl:otherwise>
          </xsl:choose>
