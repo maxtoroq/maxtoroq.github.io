@@ -73,7 +73,7 @@
 <![CDATA[
 <div class="note" markdown="1">
 
-Don't forget to register extension elements prefixes before you use them, e.g.:
+Don't forget to register extension elements prefixes before you use them, using `[c:]extension-element-prefixes`, e.g.:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
