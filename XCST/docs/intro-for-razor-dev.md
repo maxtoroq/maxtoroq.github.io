@@ -512,19 +512,7 @@ HTML Helpers
 ------------
 In Razor, HTML helpers are provided usually as extension methods for the HtmlHelper class, e.g. `Html.TextBox("foo")`.
 
-In XCST, HTML helpers are provided as extension instructions. To use them you have to declare the `http://maxtoroq.github.io/XCST/application` namespace and specify the prefix in the `[c:]extension-element-prefixes` standard attribute.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<c:module version='1.0' language='C#'
-   xmlns:c='http://maxtoroq.github.io/XCST'
-   xmlns:a='http://maxtoroq.github.io/XCST/application'
-   extension-element-prefixes='a'>
-   ...
-</c:module>
-```
-
-Below is a table of the HTML helpers in Razor and their XCST counterpart.
+In XCST, HTML helpers are provided as [extension instructions][6]. Below is a table of the HTML helpers in Razor and their XCST counterpart.
 
 Razor                                                 | XCST
 ----------------------------------------------------- | -------------------------
@@ -632,3 +620,4 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html
 [5]: https://github.com/maxtoroq/XCST-a/issues?q=is%3Aissue+label%3Aquestion
+[6]: elements-ref.html#application-extension-elements
