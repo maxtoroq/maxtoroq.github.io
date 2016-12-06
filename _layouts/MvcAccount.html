@@ -9,8 +9,8 @@
    {% include analytics.html %}
 </head>
 <body>
-<div class="container">
-   <header class="main">
+<header class="main">
+   <div class="container">
       <nav>
          <a href="/MvcAccount/">home</a>
          · <a href="{{ page.repository_url }}/blob/master/docs/README.md">documentation</a>
@@ -20,13 +20,13 @@
             <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate"/>
          </a>
       </nav>
-   </header> 
-   <article>
-      <header>
-         <h1>{{ page.title }}</h1>
-      </header>
-      {{ content }}
-   </article>
-</div>
+   </div>
+</header> 
+<article class="container">
+   <header>
+      <h1>{{ page.title }}</h1>
+   </header>
+   {{ content }}
+</article>
 </body>
 </html>
