@@ -2,6 +2,11 @@
 title: XCST Elements Reference
 ---
 
+<h3>Namespace Bindings</h3>
+<ul>
+   <li>c = <b>http://maxtoroq.github.io/XCST</b></li>
+   <li>a = <b>http://maxtoroq.github.io/XCST/application</b></li>
+</ul>
 <h2>XCST Elements</h2>
 <ul>
    <li><a href="../c/assert.html">c:assert</a> &nbsp;<a href="../c/attribute.html">c:attribute</a> &nbsp;<a href="../c/attribute-set.html">c:attribute-set</a></li>
@@ -38,3 +43,20 @@ title: XCST Elements Reference
    <li><a href="../a/validation-message.html">a:validation-message</a> &nbsp;<a href="../a/validation-summary.html">a:validation-summary</a></li>
    <li><a href="../a/with-options.html">a:with-options</a></li>
 </ul>
+<div class="note" markdown="1">
+   Don't forget to register extension elements prefixes before you use them, e.g.:
+   ```xml
+   
+   
+   &lt;?xml version="1.0" encoding="utf-8"?&gt;
+   &lt;c:module version='1.0' language='C#'
+   xmlns:c='http://maxtoroq.github.io/XCST'
+   xmlns:a='http://maxtoroq.github.io/XCST/application'
+   extension-element-prefixes='a'&gt;
+   ...
+   &lt;/c:module&gt;
+   
+   ```
+   
+   
+</div>

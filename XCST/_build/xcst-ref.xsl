@@ -41,6 +41,24 @@
          <xsl:text>title: XCST Elements Reference</xsl:text>
          <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
 
+         <h3>Namespace Bindings</h3>
+         <ul>
+            <li>
+               <xsl:value-of select="$elements-c[1]/prefix-from-QName(ref:name(.))"/>
+               <xsl:text> = </xsl:text>
+               <b>
+                  <xsl:value-of select="$elements-c[1]/namespace-uri-from-QName(ref:name(.))"/>
+               </b>
+            </li>
+            <li>
+               <xsl:value-of select="$elements-a[1]/prefix-from-QName(ref:name(.))"/>
+               <xsl:text> = </xsl:text>
+               <b>
+                  <xsl:value-of select="$elements-a[1]/namespace-uri-from-QName(ref:name(.))"/>
+               </b>
+            </li>
+         </ul>
+         
          <h2>XCST Elements</h2>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-c"/>
@@ -50,6 +68,25 @@
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-a"/>
          </xsl:call-template>
+
+         <div class="note" markdown="1">
+            <xsl:text>&#xA;</xsl:text>
+            <xsl:text>Don't forget to register extension elements prefixes before you use them, e.g.:&#xA;</xsl:text>
+            <xsl:text>```xml&#xA;</xsl:text>
+            <xsl:text>
+<![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<c:module version='1.0' language='C#'
+   xmlns:c='http://maxtoroq.github.io/XCST'
+   xmlns:a='http://maxtoroq.github.io/XCST/application'
+   extension-element-prefixes='a'>
+   ...
+</c:module>
+]]>
+            </xsl:text>
+            <xsl:text>```&#xA;</xsl:text>
+            <xsl:text>&#xA;</xsl:text>
+         </div>
       </xsl:result-document>
    </xsl:template>
 
