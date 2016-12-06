@@ -21,8 +21,10 @@ body {
       //background-color: rgba(255, 255, 0, 0.5);
       color: rgba(128, 56, 101, 0.5);
       
-      > .container {
-         padding-bottom: 0;
+      .nav {
+         a {
+            color: inherit;
+         }
       }
    }
 }
@@ -32,15 +34,6 @@ body {
    font-family: Consolas, monospace;
    font-size: 2.2em;
    line-height: 1.2;
-
-   a {
-      color: inherit;
-   }
-}
-
-nav.main {
-
-   font-size: 15px;
 
    a {
       color: inherit;
