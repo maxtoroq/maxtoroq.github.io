@@ -36,7 +36,7 @@
       <xsl:param name="elements-c" as="element(rng:element)+"/>
       <xsl:param name="elements-a" as="element(rng:element)+"/>
 
-      <xsl:result-document href="{resolve-uri('../')}docs/elements-ref.html">
+      <xsl:result-document href="{resolve-uri('../')}docs/elements-ref.md">
          <xsl:text>---&#xA;</xsl:text>
          <xsl:text>title: XCST Elements Reference</xsl:text>
          <xsl:text>&#xA;---&#xA;&#xA;</xsl:text>
