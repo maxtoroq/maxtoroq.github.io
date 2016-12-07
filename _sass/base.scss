@@ -25,7 +25,12 @@ body {
 }
 
 body > header {
+   
    font-size: $base-font-size - 2px;
+
+   a {
+      background-image: linear-gradient(to bottom, #c8c3ff 50%,rgba(0,0,0,0) 50%);
+   }
 }
 
 a, a:hover, a:focus {
@@ -33,7 +38,7 @@ a, a:hover, a:focus {
    color: inherit;
    text-decoration: none;
 
-   background-image: linear-gradient(to bottom, #c8c3ff 50%,rgba(0,0,0,0) 50%);
+   background-image: linear-gradient(to bottom, #00C 50%,rgba(0,0,0,0) 50%);
    background-repeat: repeat-x;
    background-size: 2px .1em;
    background-position: 0 bottom;
