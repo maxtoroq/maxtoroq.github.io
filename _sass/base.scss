@@ -69,6 +69,18 @@ img {
    border: 0;
 }
 
+ul {
+   
+   list-style-type: none;
+
+   li:before {
+      float: left;
+      margin: 0 0 0 -1em;
+      width: 1em;
+      content: '\2022';
+   }
+}
+
 p, table, div.note {
    margin-top: 0;
    margin-bottom: 1rem;
