@@ -9,13 +9,13 @@ title: XCST Elements Reference
 
 ## XCST Elements
 
-{% include_relative ../c/_list.md %}
+
 
 Schema: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd)
 
 ## Application Extension Elements
 
-{% include_relative ../a/_list.md %}
+
 
 Schema: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd)
 
