@@ -7,19 +7,22 @@
    {% include analytics.html %}
 </head>
 <body>
-<header>
-   <nav class="container">
-      <a href="/MvcPages/">home</a>
-      · <a href="{{ page.repository_url }}/blob/master/docs/README.md">documentation</a>
-      · <a href="{{ page.repository_url }}/issues?q=is%3Aissue+label%3Aquestion">support</a>
-      · <a href="{{ page.repository_url }}">github</a>
-   </nav>
-</header> 
-<article class="container">
    <header>
-      <h1>{{ page.title }}</h1>
-   </header>
-   {{ content }}
-</article>
+      <nav class="container">
+         <a href="/MvcPages/">home</a>
+         · <a href="{{ page.repository_url }}/blob/master/docs/README.md">documentation</a>
+         · <a href="{{ page.repository_url }}/issues?q=is%3Aissue+label%3Aquestion">support</a>
+         · <a href="{{ page.repository_url }}">github</a>
+      </nav>
+   </header> 
+   <article class="container">
+      <header>
+         <h1>{{ page.title }}</h1>
+      </header>
+      {{ content }}
+   </article>
+   <footer>
+      <div class="container">&copy; {{ site.author }}</div>
+   </footer>
 </body>
 </html>
