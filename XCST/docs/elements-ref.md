@@ -15,7 +15,6 @@ the page is regenerated.
 - a = **http://maxtoroq.github.io/XCST/application**
 
 ## XCST Elements
-Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd).
 
 - [c:assert](../c/assert.html)  [c:attribute](../c/attribute.html)  [c:attribute-set](../c/attribute-set.html)
 - [c:break](../c/break.html)
@@ -35,8 +34,9 @@ Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rn
 - [c:validation](../c/validation.html)  [c:value-of](../c/value-of.html)  [c:variable](../c/variable.html)  [c:void](../c/void.html)
 - [c:when](../c/when.html)  [c:while](../c/while.html)  [c:with-param](../c/with-param.html)
 
+Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd).
+
 ## Application Extension Elements
-Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd).
 
 - [a:anti-forgery-token](../a/anti-forgery-token.html)
 - [a:check-box](../a/check-box.html)
@@ -51,6 +51,8 @@ Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-
 - [a:text-area](../a/text-area.html)  [a:text-box](../a/text-box.html)
 - [a:validation-message](../a/validation-message.html)  [a:validation-summary](../a/validation-summary.html)
 - [a:with-options](../a/with-options.html)
+
+Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd).
 
 
 <div class="note" markdown="1">
