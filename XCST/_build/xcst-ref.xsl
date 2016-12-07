@@ -65,11 +65,13 @@ the page is regenerated.
          <xsl:text>**&#xA;</xsl:text>
 
          <xsl:text>&#xA;## XCST Elements&#xA;</xsl:text>
+         <xsl:text>Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd).&#xA;</xsl:text>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-c"/>
          </xsl:call-template>
 
          <xsl:text>&#xA;## Application Extension Elements&#xA;</xsl:text>
+         <xsl:text>Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd).&#xA;</xsl:text>
          <xsl:call-template name="elements-list">
             <xsl:with-param name="elements" select="$elements-a"/>
          </xsl:call-template>
