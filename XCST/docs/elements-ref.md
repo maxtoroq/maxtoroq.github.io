@@ -9,7 +9,7 @@ title: XCST Elements Reference
 
 ## XCST Elements
 
-
+{% include_relative ../c/_list.md %}
 
 Schema: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd)
 
