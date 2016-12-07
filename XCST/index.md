@@ -17,9 +17,9 @@ XCST compiles to C#. The XCST compiler transforms XCST instructions to C# statem
 ...which compiles to:
 
 ```csharp
-WriteStartElement("ul", @""); {
+WriteStartElement("ul", ""); {
    foreach (var n in System.Linq.Enumerable.Range(1, 5)) {
-      WriteStartElement("li", @"");
+      WriteStartElement("li", "");
       WriteString($@"{n}");
       WriteEndElement();
    }
