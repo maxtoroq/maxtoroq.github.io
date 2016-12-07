@@ -203,6 +203,11 @@ code {
       font-family: sans-serif !important;
       line-height: 1.6;
    }
+
+   body > header,
+   body > footer {
+      font-size: $base-font-size - 1px;
+   }
    
    blockquote {
       font-size: $base-font-size;
