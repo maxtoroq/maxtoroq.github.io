@@ -16,6 +16,7 @@ the page is regenerated.
 
 ## XCST Elements
 Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd).
+
 - [c:assert](../c/assert.html)  [c:attribute](../c/attribute.html)  [c:attribute-set](../c/attribute-set.html)
 - [c:break](../c/break.html)
 - [c:call-template](../c/call-template.html)  [c:catch](../c/catch.html)  [c:choose](../c/choose.html)  [c:comment](../c/comment.html)  [c:continue](../c/continue.html)
@@ -36,6 +37,7 @@ Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rn
 
 ## Application Extension Elements
 Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd).
+
 - [a:anti-forgery-token](../a/anti-forgery-token.html)
 - [a:check-box](../a/check-box.html)
 - [a:display](../a/display.html)  [a:display-name](../a/display-name.html)  [a:display-text](../a/display-text.html)  [a:drop-down-list](../a/drop-down-list.html)
