@@ -12,5 +12,3 @@
 **dsfds**
 
 </div>
-
-{% include_relative _incl.md %}
