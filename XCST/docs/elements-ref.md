@@ -34,7 +34,7 @@ the page is regenerated.
 - [c:validation](../c/validation.html)  [c:value-of](../c/value-of.html)  [c:variable](../c/variable.html)  [c:void](../c/void.html)
 - [c:when](../c/when.html)  [c:while](../c/while.html)  [c:with-param](../c/with-param.html)
 
-Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd).
+Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd)
 
 ## Application Extension Elements
 
@@ -52,7 +52,7 @@ Schemas: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rn
 - [a:validation-message](../a/validation-message.html)  [a:validation-summary](../a/validation-summary.html)
 - [a:with-options](../a/with-options.html)
 
-Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd).
+Schemas: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd)
 
 
 <div class="note" markdown="1">
