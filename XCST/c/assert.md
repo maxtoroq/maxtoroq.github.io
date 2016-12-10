@@ -11,7 +11,6 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:assert</span>
   <b>test</b> = <i title="Expression">Expression</i>
-  <span>error-code</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:assert&gt;</span></code></pre></div>

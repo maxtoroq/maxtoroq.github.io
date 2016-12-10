@@ -11,7 +11,6 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:message</span>
   <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>error-code</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:message&gt;</span></code></pre></div>
