@@ -80,7 +80,7 @@ Razor doesn't support anything beyond a simple layout/content setup. In XCST, yo
 
 Razor treats markup as text that outputs unchanged. In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at runtime. This has several benefits:
 
-- One source code, multiple outputs (XML, HTML, XML, text)
+- One source code, multiple outputs (XML, HTML, XHTML, text)
 - White space control (indentation)
 - Create an in-memory DOM
 - Use an XML-aware tool like XPath or XSLT to unit-test or post-process your program
