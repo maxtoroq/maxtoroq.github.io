@@ -27,3 +27,8 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>visibility</code></dt>
+   <dd>Indicates how the current component can be used in other (using) packages.</dd>
+</dl>

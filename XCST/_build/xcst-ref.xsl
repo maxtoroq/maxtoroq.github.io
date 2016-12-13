@@ -228,7 +228,7 @@ the page is regenerated.
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('Version', 'OutputVersion')]" mode="ref:type-display">
+   <xsl:template match="rng:define[@name = ('OutputVersion')]" mode="ref:type-display">
       <xsl:apply-templates mode="#current"/>
    </xsl:template>
 

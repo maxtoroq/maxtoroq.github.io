@@ -22,3 +22,8 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>visibility</code></dt>
+   <dd>Indicates how the current component can be used in other (using) packages.</dd>
+</dl>

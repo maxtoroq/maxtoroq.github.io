@@ -11,11 +11,16 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:package</span>
   <span>name</span>? = <i>Name</i>
-  <b>version</b> = <i>decimal</i>
+  <b>version</b> = <i>Decimal</i>
   <b>language</b> = <i title="The expression language for this module (usually &#34;C#&#34;)">Language</i> &gt;
   &lt;!-- Content: (<span><a href="use-functions.html">c:use-functions</a>*</span>, <span><span><span>(<a href="attribute-set.html">c:attribute-set</a> | <a href="function.html">c:function</a> | <a href="import.html">c:import</a> | <a href="output.html">c:output</a> | <a href="param.html">c:param</a> | <a href="template.html">c:template</a> | <a href="type.html">c:type</a> | <a href="use-package.html">c:use-package</a> | <a href="validation.html">c:validation</a> | <a href="variable.html">c:variable</a>)</span></span>*</span>) --&gt;
 <span class="nt">&lt;/c:package&gt;</span></code></pre></div>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd>None</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>version</code></dt>
+   <dd>The XCST version for the current and descendant elements (usually "1.0")</dd>
 </dl>

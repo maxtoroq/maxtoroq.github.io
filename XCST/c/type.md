@@ -75,4 +75,6 @@ the page is regenerated.
    <dd>A resource name that contains an error message for the required attribute.</dd>
    <dt><code>resource-type</code></dt>
    <dd>A type that contains resources for name, short-name, description and placeholder attributes.</dd>
+   <dt><code>visibility</code></dt>
+   <dd>Indicates how the current component can be used in other (using) packages.</dd>
 </dl>
