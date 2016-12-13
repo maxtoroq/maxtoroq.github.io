@@ -29,6 +29,10 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the variable.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the variable.</dd>
    <dt><code>visibility</code></dt>
    <dd>Indicates how the current component can be used in other (using) packages.</dd>
 </dl>
