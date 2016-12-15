@@ -17,6 +17,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:param&gt;</span></code></pre></div>
+<p>Defines a package, template, function or delegate parameter.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
@@ -27,4 +28,15 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
    <dd><a href="template.html">c:template</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the parameter.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the parameter.</dd>
+   <dt><code>required</code></dt>
+   <dd>Specifies if the parameter is required.</dd>
+   <dt><code>tunnel</code></dt>
+   <dd>Specifies if the parameter is a tunnel parameter.</dd>
 </dl>

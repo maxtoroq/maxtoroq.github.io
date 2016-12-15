@@ -15,10 +15,20 @@ the page is regenerated.
   <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each&gt;</span></code></pre></div>
+<p>Processes each item in a sequence of items.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the item.</dd>
+   <dt><code>in</code></dt>
+   <dd>The source of the items.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the item.</dd>
 </dl>

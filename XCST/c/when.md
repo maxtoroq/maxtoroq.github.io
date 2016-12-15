@@ -13,7 +13,13 @@ the page is regenerated.
   <b>test</b> = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:when&gt;</span></code></pre></div>
+<p>Represents a choice in a c:choose instruction.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="choose.html">c:choose</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>test</code></dt>
+   <dd>The condition to check for the current choice to be selected.</dd>
 </dl>

@@ -14,10 +14,16 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:processing-instruction&gt;</span></code></pre></div>
+<p>Creates a processing instruction node.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>name</code></dt>
+   <dd>The name of the processing instruction. Attribute value template (NCName).</dd>
 </dl>

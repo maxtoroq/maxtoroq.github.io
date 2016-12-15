@@ -12,6 +12,7 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:otherwise</span>&gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:otherwise&gt;</span></code></pre></div>
+<p>Represents a fallback in a c:choose instruction in case no other choice is selected.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="choose.html">c:choose</a></dd>

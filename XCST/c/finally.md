@@ -13,6 +13,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:finally&gt;</span></code></pre></div>
+<p>Defines unconditional behavior for the c:try instruction.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="try.html">c:try</a></dd>

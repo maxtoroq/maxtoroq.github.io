@@ -22,3 +22,12 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the disposable variable.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the disposable variable.</dd>
+   <dt><code>value</code></dt>
+   <dd>The disposable object.</dd>
+</dl>

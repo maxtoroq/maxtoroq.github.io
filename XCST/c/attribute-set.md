@@ -15,6 +15,7 @@ the page is regenerated.
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: <span><a href="attribute.html">c:attribute</a>*</span> --&gt;
 <span class="nt">&lt;/c:attribute-set&gt;</span></code></pre></div>
+<p>Defines an attribute set.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
@@ -25,6 +26,10 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <dl>
+   <dt><code>name</code></dt>
+   <dd>The name of the attribute set.</dd>
+   <dt><code>use-attribute-sets</code></dt>
+   <dd>Specifies other attribute sets to use before the current one.</dd>
    <dt><code>visibility</code></dt>
-   <dd>Indicates how the current component can be used in other (using) packages.</dd>
+   <dd>Specifies how the current component can be used in other (using) packages.</dd>
 </dl>

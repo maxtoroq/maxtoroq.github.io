@@ -14,10 +14,16 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: (<span><i>sequence-constructor</i></span>, <span>(<span>(<span><a href="catch.html">c:catch</a>+</span>, <span><a href="finally.html">c:finally</a>?</span>)</span> | <a href="finally.html">c:finally</a>)</span>) --&gt;
 <span class="nt">&lt;/c:try&gt;</span></code></pre></div>
+<p>Recovers from exceptions or defines unconditional behavior.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>rollback-output</code></dt>
+   <dd>Specifies whether to discard the output when an exception occurs.</dd>
 </dl>

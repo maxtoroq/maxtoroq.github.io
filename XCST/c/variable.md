@@ -16,6 +16,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:variable&gt;</span></code></pre></div>
+<p>Defines a variable.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
@@ -34,5 +35,5 @@ the page is regenerated.
    <dt><code>name</code></dt>
    <dd>The name of the variable.</dd>
    <dt><code>visibility</code></dt>
-   <dd>Indicates how the current component can be used in other (using) packages.</dd>
+   <dd>Specifies how the current component can be used in other (using) packages.</dd>
 </dl>

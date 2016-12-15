@@ -16,10 +16,22 @@ the page is regenerated.
   <span>group-size</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each-group&gt;</span></code></pre></div>
+<p>Processes a sequence of items in groups.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>group-by</code></dt>
+   <dd>An expression to use as grouping key.</dd>
+   <dt><code>group-size</code></dt>
+   <dd>The maximum number of items a group may have.</dd>
+   <dt><code>in</code></dt>
+   <dd>The source of the items.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the group.</dd>
 </dl>

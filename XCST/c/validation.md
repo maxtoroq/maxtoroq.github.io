@@ -23,6 +23,7 @@ the page is regenerated.
   <span>range-error-resource</span>? = <i>String</i>
   <span>equal-to-error-message</span>? = <i>String</i>
   <span>equal-to-error-resource</span>? = <i>String</i> /&gt;</code></pre></div>
+<p>Defines default values for validation messages.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>

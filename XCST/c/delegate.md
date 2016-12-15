@@ -13,10 +13,16 @@ the page is regenerated.
   <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:delegate&gt;</span></code></pre></div>
+<p>Creates a template delegate.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The return type of the template.</dd>
 </dl>

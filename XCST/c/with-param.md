@@ -16,12 +16,22 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
+<p>Defines parameter arguments for a template invocation.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="call-template.html">c:call-template</a></dd>
    <dd><a href="evaluate-delegate.html">c:evaluate-delegate</a></dd>
    <dd><a href="next-template.html">c:next-template</a></dd>
    <dd><a href="using-module.html">c:using-module</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the parameter.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the parameter.</dd>
+   <dt><code>tunnel</code></dt>
+   <dd>Specifies if the parameter should be tunneled.</dd>
 </dl>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:with-param</span>
   <span>name</span>? = <i>Name</i>
@@ -30,7 +40,17 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
+<p>Defines parameter arguments for a function invocation.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="next-function.html">c:next-function</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>as</code></dt>
+   <dd>The type of the parameter.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the parameter.</dd>
+   <dt><code>tunnel</code></dt>
+   <dd>Specifies if the parameter should be tunneled.</dd>
 </dl>

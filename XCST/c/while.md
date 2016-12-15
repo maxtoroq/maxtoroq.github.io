@@ -20,3 +20,8 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>test</code></dt>
+   <dd>The condition for the loop to continue.</dd>
+</dl>

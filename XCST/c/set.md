@@ -21,3 +21,8 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>member</code></dt>
+   <dd>The reference to set.</dd>
+</dl>

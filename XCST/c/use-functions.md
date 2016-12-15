@@ -13,8 +13,20 @@ the page is regenerated.
   <b>in</b> = <i>Type</i>
   <span>alias</span>? = <i>Name</i>
   <span>static-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> /&gt;</code></pre></div>
+<p>Imports functions from a function library.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>alias</code></dt>
+   <dd>A name to use as prefix for imported functions.</dd>
+   <dt><code>in</code></dt>
+   <dd>The namespace or fully-qualified class name to import functions from.</dd>
+   <dt><code>static-only</code></dt>
+   <dd>Specifies whether to import static functions only. The in attribute must refer to
+      a class.
+   </dd>
 </dl>

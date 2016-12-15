@@ -13,10 +13,16 @@ the page is regenerated.
   <b>test</b> = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:if&gt;</span></code></pre></div>
+<p>Defines conditional behavior.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>test</code></dt>
+   <dd>The condition to check for the contents to be processed.</dd>
 </dl>

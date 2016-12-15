@@ -12,6 +12,7 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:next-function</span>&gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:next-function&gt;</span></code></pre></div>
+<p>Invokes the overriden function.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>

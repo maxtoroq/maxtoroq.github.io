@@ -15,10 +15,18 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:value-of&gt;</span></code></pre></div>
+<p>Creates a text node or string.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>disable-output-escaping</code></dt>
+   <dd>Specifies whether to omit output escaping.</dd>
+   <dt><code>separator</code></dt>
+   <dd>A string to intersperse between values. Attribute value template.</dd>
 </dl>

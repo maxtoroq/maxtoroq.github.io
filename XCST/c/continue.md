@@ -10,6 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:continue</span>/&gt;</code></pre></div>
+<p>Interrupts the current loop iteration and advances to the next.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>

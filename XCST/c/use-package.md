@@ -13,10 +13,18 @@ the page is regenerated.
   <b>name</b> = <i>Name</i> &gt;
   &lt;!-- Content: <span><a href="override.html">c:override</a>*</span> --&gt;
 <span class="nt">&lt;/c:use-package&gt;</span></code></pre></div>
+<p>Specifies a package dependency.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>name</code></dt>
+   <dd>The class name of the package to use. Must be a fully-qualified name when using from
+      implicit or unnamed packages.
+   </dd>
 </dl>

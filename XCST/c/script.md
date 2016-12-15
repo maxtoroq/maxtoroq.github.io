@@ -13,10 +13,16 @@ the page is regenerated.
   <span>src</span>? = <i>URI</i> &gt;
   &lt;!-- Content: <span><i>text</i></span> --&gt;
 <span class="nt">&lt;/c:script&gt;</span></code></pre></div>
+<p>Embeds or references a script of code.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>src</code></dt>
+   <dd>The relative or absolute URI of the script of code.</dd>
 </dl>

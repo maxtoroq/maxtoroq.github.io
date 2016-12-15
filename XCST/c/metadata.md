@@ -11,8 +11,14 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:metadata</span>
   <b>value</b> = <i title="Expression">Expression</i> /&gt;</code></pre></div>
+<p>Defines type or member custom metadata.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="member.html">c:member</a></dd>
    <dd><a href="type.html">c:type</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>value</code></dt>
+   <dd>The metadata expression.</dd>
 </dl>

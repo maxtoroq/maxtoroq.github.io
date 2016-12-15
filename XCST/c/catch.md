@@ -15,7 +15,15 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:catch&gt;</span></code></pre></div>
+<p>Catches an exception.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="try.html">c:try</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>exception</code></dt>
+   <dd>The exception to catch.</dd>
+   <dt><code>when</code></dt>
+   <dd>An exception filter.</dd>
 </dl>

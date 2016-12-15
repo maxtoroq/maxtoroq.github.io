@@ -12,6 +12,7 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:choose</span>&gt;
   &lt;!-- Content: (<span><a href="when.html">c:when</a>+</span>, <span><a href="otherwise.html">c:otherwise</a>?</span>) --&gt;
 <span class="nt">&lt;/c:choose&gt;</span></code></pre></div>
+<p>Chooses between multiple alternatives.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>

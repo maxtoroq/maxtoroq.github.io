@@ -12,6 +12,7 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:override</span>&gt;
   &lt;!-- Content: <span><span>(<a href="template.html">c:template</a> | <a href="function.html">c:function</a> | <a href="variable.html">c:variable</a> | <a href="param.html">c:param</a> | <a href="attribute-set.html">c:attribute-set</a> | <a href="type.html">c:type</a>)</span>*</span> --&gt;
 <span class="nt">&lt;/c:override&gt;</span></code></pre></div>
+<p>Container element for overriding components.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="use-package.html">c:use-package</a></dd>

@@ -13,6 +13,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:comment&gt;</span></code></pre></div>
+<p>Creates a comment node.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>

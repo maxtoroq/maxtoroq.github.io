@@ -31,6 +31,7 @@ the page is regenerated.
   <span>equal-to-error-resource</span>? = <i>String</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
 <span class="nt">&lt;/c:type&gt;</span></code></pre></div>
+<p>Defines a type.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
@@ -42,13 +43,13 @@ the page is regenerated.
 <h3>Attributes</h3>
 <dl>
    <dt><code>allow-empty-string</code></dt>
-   <dd>Indicates if an empty string is a valid value for this member.</dd>
+   <dd>Specifies if an empty string is a valid value for this member.</dd>
    <dt><code>data-type-error-message</code></dt>
    <dd>An error message for the data-type attribute.</dd>
    <dt><code>data-type-error-resource</code></dt>
    <dd>A resource name that contains an error message for the data-type attribute.</dd>
    <dt><code>disable-empty-string-to-null-conversion</code></dt>
-   <dd>Indicates if empty strings should not be converted to null for this member.</dd>
+   <dd>Specifies if empty strings should not be converted to null for this member.</dd>
    <dt><code>display-text-member</code></dt>
    <dd>The name of the member to use as the text representation for this type.</dd>
    <dt><code>equal-to-error-message</code></dt>
@@ -61,6 +62,8 @@ the page is regenerated.
    <dd>An error message for the min-length and max-length attributes.</dd>
    <dt><code>length-error-resource</code></dt>
    <dd>A resource name that contains an error message for the min-length and max-length attributes.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the type.</dd>
    <dt><code>pattern-error-message</code></dt>
    <dd>An error message for the pattern attribute.</dd>
    <dt><code>pattern-error-resource</code></dt>
@@ -76,5 +79,5 @@ the page is regenerated.
    <dt><code>resource-type</code></dt>
    <dd>A type that contains resources for name, short-name, description and placeholder attributes.</dd>
    <dt><code>visibility</code></dt>
-   <dd>Indicates how the current component can be used in other (using) packages.</dd>
+   <dd>Specifies how the current component can be used in other (using) packages.</dd>
 </dl>

@@ -14,10 +14,18 @@ the page is regenerated.
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
+<p>Evaluates a template delegate.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>value</code></dt>
+   <dd>The template delegate instance.</dd>
+   <dt><code>with-params</code></dt>
+   <dd>An object with parameters.</dd>
 </dl>

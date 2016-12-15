@@ -12,6 +12,7 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:fallback</span>&gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:fallback&gt;</span></code></pre></div>
+<p>Defines fallback behavior for the parent element.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>

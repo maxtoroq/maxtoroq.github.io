@@ -29,10 +29,56 @@ the page is regenerated.
   <span>suppress-indentation</span>? = <span><i title="An EQName. Unprefixed QNames are in the default namespace.">EQName</i>*</span>
   <span>undeclare-prefixes</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
   <span>version</span>? = <i>NMTOKEN</i> /&gt;</code></pre></div>
+<p>Defines serialization parameters.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>byte-order-mark</code></dt>
+   <dd>Specifies whether a byte order mark is written at the start of the file.</dd>
+   <dt><code>cdata-section-elements</code></dt>
+   <dd>Specifies elements whose child text nodes should be wrapped in a CDATA section.</dd>
+   <dt><code>doctype-public</code></dt>
+   <dd>Specifies a public document type declaration.</dd>
+   <dt><code>doctype-system</code></dt>
+   <dd>Specifies a system document type declaration.</dd>
+   <dt><code>encoding</code></dt>
+   <dd>Specifies the output encoding.</dd>
+   <dt><code>escape-uri-attributes</code></dt>
+   <dd>Specifies whether to escape URI attributes in HTML and XHTML documents.</dd>
+   <dt><code>html-version</code></dt>
+   <dd>Specifies the HTML version.</dd>
+   <dt><code>include-content-type</code></dt>
+   <dd>Specifies whether to include a meta element in the head of HTML and XHTML documents,
+      specifying the used character encoding.
+   </dd>
+   <dt><code>indent</code></dt>
+   <dd>Specifies whether to indent the output.</dd>
+   <dt><code>indent-spaces</code></dt>
+   <dd>The number of spaces to use for indenting.</dd>
+   <dt><code>item-separator</code></dt>
+   <dd>A string to intersperse when outputting multiple items.</dd>
+   <dt><code>media-type</code></dt>
+   <dd>The media type (MIME content type) of the output, to include in a meta element in
+      the head of HTML and XHTML documents.
+   </dd>
+   <dt><code>method</code></dt>
+   <dd>Specifies the output format.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the output definition.</dd>
+   <dt><code>omit-xml-declaration</code></dt>
+   <dd>Specifies whether to omit the XML declaration.</dd>
+   <dt><code>standalone</code></dt>
+   <dd>Specifies whether to include the standalone document declaration.</dd>
+   <dt><code>suppress-indentation</code></dt>
+   <dd>Specifies elements that should not be indented.</dd>
+   <dt><code>undeclare-prefixes</code></dt>
+   <dd>Specifies whether to undeclare namespaces when outputting XML 1.1.</dd>
+   <dt><code>version</code></dt>
+   <dd>The version of the output format.</dd>
 </dl>

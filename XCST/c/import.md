@@ -11,10 +11,16 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:import</span>
   <b>href</b> = <i>URI</i> /&gt;</code></pre></div>
+<p>Specifies a module dependency.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>href</code></dt>
+   <dd>The relative or absolute URI of the module to import.</dd>
 </dl>

@@ -14,10 +14,18 @@ the page is regenerated.
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: (<span><a href="with-param.html">c:with-param</a>*</span>, <a href="call-template.html">c:call-template</a>) --&gt;
 <span class="nt">&lt;/c:using-module&gt;</span></code></pre></div>
+<p>Defines an invocation on a dynamically loaded module.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>value</code></dt>
+   <dd>An instance of a pre-compiled module.</dd>
+   <dt><code>with-params</code></dt>
+   <dd>An object with parameters.</dd>
 </dl>

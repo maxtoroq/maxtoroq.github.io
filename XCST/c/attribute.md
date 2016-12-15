@@ -16,6 +16,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:attribute&gt;</span></code></pre></div>
+<p>Creates an attribute node.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
@@ -23,4 +24,13 @@ the page is regenerated.
    <dd><a href="attribute-set.html">c:attribute-set</a></dd>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>name</code></dt>
+   <dd>The name of the attribute. Attribute value template (QName).</dd>
+   <dt><code>namespace</code></dt>
+   <dd>The namespace of the attribute. Attribute value template (URI).</dd>
+   <dt><code>separator</code></dt>
+   <dd>A string to intersperse between values. Attribute value template.</dd>
 </dl>

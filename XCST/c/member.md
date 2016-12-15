@@ -29,7 +29,7 @@ the page is regenerated.
   <span>equal-to-error-message</span>? = <i>String</i>
   <span>equal-to-error-resource</span>? = <i>String</i>
   <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>display</span>? = <span><span class="s">"view-only"</span> | <span class="s">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i></span>
+  <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i></span>
   <span>display-name</span>? = <i>String</i>
   <span>description</span>? = <i>String</i>
   <span>short-name</span>? = <i>String</i>
@@ -57,6 +57,7 @@ the page is regenerated.
   <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>+</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
+<p>Defines a type member.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="member.html">c:member</a></dd>
@@ -65,11 +66,13 @@ the page is regenerated.
 <h3>Attributes</h3>
 <dl>
    <dt><code>allow-empty-string</code></dt>
-   <dd>Indicates if an empty string is a valid value for this member.</dd>
+   <dd>Specifies if an empty string is a valid value for this member.</dd>
    <dt><code>apply-format-in-edit-mode</code></dt>
-   <dd>Indicates if the display format should be used in an edit control for this member.</dd>
+   <dd>Specifies if the display format should be used in an edit control for this member.</dd>
+   <dt><code>as</code></dt>
+   <dd>The type of the member.</dd>
    <dt><code>auto-generate-filter</code></dt>
-   <dd>Indicates if a filtering control should be automatically displayed for this member
+   <dd>Specifies if a filtering control should be automatically displayed for this member
       in a UI.
    </dd>
    <dt><code>auto-initialize</code></dt>
@@ -81,17 +84,19 @@ the page is regenerated.
    <dt><code>description</code></dt>
    <dd>A description of this member suitable for UI.</dd>
    <dt><code>disable-empty-string-to-null-conversion</code></dt>
-   <dd>Indicates if empty strings should not be converted to null for this member.</dd>
+   <dd>Specifies if empty strings should not be converted to null for this member.</dd>
    <dt><code>disable-output-escaping</code></dt>
-   <dd>Indicates if this member should not be escaped when displaying in a UI (e.g. HTML
+   <dd>Specifies if this member should not be escaped when displaying in a UI (e.g. HTML
       content).
    </dd>
    <dt><code>display</code></dt>
-   <dd>Indicates if this member should be displayed in a UI.</dd>
+   <dd>Specifies if this member should be displayed in a UI.</dd>
    <dt><code>display-name</code></dt>
    <dd>A name suitable for UI.</dd>
    <dt><code>display-text-member</code></dt>
    <dd>The name of the member to use as the text representation for this type.</dd>
+   <dt><code>equal-to</code></dt>
+   <dd>The name of another member that a valid value for this member should be equal to.</dd>
    <dt><code>equal-to-error-message</code></dt>
    <dd>An error message for the equal-to attribute.</dd>
    <dt><code>equal-to-error-resource</code></dt>
@@ -108,10 +113,22 @@ the page is regenerated.
    <dd>An error message for the min-length and max-length attributes.</dd>
    <dt><code>length-error-resource</code></dt>
    <dd>A resource name that contains an error message for the min-length and max-length attributes.</dd>
+   <dt><code>max</code></dt>
+   <dd>A maximum valid value for this member.</dd>
+   <dt><code>max-length</code></dt>
+   <dd>A maximum valid string length for this member.</dd>
+   <dt><code>min</code></dt>
+   <dd>A minimum valid value for this member.</dd>
+   <dt><code>min-length</code></dt>
+   <dd>A minimum valid string length for this member.</dd>
+   <dt><code>name</code></dt>
+   <dd>The name of the member.</dd>
    <dt><code>null-display-text</code></dt>
    <dd>A text that is displayed for this member when the value is null.</dd>
    <dt><code>order</code></dt>
    <dd>A number that indicates the relative position of this member in a UI.</dd>
+   <dt><code>pattern</code></dt>
+   <dd>A regular expression that a valid value for this member must conform to.</dd>
    <dt><code>pattern-error-message</code></dt>
    <dd>An error message for the pattern attribute.</dd>
    <dt><code>pattern-error-resource</code></dt>
@@ -123,7 +140,9 @@ the page is regenerated.
    <dt><code>range-error-resource</code></dt>
    <dd>A resource name that contains an error message for the min and max attributes.</dd>
    <dt><code>read-only</code></dt>
-   <dd>Indicates if editing should be disabled for this member in an editing UI.</dd>
+   <dd>Specifies if editing should be disabled for this member in an editing UI.</dd>
+   <dt><code>required</code></dt>
+   <dd>Specifies if this member is required.</dd>
    <dt><code>required-error-message</code></dt>
    <dd>An error message for the required attribute.</dd>
    <dt><code>required-error-resource</code></dt>

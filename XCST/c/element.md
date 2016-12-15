@@ -15,10 +15,20 @@ the page is regenerated.
   <span>use-attribute-sets</span>? = <span><i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>*</span> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:element&gt;</span></code></pre></div>
+<p>Creates an element node.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>name</code></dt>
+   <dd>The name of the element. Attribute value template (QName).</dd>
+   <dt><code>namespace</code></dt>
+   <dd>The namespace of the attribute. Attribute value template (URI).</dd>
+   <dt><code>use-attribute-sets</code></dt>
+   <dd>Specifies attribute sets to use on the element.</dd>
 </dl>

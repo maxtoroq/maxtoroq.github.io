@@ -32,10 +32,70 @@ the page is regenerated.
   <span>output-version</span>? = { <i>NMTOKEN</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:result-document&gt;</span></code></pre></div>
+<p>Creates a secondary result.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>byte-order-mark</code></dt>
+   <dd>Specifies whether a byte order mark is written at the start of the file. Attribute
+      value template (Boolean).
+   </dd>
+   <dt><code>cdata-section-elements</code></dt>
+   <dd>Specifies elements whose child text nodes should be wrapped in a CDATA section. Attribute
+      value template.
+   </dd>
+   <dt><code>doctype-public</code></dt>
+   <dd>Specifies a public document type declaration. Attribute value template.</dd>
+   <dt><code>doctype-system</code></dt>
+   <dd>Specifies a system document type declaration. Attribute value template.</dd>
+   <dt><code>encoding</code></dt>
+   <dd>Specifies the output encoding. Attribute value template.</dd>
+   <dt><code>escape-uri-attributes</code></dt>
+   <dd>Specifies whether to escape URI attributes in HTML and XHTML documents. Attribute
+      value template (Boolean).
+   </dd>
+   <dt><code>format</code></dt>
+   <dd>The name of the output definition to get serialization parameters from. Attribute
+      value template (EQName).
+   </dd>
+   <dt><code>href</code></dt>
+   <dd>The relative or absolute URI to send the result to. Attribute value template (URI).</dd>
+   <dt><code>html-version</code></dt>
+   <dd>Specifies the HTML version. Attribute value template (Decimal).</dd>
+   <dt><code>include-content-type</code></dt>
+   <dd>Specifies whether to include a meta element in the head of HTML and XHTML documents,
+      specifying the used character encoding. Attribute value template (Boolean).
+   </dd>
+   <dt><code>indent</code></dt>
+   <dd>Specifies whether to indent the output. Attribute value template (Boolean).</dd>
+   <dt><code>indent-spaces</code></dt>
+   <dd>The number of spaces to use for indenting. Attribute value template (Integer).</dd>
+   <dt><code>item-separator</code></dt>
+   <dd>A string to intersperse when outputting multiple items. Attribute value template.</dd>
+   <dt><code>media-type</code></dt>
+   <dd>The media type (MIME content type) of the output, to include in a meta element in
+      the head of HTML and XHTML documents. Attribute value template.
+   </dd>
+   <dt><code>method</code></dt>
+   <dd>Specifies the output format. Attribute value template.</dd>
+   <dt><code>omit-xml-declaration</code></dt>
+   <dd>Specifies whether to omit the XML declaration. Attribute value template (Boolean).</dd>
+   <dt><code>output-version</code></dt>
+   <dd>The version of the output format. Attribute value template.</dd>
+   <dt><code>standalone</code></dt>
+   <dd>Specifies whether to include the standalone document declaration. Attribute value
+      template.
+   </dd>
+   <dt><code>suppress-indentation</code></dt>
+   <dd>Specifies elements that should not be indented. Attribute value template.</dd>
+   <dt><code>undeclare-prefixes</code></dt>
+   <dd>Specifies whether to undeclare namespaces when outputting XML 1.1. Attribute value
+      template (Boolean).
+   </dd>
 </dl>

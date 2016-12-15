@@ -12,8 +12,16 @@ the page is regenerated.
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:sort</span>
   <span>value</span>? = <i title="Expression">Expression</i>
   <span>order</span>? = { <span><span class="s">"ascending"</span> | <span class="s">"descending"</span></span> } /&gt;</code></pre></div>
+<p>Defines how to sort sequences of items.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="for-each.html">c:for-each</a></dd>
    <dd><a href="for-each-group.html">c:for-each-group</a></dd>
+</dl>
+<h3>Attributes</h3>
+<dl>
+   <dt><code>order</code></dt>
+   <dd>Specifies the sort direction ("ascending" or "descending"). Attribute value template.</dd>
+   <dt><code>value</code></dt>
+   <dd>An expression to use as sort key.</dd>
 </dl>

@@ -3,6 +3,7 @@
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xmlns:rng="http://relaxng.org/ns/structure/1.0"
+   xmlns:ann="http://relaxng.org/ns/compatibility/annotations/1.0"
    xmlns:a="http://maxtoroq.github.io/XCST/application"
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
@@ -151,6 +152,12 @@ the page is regenerated.
             </code>
          </pre>
       </div>
+
+      <xsl:if test="ann:documentation">
+         <p>
+            <xsl:value-of select="ann:documentation"/>
+         </p>
+      </xsl:if>
 
       <dl>
          <xsl:if test="not(empty($category))">

@@ -142,6 +142,10 @@
    <template match="rng:value" mode="ref:type-display">
       <element name="span" namespace="">
          <attribute name="class" select="'s'"/>
+         <variable name="doc" select="following-sibling::*[1][self::ann:documentation]"/>
+         <if test="$doc">
+            <attribute name="title" select="$doc"/>
+         </if>
          <text>"</text>
          <value-of select="."/>
          <text>"</text>
