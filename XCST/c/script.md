@@ -21,8 +21,12 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>src</code></dt>
-   <dd>The relative or absolute URI of the script of code.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-src">src</code></td>
+         <td>The relative or absolute URI of the script of code.</td>
+      </tr>
+   </table>
+</div>

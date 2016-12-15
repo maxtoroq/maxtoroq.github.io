@@ -24,12 +24,20 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The return type. Omit this attribute for void functions.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the function.</dd>
-   <dt><code>visibility</code></dt>
-   <dd>Specifies how the current component can be used in other (using) packages.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The return type. Omit this attribute for void functions.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the function.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-visibility">visibility</code></td>
+         <td>Specifies how the current component can be used in other (using) packages.</td>
+      </tr>
+   </table>
+</div>

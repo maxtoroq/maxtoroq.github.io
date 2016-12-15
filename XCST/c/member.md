@@ -63,98 +63,186 @@ the page is regenerated.
    <dd><a href="member.html">c:member</a></dd>
    <dd><a href="type.html">c:type</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>allow-empty-string</code></dt>
-   <dd>Specifies if an empty string is a valid value for this member.</dd>
-   <dt><code>apply-format-in-edit-mode</code></dt>
-   <dd>Specifies if the display format should be used in an edit control for this member.</dd>
-   <dt><code>as</code></dt>
-   <dd>The type of the member.</dd>
-   <dt><code>auto-generate-filter</code></dt>
-   <dd>Specifies if a filtering control should be automatically displayed for this member
-      in a UI.
-   </dd>
-   <dt><code>auto-initialize</code></dt>
-   <dd>Auto-assign an initial value to this member.</dd>
-   <dt><code>data-type-error-message</code></dt>
-   <dd>An error message for the data-type attribute.</dd>
-   <dt><code>data-type-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the data-type attribute.</dd>
-   <dt><code>description</code></dt>
-   <dd>A description of this member suitable for UI.</dd>
-   <dt><code>disable-empty-string-to-null-conversion</code></dt>
-   <dd>Specifies if empty strings should not be converted to null for this member.</dd>
-   <dt><code>disable-output-escaping</code></dt>
-   <dd>Specifies if this member should not be escaped when displaying in a UI (e.g. HTML
-      content).
-   </dd>
-   <dt><code>display</code></dt>
-   <dd>Specifies if this member should be displayed in a UI.</dd>
-   <dt><code>display-name</code></dt>
-   <dd>A name suitable for UI.</dd>
-   <dt><code>display-text-member</code></dt>
-   <dd>The name of the member to use as the text representation for this type.</dd>
-   <dt><code>equal-to</code></dt>
-   <dd>The name of another member that a valid value for this member should be equal to.</dd>
-   <dt><code>equal-to-error-message</code></dt>
-   <dd>An error message for the equal-to attribute.</dd>
-   <dt><code>equal-to-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the equal-to attribute.</dd>
-   <dt><code>error-resource-type</code></dt>
-   <dd>A type that contains error message resources for validation attributes.</dd>
-   <dt><code>expression</code></dt>
-   <dd>An expression for computed members.</dd>
-   <dt><code>format</code></dt>
-   <dd>A formatting string that specifies the display format for the value of this member.</dd>
-   <dt><code>group</code></dt>
-   <dd>A name that is used to group members in a UI.</dd>
-   <dt><code>length-error-message</code></dt>
-   <dd>An error message for the min-length and max-length attributes.</dd>
-   <dt><code>length-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the min-length and max-length attributes.</dd>
-   <dt><code>max</code></dt>
-   <dd>A maximum valid value for this member.</dd>
-   <dt><code>max-length</code></dt>
-   <dd>A maximum valid string length for this member.</dd>
-   <dt><code>min</code></dt>
-   <dd>A minimum valid value for this member.</dd>
-   <dt><code>min-length</code></dt>
-   <dd>A minimum valid string length for this member.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the member.</dd>
-   <dt><code>null-display-text</code></dt>
-   <dd>A text that is displayed for this member when the value is null.</dd>
-   <dt><code>order</code></dt>
-   <dd>A number that indicates the relative position of this member in a UI.</dd>
-   <dt><code>pattern</code></dt>
-   <dd>A regular expression that a valid value for this member must conform to.</dd>
-   <dt><code>pattern-error-message</code></dt>
-   <dd>An error message for the pattern attribute.</dd>
-   <dt><code>pattern-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the pattern attribute.</dd>
-   <dt><code>place-holder</code></dt>
-   <dd>A hint to the user of what can be entered in a control for this member.</dd>
-   <dt><code>range-error-message</code></dt>
-   <dd>An error message for the min and max attributes.</dd>
-   <dt><code>range-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the min and max attributes.</dd>
-   <dt><code>read-only</code></dt>
-   <dd>Specifies if editing should be disabled for this member in an editing UI.</dd>
-   <dt><code>required</code></dt>
-   <dd>Specifies if this member is required.</dd>
-   <dt><code>required-error-message</code></dt>
-   <dd>An error message for the required attribute.</dd>
-   <dt><code>required-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the required attribute.</dd>
-   <dt><code>resource-type</code></dt>
-   <dd>A type that contains resources for name, short-name, description and placeholder attributes.</dd>
-   <dt><code>short-name</code></dt>
-   <dd>A shorter name suitable for UI where the display name would be too long to fit (e.g.
-      a table column).
-   </dd>
-   <dt><code>template</code></dt>
-   <dd>The name of a template to use when displaying this member in a UI.</dd>
-   <dt><code>value</code></dt>
-   <dd>An initial value for this member.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-allow-empty-string">allow-empty-string</code></td>
+         <td>Specifies if an empty string is a valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-apply-format-in-edit-mode">apply-format-in-edit-mode</code></td>
+         <td>Specifies if the display format should be used in an edit control for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-auto-generate-filter">auto-generate-filter</code></td>
+         <td>Specifies if a filtering control should be automatically displayed for this member
+            in a UI.
+         </td>
+      </tr>
+      <tr>
+         <td><code id="attr-auto-initialize">auto-initialize</code></td>
+         <td>Auto-assign an initial value to this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-data-type-error-message">data-type-error-message</code></td>
+         <td>An error message for the data-type attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-data-type-error-resource">data-type-error-resource</code></td>
+         <td>A resource name that contains an error message for the data-type attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-description">description</code></td>
+         <td>A description of this member suitable for UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-disable-empty-string-to-null-conversion">disable-empty-string-to-null-conversion</code></td>
+         <td>Specifies if empty strings should not be converted to null for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-disable-output-escaping">disable-output-escaping</code></td>
+         <td>Specifies if this member should not be escaped when displaying in a UI (e.g. HTML
+            content).
+         </td>
+      </tr>
+      <tr>
+         <td><code id="attr-display">display</code></td>
+         <td>Specifies if this member should be displayed in a UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-display-name">display-name</code></td>
+         <td>A name suitable for UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-display-text-member">display-text-member</code></td>
+         <td>The name of the member to use as the text representation for this type.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-equal-to">equal-to</code></td>
+         <td>The name of another member that a valid value for this member should be equal to.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-equal-to-error-message">equal-to-error-message</code></td>
+         <td>An error message for the equal-to attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-equal-to-error-resource">equal-to-error-resource</code></td>
+         <td>A resource name that contains an error message for the equal-to attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-error-resource-type">error-resource-type</code></td>
+         <td>A type that contains error message resources for validation attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-expression">expression</code></td>
+         <td>An expression for computed members.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-format">format</code></td>
+         <td>A formatting string that specifies the display format for the value of this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-group">group</code></td>
+         <td>A name that is used to group members in a UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-length-error-message">length-error-message</code></td>
+         <td>An error message for the min-length and max-length attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-length-error-resource">length-error-resource</code></td>
+         <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-max">max</code></td>
+         <td>A maximum valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-max-length">max-length</code></td>
+         <td>A maximum valid string length for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-min">min</code></td>
+         <td>A minimum valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-min-length">min-length</code></td>
+         <td>A minimum valid string length for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-null-display-text">null-display-text</code></td>
+         <td>A text that is displayed for this member when the value is null.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-order">order</code></td>
+         <td>A number that indicates the relative position of this member in a UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-pattern">pattern</code></td>
+         <td>A regular expression that a valid value for this member must conform to.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-pattern-error-message">pattern-error-message</code></td>
+         <td>An error message for the pattern attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-pattern-error-resource">pattern-error-resource</code></td>
+         <td>A resource name that contains an error message for the pattern attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-place-holder">place-holder</code></td>
+         <td>A hint to the user of what can be entered in a control for this member.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-range-error-message">range-error-message</code></td>
+         <td>An error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-range-error-resource">range-error-resource</code></td>
+         <td>A resource name that contains an error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-read-only">read-only</code></td>
+         <td>Specifies if editing should be disabled for this member in an editing UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required">required</code></td>
+         <td>Specifies if this member is required.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required-error-message">required-error-message</code></td>
+         <td>An error message for the required attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required-error-resource">required-error-resource</code></td>
+         <td>A resource name that contains an error message for the required attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-resource-type">resource-type</code></td>
+         <td>A type that contains resources for name, short-name, description and placeholder attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-short-name">short-name</code></td>
+         <td>A shorter name suitable for UI where the display name would be too long to fit (e.g.
+            a table column).
+         </td>
+      </tr>
+      <tr>
+         <td><code id="attr-template">template</code></td>
+         <td>The name of a template to use when displaying this member in a UI.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-value">value</code></td>
+         <td>An initial value for this member.</td>
+      </tr>
+   </table>
+</div>

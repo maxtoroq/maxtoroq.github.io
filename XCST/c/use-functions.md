@@ -19,14 +19,22 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>alias</code></dt>
-   <dd>A name to use as prefix for imported functions.</dd>
-   <dt><code>in</code></dt>
-   <dd>The namespace or fully-qualified class name to import functions from.</dd>
-   <dt><code>static-only</code></dt>
-   <dd>Specifies whether to import static functions only. The in attribute must refer to
-      a class.
-   </dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-alias">alias</code></td>
+         <td>A name to use as prefix for imported functions.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-in">in</code></td>
+         <td>The namespace or fully-qualified class name to import functions from.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-static-only">static-only</code></td>
+         <td>Specifies whether to import static functions only. The in attribute must refer to
+            a class.
+         </td>
+      </tr>
+   </table>
+</div>

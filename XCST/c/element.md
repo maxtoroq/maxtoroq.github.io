@@ -23,12 +23,20 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>name</code></dt>
-   <dd>The name of the element. Attribute value template (QName).</dd>
-   <dt><code>namespace</code></dt>
-   <dd>The namespace of the element. Attribute value template (URI).</dd>
-   <dt><code>use-attribute-sets</code></dt>
-   <dd>Specifies attribute sets to use on the element.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the element. Attribute value template (QName).</td>
+      </tr>
+      <tr>
+         <td><code id="attr-namespace">namespace</code></td>
+         <td>The namespace of the element. Attribute value template (URI).</td>
+      </tr>
+      <tr>
+         <td><code id="attr-use-attribute-sets">use-attribute-sets</code></td>
+         <td>Specifies attribute sets to use on the element.</td>
+      </tr>
+   </table>
+</div>

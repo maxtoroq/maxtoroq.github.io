@@ -22,8 +22,12 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>terminate</code></dt>
-   <dd>Specifies whether to stop the execution of the program. Attribute value template (Boolean).</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-terminate">terminate</code></td>
+         <td>Specifies whether to stop the execution of the program. Attribute value template (Boolean).</td>
+      </tr>
+   </table>
+</div>

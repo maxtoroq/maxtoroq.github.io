@@ -23,10 +23,16 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>name</code></dt>
-   <dd>The name of the template.</dd>
-   <dt><code>visibility</code></dt>
-   <dd>Specifies how the current component can be used in other (using) packages.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the template.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-visibility">visibility</code></td>
+         <td>Specifies how the current component can be used in other (using) packages.</td>
+      </tr>
+   </table>
+</div>

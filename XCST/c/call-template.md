@@ -21,11 +21,15 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>name</code></dt>
-   <dd>The name of the template to invoke.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the template to invoke.</td>
+      </tr>
+   </table>
+</div>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:call-template</span>
   <b>name</b> = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
@@ -36,10 +40,16 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="using-module.html">c:using-module</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>name</code></dt>
-   <dd>The name of the template. Attribute value template (EQName).</dd>
-   <dt><code>with-params</code></dt>
-   <dd>An object with parameters.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the template. Attribute value template (EQName).</td>
+      </tr>
+      <tr>
+         <td><code id="attr-with-params">with-params</code></td>
+         <td>An object with parameters.</td>
+      </tr>
+   </table>
+</div>

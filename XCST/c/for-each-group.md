@@ -24,14 +24,24 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>group-by</code></dt>
-   <dd>An expression to use as grouping key.</dd>
-   <dt><code>group-size</code></dt>
-   <dd>The maximum number of items a group may have.</dd>
-   <dt><code>in</code></dt>
-   <dd>The source of the items.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the group.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-group-by">group-by</code></td>
+         <td>An expression to use as grouping key.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-group-size">group-size</code></td>
+         <td>The maximum number of items a group may have.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-in">in</code></td>
+         <td>The source of the items.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the group.</td>
+      </tr>
+   </table>
+</div>

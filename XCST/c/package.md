@@ -20,12 +20,20 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd>None</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>language</code></dt>
-   <dd>The expression language for this module (usually "C#").</dd>
-   <dt><code>name</code></dt>
-   <dd>The fully-qualified class name for the current package.</dd>
-   <dt><code>version</code></dt>
-   <dd>The XCST version for the current and descendant elements (usually "1.0").</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-language">language</code></td>
+         <td>The expression language for this module (usually "C#").</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The fully-qualified class name for the current package.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-version">version</code></td>
+         <td>The XCST version for the current and descendant elements (usually "1.0").</td>
+      </tr>
+   </table>
+</div>

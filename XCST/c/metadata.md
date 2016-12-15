@@ -17,8 +17,12 @@ the page is regenerated.
    <dd><a href="member.html">c:member</a></dd>
    <dd><a href="type.html">c:type</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>value</code></dt>
-   <dd>The metadata expression.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-value">value</code></td>
+         <td>The metadata expression.</td>
+      </tr>
+   </table>
+</div>

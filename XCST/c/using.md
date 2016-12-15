@@ -15,6 +15,7 @@ the page is regenerated.
   <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:using&gt;</span></code></pre></div>
+<p>Facilitates the unconditional disposing of an object.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
@@ -22,12 +23,20 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The type of the disposable variable.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the disposable variable.</dd>
-   <dt><code>value</code></dt>
-   <dd>The disposable object.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the disposable variable.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the disposable variable.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-value">value</code></td>
+         <td>The disposable object.</td>
+      </tr>
+   </table>
+</div>

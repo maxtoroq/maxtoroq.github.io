@@ -23,12 +23,20 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The type of the item.</dd>
-   <dt><code>in</code></dt>
-   <dd>The source of the items.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the item.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the item.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-in">in</code></td>
+         <td>The source of the items.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the item.</td>
+      </tr>
+   </table>
+</div>

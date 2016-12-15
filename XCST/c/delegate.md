@@ -21,8 +21,12 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The return type of the template.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The return type of the template.</td>
+      </tr>
+   </table>
+</div>

@@ -31,32 +31,60 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>data-type-error-message</code></dt>
-   <dd>An error message for the data-type attribute.</dd>
-   <dt><code>data-type-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the data-type attribute.</dd>
-   <dt><code>equal-to-error-message</code></dt>
-   <dd>An error message for the equal-to attribute.</dd>
-   <dt><code>equal-to-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the equal-to attribute.</dd>
-   <dt><code>error-resource-type</code></dt>
-   <dd>A type that contains error message resources for validation attributes.</dd>
-   <dt><code>length-error-message</code></dt>
-   <dd>An error message for the min-length and max-length attributes.</dd>
-   <dt><code>length-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the min-length and max-length attributes.</dd>
-   <dt><code>pattern-error-message</code></dt>
-   <dd>An error message for the pattern attribute.</dd>
-   <dt><code>pattern-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the pattern attribute.</dd>
-   <dt><code>range-error-message</code></dt>
-   <dd>An error message for the min and max attributes.</dd>
-   <dt><code>range-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the min and max attributes.</dd>
-   <dt><code>required-error-message</code></dt>
-   <dd>An error message for the required attribute.</dd>
-   <dt><code>required-error-resource</code></dt>
-   <dd>A resource name that contains an error message for the required attribute.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-data-type-error-message">data-type-error-message</code></td>
+         <td>An error message for the data-type attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-data-type-error-resource">data-type-error-resource</code></td>
+         <td>A resource name that contains an error message for the data-type attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-equal-to-error-message">equal-to-error-message</code></td>
+         <td>An error message for the equal-to attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-equal-to-error-resource">equal-to-error-resource</code></td>
+         <td>A resource name that contains an error message for the equal-to attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-error-resource-type">error-resource-type</code></td>
+         <td>A type that contains error message resources for validation attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-length-error-message">length-error-message</code></td>
+         <td>An error message for the min-length and max-length attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-length-error-resource">length-error-resource</code></td>
+         <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-pattern-error-message">pattern-error-message</code></td>
+         <td>An error message for the pattern attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-pattern-error-resource">pattern-error-resource</code></td>
+         <td>A resource name that contains an error message for the pattern attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-range-error-message">range-error-message</code></td>
+         <td>An error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-range-error-resource">range-error-resource</code></td>
+         <td>A resource name that contains an error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required-error-message">required-error-message</code></td>
+         <td>An error message for the required attribute.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required-error-resource">required-error-resource</code></td>
+         <td>A resource name that contains an error message for the required attribute.</td>
+      </tr>
+   </table>
+</div>

@@ -37,48 +37,88 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>byte-order-mark</code></dt>
-   <dd>Specifies whether a byte order mark is written at the start of the file.</dd>
-   <dt><code>cdata-section-elements</code></dt>
-   <dd>Specifies elements whose child text nodes should be wrapped in a CDATA section.</dd>
-   <dt><code>doctype-public</code></dt>
-   <dd>Specifies a public document type declaration.</dd>
-   <dt><code>doctype-system</code></dt>
-   <dd>Specifies a system document type declaration.</dd>
-   <dt><code>encoding</code></dt>
-   <dd>Specifies the output encoding.</dd>
-   <dt><code>escape-uri-attributes</code></dt>
-   <dd>Specifies whether to escape URI attributes in HTML and XHTML documents.</dd>
-   <dt><code>html-version</code></dt>
-   <dd>Specifies the HTML version.</dd>
-   <dt><code>include-content-type</code></dt>
-   <dd>Specifies whether to include a meta element in the head of HTML and XHTML documents,
-      specifying the used character encoding.
-   </dd>
-   <dt><code>indent</code></dt>
-   <dd>Specifies whether to indent the output.</dd>
-   <dt><code>indent-spaces</code></dt>
-   <dd>The number of spaces to use for indenting.</dd>
-   <dt><code>item-separator</code></dt>
-   <dd>A string to intersperse when outputting multiple items.</dd>
-   <dt><code>media-type</code></dt>
-   <dd>The media type (MIME content type) of the output, to include in a meta element in
-      the head of HTML and XHTML documents.
-   </dd>
-   <dt><code>method</code></dt>
-   <dd>Specifies the output format.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the output definition.</dd>
-   <dt><code>omit-xml-declaration</code></dt>
-   <dd>Specifies whether to omit the XML declaration.</dd>
-   <dt><code>standalone</code></dt>
-   <dd>Specifies whether to include the standalone document declaration.</dd>
-   <dt><code>suppress-indentation</code></dt>
-   <dd>Specifies elements that should not be indented.</dd>
-   <dt><code>undeclare-prefixes</code></dt>
-   <dd>Specifies whether to undeclare namespaces when outputting XML 1.1.</dd>
-   <dt><code>version</code></dt>
-   <dd>The version of the output format.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-byte-order-mark">byte-order-mark</code></td>
+         <td>Specifies whether a byte order mark is written at the start of the file.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-cdata-section-elements">cdata-section-elements</code></td>
+         <td>Specifies elements whose child text nodes should be wrapped in a CDATA section.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-doctype-public">doctype-public</code></td>
+         <td>Specifies a public document type declaration.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-doctype-system">doctype-system</code></td>
+         <td>Specifies a system document type declaration.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-encoding">encoding</code></td>
+         <td>Specifies the output encoding.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-escape-uri-attributes">escape-uri-attributes</code></td>
+         <td>Specifies whether to escape URI attributes in HTML and XHTML documents.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-html-version">html-version</code></td>
+         <td>Specifies the HTML version.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-include-content-type">include-content-type</code></td>
+         <td>Specifies whether to include a meta element in the head of HTML and XHTML documents,
+            specifying the used character encoding.
+         </td>
+      </tr>
+      <tr>
+         <td><code id="attr-indent">indent</code></td>
+         <td>Specifies whether to indent the output.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-indent-spaces">indent-spaces</code></td>
+         <td>The number of spaces to use for indenting.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-item-separator">item-separator</code></td>
+         <td>A string to intersperse when outputting multiple items.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-media-type">media-type</code></td>
+         <td>The media type (MIME content type) of the output, to include in a meta element in
+            the head of HTML and XHTML documents.
+         </td>
+      </tr>
+      <tr>
+         <td><code id="attr-method">method</code></td>
+         <td>Specifies the output format.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the output definition.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-omit-xml-declaration">omit-xml-declaration</code></td>
+         <td>Specifies whether to omit the XML declaration.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-standalone">standalone</code></td>
+         <td>Specifies whether to include the standalone document declaration.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-suppress-indentation">suppress-indentation</code></td>
+         <td>Specifies elements that should not be indented.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-undeclare-prefixes">undeclare-prefixes</code></td>
+         <td>Specifies whether to undeclare namespaces when outputting XML 1.1.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-version">version</code></td>
+         <td>The version of the output format.</td>
+      </tr>
+   </table>
+</div>

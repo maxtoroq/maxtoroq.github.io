@@ -22,10 +22,16 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>value</code></dt>
-   <dd>An instance of a pre-compiled module.</dd>
-   <dt><code>with-params</code></dt>
-   <dd>An object with parameters.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-value">value</code></td>
+         <td>An instance of a pre-compiled module.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-with-params">with-params</code></td>
+         <td>An object with parameters.</td>
+      </tr>
+   </table>
+</div>

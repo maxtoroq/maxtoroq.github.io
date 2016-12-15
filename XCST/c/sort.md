@@ -18,10 +18,16 @@ the page is regenerated.
    <dd><a href="for-each.html">c:for-each</a></dd>
    <dd><a href="for-each-group.html">c:for-each-group</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>order</code></dt>
-   <dd>Specifies the sort direction ("ascending" or "descending"). Attribute value template.</dd>
-   <dt><code>value</code></dt>
-   <dd>An expression to use as sort key.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-order">order</code></td>
+         <td>Specifies the sort direction ("ascending" or "descending"). Attribute value template.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-value">value</code></td>
+         <td>An expression to use as sort key.</td>
+      </tr>
+   </table>
+</div>

@@ -19,8 +19,12 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>href</code></dt>
-   <dd>The relative or absolute URI of the module to import.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-href">href</code></td>
+         <td>The relative or absolute URI of the module to import.</td>
+      </tr>
+   </table>
+</div>

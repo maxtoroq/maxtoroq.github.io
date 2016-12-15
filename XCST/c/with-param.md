@@ -16,7 +16,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
-<p>Defines parameter arguments for a template invocation.</p>
+<p>Defines parameter arguments for a template or package.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="call-template.html">c:call-template</a></dd>
@@ -24,15 +24,23 @@ the page is regenerated.
    <dd><a href="next-template.html">c:next-template</a></dd>
    <dd><a href="using-module.html">c:using-module</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The type of the parameter.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the parameter.</dd>
-   <dt><code>tunnel</code></dt>
-   <dd>Specifies if the parameter should be tunneled.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-tunnel">tunnel</code></td>
+         <td>Specifies if the parameter should be tunneled.</td>
+      </tr>
+   </table>
+</div>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:with-param</span>
   <span>name</span>? = <i>Name</i>
   <span>as</span>? = <i>Type</i>
@@ -40,17 +48,25 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
-<p>Defines parameter arguments for a function invocation.</p>
+<p>Defines parameter arguments for a function.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="next-function.html">c:next-function</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The type of the parameter.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the parameter.</dd>
-   <dt><code>tunnel</code></dt>
-   <dd>Specifies if the parameter should be tunneled.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-tunnel">tunnel</code></td>
+         <td>Specifies if the parameter should be tunneled.</td>
+      </tr>
+   </table>
+</div>

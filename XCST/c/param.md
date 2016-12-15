@@ -29,14 +29,24 @@ the page is regenerated.
    <dd><a href="package.html">c:package</a></dd>
    <dd><a href="template.html">c:template</a></dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>as</code></dt>
-   <dd>The type of the parameter.</dd>
-   <dt><code>name</code></dt>
-   <dd>The name of the parameter.</dd>
-   <dt><code>required</code></dt>
-   <dd>Specifies if the parameter is required.</dd>
-   <dt><code>tunnel</code></dt>
-   <dd>Specifies if the parameter is a tunnel parameter.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-as">as</code></td>
+         <td>The type of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-name">name</code></td>
+         <td>The name of the parameter.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-required">required</code></td>
+         <td>Specifies if the parameter is required.</td>
+      </tr>
+      <tr>
+         <td><code id="attr-tunnel">tunnel</code></td>
+         <td>Specifies if the parameter is a tunnel parameter.</td>
+      </tr>
+   </table>
+</div>

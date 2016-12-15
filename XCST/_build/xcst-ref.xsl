@@ -209,21 +209,25 @@ the page is regenerated.
       </dl>
 
       <xsl:if test="$attribs[@description]">
-         <h3>Attributes</h3>
-         <dl>
-            <xsl:for-each select="$attribs[@description]">
-               <xsl:sort select="@name"/>
+         <h3 id="attributes">Attributes</h3>
+         <div class="table-responsive">
+            <table>
+               <xsl:for-each select="$attribs[@description]">
+                  <xsl:sort select="@name"/>
 
-               <dt>
-                  <code>
-                     <xsl:value-of select="@name"/>
-                  </code>
-               </dt>
-               <dd>
-                  <xsl:value-of select="@description"/>
-               </dd>
-            </xsl:for-each>
-         </dl>
+                  <tr>
+                     <td>
+                        <code id="attr-{@name}">
+                           <xsl:value-of select="@name"/>
+                        </code>
+                     </td>
+                     <td>
+                        <xsl:value-of select="@description"/>
+                     </td>
+                  </tr>
+               </xsl:for-each>
+            </table>
+         </div>
       </xsl:if>
    </xsl:template>
 

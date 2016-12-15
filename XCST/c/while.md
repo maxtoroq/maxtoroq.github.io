@@ -13,6 +13,7 @@ the page is regenerated.
   <b>test</b> = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:while&gt;</span></code></pre></div>
+<p>Repeateadly evaluates instructions until a condition is not met.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
@@ -20,8 +21,12 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
-<dl>
-   <dt><code>test</code></dt>
-   <dd>The condition for the loop to continue.</dd>
-</dl>
+<h3 id="attributes">Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code id="attr-test">test</code></td>
+         <td>The condition for the loop to continue.</td>
+      </tr>
+   </table>
+</div>
