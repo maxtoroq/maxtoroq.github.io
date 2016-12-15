@@ -28,7 +28,7 @@ the page is regenerated.
    <dt><code>name</code></dt>
    <dd>The name of the element. Attribute value template (QName).</dd>
    <dt><code>namespace</code></dt>
-   <dd>The namespace of the attribute. Attribute value template (URI).</dd>
+   <dd>The namespace of the element. Attribute value template (URI).</dd>
    <dt><code>use-attribute-sets</code></dt>
    <dd>Specifies attribute sets to use on the element.</dd>
 </dl>
