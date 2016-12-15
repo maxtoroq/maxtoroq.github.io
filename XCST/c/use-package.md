@@ -21,11 +21,11 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The class name of the package to use. Must be a fully-qualified name when using from
             implicit or unnamed packages.
          </td>

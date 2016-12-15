@@ -209,7 +209,7 @@ the page is regenerated.
       </dl>
 
       <xsl:if test="$attribs[@description]">
-         <h3 id="attributes">Attributes</h3>
+         <h3>Attributes</h3>
          <div class="table-responsive">
             <table>
                <xsl:for-each select="$attribs[@description]">
@@ -217,7 +217,7 @@ the page is regenerated.
 
                   <tr>
                      <td>
-                        <code id="attr-{@name}">
+                        <code>
                            <xsl:value-of select="@name"/>
                         </code>
                      </td>

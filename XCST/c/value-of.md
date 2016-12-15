@@ -23,15 +23,15 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-disable-output-escaping">disable-output-escaping</code></td>
+         <td><code>disable-output-escaping</code></td>
          <td>Specifies whether to omit output escaping.</td>
       </tr>
       <tr>
-         <td><code id="attr-separator">separator</code></td>
+         <td><code>separator</code></td>
          <td>A string to intersperse between values. Attribute value template.</td>
       </tr>
    </table>

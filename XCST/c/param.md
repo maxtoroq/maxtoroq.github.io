@@ -29,23 +29,23 @@ the page is regenerated.
    <dd><a href="package.html">c:package</a></dd>
    <dd><a href="template.html">c:template</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-as">as</code></td>
+         <td><code>as</code></td>
          <td>The type of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-required">required</code></td>
+         <td><code>required</code></td>
          <td>Specifies if the parameter is required.</td>
       </tr>
       <tr>
-         <td><code id="attr-tunnel">tunnel</code></td>
+         <td><code>tunnel</code></td>
          <td>Specifies if the parameter is a tunnel parameter.</td>
       </tr>
    </table>

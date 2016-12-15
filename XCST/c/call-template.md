@@ -21,11 +21,11 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the template to invoke.</td>
       </tr>
    </table>
@@ -40,15 +40,15 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="using-module.html">c:using-module</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the template. Attribute value template (EQName).</td>
       </tr>
       <tr>
-         <td><code id="attr-with-params">with-params</code></td>
+         <td><code>with-params</code></td>
          <td>An object with parameters.</td>
       </tr>
    </table>

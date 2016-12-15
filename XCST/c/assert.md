@@ -22,11 +22,11 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-test">test</code></td>
+         <td><code>test</code></td>
          <td>The condition to check for.</td>
       </tr>
    </table>

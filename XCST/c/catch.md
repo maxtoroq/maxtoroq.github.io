@@ -20,15 +20,15 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="try.html">c:try</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-exception">exception</code></td>
+         <td><code>exception</code></td>
          <td>The exception to catch.</td>
       </tr>
       <tr>
-         <td><code id="attr-when">when</code></td>
+         <td><code>when</code></td>
          <td>An exception filter.</td>
       </tr>
    </table>

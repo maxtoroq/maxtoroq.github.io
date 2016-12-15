@@ -40,83 +40,83 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-allow-empty-string">allow-empty-string</code></td>
+         <td><code>allow-empty-string</code></td>
          <td>Specifies if an empty string is a valid value for this member.</td>
       </tr>
       <tr>
-         <td><code id="attr-data-type-error-message">data-type-error-message</code></td>
+         <td><code>data-type-error-message</code></td>
          <td>An error message for the data-type attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-data-type-error-resource">data-type-error-resource</code></td>
+         <td><code>data-type-error-resource</code></td>
          <td>A resource name that contains an error message for the data-type attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-disable-empty-string-to-null-conversion">disable-empty-string-to-null-conversion</code></td>
+         <td><code>disable-empty-string-to-null-conversion</code></td>
          <td>Specifies if empty strings should not be converted to null for this member.</td>
       </tr>
       <tr>
-         <td><code id="attr-display-text-member">display-text-member</code></td>
+         <td><code>display-text-member</code></td>
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
-         <td><code id="attr-equal-to-error-message">equal-to-error-message</code></td>
+         <td><code>equal-to-error-message</code></td>
          <td>An error message for the equal-to attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-equal-to-error-resource">equal-to-error-resource</code></td>
+         <td><code>equal-to-error-resource</code></td>
          <td>A resource name that contains an error message for the equal-to attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-error-resource-type">error-resource-type</code></td>
+         <td><code>error-resource-type</code></td>
          <td>A type that contains error message resources for validation attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-length-error-message">length-error-message</code></td>
+         <td><code>length-error-message</code></td>
          <td>An error message for the min-length and max-length attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-length-error-resource">length-error-resource</code></td>
+         <td><code>length-error-resource</code></td>
          <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the type.</td>
       </tr>
       <tr>
-         <td><code id="attr-pattern-error-message">pattern-error-message</code></td>
+         <td><code>pattern-error-message</code></td>
          <td>An error message for the pattern attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-pattern-error-resource">pattern-error-resource</code></td>
+         <td><code>pattern-error-resource</code></td>
          <td>A resource name that contains an error message for the pattern attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-range-error-message">range-error-message</code></td>
+         <td><code>range-error-message</code></td>
          <td>An error message for the min and max attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-range-error-resource">range-error-resource</code></td>
+         <td><code>range-error-resource</code></td>
          <td>A resource name that contains an error message for the min and max attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-required-error-message">required-error-message</code></td>
+         <td><code>required-error-message</code></td>
          <td>An error message for the required attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-required-error-resource">required-error-resource</code></td>
+         <td><code>required-error-resource</code></td>
          <td>A resource name that contains an error message for the required attribute.</td>
       </tr>
       <tr>
-         <td><code id="attr-resource-type">resource-type</code></td>
+         <td><code>resource-type</code></td>
          <td>A type that contains resources for name, short-name, description and placeholder attributes.</td>
       </tr>
       <tr>
-         <td><code id="attr-visibility">visibility</code></td>
+         <td><code>visibility</code></td>
          <td>Specifies how the current component can be used in other (using) packages.</td>
       </tr>
    </table>

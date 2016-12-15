@@ -19,19 +19,19 @@ the page is regenerated.
    <dd><a href="module.html">c:module</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-alias">alias</code></td>
+         <td><code>alias</code></td>
          <td>A name to use as prefix for imported functions.</td>
       </tr>
       <tr>
-         <td><code id="attr-in">in</code></td>
+         <td><code>in</code></td>
          <td>The namespace or fully-qualified class name to import functions from.</td>
       </tr>
       <tr>
-         <td><code id="attr-static-only">static-only</code></td>
+         <td><code>static-only</code></td>
          <td>Specifies whether to import static functions only. The in attribute must refer to
             a class.
          </td>

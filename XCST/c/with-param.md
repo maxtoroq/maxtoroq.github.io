@@ -24,19 +24,19 @@ the page is regenerated.
    <dd><a href="next-template.html">c:next-template</a></dd>
    <dd><a href="using-module.html">c:using-module</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-as">as</code></td>
+         <td><code>as</code></td>
          <td>The type of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-tunnel">tunnel</code></td>
+         <td><code>tunnel</code></td>
          <td>Specifies if the parameter should be tunneled.</td>
       </tr>
    </table>
@@ -53,19 +53,19 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="next-function.html">c:next-function</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-as">as</code></td>
+         <td><code>as</code></td>
          <td>The type of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the parameter.</td>
       </tr>
       <tr>
-         <td><code id="attr-tunnel">tunnel</code></td>
+         <td><code>tunnel</code></td>
          <td>Specifies if the parameter should be tunneled.</td>
       </tr>
    </table>

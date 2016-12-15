@@ -24,19 +24,19 @@ the page is regenerated.
    <dd><a href="override.html">c:override</a></dd>
    <dd><a href="package.html">c:package</a></dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the attribute set.</td>
       </tr>
       <tr>
-         <td><code id="attr-use-attribute-sets">use-attribute-sets</code></td>
+         <td><code>use-attribute-sets</code></td>
          <td>Specifies other attribute sets to use before the current one.</td>
       </tr>
       <tr>
-         <td><code id="attr-visibility">visibility</code></td>
+         <td><code>visibility</code></td>
          <td>Specifies how the current component can be used in other (using) packages.</td>
       </tr>
    </table>

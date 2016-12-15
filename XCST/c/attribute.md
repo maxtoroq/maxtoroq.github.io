@@ -25,19 +25,19 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3 id="attributes">Attributes</h3>
+<h3>Attributes</h3>
 <div class="table-responsive">
    <table>
       <tr>
-         <td><code id="attr-name">name</code></td>
+         <td><code>name</code></td>
          <td>The name of the attribute. Attribute value template (QName).</td>
       </tr>
       <tr>
-         <td><code id="attr-namespace">namespace</code></td>
+         <td><code>namespace</code></td>
          <td>The namespace of the attribute. Attribute value template (URI).</td>
       </tr>
       <tr>
-         <td><code id="attr-separator">separator</code></td>
+         <td><code>separator</code></td>
          <td>A string to intersperse between values. Attribute value template.</td>
       </tr>
    </table>
