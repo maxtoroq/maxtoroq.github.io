@@ -29,5 +29,9 @@ the page is regenerated.
          <td><code>test</code></td>
          <td>The condition to check for.</td>
       </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
    </table>
 </div>

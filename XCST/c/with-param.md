@@ -39,6 +39,10 @@ the page is regenerated.
          <td><code>tunnel</code></td>
          <td>Specifies if the parameter should be tunneled.</td>
       </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
    </table>
 </div>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:with-param</span>
@@ -67,6 +71,10 @@ the page is regenerated.
       <tr>
          <td><code>tunnel</code></td>
          <td>Specifies if the parameter should be tunneled.</td>
+      </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
       </tr>
    </table>
 </div>

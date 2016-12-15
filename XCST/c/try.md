@@ -29,5 +29,9 @@ the page is regenerated.
          <td><code>rollback-output</code></td>
          <td>Specifies whether to discard the output when an exception occurs.</td>
       </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
    </table>
 </div>

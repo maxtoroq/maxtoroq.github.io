@@ -89,6 +89,10 @@ the page is regenerated.
          <td>Auto-assign an initial value to this member.</td>
       </tr>
       <tr>
+         <td><code>data-type</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>data-type-error-message</code></td>
          <td>An error message for the data-type attribute.</td>
       </tr>
@@ -209,6 +213,10 @@ the page is regenerated.
       <tr>
          <td><code>range-error-resource</code></td>
          <td>A resource name that contains an error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code>range-type</code></td>
+         <td></td>
       </tr>
       <tr>
          <td><code>read-only</code></td>

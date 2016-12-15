@@ -21,3 +21,20 @@ the page is regenerated.
    <dd><a href="list-box.html">a:list-box</a></dd>
    <dd><a href="with-options.html">a:with-options</a></dd>
 </dl>
+<h3>Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code>disabled</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>selected</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
+   </table>
+</div>

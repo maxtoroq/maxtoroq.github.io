@@ -18,3 +18,12 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="try.html">c:try</a></dd>
 </dl>
+<h3>Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
+   </table>
+</div>

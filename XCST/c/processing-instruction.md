@@ -29,5 +29,9 @@ the page is regenerated.
          <td><code>name</code></td>
          <td>The name of the processing instruction. Attribute value template (NCName).</td>
       </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
    </table>
 </div>

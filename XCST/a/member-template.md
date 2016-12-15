@@ -18,3 +18,12 @@ the page is regenerated.
    <dd><a href="display.html">a:display</a></dd>
    <dd><a href="editor.html">a:editor</a></dd>
 </dl>
+<h3>Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code>helper-name</code></td>
+         <td></td>
+      </tr>
+   </table>
+</div>

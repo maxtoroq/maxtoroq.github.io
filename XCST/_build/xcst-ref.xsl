@@ -208,11 +208,11 @@ the page is regenerated.
          </xsl:choose>
       </dl>
 
-      <xsl:if test="$attribs[@description]">
+      <xsl:if test="$attribs">
          <h3>Attributes</h3>
          <div class="table-responsive">
             <table>
-               <xsl:for-each select="$attribs[@description]">
+               <xsl:for-each select="$attribs">
                   <xsl:sort select="@name"/>
 
                   <tr>

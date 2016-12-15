@@ -28,6 +28,10 @@ the page is regenerated.
          <td>The exception to catch.</td>
       </tr>
       <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>when</code></td>
          <td>An exception filter.</td>
       </tr>

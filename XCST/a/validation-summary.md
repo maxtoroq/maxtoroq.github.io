@@ -21,3 +21,24 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>Attributes</h3>
+<div class="table-responsive">
+   <table>
+      <tr>
+         <td><code>html-attributes</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>html-class</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>include-member-errors</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>message</code></td>
+         <td></td>
+      </tr>
+   </table>
+</div>

@@ -40,6 +40,10 @@ the page is regenerated.
          <td>The name of the variable.</td>
       </tr>
       <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>visibility</code></td>
          <td>Specifies how the current component can be used in other (using) packages.</td>
       </tr>

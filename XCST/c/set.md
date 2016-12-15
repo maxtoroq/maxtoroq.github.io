@@ -28,5 +28,9 @@ the page is regenerated.
          <td><code>member</code></td>
          <td>The reference to set.</td>
       </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td></td>
+      </tr>
    </table>
 </div>
