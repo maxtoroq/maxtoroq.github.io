@@ -11,9 +11,9 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:attribute</span>
   <b>name</b> = { <i title="A QName. Unprefixed names are in the null namespace.">QName</i> }
+  <span>value</span>? = <i title="Expression">Expression</i>
   <span>namespace</span>? = { <i>URI</i> }
-  <span>separator</span>? = { <i>String</i> }
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>separator</span>? = { <i>String</i> } &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:attribute&gt;</span></code></pre></div>
 <p>Creates an attribute node.</p>

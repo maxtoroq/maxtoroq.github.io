@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:value-of</span>
+  <span>value</span>? = <i title="Expression">Expression</i>
   <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>separator</span>? = { <i>String</i> }
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>separator</span>? = { <i>String</i> } &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:value-of&gt;</span></code></pre></div>
 <p>Creates a text node or string.</p>

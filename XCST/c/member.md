@@ -11,6 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:member</span>
   <b>name</b> = <i>Name</i>
+  <span>as</span>? = <i>Type</i>
   <span>resource-type</span>? = <i>Type</i>
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
@@ -28,6 +29,8 @@ the page is regenerated.
   <span>range-error-resource</span>? = <i>String</i>
   <span>equal-to-error-message</span>? = <i>String</i>
   <span>equal-to-error-resource</span>? = <i>String</i>
+  <span>value</span>? = <i title="Expression">Expression</i>
+  <span>expression</span>? = <i title="Expression">Expression</i>
   <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
   <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i></span>
   <span>display-name</span>? = <i>String</i>
@@ -51,11 +54,8 @@ the page is regenerated.
   <span>min</span>? = <i title="Expression">Expression</i>
   <span>max</span>? = <i title="Expression">Expression</i>
   <span>range-type</span>? = <i>Type</i>
-  <span>equal-to</span>? = <i>Name</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>expression</span>? = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i> &gt;
-  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>+</span></span>) --&gt;
+  <span>equal-to</span>? = <i>Name</i> &gt;
+  &lt;!-- Content: (<span><span><a href="member.html">c:member</a>+</span></span>, <span><a href="metadata.html">c:metadata</a>*</span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
 <dl>

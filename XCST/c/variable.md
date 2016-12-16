@@ -11,9 +11,9 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:variable</span>
   <b>name</b> = <i>Name</i>
+  <span>value</span>? = <i title="Expression">Expression</i>
   <span>as</span>? = <i>Type</i>
-  <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:variable&gt;</span></code></pre></div>
 <p>Defines a variable.</p>
