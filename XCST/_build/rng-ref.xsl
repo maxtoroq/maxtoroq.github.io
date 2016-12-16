@@ -101,7 +101,9 @@
 
    <template match="rng:zeroOrMore | rng:oneOrMore | rng:optional" mode="ref:type-display">
       <variable name="result" as="node()*">
-         <apply-templates select="rng:*" mode="#current"/>
+         <apply-templates select="rng:*" mode="#current">
+            <with-param name="ref:ignore-choice-parens" select="false()" tunnel="yes"/>
+         </apply-templates>
       </variable>
       <if test="$result">
          <element name="span" namespace="">

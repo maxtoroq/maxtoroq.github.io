@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:example-element</span>
   <span>expand-text</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>extension-element-prefixes</span>? = <span><span><i>NCName</i> | <span class="s">"#default"</span></span>*</span>
+  <span>extension-element-prefixes</span>? = <span><span>(<i>NCName</i> | <span class="s">"#default"</span>)</span>*</span>
   <span>transform-text</span>? = <span><span class="s">"none"</span> | <span class="s">"normalize-space"</span> | <span class="s">"trim"</span></span>
   <span>version</span>? = <i>Decimal</i> /&gt;</code></pre></div>
 <p>This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a (non-existent) element
