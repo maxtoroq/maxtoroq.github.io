@@ -22,6 +22,8 @@ the page is regenerated.
    <dd><a href="with-options.html">a:with-options</a></dd>
 </dl>
 <h3>Attributes</h3>
+<p>In addition to the attributes in the following table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+</p>
 <div class="table-responsive">
    <table>
       <tr>

@@ -53,9 +53,10 @@
    </function>
 
    <function name="ref:attribs" as="element()*">
-      <param name="el" as="element(rng:element)"/>
+      <param name="el" as="element()"/>
 
       <apply-templates select="$el/rng:*" mode="ref:attribs">
+         <with-param name="for" select="$el" tunnel="yes"/>
          <with-param name="optional" select="false()" tunnel="yes"/>
       </apply-templates>
    </function>
