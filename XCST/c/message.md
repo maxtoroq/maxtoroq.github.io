@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:message</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:message</span>
   <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
   <span>value</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
@@ -24,7 +24,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>terminate</code></td>
          <td>Specifies whether to stop the execution of the program. Attribute value template (Boolean).</td>

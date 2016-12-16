@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:import</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:import</span>
   <b>href</b> = <i>URI</i> /&gt;</code></pre></div>
 <p>Specifies a module dependency.</p>
 <dl>
@@ -21,7 +21,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>href</code></td>
          <td>The relative or absolute URI of the module to import.</td>

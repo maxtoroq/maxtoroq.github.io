@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:example-element</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:example-element</span>
   <span>expand-text</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
   <span>extension-element-prefixes</span>? = <span><span>(<i>NCName</i> | <span class="s">"#default"</span>)</span>*</span>
   <span>transform-text</span>? = <span><span class="s">"none"</span> | <span class="s">"normalize-space"</span> | <span class="s">"trim"</span></span>
@@ -27,7 +27,7 @@ the page is regenerated.
 </p>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>[c:]expand-text</code></td>
          <td>Enables or disables text value templates for descendant text nodes.</td>

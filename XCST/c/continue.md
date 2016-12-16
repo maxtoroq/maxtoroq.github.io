@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:continue</span>/&gt;</code></pre></div>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:continue</span>/&gt;</code></pre></div>
 <p>Interrupts the current loop iteration and advances to the next.</p>
 <dl>
    <dt><b>Category</b></dt>

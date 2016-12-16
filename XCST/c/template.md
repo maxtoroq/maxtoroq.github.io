@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:template</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:template</span>
   <b>name</b> = <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
@@ -25,7 +25,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
          <td>The name of the template.</td>

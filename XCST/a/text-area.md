@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;a:text-area</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:text-area</span>
   <span>for</span>? = <i title="Expression">Expression</i>
   <span>name</span>? = { <i>String</i> }
   <span>value</span>? = <i title="Expression">Expression</i>
@@ -27,7 +27,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>cols</code></td>
          <td></td>

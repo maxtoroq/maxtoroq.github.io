@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:result-document</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:result-document</span>
   <b>href</b> = { <i>URI</i> }
   <span>format</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"xhtml"</span> | <span class="s">"text"</span> | <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i></span> }
@@ -42,7 +42,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>byte-order-mark</code></td>
          <td>Specifies whether a byte order mark is written at the start of the file. Attribute

@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:choose</span>&gt;
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:choose</span>&gt;
   &lt;!-- Content: (<span><a href="when.html">c:when</a>+</span>, <span><a href="otherwise.html">c:otherwise</a>?</span>) --&gt;
 <span class="nt">&lt;/c:choose&gt;</span></code></pre></div>
 <p>Chooses between multiple alternatives.</p>

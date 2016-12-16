@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:evaluate-delegate</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
   <b>value</b> = <i title="Expression">Expression</i>
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
@@ -24,7 +24,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>value</code></td>
          <td>The template delegate instance.</td>

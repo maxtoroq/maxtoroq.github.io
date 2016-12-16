@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:for-each-group</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each-group</span>
   <b>name</b> = <i>Name</i>
   <b>in</b> = <i title="Expression">Expression</i>
   <span>group-by</span>? = <i title="Expression">Expression</i>
@@ -26,7 +26,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>group-by</code></td>
          <td>An expression to use as grouping key.</td>

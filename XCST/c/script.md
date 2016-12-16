@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:script</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:script</span>
   <span>src</span>? = <i>URI</i> &gt;
   &lt;!-- Content: <span><i>text</i></span> --&gt;
 <span class="nt">&lt;/c:script&gt;</span></code></pre></div>
@@ -23,7 +23,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>src</code></td>
          <td>The relative or absolute URI of the script of code.</td>

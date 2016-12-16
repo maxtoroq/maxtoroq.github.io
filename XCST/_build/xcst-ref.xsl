@@ -150,8 +150,8 @@ the page is regenerated.
 
       <xsl:variable name="example" select="$name eq xs:QName('c:example-element')"/>
       
-      <div class="language-xml highlighter-rouge">
-         <pre class="highlight element-syntax">
+      <div class="ref-element-syntax language-xml highlighter-rouge">
+         <pre class="highlight">
             <code>
                <xsl:element name="span">
                   <xsl:attribute name="class" select="'nt'"/>
@@ -257,7 +257,7 @@ the page is regenerated.
       <xsl:if test="$attribs">
          <h3>Attributes</h3>
          <div class="table-responsive">
-            <table>
+            <table class="ref-attribs">
                <xsl:for-each select="$attribs">
                   <xsl:sort select="@name"/>
 

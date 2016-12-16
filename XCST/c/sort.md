@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:sort</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:sort</span>
   <span>value</span>? = <i title="Expression">Expression</i>
   <span>order</span>? = { <span><span class="s">"ascending"</span> | <span class="s">"descending"</span></span> } /&gt;</code></pre></div>
 <p>Defines how to sort sequences of items.</p>
@@ -20,7 +20,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>order</code></td>
          <td>Specifies the sort direction ("ascending" or "descending"). Attribute value template.</td>

@@ -10,13 +10,14 @@ body > header {
    }
 }
 
-.highlight {
-   &.element-syntax {
-      /*background-color: #ffccff;*/
+div.ref-element-syntax {
+   > .highlight {
       border: 1px solid;
+   }
+}
 
-      a {
-         /*color: #00C;*/
-      }
+table.ref-attribs {
+   code {
+      white-space: nowrap;
    }
 }

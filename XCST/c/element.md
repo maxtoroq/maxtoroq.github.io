@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:element</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:element</span>
   <b>name</b> = { <i title="A QName. Unprefixed names are in the default namespace.">QName</i> }
   <span>namespace</span>? = { <i>URI</i> }
   <span>use-attribute-sets</span>? = <span><i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>*</span> &gt;
@@ -25,7 +25,7 @@ the page is regenerated.
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
-   <table>
+   <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
          <td>The name of the element. Attribute value template (QName).</td>

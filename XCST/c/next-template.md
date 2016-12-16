@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:next-template</span>&gt;
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-template</span>&gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:next-template&gt;</span></code></pre></div>
 <p>Invokes the overriden template.</p>
