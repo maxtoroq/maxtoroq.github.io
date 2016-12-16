@@ -14,7 +14,7 @@ the page is regenerated.
   <span>extension-element-prefixes</span>? = <span><span>(<i>NCName</i> | <span class="s">"#default"</span>)</span>*</span>
   <span>transform-text</span>? = <span><span class="s">"none"</span> | <span class="s">"normalize-space"</span> | <span class="s">"trim"</span></span>
   <span>version</span>? = <i>Decimal</i> /&gt;</code></pre></div>
-<p>This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a (non-existent) element
+<p>This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element
    <code>c:example-element</code>.
    
 </p>
