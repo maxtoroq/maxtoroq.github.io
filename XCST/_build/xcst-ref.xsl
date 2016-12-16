@@ -73,9 +73,9 @@ the page is regenerated.
                <xsl:if test="position() gt 1">
                   <xsl:text> &#160;</xsl:text>
                </xsl:if>
-               <xsl:text>[</xsl:text>
+               <xsl:text>[`</xsl:text>
                <xsl:value-of select="current-grouping-key()"/>
-               <xsl:text>](</xsl:text>
+               <xsl:text>`](</xsl:text>
                <xsl:value-of select="string-join(('..', $prefix, ref:element-page(.)), '/')"/>
                <xsl:text>)</xsl:text>
             </xsl:for-each-group>

@@ -4,8 +4,8 @@ title: XCST Elements Reference
 
 ### Namespace Bindings
 
-- c = **http://maxtoroq.github.io/XCST**
-- a = **http://maxtoroq.github.io/XCST/application**
+- c = `http://maxtoroq.github.io/XCST`
+- a = `http://maxtoroq.github.io/XCST/application`
 
 ## XCST Elements
 
