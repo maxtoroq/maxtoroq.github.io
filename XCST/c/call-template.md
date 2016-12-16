@@ -22,8 +22,6 @@ the page is regenerated.
    <dd>Any literal result element</dd>
 </dl>
 <h3>Attributes</h3>
-<p>In addition to the attributes in the following table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-</p>
 <div class="table-responsive">
    <table>
       <tr>
@@ -32,6 +30,10 @@ the page is regenerated.
       </tr>
    </table>
 </div>
+<p>
+   In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+   
+</p>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:call-template</span>
   <b>name</b> = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
@@ -43,8 +45,6 @@ the page is regenerated.
    <dd><a href="using-module.html">c:using-module</a></dd>
 </dl>
 <h3>Attributes</h3>
-<p>In addition to the attributes in the following table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-</p>
 <div class="table-responsive">
    <table>
       <tr>
@@ -57,3 +57,7 @@ the page is regenerated.
       </tr>
    </table>
 </div>
+<p>
+   In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+   
+</p>

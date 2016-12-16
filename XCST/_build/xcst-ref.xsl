@@ -257,9 +257,6 @@ the page is regenerated.
 
       <xsl:if test="$attribs">
          <h3>Attributes</h3>
-         <xsl:if test="not($example)">
-            <p>In addition to the attributes in the following table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.</p>
-         </xsl:if>
          <div class="table-responsive">
             <table>
                <xsl:for-each select="$attribs">
@@ -279,6 +276,11 @@ the page is regenerated.
                </xsl:for-each>
             </table>
          </div>
+         <xsl:if test="not($example)">
+            <p>
+               In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+            </p>
+         </xsl:if>
       </xsl:if>
    </xsl:template>
 
