@@ -22,12 +22,12 @@ the page is regenerated.
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="delegate.html">c:delegate</a></dd>
-   <dd><a href="function.html">c:function</a></dd>
-   <dd><a href="module.html">c:module</a></dd>
-   <dd><a href="override.html">c:override</a></dd>
-   <dd><a href="package.html">c:package</a></dd>
-   <dd><a href="template.html">c:template</a></dd>
+   <dd><a href="delegate.html"><code>c:delegate</code></a></dd>
+   <dd><a href="function.html"><code>c:function</code></a></dd>
+   <dd><a href="module.html"><code>c:module</code></a></dd>
+   <dd><a href="override.html"><code>c:override</code></a></dd>
+   <dd><a href="package.html"><code>c:package</code></a></dd>
+   <dd><a href="template.html"><code>c:template</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

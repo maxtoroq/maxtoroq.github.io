@@ -19,10 +19,10 @@ the page is regenerated.
 <p>Defines parameter arguments for a template or package.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="call-template.html">c:call-template</a></dd>
-   <dd><a href="evaluate-delegate.html">c:evaluate-delegate</a></dd>
-   <dd><a href="next-template.html">c:next-template</a></dd>
-   <dd><a href="using-module.html">c:using-module</a></dd>
+   <dd><a href="call-template.html"><code>c:call-template</code></a></dd>
+   <dd><a href="evaluate-delegate.html"><code>c:evaluate-delegate</code></a></dd>
+   <dd><a href="next-template.html"><code>c:next-template</code></a></dd>
+   <dd><a href="using-module.html"><code>c:using-module</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
@@ -58,7 +58,7 @@ the page is regenerated.
 <p>Defines parameter arguments for a function.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="next-function.html">c:next-function</a></dd>
+   <dd><a href="next-function.html"><code>c:next-function</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

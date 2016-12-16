@@ -15,5 +15,5 @@ the page is regenerated.
 <p>Represents a fallback in a c:choose instruction in case no other choice is selected.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="choose.html">c:choose</a></dd>
+   <dd><a href="choose.html"><code>c:choose</code></a></dd>
 </dl>

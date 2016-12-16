@@ -15,8 +15,8 @@ the page is regenerated.
 <span class="nt">&lt;/a:member-template&gt;</span></code></pre></div>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="display.html">a:display</a></dd>
-   <dd><a href="editor.html">a:editor</a></dd>
+   <dd><a href="display.html"><code>a:display</code></a></dd>
+   <dd><a href="editor.html"><code>a:editor</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

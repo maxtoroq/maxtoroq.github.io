@@ -41,7 +41,7 @@ the page is regenerated.
 <p>Invokes a template in the used module.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="using-module.html">c:using-module</a></dd>
+   <dd><a href="using-module.html"><code>c:using-module</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

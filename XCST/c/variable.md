@@ -22,9 +22,9 @@ the page is regenerated.
    <dd><i>declaration</i></dd>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="module.html">c:module</a></dd>
-   <dd><a href="override.html">c:override</a></dd>
-   <dd><a href="package.html">c:package</a></dd>
+   <dd><a href="module.html"><code>c:module</code></a></dd>
+   <dd><a href="override.html"><code>c:override</code></a></dd>
+   <dd><a href="package.html"><code>c:package</code></a></dd>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>

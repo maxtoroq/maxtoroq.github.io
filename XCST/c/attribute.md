@@ -21,7 +21,7 @@ the page is regenerated.
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="attribute-set.html">c:attribute-set</a></dd>
+   <dd><a href="attribute-set.html"><code>c:attribute-set</code></a></dd>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>

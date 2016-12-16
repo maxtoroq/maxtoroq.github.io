@@ -15,8 +15,8 @@ the page is regenerated.
 <p>Defines how to sort sequences of items.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="for-each.html">c:for-each</a></dd>
-   <dd><a href="for-each-group.html">c:for-each-group</a></dd>
+   <dd><a href="for-each.html"><code>c:for-each</code></a></dd>
+   <dd><a href="for-each-group.html"><code>c:for-each-group</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

@@ -60,8 +60,8 @@ the page is regenerated.
 <p>Defines a type member.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="member.html">c:member</a></dd>
-   <dd><a href="type.html">c:type</a></dd>
+   <dd><a href="member.html"><code>c:member</code></a></dd>
+   <dd><a href="type.html"><code>c:type</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

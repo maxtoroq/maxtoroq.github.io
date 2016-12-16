@@ -17,9 +17,9 @@ the page is regenerated.
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="drop-down-list.html">a:drop-down-list</a></dd>
-   <dd><a href="list-box.html">a:list-box</a></dd>
-   <dd><a href="with-options.html">a:with-options</a></dd>
+   <dd><a href="drop-down-list.html"><code>a:drop-down-list</code></a></dd>
+   <dd><a href="list-box.html"><code>a:list-box</code></a></dd>
+   <dd><a href="with-options.html"><code>a:with-options</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

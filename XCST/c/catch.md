@@ -18,7 +18,7 @@ the page is regenerated.
 <p>Catches an exception.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="try.html">c:try</a></dd>
+   <dd><a href="try.html"><code>c:try</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

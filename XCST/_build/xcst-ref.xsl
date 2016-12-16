@@ -232,7 +232,9 @@ the page is regenerated.
                            <xsl:choose>
                               <xsl:when test="self::rng:element">
                                  <a href="{ref:element-page(.)}">
-                                    <xsl:value-of select="ref:name(.)"/>
+                                    <code>
+                                       <xsl:value-of select="ref:name(.)"/>
+                                    </code>
                                  </a>
                               </xsl:when>
                               <xsl:otherwise>

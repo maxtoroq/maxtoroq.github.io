@@ -16,8 +16,8 @@ the page is regenerated.
 <p>Imports functions from a function library.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="module.html">c:module</a></dd>
-   <dd><a href="package.html">c:package</a></dd>
+   <dd><a href="module.html"><code>c:module</code></a></dd>
+   <dd><a href="package.html"><code>c:package</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">

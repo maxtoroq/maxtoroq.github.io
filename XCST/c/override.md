@@ -15,5 +15,5 @@ the page is regenerated.
 <p>Container element for overriding components.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="use-package.html">c:use-package</a></dd>
+   <dd><a href="use-package.html"><code>c:use-package</code></a></dd>
 </dl>

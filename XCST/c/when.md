@@ -16,7 +16,7 @@ the page is regenerated.
 <p>Represents a choice in a c:choose instruction.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="choose.html">c:choose</a></dd>
+   <dd><a href="choose.html"><code>c:choose</code></a></dd>
 </dl>
 <h3>Attributes</h3>
 <div class="table-responsive">
