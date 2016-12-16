@@ -149,7 +149,16 @@ the page is regenerated.
       <xsl:param name="contents" select="ref:contents(.)"/>
 
       <xsl:variable name="example" select="$name eq xs:QName('c:example-element')"/>
-      
+      <xsl:variable name="prefix" select="prefix-from-QName($name)"/>
+      <xsl:variable name="pre-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'pre', 'md'), '.')"/>
+      <xsl:variable name="pre-path" select="string-join(('..', $prefix, $pre-file), '/')"/>
+
+      <xsl:if test="unparsed-text-available($pre-path)">
+         <xsl:text>{% include_relative </xsl:text>
+         <xsl:value-of select="$pre-file"/>
+         <xsl:text> %}&#xA;&#xA;</xsl:text>
+      </xsl:if>
+
       <div class="ref-element-syntax language-xml highlighter-rouge">
          <pre class="highlight">
             <code>
@@ -192,9 +201,12 @@ the page is regenerated.
 
       <xsl:choose>
          <xsl:when test="$example">
-            <p>This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element <code>c:example-element</code>.
+            <p>
+               This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element <code>c:example-element</code>.
             </p>
-            <p>These attributes may also appear on a literal result element, but in this case, to distinguish them from user-defined attributes, the names of the attributes are in the XCST namespace. They are thus typically written as <code>c:version</code>, <code>c:extension-element-prefixes</code>, <code>c:expand-text</code>, etc.</p>
+            <p>
+               These attributes may also appear on a literal result element, but in this case, to distinguish them from user-defined attributes, the names of the attributes are in the XCST namespace. They are thus typically written as <code>c:version</code>, <code>c:extension-element-prefixes</code>, <code>c:expand-text</code>, etc.
+            </p>
             <p>Because these attributes may appear on any XCST element, they are not listed in the syntax summary of each individual element.</p>
          </xsl:when>
          <xsl:otherwise>

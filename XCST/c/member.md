@@ -9,6 +9,8 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
+{% include_relative _member.pre.md %}
+
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:member</span>
   <b>name</b> = <i>Name</i>
   <span>as</span>? = <i>Type</i>

@@ -14,13 +14,16 @@ the page is regenerated.
   <span>extension-element-prefixes</span>? = <span><span>(<i>NCName</i> | <span class="s">"#default"</span>)</span>*</span>
   <span>transform-text</span>? = <span><span class="s">"none"</span> | <span class="s">"normalize-space"</span> | <span class="s">"trim"</span></span>
   <span>version</span>? = <i>Decimal</i> /&gt;</code></pre></div>
-<p>This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element
+<p>
+   This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element
    <code>c:example-element</code>.
    
 </p>
-<p>These attributes may also appear on a literal result element, but in this case, to
+<p>
+   These attributes may also appear on a literal result element, but in this case, to
    distinguish them from user-defined attributes, the names of the attributes are in
    the XCST namespace. They are thus typically written as <code>c:version</code>, <code>c:extension-element-prefixes</code>, <code>c:expand-text</code>, etc.
+   
 </p>
 <p>Because these attributes may appear on any XCST element, they are not listed in the
    syntax summary of each individual element.
