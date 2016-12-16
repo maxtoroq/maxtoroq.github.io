@@ -31,7 +31,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td>The message.</td>
+         <td>A message to signal.</td>
       </tr>
    </table>
 </div>
