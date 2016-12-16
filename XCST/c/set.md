@@ -30,7 +30,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The value to assign.</td>
       </tr>
    </table>
 </div>

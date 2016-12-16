@@ -42,7 +42,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The value of the attribute.</td>
       </tr>
    </table>
 </div>

@@ -29,7 +29,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>A value to output.</td>
       </tr>
       <tr>
          <td><code>when</code></td>

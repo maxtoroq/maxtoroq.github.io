@@ -36,7 +36,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The content of the text node or string.</td>
       </tr>
    </table>
 </div>

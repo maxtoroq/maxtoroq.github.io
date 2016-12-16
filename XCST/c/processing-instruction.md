@@ -31,7 +31,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The processing instruction content.</td>
       </tr>
    </table>
 </div>

@@ -26,7 +26,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The comment.</td>
       </tr>
    </table>
 </div>

@@ -41,7 +41,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The initial value of the variable.</td>
       </tr>
       <tr>
          <td><code>visibility</code></td>

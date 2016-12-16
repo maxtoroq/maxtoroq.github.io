@@ -26,7 +26,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The value to output.</td>
       </tr>
    </table>
 </div>

@@ -41,7 +41,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The value of the parameter.</td>
       </tr>
    </table>
 </div>
@@ -77,7 +77,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
+         <td>The value of the parameter.</td>
       </tr>
    </table>
 </div>
