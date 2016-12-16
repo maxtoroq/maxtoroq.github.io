@@ -45,10 +45,9 @@ the page is regenerated.
       </tr>
    </table>
 </div>
-<p>
-   In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-   
-</p>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>
 <div class="language-xml highlighter-rouge"><pre class="highlight element-syntax"><code><span class="nt">&lt;c:with-param</span>
   <span>name</span>? = <i>Name</i>
   <span>as</span>? = <i>Type</i>
@@ -82,7 +81,6 @@ the page is regenerated.
       </tr>
    </table>
 </div>
-<p>
-   In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-   
-</p>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>

@@ -276,9 +276,11 @@ the page is regenerated.
                </xsl:for-each>
             </table>
          </div>
-         <xsl:if test="not($example)">
+         <xsl:if test="not($example) and namespace-uri-from-QName($name) eq namespace-uri-from-QName(xs:QName('c:foo'))">
             <p>
-               In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+               <small>
+                  In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+               </small>
             </p>
          </xsl:if>
       </xsl:if>
