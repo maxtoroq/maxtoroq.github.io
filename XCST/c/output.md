@@ -125,3 +125,8 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
+<h3>See Also</h3>
+<ul>
+   <li><a href="result-document.html"><code>c:result-document</code></a></li>
+   <li><a href="serialize.html"><code>c:serialize</code></a></li>
+</ul>

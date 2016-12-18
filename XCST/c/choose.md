@@ -20,3 +20,7 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h3>See Also</h3>
+<ul>
+   <li><a href="if.html"><code>c:if</code></a></li>
+</ul>

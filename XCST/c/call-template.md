@@ -33,6 +33,10 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
+<h3>See Also</h3>
+<ul>
+   <li><a href="template.html"><code>c:template</code></a></li>
+</ul>
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:call-template</span>
   <b>name</b> = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
