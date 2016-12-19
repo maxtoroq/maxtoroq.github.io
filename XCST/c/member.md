@@ -57,7 +57,7 @@ the page is regenerated.
   <span>range-error-resource</span>? = <i>String</i>
   <span>equal-to-error-message</span>? = <i>String</i>
   <span>equal-to-error-resource</span>? = <i>String</i> &gt;
-  &lt;!-- Content: (<span><span><a href="member.html">c:member</a>+</span></span>, <span><a href="metadata.html">c:metadata</a>*</span>) --&gt;
+  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>+</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
 <dl>
