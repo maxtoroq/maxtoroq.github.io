@@ -10,9 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:object</span>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
-  &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
-<span class="nt">&lt;/c:object&gt;</span></code></pre></div>
+  <b>value</b> = <i title="Expression">Expression</i> /&gt;</code></pre></div>
 <p>Appends a value to the current output.</p>
 <dl>
    <dt><b>Category</b></dt>

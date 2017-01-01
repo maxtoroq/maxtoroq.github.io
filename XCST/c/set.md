@@ -11,7 +11,8 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:set</span>
   <b>member</b> = <i title="Expression">Expression</i>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>value</span>? = <i title="Expression">Expression</i>
+  <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:set&gt;</span></code></pre></div>
 <dl>
@@ -24,6 +25,10 @@ the page is regenerated.
 <h3>Attributes</h3>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>as</code></td>
+         <td>The type of the value.</td>
+      </tr>
       <tr>
          <td><code>member</code></td>
          <td>The reference to set.</td>
