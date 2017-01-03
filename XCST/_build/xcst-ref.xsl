@@ -154,6 +154,9 @@ the page is regenerated.
       <xsl:variable name="pre-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'pre', 'md'), '.')"/>
       <xsl:variable name="pre-path" select="string-join(('..', $prefix, $pre-file), '/')"/>
 
+      <xsl:variable name="post-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'md'), '.')"/>
+      <xsl:variable name="post-path" select="string-join(('..', $prefix, $post-file), '/')"/>
+      
       <xsl:if test="unparsed-text-available($pre-path)">
          <xsl:text>{% include_relative </xsl:text>
          <xsl:value-of select="$pre-file"/>
@@ -297,6 +300,12 @@ the page is regenerated.
                </small>
             </p>
          </xsl:if>
+      </xsl:if>
+
+      <xsl:if test="unparsed-text-available($post-path)">
+         <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
+         <xsl:value-of select="$post-file"/>
+         <xsl:text> %}&#xA;</xsl:text>
       </xsl:if>
 
       <xsl:if test="docs:seealso">

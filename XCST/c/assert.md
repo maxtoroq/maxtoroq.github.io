@@ -38,6 +38,9 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
+
+{% include_relative _assert.md %}
+
 <h3>See Also</h3>
 <ul>
    <li><a href="message.html"><code>c:message</code></a></li>
