@@ -65,7 +65,7 @@ the page is regenerated.
    <dd><a href="member.html"><code>c:member</code></a></dd>
    <dd><a href="type.html"><code>c:type</code></a></dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
@@ -259,7 +259,7 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
-<h3>See Also</h3>
+<h2>See Also</h2>
 <ul>
    <li><a href="validation.html"><code>c:validation</code></a></li>
 </ul>

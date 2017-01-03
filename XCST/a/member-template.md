@@ -18,7 +18,7 @@ the page is regenerated.
    <dd><a href="display.html"><code>a:display</code></a></dd>
    <dd><a href="editor.html"><code>a:editor</code></a></dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

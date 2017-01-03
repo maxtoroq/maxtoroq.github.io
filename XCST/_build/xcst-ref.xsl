@@ -149,6 +149,7 @@ the page is regenerated.
          ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]/@name/string()"/>
       <xsl:param name="contents" select="ref:contents(.)"/>
 
+      <xsl:variable name="heading" select="concat('h', last() + 1)"/>
       <xsl:variable name="example" select="$name eq xs:QName('c:example-element')"/>
       <xsl:variable name="prefix" select="prefix-from-QName($name)"/>
       <xsl:variable name="pre-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'pre', 'md'), '.')"/>
@@ -273,7 +274,7 @@ the page is regenerated.
       </xsl:choose>
 
       <xsl:if test="$attribs">
-         <h3>Attributes</h3>
+         <xsl:element name="{$heading}">Attributes</xsl:element>
          <div class="table-responsive">
             <table class="ref-attribs">
                <xsl:for-each select="$attribs">
@@ -309,7 +310,7 @@ the page is regenerated.
       </xsl:if>
 
       <xsl:if test="docs:seealso">
-         <h3>See Also</h3>
+         <xsl:element name="{$heading}">See Also</xsl:element>
          <ul>
             <xsl:for-each select="docs:seealso">
                <xsl:variable name="ref-name" select="QName(namespace-uri-from-QName($name), concat(prefix-from-QName($name), ':', @element-ref))"/>
@@ -327,7 +328,6 @@ the page is regenerated.
             </xsl:for-each>
          </ul>
       </xsl:if>
-
    </xsl:template>
 
    <xsl:template match="rng:ref[@name = ('standard-attributes', 'standard-attributes-except-version')]" mode="ref:attribs">

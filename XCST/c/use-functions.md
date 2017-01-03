@@ -19,7 +19,7 @@ the page is regenerated.
    <dd><a href="module.html"><code>c:module</code></a></dd>
    <dd><a href="package.html"><code>c:package</code></a></dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

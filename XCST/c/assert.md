@@ -22,7 +22,7 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
@@ -41,7 +41,7 @@ the page is regenerated.
 
 {% include_relative _assert.md %}
 
-<h3>See Also</h3>
+<h2>See Also</h2>
 <ul>
    <li><a href="message.html"><code>c:message</code></a></li>
 </ul>

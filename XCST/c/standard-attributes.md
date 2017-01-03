@@ -28,7 +28,7 @@ the page is regenerated.
 <p>Because these attributes may appear on any XCST element, they are not listed in the
    syntax summary of each individual element.
 </p>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

@@ -39,7 +39,7 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
@@ -139,7 +139,7 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
-<h3>See Also</h3>
+<h2>See Also</h2>
 <ul>
    <li><a href="output.html"><code>c:output</code></a></li>
    <li><a href="result-document.html"><code>c:result-document</code></a></li>
