@@ -20,7 +20,5 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h2>See Also</h2>
-<ul>
-   <li><a href="function.html"><code>c:function</code></a></li>
-</ul>
+
+{% include_relative _next-function.md %}

@@ -43,8 +43,5 @@ the page is regenerated.
 <p><small>
       In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
-<h2>See Also</h2>
-<ul>
-   <li><a href="for-each-group.html"><code>c:for-each-group</code></a></li>
-   <li><a href="while.html"><code>c:while</code></a></li>
-</ul>
+
+{% include_relative _for-each.md %}

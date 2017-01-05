@@ -6,7 +6,6 @@
    xmlns:ann="http://relaxng.org/ns/compatibility/annotations/1.0"
    xmlns:c="http://maxtoroq.github.io/XCST"
    xmlns:a="http://maxtoroq.github.io/XCST/application"
-   xmlns:docs="http://maxtoroq.github.io/XCST/docs"
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
 
@@ -307,26 +306,6 @@ the page is regenerated.
          <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
          <xsl:value-of select="$post-file"/>
          <xsl:text> %}&#xA;</xsl:text>
-      </xsl:if>
-
-      <xsl:if test="docs:seealso">
-         <xsl:element name="{$heading}">See Also</xsl:element>
-         <ul>
-            <xsl:for-each select="docs:seealso">
-               <xsl:variable name="ref-name" select="QName(namespace-uri-from-QName($name), concat(prefix-from-QName($name), ':', @element-ref))"/>
-               <xsl:variable name="ref-el" select="(//rng:element[ref:name(.) eq $ref-name])[1]"/>
-               <xsl:if test="not($ref-el)">
-                  <xsl:message select="concat('Element ', $ref-name, ' does not exist.')" terminate="yes"/>
-               </xsl:if>
-               <li>
-                  <a href="{ref:element-page($ref-el)}">
-                     <code>
-                        <xsl:value-of select="$ref-name"/>
-                     </code>
-                  </a>
-               </li>
-            </xsl:for-each>
-         </ul>
       </xsl:if>
    </xsl:template>
 

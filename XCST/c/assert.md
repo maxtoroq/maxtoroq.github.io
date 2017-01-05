@@ -40,8 +40,3 @@ the page is regenerated.
       </small></p>
 
 {% include_relative _assert.md %}
-
-<h2>See Also</h2>
-<ul>
-   <li><a href="message.html"><code>c:message</code></a></li>
-</ul>

@@ -51,8 +51,3 @@ the page is regenerated.
       </small></p>
 
 {% include_relative _attribute.md %}
-
-<h2>See Also</h2>
-<ul>
-   <li><a href="element.html"><code>c:element</code></a></li>
-</ul>

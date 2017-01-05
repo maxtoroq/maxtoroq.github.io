@@ -20,8 +20,5 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h2>See Also</h2>
-<ul>
-   <li><a href="call-template.html"><code>c:call-template</code></a></li>
-   <li><a href="template.html"><code>c:template</code></a></li>
-</ul>
+
+{% include_relative _next-template.md %}
