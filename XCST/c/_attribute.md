@@ -1,18 +1,18 @@
 ## Error Conditions
 
- It is a compilation error if the `value` attribute of the `c:attribute` element is present when the content of the element is non-empty.
+It is a compilation error if the `value` attribute of the `c:attribute` element is present when the content of the element is non-empty.
 
- ## Examples
+## Examples
 
- ```xml
+```xml
 <input>
    <c:if test='disable'>
       <c:attribute name='disabled'>disabled</c:attribute>
    </c:if>
 </input>
- ```
+```
 
- ## See Also
+## See Also
 
- - [`c:element`](element.html)
- - [`c:namespace`](namespace.html)
+- [`c:element`](element.html)
+- [`c:namespace`](namespace.html)
