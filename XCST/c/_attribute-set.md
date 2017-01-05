@@ -25,3 +25,7 @@ The following attribute set:
    ...
 </c:element>
 ```
+
+## See Also
+
+- [`c:attribute`](attribute.html)
