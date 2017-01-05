@@ -16,4 +16,3 @@ It is a compilation error if the `value` attribute of the `c:attribute` element 
 
 - [`c:element`](element.html)
 - [`c:namespace`](namespace.html)
-- [`c:attribute-set`](attribute-set.html)
