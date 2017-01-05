@@ -5,9 +5,9 @@ It is a compilation error if the `value` attribute of the `c:attribute` element 
 ## Examples
 
 ```xml
-<input>
-   <c:if test='disable'>
-      <c:attribute name='disabled'>disabled</c:attribute>
+<input type='checkbox'>
+   <c:if test='isChecked'>
+      <c:attribute name='checked'>checked</c:attribute>
    </c:if>
 </input>
 ```
