@@ -4,5 +4,6 @@ It is a compilation error if the `c:break` element is not descendant of [`c:for-
 
 ## See Also
 
+- [`c:continue`](continue.html)
 - [`c:for-each`](for-each.html)
 - [`c:while`](while.html)
