@@ -9,9 +9,8 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-function</span>&gt;
-  &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
-<span class="nt">&lt;/c:next-function&gt;</span></code></pre></div>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-function</span>
+  <span>arguments</span>? = <i title="Argument list">ArgumentList</i> /&gt;</code></pre></div>
 <p>Invokes the overriden function.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -20,5 +19,17 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h2>Attributes</h2>
+<div class="table-responsive">
+   <table class="ref-attribs">
+      <tr>
+         <td><code>arguments</code></td>
+         <td>The function call arguments.</td>
+      </tr>
+   </table>
+</div>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>
 
 {% include_relative _next-function.md %}

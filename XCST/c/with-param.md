@@ -24,43 +24,7 @@ the page is regenerated.
    <dd><a href="next-template.html"><code>c:next-template</code></a></dd>
    <dd><a href="using-module.html"><code>c:using-module</code></a></dd>
 </dl>
-<h3>Attributes</h3>
-<div class="table-responsive">
-   <table class="ref-attribs">
-      <tr>
-         <td><code>as</code></td>
-         <td>The type of the parameter.</td>
-      </tr>
-      <tr>
-         <td><code>name</code></td>
-         <td>The name of the parameter.</td>
-      </tr>
-      <tr>
-         <td><code>tunnel</code></td>
-         <td>Specifies if the parameter should be tunneled.</td>
-      </tr>
-      <tr>
-         <td><code>value</code></td>
-         <td>The value of the parameter.</td>
-      </tr>
-   </table>
-</div>
-<p><small>
-      In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-      </small></p>
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:with-param</span>
-  <span>name</span>? = <i>Name</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i>
-  <span>tunnel</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> &gt;
-  &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
-<span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
-<p>Defines parameter arguments for a function.</p>
-<dl>
-   <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="next-function.html"><code>c:next-function</code></a></dd>
-</dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
