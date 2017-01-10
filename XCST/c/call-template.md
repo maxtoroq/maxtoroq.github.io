@@ -21,7 +21,7 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h3>Attributes</h3>
+<h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
@@ -35,30 +35,3 @@ the page is regenerated.
       </small></p>
 
 {% include_relative _call-template.md %}
-
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:call-template</span>
-  <b>name</b> = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
-  <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
-  &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
-<span class="nt">&lt;/c:call-template&gt;</span></code></pre></div>
-<p>Invokes a template in the used module.</p>
-<dl>
-   <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="using-module.html"><code>c:using-module</code></a></dd>
-</dl>
-<h3>Attributes</h3>
-<div class="table-responsive">
-   <table class="ref-attribs">
-      <tr>
-         <td><code>name</code></td>
-         <td>The name of the template. Attribute value template (EQName).</td>
-      </tr>
-      <tr>
-         <td><code>with-params</code></td>
-         <td>An object with parameters.</td>
-      </tr>
-   </table>
-</div>
-<p><small>
-      In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
-      </small></p>
