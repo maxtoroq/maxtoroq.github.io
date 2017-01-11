@@ -5,14 +5,14 @@ XCST is distributed as a set of NuGet packages (not to be confused with XCST pac
 
 Xcst package
 ------------
+[:package: Package][1] · [:octocat: Source][7]
+
 The Xcst package is the package that all other packages, directly or indirectly, depend on. It contains an API for executing pre-compiled XCST programs, as well as types that all compiled XCST programs depend on.
 
 Uses:
 
 - Execute pre-compiled XCST programs
 - Distribute as dependency of pre-compiled XCST programs
-
-[:package: Package][1] · [:octocat: Source][7]
 
 Xcst.Compiler package
 ---------------------
