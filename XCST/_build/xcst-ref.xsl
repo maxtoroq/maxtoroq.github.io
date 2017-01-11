@@ -156,7 +156,7 @@ the page is regenerated.
 
       <xsl:variable name="post-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'md'), '.')"/>
       <xsl:variable name="post-path" select="string-join(('..', $prefix, $post-file), '/')"/>
-      
+
       <xsl:if test="unparsed-text-available($pre-path)">
          <xsl:text>{% include_relative </xsl:text>
          <xsl:value-of select="$pre-file"/>
@@ -341,6 +341,13 @@ the page is regenerated.
       <xsl:call-template name="ref:simple-type-display">
          <xsl:with-param name="name" select="substring-before(@name, '-default')"/>
       </xsl:call-template>
+   </xsl:template>
+
+   <xsl:template match="rng:define[@name = 'member']/rng:element[@name = 'member']/rng:choice[rng:attribute[@name = 'as']]/rng:oneOrMore[rng:ref[@name = 'member']]" mode="ref:type-display">
+      <span>
+         <xsl:apply-templates mode="#current"/>
+         <xsl:text>*</xsl:text>
+      </span>
    </xsl:template>
 
 </xsl:stylesheet>

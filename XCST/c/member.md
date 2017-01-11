@@ -9,8 +9,6 @@ Changes to this file may cause incorrect behavior and will be lost if
 the page is regenerated.
 {% endcomment %}
 
-{% include_relative _member.pre.md %}
-
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:member</span>
   <b>name</b> = <i>Name</i>
   <span>as</span>? = <i>Type</i>
@@ -57,7 +55,7 @@ the page is regenerated.
   <span>range-error-resource</span>? = <i>String</i>
   <span>equal-to-error-message</span>? = <i>String</i>
   <span>equal-to-error-resource</span>? = <i>String</i> &gt;
-  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>+</span></span>) --&gt;
+  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
 <dl>
