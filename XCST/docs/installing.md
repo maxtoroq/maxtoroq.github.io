@@ -16,33 +16,33 @@ Uses:
 
 Xcst.Compiler package
 ---------------------
+[:package: Package][2] · [:octocat: Source][7]
+
 The Xcst.Compiler package provides an API for translating your XCST programs into C# code.
 
 Uses:
 
 - Generate C# from XCST modules
 
-[:package: Package][2] · [:octocat: Source][7]
-
 Xcst.AspNet package
 -------------------
+[:package: Package][5] · [:octocat: Source][8]
+
 The Xcst.AspNet package provides XCST web pages for ASP.NET. It's based on [AspNetLib][6].
 
 Uses:
 
 - Develop web applications with XCST pages
 
-[:package: Package][5] · [:octocat: Source][8]
-
 Xcst.Web.Mvc package
 --------------------
+[:package: Package][4] · [:octocat: Source][8]
+
 The Xcst.Web.Mvc package provides XCST views for ASP.NET MVC 5.
 
 Uses:
 
 - Develop web applications using the MVC pattern with the XCST view engine
-
-[:package: Package][4] · [:octocat: Source][8]
 
 [1]: https://www.nuget.org/packages/Xcst
 [2]: https://www.nuget.org/packages/Xcst.Compiler
