@@ -343,7 +343,11 @@ the page is regenerated.
       </xsl:call-template>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = 'member']/rng:element[@name = 'member']/rng:choice[rng:attribute[@name = 'as']]/rng:oneOrMore[rng:ref[@name = 'member']]" mode="ref:type-display">
+   <xsl:template match="rng:define[@name = 'member']/rng:element[@name = 'member']/rng:optional[rng:choice[rng:attribute[@name = 'as']]]" mode="ref:type-display">
+      <xsl:apply-templates mode="#current"/>
+   </xsl:template>
+
+   <xsl:template match="rng:define[@name = 'member']/rng:element[@name = 'member']/rng:optional/rng:choice[rng:attribute[@name = 'as']]/rng:oneOrMore[rng:ref[@name = 'member']]" mode="ref:type-display">
       <span>
          <xsl:apply-templates mode="#current"/>
          <xsl:text>*</xsl:text>
