@@ -6,6 +6,14 @@ It is a compilation error if the `c:call-template` element does not define a non
 
 It is a compilation error if the `c:call-template` element defines a non-tunnel [`c:with-param`](with-param.html) for a parameter that does not exist in the target template.
 
+## Examples
+
+```xml
+<c:call-template name='layout'>
+   <c:with-param name='product' value='product' tunnel='yes'/>
+</c:call-template>
+```
+
 ## See Also
 
 - [`c:template`](template.html)
