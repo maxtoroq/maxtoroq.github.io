@@ -1,7 +1,7 @@
 ## Examples
 
 ```xml
-<c:comment>This is a comment</c:comment>
+<c:comment expand-text='yes'>Generated at {System.Data.Time.Now}</c:comment>
 ```
 
 ## Error Conditions
