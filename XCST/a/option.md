@@ -13,7 +13,7 @@ the page is regenerated.
   <span>value</span>? = <i title="Expression">Expression</i>
   <span>selected</span>? = <i title="Expression">Expression</i>
   <span>disabled</span>? = <i title="Expression">Expression</i> &gt;
-  &lt;!-- Content: <span><span>(<i>instruction</i> | <i>text</i>)</span>?</span> --&gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
