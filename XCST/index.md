@@ -54,15 +54,15 @@ Why choose XCST over XSLT?
 --------------------------
 While XSLT is a great tool, there are several reasons why it might not be a good choice.
 
-### #1. Your data is not XML
+**#1. Your data is not XML**
 
 Converting your objects to XML is possible, but it requires you to follow certain patterns imposed by serialization libraries, and you lose type safety.
 
-### #2. You want more than data
+**#2. You want more than data**
 
 Calling C# functions from XSLT is possible, but it requires special configuration and sometimes translation between XDM types and .NET types.
 
-### #3. XSLT is an overkill
+**#3. XSLT is an overkill**
 
 For structured data, fill-in-the-blanks type of templating, XSLT is simply too powerful.
 
@@ -72,11 +72,11 @@ Why choose XCST over Razor?
 ---------------------------
 Razor is a great tool for simple tasks, but it breaks down if you want more out of the code you are writing.
 
-### #1. Improved modularity
+**#1. Improved modularity**
 
 Razor doesn't support anything beyond a simple layout/content setup. In XCST, you can statically link modules, use import precedence to override templates and functions, import and override pre-compiled modules (called packages), use tunnel parameters to pass data *in the background* without having to rely on global variables, etc. Everything you write in XCST is strongly-typed and super reusable and extensible, in both source and compiled form.
 
-### #2. Markup is code
+**#2. Markup is code**
 
 Razor treats markup as text that outputs unchanged. In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at runtime. This has several benefits:
 
@@ -85,7 +85,7 @@ Razor treats markup as text that outputs unchanged. In XCST, elements, attribute
 - Create an in-memory DOM
 - Use an XML-aware tool like XPath or XSLT to unit-test or post-process your program
 
-### #3. Extensible
+**#3. Extensible**
 
 Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for web application development based on ASP.NET MVC 5.
 
