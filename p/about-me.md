@@ -12,7 +12,7 @@ I’m on a mission to help developers write more maintainable code. I’m not sa
 
 Get in touch
 ------------
-Feel free to [email me](mailto:maxtoroq@gmail.com), or follow me on [@maxtoroq](https://twitter.com/maxtoroq). You can also find me on [GitHub](https://github.com/maxtoroq), [Stack Overflow](http://stackoverflow.com/users/39923) and [Upwork](https://www.upwork.com/freelancers/~013968c95eab35c636).
+Feel free to [email me](mailto:maxtoroq@gmail.com), or start a public conversation [here]({{ site.github.issues_url }}/new). You can also find me on [GitHub](https://github.com/maxtoroq), [Stack Overflow](http://stackoverflow.com/users/39923) and [Upwork](https://www.upwork.com/freelancers/~013968c95eab35c636).
 
 If you'd like to show your appreciation you can [donate](donate.html).
 
