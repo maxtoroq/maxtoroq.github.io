@@ -34,6 +34,13 @@ body {
    }
 }
 
+pre {
+   &.highlight {
+      background-color: rgba(119, 118, 99, 0.04);
+      text-shadow: none;
+   }
+}
+
 .site-title {
    
    font-family: Consolas, monospace;
