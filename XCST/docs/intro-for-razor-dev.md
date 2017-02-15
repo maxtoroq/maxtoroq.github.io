@@ -102,6 +102,7 @@ There's no need to use instructions if you can express it in C#, use `c:script` 
    }
    ]]>
 </c:script>
+<c:value-of value='result'/>
 ```
 
 Working with attributes
