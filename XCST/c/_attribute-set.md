@@ -15,7 +15,7 @@ The following attribute set:
 ...can be used on a literal result element:
 
 ```xml
-<button c:use-attribute-sets='delete-btn' class='btn btn-outline-danger cancel'>Delete</button>
+<button c:use-attribute-sets='delete-btn'>Delete</button>
 ```
 
 ...or on [`c:element`](element.html):
