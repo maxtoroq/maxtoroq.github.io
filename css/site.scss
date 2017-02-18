@@ -102,6 +102,15 @@ div#disqus_thread {
       font-weight: normal;
       color: rgba(128, 56, 101, 0.5);
    }
+   
+   pre {
+      font-size: 100%;
+   }
+   
+   *:not(pre) > code {
+      font-size: 100%;
+      background-color: rgba(0,0,0,0.04);
+   }
 }
 
 @media (min-width: 1200px) {
