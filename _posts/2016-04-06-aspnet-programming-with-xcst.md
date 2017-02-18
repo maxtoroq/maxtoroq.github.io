@@ -19,7 +19,7 @@ The first thing we need to build a contact form page is a model that defines the
 </c:type>
 ```
 
-The `c:type` declaration is used to define the type for our model. Althought we could have done this in C# instead, `c:type` can be declared in the page right next to where it's used. Also note the validation and presentation attributes, these compile to `System.ComponentModel.DataAnnotations` attributes.
+The `c:type` declaration is used to define the type for our model. Although we could have done this in C# instead, `c:type` can be declared in the page right next to where it's used. Also note the validation and presentation attributes, these compile to `System.ComponentModel.DataAnnotations` attributes.
 
 Mail template
 -------------
