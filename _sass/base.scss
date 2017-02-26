@@ -18,7 +18,8 @@ html {
 }
 
 body {
-   font-family: "Segoe UI", Verdana, sans-serif;
+   //font-family: "Segoe UI", Verdana, sans-serif;
+   font-family: Consolas, monospace;
    font-size: $base-font-size;
    line-height: 1.7;
    color: #333;
@@ -246,6 +247,11 @@ table code {
 
    pre, code {
       font-family: Consolas, "Source Code Pro", "Courier New", monospace;
+      font-size: 100%;
+   }
+   
+   *:not(pre) > code {
+      background-color: rgba(0,0,0,0.04);
    }
 }
 
