@@ -15,6 +15,7 @@ the page is regenerated.
   <span>as</span>? = <i>Type</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:set&gt;</span></code></pre></div>
+<p>Assigns a value to a variable or object member.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
