@@ -102,6 +102,17 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 </a:model>
 ```
 
+Why choose XCST over C#
+-----------------------
+
+**#1. Modularity out-of-the-box**
+
+While mainstream languages like C# allow you to combine objects or functions to build programs, building new programs from existing ones is not as easy. Code reuse, both in compiled and source form, is hard to achieve, unless the existing program is carefully designed for it. For instance, to override a function the existing program must accept it as a parameter so a different function can be passed in to be used instead. In other words, dependencies must be parameterized, something known as dependency injection. Dependency injection also allows you to change the behavior of your program at run-time, even if all you want is to compile using a different function without having to modify the existing program.
+
+Dependency injection is a burden on the programmer. You cannot just write your programs, you have to design them. One of the reasons code reuse is generally considered a bad goal is that it leads to complex solutions. Like splitting your program into several classes, each with its own well defined responsibility. Or using a whole set of esoteric functional programming techniques I don't even understand. Or having lots of configuration settings to customize the behavior of your program without having to modify or extend it. Whether it's reusing source code, compiled code, or even copy-and-paste, code reuse would be a lot easier if languages were designed for it. We favor composition over inheritance, while using languages designed for inheritance not composition. It's time for a new paradigm.
+
+*In XCST, code is organized in modules, packages and scripts.* Forget about classes, encapsulation, naming, dependency injection, design patterns and everything that makes programming hard, and code reuse even harder.
+
 For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
