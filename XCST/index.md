@@ -102,8 +102,8 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 </a:model>
 ```
 
-Why choose XCST over C#
------------------------
+Why choose XCST over C#?
+------------------------
 
 **#1. Modularity out-of-the-box**
 
