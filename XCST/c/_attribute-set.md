@@ -21,9 +21,7 @@ The following attribute set:
 ...or on [`c:element`](element.html):
 
 ```xml
-<c:element name='button' use-attribute-sets='delete-btn'>
-   ...
-</c:element>
+<c:element name='button' use-attribute-sets='delete-btn'>Delete</c:element>
 ```
 
 ## See Also
