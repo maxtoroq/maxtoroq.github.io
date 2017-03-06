@@ -19,3 +19,10 @@ a, a:hover, a:focus {
 a:hover {
    background-color: #d1ede8;
 }
+
+@media (min-width: 768px) {
+
+   h1, h2, h3, h4, h5, h6 {
+      color: inherit;
+   }
+}
