@@ -27,27 +27,11 @@ body {
 
 body > header,
 body > footer {
-   
    font-size: $base-font-size - 2px;
-
-   a {
-      background-image: linear-gradient(to bottom, rgba(128, 56, 101, 0.3) 50%,rgba(0,0,0,0) 50%);
-   }
 }
 
 a, a:hover, a:focus {
-   /*color: #0066c0;*/
-   color: inherit;
-   text-decoration: none;
-
-   background-image: linear-gradient(to bottom, #0275d8 50%,rgba(0,0,0,0) 50%);
-   background-repeat: repeat-x;
-   background-size: 2px .1em;
-   background-position: 0 bottom;
-}
-
-a:hover, code a {
-   /*text-decoration: underline;*/
+   color: #0066c0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,7 +120,7 @@ table {
    border-collapse: collapse;
    border-spacing: 0;
    background: #fff;
-   border: 1px solid #dddddd;
+   border: 1px solid #ddd;
 }
 
 tr:nth-of-type(even) {
@@ -229,6 +213,16 @@ table code {
 
 @media (min-width: 768px) {
 
+   a, a:hover, a:focus {
+      color: inherit;
+      text-decoration: none;
+
+      background-image: linear-gradient(to bottom, #0275d8 50%,rgba(0,0,0,0) 50%);
+      background-repeat: repeat-x;
+      background-size: 2px .1em;
+      background-position: 0 bottom;
+   }
+   
    h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
       color: #005A9C;
@@ -254,6 +248,13 @@ table code {
    *:not(pre) > code {
       font-size: 100%;
       background-color: rgba(0,0,0,0.04);
+   }
+   
+   body > header,
+   body > footer {
+      a {
+         background-image: linear-gradient(to bottom, rgba(128, 56, 101, 0.3) 50%,rgba(0,0,0,0) 50%);
+      }
    }
 }
 
