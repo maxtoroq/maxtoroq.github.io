@@ -113,6 +113,10 @@ Dependency injection is a burden on the programmer. You cannot just write your p
 
 **In XCST, code is organized in modules, packages and scripts.** Forget about classes, encapsulation, naming, dependency injection, design patterns and everything that makes programming hard, and code reuse even harder.
 
+**#2. Optimized for content**
+
+Whether it's generating web pages or sending XML to a remote API, using XCST means you don't need a two-language code -> template setup, or deal with `TextWriter` or similar APIs that make it hard to visualize what the output will finally look like.
+
 For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
