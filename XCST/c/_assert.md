@@ -6,6 +6,10 @@ It is a compilation error if the `value` attribute is present when the content o
 
 `c:assert` is compiled into a [`Debug.Assert`](https://msdn.microsoft.com/en-us/library/e63efys0) call.
 
+## Differences with `xsl:assert`
+
+Unlike `xsl:assert`, `c:assert` does not guarantee that an exception will be thrown. An assertion can fail silently without interrupting the evaluation of the containing sequence constructor.
+
 ## Examples
 
 ```xml
