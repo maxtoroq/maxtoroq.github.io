@@ -1,3 +1,7 @@
+## Error Conditions
+
+It is a compilation error if another `c:attribute-set` declaration with the same name exists in the current module.
+
 ## Differences with `xsl:attribute-set`
 
 Unlike `xsl:attribute-set`, `c:attribute-set` does not allow multiple declarations with the same name in the same module. Also, `c:attribute-set` declarations with higher import precedence hide declarations with lower import precedence, which means hidden declarations are never evaluated.
