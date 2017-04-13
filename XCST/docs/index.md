@@ -4,7 +4,7 @@ title: Documentation
 
 - [Installing](installing.html)
 - [XCST Introduction for the Razor Developer](intro-for-razor-dev.html)
-- [Code Samples]({{ page.repository_url }}/tree/master/samples)
+- [Code Samples](https://github.com/maxtoroq/XCST-a/tree/master/samples)
 
 Reference
 ---------
