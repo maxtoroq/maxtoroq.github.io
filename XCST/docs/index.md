@@ -4,6 +4,7 @@ title: Documentation
 
 - [Installing](installing.html)
 - [XCST Introduction for the Razor Developer](intro-for-razor-dev.html)
+- [Code Samples]({{ site.repository_url }}/tree/master/samples)
 
 Reference
 ---------
