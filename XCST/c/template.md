@@ -11,6 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:template</span>
   <b>name</b> = <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>
+  <span>as</span>? = <i>Type</i>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:template&gt;</span></code></pre></div>
@@ -26,6 +27,10 @@ the page is regenerated.
 <h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>as</code></td>
+         <td>The return type.</td>
+      </tr>
       <tr>
          <td><code>name</code></td>
          <td>The name of the template.</td>
