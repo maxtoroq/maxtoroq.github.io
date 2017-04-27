@@ -542,17 +542,11 @@ Razor                                                 | XCST
 `Html.Hidden("foo")`                                  | `<a:hidden name='foo'/>`
 `Html.HiddenFor(p => p.foo)`                          | `<a:hidden for='foo'/>`
 `Html.HttpMethodOverride("DELETE")`                   | `<a:http-method-override method='DELETE'/>`
-`Html.Id("foo")`                                      | `Html.FieldId("foo")`
-`Html.IdFor(p => p.foo)`                              | `Html.FieldId(p => p.foo)`
-`Html.IdForModel()`                                   | `Html.FieldId()`
 `Html.Label("foo")`                                   | `<a:label name='foo'/>`
 `Html.LabelFor(p => p.foo)`                           | `<a:label for='foo'/>`
 `Html.LabelForModel()`                                | `<a:label/>`
 `Html.ListBox("foo")`                                 | `<a:list-box name='foo'/>`
 `Html.ListBoxFor(p => p.foo)`                         | `<a:list-box for='foo'/>`
-`Html.Name("foo")`                                    | `Html.FieldName("foo")`
-`Html.NameFor(p => p.foo)`                            | `Html.FieldName(p => p.foo)`
-`Html.NameForModel()`                                 | `Html.FieldName()`
 `Html.Partial()`                                      | see [RenderPage/RenderPartial](#renderpagerenderpartial)
 `Html.Password("foo")`                                | `<a:password name='foo'/>`
 `Html.PasswordFor(p => p.foo)`                        | `<a:password for='foo'/>`
@@ -569,9 +563,6 @@ Razor                                                 | XCST
 `Html.ValidationMessage("foo")`                       | `<a:validation-message name='foo'/>`
 `Html.ValidationMessageFor(p => p.foo)`               | `<a:validation-message for='foo'/>`
 `Html.ValidationSummary(excludePropertyErrors: true)` | `<a:validation-summary/>` (It excludes property errors by default)
-`Html.Value("foo")`                                   | `Html.FieldValue("foo")`
-`Html.ValueFor(p => p.foo)`                           | `Html.FieldValue(p => p.foo)`
-`Html.ValueForModel()`                                | `Html.FieldValue()`
 
 RenderPage/RenderPartial
 ------------------------
