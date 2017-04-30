@@ -117,7 +117,7 @@ the page is regenerated.
          </rng:element>
       </xsl:variable>
 
-      <xsl:result-document href="{resolve-uri('../')}c/standard-attributes.md">
+      <xsl:result-document href="{resolve-uri('../')}docs/standard-attributes.md">
          <xsl:text>---&#xA;</xsl:text>
          <xsl:text>title: "Standard Attributes"&#xA;---&#xA;</xsl:text>
 
@@ -296,7 +296,7 @@ the page is regenerated.
          <xsl:if test="not($example) and namespace-uri-from-QName($name) eq namespace-uri-from-QName(xs:QName('c:foo'))">
             <p>
                <small>
-                  In addition to the attributes in the preceding table, there are a number of <a href="../c/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+                  In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
                </small>
             </p>
          </xsl:if>
