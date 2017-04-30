@@ -9,6 +9,7 @@ title: Documentation
 Reference
 ---------
 - [XCST Elements Reference](elements-ref.html)
+- [Standard Attributes](standard-attributes.html)
 - [Reserved Namespaces](reserved-namespaces.html)
 
 Blog Posts
