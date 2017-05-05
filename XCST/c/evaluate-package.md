@@ -10,8 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-package</span>
-  <span>name</span>? = <i>Name</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
+  <b>package</b> = <i title="Expression">Expression</i>
   <span>global-params</span>? = <i title="Expression">Expression</i>
   <span>initial-template</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
   <span>template-params</span>? = <i title="Expression">Expression</i>
@@ -36,8 +35,8 @@ the page is regenerated.
          <td>The name of the initial template. Attribute value template (EQName).</td>
       </tr>
       <tr>
-         <td><code>name</code></td>
-         <td>The name of the package.</td>
+         <td><code>package</code></td>
+         <td>The package instance.</td>
       </tr>
       <tr>
          <td><code>template-params</code></td>
@@ -46,10 +45,6 @@ the page is regenerated.
       <tr>
          <td><code>tunnel-params</code></td>
          <td>An object with tunnel template parameters.</td>
-      </tr>
-      <tr>
-         <td><code>value</code></td>
-         <td>The package instance.</td>
       </tr>
    </table>
 </div>

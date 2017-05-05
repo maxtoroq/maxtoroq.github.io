@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
-  <b>value</b> = <i title="Expression">Expression</i>
+  <b>delegate</b> = <i title="Expression">Expression</i>
   <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
@@ -26,7 +26,7 @@ the page is regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>value</code></td>
+         <td><code>delegate</code></td>
          <td>The template delegate instance.</td>
       </tr>
       <tr>
