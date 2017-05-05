@@ -14,8 +14,8 @@
 </c:variable>
 
 <ul class='pagination'>
-   <c:evaluate-delegate value='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
-   <c:evaluate-delegate value='pagerItem' with-params='new { page = 1 }'/>
+   <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
+   <c:evaluate-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
    ...
 </ul>
 ```
@@ -28,8 +28,8 @@ You can also accept a delegate as parameter:
    <c:param name='pagerItem' as='dynamic'/>
    
    <ul class='pagination'>
-      <c:evaluate-delegate value='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
-      <c:evaluate-delegate value='pagerItem' with-params='new { page = 1 }'/>
+      <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
+      <c:evaluate-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
       ...
    </ul>
 </c:template>
