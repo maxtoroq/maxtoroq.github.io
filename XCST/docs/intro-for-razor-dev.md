@@ -575,7 +575,7 @@ In Razor you use `RenderPage` or `RenderPartial` to execute another page.
 In XCST you use `c:evaluate-package` in conjunction with the `LoadPage` method.
 
 ```xml
-<c:evaluate-package value='LoadPage("~/mypartial.xcst")' global-params='new { foo = "foo" }'/>
+<c:evaluate-package package='LoadPage("~/mypartial.xcst")' global-params='new { foo = "foo" }'/>
 ```
 
 `model` directive
