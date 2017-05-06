@@ -2,7 +2,7 @@
 
 It is a compilation error if the `c:next-template` element is not descendant of [`c:template`](template.html).
 
-It is a compilation error if there's no other template with the same name as the current template and with lower import precedence.
+It is a compilation error if there's no other template in the containing package with the same name as the containing template and with lower import precedence.
 
 It is a compilation error if the `c:next-template` element does not define a non-tunnel [`c:with-param`](with-param.html) for a required, non-tunnel, template parameter.
 
