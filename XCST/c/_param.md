@@ -2,7 +2,7 @@
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
-It is a run-time error if no value is supplied for a required, global or tunnel parameter.
+It is a run-time error if no value is supplied for a required parameter that is either global, tunnel or child of [`c:delegate`](delegate.html).
 
 ## See Also
 
