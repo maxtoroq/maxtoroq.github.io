@@ -8,8 +8,6 @@ It is a compilation error is the value specified in [`c:with-param`](with-param.
 
 It is a compilation error if the `c:call-template` element defines a non-tunnel [`c:with-param`](with-param.html) for a parameter that does not exist in the target template.
 
-It is a run-time error if no value is available, at the moment of invocation, for a required, tunnel parameter defined in the target template.
-
 ## Examples
 
 ```xml
