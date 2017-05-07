@@ -20,3 +20,5 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+
+{% include_relative _fallback.md %}
