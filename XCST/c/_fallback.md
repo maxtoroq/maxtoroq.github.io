@@ -1,6 +1,6 @@
 ## Notes
 
-Currently in XCST 1.0 there's no much use for `c:fallback`, except to handle unknown extension instructions.
+In XCST 1.0 there's not much use for `c:fallback`, except to handle unknown extension instructions.
 
 ## Examples
 
