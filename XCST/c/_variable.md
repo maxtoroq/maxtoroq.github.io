@@ -17,7 +17,7 @@ absent | present | empty | Local variables are not initialized. Global variables
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (see next section).
 absent | present | present | Value is obtained by evaluating the sequence constructor, casted to the type required by the `as` attribute.
 
-## Type Inference
+## Type Inference from Content
 
 When the `as` attribute is omitted, XCST tries to infer the type of the variable from the content. If not successful, the fallback type is `object[]`.
 
