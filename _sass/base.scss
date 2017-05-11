@@ -253,7 +253,8 @@ table code {
    body > header,
    body > footer {
       a {
-         background-image: linear-gradient(to bottom, rgba(128, 56, 101, 0.3) 50%,rgba(0,0,0,0) 50%);
+         border-bottom-color: rgba(128, 56, 101, 0.3);
+         //background-image: linear-gradient(to bottom, rgba(128, 56, 101, 0.3) 50%,rgba(0,0,0,0) 50%);
       }
    }
 }
