@@ -6,7 +6,7 @@ XCST is distributed as a set of NuGet packages (not to be confused with XCST pac
 Xcst package
 ------------
 [![NuGet](https://img.shields.io/nuget/v/Xcst.svg?label=Xcst)](https://www.nuget.org/packages/Xcst)
-[![GitHub](https://img.shields.io/github/stars/maxtoroq/XCST.svg?style=social&label=Star)]()
+![GitHub](https://img.shields.io/github/stars/maxtoroq/XCST.svg?style=social&label=Star)
 
 The Xcst package is the package that all other packages, directly or indirectly, depend on. It contains an API for executing pre-compiled XCST programs, as well as types that all compiled XCST programs depend on.
 
