@@ -26,7 +26,7 @@ Uses:
 
 - Generate C# from XCST modules
 
-Xcst.AspNet package
+Xcst.AspNet package (Recommended)
 -------------------
 [![NuGet](https://img.shields.io/nuget/v/Xcst.AspNet.svg?label=Xcst.AspNet)](https://www.nuget.org/packages/Xcst.AspNet)
 [![GitHub](https://img.shields.io/github/stars/maxtoroq/XCST-a.svg?style=social&label=Star)](https://github.com/maxtoroq/XCST-a)
