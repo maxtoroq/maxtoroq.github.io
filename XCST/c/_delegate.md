@@ -27,7 +27,7 @@ To accept a delegate as a parameter you can use the [`Delegate`](https://msdn.mi
 ```xml
 <c:template name='pagination'>
    <c:param name='currentPage' as='int'/>
-   <c:param name='pagerItem' as='dynamic'/>
+   <c:param name='pagerItem' as='Delegate'/>
    
    <ul class='pagination'>
       <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
