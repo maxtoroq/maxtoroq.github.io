@@ -1,4 +1,6 @@
-## Examples
+## Type of a Delegate
+
+The concrete type of a delegate is currently not part of the public API. However, you don't need to specify it thanks to type inference, e.g.:
 
 ```xml
 <c:variable name='pagerItem'>
@@ -20,7 +22,7 @@
 </ul>
 ```
 
-You can also accept a delegate as parameter:
+To accept a delegate as a parameter you can use the [Delegate](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type, e.g.:
 
 ```xml
 <c:template name='pagination'>
@@ -34,8 +36,6 @@ You can also accept a delegate as parameter:
    </ul>
 </c:template>
 ```
-
-The above example uses the `dynamic` keyword to avoid specifying the exact type of the delegate, which is currently not part of the public API and it's not recommended to use, as it might change in the future.
 
 ## See Also
 
