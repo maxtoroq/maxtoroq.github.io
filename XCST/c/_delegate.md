@@ -25,6 +25,8 @@ The concrete type of a delegate is currently not part of the public API. However
 To accept a delegate as a parameter you can use the [`Delegate`](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type, e.g.:
 
 ```xml
+<c:use-functions in='System'/>
+
 <c:template name='pagination'>
    <c:param name='currentPage' as='int'/>
    <c:param name='pagerItem' as='Delegate'/>
