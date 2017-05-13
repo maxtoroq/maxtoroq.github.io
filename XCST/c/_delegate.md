@@ -22,7 +22,7 @@ The concrete type of a delegate is currently not part of the public API. However
 </ul>
 ```
 
-To accept a delegate as a parameter you can use the [Delegate](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type, e.g.:
+To accept a delegate as a parameter you can use the [`Delegate`](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type, e.g.:
 
 ```xml
 <c:template name='pagination'>
