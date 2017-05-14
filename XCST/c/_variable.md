@@ -55,4 +55,4 @@ It is a compilation error if the `value` attribute is present when the content o
 
 ## Differences with `xsl:variable`
 
-`c:variable` does not support qualified names. `c:variable` is mutable and can be left uninitialized. No implicit zero-length `string` or document node. Text nodes are compiled to `string`, with make `string` a first-class citizen in XCST. Parentless text nodes don't exist in XCST.
+`c:variable` does not support qualified names. `c:variable` is mutable and can be left uninitialized. No implicit zero-length `string` or document node. Text nodes are compiled to `string`, wich make `string` a first-class citizen in XCST. Parentless text nodes don't exist in XCST.
