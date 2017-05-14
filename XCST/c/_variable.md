@@ -33,7 +33,21 @@ Text node | `string`
 
 ## Temporary Trees
 
-Temporary trees are currently not supported, but planned for the future.
+Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`]'s `output` attribute, e.g.:
+
+```xml
+<c:variable name='doc' value='new XmlDocument()'/>
+
+<c:using name='output' value='doc.CreateNavigator().AppendChild()'>
+   <c:result-document output='output'>
+      <foo bar='123'>baz</foo>
+   </c:result-document>
+</c:using>
+
+<c:assert test='doc.DocumentElement.LocalName == "foo"'/>
+<c:assert test='doc.DocumentElement.GetAttribute("bar") == "123"'/>
+<c:assert test='doc.DocumentElement.InnerText == "baz"'/>
+```
 
 ## Error Conditions
 
