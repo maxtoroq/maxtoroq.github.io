@@ -33,7 +33,7 @@ Text node | `string`
 
 ## Temporary Trees
 
-Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`]'s `output` attribute, e.g.:
+Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`](result-document.html)'s `output` attribute, e.g.:
 
 ```xml
 <c:variable name='doc' value='new XmlDocument()'/>
