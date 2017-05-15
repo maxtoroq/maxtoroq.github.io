@@ -1,5 +1,6 @@
 ---
 title: Documentation
+layout: XCST
 ---
 
 - [Installing](installing.html)
