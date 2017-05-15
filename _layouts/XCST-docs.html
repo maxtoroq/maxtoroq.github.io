@@ -19,7 +19,10 @@
    <article class="container">
       <header>
          <nav class="breadcrumbs">
-            <a href="{{ page.base_url }}docs/">Documentation</a> /
+            <a href="{{ page.documentation_url }}">Documentation</a> /
+            {% if page.element_ref %}
+            <a href="{{ page.documentation_url }}elements-ref.html">XCST Elements Reference</a> /
+            {% endif %}
             <span>{{ page.title }}</span>
          </nav>
          <h1>{{ page.title }}</h1>
