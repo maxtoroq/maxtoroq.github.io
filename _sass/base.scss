@@ -29,10 +29,6 @@ body > footer {
    font-size: $base-font-size - 2px;
 }
 
-.breadcrumbs {
-   font-size: $base-font-size - 2px;
-}
-
 a, a:hover, a:focus {
    color: #0066c0;
 }
@@ -182,6 +178,10 @@ code {
 
 table code {
    word-break: initial;
+}
+
+.breadcrumbs {
+   font-size: $base-font-size - 4px;
 }
 
 @import "highlight";
