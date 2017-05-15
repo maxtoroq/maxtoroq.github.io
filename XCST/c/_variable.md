@@ -1,3 +1,9 @@
+## Global and Local Variables
+
+A `c:variable` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **global variable**. Variables that are not global are called **local variables**.
+
+Global variables are visible to all other components in the containing package.
+
 ## Values and Types of Variables
 
 The value of a variable can be supplied by the `value` attribute or by its contents (child nodes). Global variables are always initialized as these are backed by C# fields, which always have a default value. Local variables can be left uninitialized by ommiting both the `value` attribute and contents. A value can then be assigned using the [`c:set`](set.html) instruction, or from C# code.
@@ -50,6 +56,8 @@ Temporary trees are currently not supported, but planned for the future. However
 ```
 
 ## Error Conditions
+
+It is a compilation error if the `visibility` attribute is used on a local variable.
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
