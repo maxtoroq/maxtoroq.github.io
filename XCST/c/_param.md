@@ -2,6 +2,14 @@
 
 A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**.
 
+Package parameters are visible to all other components in the containing package. Package parameters have an implicit *public* visibility, which also makes them visible to components in using packages.
+
+## Values and Types of Parameters
+
+A parameter is basically a variable whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). There are however some differences with variables.
+
+Parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameters is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
+
 ## Error Conditions
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
