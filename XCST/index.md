@@ -83,7 +83,7 @@ Razor treats markup as text that outputs unchanged. In XCST, elements, attribute
 - One source code, multiple outputs (XML, HTML, XHTML, text)
 - Whitespace control (indentation)
 - Create an in-memory DOM
-- Use an XML-aware tool like XPath or XSLT to unit-test or post-process your program
+- Use an XML-aware tool like XPath or XSLT for unit-testing or post-processing your output
 
 ### #3. Extensible
 
