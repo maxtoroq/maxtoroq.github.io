@@ -16,8 +16,6 @@ A parameter is basically a variable whose value can be supplied by the caller. S
 
 Function parameters must omit the `tunnel` attribute, or have its value set to `false`.
 
-Function parameters must omit the `required` attribute, or have its value set to `true`.
-
 ## Error Conditions
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
