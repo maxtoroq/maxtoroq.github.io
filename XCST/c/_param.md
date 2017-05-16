@@ -4,6 +4,8 @@ A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.htm
 
 Package parameters are visible to all other components in the containing package. Package parameters have an implicit *public* visibility, which also makes them visible to components in using packages.
 
+Package parameters must omit the `tunnel` attribute, or have its value set to `false`.
+
 ## Values and Types of Parameters
 
 A parameter is basically a variable whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). There are however some differences with variables.
