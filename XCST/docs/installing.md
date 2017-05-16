@@ -13,7 +13,7 @@ The Xcst package is the package that all other packages, directly or indirectly,
 Uses:
 
 - Execute pre-compiled XCST programs
-- Distribute as dependency of pre-compiled XCST programs
+- Distribute as dependency of compiled XCST programs
 
 Xcst.Compiler package
 ---------------------
@@ -31,7 +31,7 @@ Xcst.AspNet package (Recommended)
 [![NuGet](https://img.shields.io/nuget/v/Xcst.AspNet.svg?label=Xcst.AspNet)](https://www.nuget.org/packages/Xcst.AspNet)
 [![GitHub](https://img.shields.io/github/stars/maxtoroq/XCST-a.svg?style=social&label=Star)](https://github.com/maxtoroq/XCST-a)
 
-The Xcst.AspNet package provides XCST web pages for ASP.NET.
+The Xcst.AspNet package provides XCST web pages for ASP.NET 4.5+.
 
 Uses:
 
@@ -42,7 +42,7 @@ Xcst.Web.Mvc package
 [![NuGet](https://img.shields.io/nuget/v/Xcst.Web.Mvc.svg?label=Xcst.Web.Mvc)](https://www.nuget.org/packages/Xcst.Web.Mvc)
 [![GitHub](https://img.shields.io/github/stars/maxtoroq/XCST-a.svg?style=social&label=Star)](https://github.com/maxtoroq/XCST-a)
 
-The Xcst.Web.Mvc package provides XCST views for ASP.NET MVC 5.
+The Xcst.Web.Mvc package provides XCST views for ASP.NET MVC 5.2.x.
 
 Uses:
 
