@@ -1,38 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <title>{{ page.title }}</title>
-   <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
-   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico" />
-   {% include analytics.html %}
-</head>
-<body>
+---
+layout: XCST-base
+---
+<article>
    <header>
-      <nav class="container">
-         <a href="{{ page.base_url }}">home</a>
-         <a href="{{ page.documentation_url }}">documentation</a>
-         <a href="{{ page.base_url }}support.html">support</a>
-         <a href="{{ page.repository_url }}">github</a>
+      <nav class="breadcrumbs">
+         <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
+         {% if page.element_ref %}
+         <a href="{{ page.documentation_url }}elements-ref.html">XCST Elements Reference</a>&nbsp; /&nbsp;
+         {% endif %}
+         <span>{{ page.title }}</span>
       </nav>
-   </header> 
-   <article class="container">
-      <header>
-         <nav class="breadcrumbs">
-            <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
-            {% if page.element_ref %}
-            <a href="{{ page.documentation_url }}elements-ref.html">XCST Elements Reference</a>&nbsp; /&nbsp;
-            {% endif %}
-            <span>{{ page.title }}</span>
-         </nav>
-         <h1>{{ page.title }}</h1>
-      </header>
-      <div itemprop="articleBody">
-         {{ content }}
-      </div>
-   </article>
-   <footer>
-      <div class="container">&copy; {{ site.author }}</div>
-   </footer>
-</body>
-</html>
+      <h1>{{ page.title }}</h1>
+   </header>
+   <div itemprop="articleBody">
+      {{ content }}
+   </div>
+</article>
