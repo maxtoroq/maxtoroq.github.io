@@ -50,7 +50,7 @@ Value templates
 ---------------
 In Razor you use the `@` symbol to mix expressions with text and markup, e.g. `@DateTime.Now`. In XCST you use curly braces, just like in [interpolated strings][2], e.g. `{DateTime.Now}`.
 
-Because sometimes you need to use curly braces in content such as CSS and JavaScript, you declare `[c:]expand-text='yes'` to enable this feature. `[c:]expand-text` is a standard attribute that can be used on any XCST element and any literal result element (prefixed).
+Because sometimes you need to use curly braces in content such as CSS and JavaScript, you declare `[c:]expand-text='yes'` to enable this feature. `[c:]expand-text` is a [standard attribute][7] that can be used on any XCST element and any literal result element (prefixed).
 
 Value templates always work for attribute values. To output curly braces you have to double them.
 
@@ -610,3 +610,4 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 [4]: /2016/04/aspnet-programming-with-xcst.html
 [5]: https://github.com/maxtoroq/XCST-a/issues?q=is%3Aissue+label%3Aquestion
 [6]: elements-ref.html#application-extension-elements
+[7]: standard-attributes.html
