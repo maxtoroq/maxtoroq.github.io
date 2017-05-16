@@ -12,6 +12,10 @@ A parameter is basically a variable whose value can be supplied by the caller. S
 
 Parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameters is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
 
+## Functions Parameters
+
+[`c:function`](function.html) parameters have several limitations, due to the fact that they compile to method parameters in C#. Type inference does not work (defaults to `object`). Default values are limited to constant expressions, or `null`. The order of parameters is significant. Cannot have a parameter without a default value after one with a default value.
+
 ## Error Conditions
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
