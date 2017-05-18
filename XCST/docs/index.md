@@ -12,6 +12,7 @@ Reference
 - [XCST Elements Reference](elements-ref.html)
 - [Standard Attributes](standard-attributes.html)
 - [Reserved Namespaces](reserved-namespaces.html)
+- [Extension Instructions](extension-instructions.html)
 
 Blog Posts
 ----------
