@@ -10,14 +10,14 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:check-box</span>
-  <span>for</span>? = <i title="Expression">Expression</i>
-  <span>name</span>? = { <i>String</i> }
-  <span>checked</span>? = <i title="Expression">Expression</i>
-  <span>html-class</span>? = { <i>String</i> }
-  <span>html-attributes</span>? = <i title="Expression">Expression</i> /&gt;</code></pre></div>
+  <span>for</span>? = <i title="expression">expression</i>
+  <span>name</span>? = { <i>string</i> }
+  <span>checked</span>? = <i title="expression">expression</i>
+  <span>html-class</span>? = { <i>string</i> }
+  <span>html-attributes</span>? = <i title="expression">expression</i> /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
-   <dd><i>instruction</i></dd>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

@@ -10,8 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:attribute-set</span>
-  <b>name</b> = <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>
-  <span>use-attribute-sets</span>? = <span><i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>*</span>
+  <b>name</b> = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>
+  <span>use-attribute-sets</span>? = <span><i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>*</span>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: <span><a href="attribute.html">c:attribute</a>*</span> --&gt;
 <span class="nt">&lt;/c:attribute-set&gt;</span></code></pre></div>

@@ -10,11 +10,11 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:display-name</span>
-  <span>for</span>? = <i title="Expression">Expression</i>
-  <span>name</span>? = { <i>String</i> } /&gt;</code></pre></div>
+  <span>for</span>? = <i title="expression">expression</i>
+  <span>name</span>? = { <i>string</i> } /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
-   <dd><i>instruction</i></dd>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

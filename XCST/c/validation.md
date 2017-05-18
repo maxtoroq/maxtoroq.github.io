@@ -10,19 +10,19 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:validation</span>
-  <span>error-resource-type</span>? = <i>Type</i>
-  <span>data-type-error-message</span>? = <i>String</i>
-  <span>data-type-error-resource</span>? = <i>String</i>
-  <span>required-error-message</span>? = <i>String</i>
-  <span>required-error-resource</span>? = <i>String</i>
-  <span>length-error-message</span>? = <i>String</i>
-  <span>length-error-resource</span>? = <i>String</i>
-  <span>pattern-error-message</span>? = <i>String</i>
-  <span>pattern-error-resource</span>? = <i>String</i>
-  <span>range-error-message</span>? = <i>String</i>
-  <span>range-error-resource</span>? = <i>String</i>
-  <span>equal-to-error-message</span>? = <i>String</i>
-  <span>equal-to-error-resource</span>? = <i>String</i> /&gt;</code></pre></div>
+  <span>error-resource-type</span>? = <i title="Type name">type_name</i>
+  <span>data-type-error-message</span>? = <i>string</i>
+  <span>data-type-error-resource</span>? = <i>string</i>
+  <span>required-error-message</span>? = <i>string</i>
+  <span>required-error-resource</span>? = <i>string</i>
+  <span>length-error-message</span>? = <i>string</i>
+  <span>length-error-resource</span>? = <i>string</i>
+  <span>pattern-error-message</span>? = <i>string</i>
+  <span>pattern-error-resource</span>? = <i>string</i>
+  <span>range-error-message</span>? = <i>string</i>
+  <span>range-error-resource</span>? = <i>string</i>
+  <span>equal-to-error-message</span>? = <i>string</i>
+  <span>equal-to-error-resource</span>? = <i>string</i> /&gt;</code></pre></div>
 <p>Defines default values for validation messages.</p>
 <dl>
    <dt><b>Category</b></dt>

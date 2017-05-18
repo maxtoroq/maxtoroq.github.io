@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:with-options</span>
-  <span>for</span>? = <i title="Expression">Expression</i>
-  <span>name</span>? = { <i>String</i> }
-  <span>options</span>? = <i title="Expression">Expression</i> &gt;
+  <span>for</span>? = <i title="expression">expression</i>
+  <span>name</span>? = { <i>string</i> }
+  <span>options</span>? = <i title="expression">expression</i> &gt;
   &lt;!-- Content: <span><a href="option.html">a:option</a>*</span> --&gt;
 <span class="nt">&lt;/a:with-options&gt;</span></code></pre></div>
 <dl>

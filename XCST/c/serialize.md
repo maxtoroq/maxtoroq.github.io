@@ -10,24 +10,24 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:serialize</span>
-  <span>format</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
-  <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"xhtml"</span> | <span class="s">"text"</span> | <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i></span> }
-  <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>cdata-section-elements</span>? = { <span><i title="An EQName. Unprefixed QNames are in the default namespace.">EQName</i>*</span> }
-  <span>doctype-public</span>? = { <i>String</i> }
-  <span>doctype-system</span>? = { <i>String</i> }
-  <span>encoding</span>? = { <i>String</i> }
-  <span>escape-uri-attributes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>html-version</span>? = { <i>Decimal</i> }
-  <span>include-content-type</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>indent</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>indent-spaces</span>? = { <i>Integer</i> }
-  <span>item-separator</span>? = { <i>String</i> }
-  <span>media-type</span>? = { <i>String</i> }
-  <span>omit-xml-declaration</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
-  <span>standalone</span>? = { <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> | <span class="s">"omit"</span></span> }
-  <span>suppress-indentation</span>? = { <span><i title="An EQName. Unprefixed QNames are in the default namespace.">EQName</i>*</span> }
-  <span>undeclare-prefixes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> }
+  <span>format</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"xhtml"</span> | <span class="s">"text"</span> | <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i></span> }
+  <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>cdata-section-elements</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span> }
+  <span>doctype-public</span>? = { <i>string</i> }
+  <span>doctype-system</span>? = { <i>string</i> }
+  <span>encoding</span>? = { <i>string</i> }
+  <span>escape-uri-attributes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>html-version</span>? = { <i>decimal</i> }
+  <span>include-content-type</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>indent</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>indent-spaces</span>? = { <i>integer</i> }
+  <span>item-separator</span>? = { <i>string</i> }
+  <span>media-type</span>? = { <i>string</i> }
+  <span>omit-xml-declaration</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>standalone</span>? = { <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> | <span class="s">"omit"</span></span> }
+  <span>suppress-indentation</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span> }
+  <span>undeclare-prefixes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>output-version</span>? = { <i>NMTOKEN</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:serialize&gt;</span></code></pre></div>
@@ -45,7 +45,7 @@ the page is regenerated.
       <tr>
          <td><code>byte-order-mark</code></td>
          <td>Specifies whether a byte order mark is written at the start of the file. Attribute
-            value template (Boolean).
+            value template (boolean).
          </td>
       </tr>
       <tr>
@@ -69,32 +69,32 @@ the page is regenerated.
       <tr>
          <td><code>escape-uri-attributes</code></td>
          <td>Specifies whether to escape URI attributes in HTML and XHTML documents. Attribute
-            value template (Boolean).
+            value template (boolean).
          </td>
       </tr>
       <tr>
          <td><code>format</code></td>
          <td>The name of the output definition to get serialization parameters from. Attribute
-            value template (EQName).
+            value template (eqname).
          </td>
       </tr>
       <tr>
          <td><code>html-version</code></td>
-         <td>Specifies the HTML version. Attribute value template (Decimal).</td>
+         <td>Specifies the HTML version. Attribute value template (decimal).</td>
       </tr>
       <tr>
          <td><code>include-content-type</code></td>
          <td>Specifies whether to include a meta element in the head of HTML and XHTML documents,
-            specifying the used character encoding. Attribute value template (Boolean).
+            specifying the used character encoding. Attribute value template (boolean).
          </td>
       </tr>
       <tr>
          <td><code>indent</code></td>
-         <td>Specifies whether to indent the output. Attribute value template (Boolean).</td>
+         <td>Specifies whether to indent the output. Attribute value template (boolean).</td>
       </tr>
       <tr>
          <td><code>indent-spaces</code></td>
-         <td>The number of spaces to use for indenting. Attribute value template (Integer).</td>
+         <td>The number of spaces to use for indenting. Attribute value template (integer).</td>
       </tr>
       <tr>
          <td><code>item-separator</code></td>
@@ -112,7 +112,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>omit-xml-declaration</code></td>
-         <td>Specifies whether to omit the XML declaration. Attribute value template (Boolean).</td>
+         <td>Specifies whether to omit the XML declaration. Attribute value template (boolean).</td>
       </tr>
       <tr>
          <td><code>output-version</code></td>
@@ -131,7 +131,7 @@ the page is regenerated.
       <tr>
          <td><code>undeclare-prefixes</code></td>
          <td>Specifies whether to undeclare namespaces when outputting XML 1.1. Attribute value
-            template (Boolean).
+            template (boolean).
          </td>
       </tr>
    </table>

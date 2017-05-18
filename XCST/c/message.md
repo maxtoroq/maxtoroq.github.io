@@ -10,8 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:message</span>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> } &gt;
+  <span>value</span>? = <i title="Expression">expression</i>
+  <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:message&gt;</span></code></pre></div>
 <p>Signals a message.</p>
@@ -27,7 +27,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>terminate</code></td>
-         <td>Specifies whether to stop the execution of the program. Attribute value template (Boolean).</td>
+         <td>Specifies whether to stop the execution of the program. Attribute value template (boolean).</td>
       </tr>
       <tr>
          <td><code>value</code></td>

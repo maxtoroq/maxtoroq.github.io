@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:import</span>
-  <b>href</b> = <i>URI</i> /&gt;</code></pre></div>
+  <b>href</b> = <i>uri</i> /&gt;</code></pre></div>
 <p>Specifies a module dependency.</p>
 <dl>
    <dt><b>Category</b></dt>

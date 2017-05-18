@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each</span>
-  <b>name</b> = <i>Name</i>
-  <b>in</b> = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i> &gt;
+  <b>name</b> = <i title="Identifier">identifier</i>
+  <b>in</b> = <i title="Expression">expression</i>
+  <span>as</span>? = <i title="Type name">type_name</i> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each&gt;</span></code></pre></div>
 <p>Processes each item in a sequence of items.</p>

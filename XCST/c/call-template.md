@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:call-template</span>
-  <b>name</b> = <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> &gt;
+  <b>name</b> = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:call-template&gt;</span></code></pre></div>
 <p>Invokes a template.</p>

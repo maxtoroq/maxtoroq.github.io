@@ -10,25 +10,25 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:type</span>
-  <b>name</b> = <i>Name</i>
+  <b>name</b> = <i title="Identifier">identifier</i>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span>
-  <span>resource-type</span>? = <i>Type</i>
-  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>display-text-member</span>? = <i>Name</i>
-  <span>error-resource-type</span>? = <i>Type</i>
-  <span>data-type-error-message</span>? = <i>String</i>
-  <span>data-type-error-resource</span>? = <i>String</i>
-  <span>required-error-message</span>? = <i>String</i>
-  <span>required-error-resource</span>? = <i>String</i>
-  <span>length-error-message</span>? = <i>String</i>
-  <span>length-error-resource</span>? = <i>String</i>
-  <span>pattern-error-message</span>? = <i>String</i>
-  <span>pattern-error-resource</span>? = <i>String</i>
-  <span>range-error-message</span>? = <i>String</i>
-  <span>range-error-resource</span>? = <i>String</i>
-  <span>equal-to-error-message</span>? = <i>String</i>
-  <span>equal-to-error-resource</span>? = <i>String</i> &gt;
+  <span>resource-type</span>? = <i title="Type name">type_name</i>
+  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>display-text-member</span>? = <i title="Identifier">identifier</i>
+  <span>error-resource-type</span>? = <i title="Type name">type_name</i>
+  <span>data-type-error-message</span>? = <i>string</i>
+  <span>data-type-error-resource</span>? = <i>string</i>
+  <span>required-error-message</span>? = <i>string</i>
+  <span>required-error-resource</span>? = <i>string</i>
+  <span>length-error-message</span>? = <i>string</i>
+  <span>length-error-resource</span>? = <i>string</i>
+  <span>pattern-error-message</span>? = <i>string</i>
+  <span>pattern-error-resource</span>? = <i>string</i>
+  <span>range-error-message</span>? = <i>string</i>
+  <span>range-error-resource</span>? = <i>string</i>
+  <span>equal-to-error-message</span>? = <i>string</i>
+  <span>equal-to-error-resource</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
 <span class="nt">&lt;/c:type&gt;</span></code></pre></div>
 <p>Defines a type.</p>

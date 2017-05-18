@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:use-functions</span>
-  <b>in</b> = <i>Type</i>
-  <span>alias</span>? = <i>Name</i>
-  <span>static-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> /&gt;</code></pre></div>
+  <b>in</b> = <i title="Namespace or type name">namespace_or_type_name</i>
+  <span>alias</span>? = <i title="Identifier">identifier</i>
+  <span>static-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> /&gt;</code></pre></div>
 <p>Imports functions from a function library.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>

@@ -10,16 +10,16 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:model</span>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i>
-  <span>html-field-prefix</span>? = { <i>String</i> }
-  <span>with-params</span>? = <i title="Expression">Expression</i>
-  <span>helper-name</span>? = <i>Name</i> &gt;
+  <span>value</span>? = <i title="expression">expression</i>
+  <span>as</span>? = <i>type_name</i>
+  <span>html-field-prefix</span>? = { <i>string</i> }
+  <span>with-params</span>? = <i title="expression">expression</i>
+  <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:model&gt;</span></code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
-   <dd><i>instruction</i></dd>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

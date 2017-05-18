@@ -12,7 +12,7 @@ the page is regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:anti-forgery-token</span>/&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
-   <dd><i>instruction</i></dd>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

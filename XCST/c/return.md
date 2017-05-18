@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:return</span>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>value</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:return&gt;</span></code></pre></div>
 <p>Exits from a template or function.</p>

@@ -10,10 +10,10 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:http-method-override</span>
-  <b>method</b> = { <i>String</i> } /&gt;</code></pre></div>
+  <b>method</b> = { <i>string</i> } /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
-   <dd><i>instruction</i></dd>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

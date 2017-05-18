@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:using</span>
-  <b>value</b> = <i title="Expression">Expression</i>
-  <span>name</span>? = <i>Name</i>
-  <span>as</span>? = <i>Type</i> &gt;
+  <b>value</b> = <i title="Expression">expression</i>
+  <span>name</span>? = <i title="Identifier">identifier</i>
+  <span>as</span>? = <i title="Type name">type_name</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:using&gt;</span></code></pre></div>
 <p>Facilitates the unconditional disposing of an object.</p>

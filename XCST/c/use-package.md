@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:use-package</span>
-  <b>name</b> = <i>Name</i> &gt;
+  <b>name</b> = <i title="Type name">type_name</i> &gt;
   &lt;!-- Content: <span><a href="override.html">c:override</a>*</span> --&gt;
 <span class="nt">&lt;/c:use-package&gt;</span></code></pre></div>
 <p>Specifies a package dependency.</p>

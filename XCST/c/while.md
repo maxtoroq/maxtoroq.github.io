@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:while</span>
-  <b>test</b> = <i title="Expression">Expression</i> &gt;
+  <b>test</b> = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:while&gt;</span></code></pre></div>
 <p>Repeateadly evaluates instructions until a condition is not met.</p>

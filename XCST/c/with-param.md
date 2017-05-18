@@ -10,10 +10,10 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:with-param</span>
-  <b>name</b> = <i>Name</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i>
-  <span>tunnel</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i> &gt;
+  <b>name</b> = <i title="Identifier">identifier</i>
+  <span>value</span>? = <i title="Expression">expression</i>
+  <span>as</span>? = <i title="Type name">type_name</i>
+  <span>tunnel</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:with-param&gt;</span></code></pre></div>
 <p>Defines parameter arguments for a template or delegate.</p>

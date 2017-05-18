@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:member-template</span>
-  <span>helper-name</span>? = <i>Name</i> &gt;
+  <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:member-template&gt;</span></code></pre></div>
 <dl>

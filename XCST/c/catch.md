@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:catch</span>
-  <span>exception</span>? = <i title="Expression">Expression</i>
-  <span>when</span>? = <i title="Expression">Expression</i>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <span>exception</span>? = <i title="Expression">expression</i>
+  <span>when</span>? = <i title="Expression">expression</i>
+  <span>value</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:catch&gt;</span></code></pre></div>
 <p>Catches an exception.</p>

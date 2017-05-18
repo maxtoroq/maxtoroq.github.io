@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:set</span>
-  <b>member</b> = <i title="Expression">Expression</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>as</span>? = <i>Type</i> &gt;
+  <b>member</b> = <i title="Expression">expression</i>
+  <span>value</span>? = <i title="Expression">expression</i>
+  <span>as</span>? = <i title="Type name">type_name</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:set&gt;</span></code></pre></div>
 <p>Assigns a value to a variable or object member.</p>

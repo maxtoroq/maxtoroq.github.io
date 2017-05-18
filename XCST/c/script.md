@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:script</span>
-  <span>src</span>? = <i>URI</i> &gt;
+  <span>src</span>? = <i>uri</i> &gt;
   &lt;!-- Content: <span><i>text</i></span> --&gt;
 <span class="nt">&lt;/c:script&gt;</span></code></pre></div>
 <p>Embeds or references a script of code.</p>

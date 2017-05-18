@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:option</span>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>selected</span>? = <i title="Expression">Expression</i>
-  <span>disabled</span>? = <i title="Expression">Expression</i> &gt;
+  <span>value</span>? = <i title="expression">expression</i>
+  <span>selected</span>? = <i title="expression">expression</i>
+  <span>disabled</span>? = <i title="expression">expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>

@@ -10,8 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
-  <b>delegate</b> = <i title="Expression">Expression</i>
-  <span>with-params</span>? = <i title="Expression">Expression</i> &gt;
+  <b>delegate</b> = <i title="Expression">expression</i>
+  <span>with-params</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
 <p>Evaluates a template delegate.</p>

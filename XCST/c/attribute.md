@@ -10,10 +10,10 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:attribute</span>
-  <b>name</b> = { <i title="A QName. Unprefixed names are in the null namespace.">QName</i> }
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>namespace</span>? = { <i>URI</i> }
-  <span>separator</span>? = { <i>String</i> } &gt;
+  <b>name</b> = { <i title="A qualified name. Unprefixed names are in the null namespace.">qname</i> }
+  <span>value</span>? = <i title="Expression">expression</i>
+  <span>namespace</span>? = { <i>uri</i> }
+  <span>separator</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:attribute&gt;</span></code></pre></div>
 <p>Creates an attribute node.</p>
@@ -30,11 +30,11 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The name of the attribute. Attribute value template (QName).</td>
+         <td>The name of the attribute. Attribute value template (qname).</td>
       </tr>
       <tr>
          <td><code>namespace</code></td>
-         <td>The namespace of the attribute. Attribute value template (URI).</td>
+         <td>The namespace of the attribute. Attribute value template (uri).</td>
       </tr>
       <tr>
          <td><code>separator</code></td>

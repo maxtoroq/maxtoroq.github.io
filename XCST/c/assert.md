@@ -10,8 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:assert</span>
-  <b>test</b> = <i title="Expression">Expression</i>
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <b>test</b> = <i title="Expression">expression</i>
+  <span>value</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:assert&gt;</span></code></pre></div>
 <p>Checks for a condition and signals a message if the condition is false.</p>

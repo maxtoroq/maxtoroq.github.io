@@ -10,11 +10,11 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-package</span>
-  <b>package</b> = <i title="Expression">Expression</i>
-  <span>global-params</span>? = <i title="Expression">Expression</i>
-  <span>initial-template</span>? = { <i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i> }
-  <span>template-params</span>? = <i title="Expression">Expression</i>
-  <span>tunnel-params</span>? = <i title="Expression">Expression</i> /&gt;</code></pre></div>
+  <b>package</b> = <i title="Expression">expression</i>
+  <span>global-params</span>? = <i title="Expression">expression</i>
+  <span>initial-template</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>template-params</span>? = <i title="Expression">expression</i>
+  <span>tunnel-params</span>? = <i title="Expression">expression</i> /&gt;</code></pre></div>
 <p>Evaluates a dynamically loaded package.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -32,7 +32,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>initial-template</code></td>
-         <td>The name of the initial template. Attribute value template (EQName).</td>
+         <td>The name of the initial template. Attribute value template (eqname).</td>
       </tr>
       <tr>
          <td><code>package</code></td>

@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:element</span>
-  <b>name</b> = { <i title="A QName. Unprefixed names are in the default namespace.">QName</i> }
-  <span>namespace</span>? = { <i>URI</i> }
-  <span>use-attribute-sets</span>? = <span><i title="An EQName. Unprefixed QNames are in the null namespace.">EQName</i>*</span> &gt;
+  <b>name</b> = { <i title="A qualified name. Unprefixed names are in the default namespace.">qname</i> }
+  <span>namespace</span>? = { <i>uri</i> }
+  <span>use-attribute-sets</span>? = <span><i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>*</span> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:element&gt;</span></code></pre></div>
 <p>Creates an element node.</p>
@@ -28,11 +28,11 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The name of the element. Attribute value template (QName).</td>
+         <td>The name of the element. Attribute value template (qname).</td>
       </tr>
       <tr>
          <td><code>namespace</code></td>
-         <td>The namespace of the element. Attribute value template (URI).</td>
+         <td>The namespace of the element. Attribute value template (uri).</td>
       </tr>
       <tr>
          <td><code>use-attribute-sets</code></td>

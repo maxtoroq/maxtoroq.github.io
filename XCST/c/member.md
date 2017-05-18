@@ -10,50 +10,50 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:member</span>
-  <b>name</b> = <i>Name</i>
-  <span>as</span>? = <i>Type</i>
-  <span>value</span>? = <i title="Expression">Expression</i>
-  <span>expression</span>? = <i title="Expression">Expression</i>
-  <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i></span>
-  <span>display-name</span>? = <i>String</i>
-  <span>description</span>? = <i>String</i>
-  <span>short-name</span>? = <i>String</i>
-  <span>place-holder</span>? = <i>String</i>
-  <span>order</span>? = <i>Integer</i>
-  <span>group</span>? = <i>String</i>
-  <span>format</span>? = <i>String</i>
-  <span>apply-format-in-edit-mode</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>null-display-text</span>? = <i>String</i>
-  <span>template</span>? = <i>String</i>
-  <span>read-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>auto-generate-filter</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
+  <b>name</b> = <i title="Identifier">identifier</i>
+  <span>as</span>? = <i title="Type name">type_name</i>
+  <span>value</span>? = <i title="Expression">expression</i>
+  <span>expression</span>? = <i title="Expression">expression</i>
+  <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i></span>
+  <span>display-name</span>? = <i>string</i>
+  <span>description</span>? = <i>string</i>
+  <span>short-name</span>? = <i>string</i>
+  <span>place-holder</span>? = <i>string</i>
+  <span>order</span>? = <i>integer</i>
+  <span>group</span>? = <i>string</i>
+  <span>format</span>? = <i>string</i>
+  <span>apply-format-in-edit-mode</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>null-display-text</span>? = <i>string</i>
+  <span>template</span>? = <i>string</i>
+  <span>read-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>auto-generate-filter</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
-  <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>max-length</span>? = <i title="Expression">Expression</i>
-  <span>min-length</span>? = <i title="Expression">Expression</i>
-  <span>pattern</span>? = <i>String</i>
-  <span>min</span>? = <i>String</i>
-  <span>max</span>? = <i>String</i>
-  <span>equal-to</span>? = <i>Name</i>
-  <span>resource-type</span>? = <i>Type</i>
-  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">Boolean</i>
-  <span>display-text-member</span>? = <i>Name</i>
-  <span>error-resource-type</span>? = <i>Type</i>
-  <span>data-type-error-message</span>? = <i>String</i>
-  <span>data-type-error-resource</span>? = <i>String</i>
-  <span>required-error-message</span>? = <i>String</i>
-  <span>required-error-resource</span>? = <i>String</i>
-  <span>length-error-message</span>? = <i>String</i>
-  <span>length-error-resource</span>? = <i>String</i>
-  <span>pattern-error-message</span>? = <i>String</i>
-  <span>pattern-error-resource</span>? = <i>String</i>
-  <span>range-error-message</span>? = <i>String</i>
-  <span>range-error-resource</span>? = <i>String</i>
-  <span>equal-to-error-message</span>? = <i>String</i>
-  <span>equal-to-error-resource</span>? = <i>String</i> &gt;
+  <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>max-length</span>? = <i title="Expression">expression</i>
+  <span>min-length</span>? = <i title="Expression">expression</i>
+  <span>pattern</span>? = <i>string</i>
+  <span>min</span>? = <i>string</i>
+  <span>max</span>? = <i>string</i>
+  <span>equal-to</span>? = <i title="Identifier">identifier</i>
+  <span>resource-type</span>? = <i title="Type name">type_name</i>
+  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>display-text-member</span>? = <i title="Identifier">identifier</i>
+  <span>error-resource-type</span>? = <i title="Type name">type_name</i>
+  <span>data-type-error-message</span>? = <i>string</i>
+  <span>data-type-error-resource</span>? = <i>string</i>
+  <span>required-error-message</span>? = <i>string</i>
+  <span>required-error-resource</span>? = <i>string</i>
+  <span>length-error-message</span>? = <i>string</i>
+  <span>length-error-resource</span>? = <i>string</i>
+  <span>pattern-error-message</span>? = <i>string</i>
+  <span>pattern-error-resource</span>? = <i>string</i>
+  <span>range-error-message</span>? = <i>string</i>
+  <span>range-error-resource</span>? = <i>string</i>
+  <span>equal-to-error-message</span>? = <i>string</i>
+  <span>equal-to-error-resource</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>

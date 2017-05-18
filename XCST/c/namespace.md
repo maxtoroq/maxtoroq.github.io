@@ -10,8 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:namespace</span>
-  <b>name</b> = { <i>NCName</i> }
-  <span>value</span>? = <i title="Expression">Expression</i> &gt;
+  <b>name</b> = { <i>ncname</i> }
+  <span>value</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:namespace&gt;</span></code></pre></div>
 <p>Creates a namespace node.</p>
@@ -27,7 +27,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The namespace prefix. Attribute value template (NCName).</td>
+         <td>The namespace prefix. Attribute value template (ncname).</td>
       </tr>
       <tr>
          <td><code>value</code></td>
