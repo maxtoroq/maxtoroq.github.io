@@ -12,7 +12,7 @@ A parameter is basically a variable whose value can be supplied by the caller. S
 
 ## Functions Parameters
 
-[`c:function`](function.html) parameters have several limitations, due to the fact that they compile to method parameters in C#. Type inference does not work when the value is supplied by the `value` attribute (defaults to `object`). Default values are limited to constant expressions, or `null`. The order of parameters is significant. Cannot have a parameter without a default value after one with a default value.
+[`c:function`](function.html) parameters have several limitations, due to the fact that they compile to method parameters in C#. Type inference does not work when the value is supplied by the `value` attribute (defaults to `object`). Default values are limited to [constant expressions]({{ page.csharp_spec_url}}expressions.md#constant-expressions). The order of parameters is significant. Cannot have a parameter without a default value after one with a default value.
 
 Function parameters must omit the `tunnel` attribute, or have its value set to `false`.
 
