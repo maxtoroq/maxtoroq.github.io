@@ -18,21 +18,4 @@ Schema: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng
 {% include_relative _ref-list-a.md %}
 
 Schema: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd)
-
-
-<div class="note" markdown="1">
-
-Don't forget to register extension elements prefixes before you use them, using `[c:]extension-element-prefixes`, e.g.:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<c:module version='1.0' language='C#'
-   xmlns:c='http://maxtoroq.github.io/XCST'
-   xmlns:a='http://maxtoroq.github.io/XCST/application'
-   extension-element-prefixes='a'>
-   ...
-</c:module>
-```
-
-</div>
          
