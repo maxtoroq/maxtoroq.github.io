@@ -38,4 +38,4 @@ name                     | description
 `namespace_or_type_name` | A C# [`namespace_or_type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
 `argument_list`          | A C# [`argument_list`]({{page.csharp_spec_url}}expressions.md#argument-lists)
 
-If a type is suffixed with an asterix (`*`) it indicates a white-space separated list of values that conform to that particular type, e.g. `cdata-section-elements="script style"`.
+If a type is suffixed with an asterix (`*`) it indicates a white-space separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
