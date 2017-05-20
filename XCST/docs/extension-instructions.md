@@ -18,3 +18,18 @@ An **extension instruction** is an element, within a sequence constructor, in a 
 If you forget to designate a namespace as an extension namespace then the elements will be treated as literal result elements.
 
 It is a compilation error to designate a [reserved namespace](reserved-namespaces.html) as an extension namespace, except for extensions made available by this project.
+
+## Fallback
+
+If you are not sure a particular extension instruction will be available you can use the [`c:fallback`](fallback.html) instruction as child of the extension instruction, e.g.:
+
+```xml
+<c:template name='c:initial-template' extension-element-prefixes='eg' xmlns:eg='http://example.com/ns/foo'>
+   <eg:foo>
+      <c:fallback>
+         <c:message>eg:foo not available.</c:message>
+         <c:call-template name='fallback-foo'/>
+      </c:fallback>
+   </eg:foo>
+</c:template>
+```
