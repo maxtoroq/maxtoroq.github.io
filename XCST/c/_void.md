@@ -1,4 +1,4 @@
-## The `value` attribute
+## The `value` Attribute
 
 The `c:void` instruction can be used to call methods that don't return values (`void` methods in C#), or when you don't want to output the return value. E.g.:
 
