@@ -23,7 +23,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>order</code></td>
-         <td>Specifies the sort direction ("ascending" or "descending"). Attribute value template.</td>
+         <td>Specifies the sort direction ("ascending" or "descending").</td>
       </tr>
       <tr>
          <td><code>value</code></td>

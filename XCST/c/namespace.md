@@ -27,7 +27,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The namespace prefix. Attribute value template (ncname).</td>
+         <td>The namespace prefix.</td>
       </tr>
       <tr>
          <td><code>value</code></td>

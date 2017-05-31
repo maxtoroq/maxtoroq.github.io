@@ -27,7 +27,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The name of the processing instruction. Attribute value template (ncname).</td>
+         <td>The name of the processing instruction.</td>
       </tr>
       <tr>
          <td><code>value</code></td>

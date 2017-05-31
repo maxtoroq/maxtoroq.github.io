@@ -32,7 +32,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>initial-template</code></td>
-         <td>The name of the initial template. Attribute value template (eqname).</td>
+         <td>The name of the initial template.</td>
       </tr>
       <tr>
          <td><code>package</code></td>

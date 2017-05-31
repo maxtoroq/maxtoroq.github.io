@@ -30,11 +30,11 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The name of the attribute. Attribute value template (qname).</td>
+         <td>The name of the attribute.</td>
       </tr>
       <tr>
          <td><code>namespace</code></td>
-         <td>The namespace of the attribute. Attribute value template (uri).</td>
+         <td>The namespace of the attribute.</td>
       </tr>
       <tr>
          <td><code>separator</code></td>

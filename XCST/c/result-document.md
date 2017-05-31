@@ -46,15 +46,11 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>byte-order-mark</code></td>
-         <td>Specifies whether a byte order mark is written at the start of the file. Attribute
-            value template (boolean).
-         </td>
+         <td>Specifies whether a byte order mark is written at the start of the file.</td>
       </tr>
       <tr>
          <td><code>cdata-section-elements</code></td>
-         <td>Specifies elements whose child text nodes should be wrapped in a CDATA section. Attribute
-            value template.
-         </td>
+         <td>Specifies elements whose child text nodes should be wrapped in a CDATA section.</td>
       </tr>
       <tr>
          <td><code>doctype-public</code></td>
@@ -70,55 +66,51 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>escape-uri-attributes</code></td>
-         <td>Specifies whether to escape URI attributes in HTML and XHTML documents. Attribute
-            value template (boolean).
-         </td>
+         <td>Specifies whether to escape URI attributes in HTML and XHTML documents.</td>
       </tr>
       <tr>
          <td><code>format</code></td>
-         <td>The name of the output definition to get serialization parameters from. Attribute
-            value template (eqname).
-         </td>
+         <td>The name of the output definition to get serialization parameters from.</td>
       </tr>
       <tr>
          <td><code>href</code></td>
-         <td>The relative or absolute URI to send the result to. Attribute value template (uri).</td>
+         <td>The relative or absolute URI to send the result to.</td>
       </tr>
       <tr>
          <td><code>html-version</code></td>
-         <td>Specifies the HTML version. Attribute value template (decimal).</td>
+         <td>Specifies the HTML version.</td>
       </tr>
       <tr>
          <td><code>include-content-type</code></td>
          <td>Specifies whether to include a meta element in the head of HTML and XHTML documents,
-            specifying the used character encoding. Attribute value template (boolean).
+            specifying the used character encoding.
          </td>
       </tr>
       <tr>
          <td><code>indent</code></td>
-         <td>Specifies whether to indent the output. Attribute value template (boolean).</td>
+         <td>Specifies whether to indent the output.</td>
       </tr>
       <tr>
          <td><code>indent-spaces</code></td>
-         <td>The number of spaces to use for indenting. Attribute value template (integer).</td>
+         <td>The number of spaces to use for indenting.</td>
       </tr>
       <tr>
          <td><code>item-separator</code></td>
-         <td>A string to intersperse when outputting multiple items. Attribute value template.</td>
+         <td>A string to intersperse when outputting multiple items.</td>
       </tr>
       <tr>
          <td><code>media-type</code></td>
          <td>The media type (MIME content type) of the output, to include in a meta element in
-            the head of HTML and XHTML documents. Attribute value template.
+            the head of HTML and XHTML documents.
          </td>
       </tr>
       <tr>
          <td><code>method</code></td>
-         <td>Specifies the output format. Attribute value template.</td>
+         <td>Specifies the output format.</td>
       </tr>
       <tr>
          <td><code>omit-xml-declaration</code></td>
-         <td>Specifies whether to omit the XML declaration. Attribute value template (boolean).</td>
+         <td>Specifies whether to omit the XML declaration.</td>
       </tr>
       <tr>
          <td><code>output</code></td>
@@ -126,23 +118,19 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>output-version</code></td>
-         <td>The version of the output format. Attribute value template.</td>
+         <td>The version of the output format.</td>
       </tr>
       <tr>
          <td><code>standalone</code></td>
-         <td>Specifies whether to include the standalone document declaration. Attribute value
-            template.
-         </td>
+         <td>Specifies whether to include the standalone document declaration.</td>
       </tr>
       <tr>
          <td><code>suppress-indentation</code></td>
-         <td>Specifies elements that should not be indented. Attribute value template.</td>
+         <td>Specifies elements that should not be indented.</td>
       </tr>
       <tr>
          <td><code>undeclare-prefixes</code></td>
-         <td>Specifies whether to undeclare namespaces when outputting XML 1.1. Attribute value
-            template (boolean).
-         </td>
+         <td>Specifies whether to undeclare namespaces when outputting XML 1.1.</td>
       </tr>
    </table>
 </div>

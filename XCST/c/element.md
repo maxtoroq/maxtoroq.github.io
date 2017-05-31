@@ -28,11 +28,11 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>name</code></td>
-         <td>The name of the element. Attribute value template (qname).</td>
+         <td>The name of the element.</td>
       </tr>
       <tr>
          <td><code>namespace</code></td>
-         <td>The namespace of the element. Attribute value template (uri).</td>
+         <td>The namespace of the element.</td>
       </tr>
       <tr>
          <td><code>use-attribute-sets</code></td>

@@ -27,7 +27,7 @@ the page is regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>terminate</code></td>
-         <td>Specifies whether to stop the execution of the program. Attribute value template (boolean).</td>
+         <td>Specifies whether to stop the execution of the program.</td>
       </tr>
       <tr>
          <td><code>value</code></td>
