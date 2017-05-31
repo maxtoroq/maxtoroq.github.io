@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:comment</span>
-  <span>value</span>? = <i title="Expression">expression</i> &gt;
+  <span>value</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:comment&gt;</span></code></pre></div>
 <p>Creates a comment node.</p>

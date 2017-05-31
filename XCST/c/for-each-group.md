@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each-group</span>
-  <b>name</b> = <i title="Identifier">identifier</i>
-  <b>in</b> = <i title="Expression">expression</i>
-  <span>group-by</span>? = <i title="Expression">expression</i>
+  <b>name</b> = <i title="Identifier.">identifier</i>
+  <b>in</b> = <i title="Expression.">expression</i>
+  <span>group-by</span>? = <i title="Expression.">expression</i>
   <span>group-size</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32">System.Int32</a> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each-group&gt;</span></code></pre></div>

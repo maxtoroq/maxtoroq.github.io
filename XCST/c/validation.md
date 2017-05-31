@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:validation</span>
-  <span>error-resource-type</span>? = <i title="Type name">type_name</i>
+  <span>error-resource-type</span>? = <i title="Type name.">type_name</i>
   <span>data-type-error-message</span>? = <i>string</i>
   <span>data-type-error-resource</span>? = <i>string</i>
   <span>required-error-message</span>? = <i>string</i>

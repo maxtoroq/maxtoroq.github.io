@@ -10,11 +10,11 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-package</span>
-  <b>package</b> = <i title="Expression">expression</i>
-  <span>global-params</span>? = <i title="Expression">expression</i>
+  <b>package</b> = <i title="Expression.">expression</i>
+  <span>global-params</span>? = <i title="Expression.">expression</i>
   <span>initial-template</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
-  <span>template-params</span>? = <i title="Expression">expression</i>
-  <span>tunnel-params</span>? = <i title="Expression">expression</i> /&gt;</code></pre></div>
+  <span>template-params</span>? = <i title="Expression.">expression</i>
+  <span>tunnel-params</span>? = <i title="Expression.">expression</i> /&gt;</code></pre></div>
 <p>Evaluates a dynamically loaded package.</p>
 <dl>
    <dt><b>Category</b></dt>

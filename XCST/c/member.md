@@ -10,10 +10,10 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:member</span>
-  <b>name</b> = <i title="Identifier">identifier</i>
-  <span>as</span>? = <i title="Type name">type_name</i>
-  <span>value</span>? = <i title="Expression">expression</i>
-  <span>expression</span>? = <i title="Expression">expression</i>
+  <b>name</b> = <i title="Identifier.">identifier</i>
+  <span>as</span>? = <i title="Type name.">type_name</i>
+  <span>value</span>? = <i title="Expression.">expression</i>
+  <span>expression</span>? = <i title="Expression.">expression</i>
   <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i></span>
   <span>display-name</span>? = <i>string</i>
@@ -36,12 +36,12 @@ the page is regenerated.
   <span>pattern</span>? = <i>string</i>
   <span>min</span>? = <i>string</i>
   <span>max</span>? = <i>string</i>
-  <span>equal-to</span>? = <i title="Identifier">identifier</i>
-  <span>resource-type</span>? = <i title="Type name">type_name</i>
+  <span>equal-to</span>? = <i title="Identifier.">identifier</i>
+  <span>resource-type</span>? = <i title="Type name.">type_name</i>
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>display-text-member</span>? = <i title="Identifier">identifier</i>
-  <span>error-resource-type</span>? = <i title="Type name">type_name</i>
+  <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
+  <span>error-resource-type</span>? = <i title="Type name.">type_name</i>
   <span>data-type-error-message</span>? = <i>string</i>
   <span>data-type-error-resource</span>? = <i>string</i>
   <span>required-error-message</span>? = <i>string</i>

@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-function</span>
-  <span>arguments</span>? = <i title="Argument list">argument_list</i> /&gt;</code></pre></div>
+  <span>arguments</span>? = <i title="Argument list.">argument_list</i> /&gt;</code></pre></div>
 <p>Invokes the overriden function.</p>
 <dl>
    <dt><b>Category</b></dt>

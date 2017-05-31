@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
   <b>delegate</b> = @<a href="https://msdn.microsoft.com/en-us/library/system.delegate">System.Delegate</a>
-  <span>with-params</span>? = <i title="Expression">expression</i> &gt;
+  <span>with-params</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
 <p>Evaluates a template delegate.</p>

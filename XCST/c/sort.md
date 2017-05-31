@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:sort</span>
-  <span>value</span>? = <i title="Expression">expression</i>
+  <span>value</span>? = <i title="Expression.">expression</i>
   <span>order</span>? = { <span><span class="s">"ascending"</span> | <span class="s">"descending"</span></span> } /&gt;</code></pre></div>
 <p>Defines how to sort sequences of items.</p>
 <dl>

@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:object</span>
-  <b>value</b> = <i title="Expression">expression</i> /&gt;</code></pre></div>
+  <b>value</b> = <i title="Expression.">expression</i> /&gt;</code></pre></div>
 <p>Appends a value to the current output.</p>
 <dl>
    <dt><b>Category</b></dt>

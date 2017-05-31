@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:param</span>
-  <b>name</b> = <i title="Identifier">identifier</i>
-  <span>value</span>? = <i title="Expression">expression</i>
-  <span>as</span>? = <i title="Type name">type_name</i>
+  <b>name</b> = <i title="Identifier.">identifier</i>
+  <span>value</span>? = <i title="Expression.">expression</i>
+  <span>as</span>? = <i title="Type name.">type_name</i>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>tunnel</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
