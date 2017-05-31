@@ -18,7 +18,7 @@ Use the `group-size` attribute to create groups with the same number of items, e
 
 ## Error Conditions
 
-It is a compilation error if none of the attributes `group-by` and `group-size` are present, or if both are present.
+It is a compilation error if both attributes `group-by` and `group-size` are present.
 
 ## See Also
 
