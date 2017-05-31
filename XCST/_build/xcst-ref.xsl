@@ -333,7 +333,7 @@ the page is regenerated.
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'boolean', 'eqname')]" mode="ref:type-display">
+   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'boolean', 'eqname', 'type_name', 'boolean_expression')]" mode="ref:type-display">
       <xsl:call-template name="ref:simple-type-display"/>
    </xsl:template>
 

@@ -36,6 +36,7 @@ name                     | description
 `identifier`             | A C# [`identifier`]({{page.csharp_spec_url}}lexical-structure.md#identifiers)
 `type_name`              | A C# [`type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
 `namespace_or_type_name` | A C# [`namespace_or_type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
+`boolean_expression`     | A C# [`boolean_expression`]({{page.csharp_spec_url}}expressions.md#boolean-expressions)
 `argument_list`          | A C# [`argument_list`]({{page.csharp_spec_url}}expressions.md#argument-lists)
 
 If a type is suffixed with an asterix (`*`) it indicates a white-space separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.

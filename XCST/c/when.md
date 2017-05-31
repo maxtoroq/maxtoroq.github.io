@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:when</span>
-  <b>test</b> = <i title="Expression">expression</i> &gt;
+  <b>test</b> = <i title="Boolean expression">boolean_expression</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:when&gt;</span></code></pre></div>
 <p>Represents a choice in a c:choose instruction.</p>
