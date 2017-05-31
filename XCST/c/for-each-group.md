@@ -13,7 +13,7 @@ the page is regenerated.
   <b>name</b> = <i title="Identifier">identifier</i>
   <b>in</b> = <i title="Expression">expression</i>
   <span>group-by</span>? = <i title="Expression">expression</i>
-  <span>group-size</span>? = <i title="Expression">expression</i> &gt;
+  <span>group-size</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32">System.Int32</a> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each-group&gt;</span></code></pre></div>
 <p>Processes a sequence of items in groups.</p>

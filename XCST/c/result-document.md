@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:result-document</span>
   <span>href</span>? = { <i>uri</i> }
-  <span>output</span>? = <i title="Expression">expression</i>
+  <span>output</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.io.stream">System.IO.Stream</a> | <a href="https://msdn.microsoft.com/en-us/library/system.io.textwriter">System.IO.TextWriter</a> | <a href="https://msdn.microsoft.com/en-us/library/system.xml.xmlwriter">System.Xml.XmlWriter</a> | Xcst.XcstWriter)
   <span>format</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
   <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"xhtml"</span> | <span class="s">"text"</span> | <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i></span> }
   <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }

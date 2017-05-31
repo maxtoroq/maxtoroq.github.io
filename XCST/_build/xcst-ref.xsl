@@ -6,6 +6,7 @@
    xmlns:ann="http://relaxng.org/ns/compatibility/annotations/1.0"
    xmlns:c="http://maxtoroq.github.io/XCST"
    xmlns:a="http://maxtoroq.github.io/XCST/application"
+   xmlns:docs="http://maxtoroq.github.io/XCST/docs"
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
 
@@ -352,6 +353,27 @@ the page is regenerated.
          <xsl:apply-templates mode="#current"/>
          <xsl:text>*</xsl:text>
       </span>
+   </xsl:template>
+
+   <xsl:template match="rng:ref[@name = 'expression'][docs:expression-type]" mode="ref:type-display">
+      <xsl:variable name="choice" select="count(docs:expression-type) gt 1"/>
+      <xsl:text>@</xsl:text>
+      <xsl:if test="$choice">(</xsl:if>
+      <xsl:for-each select="docs:expression-type">
+         <xsl:if test="position() gt 1"> | </xsl:if>
+         <xsl:apply-templates select="." mode="#current"/>
+      </xsl:for-each>
+      <xsl:if test="$choice">)</xsl:if>
+   </xsl:template>
+
+   <xsl:template match="docs:expression-type[starts-with(@name, 'System.')]" mode="ref:type-display">
+      <a href="https://msdn.microsoft.com/en-us/library/{lower-case(@name)}">
+         <xsl:value-of select="@name"/>
+      </a>
+   </xsl:template>
+
+   <xsl:template match="docs:expression-type" mode="ref:type-display">
+      <xsl:value-of select="@name"/>
    </xsl:template>
 
 </xsl:stylesheet>

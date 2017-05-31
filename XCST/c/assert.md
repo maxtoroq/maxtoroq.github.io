@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:assert</span>
-  <b>test</b> = <i title="Expression">expression</i>
+  <b>test</b> = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean">System.Boolean</a>
   <span>value</span>? = <i title="Expression">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:assert&gt;</span></code></pre></div>
