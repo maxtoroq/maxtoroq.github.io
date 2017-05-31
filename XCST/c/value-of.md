@@ -32,7 +32,7 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>separator</code></td>
-         <td>A string to intersperse between values. Attribute value template.</td>
+         <td>A string to intersperse between values.</td>
       </tr>
       <tr>
          <td><code>value</code></td>

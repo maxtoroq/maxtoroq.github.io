@@ -52,15 +52,15 @@ the page is regenerated.
       </tr>
       <tr>
          <td><code>doctype-public</code></td>
-         <td>Specifies a public document type declaration. Attribute value template.</td>
+         <td>Specifies a public document type declaration.</td>
       </tr>
       <tr>
          <td><code>doctype-system</code></td>
-         <td>Specifies a system document type declaration. Attribute value template.</td>
+         <td>Specifies a system document type declaration.</td>
       </tr>
       <tr>
          <td><code>encoding</code></td>
-         <td>Specifies the output encoding. Attribute value template.</td>
+         <td>Specifies the output encoding.</td>
       </tr>
       <tr>
          <td><code>escape-uri-attributes</code></td>
