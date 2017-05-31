@@ -67,7 +67,6 @@ defaults:
          documentation_url: /XCST/docs/
          support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
          csharp_spec_url: https://github.com/dotnet/csharplang/blob/master/spec/
-         fx_type_url: https://msdn.microsoft.com/en-us/library/
    -
       scope:
          path: "XCST/docs"
