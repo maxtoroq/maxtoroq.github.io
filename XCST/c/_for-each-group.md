@@ -1,3 +1,22 @@
+## Default Grouping
+
+If attributes `group-by` and `group-size` are both omitted, the items themselves are used as grouping key. E.g.:
+
+```xml
+<c:for-each-group name='group' in='"hello".ToCharArray()' expand-text='yes'>
+   <char count='{group.Count()}'>{group.Key}</char>
+</c:for-each-group>
+```
+
+...produces:
+
+```xml
+<char count="1">h</char>
+<char count="1">e</char>
+<char count="2">l</char>
+<char count="1">o</char>
+```
+
 ## The `group-size` Attribute
 
 Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less. E.g.:
