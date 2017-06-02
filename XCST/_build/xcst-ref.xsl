@@ -367,7 +367,7 @@ the page is regenerated.
    </xsl:template>
 
    <xsl:template match="docs:expression-type[starts-with(@name, 'System.')]" mode="ref:type-display">
-      <a href="https://msdn.microsoft.com/en-us/library/{lower-case(@name)}">
+      <a href="https://msdn.microsoft.com/en-us/library/{(@topic, lower-case(@name))[1]}">
          <xsl:value-of select="@name"/>
       </a>
    </xsl:template>
