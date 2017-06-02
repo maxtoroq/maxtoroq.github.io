@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
   <b>delegate</b> = @<a href="https://msdn.microsoft.com/en-us/library/system.delegate" title="System.Delegate">Delegate</a>
-  <span>with-params</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt; | <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>) &gt;
+  <span>with-params</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> | <a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
 <p>Evaluates a template delegate.</p>
