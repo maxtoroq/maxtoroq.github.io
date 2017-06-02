@@ -366,16 +366,23 @@ the page is regenerated.
       <xsl:if test="$choice">)</xsl:if>
    </xsl:template>
 
-   <xsl:template match="docs:expression-type[starts-with(@name, 'System.')]" mode="ref:type-display">
-      <a href="https://msdn.microsoft.com/en-us/library/{(@topic, lower-case(@name))[1]}" title="{@name}">
+   <xsl:template match="docs:expression-type | docs:type-param" mode="ref:type-display">
+      <xsl:variable name="fx-type" select="starts-with(@name, 'System.')"/>
+      <xsl:element name="{if ($fx-type) then 'a' else 'span'}">
+         <xsl:if test="$fx-type">
+            <xsl:attribute name="href" select="concat('https://msdn.microsoft.com/en-us/library/', (@topic, lower-case(@name))[1])"/>
+         </xsl:if>
+         <xsl:attribute name="title" select="@name"/>
          <xsl:value-of select="tokenize(@name, '\.')[last()]"/>
-      </a>
-   </xsl:template>
-
-   <xsl:template match="docs:expression-type" mode="ref:type-display">
-      <span title="{@name}">
-         <xsl:value-of select="tokenize(@name, '\.')[last()]"/>
-      </span>
+      </xsl:element>
+      <xsl:if test="docs:type-param">
+         <xsl:text>&lt;</xsl:text>
+         <xsl:for-each select="docs:type-param">
+            <xsl:if test="position() gt 1">, </xsl:if>
+            <xsl:apply-templates select="." mode="#current"/>
+         </xsl:for-each>
+         <xsl:text>></xsl:text>
+      </xsl:if>
    </xsl:template>
 
 </xsl:stylesheet>

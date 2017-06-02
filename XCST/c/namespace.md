@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:namespace</span>
   <b>name</b> = { <i>ncname</i> }
-  <span>value</span>? = <i title="Expression.">expression</i> &gt;
+  <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:namespace&gt;</span></code></pre></div>
 <p>Creates a namespace node.</p>
