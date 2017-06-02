@@ -17,6 +17,10 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 <char count="1">o</char>
 ```
 
+## The `group-by` Attribute
+
+Use the `group-by` attribute to specify a member of the item to use as grouping key.
+
 ## The `group-size` Attribute
 
 Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less. E.g.:
