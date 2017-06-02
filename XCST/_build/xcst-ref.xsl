@@ -367,13 +367,15 @@ the page is regenerated.
    </xsl:template>
 
    <xsl:template match="docs:expression-type[starts-with(@name, 'System.')]" mode="ref:type-display">
-      <a href="https://msdn.microsoft.com/en-us/library/{(@topic, lower-case(@name))[1]}">
-         <xsl:value-of select="@name"/>
+      <a href="https://msdn.microsoft.com/en-us/library/{(@topic, lower-case(@name))[1]}" title="{@name}">
+         <xsl:value-of select="tokenize(@name, '\.')[last()]"/>
       </a>
    </xsl:template>
 
    <xsl:template match="docs:expression-type" mode="ref:type-display">
-      <xsl:value-of select="@name"/>
+      <span title="{@name}">
+         <xsl:value-of select="tokenize(@name, '\.')[last()]"/>
+      </span>
    </xsl:template>
 
 </xsl:stylesheet>

@@ -11,9 +11,9 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each-group</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
-  <b>in</b> = @<a href="https://msdn.microsoft.com/en-us/library/9eekhta0">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
+  <b>in</b> = @<a href="https://msdn.microsoft.com/en-us/library/9eekhta0" title="System.Collections.Generic.IEnumerable<T&gt;">IEnumerable&lt;T&gt;</a>
   <span>group-by</span>? = <i title="Expression.">expression</i>
-  <span>group-size</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32">System.Int32</a> &gt;
+  <span>group-size</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32" title="System.Int32">Int32</a> &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each-group&gt;</span></code></pre></div>
 <p>Processes a sequence of items in groups.</p>

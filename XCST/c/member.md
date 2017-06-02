@@ -31,8 +31,8 @@ the page is regenerated.
   <span>auto-generate-filter</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>max-length</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32">System.Int32</a>
-  <span>min-length</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32">System.Int32</a>
+  <span>max-length</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32" title="System.Int32">Int32</a>
+  <span>min-length</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.int32" title="System.Int32">Int32</a>
   <span>pattern</span>? = <i>string</i>
   <span>min</span>? = <i>string</i>
   <span>max</span>? = <i>string</i>
