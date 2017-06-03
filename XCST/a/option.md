@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:option</span>
-  <span>value</span>? = <i title="expression">expression</i>
-  <span>selected</span>? = <i title="expression">expression</i>
-  <span>disabled</span>? = <i title="expression">expression</i> &gt;
+  <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>
+  <span>selected</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a>
+  <span>disabled</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>

@@ -10,9 +10,9 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:with-options</span>
-  <span>for</span>? = <i title="expression">expression</i>
+  <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
-  <span>options</span>? = <i title="expression">expression</i> &gt;
+  <span>options</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.web.mvc.selectlistitem" title="System.Web.Mvc.SelectListItem">SelectListItem</a>&gt; | <a href="https://msdn.microsoft.com/en-us/library/9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt; | <a href="https://msdn.microsoft.com/en-us/library/9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/bb344977" title="System.Linq.IGrouping">IGrouping</a>&lt;<span title="TGroupKey">TGroupKey</span>, <a href="https://msdn.microsoft.com/en-us/library/5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt;&gt; | <a href="https://msdn.microsoft.com/en-us/library/9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/bb344977" title="System.Linq.IGrouping<TKey, TElement&gt;">IGrouping&lt;TKey, TElement&gt;</a>&gt; | <a href="https://msdn.microsoft.com/en-us/library/system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>) &gt;
   &lt;!-- Content: <span><a href="option.html">a:option</a>*</span> --&gt;
 <span class="nt">&lt;/a:with-options&gt;</span></code></pre></div>
 <dl>

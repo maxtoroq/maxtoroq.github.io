@@ -10,7 +10,7 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:display-name</span>
-  <span>for</span>? = <i title="expression">expression</i>
+  <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> } /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>

@@ -10,10 +10,10 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:validation-summary</span>
-  <span>include-member-errors</span>? = <i title="expression">expression</i>
+  <span>include-member-errors</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a>
   <span>message</span>? = { <i>string</i> }
   <span>html-class</span>? = { <i>string</i> }
-  <span>html-attributes</span>? = <i title="expression">expression</i> /&gt;</code></pre></div>
+  <span>html-attributes</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> | <a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
