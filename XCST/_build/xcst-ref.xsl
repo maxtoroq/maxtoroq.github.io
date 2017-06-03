@@ -367,7 +367,7 @@ the page is regenerated.
    </xsl:template>
 
    <xsl:template match="docs:expression-type | docs:type-param" mode="ref:type-display">
-      <xsl:variable name="fx-type" select="starts-with(@name, 'System.')"/>
+      <xsl:variable name="fx-type" select="starts-with(@name, 'System.') and not(starts-with(@name, 'System.Web.Mvc.'))"/>
       <xsl:element name="{if ($fx-type) then 'a' else 'span'}">
          <xsl:if test="$fx-type">
             <xsl:attribute name="href" select="concat('https://msdn.microsoft.com/en-us/library/', (@topic, lower-case(@name))[1])"/>
