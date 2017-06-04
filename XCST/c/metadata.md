@@ -10,7 +10,8 @@ the page is regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:metadata</span>
-  <b>value</b> = <i title="Expression.">expression</i> /&gt;</code></pre></div>
+  <b>name</b> = <i title="Type name.">type_name</i>
+  <span>value</span>? = <i title="Expression.">expression</i> /&gt;</code></pre></div>
 <p>Defines type or member custom metadata.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
@@ -20,6 +21,10 @@ the page is regenerated.
 <h2>Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>name</code></td>
+         <td>The metadata name.</td>
+      </tr>
       <tr>
          <td><code>value</code></td>
          <td>The metadata expression.</td>

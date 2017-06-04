@@ -11,8 +11,8 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:option</span>
   <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>
-  <span>selected</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a>
-  <span>disabled</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a> &gt;
+  <span>selected</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>
