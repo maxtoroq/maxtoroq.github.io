@@ -11,13 +11,9 @@ title: XCST Elements Reference
 
 {% include_relative _ref-list-c.md %}
 
-Schema: [Relax NG](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.rng) - [XSD](https://github.com/maxtoroq/XCST/blob/master/schemas/xcst.xsd)
-
 ## Application Extension Elements
 
 {% include_relative _ref-list-a.md %}
-
-Schema: [Relax NG](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.rng) - [XSD](https://github.com/maxtoroq/XCST-a/blob/master/schemas/xcst-app.xsd)
          
 ## Data Types
 
@@ -41,3 +37,8 @@ name                     | description
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
 
 If a type is suffixed with an asterix (`*`) it indicates a white-space separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
+
+## Schemas
+
+- [`http://maxtoroq.github.io/XCST`](https://github.com/maxtoroq/XCST/tree/master/schemas)
+- [`http://maxtoroq.github.io/XCST/application`](https://github.com/maxtoroq/XCST-a/tree/master/schemas)
