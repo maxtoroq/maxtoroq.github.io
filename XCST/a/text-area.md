@@ -12,7 +12,7 @@ the page is regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:text-area</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
-  <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>
+  <span>value</span>? = <i title="Expression.">expression</i>
   <span>html-class</span>? = { <i>string</i> }
   <span>html-attributes</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> | <a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt;)
   <span>rows</span>? = { <i>integer</i> }

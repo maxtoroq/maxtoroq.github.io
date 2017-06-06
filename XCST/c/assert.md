@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:assert</span>
   <b>test</b> = @<a href="https://msdn.microsoft.com/en-us/library/system.boolean" title="System.Boolean">Boolean</a>
-  <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> &gt;
+  <span>value</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:assert&gt;</span></code></pre></div>
 <p>Checks for a condition and signals a message if the condition is false.</p>

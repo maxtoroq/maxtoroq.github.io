@@ -11,7 +11,7 @@ the page is regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:attribute</span>
   <b>name</b> = { <i title="A qualified name. Unprefixed names are in the null namespace.">qname</i> }
-  <span>value</span>? = @<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>
+  <span>value</span>? = <i title="Expression.">expression</i>
   <span>namespace</span>? = { <i>uri</i> }
   <span>separator</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
