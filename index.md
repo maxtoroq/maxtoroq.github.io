@@ -15,9 +15,8 @@ Programming is hard because our tools are bad. Even new technologies are based o
 
 ## Blog
 
-{% for post in site.posts reverse limit:2 %}
-- [{{post.title}}]({{post.url}})
-{% endfor %}
+{% for post in site.posts reverse limit:2 %}- [{{post.title}}]({{post.url}})
+{% endfor %}- [more...](/p/archive.html)
 
 <small>This site is sponsored by ANATR - Ana Trujillo Emparedados y helados</small>
 
