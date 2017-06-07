@@ -1,8 +1,7 @@
 ---
 title: Archive
+feed: "/feed.xml"
 ---
-{% assign page.feed = site.feed %}
-
 <a href="{{ page.feed }}">feed</a>
 
 {% for post in site.posts reverse %}
@@ -11,13 +10,13 @@ title: Archive
    {% unless year == this_year %}
       {% assign year = this_year %}
          {% unless forloop.first %}
-            </ul>
+</ul>
 	 {% endunless %}
-      <h2>{{ date | date: "%Y" }}</h2>
-      <ul>
+<h2>{{ date | date: "%Y" }}</h2>
+<ul>
    {% endunless %}
-   <li>
-      <a href="{{ post.url }}">{{post.title}}</a>
-   </li>
+<li>
+   <a href="{{ post.url }}">{{post.title}}</a>
+</li>
 {% endfor %}
 </ul>
