@@ -4,7 +4,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
    <link href="/css/site.css" rel="stylesheet"/>
-   <link href="{{ site.feed }}" rel="alternate" type="application/atom+xml"/>
+   {% if page.feed %}
+   <link href="{{ page.feed }}" rel="alternate" type="application/atom+xml"/>
+   {% endif %}
    {% include analytics.html %}
 </head>
 <body>
