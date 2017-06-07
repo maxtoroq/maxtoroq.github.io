@@ -13,7 +13,13 @@ Programming is hard because our tools are bad. Even new technologies are based o
 - [DbExtensions](/DbExtensions/)
 - [more...](https://github.com/maxtoroq)
 
-This site is sponsored by ANATR - Ana Trujillo Emparedados y helados
+## Blog
+
+{% for post in site.posts reverse limit:2 %}
+- [{{post.title}}]({{post.url}})
+{% endfor %}
+
+<small>This site is sponsored by ANATR - Ana Trujillo Emparedados y helados</small>
 
 <p style="float: right; white-space: pre; line-height: initial; font-family: sans-serif; color: silver">
 (\__/)
