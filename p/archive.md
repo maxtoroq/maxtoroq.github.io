@@ -3,6 +3,8 @@ title: Archive
 ---
 {% assign page.feed = site.feed %}
 
+<a href="{{ page.feed }}">feed</a>
+
 {% for post in site.posts reverse %}
    {% capture date %}{{ post.date }}{% endcapture %}
    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
