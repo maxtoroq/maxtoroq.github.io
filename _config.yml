@@ -1,7 +1,6 @@
 title: maxtoroq
 author: Max Toro Q.
 url: http://maxtoroq.github.io
-feed: /feed.xml
 timezone: America/Santiago
 permalink: /:year/:month/:title.html
 
