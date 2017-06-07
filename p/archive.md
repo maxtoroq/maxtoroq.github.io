@@ -9,10 +9,10 @@ title: Archive
    {% capture date %}{{ post.date }}{% endcapture %}
    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
    {% unless year == this_year %}
-	   {% assign year = this_year %}
-	   {% unless forloop.first %}
-		   </ul>
-	   {% endunless %}
+      {% assign year = this_year %}
+         {% unless forloop.first %}
+            </ul>
+	 {% endunless %}
       <h2>{{ date | date: "%Y" }}</h2>
       <ul>
    {% endunless %}
