@@ -1,0 +1,59 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="489px" height="369px" viewBox="0 0 489 369" style="">
+   <defs>
+      <path fill="rgb(51,102,153)" stroke="rgb(51,102,153)" d="M 5,-5 L 0,0 L 5,5 Z" fill-opacity="1" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" id="ygc124_0"/>
+   </defs>
+   <g style="pointer-events:visiblePainted" transform="translate(788.5 556.5)" image-rendering="auto" shape-rendering="auto">
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -710.5,-510 L -710.5,-482.75" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(0 -0.75 0.75 0 -710.5 -479)" style="pointer-events: none;"/>
+      </g>
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -710.5,-431.5 L -710.5,-404.25" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(0 -0.75 0.75 0 -710.5 -400.5)" style="pointer-events: none;"/>
+      </g>
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -655.3,-376.25 L -608.25,-376.25" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(-0.75 0 0 -0.75 -604.5 -376.25)" style="pointer-events: none;"/>
+      </g>
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -503.5,-376.25 L -475.25,-376.25" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(-0.75 0 0 -0.75 -471.5 -376.25)" style="pointer-events: none;"/>
+      </g>
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -401.5,-353 L -401.5,-321.5" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(0 -0.75 0.75 0 -401.5 -317.75)" style="pointer-events: none;"/>
+      </g>
+      <g>
+         <path fill="none" stroke="rgb(51,102,153)" d="M -401.5,-270.25 L -401.49999999999994,-238.75" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"/>
+         <use xlink:href="#ygc124_0" transform="matrix(-1.35341e-15 -0.75 0.75 -1.35341e-15 -401.5 -235)" style="pointer-events: none;"/>
+      </g>
+      <path fill="rgb(200,200,200)" stroke="rgb(0,0,0)" d="M 31.200000000000003,0 L 156,0 L 124.80000000000001,46.5 L 0,46.5 Z" fill-opacity="1" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="translate(-788.5 -556.5)"/>
+      <rect fill="rgb(255,158,242)" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" stroke-miterlimit="10" fill-opacity="1" height="46.5" y="-478" x="-773.5" width="126"/>
+      <path fill="rgb(200,200,200)" stroke="rgb(0,0,0)" d="M 27.6,0 L 138,0 L 110.4,46.5 L 0,46.5 Z" fill-opacity="1" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="translate(-779.5 -399.5)"/>
+      <rect fill="rgb(161,236,139)" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill-opacity="1" height="46.5" y="-399.5" x="-603.5" width="100"/>
+      <path fill="rgb(200,200,200)" stroke="rgb(0,0,0)" d="M 27.6,0 L 138,0 L 110.4,46.5 L 0,46.5 Z" fill-opacity="1" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="translate(-470.5 -399.5)"/>
+      <rect fill="rgb(255,158,242)" stroke="rgb(0,0,0)" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill-opacity="1" height="46.5" y="-316.75" x="-454.5" width="106"/>
+      <path fill="rgb(200,200,200)" stroke="rgb(0,0,0)" d="M 40.800000000000004,0 L 204,0 L 163.20000000000002,46.5 L 0,46.5 Z" fill-opacity="1" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" transform="translate(-503.5 -234)"/>
+      <g transform="translate(-764.8274264292724 -539.96875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">XCST source (XML)</text>
+      </g>
+      <g transform="translate(-753.2576967267421 -461.46875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">XCST Compiler</text>
+      </g>
+      <g transform="translate(-758.2880139887118 -382.96875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">C# source (class)</text>
+      </g>
+      <g transform="translate(-588.2091891075906 -382.96875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">C# Compiler</text>
+      </g>
+      <g transform="translate(-443.25163327434814 -382.96875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">.NET Assembly</text>
+      </g>
+      <g transform="translate(-445.263760179136 -300.21875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">XCST Evaluator</text>
+      </g>
+      <g transform="translate(-472.93050511996915 -217.46875)">
+         <text font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-anchor="start" fill="rgb(0,0,0)" fill-opacity="1" dy="1em" transform="translate(0 0)">Result document or object</text>
+      </g>
+   </g>
+</svg>
