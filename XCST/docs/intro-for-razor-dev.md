@@ -54,7 +54,7 @@ Because sometimes you need to use curly braces in content such as CSS and JavaSc
 
 Value templates always work for attribute values. To output curly braces you have to double them.
 
-An alternative to value templates is the `c:value-of` instruction.
+An alternative to value templates is the [`c:value-of`](../c/value-of.html) instruction.
 
 ```xml
 <c:value-of value='DateTime.Now'/>
@@ -87,7 +87,7 @@ In XCST you can mix instructions with markup.
 
 Script blocks
 -------------
-There's no need to use instructions if you can express it in C#, use `c:script` to put code anywhere you need it.
+There's no need to use instructions if you can express it in C#, use [`c:script`](../c/script.html) to put code anywhere you need it.
 
 ```xml
 <c:script>
@@ -113,7 +113,7 @@ Razor has several tricks to work with attributes. For instance, in the following
 <div class="@className"></div>
 ```
 
-In XCST you have to use the `c:attribute` instruction to conditionally output an attribute.
+In XCST you have to use the [`c:attribute`](../c/attribute.html) instruction to conditionally output an attribute.
 
 ```xml
 <div>
@@ -135,7 +135,7 @@ If `isChecked` evaluates to `false` the attribute is omitted. If its `true`, the
 <input type="checkbox" checked/>
 ```
 
-In XCST, like in the previous example, use `c:attribute` to conditionally output an attribute.
+In XCST, like in the previous example, use [`c:attribute`](../c/attribute.html) to conditionally output an attribute.
 
 ```xml
 <input type='checkbox'>
@@ -229,7 +229,7 @@ In Razor:
 <!-- User can see this comment -->
 ```
 
-In XCST, XML comments are ignored. To output a comment use the `c:comment` instruction.
+In XCST, XML comments are ignored. To output a comment use the [`c:comment`](../c/comment.html) instruction.
 
 ```xml
 <!-- User cannot see this comment -->
@@ -258,7 +258,7 @@ Instead of putting all code in the body, in Razor you can split a page into seve
 </div>
 ```
 
-In XCST you use `c:template` for the same purpose. To call templates use the `c:call-template` instruction.
+In XCST you use [`c:template`](../c/template.html) for the same purpose. To call templates use the [`c:call-template`](../c/call-template.html) instruction.
 
 ```xml
 <c:template name='form'>
@@ -309,7 +309,7 @@ In Razor you use the `@functions` directive to define methods, fields or any oth
 }
 ```
 
-In XCST you use `c:function` to define a method and `c:variable` to define a field.
+In XCST you use [`c:function`](../c/function.html) to define a method and [`c:variable`](../c/variable.html) to define a field.
 
 ```xml
 <c:variable name='db' value='new MyDatabase()' as='MyDatabase'/>
@@ -491,7 +491,7 @@ If you need to fetch some data, work with URL parameters or handle form postback
 </c:template>
 ```
 
-The `c:next-template` instruction is like `c:call-template`, except you don't specify a name, it calls the template with the same name as the current template in an imported module. On this case it calls `c:initial-template` from our [layout module](#layouts), which in turn calls the `layout` template. It's like calling a base method in C#. We could have called `layout` directly:
+The [`c:next-template`](../c/next-template.html) instruction is like [`c:call-template`](../c/call-template.html), except you don't specify a name, it calls the template with the same name as the current template in an imported module. On this case it calls `c:initial-template` from our [layout module](#layouts), which in turn calls the `layout` template. It's like calling a base method in C#. We could have called `layout` directly:
 
 ```xml
 <c:call-template name='layout'>
@@ -499,13 +499,13 @@ The `c:next-template` instruction is like `c:call-template`, except you don't sp
 </c:call-template>
 ```
 
-On this case it's a matter of personal preference to use `c:next-template` or not. The above code is the equivalent of doing `return View(product);` in an MVC controlller.
+On this case it's a matter of personal preference to use [`c:next-template`](../c/next-template.html) or not. The above code is the equivalent of doing `return View(product);` in an MVC controlller.
 
-The other key here is `tunnel='yes'` on `c:with-param` and `c:param`. First, a couple of things about template parameters.
+The other key here is `tunnel='yes'` on [`c:with-param`](../c/with-param.html) and [`c:param`](../c/param.html). First, a couple of things about template parameters.
 
 Unlike function parameters (which are compiled to actual method parameters), template parameters are bound by name, not position, and are optional by default, unless you declare `required='yes'`. Also like [global variables](#functions-and-global-variables), template parameters can have default values that can be any expression, not just constants, and can even reference other parameters.
 
-When you use `tunnel='yes'` on `c:with-param` it means the template you are calling doesn't require to have that parameter defined. Tunnel parameters are passed *in the background*, so to speak. If the template you are calling calls other templates, tunnel parameters are passed, and so on. That's how we get the `product` parameter to the `content` template, which also needs to declare `tunnel='yes'` on `c:param` for it to work.
+When you use `tunnel='yes'` on [`c:with-param`](../c/with-param.html) it means the template you are calling doesn't require to have that parameter defined. Tunnel parameters are passed *in the background*, so to speak. If the template you are calling calls other templates, tunnel parameters are passed, and so on. That's how we get the `product` parameter to the `content` template, which also needs to declare `tunnel='yes'` on [`c:param`](../c/param.html) for it to work.
 
 In short, template parameters are a huge improvement from Razor's helper parameters, `PageData`, `Page`, `ViewData` and `ViewBag`. It helps you organize your code in a proper functional style.
 
@@ -572,7 +572,7 @@ In Razor you use `RenderPage` or `RenderPartial` to execute another page.
 @{ RenderPartial("~/_MyPartial.cshtml", new ViewDataDictionary { { "foo", "foo" } }); }
 ```
 
-In XCST you use `c:evaluate-package` in conjunction with the `LoadPage` method.
+In XCST you use [`c:evaluate-package`](../c/evaluate-package.html) in conjunction with the `LoadPage` method.
 
 ```xml
 <c:evaluate-package package='LoadPage("~/mypartial.xcst")' global-params='new { foo = "foo" }'/>
