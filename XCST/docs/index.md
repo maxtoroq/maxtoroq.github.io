@@ -3,7 +3,7 @@ title: Documentation
 layout: XCST
 ---
 
-- [Project Overview](project-overview.html)
+- [Project Overview](overview.html)
 - [Installing](installing.html)
 - [XCST Introduction for the Razor Developer](intro-for-razor-dev.html)
 - [Code Samples](https://github.com/maxtoroq/XCST-a/tree/master/samples)
