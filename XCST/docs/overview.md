@@ -14,7 +14,7 @@ Code generation takes an XCST source and produces C# source code. The XCST sourc
 
 Compilation takes the C# source and produces a .NET assembly. This process is **not** implemented by this project, you have to invoke the C# compiler yourself, or use an IDE like Visual Studio. The C# code can be included in your existing project. A reference to the [`Xcst`](installing.html#xcst-package) package is required.
 
-This project provides integration with ASP.NET 4.5+ which includes its own compilation infrastructure. This means that by using the [`Xcst.AspNet`](installing.html) or [`Xcst.Web.Mvc`](installing.html) packages you can simply add XCST modules to your site and these will be compiled by the framework at run-time.
+This project provides integration with ASP.NET which includes its own compilation infrastructure. This means that by using the [`Xcst.AspNet`](installing.html) or [`Xcst.Web.Mvc`](installing.html) packages you can simply add XCST modules to your site and these will be compiled by the framework at run-time.
 
 ## Evaluation
 
