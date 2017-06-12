@@ -8,7 +8,7 @@ The execution of an XCST program consists of three separate processes: code gene
 
 ## Code Generation
 
-Code generation takes an XCST source and produces C# source code. The XCST source is an XML document rooted at [`c:module`](../c/module.html) or [`c:package`](../c/package.html). The [`Xcst.Compiler`](installing.html) package implements this process. The resulting C# code consists of a single class that is a pure C# version of your XCST program.
+Code generation takes an XCST source and produces C# source code. The XCST source is an XML document rooted at [`c:module`](../c/module.html) or [`c:package`](../c/package.html). The [`Xcst.Compiler`](installing.html) package implements this process. The resulting C# code consists of a single class that is a pure C# version of your XCST program. See [Code Generation](code-generation.html).
 
 ## Compilation
 
