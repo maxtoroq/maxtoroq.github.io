@@ -2,16 +2,31 @@
 title: Evaluation
 ---
 
+## API
+
 The evaluation API starts with the `Xcst.XcstEvaluator` class, which provides a fluent interface. See the following example and the comments for guidance:
 
 ```csharp
-XcstEvaluator.Using(new FooPackage()) // pass new instance of compiled package
-   .WithParam("a", 5) // optionally set a global parameter
-   .CallInitialTemplate() // or call a template by name
-   .WithParam("b", 10) // optionally set a template parameter
-   .OutputTo(Console.Out) // specify the output destination (overloads available)
-   .WithParams(new OutputParameters { Indent = true }) // optionally override serialization parameters
-   .Run(); // execute
+// pass new instance of compiled package
+XcstEvaluator.Using(new FooPackage())
+   
+   // optionally set a global parameter
+   .WithParam("a", 5)
+   
+   // call initial template (or CallTemplate("bar"))
+   .CallInitialTemplate()
+   
+   // optionally set a template parameter
+   .WithParam("b", 10)
+   
+   // specify the output destination (overloads available)
+   .OutputTo(Console.Out) 
+   
+   // optionally override serialization parameters
+   .WithParams(new OutputParameters { Indent = true }) 
+   
+   // execute
+   .Run();
 ```
 
 ## Evaluating from XCST
