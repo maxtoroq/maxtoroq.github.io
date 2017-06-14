@@ -6,6 +6,7 @@ layout: XCST
 - [Project Overview](overview.html)
 - [Installing](installing.html)
 - [Code Generation](code-generation.html)
+- [Evaluation](evaluation.html)
 
 Reference
 ---------
