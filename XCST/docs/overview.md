@@ -16,7 +16,7 @@ Compilation takes the C# source and produces a .NET assembly. This process is **
 
 ## Evaluation
 
-Evaluation takes an instance of your compiled class and produces a result document or object. This process is implemented by the [`Xcst`](installing.html) package.
+Evaluation takes an instance of your compiled class and produces a result document or object. This process is implemented by the [`Xcst`](installing.html) package. See [Evaluation](evaluation.html).
 
 ## XCST Web Pages
 
