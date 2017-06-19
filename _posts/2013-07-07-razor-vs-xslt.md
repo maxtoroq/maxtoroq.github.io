@@ -4,6 +4,12 @@ date: 2013-07-07 20:25:00 -0400
 tags: [asp.net mvc, asp.net web pages, razor, xslt]
 ---
 
+<div class="note" markdown="1">
+
+See [XCST][9] for a middle ground between XSLT and Razor.
+
+<div>
+
 Razor and XSLT are both excellent tools. The following table compares their strengths and weaknesses, you decide which capabilities are most important for your particular scenario. Feedback is welcome, and I intend to update this table as both languages evolve.
 
 <table border="1">
@@ -123,3 +129,4 @@ Razor and XSLT are both excellent tools. The following table compares their stre
 [6]: http://www.onenaught.com/posts/8/xslt-in-server-side-web-frameworks
 [7]: https://graef.cc/2012/07/09/RazorSucksXSLTRules.aspx
 [8]: http://guy-murphy.github.io/2014/12/02/why-I-like-XSLT/
+[9]: {{ site.url }}/XCST/
