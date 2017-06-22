@@ -14,7 +14,7 @@ Note that the file contents are not modified in any way. The script cannot have 
 
 ## Error Conditions
 
-It is a compilation error if the `src` attribute is present when the `c:script` element has content.
+It is a compilation error if the `src` attribute is present when the content of the element is non-empty.
 
 ## Examples
 
