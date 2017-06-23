@@ -6,7 +6,7 @@ Sometimes it's convenient to move code to a separate file for better organizatio
 <c:function name='Save' as='bool'>
    <c:param name='input' as='Document'/>
 
-    <c:script src='_Save.csx'/>
+   <c:script src='_Save.csx'/>
 </c:function>
 ```
 
