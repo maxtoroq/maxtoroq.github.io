@@ -4,7 +4,7 @@ To return a value from a function you need to use the [`c:return`](return.html) 
 
 ## Differences with `xsl:function`
 
-As explained above, values must be returned explicitly, there's no implicit output.
+As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
 
 ## See Also
 
