@@ -6,6 +6,61 @@ To return a value from a function you need to use the [`c:return`](return.html) 
 
 As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
 
+## Examples
+
+A function that returns a value from a [`c:script`](script.html) element:
+
+```xml
+<c:function name='Truncate' as='string' visibility='public'>
+   <c:param name='s' as='string'/>
+   <c:param name='maxLength' as='int'/>
+   <c:param name='suffix'>…</c:param>
+
+   <c:script>
+      <![CDATA[
+
+      if (string.IsNullOrEmpty(s)) {
+         return string.Empty;
+      }
+
+      if (s.Length <= maxLength) {
+         return s;
+      }
+
+      return string.Concat(s.Substring(0, maxLength - suffix.Length), suffix);
+      ]]>
+   </c:script>
+</c:function>
+```
+
+A function that uses [`c:return`](return.html) to return a value:
+
+```xml
+<c:function name='MailBody' as='string'>
+   <c:param name='contact' as='Contact'/>
+
+   <c:return>
+      <c:serialize method='html'>
+         <a:model value='contact'>
+            <dl>
+               <a:display>
+                  <a:member-template>
+                     <dt>
+                        <a:display-name/>
+                        <c:text>:</c:text>
+                     </dt>
+                     <dd>
+                        <a:display/>
+                     </dd>
+                  </a:member-template>
+               </a:display>
+            </dl>
+         </a:model>
+      </c:serialize>
+   </c:return>
+</c:function>
+```
+
 ## See Also
 
 - [`c:template`](template.html)
