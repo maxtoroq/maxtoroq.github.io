@@ -294,17 +294,8 @@ In Razor you use the `@functions` directive to define methods, fields or any oth
 
    MyDatabase db = new MyDatabase();
 
-   string Truncate(string s, int maxLength, string suffix = "…") {
-
-      if (string.IsNullOrEmpty(s)) {
-         return string.Empty;
-      }
-
-      if (s.Length <= maxLength) {
-         return s;
-      }
-
-      return string.Concat(s.Substring(0, maxLength - suffix.Length), suffix);
+   Product Edit(object id) {
+      return db.Products.Find(id);
    }
 }
 ```
@@ -314,25 +305,10 @@ In XCST you use [`c:function`](../c/function.html) to define a method and [`c:va
 ```xml
 <c:variable name='db' value='new MyDatabase()' as='MyDatabase'/>
 
-<c:function name='Truncate' as='string'>
-   <c:param name='s' as='string'/>
-   <c:param name='maxLength' as='int'/>
-   <c:param name='suffix' as='string'>…</c:param>
+<c:function name='Edit' as='Product'>
+   <c:param name='id'/>
 
-   <c:script>
-      <![CDATA[
-
-      if (string.IsNullOrEmpty(s)) {
-         return string.Empty;
-      }
-
-      if (s.Length <= maxLength) {
-         return s;
-      }
-
-      return string.Concat(s.Substring(0, maxLength - suffix.Length), suffix);
-      ]]>
-   </c:script>
+   <c:return value='db.Products.Find(id)'/>
 </c:function>
 ```
 
