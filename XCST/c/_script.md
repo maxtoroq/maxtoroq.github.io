@@ -24,16 +24,11 @@ It is a compilation error if the `src` attribute is present when the content of 
       <![CDATA[
       
       int id;
+      Product product;
       
-      if (!int.TryParse(UrlData[0], out id)) {
-         Response.StatusCode = 404;
-         return;
-      }
-      
-      var db = new MyDatabase();
-      var product = db.Products.Find(id);
-      
-      if (product == null) {
+      if (!int.TryParse(UrlData[0], out id)
+         || (product = Edit(id)) == null) {
+
          Response.StatusCode = 404;
          return;
       }
