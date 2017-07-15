@@ -115,7 +115,7 @@ Dependency injection is a burden on the programmer. You cannot just write your p
 
 ### #2. Optimized for content
 
-Whether it's generating web pages or sending XML to a remote API, using XCST means you don't need a two-language code -> template setup, or deal with `TextWriter` or similar APIs that make it hard to visualize what the output will finally look like.
+Whether it's generating web pages or sending XML to a remote API, using XCST means you don't need a two-language *code + template* setup, or deal with `TextWriter` or similar APIs that make it hard to visualize what the output will finally look like.
 
 For more information see the [documentation][1].
 
