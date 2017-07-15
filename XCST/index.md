@@ -27,8 +27,6 @@ WriteStartElement("ul", ""); {
 WriteEndElement();
 ```
 
-The generated code is compatible with `System.Xml.XmlWriter`'s API.
-
 Here's a more complete example of an XCST module:
 
 ```xml
