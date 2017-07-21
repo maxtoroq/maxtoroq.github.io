@@ -18,7 +18,7 @@ When `[c:]transform-text='normalize-space'` is used on an element, descendant te
 
 ## Trim
 
-When `[c:]transform-text='normalize-space'` is used on an element, descendant text nodes are modified by removing leading and trailing whitespace.
+When `[c:]transform-text='trim'` is used on an element, descendant text nodes are modified by removing leading and trailing whitespace.
 
 ## Examples
 
