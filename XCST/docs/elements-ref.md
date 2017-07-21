@@ -38,7 +38,7 @@ name                     | description
 `argument_list`          | A C# [`argument_list`]({{page.csharp_spec_url}}expressions.md#argument-lists)
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
 
-If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) it indicates a white-space separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
+If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) it indicates a whitespace separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
 
 ## Schemas
 
