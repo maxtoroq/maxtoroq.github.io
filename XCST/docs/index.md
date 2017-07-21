@@ -14,6 +14,7 @@ Reference
 - [Standard Attributes](standard-attributes.html)
 - [Reserved Namespaces](reserved-namespaces.html)
 - [Extension Instructions](extension-instructions.html)
+- [Text Transformation](text-transformation.html)
 
 Tutorials
 ---------
