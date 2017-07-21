@@ -28,7 +28,7 @@ the page is regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

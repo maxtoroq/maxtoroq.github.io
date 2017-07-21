@@ -18,7 +18,7 @@ the page is regenerated.
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="try.html"><code>c:try</code></a></dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

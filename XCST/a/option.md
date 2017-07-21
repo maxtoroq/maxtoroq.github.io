@@ -21,7 +21,7 @@ the page is regenerated.
    <dd><a href="list-box.html"><code>a:list-box</code></a></dd>
    <dd><a href="with-options.html"><code>a:with-options</code></a></dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

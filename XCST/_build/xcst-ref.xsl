@@ -155,8 +155,8 @@ the page is regenerated.
       <xsl:variable name="pre-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'pre', 'md'), '.')"/>
       <xsl:variable name="pre-path" select="string-join(('..', $prefix, $pre-file), '/')"/>
 
-      <xsl:variable name="post-file" select="string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'md'), '.')"/>
-      <xsl:variable name="post-path" select="string-join(('..', $prefix, $post-file), '/')"/>
+      <xsl:variable name="post-file" select="if ($example) then '_standard-attributes.md' else string-join((concat('_', local-name-from-QName($name)), (if (position() gt 1) then string(position()) else ()), 'md'), '.')"/>
+      <xsl:variable name="post-path" select="if ($example) then concat('../docs/', $post-file) else string-join(('..', $prefix, $post-file), '/')"/>
 
       <xsl:if test="unparsed-text-available($pre-path)">
          <xsl:text>{% include_relative </xsl:text>
@@ -274,7 +274,10 @@ the page is regenerated.
       </xsl:choose>
 
       <xsl:if test="$attribs">
-         <xsl:element name="{$heading}">Attributes</xsl:element>
+         <xsl:element name="{$heading}">
+            <xsl:attribute name="id" select="'attributes'"/>
+            <xsl:text>Attributes</xsl:text>
+         </xsl:element>
          <div class="table-responsive">
             <table class="ref-attribs">
                <xsl:for-each select="$attribs">

@@ -18,7 +18,7 @@ the page is regenerated.
    <dd><a href="for-each.html"><code>c:for-each</code></a></dd>
    <dd><a href="for-each-group.html"><code>c:for-each-group</code></a></dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

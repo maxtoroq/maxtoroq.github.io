@@ -28,7 +28,7 @@ the page is regenerated.
 <p>Because these attributes may appear on any XCST element, they are not listed in the
    syntax summary of each individual element.
 </p>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
@@ -49,3 +49,5 @@ the page is regenerated.
       </tr>
    </table>
 </div>
+
+{% include_relative _standard-attributes.md %}

@@ -23,7 +23,7 @@ the page is regenerated.
    <dd><a href="evaluate-delegate.html"><code>c:evaluate-delegate</code></a></dd>
    <dd><a href="next-template.html"><code>c:next-template</code></a></dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>

@@ -18,7 +18,7 @@ the page is regenerated.
    <dd><a href="member.html"><code>c:member</code></a></dd>
    <dd><a href="type.html"><code>c:type</code></a></dd>
 </dl>
-<h2>Attributes</h2>
+<h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
