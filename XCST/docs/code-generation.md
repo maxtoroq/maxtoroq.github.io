@@ -37,22 +37,13 @@ function GeneratePackages {
          continue
       }
 
-      $fileStream = [IO.File]::OpenRead($file.FullName)
+      $compiler = $compilerFactory.CreateCompiler()
+      $compiler.LibraryPackage = $true
 
-      try {
+      $xcstResult = $compiler.Compile((New-Object Uri $file.FullName))
 
-         $compiler = $compilerFactory.CreateCompiler()
-         $compiler.LibraryPackage = $true
-
-         $xcstResult = $compiler.Compile($fileStream, (New-Object Uri $file.FullName))
-
-         foreach ($src in $xcstResult.CompilationUnits) {
-            write $src
-         }
-
-      } finally {
-
-         $fileStream.Dispose()
+      foreach ($src in $xcstResult.CompilationUnits) {
+         write $src
       }
    }
 }
