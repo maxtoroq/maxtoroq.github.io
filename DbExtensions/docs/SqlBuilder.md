@@ -197,7 +197,7 @@ WHERE CategoryID IN ({0}, {1}, {2})
 By using the [SQL.List][9] method you can expand a collection of values into a list of parameters, instead of being treated as a single parameter.
 
 <div class="note">
-In <a href="{{ page.repository_url }}/blob/v5/docs/SqlBuilder.md#arrays">v5</a>, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling <a href="{{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md">SQL.List</a>.
+In v5, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling <a href="{{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md">SQL.List</a>.
 </div>
 
 Extending an existing query
