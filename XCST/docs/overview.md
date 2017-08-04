@@ -16,6 +16,6 @@ The evaluation process takes an instance of your compiled package and produces a
 
 ## ASP.NET
 
-This project provides integration with ASP.NET which includes its own build infrastructure. By using the `Xcst.AspNet` NuGet package you can simply add XCST pages to your site and the framework takes care of code generation and compilation at run-time.
+Taking advantage of ASP.NET's extensible build infrastructure, you can use XCST for web application development. The framework takes care of code generation and compilation at run-time. Compiled packages inherit a base class that provide access to HTTP objects, with properties like `Request`, `Response`, `Context`, `Session`, etc.
 
-For legacy projects you can use the `Xcst.Web.Mvc` NuGet package which implements an XCST view engine for ASP.NET MVC.
+Additionally, you can use a set of extension instructions know as *the application extension*. These are based on the HTML helpers from ASP.NET MVC, and can greatly simplify the development of web forms.
