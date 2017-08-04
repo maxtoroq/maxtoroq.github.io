@@ -69,4 +69,6 @@ try {
 
 When you build your project a `xcst.generated.cs` file will be generated. This file will include the code of all the library packages in any subdirectory starting from the location of the powershell script.
 
-The last step is to add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
+Next, add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
+
+Lastly, make sure your project references the `Xcst` NuGet package.
