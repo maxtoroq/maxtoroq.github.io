@@ -4,7 +4,7 @@ title: Project Overview
 
 XCST programs are called **packages** (not to be confused with NuGet packages). Packages are XML documents rooted at [`c:module`](../c/module.html) or [`c:package`](../c/package.html).
 
-The execution of a package consists of three separate processes: [code generation](code-generation.html), [compilation](compilation.html) and [evaluation](evaluation.html).
+The execution of a package consists of three separate processes: [code generation](code-generation.html), compilation and [evaluation](evaluation.html).
 
 ![](xcst-flow.svg)
 
