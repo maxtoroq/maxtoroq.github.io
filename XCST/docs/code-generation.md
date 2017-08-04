@@ -2,8 +2,6 @@
 title: Code Generation
 ---
 
-The code generation process takes an XCST source and produces C# source code. The resulting C# code consists of a single class that is a pure C# version of your XCST program.
-
 To get started with code generation [install](installing.html) the `Xcst.Compiler` NuGet package.
 
 ## MSBuild
