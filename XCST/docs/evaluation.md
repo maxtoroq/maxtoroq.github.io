@@ -4,7 +4,7 @@ title: Evaluation
 
 The evaluation process takes an instance of your compiled class and produces a result document or object.
 
-To get started with evaluation [install](installing.html) the `Xcst` package.
+To get started with evaluation [install](installing.html) the `Xcst` NuGet package.
 
 ## API
 
