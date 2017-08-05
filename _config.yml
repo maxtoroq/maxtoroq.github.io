@@ -72,6 +72,7 @@ defaults:
          type: page
       values:
          layout: XCST-docs
+         edit_link: true
    -
       scope:
          path: "XCST/c"
@@ -79,6 +80,7 @@ defaults:
       values:
          layout: XCST-docs
          element_ref: true
+         edit_link: true
    -
       scope:
          path: "XCST/a"
@@ -86,3 +88,4 @@ defaults:
       values:
          layout: XCST-docs
          element_ref: true
+         edit_link: true
