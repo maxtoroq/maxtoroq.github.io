@@ -67,7 +67,7 @@ try {
 </PropertyGroup>
 ```
 
-When you build your project a `xcst.generated.cs` file will be generated. This file will include the code of all the library packages in any subdirectory starting from the location of the powershell script.
+When you build your project a `xcst.generated.cs` file will be generated. This file will include the code of all the [named packages](..\c\package.html#named-packages) in any subdirectory starting from the location of the powershell script.
 
 Next, add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
 
