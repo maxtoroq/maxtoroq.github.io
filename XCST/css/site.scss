@@ -13,6 +13,12 @@ body > header {
    }
 }
 
+body > footer {
+   .edit {
+      float: right;
+   }
+}
+
 div.ref-element-syntax {
    > .highlight {
       background-color: #ffe6ff;
