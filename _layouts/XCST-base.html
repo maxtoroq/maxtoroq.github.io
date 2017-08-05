@@ -25,7 +25,7 @@
          {% if page.edit_link %}
             {% if page.element_ref %}
                {% assign path_parts = page.path | split: '/' %}
-               {% assign new_path = path_parts | pop | push: (path_parts | last | prepend: '_') | join: '/' %}
+               {% assign new_path = (path_parts | pop | push: (path_parts | last | prepend: '_')) | join: '/' %}
             {% endif %}
             <a class="edit" href="{{ site.github.repository_url }}/blob/master/{% if new_path %}{{ new_path }}{% else %}{{ page.path }}{% endif %}">Edit Page</a>
          {% endif %}
