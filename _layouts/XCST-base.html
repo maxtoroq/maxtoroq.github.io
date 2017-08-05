@@ -20,7 +20,12 @@
       {{ content }}
    </div>
    <footer>
-      <div class="container">&copy; {{ site.author }}</div>
+      <div class="container">
+         &copy; {{ site.author }}
+         {% if page.edit_link %}
+         <a class="edit" href="{{ site.github.repository_url }}{{ page.path }}">Edit Page</a>
+         {% endif %}
+      </div>
    </footer>
 </body>
 </html>
