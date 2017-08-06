@@ -6,7 +6,7 @@ The `[c:]transform-text` [standard attribute](standard-attributes.html) can be u
 
 Normalization is performed at compile-time, unless the text node is a text value template, in which case normalization is performed at run-time **after** the value template is evaluated. 
 
-Normalization affects text nodes children of elements whose content model is sequence constructor, it does not affect other text nodes, e.g. text in a [`c:script`](../c/script.html) element.
+Normalization affects text nodes children of elements whose content model is sequence constructor (including literal result elements), it does not affect other text nodes, e.g. text in a [`c:script`](../c/script.html) element.
 
 ## None
 
