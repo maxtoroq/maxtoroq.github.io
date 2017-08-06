@@ -23,7 +23,7 @@
       <div class="container">
          &copy; {{ site.author }}
          {% if page.edit_link %}
-            {% if page.element_ref %}
+            {% if page.element_ref or page.path == 'XCST/docs/standard-attributes.md' %}
                {% assign path_parts = page.path | split: '/' %}
                {% assign new_last = path_parts | last | prepend: '_' %}
                {% assign new_parts = path_parts | pop | push: new_last %}
