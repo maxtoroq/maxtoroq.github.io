@@ -187,74 +187,63 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
          </pre>
       </div>
 
-      <xsl:choose>
-         <xsl:when test="$example">
+      <xsl:if test="not($example)">
+         <xsl:if test="ann:documentation">
             <p>
-               This page details the <b>standard attributes</b> that may appear on any XCST element. The above example defines a non-existent element <code>c:example-element</code>.
+               <xsl:value-of select="ann:documentation"/>
             </p>
-            <p>
-               These attributes may also appear on a literal result element, but in this case, to distinguish them from user-defined attributes, the names of the attributes are in the XCST namespace. They are thus typically written as <code>c:version</code>, <code>c:extension-element-prefixes</code>, <code>c:expand-text</code>, etc.
-            </p>
-            <p>Because these attributes may appear on any XCST element, they are not listed in the syntax summary of each individual element.</p>
-         </xsl:when>
-         <xsl:otherwise>
-            <xsl:if test="ann:documentation">
-               <p>
-                  <xsl:value-of select="ann:documentation"/>
-               </p>
-            </xsl:if>
-            <dl>
-               <xsl:if test="not(empty($categories))">
-                  <dt>
-                     <b>Category</b>
-                  </dt>
-                  <xsl:for-each select="$categories">
-                     <dd>
-                        <i>
-                           <xsl:value-of select="."/>
-                        </i>
-                     </dd>
-                  </xsl:for-each>
-               </xsl:if>
+         </xsl:if>
+         <dl>
+            <xsl:if test="not(empty($categories))">
                <dt>
-                  <b>Permitted parent elements</b>
+                  <b>Category</b>
                </dt>
-               <xsl:choose>
-                  <xsl:when test="empty($parents)">
-                     <dd>None</dd>
-                  </xsl:when>
-                  <xsl:otherwise>
-                     <xsl:for-each-group select="$parents" group-by="if (self::rng:element) then string(ref:name(.)) else ''">
-                        <xsl:sort select="boolean(self::rng:element)" order="descending"/>
-                        <xsl:sort select="current-grouping-key()"/>
+               <xsl:for-each select="$categories">
+                  <dd>
+                     <i>
+                        <xsl:value-of select="."/>
+                     </i>
+                  </dd>
+               </xsl:for-each>
+            </xsl:if>
+            <dt>
+               <b>Permitted parent elements</b>
+            </dt>
+            <xsl:choose>
+               <xsl:when test="empty($parents)">
+                  <dd>None</dd>
+               </xsl:when>
+               <xsl:otherwise>
+                  <xsl:for-each-group select="$parents" group-by="if (self::rng:element) then string(ref:name(.)) else ''">
+                     <xsl:sort select="boolean(self::rng:element)" order="descending"/>
+                     <xsl:sort select="current-grouping-key()"/>
 
-                        <dd>
-                           <xsl:choose>
-                              <xsl:when test="self::rng:element">
-                                 <a href="{ref:element-page(.)}">
-                                    <code>
-                                       <xsl:value-of select="ref:name(.)"/>
-                                    </code>
-                                 </a>
-                              </xsl:when>
-                              <xsl:otherwise>
-                                 <xsl:text>Any XCST element whose content model is </xsl:text>
-                                 <i>
-                                    <xsl:value-of select="@name"/>
-                                 </i>
-                              </xsl:otherwise>
-                           </xsl:choose>
-                        </dd>
+                     <dd>
+                        <xsl:choose>
+                           <xsl:when test="self::rng:element">
+                              <a href="{ref:element-page(.)}">
+                                 <code>
+                                    <xsl:value-of select="ref:name(.)"/>
+                                 </code>
+                              </a>
+                           </xsl:when>
+                           <xsl:otherwise>
+                              <xsl:text>Any XCST element whose content model is </xsl:text>
+                              <i>
+                                 <xsl:value-of select="@name"/>
+                              </i>
+                           </xsl:otherwise>
+                        </xsl:choose>
+                     </dd>
 
-                        <xsl:if test="self::rng:define[@name = 'sequence-constructor']">
-                           <dd>Any literal result element</dd>
-                        </xsl:if>
-                     </xsl:for-each-group>
-                  </xsl:otherwise>
-               </xsl:choose>
-            </dl>
-         </xsl:otherwise>
-      </xsl:choose>
+                     <xsl:if test="self::rng:define[@name = 'sequence-constructor']">
+                        <dd>Any literal result element</dd>
+                     </xsl:if>
+                  </xsl:for-each-group>
+               </xsl:otherwise>
+            </xsl:choose>
+         </dl>
+      </xsl:if>
 
       <xsl:if test="$attribs">
          <xsl:element name="{$heading}">
