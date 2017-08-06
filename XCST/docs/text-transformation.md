@@ -2,7 +2,7 @@
 title: Text Transformation
 ---
 
-The `[c:]transform-text` [standard attribute](standard-attributes.html) can be used to normalize text nodes in an XCST module. This can be useful when whitespace is used on text only for readability, or when text is included from an external file. This attribute affects descendant text nodes, and can specified on any element to override an attribute specified in an ancestor element.
+The `[c:]transform-text` [standard attribute](standard-attributes.html) can be used to normalize text nodes in an XCST module. This can be useful when whitespace is used on text only for readability, or when text is included from an external file. This attribute affects descendant text nodes, and can be specified on any element to override an attribute specified in an ancestor element.
 
 Normalization is performed at compile-time, unless the text node is a text value template, in which case normalization is performed at run-time **after** the value template is evaluated. 
 
