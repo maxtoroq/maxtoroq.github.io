@@ -10,7 +10,7 @@ Sometimes it's convenient to move code to a separate file for better organizatio
 </c:function>
 ```
 
-Note that the file contents are not modified in any way. The script cannot have `using` directives, the containing module must use [`c:use-functions`](use-functions.html) for any namespace required by the script.
+Note that the file contents are not modified in any way. The script cannot have `using` directives, the containing module must use [`c:import-namespace`](import-namespace.html) for any namespace required by the script.
 
 ## Error Conditions
 

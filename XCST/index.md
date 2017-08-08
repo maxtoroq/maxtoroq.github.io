@@ -33,7 +33,7 @@ Here's a more complete example of an XCST module:
 <?xml version="1.0" encoding="utf-8"?>
 <c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
 
-   <c:use-functions in='System.Linq'/>
+   <c:import-namespace ns='System.Linq'/>
 
    <c:output method='html' indent='yes'/>
 

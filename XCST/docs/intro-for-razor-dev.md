@@ -37,7 +37,7 @@ An XCST page has no body, only declarations. You can define a template named `c:
 <?xml version="1.0" encoding="utf-8"?>
 <c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
 
-   <c:use-functions in='System'/>
+   <c:import-namespace ns='System'/>
 
    <c:template name='c:initial-template' expand-text='yes'>
       Hello World, it's {DateTime.Now}

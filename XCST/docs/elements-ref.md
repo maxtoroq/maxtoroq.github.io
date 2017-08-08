@@ -33,7 +33,7 @@ name                     | description
 `expression`             | A C# [`expression`]({{page.csharp_spec_url}}expressions.md#expression)
 `identifier`             | A C# [`identifier`]({{page.csharp_spec_url}}lexical-structure.md#identifiers)
 `type_name`              | A C# [`type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
-`namespace_or_type_name` | A C# [`namespace_or_type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
+`namespace_name`         | A C# [`namespace_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
 `boolean_expression`     | A C# [`boolean_expression`]({{page.csharp_spec_url}}expressions.md#boolean-expressions)
 `argument_list`          | A C# [`argument_list`]({{page.csharp_spec_url}}expressions.md#argument-lists)
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
