@@ -5,7 +5,7 @@ While [`c:template`](template.html) is optimized for content (markup, text), `c:
 feature | `c:template` | `c:function`
 ------- | ------------ | -----------
 Implicit output | yes | no
-Invocation method | `c:call-template` | C# (e.g. `Foo()`)
+Invocation method | [`c:call-template`](call-template.html) | C# (e.g. `Foo()`)
 Parameter binding | by name | by position
 Tunnel parameters | yes | no
 
