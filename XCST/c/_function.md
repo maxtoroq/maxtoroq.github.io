@@ -2,20 +2,9 @@
 
 To return a value from a function you need to use the [`c:return`](return.html) instruction, or return from code in a [`c:script`](script.html) element. `c:function` is optimized for logic, while [`c:template`](template.html) is optimized for content.
 
-## Error Conditions
+<div class="note eg" markdown="1">
 
-It is a compilation error if there's another `c:function` declaration in the containing module with the same name and number of parameters.
-
-It is a compilation error if a `c:function` declaration has `visibility='abstract'` and the content of the element is non-empty.
-
-## Differences with `xsl:function`
-
-As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
-
-## Examples
-
-A function that returns a value from a [`c:script`](script.html) element:
-
+###### Example: Returning from a [`c:script`](script.html) element
 ```xml
 <c:function name='Truncate' as='string' visibility='public'>
    <c:param name='s' as='string'/>
@@ -39,8 +28,11 @@ A function that returns a value from a [`c:script`](script.html) element:
 </c:function>
 ```
 
-A function that uses [`c:return`](return.html) to return a value:
+</div>
 
+<div class="note eg" markdown="1">
+
+###### Example: Returning with [`c:return`](return.html)
 ```xml
 <c:function name='MailBody' as='string'>
    <c:param name='contact' as='Contact'/>
@@ -66,6 +58,18 @@ A function that uses [`c:return`](return.html) to return a value:
    </c:return>
 </c:function>
 ```
+
+</div>
+
+## Error Conditions
+
+It is a compilation error if there's another `c:function` declaration in the containing module with the same name and number of parameters.
+
+It is a compilation error if a `c:function` declaration has `visibility='abstract'` and the content of the element is non-empty.
+
+## Differences with `xsl:function`
+
+As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
 
 ## See Also
 

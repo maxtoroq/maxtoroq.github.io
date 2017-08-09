@@ -1,6 +1,6 @@
 <div class="note eg" markdown="1">
 
-**Example**
+###### Example
 ```xml
 <c:comment expand-text='yes'>Generated at {DateTime.Now}</c:comment>
 ```
