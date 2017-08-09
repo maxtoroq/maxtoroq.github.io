@@ -31,7 +31,17 @@ table.ref-attribs {
    }
 }
 
-div.note.eg {
-   background: rgba(197, 232, 255, 0.5);
-   border-color: rgba(135, 207, 255, 0.7);
+div.note {
+
+   h6 {
+      font-size: 1em;
+      color: inherit;
+      font-weight: bold;
+      margin: 0 0 1em 0;
+   }
+
+   &.eg {
+      background: rgba(197, 232, 255, 0.5);
+      border-color: rgba(135, 207, 255, 0.7);
+   }
 }
