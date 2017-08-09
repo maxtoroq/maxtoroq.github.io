@@ -40,7 +40,7 @@ function GeneratePackages {
       }
 
       $compiler = $compilerFactory.CreateCompiler()
-      $compiler.LibraryPackage = $true
+      $compiler.NamedPackage = $true
 
       $xcstResult = $compiler.Compile((New-Object Uri $file.FullName))
 
