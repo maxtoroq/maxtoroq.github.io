@@ -1,6 +1,15 @@
-## Returning Values
+## Remarks
 
-To return a value from a function you need to use the [`c:return`](return.html) instruction, or return from code in a [`c:script`](script.html) element. `c:function` is optimized for logic, while [`c:template`](template.html) is optimized for content.
+While [`c:template`](template.html) is optimized for content (markup, text), `c:function` is optimized for logic. Functions can be called from C# code, because it compiles to a regular method. See the table below for more differences.
+
+feature | `c:template` | `c:function`
+------- | ------------ | -----------
+Implicit output | yes | no
+Invocation method | `c:call-template` | C# (e.g. `Foo()`)
+Parameter binding | by name | by position
+Tunnel parameters | yes | no
+
+Because functions don't have an implicit output, to return a value you need to use the [`c:return`](return.html) instruction, or return from code in a [`c:script`](script.html) element.
 
 <div class="note eg" markdown="1">
 
@@ -73,4 +82,5 @@ As explained above, values must be returned explicitly, there's no implicit outp
 
 ## See Also
 
+- [Function Parameters](param.html#function-parameters)
 - [`c:template`](template.html)
