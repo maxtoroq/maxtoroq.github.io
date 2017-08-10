@@ -70,15 +70,18 @@ Because functions don't have an implicit output, to return a value you need to u
 
 </div>
 
+<div class="note eg" markdown="1">
+
+###### Note: Differences with `xsl:function`
+As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
+
+</div>
+
 ## Error Conditions
 
 It is a compilation error if there's another `c:function` declaration in the containing module with the same name and number of parameters.
 
 It is a compilation error if a `c:function` declaration has `visibility='abstract'` and the content of the element is non-empty.
-
-## Differences with `xsl:function`
-
-As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
 
 ## See Also
 
