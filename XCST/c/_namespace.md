@@ -1,9 +1,6 @@
-## Error Conditions
+<div class="note eg" markdown="1">
 
-It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
-
-## Examples
-
+###### Example
 ```xml
 <person>
    <c:if test='associateSchema'>
@@ -14,3 +11,9 @@ It is a compilation error if the `value` attribute is present when the content o
    ...
 </person>
 ```
+
+</div>
+
+## Error Conditions
+
+It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
