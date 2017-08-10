@@ -23,6 +23,13 @@ absent | present | empty | Local variables are not initialized. Global variables
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (see next section).
 absent | present | present | Value is obtained by evaluating the sequence constructor, casted to the type required by the `as` attribute.
 
+<div class="note" markdown="1">
+
+###### Note: Differences with `xsl:variable`
+`c:variable` does not support qualified names. `c:variable` is mutable and can be left uninitialized. No implicit zero-length `string` or document node. Text nodes are compiled to `string`, which make `string` a first-class citizen in XCST. Parentless text nodes don't exist in XCST.
+
+</div>
+
 ## Type Inference from Content
 
 When the `as` attribute is omitted, XCST tries to infer the type of the variable from the content. If not successful, the fallback type is `object[]`.
@@ -63,7 +70,3 @@ Temporary trees are currently not supported, but planned for the future. However
 It is a compilation error if the `visibility` attribute is used on a local variable.
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
-
-## Differences with `xsl:variable`
-
-`c:variable` does not support qualified names. `c:variable` is mutable and can be left uninitialized. No implicit zero-length `string` or document node. Text nodes are compiled to `string`, which make `string` a first-class citizen in XCST. Parentless text nodes don't exist in XCST.
