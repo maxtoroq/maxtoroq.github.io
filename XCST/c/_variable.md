@@ -37,9 +37,10 @@ Text node | `string`
 [`c:text`](text.html) | `string`
 [`c:value-of`](value-of.html) | `string`
 
-## Temporary Trees
+<div class="note eg" markdown="1">
 
-Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`](result-document.html)'s `output` attribute, e.g.:
+###### Example: Temporary Trees
+Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`](result-document.html)'s `output` attribute.
 
 ```xml
 <c:variable name='doc' value='new XmlDocument()'/>
@@ -54,6 +55,8 @@ Temporary trees are currently not supported, but planned for the future. However
 <c:assert test='doc.DocumentElement.GetAttribute("bar") == "123"'/>
 <c:assert test='doc.DocumentElement.InnerText == "baz"'/>
 ```
+
+</div>
 
 ## Error Conditions
 
