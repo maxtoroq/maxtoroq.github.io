@@ -1,5 +1,6 @@
-## Examples
+<div class="note eg" markdown="1">
 
+###### Example
 ```xml
 <ol class='carousel-indicators'>
    <c:for-each name='i' in='Enumerable.Range(0, slides.Length)'>
@@ -11,6 +12,8 @@
    </c:for-each>
 </ol>
 ```
+
+</div>
 
 ## See Also
 
