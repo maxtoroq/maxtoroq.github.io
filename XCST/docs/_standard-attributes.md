@@ -1,4 +1,6 @@
 
+## Remarks
+
 This page details the **standard attributes** that may appear on any XCST element. The above example defines a non-existent element `c:example-element`.
 
 These attributes may also appear on a literal result element, but in this case, to distinguish them from user-defined attributes, the names of the attributes are in the XCST namespace. They are thus typically written as `c:version`, `c:extension-element-prefixes`, `c:expand-text`, etc.
