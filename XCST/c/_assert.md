@@ -16,13 +16,16 @@
 
 </div>
 
+<div class="note" markdown="1">
+
+###### Note: Differences with `xsl:assert`
+Unlike `xsl:assert`, `c:assert` does not guarantee that an exception will be thrown. An assertion can fail silently without interrupting the evaluation of the containing sequence constructor.
+
+</div>
+
 ## Error Conditions
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
-
-## Differences with `xsl:assert`
-
-Unlike `xsl:assert`, `c:assert` does not guarantee that an exception will be thrown. An assertion can fail silently without interrupting the evaluation of the containing sequence constructor.
 
 ## See Also
 
