@@ -70,7 +70,7 @@ Because functions don't have an implicit output, to return a value you need to u
 
 </div>
 
-<div class="note eg" markdown="1">
+<div class="note" markdown="1">
 
 ###### Note: Differences with `xsl:function`
 As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
