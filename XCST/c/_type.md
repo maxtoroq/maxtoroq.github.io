@@ -1,6 +1,7 @@
-## Examples
+<div class="note eg" markdown="1">
 
-If you omit `as` attribute on [`c:member`](member.html) you can define child members for a russian doll style of type definition:
+###### Example: Russian Doll Type Definition
+If you omit `as` attribute on [`c:member`](member.html) you can define child members for a russian doll style of type definition.
 
 ```xml
 <c:type name='Order'>
@@ -16,6 +17,8 @@ If you omit `as` attribute on [`c:member`](member.html) you can define child mem
    </c:member>
 </c:type>
 ```
+
+</div>
 
 ## See Also
 
