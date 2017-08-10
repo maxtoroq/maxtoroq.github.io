@@ -1,9 +1,7 @@
-## Error Conditions
 
-It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
+<div class="note eg" markdown="1">
 
-## Examples
-
+###### Example
 ```xml
 <input type='checkbox'>
    <c:if test='isChecked'>
@@ -11,6 +9,12 @@ It is a compilation error if the `value` attribute is present when the content o
    </c:if>
 </input>
 ```
+
+</div>
+
+## Error Conditions
+
+It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
 ## See Also
 
