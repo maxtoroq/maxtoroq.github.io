@@ -1,6 +1,7 @@
-## The `src` Attribute
+<div class="note eg" markdown="1">
 
-Sometimes it's convenient to move code to a separate file for better organization, or for better tooling support (e.g. code completion). You can use the `src` attribute to include the code in the referenced file in place where the `c:script` element appears. E.g.:
+###### Example: Implementing a Function in a Separate Script
+Sometimes it's convenient to move code to a separate file for better organization, or for better tooling support (e.g. code completion).
 
 ```xml
 <c:function name='Save' as='bool'>
@@ -12,12 +13,11 @@ Sometimes it's convenient to move code to a separate file for better organizatio
 
 Note that the file contents are not modified in any way. The script cannot have `using` directives, the containing module must use [`c:import-namespace`](import-namespace.html) for any namespace required by the script.
 
-## Error Conditions
+</div>
 
-It is a compilation error if the `src` attribute is present when the content of the element is non-empty.
+<div class="note eg" markdown="1">
 
-## Examples
-
+###### Example: Fetching Data
 ```xml
 <c:template name='c:initial-template'>
    <c:script>
@@ -39,6 +39,12 @@ It is a compilation error if the `src` attribute is present when the content of 
    </c:next-template>
 </c:template>
 ```
+
+</div>
+
+## Error Conditions
+
+It is a compilation error if the `src` attribute is present when the content of the element is non-empty.
 
 ## See Also
 
