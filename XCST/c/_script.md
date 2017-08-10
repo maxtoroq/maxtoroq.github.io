@@ -1,7 +1,7 @@
 <div class="note eg" markdown="1">
 
 ###### Example: Implementing a Function in a Separate Script
-Sometimes it's convenient to move code to a separate file for better organization, or for better tooling support (e.g. code completion).
+It is sometimes convenient to move code to a separate file for better organization, or for better tooling support (e.g. code completion). The following function references an external script which contains the body of the function.
 
 ```xml
 <c:function name='Save' as='bool'>
@@ -17,7 +17,7 @@ Note that the file contents are not modified in any way. The script cannot have 
 
 <div class="note eg" markdown="1">
 
-###### Example: Fetching Data
+###### Example: Fetching Data to Pass to Other Templates
 ```xml
 <c:template name='c:initial-template'>
    <c:script>
