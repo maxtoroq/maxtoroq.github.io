@@ -4,7 +4,7 @@ The concrete type of a delegate is currently not part of the public API. However
 
 <div class="note eg" markdown="1">
 
-###### Example: Creating and using a delegate
+###### Example: Creating and Using a Delegate
 ```xml
 <c:variable name='pagerItem'>
    <c:delegate>
@@ -29,7 +29,7 @@ The concrete type of a delegate is currently not part of the public API. However
 
 <div class="note eg" markdown="1">
 
-###### Example: Delegate parameter
+###### Example: Delegate Parameter
 To accept a delegate as a parameter you can use the [`Delegate`](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type.
 
 ```xml
