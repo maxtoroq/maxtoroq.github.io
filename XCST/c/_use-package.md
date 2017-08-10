@@ -1,6 +1,7 @@
 
-## Examples
+<div class="note eg" markdown="1">
 
+###### Example
 ```xml
 <c:use-package name='com.example.LayoutPackage'>
    <c:template name='content' expand-text='yes'>
@@ -9,3 +10,5 @@
    </c:template>
 </c:use-package>
 ```
+
+</div>
