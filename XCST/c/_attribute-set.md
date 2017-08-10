@@ -1,7 +1,7 @@
 
 <div class="note eg" markdown="1">
 
-###### Example: Using an attribute set
+###### Example: Using an Attribute Set
 The following attribute set:
 
 ```xml
