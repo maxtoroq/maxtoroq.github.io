@@ -1,5 +1,6 @@
-## Examples
+<div class="note eg" markdown="1">
 
+###### Example
 ```xml
 <c:choose>
    <c:when test='IsPost'>
@@ -10,6 +11,8 @@
    </c:otherwise>
 </c:choose>
 ```
+
+</div>
 
 ## See Also
 
