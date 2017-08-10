@@ -13,7 +13,7 @@ Because functions don't have an implicit output, to return a value you need to u
 
 <div class="note eg" markdown="1">
 
-###### Example: Returning from a [`c:script`](script.html) element
+###### Example: Returning from a [`c:script`](script.html) Element
 ```xml
 <c:function name='Truncate' as='string' visibility='public'>
    <c:param name='s' as='string'/>
