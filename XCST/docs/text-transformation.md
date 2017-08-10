@@ -16,21 +16,10 @@ Normalization can be disabled using `[c:]transform-text='none'`, which is the de
 
 When `[c:]transform-text='normalize-space'` is used on an element, descendant text nodes are modified by removing leading and trailing whitespace, and sequences of internal whitespace are reduced to a single space character.
 
-## Trim
+<div class="note eg" markdown="1">
 
-When `[c:]transform-text='trim'` is used on an element, descendant text nodes are modified by removing leading and trailing whitespace.
-
-## Examples
-
-The following example uses `trim` normalization on an included text node, to avoid outputting the leading and trailing whitespace of the code indentation:
-
-```xml
-<script c:transform-text='trim'>
-   <xi:include href='js/global.min.js' parse='text'/>
-</script>
-```
-
-The following example uses `normalize-space` normalization for minification purposes, which has the desired effect as long as the text does not contain significant whitespace:
+###### Example: CSS Minification
+The following example uses `normalize-space` normalization for minification purposes, which has the desired effect as long as the text does not contain significant whitespace.
 
 ```xml
 <style c:transform-text='normalize-space'>
@@ -40,5 +29,23 @@ The following example uses `normalize-space` normalization for minification purp
       text-decoration: none;
    }
    ]]>
+</style>
+```
+
+</div>
+
+## Trim
+
+When `[c:]transform-text='trim'` is used on an element, descendant text nodes are modified by removing leading and trailing whitespace.
+
+<div class="note eg" markdown="1">
+
+###### Example: Trim Indentation Before and After an Included Text Node
+The following example uses `trim` normalization on an included text node, to avoid outputting the leading and trailing whitespace of the code indentation.
+
+```xml
+<script c:transform-text='trim'>
+   <xi:include href='js/global.min.js' parse='text'/>
 </script>
 ```
+</div>
