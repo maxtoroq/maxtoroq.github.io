@@ -40,7 +40,7 @@ When `[c:]transform-text='trim'` is used on an element, descendant text nodes ar
 
 <div class="note eg" markdown="1">
 
-###### Example: Trim Indentation Before and After an Included Text Node
+###### Example: Removing Indentation Before and After an Included Text Node
 The following example uses `trim` normalization on an included text node, to avoid outputting the leading and trailing whitespace of the code indentation.
 
 ```xml
