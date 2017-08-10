@@ -1,6 +1,11 @@
 ## Default Grouping
 
-If attributes `group-by` and `group-size` are both omitted, the items themselves are used as grouping key. E.g.:
+If attributes `group-by` and `group-size` are both omitted, the items themselves are used as grouping key.
+
+<div class="note eg" markdown="1">
+
+###### Example: Default Grouping
+The following code:
 
 ```xml
 <c:for-each-group name='group' in='"hello".ToCharArray()' expand-text='yes'>
@@ -8,7 +13,7 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 </c:for-each-group>
 ```
 
-...produces:
+...results in:
 
 ```xml
 <char count="1">h</char>
@@ -17,14 +22,19 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 <char count="1">o</char>
 ```
 
+</div>
+
 ## The `group-by` Attribute
 
 Use the `group-by` attribute to specify a member of the item to use as grouping key.
 
 ## The `group-size` Attribute
 
-Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less. E.g.:
+Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less.
 
+<div class="note eg" markdown="1">
+
+###### Example: Using `group-size`
 ```xml
 <c:for-each-group name='row' in='addressBook' group-size='3'>
    <div class='row'>
@@ -38,6 +48,8 @@ Use the `group-size` attribute to create groups with the same number of items, e
    </div>
 </c:for-each-group>
 ```
+
+</div>
 
 ## Error Conditions
 
