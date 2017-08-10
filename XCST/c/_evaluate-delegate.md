@@ -1,4 +1,4 @@
-## Examples
+## Remarks
 
 See [`c:delegate`](delegate.html) for examples.
 
