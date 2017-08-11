@@ -109,7 +109,7 @@ While mainstream languages like C# allow you to combine objects or functions to 
 
 Dependency injection is a burden on the programmer. You cannot just write your programs, you have to design them. One of the reasons code reuse is generally considered a bad goal is that it leads to complex solutions. Like splitting your program into several classes, each with its own well defined responsibility. Or using a whole set of esoteric functional programming techniques I don't even understand. Or having lots of configuration settings to customize the behavior of your program without having to modify or extend it. Whether it's reusing source code, compiled code, or even copy-and-paste, code reuse would be a lot easier if languages were designed for it. We favor composition over inheritance, while using languages designed for inheritance not composition. It's time for a new paradigm.
 
-**In XCST, code is organized in modules, packages and scripts.** Forget about classes, encapsulation, naming, dependency injection, design patterns and everything that makes programming hard, and code reuse even harder.
+**In XCST, code is organized in modules and packages.** Forget about classes, encapsulation, inheritance, naming, dependency injection, design patterns and everything that makes programming hard, and code reuse even harder.
 
 ### #2. Optimized for content
 
