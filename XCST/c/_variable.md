@@ -31,7 +31,7 @@ content | type
 ------- | ----
 Text node | `string`
 [`c:delegate`](delegate.html) | `System.Delegate` (see [`c:delegate`](delegate.html) for more info)
-[`c:next-function`](next-function.html) | The type of the next function (or error if `void`)
+[`c:next-function`](next-function.html) | The type of the next function
 [`c:object`](object.html) | Inferred by the expression
 [`c:serialize`](serialize.html) | `string`
 [`c:text`](text.html) | `string`
