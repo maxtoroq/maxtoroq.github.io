@@ -6,14 +6,14 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-- [`c:assert`](../c/assert.html) &nbsp;[`c:attribute`](../c/attribute.html) &nbsp;[`c:attribute-set`](../c/attribute-set.html)
+- [`c:array`](../c/array.html) &nbsp;[`c:assert`](../c/assert.html) &nbsp;[`c:attribute`](../c/attribute.html) &nbsp;[`c:attribute-set`](../c/attribute-set.html)
 - [`c:break`](../c/break.html)
 - [`c:call-template`](../c/call-template.html) &nbsp;[`c:catch`](../c/catch.html) &nbsp;[`c:choose`](../c/choose.html) &nbsp;[`c:comment`](../c/comment.html) &nbsp;[`c:continue`](../c/continue.html)
 - [`c:delegate`](../c/delegate.html)
 - [`c:element`](../c/element.html) &nbsp;[`c:evaluate-delegate`](../c/evaluate-delegate.html) &nbsp;[`c:evaluate-package`](../c/evaluate-package.html)
 - [`c:fallback`](../c/fallback.html) &nbsp;[`c:finally`](../c/finally.html) &nbsp;[`c:for-each`](../c/for-each.html) &nbsp;[`c:for-each-group`](../c/for-each-group.html) &nbsp;[`c:function`](../c/function.html)
 - [`c:if`](../c/if.html) &nbsp;[`c:import`](../c/import.html) &nbsp;[`c:import-namespace`](../c/import-namespace.html)
-- [`c:member`](../c/member.html) &nbsp;[`c:message`](../c/message.html) &nbsp;[`c:metadata`](../c/metadata.html) &nbsp;[`c:module`](../c/module.html)
+- [`c:map`](../c/map.html) &nbsp;[`c:map-entry`](../c/map-entry.html) &nbsp;[`c:member`](../c/member.html) &nbsp;[`c:message`](../c/message.html) &nbsp;[`c:metadata`](../c/metadata.html) &nbsp;[`c:module`](../c/module.html)
 - [`c:namespace`](../c/namespace.html) &nbsp;[`c:next-function`](../c/next-function.html) &nbsp;[`c:next-template`](../c/next-template.html)
 - [`c:object`](../c/object.html) &nbsp;[`c:otherwise`](../c/otherwise.html) &nbsp;[`c:output`](../c/output.html) &nbsp;[`c:override`](../c/override.html)
 - [`c:package`](../c/package.html) &nbsp;[`c:param`](../c/param.html) &nbsp;[`c:processing-instruction`](../c/processing-instruction.html)
