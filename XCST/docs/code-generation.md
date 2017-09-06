@@ -18,6 +18,7 @@ function GeneratePackages {
    $pkgFileExtension = "xcst"
 
    Add-Type -Path ..\..\packages\Saxon-HE.*\lib\net40\saxon9he-api.dll
+   Add-Type -Path ..\..\packages\Newtonsoft.Json.*\lib\net45\Newtonsoft.Json.dll
    Add-Type -Path ..\..\packages\Xcst.*\lib\net45\Xcst.dll
    Add-Type -Path ..\..\packages\Xcst.Compiler.*\lib\net45\Xcst.Compiler.dll
 
