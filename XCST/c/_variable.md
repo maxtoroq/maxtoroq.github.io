@@ -30,7 +30,9 @@ When the `as` attribute is omitted, XCST tries to infer the type of the variable
 content | type
 ------- | ----
 Text node | `string`
+[`c:array`](array.html) | `object`
 [`c:delegate`](delegate.html) | `System.Delegate` (see [`c:delegate`](delegate.html) for more info)
+[`c:map`](map.html) | `object`
 [`c:next-function`](next-function.html) | The type of the next function
 [`c:object`](object.html) | Inferred by the expression
 [`c:serialize`](serialize.html) | `string`
