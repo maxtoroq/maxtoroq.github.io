@@ -1,6 +1,6 @@
 ## Remarks
 
-`c:assert` is compiled into a [`Debug.Assert`](https://msdn.microsoft.com/en-us/library/e63efys0) call.
+`c:assert` is compiled into a [`Debug.Assert`]({{ page.bcl_url }}e63efys0) call.
 
 <div class="note eg" markdown="1">
 

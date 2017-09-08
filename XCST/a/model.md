@@ -13,7 +13,7 @@ regenerated.
   <span>value</span>? = <i title="Expression.">expression</i>
   <span>as</span>? = <i>type_name</i>
   <span>html-field-prefix</span>? = { <i>string</i> }
-  <span>with-params</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> | <a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt;)
+  <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:model&gt;</span></code></pre></div>

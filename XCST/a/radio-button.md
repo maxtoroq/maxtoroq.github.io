@@ -15,7 +15,7 @@ regenerated.
   <span>name</span>? = { <i>string</i> }
   <span>checked</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>html-class</span>? = { <i>string</i> }
-  <span>html-attributes</span>? = @(<a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a> | <a href="https://msdn.microsoft.com/en-us/library/s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="https://msdn.microsoft.com/en-us/library/system.string" title="System.String">String</a>, <a href="https://msdn.microsoft.com/en-us/library/system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
+  <span>html-attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

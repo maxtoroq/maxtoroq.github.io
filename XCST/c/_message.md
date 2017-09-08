@@ -1,6 +1,6 @@
 ## Remarks
 
-`c:message` is compiled into a [`Trace.WriteLine`](https://msdn.microsoft.com/en-us/library/149a051x) call.
+`c:message` is compiled into a [`Trace.WriteLine`]({{ page.bcl_url }}149a051x) call.
 
 ## Error Conditions
 

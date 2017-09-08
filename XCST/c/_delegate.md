@@ -30,7 +30,7 @@ The concrete type of a delegate is currently not part of the public API. However
 <div class="note eg" markdown="1">
 
 ###### Example: Delegate Parameter
-To accept a delegate as a parameter you can use the [`Delegate`](https://msdn.microsoft.com/en-us/library/system.delegate) abstract type.
+To accept a delegate as a parameter you can use the [`Delegate`]({{ page.bcl_url }}system.delegate) abstract type.
 
 ```xml
 <c:import-namespace ns='System'/>
