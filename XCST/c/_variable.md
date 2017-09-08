@@ -14,30 +14,30 @@ The table below summarizes.
 
 value attribute | as attribute | content | effect
 ------- | ------- | -------- | -------
-present | absent | empty | Value is obtained by evaluating the `value` attribute. For local variables, the type is inferred from the expression. For global variables, the type is [Object](System.Object).
+present | absent | empty | Value is obtained by evaluating the `value` attribute. For local variables, the type is inferred from the expression. For global variables, the type is [Object][System.Object].
 present | present | empty | Value is obtained by evaluating the `value` attribute, casted to the type required by the `as` attribute.
 present | absent | present | Compilation error
 present | present | present | Compilation error
-absent | absent | empty | Local variables are not initialized. Global variables are initialized with `null`. The type is [Object](System.Object).
+absent | absent | empty | Local variables are not initialized. Global variables are initialized with `null`. The type is [Object][System.Object].
 absent | present | empty | Local variables are not initialized. Global variables are initialized with `default(T)`, where `T` is the type required by the `as` attribute.
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (see next section).
 absent | present | present | Value is obtained by evaluating the sequence constructor, casted to the type required by the `as` attribute.
 
 ## Type Inference from Content
 
-When the `as` attribute is omitted, XCST tries to infer the type of the variable from the content. If not successful, the fallback type is [Object](System.Object)`[]`.
+When the `as` attribute is omitted, XCST tries to infer the type of the variable from the content. If not successful, the fallback type is [Object][System.Object]`[]`.
 
 content | type
 ------- | ----
-Text node | [String](System.String)
-[`c:array`](array.html) | [Object](System.Object)
-[`c:delegate`](delegate.html) | [Delegate](System.Delegate) (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
-[`c:map`](map.html) | [Object](System.Object)
+Text node | [String][System.String]
+[`c:array`](array.html) | [Object][System.Object]
+[`c:delegate`](delegate.html) | [Delegate][System.Delegate] (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
+[`c:map`](map.html) | [Object][System.Object]
 [`c:next-function`](next-function.html) | The type of the next function
 [`c:object`](object.html) | Inferred by the expression
-[`c:serialize`](serialize.html) | [String](System.String)
-[`c:text`](text.html) | [String](System.String)
-[`c:value-of`](value-of.html) | [String](System.String)
+[`c:serialize`](serialize.html) | [String][System.String]
+[`c:text`](text.html) | [String][System.String]
+[`c:value-of`](value-of.html) | [String][System.String]
 
 <div class="note eg" markdown="1">
 
