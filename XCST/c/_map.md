@@ -1,4 +1,12 @@
 
+## Building Expando Objects
+
+`c:map` supports two kinds of expando objects. By default, it creates an object whose properties can hold any kind of value. Or you can create [JObject][Newtonsoft.Json.Linq.JObject] objects for JSON programming.
+
+## JSON Serialization
+
+If `c:map` is used when constructing complex or simple content then it serializes directly to JSON.
+
 ## Error Conditions
 
 It is a compilation error if the required item type of the containing sequence constructor is not one of, or a super class of, [Object][System.Object] or [JObject][Newtonsoft.Json.Linq.JObject].
