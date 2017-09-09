@@ -76,7 +76,7 @@ Razor doesn't support anything beyond a simple layout/content setup. In XCST, yo
 
 ### #2. Markup is code
 
-Razor treats markup as text that outputs unchanged. In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at runtime. This has several benefits:
+Razor treats markup as text that outputs unchanged. In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at run-time. This has several benefits:
 
 - One source code, multiple outputs (XML, HTML, XHTML, text and JSON)
 - Whitespace control (indentation)
