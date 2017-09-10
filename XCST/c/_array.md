@@ -1,11 +1,20 @@
 
+## Remarks
+
+`c:array` exists for special purposes. The preferred way of building an array from a sequence constructor is simply using [`c:variable`](variable.html). `c:array` allows you to:
+
+- Nest arrays, avoiding flattening.
+- Build or serialize a JSON array.
+
+You can use [`c:object`](object.html) to add members to an array, or any other non-void instruction.
+
 ## Building Arrays
 
-`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object][System.Object]´[]´) that can hold any kind of values. Or you can create [JArray][Newtonsoft.Json.Linq.JArray] arrays for JSON programming.
+`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object][System.Object]`[]`) that can hold any kind of values. Or you can create [JArray][Newtonsoft.Json.Linq.JArray] arrays for JSON programming.
 
 ## JSON Serialization
 
-If `c:array` is used when constructing complex or simple content then it serializes directly to JSON.
+If `c:array` is used when constructing complex or simple content then it serializes directly to JSON. It is typically used toghether with [`c:map`](map.html).
 
 ## Error Conditions
 
