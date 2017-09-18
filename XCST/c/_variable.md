@@ -32,33 +32,13 @@ content | type
 Text node | [String][System.String]
 [`c:array`](array.html) | [Object][System.Object]
 [`c:delegate`](delegate.html) | [Delegate][System.Delegate] (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
+[`c:document`](document.html) | [XDocument][System.Xml.Linq.XDocument]
 [`c:map`](map.html) | [Object][System.Object]
 [`c:next-function`](next-function.html) | The type of the next function
 [`c:object`](object.html) | Inferred by the expression
 [`c:serialize`](serialize.html) | [String][System.String]
 [`c:text`](text.html) | [String][System.String]
 [`c:value-of`](value-of.html) | [String][System.String]
-
-<div class="note eg" markdown="1">
-
-###### Example: Temporary Trees
-Temporary trees are currently not supported, but planned for the future. However, there's a workaround using [`c:result-document`](result-document.html)'s `output` attribute.
-
-```xml
-<c:variable name='doc' value='new XmlDocument()'/>
-
-<c:using name='output' value='doc.CreateNavigator().AppendChild()'>
-   <c:result-document output='output'>
-      <foo bar='123'>baz</foo>
-   </c:result-document>
-</c:using>
-
-<c:assert test='doc.DocumentElement.LocalName == "foo"'/>
-<c:assert test='doc.DocumentElement.GetAttribute("bar") == "123"'/>
-<c:assert test='doc.DocumentElement.InnerText == "baz"'/>
-```
-
-</div>
 
 <div class="note" markdown="1">
 
@@ -76,3 +56,4 @@ It is a compilation error if the `value` attribute is present when the content o
 [System.Object]: {{ page.bcl_url }}system.object
 [System.String]: {{ page.bcl_url }}system.string
 [System.Delegate]: {{ page.bcl_url }}system.delegate
+[System.Xml.Linq.XDocument]: {{ page.bcl_url }}system.xml.linq.xdocument
