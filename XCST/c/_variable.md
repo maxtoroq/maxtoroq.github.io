@@ -31,7 +31,7 @@ content | type
 ------- | ----
 Text node | [String][System.String]
 [`c:array`](array.html) | [Object][System.Object]
-[`c:delegate`](delegate.html) | [Delegate][System.Delegate] (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
+[`c:delegate`](delegate.html) | [Action<,>][System.Action<,>] (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
 [`c:document`](document.html) | [XDocument][System.Xml.Linq.XDocument]
 [`c:map`](map.html) | [Object][System.Object]
 [`c:next-function`](next-function.html) | The type of the next function
@@ -55,5 +55,5 @@ It is a compilation error if the `value` attribute is present when the content o
 
 [System.Object]: {{ page.bcl_url }}system.object
 [System.String]: {{ page.bcl_url }}system.string
-[System.Delegate]: {{ page.bcl_url }}system.delegate
+[System.Action<,>]: {{ page.bcl_url }}bb549311
 [System.Xml.Linq.XDocument]: {{ page.bcl_url }}system.xml.linq.xdocument
