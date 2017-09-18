@@ -9,7 +9,8 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:delegate</span>&gt;
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:delegate</span>
+  <span>as</span>? = <i title="Type name.">type_name</i> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:delegate&gt;</span></code></pre></div>
 <p>Creates a template delegate.</p>
@@ -20,5 +21,17 @@ regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h2 id="attributes">Attributes</h2>
+<div class="table-responsive">
+   <table class="ref-attribs">
+      <tr>
+         <td><code>as</code></td>
+         <td>The return type.</td>
+      </tr>
+   </table>
+</div>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>
 
 {% include_relative _delegate.md %}
