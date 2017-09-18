@@ -2,7 +2,7 @@
 title: Evaluation
 ---
 
-To get started with evaluation [install](installing.html) the `Xcst` NuGet package.
+To get started with evaluation [install](installing.html) the `Xcst.Runtime` NuGet package.
 
 ## API
 
