@@ -8,7 +8,7 @@ regenerated.
 
 - [`c:array`](../c/array.html) &nbsp;[`c:assert`](../c/assert.html) &nbsp;[`c:attribute`](../c/attribute.html) &nbsp;[`c:attribute-set`](../c/attribute-set.html)
 - [`c:break`](../c/break.html)
-- [`c:call-template`](../c/call-template.html) &nbsp;[`c:catch`](../c/catch.html) &nbsp;[`c:choose`](../c/choose.html) &nbsp;[`c:comment`](../c/comment.html) &nbsp;[`c:continue`](../c/continue.html)
+- [`c:call-template`](../c/call-template.html) &nbsp;[`c:catch`](../c/catch.html) &nbsp;[`c:choose`](../c/choose.html) &nbsp;[`c:comment`](../c/comment.html) &nbsp;[`c:continue`](../c/continue.html) &nbsp;[`c:copy-of`](../c/copy-of.html)
 - [`c:delegate`](../c/delegate.html) &nbsp;[`c:document`](../c/document.html)
 - [`c:element`](../c/element.html) &nbsp;[`c:evaluate-delegate`](../c/evaluate-delegate.html) &nbsp;[`c:evaluate-package`](../c/evaluate-package.html)
 - [`c:fallback`](../c/fallback.html) &nbsp;[`c:finally`](../c/finally.html) &nbsp;[`c:for-each`](../c/for-each.html) &nbsp;[`c:for-each-group`](../c/for-each-group.html) &nbsp;[`c:function`](../c/function.html)
