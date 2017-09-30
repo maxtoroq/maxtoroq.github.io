@@ -19,8 +19,8 @@ function GeneratePackages {
 
    Add-Type -Path ..\..\packages\Saxon-HE.*\lib\net40\saxon9he-api.dll
    Add-Type -Path ..\..\packages\Newtonsoft.Json.*\lib\net45\Newtonsoft.Json.dll
-   Add-Type -Path ..\..\packages\Xcst.Runtime.*\lib\net45\Xcst.Runtime.dll
-   Add-Type -Path ..\..\packages\Xcst.Compiler.*\lib\net45\Xcst.Compiler.dll
+   Add-Type -Path ..\..\packages\Xcst.Runtime.*\lib\net46\Xcst.Runtime.dll
+   Add-Type -Path ..\..\packages\Xcst.Compiler.*\lib\net46\Xcst.Compiler.dll
 
    $compilerFactory = New-Object Xcst.Compiler.XcstCompilerFactory
    $compilerFactory.PackagesLocation = $startDirectory.FullName
@@ -28,7 +28,7 @@ function GeneratePackages {
 
    # Enable Application Extension
 
-   Add-Type -Path ..\..\packages\Xcst.AspNet.*\lib\net45\Xcst.AspNet.dll
+   Add-Type -Path ..\..\packages\Xcst.AspNet.*\lib\net46\Xcst.AspNet.dll
    $compilerFactory.EnableExtensions = $true
    [Xcst.Compiler.ApplicationExtensionConfiguration]::RegisterApplicationExtension($compilerFactory)
 
