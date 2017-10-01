@@ -17,4 +17,17 @@ Need an XSLT expert? Look no further. I can help you with your new project or ex
 - Wrote a [Relax NG validator in XSLT]({{ site.github.owner_url }}/rng.xsl)
 - Created [XCST](/XCST/), a language heavily inspired in XSLT, but for non-XML data
 
+## Testimonials
+
+> Max is a consummate professional and delivers a very high standard of work with quick turnaround. I would not hesitate to recommend him highly enough.
+> - Feedback by **Christopher Snelgrove** on [UpWork][UpWork]
+
+> Max was an excellent XSLT developer and delivered code quickly. Excellent communication and asked additional questions to clarify scope. Definitely an expert who I will hire for jobs in the future.
+> - Feedback by **Maria Leggett** on [UpWork][UpWork]
+
+> Max is brilliant at any XML related work... although I should really not be telling anyone this, because I need him when he has more availability again ;)
+> - Feedback by **Roderick Ross** on [UpWork][UpWork] 
+
 Contact me at maxtoroq@gmail.com or see my [about](/p/about-me.html) page.
+
+- [UpWork]: https://www.upwork.com/freelancers/~013968c95eab35c636
