@@ -28,4 +28,4 @@ Need an XSLT expert? Look no further. I can help you with your new project or ex
 > Max is brilliant at any XML related work... although I should really not be telling anyone this, because I need him when he has more availability again ;)  
 > — **Roderick Ross** at [Ross Consulting](http://www.ross.consulting/)
 
-Contact me at maxtoroq@gmail.com or see my [about](/p/about-me.html) page.
+Contact me at <maxtoroq@gmail.com>, or see my [about](/p/about-me.html) page for more info.
