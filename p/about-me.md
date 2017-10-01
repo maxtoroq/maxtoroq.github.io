@@ -16,6 +16,10 @@ Feel free to [email me](mailto:maxtoroq@gmail.com), or start a public conversati
 
 If you'd like to show your appreciation you can [donate](donate.html).
 
+Hire me
+-------
+[Need an XSLT expert?](/p/XSLT-Expert-for-hire.html)
+
 Likes
 -----
 C#, XSLT, Relax NG, PowerShell, [Semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML), [Structural typing](https://en.wikipedia.org/wiki/Structural_type_system), [Hypermedia APIs](https://en.wikipedia.org/wiki/Hypermedia_as_the_Engine_of_Application_State).
