@@ -16,4 +16,4 @@ Need an XSLT expert? Look no further. I can help you with your new project or ex
 - Wrote a [Relax NG validator in XSLT]({{ site.github.owner_url }}/rng.xsl)
 - Created [XCST](/XCST/), a language heavily inspired in XSLT, but for non-XML data
 
-Contact me at maxtoroq@gmail.com or see my [about](/p/about.html) page.
+Contact me at maxtoroq@gmail.com or see my [about](/p/about-me.html) page.
