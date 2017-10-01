@@ -19,13 +19,13 @@ Need an XSLT expert? Look no further. I can help you with your new project or ex
 
 ## Testimonials
 
-> Max is a consummate professional and delivers a very high standard of work with quick turnaround. I would not hesitate to recommend him highly enough.
-> — **Christopher Snelgrove**
+> Max is a consummate professional and delivers a very high standard of work with quick turnaround. I would not hesitate to recommend him highly enough.  
+> — **Christopher Snelgrove** at [HIJOBS](https://hijobs.net/)
 
-> Max was an excellent XSLT developer and delivered code quickly. Excellent communication and asked additional questions to clarify scope. Definitely an expert who I will hire for jobs in the future.
+> Max was an excellent XSLT developer and delivered code quickly. Excellent communication and asked additional questions to clarify scope. Definitely an expert who I will hire for jobs in the future.  
 > — **Maria Leggett**
 
-> Max is brilliant at any XML related work... although I should really not be telling anyone this, because I need him when he has more availability again ;)
-> — **Roderick Ross**
+> Max is brilliant at any XML related work... although I should really not be telling anyone this, because I need him when he has more availability again ;)  
+> — **Roderick Ross** at [Ross Consulting](http://www.ross.consulting/)
 
 Contact me at maxtoroq@gmail.com or see my [about](/p/about-me.html) page.
