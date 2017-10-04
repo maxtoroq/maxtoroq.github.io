@@ -2,8 +2,6 @@
 title: XCST Elements Reference
 ---
 
-### Namespaces
-
 prefix | namespace | schemas
 ------ | --------- | -------  
 c | `http://maxtoroq.github.io/XCST` | [source](https://github.com/maxtoroq/XCST/tree/master/schemas)
