@@ -2,10 +2,12 @@
 title: XCST Elements Reference
 ---
 
-### Namespace Bindings
+### Namespaces
 
-- c = `http://maxtoroq.github.io/XCST`
-- a = `http://maxtoroq.github.io/XCST/application`
+prefix | namespace | schemas
+------ | --------- | -------  
+c | `http://maxtoroq.github.io/XCST` | [source](https://github.com/maxtoroq/XCST/tree/master/schemas)
+a | `http://maxtoroq.github.io/XCST/application` | [source](https://github.com/maxtoroq/XCST-a/tree/master/schemas)
 
 ## XCST Elements
 
@@ -39,8 +41,3 @@ name                     | description
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
 
 If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) it indicates a whitespace separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
-
-## Schemas
-
-- [`http://maxtoroq.github.io/XCST`](https://github.com/maxtoroq/XCST/tree/master/schemas)
-- [`http://maxtoroq.github.io/XCST/application`](https://github.com/maxtoroq/XCST-a/tree/master/schemas)
