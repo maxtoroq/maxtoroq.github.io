@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-template</span>&gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:next-template&gt;</span></code></pre></div>
-<p>Invokes the overriden template.</p>
+<p>Invokes the overridden template.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
