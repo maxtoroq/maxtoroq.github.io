@@ -50,7 +50,7 @@ Mail template
 ```
 
 <div class="note">
-Normally you'd put markup in a <code>c:template</code> declaration, but since the <code>MailMessage</code> class expects the mail body as a <code>string</code> we use <code>c:function</code> because it can return values and can be called directly from C# code.
+Normally you'd put markup in a <code>c:template</code> declaration, but since the <code>MailMessage</code> class expects the mail body as a <code>string</code> we use <code>c:function</code> because it can be called directly from C# code.
 </div>
 
 The `c:serialize` instruction creates a `string` of anything defined inside of it.
