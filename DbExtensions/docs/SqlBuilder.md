@@ -314,6 +314,9 @@ Conclusions
 -----------
 SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A generic query API like LINQ works great for simple queries, but its statically-typed nature tends to become a disadvantage for complex scenarios, and is very difficult to extend. Many ORM products have their own query APIs, but using them means marrying to a particular product and more APIs to learn. To optimize queries you require complete control of the executing SQL. SqlBuilder gives you that control, freeing you from dealing with low-level objects like DbCommand and DbParameter.
 
+<div id="code-sponsor-widget"></div>
+<script type="text/javascript" src="https://app.codesponsor.io/scripts/Em0RF3n4VEdeFdo7J6DFZQ?theme=light"></script>
+
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/README.md
 [2]: http://msdn.microsoft.com/en-us/library/system.string.format
 [3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/ToString.md
