@@ -136,3 +136,7 @@ DbExtensions doesn't provide the following functionality:
 
 <div id="code-sponsor-widget"></div>
 <script type="text/javascript" src="https://app.codesponsor.io/scripts/Em0RF3n4VEdeFdo7J6DFZQ?theme=light"></script>
+
+<style>
+   #code-sponsor-widget iframe { background-color: papayawhip; }
+</style>
