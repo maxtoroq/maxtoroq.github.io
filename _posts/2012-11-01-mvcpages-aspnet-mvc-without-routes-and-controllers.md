@@ -143,5 +143,5 @@ With MvcPages it's possible. You can now add Web Pages to your MVC app and use t
 
 Like it? [NuGet it][2], or [fork it][1], or whatever.
 
-[1]: {{ site.url }}/MvcPages/
+[1]: https://github.com/maxtoroq/MvcPages
 [2]: http://www.nuget.org/packages/MvcPages
