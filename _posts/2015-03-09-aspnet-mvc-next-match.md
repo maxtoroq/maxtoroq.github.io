@@ -160,7 +160,7 @@ Hope you like this.
 
 [:octocat: Source code][5]
 
-[1]: {{ site.url }}/MvcAccount/
+[1]: https://github.com/maxtoroq/MvcAccount
 [2]: {{ site.url }}/img/mvcnextmatch_screenshot_2.png
 [3]: {{ site.url }}/img/mvcnextmatch_screenshot_1.png
 [4]: https://github.com/aspnet/Mvc/issues/2109
