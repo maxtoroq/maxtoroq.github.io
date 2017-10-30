@@ -42,13 +42,6 @@ defaults:
          repository_url: https://github.com/maxtoroq/MvcAccount
    -
       scope:
-         path: "MvcPages"
-         type: page
-      values:
-         layout: MvcPages
-         repository_url: https://github.com/maxtoroq/MvcPages
-   -
-      scope:
          path: "myxsl"
          type: page
       values:
