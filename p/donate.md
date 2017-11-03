@@ -13,7 +13,3 @@ PayPal
 <input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image" />
 <img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" style="padding: 0;" width="1" />
 </form>
-
-Gratipay
---------
-<script data-gratipay-username="maxtoroq" src="//grtp.co/v1.js"></script>
