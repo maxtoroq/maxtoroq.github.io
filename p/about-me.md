@@ -26,4 +26,4 @@ C#, XSLT, Relax NG, PowerShell, [Semantic HTML](https://en.wikipedia.org/wiki/Se
 
 Dislikes
 --------
-JavaScript, VB, F#.
+JavaScript, VB, F#, [XML data binding](https://en.wikipedia.org/wiki/XML_data_binding).
