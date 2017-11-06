@@ -54,7 +54,8 @@ If `c:map` is used when constructing complex or simple content then it serialize
       </c:map>
    </c:value-of>
 </c:variable>
-<!-- json: "{\"name\":\"John\"}" -->
+<c:assert test='json is string'/>
+<c:assert test='json == "{\"name\":\"John\"}"/>
 ```
 
 </div>
