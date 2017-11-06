@@ -5,7 +5,7 @@
 
 <div class="note eg" markdown="1">
 
-###### Example
+###### Example: Building an object to hold HTML attributes 
 
 ```xml
 <c:variable name='amountAttribs'>
@@ -24,6 +24,23 @@
 ## JSON Serialization
 
 If `c:map` is used when constructing complex or simple content then it serializes directly to JSON.
+
+<div class="note eg" markdown="1">
+
+###### Example: Building JSON for an attribute
+
+```xml
+<div>
+   <c:attribute name='data-options'>
+      <c:map>
+         <c:map-entry key='"name"'>John</c:map-entry>
+      </c:map>
+   </c:attribute>
+</div>
+<!-- Outputs: <div data-options="{&quot;name&quot;:&quot;John&quot;}"/> -->
+```
+
+</div>
 
 ## Error Conditions
 
