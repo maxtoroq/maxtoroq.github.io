@@ -42,6 +42,23 @@ If `c:map` is used when constructing complex or simple content then it serialize
 
 </div>
 
+<div class="note eg" markdown="1">
+
+###### Example: Building a JSON string
+
+```xml
+<c:variable name='json'>
+   <c:value-of>
+      <c:map>
+         <c:map-entry key='"name"'>John</c:map-entry>
+      </c:map>
+   </c:value-of>
+</c:variable>
+<!-- json: "{\"name\":\"John\"}" -->
+```
+
+</div>
+
 ## Error Conditions
 
 It is a compilation error if the required item type of the containing sequence constructor is not one of, or a super class of, [Object][System.Object] or [JObject][Newtonsoft.Json.Linq.JObject].
