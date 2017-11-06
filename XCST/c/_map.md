@@ -21,6 +21,22 @@
 
 </div>
 
+<div class="note eg" markdown="1">
+
+###### Example: Building a JObject
+
+```xml
+<c:variable name='map' as='JObject'>
+   <c:map>
+      <c:map-entry key='"name"'>John</c:map-entry>
+   </c:map>
+</c:variable>
+
+<c:assert test='((JValue)map["name"]).Value == "John"'/>
+```
+
+</div>
+
 ## JSON Serialization
 
 If `c:map` is used when constructing complex or simple content then it serializes directly to JSON.
