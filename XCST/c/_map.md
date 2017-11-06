@@ -27,6 +27,25 @@ If `c:map` is used when constructing complex or simple content then it serialize
 
 <div class="note eg" markdown="1">
 
+###### Example: JSON output
+Use the `text` output method to serialize JSON.
+
+```xml
+<c:output method='text'/>
+
+<c:template name='c:initial-template'>
+   <c:map>
+      <c:map-entry key='"name"'>John</c:map-entry>
+   </c:map>
+</c:template>
+
+<!-- Outputs: {"name":"John"} -->
+```
+
+</div>
+
+<div class="note eg" markdown="1">
+
 ###### Example: Building JSON for an attribute
 
 ```xml
