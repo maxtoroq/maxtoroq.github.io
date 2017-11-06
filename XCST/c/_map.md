@@ -3,6 +3,24 @@
 
 `c:map` supports two kinds of expando objects. By default, it creates an object whose properties can hold any kind of value. Or you can create [JObject][Newtonsoft.Json.Linq.JObject] objects for JSON programming.
 
+<div class="note eg" markdown="1">
+
+###### Example
+
+```xml
+<c:variable name='amountAttribs'>
+  <c:map>
+    <c:map-entry key='"class"'>refresh</c:map-entry>
+    <c:if test='readOnly'>
+      <c:map-entry key='"readonly"'>readonly</c:map-entry>
+    </c:if>
+  </c:map>
+</c:variable>
+<a:editor for='amount' html-attributes='amountAttribs'/>
+```
+
+</div>
+
 ## JSON Serialization
 
 If `c:map` is used when constructing complex or simple content then it serializes directly to JSON.
