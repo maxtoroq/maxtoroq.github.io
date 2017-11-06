@@ -9,12 +9,12 @@
 
 ```xml
 <c:variable name='amountAttribs'>
-  <c:map>
-    <c:map-entry key='"class"'>refresh</c:map-entry>
-    <c:if test='readOnly'>
-      <c:map-entry key='"readonly"'>readonly</c:map-entry>
-    </c:if>
-  </c:map>
+   <c:map>
+      <c:map-entry key='"class"'>refresh</c:map-entry>
+      <c:if test='readOnly'>
+         <c:map-entry key='"readonly"'>readonly</c:map-entry>
+      </c:if>
+   </c:map>
 </c:variable>
 <a:editor for='amount' html-attributes='amountAttribs'/>
 ```
