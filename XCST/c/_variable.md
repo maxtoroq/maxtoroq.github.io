@@ -34,7 +34,6 @@ Text node | [String][System.String]
 [`c:delegate`](delegate.html) | [Action<,>][System.Action<,>] (see [`c:delegate`](delegate.html#type-of-a-delegate) for more info)
 [`c:document`](document.html) | [XDocument][System.Xml.Linq.XDocument]
 [`c:map`](map.html) | [Object][System.Object]
-[`c:next-function`](next-function.html) | The type of the next function
 [`c:object`](object.html) | Inferred by the expression
 [`c:serialize`](serialize.html) | [String][System.String]
 [`c:text`](text.html) | [String][System.String]
