@@ -9,9 +9,6 @@ Overview
 - The query should look like SQL, and all SQL queries should be possible.
 - SqlBuilder is about building SQL, not getting or mapping data, so it should not be bound to any particular data-access implementation.
 
-<div id="code-sponsor-widget"></div>
-<script type="text/javascript" src="https://app.codesponsor.io/scripts/Em0RF3n4VEdeFdo7J6DFZQ?theme=light"></script>
-<br>
 Let's take a look at the first example:
 
 ```csharp
