@@ -133,6 +133,3 @@ DbExtensions doesn't provide the following functionality:
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=DbExtensions&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
 </div>
-
-<div id="code-sponsor-widget"></div>
-<script type="text/javascript" src="https://app.codesponsor.io/scripts/Em0RF3n4VEdeFdo7J6DFZQ?theme=light"></script>
