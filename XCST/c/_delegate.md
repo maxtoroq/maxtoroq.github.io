@@ -1,6 +1,6 @@
 ## Type of a Delegate
 
-The concrete type of a delegate is currently not part of the public API. However, you don't need to specify it thanks to type inference.
+`c:delegate` returns a delegate of type `Xcst.XcstDelegate&lt;TItem>`, where `TItem` is the return item type. However, you don't need to specify it thanks to type inference.
 
 <div class="note eg" markdown="1">
 
@@ -30,14 +30,13 @@ The concrete type of a delegate is currently not part of the public API. However
 <div class="note eg" markdown="1">
 
 ###### Example: Delegate Parameter
-To accept a delegate as a parameter you can use the [`Delegate`]({{ page.bcl_url }}system.delegate) abstract type.
 
 ```xml
-<c:import-namespace ns='System'/>
+<c:import-namespace ns='Xcst'/>
 
 <c:template name='pagination'>
    <c:param name='currentPage' as='int'/>
-   <c:param name='pagerItem' as='Delegate'/>
+   <c:param name='pagerItem' as='XcstDelegate&lt;object>'/>
    
    <ul class='pagination'>
       <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
