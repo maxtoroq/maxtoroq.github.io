@@ -1,6 +1,6 @@
 ## Type of a Delegate
 
-`c:delegate` returns a delegate of type `Xcst.XcstDelegate&lt;TItem>`, where `TItem` is the return item type. However, you don't need to specify it thanks to type inference.
+`c:delegate` returns a delegate of type `Xcst.XcstDelegate<TItem>`, where `TItem` is the return item type. However, you don't need to specify it thanks to type inference.
 
 <div class="note eg" markdown="1">
 
