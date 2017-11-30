@@ -36,7 +36,7 @@
 
 <c:template name='pagination'>
    <c:param name='currentPage' as='int'/>
-   <c:param name='pagerItem' as='XcstDelegate&lt;object>'/>
+   <c:param name='pagerItem' as='XcstDelegate<object>'/>
    
    <ul class='pagination'>
       <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
