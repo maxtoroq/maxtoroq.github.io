@@ -81,7 +81,7 @@ As explained above, values must be returned explicitly, there's no implicit outp
 
 It is a compilation error if there's another `c:function` declaration in the containing module with the same name and number of parameters.
 
-It is a compilation error if a `c:function` declaration has `visibility='abstract'` and the content of the element is non-empty.
+It is a compilation error if a `c:function` declaration has `visibility='abstract'` and the content of the element, excluding any `c:param` elements, is non-empty.
 
 ## See Also
 
