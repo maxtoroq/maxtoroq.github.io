@@ -5,21 +5,19 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 <div class="note eg" markdown="1">
 
 ###### Example: Default Grouping
-The following code:
 
 ```xml
 <c:for-each-group name='group' in='"hello".ToCharArray()' expand-text='yes'>
    <char count='{group.Count()}'>{group.Key}</char>
 </c:for-each-group>
-```
 
-...results in:
+<!-- Outputs:
 
-```xml
 <char count="1">h</char>
 <char count="1">e</char>
 <char count="2">l</char>
 <char count="1">o</char>
+-->
 ```
 
 </div>
