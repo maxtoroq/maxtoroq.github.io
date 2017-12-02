@@ -39,6 +39,8 @@ Unlike `xsl:attribute-set`, `c:attribute-set` does not allow multiple declaratio
 
 It is a compilation error if the `name` attribute uses a [reserved namespace](../docs/reserved-namespaces.html).
 
+It is a compilation error if an `c:attribute-set` declaration has `visibility='abstract'` and the content of the element is non-empty.
+
 It is a compilation error if another `c:attribute-set` declaration with the same name exists in the containing module.
 
 It is a compilation error if the `use-attribute-sets` attribute specifies a name that does not match the name of any `c:attribute-set` declaration in the containing package.
