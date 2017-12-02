@@ -50,6 +50,8 @@ Text node | [String]
 
 It is a compilation error if the `visibility` attribute is used on a local variable.
 
+It is a compilation error if a global variable with `visibility='abstract'` has a default value.
+
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
 [Object]: {{ page.bcl_url }}system.object
