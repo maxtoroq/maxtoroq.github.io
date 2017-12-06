@@ -30,6 +30,10 @@ The following example uses `normalize-space` normalization for minification purp
    }
    ]]>
 </style>
+
+<!-- Outputs:
+<style>a { text-decoration: none; }</style>
+-->
 ```
 
 </div>
