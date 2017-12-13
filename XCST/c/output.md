@@ -28,7 +28,8 @@ regenerated.
   <span>standalone</span>? = <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> | <span class="s">"omit"</span></span>
   <span>suppress-indentation</span>? = <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span>
   <span>undeclare-prefixes</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>version</span>? = <i>nmtoken</i> /&gt;</code></pre></div>
+  <span>version</span>? = <i>nmtoken</i>
+  <span>skip-character-check</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> /&gt;</code></pre></div>
 <p>Defines serialization parameters.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -103,6 +104,12 @@ regenerated.
       <tr>
          <td><code>omit-xml-declaration</code></td>
          <td>Specifies whether to omit the XML declaration.</td>
+      </tr>
+      <tr>
+         <td><code>skip-character-check</code></td>
+         <td>Specifies whether to skip character checking that ensures the output does not contain
+            any illegal characters.
+         </td>
       </tr>
       <tr>
          <td><code>standalone</code></td>

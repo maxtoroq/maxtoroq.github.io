@@ -30,7 +30,8 @@ regenerated.
   <span>standalone</span>? = { <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> | <span class="s">"omit"</span></span> }
   <span>suppress-indentation</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span> }
   <span>undeclare-prefixes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>output-version</span>? = { <i>nmtoken</i> } &gt;
+  <span>output-version</span>? = { <i>nmtoken</i> }
+  <span>skip-character-check</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:result-document&gt;</span></code></pre></div>
 <p>Creates a secondary result.</p>
@@ -119,6 +120,12 @@ regenerated.
       <tr>
          <td><code>output-version</code></td>
          <td>The version of the output format.</td>
+      </tr>
+      <tr>
+         <td><code>skip-character-check</code></td>
+         <td>Specifies whether to skip character checking that ensures the output does not contain
+            any illegal characters.
+         </td>
       </tr>
       <tr>
          <td><code>standalone</code></td>
