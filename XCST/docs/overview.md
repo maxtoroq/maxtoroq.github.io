@@ -6,7 +6,7 @@ XCST programs are called **packages** (not to be confused with NuGet packages). 
 
 The execution of a package consists of three separate processes: [code generation](code-generation.html), compilation and [evaluation](evaluation.html).
 
-![](xcst-flow.svg)
+<img src="xcst-flow.svg" style="max-width: 100%"/>
 
 The code generation process takes an XCST package and produces C# source code. The resulting C# code consists of a single class that is a pure C# version of your XCST program.
 
