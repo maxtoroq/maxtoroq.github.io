@@ -46,7 +46,7 @@ div.note {
    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 767px) {
    body > footer {
       .edit {
          display: none;
