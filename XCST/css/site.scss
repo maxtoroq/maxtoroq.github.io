@@ -45,3 +45,11 @@ div.note {
       border-color: rgba(135, 207, 255, 0.7);
    }
 }
+
+@media (min-width: 768px) {
+   body > footer {
+      .edit {
+         display: none;
+      }
+   }
+}
