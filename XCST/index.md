@@ -48,6 +48,17 @@ Here's a more complete example of an XCST module:
 </c:module>
 ```
 
+### Notable XSLT features implemented in XCST
+
+- Packages and modules
+- Templates, functions, attribute sets and output definitions
+- Type-safe sequence constructors
+- Attribute and text value templates
+- Temporary trees
+- Maps and JSON serialization
+- Dynamic loading
+- Extension instructions
+
 Why choose XCST over XSLT?
 --------------------------
 While XSLT is a great tool, there are several reasons why it might not be a good choice.
