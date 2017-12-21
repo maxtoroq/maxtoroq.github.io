@@ -51,7 +51,7 @@ Here's a more complete example of an XCST module:
 ### Notable XSLT features implemented in XCST
 
 - Packages and modules
-- Templates, functions, attribute sets and output definitions
+- Named templates, functions, attribute sets and output definitions
 - Type-safe sequence constructors
 - Attribute and text value templates
 - Temporary trees
