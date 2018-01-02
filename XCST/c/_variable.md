@@ -1,6 +1,6 @@
 ## Global and Local Variables
 
-A `c:variable` or [`c:param`](param.html) whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **global variable**. A `c:variable` that is not global is a **local variable**.
+<span id="dt-global-variable"></span>A `c:variable` or [`c:param`](param.html) whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **global variable**. <span id="dt-local-variable"></span>A `c:variable` that is not global is a **local variable**.
 
 Global variables are visible to all other components in the containing package.
 
