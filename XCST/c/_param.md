@@ -1,6 +1,6 @@
 ## Package Parameters
 
-A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#global-and-local-variables).
+A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable).
 
 Package parameters are visible to all other components in the containing package. Package parameters have an implicit `public` visibility, which also makes them visible to components in using packages.
 
