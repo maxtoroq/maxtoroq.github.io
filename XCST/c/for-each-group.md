@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each-group</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
   <b>in</b> = @<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable<T&gt;">IEnumerable&lt;T&gt;</a>
-  <span>group-by</span>? = <i title="Expression.">expression</i>
+  <span>group-by</span>? = <i title="Lambda expression.">lambda_expression</i>
   <span>group-size</span>? = { <i>integer</i> } &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each-group&gt;</span></code></pre></div>
@@ -29,7 +29,7 @@ regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>group-by</code></td>
-         <td>An expression to use as grouping key.</td>
+         <td>A lambda expression that computes the grouping key.</td>
       </tr>
       <tr>
          <td><code>group-size</code></td>

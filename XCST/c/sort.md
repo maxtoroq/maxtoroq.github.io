@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:sort</span>
-  <span>value</span>? = <i title="Expression.">expression</i>
+  <span>value</span>? = <i title="Lambda expression.">lambda_expression</i>
   <span>order</span>? = { <span><span class="s">"ascending"</span> | <span class="s">"descending"</span></span> } /&gt;</code></pre></div>
 <p>Defines how to sort sequences of items.</p>
 <dl>
@@ -27,7 +27,7 @@ regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td>An expression to use as sort key.</td>
+         <td>A lambda expression that computes the sorting key.</td>
       </tr>
    </table>
 </div>

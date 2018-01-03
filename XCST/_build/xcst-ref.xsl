@@ -311,7 +311,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'boolean', 'eqname', 'type_name', 'boolean_expression')]" mode="ref:type-display">
+   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'boolean', 'eqname', 'type_name', 'boolean_expression', 'lambda_expression')]" mode="ref:type-display">
       <xsl:call-template name="ref:simple-type-display"/>
    </xsl:template>
 
