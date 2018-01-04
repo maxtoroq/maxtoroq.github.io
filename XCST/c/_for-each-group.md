@@ -24,7 +24,24 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 
 ## The `group-by` Attribute
 
-Use the `group-by` attribute to specify a member of the item to use as grouping key.
+Use the `group-by` attribute to specify a lambda expression that computes the grouping key.
+
+<div class="note eg" markdown="1">
+
+###### Example: Default Grouping
+
+```xml
+<c:for-each-group name='group' in='books' group-by='b => b.author' expand-text='yes'>
+   <h2>{group.Key}</h2>
+   <ul>
+      <c:for-each name='book' in='group'>
+         <li>...</li>
+      </c:for-each>
+   </ul>
+</c:for-each-group>
+```
+
+</div>
 
 ## The `group-size` Attribute
 
