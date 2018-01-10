@@ -52,7 +52,7 @@ Here's a more complete example of an XCST module:
 
 - Packages and modules
 - Named templates, functions, attribute sets and output definitions
-- Type-safe sequence constructors
+- Strongly typed sequence constructors
 - Attribute and text value templates
 - Temporary trees
 - Maps and JSON serialization
