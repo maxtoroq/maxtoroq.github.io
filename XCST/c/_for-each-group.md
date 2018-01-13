@@ -66,6 +66,8 @@ Use the `group-size` attribute to create groups with the same number of items, e
 
 </div>
 
+When using the `group-size` attribute, the group variable has the compile type [IList]&lt;TSource>, where `TSource` is the type of the item.
+
 ## Error Conditions
 
 It is a compilation error if both attributes `group-by` and `group-size` are present.
@@ -75,3 +77,4 @@ It is a compilation error if both attributes `group-by` and `group-size` are pre
 - [`c:for-each`](for-each.html)
 
 [IGrouping]: {{ page.bcl_url }}bb344977
+[IList]: {{ page.bcl_url }}5y536ey6
