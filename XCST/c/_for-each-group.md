@@ -1,6 +1,6 @@
 ## Grouping By Key
 
-If attributes `group-by` and `group-size` are both omitted, the items themselves are used as grouping key.
+If attributes `group-by` and `group-size` are both omitted, the items themselves are used as **grouping key**.
 
 <div class="note eg" markdown="1">
 
@@ -41,7 +41,7 @@ Use the `group-by` attribute to specify a lambda expression that computes the gr
 
 </div>
 
-When grouping by key, the group variable (declared by the `name` attribute) has the compile type [IGrouping]&lt;TKey, TSource>, where `TKey` is the type of the grouping key and `TSource` the type of the item.
+When grouping by key, the **group variable** (declared by the `name` attribute) has the compile type [IGrouping]&lt;TKey, TSource>, where `TKey` is the type of the grouping key and `TSource` the type of the item.
 
 ## Processing Items In Chunks Of A Fixed Size
 
