@@ -26,7 +26,7 @@ Use the `group-by` attribute to specify a lambda expression that computes the gr
 
 <div class="note eg" markdown="1">
 
-###### Example: Default Grouping
+###### Example: Specifying A Grouping Key
 
 ```xml
 <c:for-each-group name='group' in='books' group-by='b => b.author' expand-text='yes'>
