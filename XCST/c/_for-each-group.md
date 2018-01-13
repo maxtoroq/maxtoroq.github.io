@@ -1,4 +1,4 @@
-## Default Grouping
+## Grouping By Key
 
 If attributes `group-by` and `group-size` are both omitted, the items themselves are used as grouping key.
 
@@ -22,8 +22,6 @@ If attributes `group-by` and `group-size` are both omitted, the items themselves
 
 </div>
 
-## The `group-by` Attribute
-
 Use the `group-by` attribute to specify a lambda expression that computes the grouping key.
 
 <div class="note eg" markdown="1">
@@ -43,7 +41,7 @@ Use the `group-by` attribute to specify a lambda expression that computes the gr
 
 </div>
 
-## The `group-size` Attribute
+## Processing Items In Chunks Of A Fixed Size
 
 Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less.
 
