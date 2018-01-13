@@ -41,6 +41,8 @@ Use the `group-by` attribute to specify a lambda expression that computes the gr
 
 </div>
 
+When grouping by key, the group variable (declared by the `name` attribute) has the compile type [IGrouping]&lt;TKey, TSource>, where `TKey` is the type of the grouping key and `TSource` the type of the item.
+
 ## Processing Items In Chunks Of A Fixed Size
 
 Use the `group-size` attribute to create groups with the same number of items, except for the last group which may have less.
@@ -71,3 +73,5 @@ It is a compilation error if both attributes `group-by` and `group-size` are pre
 ## See Also
 
 - [`c:for-each`](for-each.html)
+
+[IGrouping]: {{ page.bcl_url }}bb344977
