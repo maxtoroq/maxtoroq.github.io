@@ -193,32 +193,6 @@ table code {
 //@import "highlight-csharp";
 @import "highlight-sql";
 
-@media (max-width: 767px) {
-
-   body {
-      font-size: $base-font-size - 2px;
-      font-family: sans-serif !important;
-      line-height: 1.6;
-   }
-
-   body > header,
-   body > footer {
-      font-size: $base-font-size - 4px;
-   }
-   
-   blockquote {
-      font-size: $base-font-size;
-   }
-
-   div.note {
-      font-size: $base-font-size - 4px;
-   }
-
-   pre {
-      font-size: $base-font-size - 5px;
-   }
-}
-
 @media (min-width: 768px) {
 
    a, a:hover, a:focus {
