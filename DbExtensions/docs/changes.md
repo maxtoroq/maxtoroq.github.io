@@ -10,6 +10,9 @@ title: Change History
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
+### v6.1.1
+- Fixed: Contains and ContainsKey ignores current query
+
 ### v6.1.0
 - Added #52: CommandTimeout setting
 - Made Database.CreateCommand virtual
