@@ -7,6 +7,17 @@ title: Change History
 <button>Go to issue tracker</button>
 </form>
 
+v6.1.0
+------
+- Added #52: CommandTimeout setting
+- Made Database.CreateCommand virtual
+- Added Contains and ContainsKey to SqlSet
+- Added #56: Support updates when using assigned keys
+
+v6.0.1
+------
+- Fixed wrong exception on Database.Execute when affected number was lower
+
 v6.0.0
 ------
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
