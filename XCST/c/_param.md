@@ -8,7 +8,7 @@ Package parameters must omit the `tunnel` attribute, or have its value set to `f
 
 ## Values and Types of Parameters
 
-A parameter is basically a variable whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). However, parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameter is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
+A parameter is basically a [local variable](variable.html#dt-local-variable) whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). However, parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameter is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
 
 ## Function Parameters
 
