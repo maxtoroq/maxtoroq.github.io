@@ -113,7 +113,9 @@ regenerated.
       </tr>
       <tr>
          <td><code>resource-type</code></td>
-         <td>A type that contains resources for name, short-name, description and placeholder attributes.</td>
+         <td>A type that contains resources for name, short-name, description and place-holder
+            attributes.
+         </td>
       </tr>
       <tr>
          <td><code>visibility</code></td>
