@@ -23,6 +23,7 @@ Breaking changes are in **bold**.
 
 ## Other
 
+- **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
 - **Removed System.Data.Linq.Binary dependency (model binder and hidden helpers)**
 - **Removed System.Data.EntityState dependency (built-in Object display/editor template)**
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
