@@ -23,6 +23,8 @@ Breaking changes are in **bold**.
 
 ## Other
 
+- **Removed System.Data.Linq.Binary dependency (model binder and hidden helpers)**
+- **Removed System.Data.EntityState dependency (built-in Object display/editor template)**
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
 - **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
