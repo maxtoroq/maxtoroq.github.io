@@ -39,6 +39,8 @@ Breaking changes are in **bold**.
 
 ## Pages
 
+- **Removed `default` as default page (`index` only)** [86a628c](https://github.com/maxtoroq/XCST-a/commit/86a628cd0717dfb912591a02cb945319c52710e5)
+- **Removed display modes support** [86a628c](https://github.com/maxtoroq/XCST-a/commit/86a628cd0717dfb912591a02cb945319c52710e5)
 - Support for null path part on Href() [86d1fdd](https://github.com/maxtoroq/XCST-a/commit/86d1fdd3fe7e41c636fb5499bd849625f983d26c)
 
 ## Other
