@@ -8,6 +8,7 @@ Breaking changes are in **bold**.
 - **Client validation and unobtrusive js enabled by default** [b62f94f](https://github.com/maxtoroq/XCST-a/commit/b62f94f7f117f835a33f4191f5a6fe840082238f)
 - **Removed System.Data.Linq.Binary dependency (hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - **Get selected value from metadata on `a:drop-down-list`** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
+- Auto-create IEnumerable&lt;SelectListItem> from various types [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
 - **Excluding member errors by default on `a:validation-summary`** [14a00b5](https://github.com/maxtoroq/XCST-a/commit/14a00b56381eed57d9cf9e098010ebb1264a327d)
 - **Validation helpers gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
