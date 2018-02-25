@@ -22,6 +22,7 @@ Breaking changes are in **bold**.
 - **Render display/editor label even when label is empty** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
 - **Removed System.Data.EntityState dependency** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
+- ModelMetadata's ShowForEdit and ShowForDisplay can now report different values [3bbf772](https://github.com/maxtoroq/XCST-a/commit/3bbf7723d26befb6e22acc2de402777d751573c1)
 - Built-in DropDownList editor template [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 - Built-in ListBox editor template [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
 - **Built-in Enum display/editor templates [9ca2539](https://github.com/maxtoroq/XCST-a/commit/9ca25398f221720565d65b4d30630f849c79d551)**
