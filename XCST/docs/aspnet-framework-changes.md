@@ -9,6 +9,7 @@ Breaking changes are in **bold**.
 - **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
 - **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
 - **Removed System.Data.Linq.Binary dependency (hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
+- **Get selected value from metadata on `a:drop-down-list`** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - EditorCssClass configuration function [dd95eb6](https://github.com/maxtoroq/XCST-a/commit/dd95eb67f0ee62c31c6385aa64b8f52de067e1fd)
 - OmitPasswordValue configuration setting [ce89d03](https://github.com/maxtoroq/XCST-a/commit/ce89d03bd5b005cb86ea887fc5e8491eddeae82d)
