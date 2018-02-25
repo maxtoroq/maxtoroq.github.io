@@ -12,10 +12,10 @@ Breaking changes are in **bold**.
 - **Validation helpers gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
 - **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
+- **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
 
 ### Built-in display/editor templates
 
-- **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
 - **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
 - OmitPasswordValue configuration setting [ce89d03](https://github.com/maxtoroq/XCST-a/commit/ce89d03bd5b005cb86ea887fc5e8491eddeae82d)
 - EditorCssClass configuration function [dd95eb6](https://github.com/maxtoroq/XCST-a/commit/dd95eb67f0ee62c31c6385aa64b8f52de067e1fd)
