@@ -8,7 +8,7 @@ Breaking changes are in **bold**.
 - **Client validation and unobtrusive js enabled by default** [b62f94f](https://github.com/maxtoroq/XCST-a/commit/b62f94f7f117f835a33f4191f5a6fe840082238f)
 - **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
 - **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
-- **AntiForgery writes to XcstWriter instead of returning string** [284f3c9](https://github.com/maxtoroq/XCST-a/commit/284f3c96a214f6df02bcf3f5eebc653d81e6b09c)
+- **Removed System.Data.Linq.Binary dependency (hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - EditorCssClass configuration function [dd95eb6](https://github.com/maxtoroq/XCST-a/commit/dd95eb67f0ee62c31c6385aa64b8f52de067e1fd)
 - OmitPasswordValue configuration setting [ce89d03](https://github.com/maxtoroq/XCST-a/commit/ce89d03bd5b005cb86ea887fc5e8491eddeae82d)
@@ -29,6 +29,14 @@ Breaking changes are in **bold**.
 - **Built-in Upload editor template [9869018](https://github.com/maxtoroq/XCST-a/commit/9869018828224a5c0f0c8c0e7eb73b831cbc3ad0)**
 - **Built-in ImageUrl display template [ffbaeed](https://github.com/maxtoroq/XCST-a/commit/ffbaeed858d8562a7f1bd06cc13cdb54721f30b5)**
 
+## Model binding and validation
+
+- **Removed System.Data.Linq.Binary dependency (model binder)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
+- **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
+- **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
+- **DefaultModelBinder gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
+- Replaced JavaScriptSerializer with Json.NET [9a1ac0d](https://github.com/maxtoroq/XCST-a/commit/9a1ac0db954d54ecc58977a9ffe70cd428185947)
+
 ## Pages
 
 - Support for null path part on Href() [86d1fdd](https://github.com/maxtoroq/XCST-a/commit/86d1fdd3fe7e41c636fb5499bd849625f983d26c)
@@ -36,9 +44,4 @@ Breaking changes are in **bold**.
 ## Other
 
 - **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
-- **Removed System.Data.Linq.Binary dependency (model binder and hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
-- **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
-- **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
-- **DefaultModelBinder gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
-- Replaced JavaScriptSerializer with Json.NET [9a1ac0d](https://github.com/maxtoroq/XCST-a/commit/9a1ac0db954d54ecc58977a9ffe70cd428185947)
