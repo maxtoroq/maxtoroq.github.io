@@ -19,6 +19,7 @@ Breaking changes are in **bold**.
 
 - **Render display/editor label even when label is empty** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
+- **Removed System.Data.EntityState dependency** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 
 ### New built-in display/editor templates
 
@@ -36,7 +37,6 @@ Breaking changes are in **bold**.
 
 - **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
 - **Removed System.Data.Linq.Binary dependency (model binder and hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
-- **Removed System.Data.EntityState dependency (built-in Object display/editor template)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
 - **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
 - **DefaultModelBinder gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
