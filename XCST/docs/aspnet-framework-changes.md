@@ -6,26 +6,22 @@ Breaking changes are in **bold**.
 ## HTML Helpers
 
 - **Client validation and unobtrusive js enabled by default** [b62f94f](https://github.com/maxtoroq/XCST-a/commit/b62f94f7f117f835a33f4191f5a6fe840082238f)
-- **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
-- **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
 - **Removed System.Data.Linq.Binary dependency (hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - **Get selected value from metadata on `a:drop-down-list`** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
-- AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
-- EditorCssClass configuration function [dd95eb6](https://github.com/maxtoroq/XCST-a/commit/dd95eb67f0ee62c31c6385aa64b8f52de067e1fd)
-- OmitPasswordValue configuration setting [ce89d03](https://github.com/maxtoroq/XCST-a/commit/ce89d03bd5b005cb86ea887fc5e8491eddeae82d)
 - **Excluding member errors by default on `a:validation-summary`** [14a00b5](https://github.com/maxtoroq/XCST-a/commit/14a00b56381eed57d9cf9e098010ebb1264a327d)
 - **Validation helpers gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
 - **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
 
-### Built-in Object display/editor template
+### Built-in display/editor templates
 
+- **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
+- **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
+- OmitPasswordValue configuration setting [ce89d03](https://github.com/maxtoroq/XCST-a/commit/ce89d03bd5b005cb86ea887fc5e8491eddeae82d)
+- EditorCssClass configuration function [dd95eb6](https://github.com/maxtoroq/XCST-a/commit/dd95eb67f0ee62c31c6385aa64b8f52de067e1fd)
 - **Render display/editor label even when label is empty** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
 - **Removed System.Data.EntityState dependency** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
-
-### New built-in display/editor templates
-
 - Built-in DropDownList editor template [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 - Built-in ListBox editor template [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
 - **Built-in Enum display/editor templates [9ca2539](https://github.com/maxtoroq/XCST-a/commit/9ca25398f221720565d65b4d30630f849c79d551)**
@@ -45,4 +41,5 @@ Breaking changes are in **bold**.
 ## Other
 
 - **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
+- AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
