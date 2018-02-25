@@ -29,6 +29,7 @@ Breaking changes are in **bold**.
 - **Built-in Enum display/editor templates [9ca2539](https://github.com/maxtoroq/XCST-a/commit/9ca25398f221720565d65b4d30630f849c79d551)**
 - **Built-in Upload editor template [9869018](https://github.com/maxtoroq/XCST-a/commit/9869018828224a5c0f0c8c0e7eb73b831cbc3ad0)**
 - **Built-in ImageUrl display template [ffbaeed](https://github.com/maxtoroq/XCST-a/commit/ffbaeed858d8562a7f1bd06cc13cdb54721f30b5)**
+- `a:editor/a:with-options` and use DropDownList template when options are available [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 
 ## Model binding and validation
 
