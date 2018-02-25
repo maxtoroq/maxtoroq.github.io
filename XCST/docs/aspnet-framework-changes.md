@@ -11,6 +11,7 @@ Breaking changes are in **bold**.
 - **Switched DateTime editor rendering to Rfc3339 by default (consistent with ASP.NET Core)** [67a7425](https://github.com/maxtoroq/XCST-a/commit/67a7425623f9de3333073195804f8f83f04d38d3)
 - **AntiForgery writes to XcstWriter instead of returning string** [284f3c9](https://github.com/maxtoroq/XCST-a/commit/284f3c96a214f6df02bcf3f5eebc653d81e6b09c)
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
+- **Render display/editor label even when label is empty** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
 - Built-in DropDownList editor template [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 - Built-in ListBox editor template [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
