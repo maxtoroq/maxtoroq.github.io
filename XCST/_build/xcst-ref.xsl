@@ -301,23 +301,15 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('output-version')]" mode="ref:type-display">
-      <xsl:apply-templates mode="#current"/>
-   </xsl:template>
-
    <xsl:template match="rng:define[@name = ('avt', 'avt-expr')]" mode="ref:type-display">
       <xsl:text>{ </xsl:text>
       <xsl:apply-templates mode="#current"/>
       <xsl:text> }</xsl:text>
    </xsl:template>
 
-   <xsl:template match="rng:define[@name = ('sequence-constructor', 'instruction', 'boolean', 'eqname', 'type_name', 'boolean_expression', 'lambda_expression')]" mode="ref:type-display">
-      <xsl:call-template name="ref:simple-type-display"/>
-   </xsl:template>
-
-   <xsl:template match="rng:define[@name = ('qname-default', 'eqname-default')]" mode="ref:type-display">
+   <xsl:template match="rng:define[@docs:display-type/xs:boolean(.)]" mode="ref:type-display">
       <xsl:call-template name="ref:simple-type-display">
-         <xsl:with-param name="name" select="substring-before(@name, '-default')"/>
+         <xsl:with-param name="name" select="(@docs:display-name, @name)[1]"/>
       </xsl:call-template>
    </xsl:template>
 
