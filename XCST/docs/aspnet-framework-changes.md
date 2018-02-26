@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Framework Changes
 ---
-Breaking changes are in **bold**.
+This page lists the changes made to existing features taken from ASP.NET MVC 5. It does not include completely new features. Breaking changes are in **bold**.
 
 ## HTML Helpers
 
@@ -31,7 +31,7 @@ Breaking changes are in **bold**.
 - **Built-in ImageUrl display template** [ffbaeed](https://github.com/maxtoroq/XCST-a/commit/ffbaeed858d8562a7f1bd06cc13cdb54721f30b5)
 - `a:editor/a:with-options` and use DropDownList template when options are available [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 
-## Model binding and validation
+## Model binding
 
 - **Removed System.Data.Linq.Binary dependency (model binder)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - **DefaultModelBinder gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
