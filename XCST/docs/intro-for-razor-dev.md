@@ -300,7 +300,7 @@ In Razor you use the `@functions` directive to define methods, fields or any oth
 }
 ```
 
-In XCST you use [`c:function`](../c/function.html) to define a method and [`c:variable`](../c/variable.html) to define a field.
+In XCST you use [`c:function`](../c/function.html) to define a method and [`c:variable`](../c/variable.html) to define a property.
 
 ```xml
 <c:variable name='db' value='new MyDatabase()' as='MyDatabase'/>
@@ -314,16 +314,7 @@ In XCST you use [`c:function`](../c/function.html) to define a method and [`c:va
 
 Unlike templates, you can call functions directly from C# code.
 
-One cool thing about global variables in XCST is that the initialization expression can be anything you want and can reference other fields, something you cannot do in plain C#, e.g.:
-
-```csharp
-class A {
-   int x = 1;
-   int y = x + 1;      // Error, reference to instance member of this
-}
-```
-
-In XCST it's perfectly valid (initialization is performed in a generated method that runs before the initial template).
+On the previous example, `db` is compiled to a property that is initialized lazily when used for the first time. This makes it really easy to declare global variables that reference other global variables, saving you from writing a lot of boilerplate code, e.g.:
 
 ```xml
 <c:variable name='x' value='1' as='int'/>
