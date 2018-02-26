@@ -15,6 +15,7 @@ Reference
 - [Reserved Namespaces](reserved-namespaces.html)
 - [Extension Instructions](extension-instructions.html)
 - [Text Transformation](text-transformation.html)
+- [ASP.NET Framework Changes](aspnet-framework-changes.html)
 
 Tutorials
 ---------
