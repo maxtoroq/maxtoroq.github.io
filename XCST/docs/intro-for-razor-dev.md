@@ -495,33 +495,33 @@ Razor                                                 | XCST
 `Html.DisplayText("foo")`                             | `<a:display-text name='foo'/>`
 `Html.DisplayTextFor(p => p.foo)`                     | `<a:display-text for='foo'/>`
 `Html.DisplayTextForModel()`                          | `<a:display-text/>`
-`Html.DropDownList("foo")`                            | `<a:drop-down-list name='foo'/>`
-`Html.DropDownListFor(p => p.foo)`                    | `<a:drop-down-list for='foo'/>`
+`Html.DropDownList("foo")`                            | `<a:select name='foo'/>`
+`Html.DropDownListFor(p => p.foo)`                    | `<a:select for='foo'/>`
 `Html.Editor("foo")`                                  | `<a:editor name='foo'/>`
 `Html.EditorFor(p => p.foo)`                          | `<a:editor for='foo'/>`
 `Html.EditorForModel()`                               | `<a:editor/>`
 `Html.EnumDropDownListFor()`                          | n/a
-`Html.Hidden("foo")`                                  | `<a:hidden name='foo'/>`
-`Html.HiddenFor(p => p.foo)`                          | `<a:hidden for='foo'/>`
-`Html.HttpMethodOverride("DELETE")`                   | `<a:http-method-override method='DELETE'/>`
+`Html.Hidden("foo")`                                  | `<a:input type='hidden' name='foo'/>`
+`Html.HiddenFor(p => p.foo)`                          | `<a:input type='hidden' for='foo'/>`
+`Html.HttpMethodOverride("DELETE")`                   | n/a
 `Html.Label("foo")`                                   | `<a:label name='foo'/>`
 `Html.LabelFor(p => p.foo)`                           | `<a:label for='foo'/>`
 `Html.LabelForModel()`                                | `<a:label/>`
-`Html.ListBox("foo")`                                 | `<a:list-box name='foo'/>`
-`Html.ListBoxFor(p => p.foo)`                         | `<a:list-box for='foo'/>`
+`Html.ListBox("foo")`                                 | `<a:select name='foo' multiple='true'/>`
+`Html.ListBoxFor(p => p.foo)`                         | `<a:select for='foo' multiple='true'/>`
 `Html.Partial()`                                      | see [RenderPage/RenderPartial](#renderpagerenderpartial)
-`Html.Password("foo")`                                | `<a:password name='foo'/>`
-`Html.PasswordFor(p => p.foo)`                        | `<a:password for='foo'/>`
+`Html.Password("foo")`                                | `<a:input type='password' name='foo'/>`
+`Html.PasswordFor(p => p.foo)`                        | `<a:input type='password' for='foo'/>`
 `Html.RadioButton("foo")`                             | `<a:radio-button name='foo'/>`
 `Html.RadioButtonFor(p => p.foo)`                     | `<a:radio-button for='foo'/>`
 `Html.Raw("<foo>")`                                   | `<c:value-of value='"&lt;foo>"' disable-output-escaping='yes'/>`
 `Html.RenderAction()`                                 | n/a
 `Html.RenderPartial()`                                | see [RenderPage/RenderPartial](#renderpagerenderpartial)
 `Html.RouteLink()`                                    | n/a
-`Html.TextArea("foo")`                                | `<a:text-area name='foo'/>`
-`Html.TextAreaFor(p => p.foo)`                        | `<a:text-area for='foo'/>`
-`Html.TextBox("foo")`                                 | `<a:text-box name='foo'/>`
-`Html.TextBoxFor(p => p.foo)`                         | `<a:text-box for='foo'/>`
+`Html.TextArea("foo")`                                | `<a:textarea name='foo'/>`
+`Html.TextAreaFor(p => p.foo)`                        | `<a:textarea for='foo'/>`
+`Html.TextBox("foo")`                                 | `<a:input name='foo'/>`
+`Html.TextBoxFor(p => p.foo)`                         | `<a:input for='foo'/>`
 `Html.ValidationMessage("foo")`                       | `<a:validation-message name='foo'/>`
 `Html.ValidationMessageFor(p => p.foo)`               | `<a:validation-message for='foo'/>`
 `Html.ValidationSummary(excludePropertyErrors: true)` | `<a:validation-summary/>` (It excludes property errors by default)
