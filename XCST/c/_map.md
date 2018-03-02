@@ -16,7 +16,7 @@
       </c:if>
    </c:map>
 </c:variable>
-<a:editor for='amount' html-attributes='amountAttribs'/>
+<a:editor for='amount' attributes='amountAttribs'/>
 ```
 
 </div>
