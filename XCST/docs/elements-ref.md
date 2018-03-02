@@ -36,6 +36,8 @@ name                     | description
 `namespace_name`         | A C# [`namespace_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
 `boolean_expression`     | A C# [`boolean_expression`]({{page.csharp_spec_url}}expressions.md#boolean-expressions)
 `lambda_expression`      | A C# [`lambda_expression`]({{page.csharp_spec_url}}expressions.md#anonymous-function-expressions)
+`unary_expression`       | A C# [`unary_expression`]({{page.csharp_spec_url}}expressions.md#unary-operators)
+`statement_expression`   | A C# [`statement_expression`]({{page.csharp_spec_url}}statements.md#expression-statements)
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
 
 If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) it indicates a whitespace separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
