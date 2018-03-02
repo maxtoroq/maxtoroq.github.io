@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:void</span>
-  <span>value</span>? = <i title="Expression.">expression</i> &gt;
+  <span>value</span>? = <i title="Statement expression.">statement_expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:void&gt;</span></code></pre></div>
 <p>Evaluates ignoring the result.</p>

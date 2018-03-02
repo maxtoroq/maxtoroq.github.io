@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:set</span>
-  <b>member</b> = <i title="Expression.">expression</i>
+  <b>ref</b> = <i title="Unary expression.">unary_expression</i>
   <span>value</span>? = <i title="Expression.">expression</i>
   <span>as</span>? = <i title="Type name.">type_name</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
@@ -31,7 +31,7 @@ regenerated.
          <td>The type of the value.</td>
       </tr>
       <tr>
-         <td><code>member</code></td>
+         <td><code>ref</code></td>
          <td>The reference to set.</td>
       </tr>
       <tr>

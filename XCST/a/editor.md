@@ -14,7 +14,7 @@ regenerated.
   <span>name</span>? = { <i>string</i> }
   <span>template</span>? = { <i>string</i> }
   <span>html-field-name</span>? = { <i>string</i> }
-  <span>html-attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>options</span>? = @(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<span title="System.Web.Mvc.SelectListItem">SelectListItem</span>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping">IGrouping</a>&lt;<span title="TGroupKey">TGroupKey</span>, <a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt;&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping<TKey, TElement&gt;">IGrouping&lt;TKey, TElement&gt;</a>&gt; | <a href="{{ page.bcl_url }}system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>) &gt;
   &lt;!-- Content: (<span><a href="with-options.html">a:with-options</a>*</span>, <span><a href="member-template.html">a:member-template</a>?</span>) --&gt;
@@ -30,11 +30,11 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>for</code></td>
+         <td><code>attributes</code></td>
          <td></td>
       </tr>
       <tr>
-         <td><code>html-attributes</code></td>
+         <td><code>for</code></td>
          <td></td>
       </tr>
       <tr>

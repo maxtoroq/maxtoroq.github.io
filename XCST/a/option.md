@@ -17,8 +17,7 @@ regenerated.
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="drop-down-list.html"><code>a:drop-down-list</code></a></dd>
-   <dd><a href="list-box.html"><code>a:list-box</code></a></dd>
+   <dd><a href="select.html"><code>a:select</code></a></dd>
    <dd><a href="with-options.html"><code>a:with-options</code></a></dd>
 </dl>
 <h2 id="attributes">Attributes</h2>

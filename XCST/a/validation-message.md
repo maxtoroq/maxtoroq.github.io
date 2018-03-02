@@ -13,8 +13,8 @@ regenerated.
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
   <span>message</span>? = { <i>string</i> }
-  <span>html-class</span>? = { <i>string</i> }
-  <span>html-attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
+  <span>class</span>? = { <i>string</i> }
+  <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
@@ -26,15 +26,15 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
+         <td><code>attributes</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>class</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>for</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>html-attributes</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>html-class</code></td>
          <td></td>
       </tr>
       <tr>
