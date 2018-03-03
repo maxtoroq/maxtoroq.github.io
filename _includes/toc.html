@@ -1,0 +1,40 @@
+<script>
+
+  document.addEventListener('DOMContentLoaded', function(event) {
+  
+    var headings = document.querySelectorAll('article h2');
+    
+    if (headings.length < 3) {
+      return;
+    }
+    
+    var ToC =
+      "<nav role='navigation' class='toc'>" +
+        "<h3>On this page:</h3>" +
+        "<ul>";
+
+    var newLine, el, title, link;
+
+    Array.prototype.forEach.call(headings, function(el, i){
+
+      title = el.textContent;
+      link = '#' + el.getAttribute('id');
+
+      newLine =
+        "<li>" +
+          "<a href='" + link + "'>" +
+            title +
+          "</a>" +
+        "</li>";
+
+      ToC += newLine;
+    });
+
+    ToC +=
+       "</ul>" +
+      "</nav>";
+
+    document.querySelector('article h1')
+      .insertAdjacentHTML('afterend', ToC);
+  });
+</script>
