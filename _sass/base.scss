@@ -205,6 +205,15 @@ nav.toc {
    }
 }
 
+h2:target {
+  animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+  from { background: yellow; }
+  to { background: white; }
+}
+
 @import "highlight";
 //@import "highlight-csharp";
 @import "highlight-sql";
