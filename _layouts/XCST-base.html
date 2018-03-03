@@ -5,6 +5,9 @@
    <title>{{ page.title }}</title>
    <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico" />
+   {% unless page.element-ref %}
+   {% include toc.html %}
+   {% endunless %}
    {% include analytics.html %}
 </head>
 <body>
