@@ -51,6 +51,15 @@ h2 {
    margin-bottom: 0.5rem;
 }
 
+*[id]:target {
+  animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+  from { background: yellow; }
+  to { background: transparent; }
+}
+
 img {
    border: 0;
 }
@@ -307,14 +316,5 @@ table code {
          color: $link-color;
          border-bottom: none;
       }
-   }
-
-   h2:target {
-     animation: highlight 1s ease;
-   }
-
-   @keyframes highlight {
-     from { background: yellow; }
-     to { background: transparent; }
    }
 }
