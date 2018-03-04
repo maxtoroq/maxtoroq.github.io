@@ -1,5 +1,6 @@
 ---
 title: XCST
+toc: false
 ---
 
 **XCST (eXtensible C-Sharp Templates)** is a language for transforming objects into XML documents. It is based on a subset of XSLT (no `apply-templates`) but using C# as expression language and data model, instead of XPath.
