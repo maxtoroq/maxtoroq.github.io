@@ -1,5 +1,6 @@
 ---
 title: Documentation
+toc: false
 ---
 
 Getting Started
