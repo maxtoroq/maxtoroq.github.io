@@ -212,6 +212,11 @@ nav.toc {
    li:before {
       content: none;
    }
+   
+   a {
+      color: initial;
+      border-bottom: none;
+   }
 }
 
 h2:target {
