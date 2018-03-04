@@ -4,23 +4,6 @@ title: XCST Introduction for the Razor Developer
 
 XCST is a middle ground between XSLT and Razor. Being XML, it has a stricter syntax, but at the same time there's more flexibility with what you can do with your code. If you are familiar with XSLT and XML then picking up XCST should be easy. If you don't, then this guide is for you.
 
-### Contents
-
-- [Modules](#modules)
-- [Value templates](#value-templates)
-- [Instructions](#instructions)
-- [Script blocks](#script-blocks)
-- [Working with attributes](#working-with-attributes)
-- [Whitespace](#whitespace)
-- [Comments](#comments)
-- [Templates](#templates)
-- [Functions and global variables](#functions-and-global-variables)
-- [Layouts](#layouts)
-- [Working with data and postbacks](#working-with-data-and-postbacks)
-- [HTML helpers](#html-helpers)
-- [RenderPage/RenderPartial](#renderpagerenderpartial)
-- [`model` directive](#model-directive)
-
 Modules
 -------
 A Razor page is a script that is executed from top to bottom. It has a body, which can include markup, text, code blocks and sections. It can also have declarations such as functions and helpers, which are not part of the body and are not affected by order. A Razor page has therefore a single point of entry, its body.
