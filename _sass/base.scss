@@ -190,11 +190,16 @@ table code {
 }
 
 nav.toc {
+   
    position: fixed;
    right: 1em;
-   padding: 1em 2em;
    border-left: 1px solid rgba(128,56,101,0.3);
    font-size: 0.8em;
+   width: calc(((100% - 790px) / 2) - 2em);
+   
+   > div {
+      padding: 1em 2em;
+   }
    
    ul {
       padding: 0;
