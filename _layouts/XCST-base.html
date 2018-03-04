@@ -5,9 +5,11 @@
    <title>{{ page.title }}</title>
    <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico" />
-   {% if page.element_ref == false or page.toc %}
+   {% unless page.element_ref %}
+   {% if page.toc == nil or page.toc %}
    {% include toc.html %}
    {% endif %}
+   {% endunless %}
    {% include analytics.html %}
 </head>
 <body>
