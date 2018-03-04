@@ -195,10 +195,14 @@ nav.toc {
    right: 1em;
    border-left: 1px solid rgba(128,56,101,0.3);
    font-size: 0.8em;
-   width: calc(((100% - 790px) / 2) - 2em);
+   width: calc(((100% - 790px) / 2) - 3em);
    
    > div {
-      padding: 1em 2em;
+      padding: 1em 1.5em;
+   }
+   
+   h3 {
+      margin: 0;
    }
    
    ul {
