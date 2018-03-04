@@ -14,8 +14,9 @@
     
     var ToC =
       "<nav role='navigation' class='toc'>" +
-        "<h3>On this page:</h3>" +
-        "<ul>";
+        "<div>" +
+          "<h3>On this page:</h3>" +
+          "<ul>";
 
     var newLine, el, title, link;
 
@@ -35,7 +36,8 @@
     });
 
     ToC +=
-       "</ul>" +
+          "</ul>" +
+        "</div>" +
       "</nav>";
 
     document.querySelector('article header')
