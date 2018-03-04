@@ -6,6 +6,9 @@
    <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
    <link rel="apple-touch-icon" href="{{ page.base_url }}apple-touch-icon.png"/>
+   {% if page.toc == nil or page.toc %}
+   {% include toc.html %}
+   {% endif %}
    {% include analytics.html %}
 </head>
 <body>
