@@ -18,6 +18,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **ClientDataTypeModelValidatorProvider gets messages from config object instead of global resource** [e6053e1](https://github.com/maxtoroq/XCST-a/commit/e6053e1468f8597d375fa50d23932a698fe0b946)
 - **Don't render date client validation metadata for DateTime** [36c3eb0](https://github.com/maxtoroq/XCST-a/commit/36c3eb0942da4904cb1149efc29278e41f327d33)
 - Fixed [aspnet/AspNetWebStack#7](https://github.com/aspnet/AspNetWebStack/issues/7) [02e8172](https://github.com/maxtoroq/XCST-a/commit/02e8172da9f38201ba432ca5a26a6131cac1ef3f)
+- **Value/ValueFor uses EditFormatString by default** [0738bbe](https://github.com/maxtoroq/XCST-a/commit/0738bbe7ff78e505f10ee28e2374953cf07b1a4a)
 
 ### Built-in display/editor templates
 
