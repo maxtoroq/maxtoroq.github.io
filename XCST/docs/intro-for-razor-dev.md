@@ -484,8 +484,8 @@ Razor                                                 | XCST
 `Html.EditorFor(p => p.foo)`                          | `<a:editor for='foo'/>`
 `Html.EditorForModel()`                               | `<a:editor/>`
 `Html.EnumDropDownListFor()`                          | n/a
-`Html.Hidden("foo")`                                  | `<a:input type='hidden' name='foo'/>`
-`Html.HiddenFor(p => p.foo)`                          | `<a:input type='hidden' for='foo'/>`
+`Html.Hidden("foo")`                                  | `<a:hidden name='foo'/>`
+`Html.HiddenFor(p => p.foo)`                          | `<a:hidden for='foo'/>`
 `Html.HttpMethodOverride("DELETE")`                   | n/a
 `Html.Label("foo")`                                   | `<a:label name='foo'/>`
 `Html.LabelFor(p => p.foo)`                           | `<a:label for='foo'/>`
