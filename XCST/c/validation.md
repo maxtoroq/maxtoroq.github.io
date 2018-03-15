@@ -10,19 +10,13 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:validation</span>
-  <span>error-resource-type</span>? = <i title="Type name.">type_name</i>
-  <span>data-type-error-message</span>? = <i>string</i>
-  <span>data-type-error-resource</span>? = <i>string</i>
-  <span>required-error-message</span>? = <i>string</i>
-  <span>required-error-resource</span>? = <i>string</i>
-  <span>length-error-message</span>? = <i>string</i>
-  <span>length-error-resource</span>? = <i>string</i>
-  <span>pattern-error-message</span>? = <i>string</i>
-  <span>pattern-error-resource</span>? = <i>string</i>
-  <span>range-error-message</span>? = <i>string</i>
-  <span>range-error-resource</span>? = <i>string</i>
-  <span>equal-to-error-message</span>? = <i>string</i>
-  <span>equal-to-error-resource</span>? = <i>string</i> /&gt;</code></pre></div>
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
+  <span>data-type-message</span>? = <i>string</i>
+  <span>required-message</span>? = <i>string</i>
+  <span>length-message</span>? = <i>string</i>
+  <span>pattern-message</span>? = <i>string</i>
+  <span>range-message</span>? = <i>string</i>
+  <span>equal-to-message</span>? = <i>string</i> /&gt;</code></pre></div>
 <p>Defines default values for validation messages.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -35,56 +29,32 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>data-type-error-message</code></td>
+         <td><code>data-type-message</code></td>
          <td>An error message for the data-type attribute.</td>
       </tr>
       <tr>
-         <td><code>data-type-error-resource</code></td>
-         <td>A resource name that contains an error message for the data-type attribute.</td>
-      </tr>
-      <tr>
-         <td><code>equal-to-error-message</code></td>
+         <td><code>equal-to-message</code></td>
          <td>An error message for the equal-to attribute.</td>
       </tr>
       <tr>
-         <td><code>equal-to-error-resource</code></td>
-         <td>A resource name that contains an error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>error-resource-type</code></td>
-         <td>A type that contains error message resources for validation attributes.</td>
-      </tr>
-      <tr>
-         <td><code>length-error-message</code></td>
+         <td><code>length-message</code></td>
          <td>An error message for the min-length and max-length attributes.</td>
       </tr>
       <tr>
-         <td><code>length-error-resource</code></td>
-         <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
-      </tr>
-      <tr>
-         <td><code>pattern-error-message</code></td>
+         <td><code>pattern-message</code></td>
          <td>An error message for the pattern attribute.</td>
       </tr>
       <tr>
-         <td><code>pattern-error-resource</code></td>
-         <td>A resource name that contains an error message for the pattern attribute.</td>
-      </tr>
-      <tr>
-         <td><code>range-error-message</code></td>
+         <td><code>range-message</code></td>
          <td>An error message for the min and max attributes.</td>
       </tr>
       <tr>
-         <td><code>range-error-resource</code></td>
-         <td>A resource name that contains an error message for the min and max attributes.</td>
-      </tr>
-      <tr>
-         <td><code>required-error-message</code></td>
+         <td><code>required-message</code></td>
          <td>An error message for the required attribute.</td>
       </tr>
       <tr>
-         <td><code>required-error-resource</code></td>
-         <td>A resource name that contains an error message for the required attribute.</td>
+         <td><code>validation-resource-type</code></td>
+         <td>A type that contains error message resources for validation attributes.</td>
       </tr>
    </table>
 </div>

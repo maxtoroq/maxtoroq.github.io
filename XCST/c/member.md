@@ -15,7 +15,7 @@ regenerated.
   <span>value</span>? = <i title="Expression.">expression</i>
   <span>expression</span>? = <i title="Expression.">expression</i>
   <span>auto-initialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i></span>
+  <span>display</span>? = <span><span class="s" title="Indicates that this member should only be displayed in a viewing UI.">"view-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI.">"edit-only"</span> | <span class="s" title="Indicates that this member should only be displayed in an editing UI as a hidden field.">"hidden"</span> | <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i></span>
   <span>display-name</span>? = <i>string</i>
   <span>description</span>? = <i>string</i>
   <span>short-name</span>? = <i>string</i>
@@ -28,7 +28,6 @@ regenerated.
   <span>null-display-text</span>? = <i>string</i>
   <span>template</span>? = <i>string</i>
   <span>read-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>auto-generate-filter</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>max-length</span>? = <i>integer</i>
@@ -41,19 +40,13 @@ regenerated.
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
-  <span>error-resource-type</span>? = <i title="Type name.">type_name</i>
-  <span>data-type-error-message</span>? = <i>string</i>
-  <span>data-type-error-resource</span>? = <i>string</i>
-  <span>required-error-message</span>? = <i>string</i>
-  <span>required-error-resource</span>? = <i>string</i>
-  <span>length-error-message</span>? = <i>string</i>
-  <span>length-error-resource</span>? = <i>string</i>
-  <span>pattern-error-message</span>? = <i>string</i>
-  <span>pattern-error-resource</span>? = <i>string</i>
-  <span>range-error-message</span>? = <i>string</i>
-  <span>range-error-resource</span>? = <i>string</i>
-  <span>equal-to-error-message</span>? = <i>string</i>
-  <span>equal-to-error-resource</span>? = <i>string</i> &gt;
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
+  <span>data-type-message</span>? = <i>string</i>
+  <span>required-message</span>? = <i>string</i>
+  <span>length-message</span>? = <i>string</i>
+  <span>pattern-message</span>? = <i>string</i>
+  <span>range-message</span>? = <i>string</i>
+  <span>equal-to-message</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
@@ -78,12 +71,6 @@ regenerated.
          <td>The type of the member.</td>
       </tr>
       <tr>
-         <td><code>auto-generate-filter</code></td>
-         <td>Specifies if a filtering control should be automatically displayed for this member
-            in a UI.
-         </td>
-      </tr>
-      <tr>
          <td><code>auto-initialize</code></td>
          <td>Auto-assign an initial value to this member.</td>
       </tr>
@@ -92,12 +79,8 @@ regenerated.
          <td></td>
       </tr>
       <tr>
-         <td><code>data-type-error-message</code></td>
+         <td><code>data-type-message</code></td>
          <td>An error message for the data-type attribute.</td>
-      </tr>
-      <tr>
-         <td><code>data-type-error-resource</code></td>
-         <td>A resource name that contains an error message for the data-type attribute.</td>
       </tr>
       <tr>
          <td><code>description</code></td>
@@ -130,16 +113,8 @@ regenerated.
          <td>The name of another member that a valid value for this member should be equal to.</td>
       </tr>
       <tr>
-         <td><code>equal-to-error-message</code></td>
+         <td><code>equal-to-message</code></td>
          <td>An error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>equal-to-error-resource</code></td>
-         <td>A resource name that contains an error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>error-resource-type</code></td>
-         <td>A type that contains error message resources for validation attributes.</td>
       </tr>
       <tr>
          <td><code>expression</code></td>
@@ -154,12 +129,8 @@ regenerated.
          <td>A name that is used to group members in a UI.</td>
       </tr>
       <tr>
-         <td><code>length-error-message</code></td>
+         <td><code>length-message</code></td>
          <td>An error message for the min-length and max-length attributes.</td>
-      </tr>
-      <tr>
-         <td><code>length-error-resource</code></td>
-         <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
       </tr>
       <tr>
          <td><code>max</code></td>
@@ -194,24 +165,16 @@ regenerated.
          <td>A regular expression that a valid value for this member must conform to.</td>
       </tr>
       <tr>
-         <td><code>pattern-error-message</code></td>
+         <td><code>pattern-message</code></td>
          <td>An error message for the pattern attribute.</td>
-      </tr>
-      <tr>
-         <td><code>pattern-error-resource</code></td>
-         <td>A resource name that contains an error message for the pattern attribute.</td>
       </tr>
       <tr>
          <td><code>place-holder</code></td>
          <td>A hint to the user of what can be entered in a control for this member.</td>
       </tr>
       <tr>
-         <td><code>range-error-message</code></td>
+         <td><code>range-message</code></td>
          <td>An error message for the min and max attributes.</td>
-      </tr>
-      <tr>
-         <td><code>range-error-resource</code></td>
-         <td>A resource name that contains an error message for the min and max attributes.</td>
       </tr>
       <tr>
          <td><code>read-only</code></td>
@@ -222,12 +185,8 @@ regenerated.
          <td>Specifies if this member is required.</td>
       </tr>
       <tr>
-         <td><code>required-error-message</code></td>
+         <td><code>required-message</code></td>
          <td>An error message for the required attribute.</td>
-      </tr>
-      <tr>
-         <td><code>required-error-resource</code></td>
-         <td>A resource name that contains an error message for the required attribute.</td>
       </tr>
       <tr>
          <td><code>resource-type</code></td>
@@ -244,6 +203,10 @@ regenerated.
       <tr>
          <td><code>template</code></td>
          <td>The name of a template to use when displaying this member in a UI.</td>
+      </tr>
+      <tr>
+         <td><code>validation-resource-type</code></td>
+         <td>A type that contains error message resources for validation attributes.</td>
       </tr>
       <tr>
          <td><code>value</code></td>

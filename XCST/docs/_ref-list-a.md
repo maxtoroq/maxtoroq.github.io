@@ -10,6 +10,7 @@ regenerated.
 - [`a:check-box`](../a/check-box.html)
 - [`a:display`](../a/display.html) &nbsp;[`a:display-name`](../a/display-name.html) &nbsp;[`a:display-text`](../a/display-text.html)
 - [`a:editor`](../a/editor.html)
+- [`a:hidden`](../a/hidden.html)
 - [`a:input`](../a/input.html)
 - [`a:label`](../a/label.html)
 - [`a:member-template`](../a/member-template.html) &nbsp;[`a:model`](../a/model.html)

@@ -16,6 +16,7 @@ regenerated.
   <span>options</span>? = @(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<span title="System.Web.Mvc.SelectListItem">SelectListItem</span>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping">IGrouping</a>&lt;<span title="TGroupKey">TGroupKey</span>, <a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt;&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping<TKey, TElement&gt;">IGrouping&lt;TKey, TElement&gt;</a>&gt; | <a href="{{ page.bcl_url }}system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>)
   <span>multiple</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>autofocus</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>class</span>? = { <i>string</i> }
   <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="option.html">a:option</a>*</span> --&gt;
@@ -32,6 +33,10 @@ regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>attributes</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>autofocus</code></td>
          <td></td>
       </tr>
       <tr>

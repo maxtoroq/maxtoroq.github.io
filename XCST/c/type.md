@@ -16,19 +16,13 @@ regenerated.
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
-  <span>error-resource-type</span>? = <i title="Type name.">type_name</i>
-  <span>data-type-error-message</span>? = <i>string</i>
-  <span>data-type-error-resource</span>? = <i>string</i>
-  <span>required-error-message</span>? = <i>string</i>
-  <span>required-error-resource</span>? = <i>string</i>
-  <span>length-error-message</span>? = <i>string</i>
-  <span>length-error-resource</span>? = <i>string</i>
-  <span>pattern-error-message</span>? = <i>string</i>
-  <span>pattern-error-resource</span>? = <i>string</i>
-  <span>range-error-message</span>? = <i>string</i>
-  <span>range-error-resource</span>? = <i>string</i>
-  <span>equal-to-error-message</span>? = <i>string</i>
-  <span>equal-to-error-resource</span>? = <i>string</i> &gt;
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
+  <span>data-type-message</span>? = <i>string</i>
+  <span>required-message</span>? = <i>string</i>
+  <span>length-message</span>? = <i>string</i>
+  <span>pattern-message</span>? = <i>string</i>
+  <span>range-message</span>? = <i>string</i>
+  <span>equal-to-message</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
 <span class="nt">&lt;/c:type&gt;</span></code></pre></div>
 <p>Defines a type.</p>
@@ -48,12 +42,8 @@ regenerated.
          <td>Specifies if an empty string is a valid value for this member.</td>
       </tr>
       <tr>
-         <td><code>data-type-error-message</code></td>
+         <td><code>data-type-message</code></td>
          <td>An error message for the data-type attribute.</td>
-      </tr>
-      <tr>
-         <td><code>data-type-error-resource</code></td>
-         <td>A resource name that contains an error message for the data-type attribute.</td>
       </tr>
       <tr>
          <td><code>disable-empty-string-to-null-conversion</code></td>
@@ -64,58 +54,38 @@ regenerated.
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
-         <td><code>equal-to-error-message</code></td>
+         <td><code>equal-to-message</code></td>
          <td>An error message for the equal-to attribute.</td>
       </tr>
       <tr>
-         <td><code>equal-to-error-resource</code></td>
-         <td>A resource name that contains an error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>error-resource-type</code></td>
-         <td>A type that contains error message resources for validation attributes.</td>
-      </tr>
-      <tr>
-         <td><code>length-error-message</code></td>
+         <td><code>length-message</code></td>
          <td>An error message for the min-length and max-length attributes.</td>
-      </tr>
-      <tr>
-         <td><code>length-error-resource</code></td>
-         <td>A resource name that contains an error message for the min-length and max-length attributes.</td>
       </tr>
       <tr>
          <td><code>name</code></td>
          <td>The name of the type.</td>
       </tr>
       <tr>
-         <td><code>pattern-error-message</code></td>
+         <td><code>pattern-message</code></td>
          <td>An error message for the pattern attribute.</td>
       </tr>
       <tr>
-         <td><code>pattern-error-resource</code></td>
-         <td>A resource name that contains an error message for the pattern attribute.</td>
-      </tr>
-      <tr>
-         <td><code>range-error-message</code></td>
+         <td><code>range-message</code></td>
          <td>An error message for the min and max attributes.</td>
       </tr>
       <tr>
-         <td><code>range-error-resource</code></td>
-         <td>A resource name that contains an error message for the min and max attributes.</td>
-      </tr>
-      <tr>
-         <td><code>required-error-message</code></td>
+         <td><code>required-message</code></td>
          <td>An error message for the required attribute.</td>
-      </tr>
-      <tr>
-         <td><code>required-error-resource</code></td>
-         <td>A resource name that contains an error message for the required attribute.</td>
       </tr>
       <tr>
          <td><code>resource-type</code></td>
          <td>A type that contains resources for name, short-name, description and place-holder
             attributes.
          </td>
+      </tr>
+      <tr>
+         <td><code>validation-resource-type</code></td>
+         <td>A type that contains error message resources for validation attributes.</td>
       </tr>
       <tr>
          <td><code>visibility</code></td>

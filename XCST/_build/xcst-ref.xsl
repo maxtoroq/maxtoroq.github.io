@@ -295,6 +295,8 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
       </xsl:if>
    </xsl:template>
 
+   <xsl:template match="rng:ref[@name = 'extension-attributes']" mode="ref:attribs"/>
+
    <xsl:template match="rng:choice[rng:*[2][self::rng:ref[@name = ('avt', 'avt-expr')]]]" mode="ref:type-display">
       <xsl:text>{ </xsl:text>
       <xsl:apply-templates select="rng:*[1]" mode="#current"/>

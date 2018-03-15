@@ -1,5 +1,5 @@
 ---
-title: "a:radio-button"
+title: "a:hidden"
 ---
 
 {% comment %}  
@@ -9,13 +9,11 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:radio-button</span>
-  <b>value</b> = <i title="Expression.">expression</i>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:hidden</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
-  <span>checked</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>value</span>? = <i title="Expression.">expression</i>
   <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>autofocus</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>class</span>? = { <i>string</i> }
   <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
 <dl>
@@ -30,14 +28,6 @@ regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>attributes</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>autofocus</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>checked</code></td>
          <td></td>
       </tr>
       <tr>
@@ -63,4 +53,4 @@ regenerated.
    </table>
 </div>
 
-{% include_relative _radio-button.md %}
+{% include_relative _hidden.md %}
