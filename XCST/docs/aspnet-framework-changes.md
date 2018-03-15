@@ -7,7 +7,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 
 - **Client validation and unobtrusive js enabled by default** [b62f94f](https://github.com/maxtoroq/XCST-a/commit/b62f94f7f117f835a33f4191f5a6fe840082238f)
 - **Removed System.Data.Linq.Binary dependency (hidden helpers)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
-- **Merged `a:text-box`, `a:hidden` and `a:password` into `a:input`** [5bd091e](https://github.com/maxtoroq/XCST-a/commit/5bd091ead81a2e55b8f60af5d1b0656dcd1ab4bd)
+- **Merged `a:text-box` and `a:password` into `a:input`** [5bd091e](https://github.com/maxtoroq/XCST-a/commit/5bd091ead81a2e55b8f60af5d1b0656dcd1ab4bd)
 - **Merged `a:drop-down-list` and `a:list-box` into `a:select`** [53e6c22](https://github.com/maxtoroq/XCST-a/commit/53e6c22b3f5e62876b4390128cab45548b75b7f2)
 - **Removed `a:http-method-override`**
 - **Get selected value from metadata on `a:select`** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
@@ -35,6 +35,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Built-in Enum display/editor templates** [9ca2539](https://github.com/maxtoroq/XCST-a/commit/9ca25398f221720565d65b4d30630f849c79d551)
 - **Built-in Upload editor template** [9869018](https://github.com/maxtoroq/XCST-a/commit/9869018828224a5c0f0c8c0e7eb73b831cbc3ad0)
 - **Built-in ImageUrl display template** [ffbaeed](https://github.com/maxtoroq/XCST-a/commit/ffbaeed858d8562a7f1bd06cc13cdb54721f30b5)
+- **Built-in HttpPostedFileBase editor template** [daaf809](https://github.com/maxtoroq/XCST-a/commit/daaf8096b888f33ac3b90db8d9df4a92cca35bd7)
 - `a:editor/a:with-options` and use DropDownList template when options are available [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 
 ## Model binding
