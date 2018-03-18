@@ -4,6 +4,7 @@
    xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xmlns:rng="http://relaxng.org/ns/structure/1.0"
    xmlns:ann="http://relaxng.org/ns/compatibility/annotations/1.0"
+   xmlns:docs="http://maxtoroq.github.io/XCST/docs"
    xmlns:ref="http://localhost/"
    exclude-result-prefixes="#all">
 
@@ -70,13 +71,17 @@
    </template>
 
    <template match="rng:ref" mode="ref:attribs">
-      <apply-templates select="key('ref:define', @name)" mode="#current"/>
+      <apply-templates select="key('ref:define', @name)" mode="#current">
+         <with-param name="attrib-group" select="@docs:attrib-group" tunnel="yes"/>
+      </apply-templates>
    </template>
 
    <template match="rng:attribute" mode="ref:attribs">
       <param name="optional" as="xs:boolean" tunnel="yes"/>
+      <param name="attrib-group" as="attribute()?" tunnel="yes"/>
 
-      <ref:attribute name="{ref:name(.)}" required="{not($optional)}">
+      <ref:attribute name="{ref:name(.)}" required="{not($optional)}"
+         group="{($attrib-group, ancestor-or-self::*/@docs:attrib-group)[1]}">
          <if test="ann:documentation">
             <attribute name="description" select="ann:documentation"/>
          </if>

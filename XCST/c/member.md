@@ -36,14 +36,13 @@ regenerated.
   <span>min</span>? = <i>string</i>
   <span>max</span>? = <i>string</i>
   <span>equal-to</span>? = <i title="Identifier.">identifier</i>
-  <span>resource-type</span>? = <i title="Type name.">type_name</i>
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
-  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
   <span>data-type-message</span>? = <i>string</i>
   <span>required-message</span>? = <i>string</i>
-  <span>length-message</span>? = <i>string</i>
+  <span>min-length-message</span>? = <i>string</i>
+  <span>max-length-message</span>? = <i>string</i>
   <span>pattern-message</span>? = <i>string</i>
   <span>range-message</span>? = <i>string</i>
   <span>equal-to-message</span>? = <i>string</i> &gt;
@@ -59,12 +58,7 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>allow-empty-string</code></td>
-         <td>Specifies if an empty string is a valid value for this member.</td>
-      </tr>
-      <tr>
-         <td><code>apply-format-in-edit-mode</code></td>
-         <td>Specifies if the display format should be used in an edit control for this member.</td>
+         <th colspan="2">Definition</th>
       </tr>
       <tr>
          <td><code>as</code></td>
@@ -75,20 +69,27 @@ regenerated.
          <td>Auto-assign an initial value to this member.</td>
       </tr>
       <tr>
-         <td><code>data-type</code></td>
-         <td></td>
+         <td><code>expression</code></td>
+         <td>An expression for computed members.</td>
       </tr>
       <tr>
-         <td><code>data-type-message</code></td>
-         <td>An error message for the data-type attribute.</td>
+         <td><code>name</code></td>
+         <td>The name of the member.</td>
+      </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td>An initial value for this member.</td>
+      </tr>
+      <tr>
+         <th colspan="2">Presentation</th>
+      </tr>
+      <tr>
+         <td><code>apply-format-in-edit-mode</code></td>
+         <td>Specifies if the display format should be used in an edit control for this member.</td>
       </tr>
       <tr>
          <td><code>description</code></td>
          <td>A description of this member suitable for UI.</td>
-      </tr>
-      <tr>
-         <td><code>disable-empty-string-to-null-conversion</code></td>
-         <td>Specifies if empty strings should not be converted to null for this member.</td>
       </tr>
       <tr>
          <td><code>disable-output-escaping</code></td>
@@ -109,48 +110,12 @@ regenerated.
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
-         <td><code>equal-to</code></td>
-         <td>The name of another member that a valid value for this member should be equal to.</td>
-      </tr>
-      <tr>
-         <td><code>equal-to-message</code></td>
-         <td>An error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>expression</code></td>
-         <td>An expression for computed members.</td>
-      </tr>
-      <tr>
          <td><code>format</code></td>
          <td>A formatting string that specifies the display format for the value of this member.</td>
       </tr>
       <tr>
          <td><code>group</code></td>
          <td>A name that is used to group members in a UI.</td>
-      </tr>
-      <tr>
-         <td><code>length-message</code></td>
-         <td>An error message for the min-length and max-length attributes.</td>
-      </tr>
-      <tr>
-         <td><code>max</code></td>
-         <td>A maximum valid value for this member.</td>
-      </tr>
-      <tr>
-         <td><code>max-length</code></td>
-         <td>A maximum valid string length for this member.</td>
-      </tr>
-      <tr>
-         <td><code>min</code></td>
-         <td>A minimum valid value for this member.</td>
-      </tr>
-      <tr>
-         <td><code>min-length</code></td>
-         <td>A minimum valid string length for this member.</td>
-      </tr>
-      <tr>
-         <td><code>name</code></td>
-         <td>The name of the member.</td>
       </tr>
       <tr>
          <td><code>null-display-text</code></td>
@@ -161,38 +126,12 @@ regenerated.
          <td>A number that indicates the relative position of this member in a UI.</td>
       </tr>
       <tr>
-         <td><code>pattern</code></td>
-         <td>A regular expression that a valid value for this member must conform to.</td>
-      </tr>
-      <tr>
-         <td><code>pattern-message</code></td>
-         <td>An error message for the pattern attribute.</td>
-      </tr>
-      <tr>
          <td><code>place-holder</code></td>
          <td>A hint to the user of what can be entered in a control for this member.</td>
       </tr>
       <tr>
-         <td><code>range-message</code></td>
-         <td>An error message for the min and max attributes.</td>
-      </tr>
-      <tr>
          <td><code>read-only</code></td>
          <td>Specifies if editing should be disabled for this member in an editing UI.</td>
-      </tr>
-      <tr>
-         <td><code>required</code></td>
-         <td>Specifies if this member is required.</td>
-      </tr>
-      <tr>
-         <td><code>required-message</code></td>
-         <td>An error message for the required attribute.</td>
-      </tr>
-      <tr>
-         <td><code>resource-type</code></td>
-         <td>A type that contains resources for name, short-name, description and place-holder
-            attributes.
-         </td>
       </tr>
       <tr>
          <td><code>short-name</code></td>
@@ -205,12 +144,75 @@ regenerated.
          <td>The name of a template to use when displaying this member in a UI.</td>
       </tr>
       <tr>
-         <td><code>validation-resource-type</code></td>
-         <td>A type that contains error message resources for validation attributes.</td>
+         <th colspan="2">Validation</th>
       </tr>
       <tr>
-         <td><code>value</code></td>
-         <td>An initial value for this member.</td>
+         <td><code>allow-empty-string</code></td>
+         <td>Specifies if an empty string is a valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code>data-type</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>data-type-message</code></td>
+         <td>An error message for the data-type attribute.</td>
+      </tr>
+      <tr>
+         <td><code>disable-empty-string-to-null-conversion</code></td>
+         <td>Specifies if empty strings should not be converted to null for this member.</td>
+      </tr>
+      <tr>
+         <td><code>equal-to</code></td>
+         <td>The name of another member that a valid value for this member should be equal to.</td>
+      </tr>
+      <tr>
+         <td><code>equal-to-message</code></td>
+         <td>An error message for the equal-to attribute.</td>
+      </tr>
+      <tr>
+         <td><code>max</code></td>
+         <td>A maximum valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code>max-length</code></td>
+         <td>A maximum valid length for this member.</td>
+      </tr>
+      <tr>
+         <td><code>max-length-message</code></td>
+         <td>An error message for the max-length attribute.</td>
+      </tr>
+      <tr>
+         <td><code>min</code></td>
+         <td>A minimum valid value for this member.</td>
+      </tr>
+      <tr>
+         <td><code>min-length</code></td>
+         <td>A minimum valid length for this member.</td>
+      </tr>
+      <tr>
+         <td><code>min-length-message</code></td>
+         <td>An error message for the min-length attribute.</td>
+      </tr>
+      <tr>
+         <td><code>pattern</code></td>
+         <td>A regular expression that a valid value for this member must conform to.</td>
+      </tr>
+      <tr>
+         <td><code>pattern-message</code></td>
+         <td>An error message for the pattern attribute.</td>
+      </tr>
+      <tr>
+         <td><code>range-message</code></td>
+         <td>An error message for the min and max attributes.</td>
+      </tr>
+      <tr>
+         <td><code>required</code></td>
+         <td>Specifies if this member is required.</td>
+      </tr>
+      <tr>
+         <td><code>required-message</code></td>
+         <td>An error message for the required attribute.</td>
       </tr>
    </table>
 </div>

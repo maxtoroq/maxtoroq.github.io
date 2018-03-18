@@ -252,21 +252,30 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
          </xsl:element>
          <div class="table-responsive">
             <table class="ref-attribs">
-               <xsl:for-each select="$attribs">
-                  <xsl:sort select="@name"/>
+               <xsl:for-each-group select="$attribs" group-by="@group">
+                  <xsl:if test="last() gt 1 or current-grouping-key()">
+                     <tr>
+                        <th colspan="2">
+                           <xsl:value-of select="(current-grouping-key()[.], 'Other')[1]"/>
+                        </th>
+                     </tr>
+                  </xsl:if>
+                  <xsl:for-each select="current-group()">
+                     <xsl:sort select="@name"/>
 
-                  <tr>
-                     <td>
-                        <code>
-                           <xsl:if test="$example">[c:]</xsl:if>
-                           <xsl:value-of select="@name"/>
-                        </code>
-                     </td>
-                     <td>
-                        <xsl:value-of select="@description"/>
-                     </td>
-                  </tr>
-               </xsl:for-each>
+                     <tr>
+                        <td>
+                           <code>
+                              <xsl:if test="$example">[c:]</xsl:if>
+                              <xsl:value-of select="@name"/>
+                           </code>
+                        </td>
+                        <td>
+                           <xsl:value-of select="@description"/>
+                        </td>
+                     </tr>
+                  </xsl:for-each>
+               </xsl:for-each-group>
             </table>
          </div>
          <xsl:if test="not($example) and namespace-uri-from-QName($name) eq namespace-uri-from-QName(xs:QName('c:foo'))">

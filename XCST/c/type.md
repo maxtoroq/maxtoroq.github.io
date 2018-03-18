@@ -12,17 +12,11 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:type</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span>
-  <span>resource-type</span>? = <i title="Type name.">type_name</i>
   <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
-  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
-  <span>data-type-message</span>? = <i>string</i>
-  <span>required-message</span>? = <i>string</i>
-  <span>length-message</span>? = <i>string</i>
-  <span>pattern-message</span>? = <i>string</i>
-  <span>range-message</span>? = <i>string</i>
-  <span>equal-to-message</span>? = <i>string</i> &gt;
+  <span>resource-type</span>? = <i title="Type name.">type_name</i>
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
 <span class="nt">&lt;/c:type&gt;</span></code></pre></div>
 <p>Defines a type.</p>
@@ -42,10 +36,6 @@ regenerated.
          <td>Specifies if an empty string is a valid value for this member.</td>
       </tr>
       <tr>
-         <td><code>data-type-message</code></td>
-         <td>An error message for the data-type attribute.</td>
-      </tr>
-      <tr>
          <td><code>disable-empty-string-to-null-conversion</code></td>
          <td>Specifies if empty strings should not be converted to null for this member.</td>
       </tr>
@@ -54,32 +44,12 @@ regenerated.
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
-         <td><code>equal-to-message</code></td>
-         <td>An error message for the equal-to attribute.</td>
-      </tr>
-      <tr>
-         <td><code>length-message</code></td>
-         <td>An error message for the min-length and max-length attributes.</td>
-      </tr>
-      <tr>
          <td><code>name</code></td>
          <td>The name of the type.</td>
       </tr>
       <tr>
-         <td><code>pattern-message</code></td>
-         <td>An error message for the pattern attribute.</td>
-      </tr>
-      <tr>
-         <td><code>range-message</code></td>
-         <td>An error message for the min and max attributes.</td>
-      </tr>
-      <tr>
-         <td><code>required-message</code></td>
-         <td>An error message for the required attribute.</td>
-      </tr>
-      <tr>
          <td><code>resource-type</code></td>
-         <td>A type that contains resources for name, short-name, description and place-holder
+         <td>A type that contains resources for display-name, short-name, description and place-holder
             attributes.
          </td>
       </tr>

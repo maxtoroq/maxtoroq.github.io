@@ -10,13 +10,14 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:validation</span>
-  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
   <span>data-type-message</span>? = <i>string</i>
   <span>required-message</span>? = <i>string</i>
-  <span>length-message</span>? = <i>string</i>
+  <span>min-length-message</span>? = <i>string</i>
+  <span>max-length-message</span>? = <i>string</i>
   <span>pattern-message</span>? = <i>string</i>
   <span>range-message</span>? = <i>string</i>
-  <span>equal-to-message</span>? = <i>string</i> /&gt;</code></pre></div>
+  <span>equal-to-message</span>? = <i>string</i>
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i> /&gt;</code></pre></div>
 <p>Defines default values for validation messages.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -37,8 +38,12 @@ regenerated.
          <td>An error message for the equal-to attribute.</td>
       </tr>
       <tr>
-         <td><code>length-message</code></td>
-         <td>An error message for the min-length and max-length attributes.</td>
+         <td><code>max-length-message</code></td>
+         <td>An error message for the max-length attribute.</td>
+      </tr>
+      <tr>
+         <td><code>min-length-message</code></td>
+         <td>An error message for the min-length attribute.</td>
       </tr>
       <tr>
          <td><code>pattern-message</code></td>
