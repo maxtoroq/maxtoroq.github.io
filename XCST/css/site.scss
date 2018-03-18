@@ -26,6 +26,11 @@ div.ref-element-syntax {
 }
 
 table.ref-attribs {
+   
+   > tbody th {
+      text-align: left;
+   }
+   
    code {
       white-space: nowrap;
    }
