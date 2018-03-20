@@ -14,10 +14,11 @@
 
    <xsl:output method="html" indent="yes"/>
 
+   <xsl:variable name="grammar-c" select="doc('../../../XCST/schemas/xcst.rng')"/>
+   <xsl:variable name="grammar-a" select="doc('../../../XCST-a/schemas/xcst-app.rng')"/>
+
    <xsl:template name="main">
 
-      <xsl:variable name="grammar-c" select="doc('../../../XCST/schemas/xcst.rng')"/>
-      <xsl:variable name="grammar-a" select="doc('../../../XCST-a/schemas/xcst-app.rng')"/>
       <xsl:variable name="elements-c" select="$grammar-c//rng:element[string(ref:name(.))]"/>
       <xsl:variable name="elements-a" select="$grammar-a//rng:element[string(ref:name(.))]"/>
 
@@ -126,10 +127,10 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 
    <xsl:template match="rng:element" mode="doc">
       <xsl:param name="name" select="ref:name(.)"/>
-      <xsl:param name="attribs" select="ref:attribs(.)"/>
+      <xsl:param name="attribs" select="ref:attribs(.), ref:extension-attributes($name)"/>
       <xsl:param name="parents" select="ref:parents(., -1)[not(self::rng:element[ref:name(.) eq xs:QName('a:option')])]"/>
       <xsl:param name="categories" select="
-         ref:parents(., 1)[self::rng:define and not(@name = ('module-content', 'select-common'))]/@name/string()"/>
+         ref:parents(., 1)[self::rng:define and @docs:display-type/xs:boolean(.)]/@name/string()"/>
       <xsl:param name="contents" select="ref:contents(.)"/>
 
       <xsl:variable name="heading" select="concat('h', last() + 1)"/>
@@ -252,8 +253,10 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
          </xsl:element>
          <div class="table-responsive">
             <table class="ref-attribs">
+               <xsl:variable name="groups" select="distinct-values($attribs/@group)"/>
+               <xsl:variable name="display-groups" select="count($groups[.]) gt 1"/>
                <xsl:for-each-group select="$attribs" group-by="@group">
-                  <xsl:if test="last() gt 1 or current-grouping-key()">
+                  <xsl:if test="$display-groups">
                      <tr>
                         <th colspan="2">
                            <xsl:value-of select="(current-grouping-key()[.], 'Other')[1]"/>
@@ -261,6 +264,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
                      </tr>
                   </xsl:if>
                   <xsl:for-each select="current-group()">
+                     <xsl:sort select="contains(@name, ':')"/>
                      <xsl:sort select="@name"/>
 
                      <tr>
@@ -364,5 +368,13 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
          <xsl:text>></xsl:text>
       </xsl:if>
    </xsl:template>
+
+   <xsl:function name="ref:extension-attributes" as="element()*">
+      <xsl:param name="name" as="xs:QName"/>
+
+      <xsl:if test="namespace-uri-from-QName($name) eq namespace-uri-from-QName(xs:QName('c:foo'))">
+         <xsl:apply-templates select="$grammar-a//rng:define[@docs:extends/(for $n in tokenize(., ' ') return resolve-QName($n, ..)) = $name]" mode="ref:attribs"/>
+      </xsl:if>
+   </xsl:function>
 
 </xsl:stylesheet>

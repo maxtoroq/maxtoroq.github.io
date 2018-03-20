@@ -13,7 +13,7 @@ regenerated.
   <span>name</span>? = <i title="Type name.">type_name</i>
   <b>version</b> = <i>decimal</i>
   <b>language</b> = <i>language</i> &gt;
-  &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><span>(<a href="attribute-set.html">c:attribute-set</a> | <a href="function.html">c:function</a> | <a href="import.html">c:import</a> | <a href="output.html">c:output</a> | <a href="param.html">c:param</a> | <a href="template.html">c:template</a> | <a href="type.html">c:type</a> | <a href="use-package.html">c:use-package</a> | <a href="validation.html">c:validation</a> | <a href="variable.html">c:variable</a>)</span></span>*</span>) --&gt;
+  &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><i>declaration</i></span>*</span>) --&gt;
 <span class="nt">&lt;/c:package&gt;</span></code></pre></div>
 <p>Represents an XCST package.</p>
 <dl>

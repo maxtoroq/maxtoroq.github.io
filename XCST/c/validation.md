@@ -17,7 +17,9 @@ regenerated.
   <span>pattern-message</span>? = <i>string</i>
   <span>range-message</span>? = <i>string</i>
   <span>equal-to-message</span>? = <i>string</i>
-  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i> /&gt;</code></pre></div>
+  <span>validation-resource-type</span>? = <i title="Type name.">type_name</i>
+  <span>a:file-extensions-message</span>? = <i>string</i>
+  <span>a:file-max-length-message</span>? = <i>string</i> /&gt;</code></pre></div>
 <p>Defines default values for validation messages.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -60,6 +62,14 @@ regenerated.
       <tr>
          <td><code>validation-resource-type</code></td>
          <td>A type that contains error message resources for validation attributes.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-extensions-message</code></td>
+         <td>An error message for the a:file-extensions attribute.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-max-length-message</code></td>
+         <td>An error message for the a:file-max-length attribute.</td>
       </tr>
    </table>
 </div>

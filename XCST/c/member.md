@@ -45,7 +45,11 @@ regenerated.
   <span>max-length-message</span>? = <i>string</i>
   <span>pattern-message</span>? = <i>string</i>
   <span>range-message</span>? = <i>string</i>
-  <span>equal-to-message</span>? = <i>string</i> &gt;
+  <span>equal-to-message</span>? = <i>string</i>
+  <span>a:file-extensions</span>? = <i>file-extensions</i>
+  <span>a:file-max-length</span>? = <i>integer</i>
+  <span>a:file-extensions-message</span>? = <i>string</i>
+  <span>a:file-max-length-message</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
@@ -213,6 +217,22 @@ regenerated.
       <tr>
          <td><code>required-message</code></td>
          <td>An error message for the required attribute.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-extensions</code></td>
+         <td>A comma-separated list of valid file extensions for this member.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-extensions-message</code></td>
+         <td>An error message for the a:file-extensions attribute.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-max-length</code></td>
+         <td>A maximum valid file length for this member.</td>
+      </tr>
+      <tr>
+         <td><code>a:file-max-length-message</code></td>
+         <td>An error message for the a:file-max-length attribute.</td>
       </tr>
    </table>
 </div>
