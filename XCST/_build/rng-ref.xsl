@@ -81,7 +81,7 @@
       <param name="attrib-group" as="attribute()?" tunnel="yes"/>
 
       <ref:attribute name="{ref:name(.)}" required="{not($optional)}"
-         group="{($attrib-group, ancestor-or-self::*/@docs:attrib-group)[1]}">
+         group="{($attrib-group, reverse(ancestor-or-self::*/@docs:attrib-group))[1]}">
          <if test="ann:documentation">
             <attribute name="description" select="ann:documentation"/>
          </if>
