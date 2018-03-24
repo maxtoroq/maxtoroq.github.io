@@ -11,8 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:type</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
-  <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span>
-  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
+  <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
   <span>resource-type</span>? = <i title="Type name.">type_name</i>
@@ -36,10 +35,6 @@ regenerated.
          <td>Specifies if an empty string is a valid value for this member.</td>
       </tr>
       <tr>
-         <td><code>disable-empty-string-to-null-conversion</code></td>
-         <td>Specifies if empty strings should not be converted to null for this member.</td>
-      </tr>
-      <tr>
          <td><code>display-text-member</code></td>
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
@@ -49,8 +44,8 @@ regenerated.
       </tr>
       <tr>
          <td><code>resource-type</code></td>
-         <td>A type that contains resources for display-name, short-name, description and place-holder
-            attributes.
+         <td>A type that contains resources for description, display-name, edit-hint, group and
+            short-name attributes.
          </td>
       </tr>
       <tr>

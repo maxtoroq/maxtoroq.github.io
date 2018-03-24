@@ -19,7 +19,7 @@ regenerated.
   <span>display-name</span>? = <i>string</i>
   <span>description</span>? = <i>string</i>
   <span>short-name</span>? = <i>string</i>
-  <span>place-holder</span>? = <i>string</i>
+  <span>edit-hint</span>? = <i>string</i>
   <span>order</span>? = <i>integer</i>
   <span>group</span>? = <i>string</i>
   <span>format</span>? = <i>string</i>
@@ -27,7 +27,6 @@ regenerated.
   <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>null-display-text</span>? = <i>string</i>
   <span>template</span>? = <i>string</i>
-  <span>read-only</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>max-length</span>? = <i>integer</i>
@@ -36,7 +35,6 @@ regenerated.
   <span>min</span>? = <i>string</i>
   <span>max</span>? = <i>string</i>
   <span>equal-to</span>? = <i title="Identifier.">identifier</i>
-  <span>disable-empty-string-to-null-conversion</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
   <span>data-type-message</span>? = <i>string</i>
@@ -48,6 +46,7 @@ regenerated.
   <span>equal-to-message</span>? = <i>string</i>
   <span>a:file-extensions</span>? = <i>file-extensions</i>
   <span>a:file-max-length</span>? = <i>integer</i>
+  <span>a:skip-binding</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>a:file-extensions-message</span>? = <i>string</i>
   <span>a:file-max-length-message</span>? = <i>string</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
@@ -114,6 +113,10 @@ regenerated.
          <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
+         <td><code>edit-hint</code></td>
+         <td>A hint to the user of what can be entered in a control for this member.</td>
+      </tr>
+      <tr>
          <td><code>format</code></td>
          <td>A formatting string that specifies the display format for the value of this member.</td>
       </tr>
@@ -128,14 +131,6 @@ regenerated.
       <tr>
          <td><code>order</code></td>
          <td>A number that indicates the relative position of this member in a UI.</td>
-      </tr>
-      <tr>
-         <td><code>place-holder</code></td>
-         <td>A hint to the user of what can be entered in a control for this member.</td>
-      </tr>
-      <tr>
-         <td><code>read-only</code></td>
-         <td>Specifies if editing should be disabled for this member in an editing UI.</td>
       </tr>
       <tr>
          <td><code>short-name</code></td>
@@ -161,10 +156,6 @@ regenerated.
       <tr>
          <td><code>data-type-message</code></td>
          <td>An error message for the data-type attribute.</td>
-      </tr>
-      <tr>
-         <td><code>disable-empty-string-to-null-conversion</code></td>
-         <td>Specifies if empty strings should not be converted to null for this member.</td>
       </tr>
       <tr>
          <td><code>equal-to</code></td>
@@ -233,6 +224,13 @@ regenerated.
       <tr>
          <td><code>a:file-max-length-message</code></td>
          <td>An error message for the a:file-max-length attribute.</td>
+      </tr>
+      <tr>
+         <th colspan="2">Model Binding</th>
+      </tr>
+      <tr>
+         <td><code>a:skip-binding</code></td>
+         <td>Specifies if this member should be excluded from model binding.</td>
       </tr>
    </table>
 </div>

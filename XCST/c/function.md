@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:function</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
   <span>as</span>? = <i title="Type name.">type_name</i>
-  <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span> | <span class="s">"abstract"</span></span> &gt;
+  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span></span> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:function&gt;</span></code></pre></div>
 <p>Defines a function.</p>
