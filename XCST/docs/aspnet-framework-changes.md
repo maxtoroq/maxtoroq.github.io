@@ -29,6 +29,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Render `readonly` and `placeholder` attributes based on metadata** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - **Render display/editor label even when text is empty** [8688489](https://github.com/maxtoroq/XCST-a/commit/868848929833254341ab1670e4dba9ea76ce7225)
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
+- **Group properties on Object editor/display templates into fieldsets** [b4a90dd](https://github.com/maxtoroq/XCST-a/commit/b4a90dd6f23d7a953f95895a7396f00302db943e)
 - **Removed System.Data.EntityState dependency** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - ModelMetadata's ShowForEdit and ShowForDisplay can now report different values [3bbf772](https://github.com/maxtoroq/XCST-a/commit/3bbf7723d26befb6e22acc2de402777d751573c1)
 - Built-in DropDownList editor template [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
