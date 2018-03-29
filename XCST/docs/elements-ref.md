@@ -3,16 +3,13 @@ title: XCST Elements Reference
 ---
 In XCST there are basically three categories of elements: [XCST elements](#xcst-elements), which represent program structure and instructions; Literal result elements, which represent the data that is the output of an XCST program; and [extension instructions](extension-instructions.html), which represent additional instructions made available by an XCST processor or by a third party.
 
-prefix | namespace | schemas
------- | --------- | -------  
-c | `http://maxtoroq.github.io/XCST` | [source](https://github.com/maxtoroq/XCST/tree/master/schemas)
-a | `http://maxtoroq.github.io/XCST/application` | [source](https://github.com/maxtoroq/XCST-a/tree/master/schemas)
-
 ## XCST Elements
+Namespace: `http://maxtoroq.github.io/XCST`; Conventional prefix: `c`; [Schemas](https://github.com/maxtoroq/XCST/tree/master/schemas)
 
 {% include_relative _ref-list-c.md %}
 
 ## Application Extension Elements
+Namespace: `http://maxtoroq.github.io/XCST/application`; Conventional prefix: `a`; [Schemas](https://github.com/maxtoroq/XCST-a/tree/master/schemas)
 
 {% include_relative _ref-list-a.md %}
          
