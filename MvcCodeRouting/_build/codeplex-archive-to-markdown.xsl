@@ -71,7 +71,7 @@
    </xsl:template>
 
    <xsl:template match="fn:string[@key = ('Description', 'Message')]" mode="issue">
-      <div class="issue-message" markdown="1">{$new-line}{$new-line}{.}{$new-line}{$new-line}</div>
+      <div class="issue-message" markdown="1">{$new-line}{$new-line}{replace(., '&#xD;', '')}{$new-line}{$new-line}</div>
    </xsl:template>
 
    <xsl:template match="fn:*" mode="issue-footer-item">
