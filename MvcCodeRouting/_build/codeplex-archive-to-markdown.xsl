@@ -59,7 +59,7 @@
          <xsl:apply-templates select="fn:string[@key = 'Description']" mode="#current"/>
          <div class="issue-footer">
             <dl>
-               <xsl:apply-templates select="fn:*[@key = ('AffectedComponent', 'ClosedDate', 'LastUpdatedDate', 'PlannedForRelease', 'Status', 'ReasonClosed')]" mode="issue-footer-item"/>
+               <xsl:apply-templates select="fn:*[@key = 'Status'], fn:*[@key = 'AffectedComponent'], fn:*[@key = 'PlannedForRelease'], fn:*[@key = 'ReasonClosed'], fn:*[@key = 'ClosedDate'], fn:*[@key = 'LastUpdatedDate']" mode="issue-footer-item"/>
             </dl>
          </div>
       </div>
@@ -83,6 +83,12 @@
       <dd>
          <xsl:apply-templates mode="issue-text"/>
       </dd>
+   </xsl:template>
+
+   <xsl:template match="fn:*[@key = 'ReasonClosed']" mode="issue-footer-item" priority="10">
+      <xsl:if test="fn:string[@key = 'Name'] ne 'Unassigned'">
+         <xsl:next-match/>
+      </xsl:if>
    </xsl:template>
 
    <xsl:template match="fn:*[@key = ('Status', 'AffectedComponent')][normalize-space()]" mode="issue-footer-item" priority="10">
