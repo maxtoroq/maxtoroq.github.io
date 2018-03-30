@@ -7,7 +7,7 @@
    exclude-result-prefixes="#all"
    expand-text="yes">
 
-   <xsl:output method="html" omit-xml-declaration="yes" byte-order-mark="no" indent="yes"/>
+   <xsl:output method="html" omit-xml-declaration="yes" byte-order-mark="no" indent="no"/>
 
    <xsl:variable name="new-line" select="'&#xA;'" as="xs:string"/>
    <xsl:variable name="archive-uri" select="resolve-uri('codeplex-archive/')" as="xs:anyURI"/>
@@ -19,18 +19,19 @@
 
    <xsl:template match="/fn:array" mode="issues">
       <xsl:variable name="issues" select="fn:map"/>
-      <xsl:result-document href="{resolve-uri('../')}issues/index.md">
+      <xsl:result-document href="{resolve-uri('../')}issues/index.md" indent="yes">
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: Issues{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
-         <ol>
+         <ul>
             <xsl:for-each select="reverse($issues)">
                <li>
                   <a href="{fn:*[@key = 'Id']}.html">#{fn:*[@key = 'Id']} {fn:*[@key = 'Title']}</a>
                </li>
             </xsl:for-each>
-         </ol>
+         </ul>
       </xsl:result-document>
+      <xsl:apply-templates select="$issues" mode="#current"/>
    </xsl:template>
 
    <xsl:template match="fn:map" mode="issues">
@@ -39,7 +40,7 @@
       <xsl:variable name="issue" select="local:issue-doc($id)"/>
       <xsl:result-document href="{resolve-uri('../')}issues/{$id}.md">
          <xsl:text>---{$new-line}</xsl:text>
-         <xsl:text>title: "{replace($title, '"', '""')} #{id}"{$new-line}</xsl:text>
+         <xsl:text>title: "{replace($title, '"', '\\"')} #{$id}"{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:apply-templates select="$issue" mode="issue"/>
       </xsl:result-document>

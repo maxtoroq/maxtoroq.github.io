@@ -1,7 +1,7 @@
 ---
 title: Issues
 ---
-<ol>
+<ul>
    <li><a href="1167.html">#1167 File view does not take precedence over embedded view</a></li>
    <li><a href="1166.html">#1166 Attempt by security transparent method 'System.Web.Http.GlobalConfiguration.get_Configuration()'
          to access security critical type 'System.Web.Http.HttpConfiguration' failed.</a></li>
@@ -51,4 +51,4 @@ title: Issues
    <li><a href="147.html">#147 Support catch-all token</a></li>
    <li><a href="32.html">#32 Using an empty string as action for URL generation (e.g. Url.Action("")) does
          not work</a></li>
-</ol>
+</ul>
