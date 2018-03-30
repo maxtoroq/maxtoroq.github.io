@@ -66,8 +66,8 @@
       <xsl:apply-templates select="fn:array[@key = 'Comments']" mode="#current"/>
    </xsl:template>
 
-   <xsl:template match="fn:string[@key = ('ReportedDate', 'ClosedDate', 'LastUpdatedDate')]/text()" mode="issue-text">
-      <time datetime="{.}">{format-dateTime(xs:dateTime(.), "[MNn] [D], [Y]", "en", (), ())}</time>
+   <xsl:template match="fn:string[@key = ('ReportedDate', 'PostedDate', 'ClosedDate', 'LastUpdatedDate')]/text()" mode="issue-text">
+      <time datetime="{.}" title="{.}">{format-dateTime(xs:dateTime(.), "[MNn] [D], [Y]", "en", (), ())}</time>
    </xsl:template>
 
    <xsl:template match="fn:string[@key = ('Description', 'Message')]" mode="issue">
