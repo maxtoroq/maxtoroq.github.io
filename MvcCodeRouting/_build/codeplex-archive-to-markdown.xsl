@@ -7,7 +7,7 @@
    exclude-result-prefixes="#all"
    expand-text="yes">
 
-   <xsl:output method="html" omit-xml-declaration="yes" byte-order-mark="no" indent="no"/>
+   <xsl:output method="html" omit-xml-declaration="yes" byte-order-mark="no" indent="yes"/>
 
    <xsl:variable name="new-line" select="'&#xA;'" as="xs:string"/>
    <xsl:variable name="archive-uri" select="resolve-uri('codeplex-archive/')" as="xs:anyURI"/>
@@ -72,9 +72,7 @@
 
    <xsl:template match="fn:string[@key = ('Description', 'Message')]" mode="issue">
       <div class="issue-message" markdown="1">
-         <xsl:text>{$new-line}{$new-line}</xsl:text>
          <xsl:value-of select="replace(., '&#xD;', '')" disable-output-escaping="yes"/>
-         <xsl:text>{$new-line}{$new-line}</xsl:text>
       </div>
    </xsl:template>
 
