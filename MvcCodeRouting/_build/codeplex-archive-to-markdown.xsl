@@ -59,7 +59,7 @@
          <xsl:apply-templates select="fn:string[@key = 'Description']" mode="#current"/>
          <div class="issue-footer">
             <dl>
-               <xsl:apply-templates select="fn:*[@key = 'Status'], fn:*[@key = 'ReasonClosed'], fn:*[@key = 'AffectedComponent'], fn:*[@key = 'PlannedForRelease'], fn:*[@key = 'ClosedDate'], fn:*[@key = 'LastUpdatedDate']" mode="issue-footer-item"/>
+               <xsl:apply-templates select="fn:*[@key = 'Status'], fn:*[@key = 'ReasonClosed'], fn:*[@key = 'AffectedComponent'], fn:*[@key = 'PlannedForRelease'], fn:*[@key = 'ClosedDate'], fn:*[@key = 'LastUpdatedDate'], ../fn:*[@key = 'FileAttachments']" mode="issue-footer-item"/>
             </dl>
          </div>
       </div>
@@ -95,6 +95,19 @@
       <dt>{@key}</dt>
       <dd>
          <xsl:apply-templates select="fn:string[@key = 'Name']" mode="issue-text"/>
+      </dd>
+   </xsl:template>
+
+   <xsl:template match="fn:array[@key = 'FileAttachments'][fn:map]" mode="issue-footer-item" priority="10">
+      <dt>{@key}</dt>
+      <dd>
+         <ul>
+            <xsl:for-each select="fn:map">
+               <li>
+                  <a href="attachments/{/fn:*/fn:*[@key = 'WorkItem']/fn:*[@key = 'Id']}/{fn:*[@key = 'FileName']}">{fn:*[@key = 'FileName']}</a>
+               </li>
+            </xsl:for-each>
+         </ul>
       </dd>
    </xsl:template>
 

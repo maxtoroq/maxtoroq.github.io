@@ -1,0 +1,50 @@
+Index: trunk/MvcCodeRouting/ActionInfo.cs
+===================================================================
+--- trunk/MvcCodeRouting/ActionInfo.cs	(revision 6210)
++++ trunk/MvcCodeRouting/ActionInfo.cs	(working copy)
+@@ -37,8 +37,7 @@
+ 
+       public bool IsDefaultAction {
+          get {
+-            return RouteParameters.Count == 0
+-               && Controller.DefaultActionName != null
++            return Controller.DefaultActionName != null
+                && NameEquals(Name, Controller.DefaultActionName);
+          }
+       }
+Index: trunk/MvcCodeRouting/CodeRoute.cs
+===================================================================
+--- trunk/MvcCodeRouting/CodeRoute.cs	(revision 6210)
++++ trunk/MvcCodeRouting/CodeRoute.cs	(working copy)
+@@ -48,7 +48,7 @@
+          segments.Add("{action}");
+ 
+          bool hardcodeAction = actionNames.Count == 1
+-            && !(count == 1 && first.IsDefaultAction);
++            && !(first.IsDefaultAction);
+ 
+          if (hardcodeAction)
+             segments[1] = first.Name;
+Index: trunk/MvcCodeRouting/CodeRoutingExtensions.cs
+===================================================================
+--- trunk/MvcCodeRouting/CodeRoutingExtensions.cs	(revision 6210)
++++ trunk/MvcCodeRouting/CodeRoutingExtensions.cs	(working copy)
+@@ -142,7 +142,8 @@
+              group a by new {
+                 a.Controller.Type.Namespace,
+                 DeclaringType = declaringType,
+-                HasRouteParameters = (a.RouteParameters.Count > 0)
++				ActionName = a.Name
++                //HasRouteParameters = (a.RouteParameters.Count > 0)
+              }).ToList();
+ 
+          var signatureComparer = new ActionSignatureComparer();
+@@ -152,7 +153,7 @@
+ 
+             var set = groupedActions[i];
+ 
+-            if (set.Key.HasRouteParameters) {
++            if (set.Any(a => a.RouteParameters.Any())) {
+ 
+                var ordered = set.OrderByDescending(a => a.RouteParameters.Count).ToList();
+ 
