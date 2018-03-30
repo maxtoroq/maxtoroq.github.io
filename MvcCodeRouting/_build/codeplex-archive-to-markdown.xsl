@@ -59,7 +59,7 @@
          <xsl:apply-templates select="fn:string[@key = 'Description']" mode="#current"/>
          <div class="issue-footer">
             <dl>
-               <xsl:apply-templates select="fn:*[@key = 'Status'], fn:*[@key = 'AffectedComponent'], fn:*[@key = 'PlannedForRelease'], fn:*[@key = 'ReasonClosed'], fn:*[@key = 'ClosedDate'], fn:*[@key = 'LastUpdatedDate']" mode="issue-footer-item"/>
+               <xsl:apply-templates select="fn:*[@key = 'Status'], fn:*[@key = 'ReasonClosed'], fn:*[@key = 'AffectedComponent'], fn:*[@key = 'PlannedForRelease'], fn:*[@key = 'ClosedDate'], fn:*[@key = 'LastUpdatedDate']" mode="issue-footer-item"/>
             </dl>
          </div>
       </div>
