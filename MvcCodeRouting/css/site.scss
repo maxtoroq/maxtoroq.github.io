@@ -1,0 +1,60 @@
+---
+---
+@import "base";
+
+body > header,
+body > footer {
+   background-color: aliceblue;
+}
+
+body > header {
+   
+   .container {
+      padding-top: .5em;
+      padding-bottom: .5em;
+   }
+
+   nav a {
+
+      color: gray;
+      margin-left: 1em;
+      
+      &:first-child {
+         display: inline-block;
+         width: 48px;
+         height: 42px;
+         background-image: url(../nuget/icon.png);
+         background-size: 48px;
+         background-position-y: -4px;
+         border-bottom: none;
+         text-indent: -999em;
+         vertical-align: middle;
+         margin-left: 0;
+      }
+   }
+}
+
+body > footer {
+   
+}
+
+@media (min-width: 768px) {
+   
+   $footer-height: 120px;
+
+   html {
+      position: relative;
+      min-height: 100%;
+   }
+
+   body {
+      margin-bottom: $footer-height;
+   }
+   
+   body > footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: $footer-height;
+   }
+}
