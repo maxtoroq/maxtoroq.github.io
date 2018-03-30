@@ -73,7 +73,8 @@
    <xsl:template match="fn:string[@key = ('Description', 'Message')]" mode="issue">
       <div class="issue-message" markdown="1">
          <xsl:value-of select="replace(., '&#xD;', '')" disable-output-escaping="yes"/>
-         <xsl:comment>markdown end</xsl:comment>
+         <!-- new line is important to make sure closing tag outputs in a separate line -->
+         <xsl:text>{$new-line}</xsl:text>
       </div>
    </xsl:template>
 
