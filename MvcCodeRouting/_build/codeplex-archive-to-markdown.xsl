@@ -78,14 +78,14 @@
       </div>
    </xsl:template>
 
-   <xsl:template match="fn:*" mode="issue-footer-item">
+   <xsl:template match="fn:*[normalize-space()]" mode="issue-footer-item">
       <dt>{@key}</dt>
       <dd>
          <xsl:apply-templates mode="issue-text"/>
       </dd>
    </xsl:template>
 
-   <xsl:template match="fn:*[@key = ('Status', 'AffectedComponent')]" mode="issue-footer-item">
+   <xsl:template match="fn:*[@key = ('Status', 'AffectedComponent')][normalize-space()]" mode="issue-footer-item" priority="10">
       <dt>{@key}</dt>
       <dd>
          <xsl:apply-templates select="fn:string[@key = 'Name']" mode="issue-text"/>
