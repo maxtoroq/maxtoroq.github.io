@@ -11,6 +11,7 @@
 
    <xsl:param name="archive-uri" select="resolve-uri('codeplex-archive/')" as="xs:anyURI"/>
    <xsl:param name="project-name" select="'mvccoderouting'" as="xs:string"/>
+   <xsl:param name="repo-url" select="'https://github.com/maxtoroq/MvcCodeRouting'" as="xs:string"/>
    <xsl:variable name="new-line" select="'&#xA;'" as="xs:string"/>
 
    <xsl:template name="main">
@@ -145,7 +146,7 @@
       <xsl:param name="markdown" as="xs:boolean" required="yes"/>
       <xsl:param name="is-issue" as="xs:boolean" required="yes"/>
 
-      <xsl:analyze-string select="$message" regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/workitem/([0-9]+)(#.+)?($|[\)&quot;'\s])">
+      <xsl:analyze-string select="$message" regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/workitem/([0-9]+)(#.+?)?($|[\)&quot;'\s])">
          <xsl:matching-substring>
             <xsl:variable name="url" as="text()">{if ($is-issue) then '' else '../issues/'}{regex-group(3)}.html{regex-group(4)}</xsl:variable>
             <xsl:choose>
@@ -156,7 +157,7 @@
             </xsl:choose>
          </xsl:matching-substring>
          <xsl:non-matching-substring>
-            <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/discussions/([0-9]+)(#.+)?($|[\)&quot;'\s])">
+            <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/discussions/([0-9]+)(#.+?)?($|[\)&quot;'\s])">
                <xsl:matching-substring>
                   <xsl:variable name="url" as="text()">{if ($is-issue) then '../discussions/' else ''}{regex-group(3)}.html{regex-group(4)}</xsl:variable>
                   <xsl:choose>
@@ -166,7 +167,33 @@
                      <xsl:otherwise>{regex-group(1)}{$url}{regex-group(5)}</xsl:otherwise>
                   </xsl:choose>
                </xsl:matching-substring>
-               <xsl:non-matching-substring>{.}</xsl:non-matching-substring>
+               <xsl:non-matching-substring>
+                  <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/SourceControl/latest#(.+?)($|[\)&quot;'\s])">
+                     <xsl:matching-substring>
+                        <xsl:variable name="url" as="text()">{$repo-url}/blob/master/{regex-group(3)}</xsl:variable>
+                        <xsl:choose>
+                           <xsl:when test="$markdown and not(normalize-space(regex-group(1)))">
+                              <xsl:text>{regex-group(1)}&lt;{$url}&gt;{regex-group(4)}</xsl:text>
+                           </xsl:when>
+                           <xsl:otherwise>{regex-group(1)}{$url}{regex-group(4)}</xsl:otherwise>
+                        </xsl:choose>
+                     </xsl:matching-substring>
+                     <xsl:non-matching-substring>
+                        <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/SourceControl/changeset/(.+?)($|[\)&quot;'\s])">
+                           <xsl:matching-substring>
+                              <xsl:variable name="url" as="text()">{$repo-url}/commit/{regex-group(3)}</xsl:variable>
+                              <xsl:choose>
+                                 <xsl:when test="$markdown and not(normalize-space(regex-group(1)))">
+                                    <xsl:text>{regex-group(1)}[{regex-group(3)}]({$url}){regex-group(4)}</xsl:text>
+                                 </xsl:when>
+                                 <xsl:otherwise>{regex-group(1)}{$url}{regex-group(4)}</xsl:otherwise>
+                              </xsl:choose>
+                           </xsl:matching-substring>
+                           <xsl:non-matching-substring>{.}</xsl:non-matching-substring>
+                        </xsl:analyze-string>
+                     </xsl:non-matching-substring>
+                  </xsl:analyze-string>
+               </xsl:non-matching-substring>
             </xsl:analyze-string>
          </xsl:non-matching-substring>
       </xsl:analyze-string>
