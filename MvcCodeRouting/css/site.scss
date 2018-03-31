@@ -53,6 +53,12 @@ body > footer {
    }
 }
 
+.issue-footer {
+   dt {
+      font-weight: bold;
+   }
+}
+
 @media (min-width: 768px) {
    
    $footer-height: 120px;
