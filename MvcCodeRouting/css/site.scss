@@ -38,16 +38,19 @@ body > footer {
    
 }
 
-.issue-header {
+.issue-header,
+.discussion-header {
    font-size: 90%;
    color: gray;
 }
 
-.issue-comment {
+.issue-comment,
+.discussion-comment:not(.op) {
    
    margin-bottom: 1em;
    
-   .issue-message {
+   .issue-message,
+   .discussion-message {
       background-color: #f1f1f1;
       padding: .5em;
    }
