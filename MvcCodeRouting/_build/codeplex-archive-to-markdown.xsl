@@ -116,8 +116,8 @@
    </xsl:template>
 
    <xsl:template match="fn:array[@key = 'Comments']/fn:map" mode="issue">
-      <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
-      <div id="post{$id}" class="issue-comment">
+      <xsl:variable name="id" select="'post' || fn:*[@key = 'Id']/string()"/>
+      <div id="{$id}" class="issue-comment">
          <div class="issue-header">
             <b>??</b>
             <xsl:text> commented on </xsl:text>
@@ -170,8 +170,8 @@
    <xsl:mode name="discussion-text" on-no-match="text-only-copy"/>
 
    <xsl:template match="/fn:array/fn:map" mode="discussion">
-      <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
-      <div id="post{$id}">
+      <xsl:variable name="id" select="'post' || fn:*[@key = 'Id']/string()"/>
+      <div id="{$id}">
          <xsl:attribute name="class" separator=" ">
             <xsl:sequence select="'discussion-comment'"/>
             <xsl:if test="position() eq 1">
@@ -185,8 +185,10 @@
             <b>??</b>
             <xsl:text> commented on </xsl:text>
             <xsl:apply-templates select="fn:string[@key = 'PostedDate']" mode="discussion-text"/>
-            <xsl:text> </xsl:text>
-            <a href="#{$id}" class="post-link">link</a>
+            <xsl:if test="position() gt 1">
+               <xsl:text> </xsl:text>
+               <a href="#{$id}" class="post-link">link</a>
+            </xsl:if>
          </div>
          <xsl:apply-templates select="fn:string[@key = 'Html']" mode="#current"/>
       </div>
