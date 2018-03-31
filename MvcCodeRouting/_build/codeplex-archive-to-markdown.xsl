@@ -148,7 +148,15 @@
       <xsl:param name="is-issue" as="xs:boolean" required="yes"/>
 
       <xsl:analyze-string select="$message" regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/workitem/([0-9]+)(#.+)?($|[\)&quot;'\s])">
-         <xsl:matching-substring>{regex-group(1)}{if ($is-issue) then '' else '../issues/'}{regex-group(3)}.html{regex-group(4)}{regex-group(5)}</xsl:matching-substring>
+         <xsl:matching-substring>
+            <xsl:variable name="url" as="text()">{if ($is-issue) then '' else '../issues/'}{regex-group(3)}.html{regex-group(4)}</xsl:variable>
+            <xsl:choose>
+               <xsl:when test="$markdown and not(normalize-space(regex-group(1)))">
+                  <xsl:text>{regex-group(1)}[{$url}]({$url}){regex-group(5)}</xsl:text>
+               </xsl:when>
+               <xsl:otherwise>{regex-group(1)}{$url}{regex-group(5)}</xsl:otherwise>
+            </xsl:choose>
+         </xsl:matching-substring>
          <xsl:non-matching-substring>
             <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/discussions/([0-9]+)(#.+)?($|[\)&quot;'\s])">
                <xsl:matching-substring>
