@@ -57,8 +57,7 @@
    <xsl:template match="fn:map[@key = 'WorkItem']" mode="issue">
       <div class="issue-report">
          <div class="issue-header">
-            <b>??</b>
-            <xsl:text> reported on </xsl:text>
+            <xsl:text>Reported on </xsl:text>
             <xsl:apply-templates select="fn:string[@key = 'ReportedDate']" mode="issue-text"/>
          </div>
          <xsl:apply-templates select="fn:string[@key = 'Description']" mode="#current"/>
@@ -126,8 +125,7 @@
       <xsl:variable name="id" select="'post' || fn:*[@key = 'Id']/string()"/>
       <div id="{$id}" class="issue-comment">
          <div class="issue-header">
-            <b>??</b>
-            <xsl:text> commented on </xsl:text>
+            <xsl:text>Commented on </xsl:text>
             <xsl:apply-templates select="fn:string[@key = 'PostedDate']" mode="issue-text"/>
             <xsl:text> </xsl:text>
             <a href="#{$id}" class="post-link">link</a>
@@ -221,8 +219,7 @@
             </xsl:if>
          </xsl:attribute>
          <div class="discussion-header">
-            <b>??</b>
-            <xsl:text> commented on </xsl:text>
+            <xsl:text>Commented on </xsl:text>
             <xsl:apply-templates select="fn:string[@key = 'PostedDate']" mode="discussion-text"/>
             <xsl:if test="position() gt 1">
                <xsl:text> </xsl:text>
