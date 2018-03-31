@@ -45,10 +45,12 @@ body > footer {
 }
 
 .issue-comment,
-.discussion-comment:not(.op) {
-   
+.discussion-comment {
    margin-bottom: 1em;
-   
+}
+
+.issue-comment,
+.discussion-comment:not(.op) {
    .issue-message,
    .discussion-message {
       background-color: #f1f1f1;
