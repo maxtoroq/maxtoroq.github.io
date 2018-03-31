@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>{{ page.title }}{% if page.omit_site_title == nil or page.omit_site_title == 'no' %} — MvcCodeRouting{% endif %}</title>
+   <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
+   {% include analytics.html %}
+</head>
+<body>
+   <header>
+      <nav class="container">
+         <a href="{{ page.base_url }}" title="MvcCodeRouting">home</a>
+         <a href="{{ page.documentation_url }}">documentation</a>
+         <a href="{{ page.base_url }}/issues">issues</a>
+         <a href="{{ page.repository_url }}">github</a>
+      </nav>
+   </header>
+   <article class="container">
+      <header>
+         <h1>{{ page.title }}</h1>
+      </header>
+      <div itemprop="articleBody">
+         {{ content }}
+      </div>
+   </article>
+   <footer>
+      <div class="container">&copy; {{ site.author }}</div>
+   </footer>
+</body>
+</html>
