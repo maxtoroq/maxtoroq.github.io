@@ -38,6 +38,21 @@ body > footer {
    
 }
 
+.issue-header {
+   font-size: 90%;
+   color: gray;
+}
+
+.issue-comment {
+   
+   margin-bottom: 1em;
+   
+   .issue-message {
+      background-color: #f1f1f1;
+      padding: .5em;
+   }
+}
+
 @media (min-width: 768px) {
    
    $footer-height: 120px;
