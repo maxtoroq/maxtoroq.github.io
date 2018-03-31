@@ -9,8 +9,9 @@
 
    <xsl:output method="html" omit-xml-declaration="yes" byte-order-mark="no" indent="yes"/>
 
+   <xsl:param name="archive-uri" select="resolve-uri('codeplex-archive/')" as="xs:anyURI"/>
+   <xsl:param name="project-name" select="'mvccoderouting'" as="xs:string"/>
    <xsl:variable name="new-line" select="'&#xA;'" as="xs:string"/>
-   <xsl:variable name="archive-uri" select="resolve-uri('codeplex-archive/')" as="xs:anyURI"/>
 
    <xsl:template name="main">
       <xsl:variable name="issues-doc" select="json-to-xml(unparsed-text(resolve-uri('issues/issues.json', $archive-uri)))"/>
@@ -76,7 +77,13 @@
 
    <xsl:template match="fn:string[@key = ('Description', 'Message')]" mode="issue">
       <div class="issue-message" markdown="1">
-         <xsl:value-of select="replace(., '&#xD;', '')" disable-output-escaping="yes"/>
+         <xsl:value-of disable-output-escaping="yes">
+            <xsl:call-template name="process-message">
+               <xsl:with-param name="message" select="replace(., '&#xD;', '')"/>
+               <xsl:with-param name="markdown" select="true()"/>
+               <xsl:with-param name="is-issue" select="true()"/>
+            </xsl:call-template>
+         </xsl:value-of>
          <!-- new line is important to make sure closing tag outputs in a separate line -->
          <xsl:text>{$new-line}</xsl:text>
       </div>
@@ -134,6 +141,30 @@
 
       <xsl:sequence select="json-to-xml(unparsed-text(resolve-uri(concat('issues/', $id, '/', $id, '.json'), $archive-uri)))"/>
    </xsl:function>
+
+   <xsl:template name="process-message">
+      <xsl:param name="message" as="xs:anyAtomicType" required="yes"/>
+      <xsl:param name="markdown" as="xs:boolean" required="yes"/>
+      <xsl:param name="is-issue" as="xs:boolean" required="yes"/>
+
+      <xsl:analyze-string select="$message" regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/workitem/([0-9]+)(#.+)?($|[\)&quot;'\s])">
+         <xsl:matching-substring>{regex-group(1)}{if ($is-issue) then '' else '../issues/'}{regex-group(3)}.html{regex-group(4)}{regex-group(5)}</xsl:matching-substring>
+         <xsl:non-matching-substring>
+            <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/discussions/([0-9]+)(#.+)?($|[\)&quot;'\s])">
+               <xsl:matching-substring>
+                  <xsl:variable name="url" as="text()">{if ($is-issue) then '../discussions/' else ''}{regex-group(3)}.html{regex-group(4)}</xsl:variable>
+                  <xsl:choose>
+                     <xsl:when test="$markdown and not(normalize-space(regex-group(1)))">
+                        <xsl:text>{regex-group(1)}[{$url}]({$url}){regex-group(5)}</xsl:text>
+                     </xsl:when>
+                     <xsl:otherwise>{regex-group(1)}{$url}{regex-group(5)}</xsl:otherwise>
+                  </xsl:choose>
+               </xsl:matching-substring>
+               <xsl:non-matching-substring>{.}</xsl:non-matching-substring>
+            </xsl:analyze-string>
+         </xsl:non-matching-substring>
+      </xsl:analyze-string>
+   </xsl:template>
 
    <!-- ## Discussions -->
 
@@ -196,7 +227,13 @@
 
    <xsl:template match="fn:string[@key = 'Html']" mode="discussion">
       <div class="discussion-message">
-         <xsl:value-of select="." disable-output-escaping="yes"/>
+         <xsl:value-of disable-output-escaping="yes">
+            <xsl:call-template name="process-message">
+               <xsl:with-param name="message" select="string()"/>
+               <xsl:with-param name="markdown" select="false()"/>
+               <xsl:with-param name="is-issue" select="false()"/>
+            </xsl:call-template>
+         </xsl:value-of>
       </div>
    </xsl:template>
 
