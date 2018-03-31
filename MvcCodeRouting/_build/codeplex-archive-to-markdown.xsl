@@ -15,7 +15,11 @@
    <xsl:template name="main">
       <xsl:variable name="issues-doc" select="json-to-xml(unparsed-text(resolve-uri('issues/issues.json', $archive-uri)))"/>
       <xsl:apply-templates select="$issues-doc" mode="issues"/>
+      <xsl:variable name="discussions-doc" select="json-to-xml(unparsed-text(resolve-uri('discussions/discussions.json', $archive-uri)))"/>
+      <xsl:apply-templates select="$discussions-doc" mode="discussions"/>
    </xsl:template>
+
+   <!-- ## Issues -->
 
    <xsl:template match="/fn:array" mode="issues">
       <xsl:variable name="issues" select="fn:map"/>
@@ -66,7 +70,7 @@
       <xsl:apply-templates select="fn:array[@key = 'Comments']" mode="#current"/>
    </xsl:template>
 
-   <xsl:template match="fn:string[@key = ('ReportedDate', 'PostedDate', 'ClosedDate', 'LastUpdatedDate')]/text()" mode="issue-text">
+   <xsl:template match="fn:string[@key = ('ReportedDate', 'PostedDate', 'ClosedDate', 'LastUpdatedDate')]/text()" mode="issue-text discussion-text">
       <time datetime="{.}" title="{.}">{format-dateTime(xs:dateTime(.), "[MNn] [D], [Y]", "en", (), ())}</time>
    </xsl:template>
 
@@ -126,6 +130,72 @@
       <xsl:param name="id" as="xs:anyAtomicType"/>
 
       <xsl:sequence select="json-to-xml(unparsed-text(resolve-uri(concat('issues/', $id, '/', $id, '.json'), $archive-uri)))"/>
+   </xsl:function>
+
+   <!-- ## Discussions -->
+
+   <xsl:template match="/fn:array" mode="discussions">
+      <xsl:variable name="discussions" select="fn:map"/>
+      <xsl:result-document href="{resolve-uri('../')}discussions/index.md" indent="yes">
+         <xsl:text>---{$new-line}</xsl:text>
+         <xsl:text>title: Discussions{$new-line}</xsl:text>
+         <xsl:text>---{$new-line}</xsl:text>
+         <ul>
+            <xsl:for-each select="reverse($discussions)">
+               <li>
+                  <a href="{fn:*[@key = 'Id']}.html">{fn:*[@key = 'Title']}</a>
+               </li>
+            </xsl:for-each>
+         </ul>
+      </xsl:result-document>
+      <xsl:apply-templates select="$discussions" mode="#current"/>
+   </xsl:template>
+
+   <xsl:template match="fn:map" mode="discussions">
+      <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
+      <xsl:variable name="title" select="fn:*[@key = 'Title']/string()"/>
+      <xsl:variable name="discussion" select="local:discussion-doc($id)"/>
+      <xsl:result-document href="{resolve-uri('../')}discussions/{$id}.md">
+         <xsl:text>---{$new-line}</xsl:text>
+         <xsl:text>title: "{replace($title, '"', '\\"')}"{$new-line}</xsl:text>
+         <xsl:text>---{$new-line}</xsl:text>
+         <xsl:apply-templates select="$discussion" mode="discussion"/>
+      </xsl:result-document>
+   </xsl:template>
+
+   <xsl:mode name="discussion" on-no-match="shallow-skip"/>
+   <xsl:mode name="discussion-text" on-no-match="text-only-copy"/>
+
+   <xsl:template match="/fn:array/fn:map" mode="discussion">
+      <div id="comment-{fn:*[@key = 'Id']}">
+         <xsl:attribute name="class" separator=" ">
+            <xsl:sequence select="'discussion-comment'"/>
+            <xsl:if test="position() eq 1">
+               <xsl:sequence select="'op'"/>
+            </xsl:if>
+            <xsl:if test="fn:*[@key = 'MarkedAsAnswerDate'][normalize-space()]">
+               <xsl:sequence select="'marked-as-answer'"/>
+            </xsl:if>
+         </xsl:attribute>
+         <div class="discussion-header">
+            <b>??</b>
+            <xsl:text> commented on </xsl:text>
+            <xsl:apply-templates select="fn:string[@key = 'PostedDate']" mode="discussion-text"/>
+         </div>
+         <xsl:apply-templates select="fn:string[@key = 'Html']" mode="#current"/>
+      </div>
+   </xsl:template>
+
+   <xsl:template match="fn:string[@key = 'Html']" mode="discussion">
+      <div class="discussion-message">
+         <xsl:value-of select="." disable-output-escaping="yes"/>
+      </div>
+   </xsl:template>
+
+   <xsl:function name="local:discussion-doc">
+      <xsl:param name="id" as="xs:anyAtomicType"/>
+
+      <xsl:sequence select="json-to-xml(unparsed-text(resolve-uri(concat('discussions/', $id, '.json'), $archive-uri)))"/>
    </xsl:function>
 
 </xsl:stylesheet>
