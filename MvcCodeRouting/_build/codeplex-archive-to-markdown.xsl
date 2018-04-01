@@ -193,7 +193,7 @@
                               <xsl:analyze-string select="." regex="(^|[\(&quot;'\s])(https?://{$project-name}\.codeplex\.com)?/wikipage\?title=(.+?)(&amp;.+?)?($|[\)&quot;'\s])">
                                  <xsl:matching-substring>
                                     <xsl:variable name="page" select="replace(local:pct-decode-unreserved(regex-group(3)), '\+', ' ')"/>
-                                    <xsl:variable name="url" as="text()">{$repo-url}/tree/master/docs/{replace($page, '\s', '-')}.md</xsl:variable>
+                                    <xsl:variable name="url" as="text()">{$repo-url}/blob/master/docs/{replace($page, '\s', '-')}.md</xsl:variable>
                                     <xsl:choose>
                                        <xsl:when test="$markdown and not(normalize-space(regex-group(1)))">
                                           <xsl:text>{regex-group(1)}[{$page}]({$url}){regex-group(5)}</xsl:text>
