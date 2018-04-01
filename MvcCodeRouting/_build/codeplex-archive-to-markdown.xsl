@@ -29,13 +29,30 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: Issues{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
-         <ul>
-            <xsl:for-each select="reverse($issues)">
-               <li>
-                  <a href="{fn:*[@key = 'Id']}.html">#{fn:*[@key = 'Id']} {fn:*[@key = 'Title']}</a>
-               </li>
-            </xsl:for-each>
-         </ul>
+         <table>
+            <thead>
+               <tr>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Last activity</th>
+               </tr>
+            </thead>
+            <tbody>
+               <xsl:for-each select="reverse($issues)">
+                  <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
+                  <xsl:variable name="issue" select="local:issue-doc($id)"/>
+                  <tr>
+                     <td>
+                        <a href="{$id}.html">{fn:*[@key = 'Title']}</a>
+                     </td>
+                     <td>{$issue/*/fn:*[@key = 'WorkItem']/fn:*[@key = 'Status']/fn:*[@key = 'Name']}</td>
+                     <td>
+                        <xsl:apply-templates select="$issue/*/fn:*[@key = 'WorkItem']/fn:*[@key = 'LastUpdatedDate']" mode="discussion-text"/>
+                     </td>
+                  </tr>
+               </xsl:for-each>
+            </tbody>
+         </table>
       </xsl:result-document>
       <xsl:apply-templates select="$issues" mode="#current"/>
    </xsl:template>
