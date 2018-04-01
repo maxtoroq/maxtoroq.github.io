@@ -245,7 +245,7 @@
 
    <xsl:template name="issues-note">
       <div class="note">
-         Issues were imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b>
+         Imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b>
       </div>
    </xsl:template>
 
@@ -345,9 +345,7 @@
    </xsl:function>
 
    <xsl:template name="discussions-note">
-      <div class="note">
-         Discussions were imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b>
-      </div>
+      <xsl:call-template name="issues-note"/>
    </xsl:template>
 
    <!-- ## Util -->
