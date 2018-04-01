@@ -25,10 +25,10 @@
          {% if crumbs > 1 %}
          <nav class="breadcrumbs">
             {% for i in (2..crumbs) %}
-
+            {% assign path_parts = path_parts %}
             <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
             {% endfor %}
-            <span>{{ page.title }}</span>
+            <span>{{ url_parts | last }}</span>
          </nav>
          {% endif %}
          <h1>{{ page.title }}</h1>
