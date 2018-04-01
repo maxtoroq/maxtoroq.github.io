@@ -12,6 +12,6 @@ And what you get in return? Money. Not even that much. You won't get recognition
 
 And if you are good at your job you probably spent a lot (too much) time perfecting your craft, becoming an expert, and even building your own tools. But try taking that to the next job. "We are not a .NET shop, we use Ruby". "We are not a Ruby shop, we use Python". "We are not a Python shop, we use Java". SOAP, REST, XML, JSON, Markdown, object-oriented, functional, DDD, TDD, CQRS, MVC, MVVM, SQL, NoSQL. I find it hard calling programming a profession considering the level of fragmentation that exists in our industry.
 
-"Actually, we only hire people without experience". After all, it's cheaper to train monkeys to configure generic software that to write it from scratch. Junior programmers can be paid less, exploited more, and replaced more easily.
+"Actually, we only hire people without experience". After all, it's cheaper to train monkeys to configure generic software than to write it from scratch. Junior programmers can be paid less, exploited more, and replaced more easily.
 
 Programming just might be the worst white-collar career.
