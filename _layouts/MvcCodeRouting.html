@@ -22,8 +22,8 @@
          {% assign url_parts = page.url | split: "/" %}
          {% assign path_parts = "" | split: '-' %}
          <nav class="breadcrumbs">
-            {% assign y = url_parts.size | minus: 2 %}
-            {% for i in (1..y) %}
+            
+            {% for i in (1..1) %}
             {% assign path_parts = path_parts | concat: url_parts[i] %}
             <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
             {% endfor %}
