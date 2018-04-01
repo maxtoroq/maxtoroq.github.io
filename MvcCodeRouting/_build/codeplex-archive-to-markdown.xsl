@@ -128,6 +128,15 @@
       </dd>
    </xsl:template>
 
+   <xsl:template match="fn:*[@key = 'PlannedForRelease'][normalize-space()]" mode="issue-footer-item" priority="10">
+      <dt>{@key}</dt>
+      <dd>
+         <a href="{$repo-url}/releases/tag/{.}">
+            <xsl:apply-templates mode="issue-text"/>
+         </a>
+      </dd>
+   </xsl:template>
+
    <xsl:template match="fn:array[@key = 'FileAttachments'][fn:map]" mode="issue-footer-item" priority="10">
       <dt>{@key}</dt>
       <dd>
