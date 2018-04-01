@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <title>{{ page.title }}{% if page.omit_site_title == nil or page.omit_site_title == 'no' %} — DbExtensions{% endif %}</title>
+   <title>{{ page.title }}{% unless page.omit_site_title %} — DbExtensions{% endunless %}</title>
    <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
    <link rel="apple-touch-icon" href="{{ page.base_url }}apple-touch-icon.png"/>
