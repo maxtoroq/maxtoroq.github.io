@@ -19,13 +19,14 @@
    </header>
    <article class="container">
       <header>
-         {% assign url_parts = page.url | split: "/" %}
-         {% assign path_parts = "" | split: '-' %}
+         {% assign url_parts = page.url | split: '/' %}
+         {% assign path_parts = '' | split: '' %}
          {% assign crumbs = url_parts.size | minus: 2 %}
          {% if crumbs > 1 %}
          <nav class="breadcrumbs">
             {% for i in (2..crumbs) %}
-            {% assign path_parts = path_parts %}
+            {% assign item = url_parts[i] | split: '' %}
+            {% assign path_parts = path_parts | concat: item %}
             <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
             {% endfor %}
             <span>{{ url_parts | last }}</span>
