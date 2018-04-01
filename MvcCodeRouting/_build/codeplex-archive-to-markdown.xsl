@@ -71,7 +71,7 @@
       <xsl:apply-templates select="fn:array[@key = 'Comments']" mode="#current"/>
    </xsl:template>
 
-   <xsl:template match="fn:string[@key = ('ReportedDate', 'PostedDate', 'ClosedDate', 'LastUpdatedDate')]/text()" mode="issue-text discussion-text">
+   <xsl:template match="fn:string[ends-with(@key, 'Date')]/text()" mode="issue-text discussion-text">
       <time datetime="{.}" title="{.}">{format-dateTime(xs:dateTime(.), "[MNn] [D], [Y]", "en", (), ())}</time>
    </xsl:template>
 
@@ -221,13 +221,30 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: Discussions{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
-         <ul>
-            <xsl:for-each select="reverse($discussions)">
-               <li>
-                  <a href="{fn:*[@key = 'Id']}.html">{fn:*[@key = 'Title']}</a>
-               </li>
-            </xsl:for-each>
-         </ul>
+         <table>
+            <thead>
+               <tr>
+                  <th>Title</th>
+                  <th>Replies</th>
+                  <th>Last activity</th>
+               </tr>
+            </thead>
+            <tbody>
+               <xsl:for-each select="reverse($discussions)">
+                  <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
+                  <xsl:variable name="discussion" select="local:discussion-doc($id)"/>
+                  <tr>
+                     <td>
+                        <a href="{$id}.html">{fn:*[@key = 'Title']}</a>
+                     </td>
+                     <td>{count($discussion/*/*) - 1}</td>
+                     <td>
+                        <xsl:apply-templates select="fn:*[@key = 'LatestDate']" mode="discussion-text"/>
+                     </td>
+                  </tr>
+               </xsl:for-each>
+            </tbody>
+         </table>
       </xsl:result-document>
       <xsl:apply-templates select="$discussions" mode="#current"/>
    </xsl:template>
