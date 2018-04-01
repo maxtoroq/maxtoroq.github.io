@@ -23,10 +23,7 @@
          {% assign path_parts = "" | split: '-' %}
          <nav class="breadcrumbs">
             
-            {% for i in (1..1) %}
-            {% assign path_parts = path_parts | concat: url_parts[i] %}
-            <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
-            {% endfor %}
+            
             <span>{{ page.title }}</span>
          </nav>
          <h1>{{ page.title }}</h1>
