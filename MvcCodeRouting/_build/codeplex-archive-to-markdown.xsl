@@ -29,6 +29,7 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: Issues{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
+         <xsl:call-template name="issues-note"/>
          <table>
             <thead>
                <tr>
@@ -67,6 +68,7 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: "{replace($title, '"', '\\"')} #{$id}"{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
+         <xsl:call-template name="issues-note"/>
          <xsl:apply-templates select="$issue" mode="issue"/>
       </xsl:result-document>
    </xsl:template>
@@ -241,6 +243,12 @@
       </xsl:analyze-string>
    </xsl:template>
 
+   <xsl:template name="issues-note">
+      <div class="note">
+         Issues were imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b>
+      </div>
+   </xsl:template>
+
    <!-- ## Discussions -->
 
    <xsl:template match="/fn:array" mode="discussions">
@@ -249,6 +257,7 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: Discussions{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
+         <xsl:call-template name="discussions-note"/>
          <table>
             <thead>
                <tr>
@@ -285,6 +294,7 @@
          <xsl:text>---{$new-line}</xsl:text>
          <xsl:text>title: "{replace($title, '"', '\\"')}"{$new-line}</xsl:text>
          <xsl:text>---{$new-line}</xsl:text>
+         <xsl:call-template name="discussions-note"/>
          <xsl:apply-templates select="$discussion" mode="discussion"/>
       </xsl:result-document>
    </xsl:template>
@@ -333,6 +343,12 @@
 
       <xsl:sequence select="json-to-xml(unparsed-text(resolve-uri(concat('discussions/', $id, '.json'), $archive-uri)))"/>
    </xsl:function>
+
+   <xsl:template name="discussions-note">
+      <div class="note">
+         Discussions were imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b>
+      </div>
+   </xsl:template>
 
    <!-- ## Util -->
 

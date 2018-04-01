@@ -1,6 +1,8 @@
 ---
 title: Issues
 ---
+<div class="note">
+   Issues were imported from the CodePlex archive for reference purposes. <b>Support for MvcCodeRouting has ended.</b></div>
 <table>
    <thead>
       <tr>
