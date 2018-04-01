@@ -21,14 +21,16 @@
       <header>
          {% assign url_parts = page.url | split: "/" %}
          {% assign path_parts = "" | split: '-' %}
+         {% assign crumbs = url_parts.size | minus: 2 %}
+         {% if crumbs > 2 %}
          <nav class="breadcrumbs">
-            {% assign y = url_parts.size | minus: 2 %}
-            {% for i in (2..y) %}
-            
+            {% for i in (2..crumbs) %}
+
             <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
             {% endfor %}
             <span>{{ page.title }}</span>
          </nav>
+         {% endif %}
          <h1>{{ page.title }}</h1>
       </header>
       <div itemprop="articleBody">
