@@ -32,6 +32,7 @@
          <table>
             <thead>
                <tr>
+                  <th>Number</th>
                   <th>Title</th>
                   <th>Status</th>
                   <th>Last activity</th>
@@ -42,6 +43,7 @@
                   <xsl:variable name="id" select="fn:*[@key = 'Id']/string()"/>
                   <xsl:variable name="issue" select="local:issue-doc($id)"/>
                   <tr>
+                     <td>{$id}</td>
                      <td>
                         <a href="{$id}.html">{fn:*[@key = 'Title']}</a>
                      </td>
