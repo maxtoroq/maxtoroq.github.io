@@ -22,8 +22,8 @@
          {% assign url_parts = page.url | split: "/" %}
          {% assign path_parts = "" | split: '-' %}
          <nav class="breadcrumbs">
-            
-            {% for i in (1..1) %}
+            {% assign y = url_parts.size | minus: 2 %}
+            {% for i in (1..y) %}{{i}}
             {% endfor %}
             <span>{{ page.title }}</span>
          </nav>
