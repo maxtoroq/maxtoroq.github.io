@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <title>{{ page.title }}{% if page.omit_site_title == nil or page.omit_site_title == 'no' %} — MvcCodeRouting{% endif %}</title>
+   <title>{{ page.title }}{% unless page.omit_site_title %} — MvcCodeRouting{% endunless %}</title>
    <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}nuget/icon.png"/>
    {% include analytics.html %}
@@ -19,6 +19,15 @@
    </header>
    <article class="container">
       <header>
+         {% assign url_parts = page.url | split: "/" %}
+         {% assign path_parts = "" | split: '-' %}
+         <nav class="breadcrumbs">
+            {% for i in (1..(url_parts.size - 2)) %}
+            {% assign path_parts = path_parts | concat url_parts[i] %}
+            <a href="{{ page.base_url }}{{ path_parts | join: "/" }}">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
+            {% endfor %}
+            <span>{{ page.title }}</span>
+         </nav>
          <h1>{{ page.title }}</h1>
       </header>
       <div itemprop="articleBody">
