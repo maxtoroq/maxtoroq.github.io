@@ -21,11 +21,11 @@ body > header {
       
       &:first-child {
          display: inline-block;
-         width: 48px;
-         height: 42px;
+         width: 60px;
+         height: 25px;
          background-image: url(../img/logo.png);
-         background-size: 48px;
-         background-position-y: -4px;
+         background-repeat: no-repeat;
+         background-size: 60px;
          border-bottom: none;
          text-indent: -999em;
          vertical-align: middle;
