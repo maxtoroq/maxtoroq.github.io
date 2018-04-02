@@ -69,6 +69,7 @@
          <xsl:text>---&#xA;</xsl:text>
          <xsl:text>title: "</xsl:text>
          <xsl:value-of select="$index-title"/>
+         <xsl:text>"&#xA;element_ref: no</xsl:text>
          <xsl:text>"&#xA;---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
          <xsl:call-template name="nav-browser"/>
