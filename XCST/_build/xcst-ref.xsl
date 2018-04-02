@@ -91,7 +91,7 @@
             <div>
                <ul>
                   <li>
-                     <span>XCST Elements</span>
+                     <h3>XCST Elements</h3>
                      <ul>
                         <xsl:for-each select="$elements-c">
                            <xsl:sort select="local-name-from-QName(ref:name(.))"/>
@@ -110,7 +110,7 @@
                      </ul>
                   </li>
                   <li>
-                     <span>Application Extension Elements</span>
+                     <h3>Application Extension Elements</h3>
                      <ul>
                         <xsl:for-each select="$elements-a">
                            <xsl:sort select="local-name-from-QName(ref:name(.))"/>

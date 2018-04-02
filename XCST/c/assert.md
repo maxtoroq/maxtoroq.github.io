@@ -12,7 +12,9 @@ regenerated.
 <nav role="navigation" class="browser">
    <div>
       <ul>
-         <li><span>XCST Elements</span><ul>
+         <li>
+            <h3>XCST Elements</h3>
+            <ul>
                <li><a href="../c/array.html">c:array</a></li>
                <li><a href="../c/assert.html" class="active">c:assert</a></li>
                <li><a href="../c/attribute.html">c:attribute</a></li>
@@ -73,7 +75,9 @@ regenerated.
                <li><a href="../c/with-param.html">c:with-param</a></li>
             </ul>
          </li>
-         <li><span>Application Extension Elements</span><ul>
+         <li>
+            <h3>Application Extension Elements</h3>
+            <ul>
                <li><a href="../a/anti-forgery-token.html">a:anti-forgery-token</a></li>
                <li><a href="../a/check-box.html">a:check-box</a></li>
                <li><a href="../a/display.html">a:display</a></li>
