@@ -79,26 +79,29 @@
             <xsl:value-of select="$pre-file"/>
             <xsl:text> %}&#xA;</xsl:text>
          </xsl:if>
-         <ul class="ref-element-list">
-            <xsl:for-each-group select="$all-elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
-               <xsl:sort select="current-grouping-key()"/>
+         <div class="ref-element-list">
+            <h2 id="elements">Elements</h2>
+            <ul>
+               <xsl:for-each-group select="$all-elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
+                  <xsl:sort select="current-grouping-key()"/>
 
-               <li>
-                  <xsl:for-each-group select="current-group()" group-by="ref:name(.)">
-                     <xsl:sort select="string(current-grouping-key())"/>
+                  <li>
+                     <xsl:for-each-group select="current-group()" group-by="ref:name(.)">
+                        <xsl:sort select="string(current-grouping-key())"/>
 
-                     <xsl:if test="position() gt 1">
-                        <xsl:text> &#160;</xsl:text>
-                     </xsl:if>
-                     <a href="{ref:element-page(.)}">
-                        <code>
-                           <xsl:value-of select="current-grouping-key()"/>
-                        </code>
-                     </a>
-                  </xsl:for-each-group>
-               </li>
-            </xsl:for-each-group>
-         </ul>
+                        <xsl:if test="position() gt 1">
+                           <xsl:text> &#160;</xsl:text>
+                        </xsl:if>
+                        <a href="{ref:element-page(.)}">
+                           <code>
+                              <xsl:value-of select="current-grouping-key()"/>
+                           </code>
+                        </a>
+                     </xsl:for-each-group>
+                  </li>
+               </xsl:for-each-group>
+            </ul>
+         </div>
          <xsl:if test="unparsed-text-available($post-path)">
             <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
             <xsl:value-of select="$post-file"/>

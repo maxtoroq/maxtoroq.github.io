@@ -78,24 +78,27 @@ regenerated.
 
 {% include_relative _index.pre.md %}
 
-<ul class="ref-element-list">
-   <li><a href="array.html"><code>c:array</code></a> &nbsp;<a href="assert.html"><code>c:assert</code></a> &nbsp;<a href="attribute.html"><code>c:attribute</code></a> &nbsp;<a href="attribute-set.html"><code>c:attribute-set</code></a></li>
-   <li><a href="break.html"><code>c:break</code></a></li>
-   <li><a href="call-template.html"><code>c:call-template</code></a> &nbsp;<a href="catch.html"><code>c:catch</code></a> &nbsp;<a href="choose.html"><code>c:choose</code></a> &nbsp;<a href="comment.html"><code>c:comment</code></a> &nbsp;<a href="continue.html"><code>c:continue</code></a> &nbsp;<a href="copy-of.html"><code>c:copy-of</code></a></li>
-   <li><a href="delegate.html"><code>c:delegate</code></a> &nbsp;<a href="document.html"><code>c:document</code></a></li>
-   <li><a href="element.html"><code>c:element</code></a> &nbsp;<a href="evaluate-delegate.html"><code>c:evaluate-delegate</code></a> &nbsp;<a href="evaluate-package.html"><code>c:evaluate-package</code></a></li>
-   <li><a href="fallback.html"><code>c:fallback</code></a> &nbsp;<a href="finally.html"><code>c:finally</code></a> &nbsp;<a href="for-each.html"><code>c:for-each</code></a> &nbsp;<a href="for-each-group.html"><code>c:for-each-group</code></a> &nbsp;<a href="function.html"><code>c:function</code></a></li>
-   <li><a href="if.html"><code>c:if</code></a> &nbsp;<a href="import.html"><code>c:import</code></a> &nbsp;<a href="import-namespace.html"><code>c:import-namespace</code></a></li>
-   <li><a href="map.html"><code>c:map</code></a> &nbsp;<a href="map-entry.html"><code>c:map-entry</code></a> &nbsp;<a href="member.html"><code>c:member</code></a> &nbsp;<a href="message.html"><code>c:message</code></a> &nbsp;<a href="metadata.html"><code>c:metadata</code></a> &nbsp;<a href="module.html"><code>c:module</code></a></li>
-   <li><a href="namespace.html"><code>c:namespace</code></a> &nbsp;<a href="next-template.html"><code>c:next-template</code></a></li>
-   <li><a href="object.html"><code>c:object</code></a> &nbsp;<a href="otherwise.html"><code>c:otherwise</code></a> &nbsp;<a href="output.html"><code>c:output</code></a> &nbsp;<a href="override.html"><code>c:override</code></a></li>
-   <li><a href="package.html"><code>c:package</code></a> &nbsp;<a href="param.html"><code>c:param</code></a> &nbsp;<a href="processing-instruction.html"><code>c:processing-instruction</code></a></li>
-   <li><a href="result-document.html"><code>c:result-document</code></a> &nbsp;<a href="return.html"><code>c:return</code></a></li>
-   <li><a href="script.html"><code>c:script</code></a> &nbsp;<a href="serialize.html"><code>c:serialize</code></a> &nbsp;<a href="set.html"><code>c:set</code></a> &nbsp;<a href="sort.html"><code>c:sort</code></a></li>
-   <li><a href="template.html"><code>c:template</code></a> &nbsp;<a href="text.html"><code>c:text</code></a> &nbsp;<a href="try.html"><code>c:try</code></a> &nbsp;<a href="type.html"><code>c:type</code></a></li>
-   <li><a href="use-package.html"><code>c:use-package</code></a> &nbsp;<a href="using.html"><code>c:using</code></a></li>
-   <li><a href="validation.html"><code>c:validation</code></a> &nbsp;<a href="value-of.html"><code>c:value-of</code></a> &nbsp;<a href="variable.html"><code>c:variable</code></a> &nbsp;<a href="void.html"><code>c:void</code></a></li>
-   <li><a href="when.html"><code>c:when</code></a> &nbsp;<a href="while.html"><code>c:while</code></a> &nbsp;<a href="with-param.html"><code>c:with-param</code></a></li>
-</ul>
+<div class="ref-element-list">
+   <h2 id="elements">Elements</h2>
+   <ul>
+      <li><a href="array.html"><code>c:array</code></a> &nbsp;<a href="assert.html"><code>c:assert</code></a> &nbsp;<a href="attribute.html"><code>c:attribute</code></a> &nbsp;<a href="attribute-set.html"><code>c:attribute-set</code></a></li>
+      <li><a href="break.html"><code>c:break</code></a></li>
+      <li><a href="call-template.html"><code>c:call-template</code></a> &nbsp;<a href="catch.html"><code>c:catch</code></a> &nbsp;<a href="choose.html"><code>c:choose</code></a> &nbsp;<a href="comment.html"><code>c:comment</code></a> &nbsp;<a href="continue.html"><code>c:continue</code></a> &nbsp;<a href="copy-of.html"><code>c:copy-of</code></a></li>
+      <li><a href="delegate.html"><code>c:delegate</code></a> &nbsp;<a href="document.html"><code>c:document</code></a></li>
+      <li><a href="element.html"><code>c:element</code></a> &nbsp;<a href="evaluate-delegate.html"><code>c:evaluate-delegate</code></a> &nbsp;<a href="evaluate-package.html"><code>c:evaluate-package</code></a></li>
+      <li><a href="fallback.html"><code>c:fallback</code></a> &nbsp;<a href="finally.html"><code>c:finally</code></a> &nbsp;<a href="for-each.html"><code>c:for-each</code></a> &nbsp;<a href="for-each-group.html"><code>c:for-each-group</code></a> &nbsp;<a href="function.html"><code>c:function</code></a></li>
+      <li><a href="if.html"><code>c:if</code></a> &nbsp;<a href="import.html"><code>c:import</code></a> &nbsp;<a href="import-namespace.html"><code>c:import-namespace</code></a></li>
+      <li><a href="map.html"><code>c:map</code></a> &nbsp;<a href="map-entry.html"><code>c:map-entry</code></a> &nbsp;<a href="member.html"><code>c:member</code></a> &nbsp;<a href="message.html"><code>c:message</code></a> &nbsp;<a href="metadata.html"><code>c:metadata</code></a> &nbsp;<a href="module.html"><code>c:module</code></a></li>
+      <li><a href="namespace.html"><code>c:namespace</code></a> &nbsp;<a href="next-template.html"><code>c:next-template</code></a></li>
+      <li><a href="object.html"><code>c:object</code></a> &nbsp;<a href="otherwise.html"><code>c:otherwise</code></a> &nbsp;<a href="output.html"><code>c:output</code></a> &nbsp;<a href="override.html"><code>c:override</code></a></li>
+      <li><a href="package.html"><code>c:package</code></a> &nbsp;<a href="param.html"><code>c:param</code></a> &nbsp;<a href="processing-instruction.html"><code>c:processing-instruction</code></a></li>
+      <li><a href="result-document.html"><code>c:result-document</code></a> &nbsp;<a href="return.html"><code>c:return</code></a></li>
+      <li><a href="script.html"><code>c:script</code></a> &nbsp;<a href="serialize.html"><code>c:serialize</code></a> &nbsp;<a href="set.html"><code>c:set</code></a> &nbsp;<a href="sort.html"><code>c:sort</code></a></li>
+      <li><a href="template.html"><code>c:template</code></a> &nbsp;<a href="text.html"><code>c:text</code></a> &nbsp;<a href="try.html"><code>c:try</code></a> &nbsp;<a href="type.html"><code>c:type</code></a></li>
+      <li><a href="use-package.html"><code>c:use-package</code></a> &nbsp;<a href="using.html"><code>c:using</code></a></li>
+      <li><a href="validation.html"><code>c:validation</code></a> &nbsp;<a href="value-of.html"><code>c:value-of</code></a> &nbsp;<a href="variable.html"><code>c:variable</code></a> &nbsp;<a href="void.html"><code>c:void</code></a></li>
+      <li><a href="when.html"><code>c:when</code></a> &nbsp;<a href="while.html"><code>c:while</code></a> &nbsp;<a href="with-param.html"><code>c:with-param</code></a></li>
+   </ul>
+</div>
 
 {% include_relative _index.md %}
