@@ -22,54 +22,63 @@
       <xsl:variable name="elements-c" select="$grammar-c//rng:element[string(ref:name(.))]"/>
       <xsl:variable name="elements-a" select="$grammar-a//rng:element[string(ref:name(.))]"/>
 
-      <xsl:for-each-group select="$elements-c" group-by="ref:name(.)">
-         <xsl:call-template name="element-page">
-            <xsl:with-param name="name" select="current-grouping-key()"/>
-            <xsl:with-param name="elements" select="current-group()"/>
-            <xsl:with-param name="elements-c" select="$elements-c" tunnel="yes"/>
-            <xsl:with-param name="elements-a" select="$elements-a" tunnel="yes"/>
-         </xsl:call-template>
-      </xsl:for-each-group>
-
-      <xsl:for-each-group select="$elements-a" group-by="ref:name(.)">
-         <xsl:call-template name="element-page">
-            <xsl:with-param name="name" select="current-grouping-key()"/>
-            <xsl:with-param name="elements" select="current-group()"/>
-            <xsl:with-param name="elements-c" select="$elements-c" tunnel="yes"/>
-            <xsl:with-param name="elements-a" select="$elements-a" tunnel="yes"/>
-         </xsl:call-template>
-      </xsl:for-each-group>
-
-      <xsl:call-template name="elements-list">
+      <xsl:call-template name="output-elements">
          <xsl:with-param name="elements" select="$elements-c"/>
+         <xsl:with-param name="index-title" select="'XCST Elements'" tunnel="yes"/>
       </xsl:call-template>
 
-      <xsl:call-template name="elements-list">
+      <xsl:call-template name="output-elements">
          <xsl:with-param name="elements" select="$elements-a"/>
+         <xsl:with-param name="index-title" select="'Application Extension Elements'" tunnel="yes"/>
       </xsl:call-template>
-
-      <xsl:result-document href="{resolve-uri('../')}docs/_ref-nav.md">
-         <xsl:call-template name="generated-warning"/>
-         <xsl:call-template name="nav-browser">
-            <xsl:with-param name="elements-c" select="$elements-c" tunnel="yes"/>
-            <xsl:with-param name="elements-a" select="$elements-a" tunnel="yes"/>
-         </xsl:call-template>
-      </xsl:result-document>
 
       <xsl:call-template name="standard-attributes-page">
          <xsl:with-param name="std-attribs-def" select="$grammar-c//rng:define[@name = 'standard-attributes']"/>
       </xsl:call-template>
    </xsl:template>
 
-   <xsl:template name="elements-list">
+   <xsl:template name="output-elements">
       <xsl:param name="elements" as="element(rng:element)+"/>
 
       <xsl:variable name="prefix" select="prefix-from-QName(ref:name($elements[1]))"/>
 
-      <xsl:result-document href="{resolve-uri('../')}docs/_ref-list-{$prefix}.md">
+      <xsl:for-each-group select="$elements" group-by="ref:name(.)">
+         <xsl:call-template name="element-page">
+            <xsl:with-param name="name" select="current-grouping-key()"/>
+            <xsl:with-param name="elements" select="current-group()"/>
+            <xsl:with-param name="all-elements" select="$elements" tunnel="yes"/>
+         </xsl:call-template>
+      </xsl:for-each-group>
+
+      <xsl:call-template name="elements-index">
+         <xsl:with-param name="all-elements" select="$elements" tunnel="yes"/>
+      </xsl:call-template>
+   </xsl:template>
+
+   <xsl:template name="elements-index">
+      <xsl:param name="all-elements" as="element(rng:element)+" tunnel="yes"/>
+      <xsl:param name="index-title" as="xs:string" tunnel="yes"/>
+
+      <xsl:variable name="prefix" select="prefix-from-QName(ref:name($all-elements[1]))"/>
+      <xsl:variable name="pre-file" select="string-join(('_index', 'pre', 'md'), '.')"/>
+      <xsl:variable name="pre-path" select="string-join(('..', $prefix, $pre-file), '/')"/>
+      <xsl:variable name="post-file" select="string-join(('_index', 'md'), '.')"/>
+      <xsl:variable name="post-path" select="string-join(('..', $prefix, $post-file), '/')"/>
+
+      <xsl:result-document href="{resolve-uri('../')}{$prefix}/index.md">
+         <xsl:text>---&#xA;</xsl:text>
+         <xsl:text>title: "</xsl:text>
+         <xsl:value-of select="$index-title"/>
+         <xsl:text>"&#xA;---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
+         <xsl:call-template name="nav-browser"/>
+         <xsl:if test="unparsed-text-available($pre-path)">
+            <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
+            <xsl:value-of select="$pre-file"/>
+            <xsl:text> %}&#xA;</xsl:text>
+         </xsl:if>
          <ul class="ref-element-list">
-            <xsl:for-each-group select="$elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
+            <xsl:for-each-group select="$all-elements" group-by="substring(local-name-from-QName(ref:name(.)), 1, 1)">
                <xsl:sort select="current-grouping-key()"/>
 
                <li>
@@ -79,7 +88,7 @@
                      <xsl:if test="position() gt 1">
                         <xsl:text> &#160;</xsl:text>
                      </xsl:if>
-                     <a href="{string-join(('..', $prefix, ref:element-page(.)), '/')}">
+                     <a href="{ref:element-page(.)}">
                         <code>
                            <xsl:value-of select="current-grouping-key()"/>
                         </code>
@@ -88,6 +97,11 @@
                </li>
             </xsl:for-each-group>
          </ul>
+         <xsl:if test="unparsed-text-available($post-path)">
+            <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
+            <xsl:value-of select="$post-file"/>
+            <xsl:text> %}&#xA;</xsl:text>
+         </xsl:if>
       </xsl:result-document>
    </xsl:template>
 
@@ -112,50 +126,29 @@
 
    <xsl:template name="nav-browser">
       <xsl:param name="name" as="xs:QName?"/>
-      <xsl:param name="elements-c" as="element(rng:element)+" tunnel="yes"/>
-      <xsl:param name="elements-a" as="element(rng:element)+" tunnel="yes"/>
+      <xsl:param name="all-elements" as="element(rng:element)+" tunnel="yes"/>
+      <xsl:param name="index-title" as="xs:string" tunnel="yes"/>
 
       <nav role="navigation" class="browser">
          <div>
+            <h3>
+               <xsl:value-of select="$index-title"/>
+            </h3>
             <ul>
-               <li>
-                  <h3>XCST Elements</h3>
-                  <ul>
-                     <xsl:for-each select="$elements-c">
-                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+               <xsl:for-each select="$all-elements">
+                  <xsl:sort select="local-name-from-QName(ref:name(.))"/>
 
-                        <xsl:variable name="n" select="ref:name(.)"/>
+                  <xsl:variable name="n" select="ref:name(.)"/>
 
-                        <li>
-                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
-                              <xsl:if test="$name eq $n">
-                                 <xsl:attribute name="class" select="'active'"/>
-                              </xsl:if>
-                              <xsl:value-of select="$n"/>
-                           </a>
-                        </li>
-                     </xsl:for-each>
-                  </ul>
-               </li>
-               <li>
-                  <h3>Application Extension Elements</h3>
-                  <ul>
-                     <xsl:for-each select="$elements-a">
-                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
-
-                        <xsl:variable name="n" select="ref:name(.)"/>
-
-                        <li>
-                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
-                              <xsl:if test="$name eq $n">
-                                 <xsl:attribute name="class" select="'active'"/>
-                              </xsl:if>
-                              <xsl:value-of select="$n"/>
-                           </a>
-                        </li>
-                     </xsl:for-each>
-                  </ul>
-               </li>
+                  <li>
+                     <a href="{ref:element-page(.)}">
+                        <xsl:if test="$name eq $n">
+                           <xsl:attribute name="class" select="'active'"/>
+                        </xsl:if>
+                        <xsl:value-of select="$n"/>
+                     </a>
+                  </li>
+               </xsl:for-each>
             </ul>
          </div>
       </nav>

@@ -554,5 +554,5 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html
 [5]: https://github.com/maxtoroq/XCST-a/issues?q=is%3Aissue+label%3Aquestion
-[6]: elements-ref.html#application-extension-elements
+[6]: ../a/
 [7]: standard-attributes.html

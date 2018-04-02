@@ -11,7 +11,8 @@ toc: false
 
 Reference
 ---------
-- [XCST Elements Reference](elements-ref.html)
+- [XCST Elements](../c/)
+- [Application Extension Elements](../a/)
 - [Standard Attributes](standard-attributes.html)
 - [Reserved Namespaces](reserved-namespaces.html)
 - [Extension Instructions](extension-instructions.html)
