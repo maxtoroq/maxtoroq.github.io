@@ -8,24 +8,19 @@ body > footer {
 }
 
 body > header {
-   
-   .container {
-      padding-top: .5em;
-      padding-bottom: .5em;
-   }
 
    nav a {
-
       color: gray;
       margin-left: 1em;
-      
+
       &:first-child {
          display: inline-block;
          width: 60px;
-         height: 25px;
+         height: 20px;
          background-image: url(../img/logo.png);
          background-repeat: no-repeat;
          background-size: 60px;
+         background-position-y: -3px;
          border-bottom: none;
          text-indent: -999em;
          vertical-align: middle;
