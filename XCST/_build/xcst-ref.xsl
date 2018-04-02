@@ -22,32 +22,27 @@
       <xsl:variable name="elements-c" select="$grammar-c//rng:element[string(ref:name(.))]"/>
       <xsl:variable name="elements-a" select="$grammar-a//rng:element[string(ref:name(.))]"/>
 
-      <xsl:call-template name="output-elements">
-         <xsl:with-param name="elements" select="$elements-c"/>
-      </xsl:call-template>
+      <xsl:for-each-group select="$elements-c" group-by="ref:name(.)">
+         <xsl:call-template name="element-page">
+            <xsl:with-param name="name" select="current-grouping-key()"/>
+            <xsl:with-param name="elements" select="current-group()"/>
+            <xsl:with-param name="elements-c" select="$elements-c"/>
+            <xsl:with-param name="elements-a" select="$elements-a"/>
+         </xsl:call-template>
+      </xsl:for-each-group>
+
+      <xsl:for-each-group select="$elements-a" group-by="ref:name(.)">
+         <xsl:call-template name="element-page">
+            <xsl:with-param name="name" select="current-grouping-key()"/>
+            <xsl:with-param name="elements" select="current-group()"/>
+            <xsl:with-param name="elements-c" select="$elements-c"/>
+            <xsl:with-param name="elements-a" select="$elements-a"/>
+         </xsl:call-template>
+      </xsl:for-each-group>
 
       <xsl:call-template name="standard-attributes-page">
          <xsl:with-param name="std-attribs-def" select="$grammar-c//rng:define[@name = 'standard-attributes']"/>
       </xsl:call-template>
-
-      <xsl:call-template name="output-elements">
-         <xsl:with-param name="elements" select="$elements-a"/>
-      </xsl:call-template>
-   </xsl:template>
-
-   <xsl:template name="output-elements">
-      <xsl:param name="elements" as="element(rng:element)+"/>
-
-      <xsl:call-template name="elements-list">
-         <xsl:with-param name="elements" select="$elements"/>
-      </xsl:call-template>
-
-      <xsl:for-each-group select="$elements" group-by="ref:name(.)">
-         <xsl:call-template name="element-page">
-            <xsl:with-param name="name" select="current-grouping-key()"/>
-            <xsl:with-param name="elements" select="current-group()"/>
-         </xsl:call-template>
-      </xsl:for-each-group>
    </xsl:template>
 
    <xsl:template name="elements-list">
@@ -81,13 +76,59 @@
    <xsl:template name="element-page">
       <xsl:param name="name" as="xs:QName"/>
       <xsl:param name="elements" as="element(rng:element)+"/>
+      <xsl:param name="elements-c" as="element(rng:element)+"/>
+      <xsl:param name="elements-a" as="element(rng:element)+"/>
 
-      <xsl:result-document href="{resolve-uri('../')}{prefix-from-QName($name)}/{substring-before(ref:element-page($elements[1]), '.')}.md">
+      <xsl:variable name="prefix" select="prefix-from-QName($name)"/>
+
+      <xsl:result-document href="{resolve-uri('../')}{$prefix}/{substring-before(ref:element-page($elements[1]), '.')}.md">
          <xsl:text>---&#xA;</xsl:text>
          <xsl:text>title: "</xsl:text>
          <xsl:value-of select="$name"/>
          <xsl:text>"&#xA;---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
+         <nav role="navigation" class="browser">
+            <ul>
+               <li>
+                  <span>XCST Elements</span>
+                  <ul>
+                     <xsl:for-each select="$elements-c">
+                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+
+                        <xsl:variable name="n" select="ref:name(.)"/>
+
+                        <li>
+                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
+                              <xsl:if test="$name eq $n">
+                                 <xsl:attribute name="class" select="'active'"/>
+                              </xsl:if>
+                              <xsl:value-of select="$n"/>
+                           </a>
+                        </li>
+                     </xsl:for-each>
+                  </ul>
+               </li>
+               <li>
+                  <span>Application Extension Elements</span>
+                  <ul>
+                     <xsl:for-each select="$elements-a">
+                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+
+                        <xsl:variable name="n" select="ref:name(.)"/>
+
+                        <li>
+                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
+                              <xsl:if test="$name eq $n">
+                                 <xsl:attribute name="class" select="'active'"/>
+                              </xsl:if>
+                              <xsl:value-of select="$n"/>
+                           </a>
+                        </li>
+                     </xsl:for-each>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
          <xsl:apply-templates select="$elements" mode="doc"/>
       </xsl:result-document>
    </xsl:template>
