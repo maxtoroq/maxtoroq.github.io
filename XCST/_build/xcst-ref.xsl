@@ -88,46 +88,48 @@
          <xsl:text>"&#xA;---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
          <nav role="navigation" class="browser">
-            <ul>
-               <li>
-                  <span>XCST Elements</span>
-                  <ul>
-                     <xsl:for-each select="$elements-c">
-                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+            <div>
+               <ul>
+                  <li>
+                     <span>XCST Elements</span>
+                     <ul>
+                        <xsl:for-each select="$elements-c">
+                           <xsl:sort select="local-name-from-QName(ref:name(.))"/>
 
-                        <xsl:variable name="n" select="ref:name(.)"/>
+                           <xsl:variable name="n" select="ref:name(.)"/>
 
-                        <li>
-                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
-                              <xsl:if test="$name eq $n">
-                                 <xsl:attribute name="class" select="'active'"/>
-                              </xsl:if>
-                              <xsl:value-of select="$n"/>
-                           </a>
-                        </li>
-                     </xsl:for-each>
-                  </ul>
-               </li>
-               <li>
-                  <span>Application Extension Elements</span>
-                  <ul>
-                     <xsl:for-each select="$elements-a">
-                        <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+                           <li>
+                              <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
+                                 <xsl:if test="$name eq $n">
+                                    <xsl:attribute name="class" select="'active'"/>
+                                 </xsl:if>
+                                 <xsl:value-of select="$n"/>
+                              </a>
+                           </li>
+                        </xsl:for-each>
+                     </ul>
+                  </li>
+                  <li>
+                     <span>Application Extension Elements</span>
+                     <ul>
+                        <xsl:for-each select="$elements-a">
+                           <xsl:sort select="local-name-from-QName(ref:name(.))"/>
 
-                        <xsl:variable name="n" select="ref:name(.)"/>
+                           <xsl:variable name="n" select="ref:name(.)"/>
 
-                        <li>
-                           <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
-                              <xsl:if test="$name eq $n">
-                                 <xsl:attribute name="class" select="'active'"/>
-                              </xsl:if>
-                              <xsl:value-of select="$n"/>
-                           </a>
-                        </li>
-                     </xsl:for-each>
-                  </ul>
-               </li>
-            </ul>
+                           <li>
+                              <a href="../{prefix-from-QName($n)}/{ref:element-page(.)}">
+                                 <xsl:if test="$name eq $n">
+                                    <xsl:attribute name="class" select="'active'"/>
+                                 </xsl:if>
+                                 <xsl:value-of select="$n"/>
+                              </a>
+                           </li>
+                        </xsl:for-each>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
          </nav>
          <xsl:apply-templates select="$elements" mode="doc"/>
       </xsl:result-document>

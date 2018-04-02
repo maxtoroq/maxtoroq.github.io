@@ -10,90 +10,92 @@ regenerated.
 {% endcomment %}
 
 <nav role="navigation" class="browser">
-   <ul>
-      <li><span>XCST Elements</span><ul>
-            <li><a href="../c/array.html">c:array</a></li>
-            <li><a href="../c/assert.html">c:assert</a></li>
-            <li><a href="../c/attribute.html">c:attribute</a></li>
-            <li><a href="../c/attribute-set.html">c:attribute-set</a></li>
-            <li><a href="../c/break.html">c:break</a></li>
-            <li><a href="../c/call-template.html">c:call-template</a></li>
-            <li><a href="../c/catch.html">c:catch</a></li>
-            <li><a href="../c/choose.html">c:choose</a></li>
-            <li><a href="../c/comment.html">c:comment</a></li>
-            <li><a href="../c/continue.html">c:continue</a></li>
-            <li><a href="../c/copy-of.html">c:copy-of</a></li>
-            <li><a href="../c/delegate.html">c:delegate</a></li>
-            <li><a href="../c/document.html">c:document</a></li>
-            <li><a href="../c/element.html">c:element</a></li>
-            <li><a href="../c/evaluate-delegate.html">c:evaluate-delegate</a></li>
-            <li><a href="../c/evaluate-package.html">c:evaluate-package</a></li>
-            <li><a href="../c/fallback.html">c:fallback</a></li>
-            <li><a href="../c/finally.html">c:finally</a></li>
-            <li><a href="../c/for-each.html">c:for-each</a></li>
-            <li><a href="../c/for-each-group.html">c:for-each-group</a></li>
-            <li><a href="../c/function.html">c:function</a></li>
-            <li><a href="../c/if.html">c:if</a></li>
-            <li><a href="../c/import.html">c:import</a></li>
-            <li><a href="../c/import-namespace.html">c:import-namespace</a></li>
-            <li><a href="../c/map.html">c:map</a></li>
-            <li><a href="../c/map-entry.html">c:map-entry</a></li>
-            <li><a href="../c/member.html">c:member</a></li>
-            <li><a href="../c/message.html">c:message</a></li>
-            <li><a href="../c/metadata.html">c:metadata</a></li>
-            <li><a href="../c/module.html">c:module</a></li>
-            <li><a href="../c/namespace.html" class="active">c:namespace</a></li>
-            <li><a href="../c/next-template.html">c:next-template</a></li>
-            <li><a href="../c/object.html">c:object</a></li>
-            <li><a href="../c/otherwise.html">c:otherwise</a></li>
-            <li><a href="../c/output.html">c:output</a></li>
-            <li><a href="../c/override.html">c:override</a></li>
-            <li><a href="../c/package.html">c:package</a></li>
-            <li><a href="../c/param.html">c:param</a></li>
-            <li><a href="../c/processing-instruction.html">c:processing-instruction</a></li>
-            <li><a href="../c/result-document.html">c:result-document</a></li>
-            <li><a href="../c/return.html">c:return</a></li>
-            <li><a href="../c/script.html">c:script</a></li>
-            <li><a href="../c/serialize.html">c:serialize</a></li>
-            <li><a href="../c/set.html">c:set</a></li>
-            <li><a href="../c/sort.html">c:sort</a></li>
-            <li><a href="../c/template.html">c:template</a></li>
-            <li><a href="../c/text.html">c:text</a></li>
-            <li><a href="../c/try.html">c:try</a></li>
-            <li><a href="../c/type.html">c:type</a></li>
-            <li><a href="../c/use-package.html">c:use-package</a></li>
-            <li><a href="../c/using.html">c:using</a></li>
-            <li><a href="../c/validation.html">c:validation</a></li>
-            <li><a href="../c/value-of.html">c:value-of</a></li>
-            <li><a href="../c/variable.html">c:variable</a></li>
-            <li><a href="../c/void.html">c:void</a></li>
-            <li><a href="../c/when.html">c:when</a></li>
-            <li><a href="../c/while.html">c:while</a></li>
-            <li><a href="../c/with-param.html">c:with-param</a></li>
-         </ul>
-      </li>
-      <li><span>Application Extension Elements</span><ul>
-            <li><a href="../a/anti-forgery-token.html">a:anti-forgery-token</a></li>
-            <li><a href="../a/check-box.html">a:check-box</a></li>
-            <li><a href="../a/display.html">a:display</a></li>
-            <li><a href="../a/display-name.html">a:display-name</a></li>
-            <li><a href="../a/display-text.html">a:display-text</a></li>
-            <li><a href="../a/editor.html">a:editor</a></li>
-            <li><a href="../a/hidden.html">a:hidden</a></li>
-            <li><a href="../a/input.html">a:input</a></li>
-            <li><a href="../a/label.html">a:label</a></li>
-            <li><a href="../a/member-template.html">a:member-template</a></li>
-            <li><a href="../a/model.html">a:model</a></li>
-            <li><a href="../a/option.html">a:option</a></li>
-            <li><a href="../a/radio-button.html">a:radio-button</a></li>
-            <li><a href="../a/select.html">a:select</a></li>
-            <li><a href="../a/textarea.html">a:textarea</a></li>
-            <li><a href="../a/validation-message.html">a:validation-message</a></li>
-            <li><a href="../a/validation-summary.html">a:validation-summary</a></li>
-            <li><a href="../a/with-options.html">a:with-options</a></li>
-         </ul>
-      </li>
-   </ul>
+   <div>
+      <ul>
+         <li><span>XCST Elements</span><ul>
+               <li><a href="../c/array.html">c:array</a></li>
+               <li><a href="../c/assert.html">c:assert</a></li>
+               <li><a href="../c/attribute.html">c:attribute</a></li>
+               <li><a href="../c/attribute-set.html">c:attribute-set</a></li>
+               <li><a href="../c/break.html">c:break</a></li>
+               <li><a href="../c/call-template.html">c:call-template</a></li>
+               <li><a href="../c/catch.html">c:catch</a></li>
+               <li><a href="../c/choose.html">c:choose</a></li>
+               <li><a href="../c/comment.html">c:comment</a></li>
+               <li><a href="../c/continue.html">c:continue</a></li>
+               <li><a href="../c/copy-of.html">c:copy-of</a></li>
+               <li><a href="../c/delegate.html">c:delegate</a></li>
+               <li><a href="../c/document.html">c:document</a></li>
+               <li><a href="../c/element.html">c:element</a></li>
+               <li><a href="../c/evaluate-delegate.html">c:evaluate-delegate</a></li>
+               <li><a href="../c/evaluate-package.html">c:evaluate-package</a></li>
+               <li><a href="../c/fallback.html">c:fallback</a></li>
+               <li><a href="../c/finally.html">c:finally</a></li>
+               <li><a href="../c/for-each.html">c:for-each</a></li>
+               <li><a href="../c/for-each-group.html">c:for-each-group</a></li>
+               <li><a href="../c/function.html">c:function</a></li>
+               <li><a href="../c/if.html">c:if</a></li>
+               <li><a href="../c/import.html">c:import</a></li>
+               <li><a href="../c/import-namespace.html">c:import-namespace</a></li>
+               <li><a href="../c/map.html">c:map</a></li>
+               <li><a href="../c/map-entry.html">c:map-entry</a></li>
+               <li><a href="../c/member.html">c:member</a></li>
+               <li><a href="../c/message.html">c:message</a></li>
+               <li><a href="../c/metadata.html">c:metadata</a></li>
+               <li><a href="../c/module.html">c:module</a></li>
+               <li><a href="../c/namespace.html" class="active">c:namespace</a></li>
+               <li><a href="../c/next-template.html">c:next-template</a></li>
+               <li><a href="../c/object.html">c:object</a></li>
+               <li><a href="../c/otherwise.html">c:otherwise</a></li>
+               <li><a href="../c/output.html">c:output</a></li>
+               <li><a href="../c/override.html">c:override</a></li>
+               <li><a href="../c/package.html">c:package</a></li>
+               <li><a href="../c/param.html">c:param</a></li>
+               <li><a href="../c/processing-instruction.html">c:processing-instruction</a></li>
+               <li><a href="../c/result-document.html">c:result-document</a></li>
+               <li><a href="../c/return.html">c:return</a></li>
+               <li><a href="../c/script.html">c:script</a></li>
+               <li><a href="../c/serialize.html">c:serialize</a></li>
+               <li><a href="../c/set.html">c:set</a></li>
+               <li><a href="../c/sort.html">c:sort</a></li>
+               <li><a href="../c/template.html">c:template</a></li>
+               <li><a href="../c/text.html">c:text</a></li>
+               <li><a href="../c/try.html">c:try</a></li>
+               <li><a href="../c/type.html">c:type</a></li>
+               <li><a href="../c/use-package.html">c:use-package</a></li>
+               <li><a href="../c/using.html">c:using</a></li>
+               <li><a href="../c/validation.html">c:validation</a></li>
+               <li><a href="../c/value-of.html">c:value-of</a></li>
+               <li><a href="../c/variable.html">c:variable</a></li>
+               <li><a href="../c/void.html">c:void</a></li>
+               <li><a href="../c/when.html">c:when</a></li>
+               <li><a href="../c/while.html">c:while</a></li>
+               <li><a href="../c/with-param.html">c:with-param</a></li>
+            </ul>
+         </li>
+         <li><span>Application Extension Elements</span><ul>
+               <li><a href="../a/anti-forgery-token.html">a:anti-forgery-token</a></li>
+               <li><a href="../a/check-box.html">a:check-box</a></li>
+               <li><a href="../a/display.html">a:display</a></li>
+               <li><a href="../a/display-name.html">a:display-name</a></li>
+               <li><a href="../a/display-text.html">a:display-text</a></li>
+               <li><a href="../a/editor.html">a:editor</a></li>
+               <li><a href="../a/hidden.html">a:hidden</a></li>
+               <li><a href="../a/input.html">a:input</a></li>
+               <li><a href="../a/label.html">a:label</a></li>
+               <li><a href="../a/member-template.html">a:member-template</a></li>
+               <li><a href="../a/model.html">a:model</a></li>
+               <li><a href="../a/option.html">a:option</a></li>
+               <li><a href="../a/radio-button.html">a:radio-button</a></li>
+               <li><a href="../a/select.html">a:select</a></li>
+               <li><a href="../a/textarea.html">a:textarea</a></li>
+               <li><a href="../a/validation-message.html">a:validation-message</a></li>
+               <li><a href="../a/validation-summary.html">a:validation-summary</a></li>
+               <li><a href="../a/with-options.html">a:with-options</a></li>
+            </ul>
+         </li>
+      </ul>
+   </div>
 </nav>
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:namespace</span>
   <b>name</b> = { <i>ncname</i> }

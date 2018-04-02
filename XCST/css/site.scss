@@ -69,10 +69,13 @@ nav.browser {
    nav.browser {
       display: block;
       position: fixed;
+      top: 5em;
       left: 1em;
+      width: calc(((100% - 790px) / 2) - 3em);
+      height: calc(100% - 5em);
+      overflow-y: scroll;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       font-size: 0.8em;
-      width: calc(((100% - 790px) / 2) - 3em);
 
       > div {
          padding: 1em 1.5em;
