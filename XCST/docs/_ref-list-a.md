@@ -6,17 +6,19 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-- [`a:anti-forgery-token`](../a/anti-forgery-token.html)
-- [`a:check-box`](../a/check-box.html)
-- [`a:display`](../a/display.html) &nbsp;[`a:display-name`](../a/display-name.html) &nbsp;[`a:display-text`](../a/display-text.html)
-- [`a:editor`](../a/editor.html)
-- [`a:hidden`](../a/hidden.html)
-- [`a:input`](../a/input.html)
-- [`a:label`](../a/label.html)
-- [`a:member-template`](../a/member-template.html) &nbsp;[`a:model`](../a/model.html)
-- [`a:option`](../a/option.html)
-- [`a:radio-button`](../a/radio-button.html)
-- [`a:select`](../a/select.html)
-- [`a:textarea`](../a/textarea.html)
-- [`a:validation-message`](../a/validation-message.html) &nbsp;[`a:validation-summary`](../a/validation-summary.html)
-- [`a:with-options`](../a/with-options.html)
+<ul class="ref-element-list">
+   <li><a href="../a/anti-forgery-token.html"><code>a:anti-forgery-token</code></a></li>
+   <li><a href="../a/check-box.html"><code>a:check-box</code></a></li>
+   <li><a href="../a/display.html"><code>a:display</code></a> &nbsp;<a href="../a/display-name.html"><code>a:display-name</code></a> &nbsp;<a href="../a/display-text.html"><code>a:display-text</code></a></li>
+   <li><a href="../a/editor.html"><code>a:editor</code></a></li>
+   <li><a href="../a/hidden.html"><code>a:hidden</code></a></li>
+   <li><a href="../a/input.html"><code>a:input</code></a></li>
+   <li><a href="../a/label.html"><code>a:label</code></a></li>
+   <li><a href="../a/member-template.html"><code>a:member-template</code></a> &nbsp;<a href="../a/model.html"><code>a:model</code></a></li>
+   <li><a href="../a/option.html"><code>a:option</code></a></li>
+   <li><a href="../a/radio-button.html"><code>a:radio-button</code></a></li>
+   <li><a href="../a/select.html"><code>a:select</code></a></li>
+   <li><a href="../a/textarea.html"><code>a:textarea</code></a></li>
+   <li><a href="../a/validation-message.html"><code>a:validation-message</code></a> &nbsp;<a href="../a/validation-summary.html"><code>a:validation-summary</code></a></li>
+   <li><a href="../a/with-options.html"><code>a:with-options</code></a></li>
+</ul>

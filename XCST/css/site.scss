@@ -66,6 +66,10 @@ nav.browser {
 
 @media (min-width: 1200px) {
 
+   .ref-element-list {
+      display: none;
+   }
+
    nav.browser {
       display: block;
       position: fixed;

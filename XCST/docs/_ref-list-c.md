@@ -6,20 +6,22 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-- [`c:array`](../c/array.html) &nbsp;[`c:assert`](../c/assert.html) &nbsp;[`c:attribute`](../c/attribute.html) &nbsp;[`c:attribute-set`](../c/attribute-set.html)
-- [`c:break`](../c/break.html)
-- [`c:call-template`](../c/call-template.html) &nbsp;[`c:catch`](../c/catch.html) &nbsp;[`c:choose`](../c/choose.html) &nbsp;[`c:comment`](../c/comment.html) &nbsp;[`c:continue`](../c/continue.html) &nbsp;[`c:copy-of`](../c/copy-of.html)
-- [`c:delegate`](../c/delegate.html) &nbsp;[`c:document`](../c/document.html)
-- [`c:element`](../c/element.html) &nbsp;[`c:evaluate-delegate`](../c/evaluate-delegate.html) &nbsp;[`c:evaluate-package`](../c/evaluate-package.html)
-- [`c:fallback`](../c/fallback.html) &nbsp;[`c:finally`](../c/finally.html) &nbsp;[`c:for-each`](../c/for-each.html) &nbsp;[`c:for-each-group`](../c/for-each-group.html) &nbsp;[`c:function`](../c/function.html)
-- [`c:if`](../c/if.html) &nbsp;[`c:import`](../c/import.html) &nbsp;[`c:import-namespace`](../c/import-namespace.html)
-- [`c:map`](../c/map.html) &nbsp;[`c:map-entry`](../c/map-entry.html) &nbsp;[`c:member`](../c/member.html) &nbsp;[`c:message`](../c/message.html) &nbsp;[`c:metadata`](../c/metadata.html) &nbsp;[`c:module`](../c/module.html)
-- [`c:namespace`](../c/namespace.html) &nbsp;[`c:next-template`](../c/next-template.html)
-- [`c:object`](../c/object.html) &nbsp;[`c:otherwise`](../c/otherwise.html) &nbsp;[`c:output`](../c/output.html) &nbsp;[`c:override`](../c/override.html)
-- [`c:package`](../c/package.html) &nbsp;[`c:param`](../c/param.html) &nbsp;[`c:processing-instruction`](../c/processing-instruction.html)
-- [`c:result-document`](../c/result-document.html) &nbsp;[`c:return`](../c/return.html)
-- [`c:script`](../c/script.html) &nbsp;[`c:serialize`](../c/serialize.html) &nbsp;[`c:set`](../c/set.html) &nbsp;[`c:sort`](../c/sort.html)
-- [`c:template`](../c/template.html) &nbsp;[`c:text`](../c/text.html) &nbsp;[`c:try`](../c/try.html) &nbsp;[`c:type`](../c/type.html)
-- [`c:use-package`](../c/use-package.html) &nbsp;[`c:using`](../c/using.html)
-- [`c:validation`](../c/validation.html) &nbsp;[`c:value-of`](../c/value-of.html) &nbsp;[`c:variable`](../c/variable.html) &nbsp;[`c:void`](../c/void.html)
-- [`c:when`](../c/when.html) &nbsp;[`c:while`](../c/while.html) &nbsp;[`c:with-param`](../c/with-param.html)
+<ul class="ref-element-list">
+   <li><a href="../c/array.html"><code>c:array</code></a> &nbsp;<a href="../c/assert.html"><code>c:assert</code></a> &nbsp;<a href="../c/attribute.html"><code>c:attribute</code></a> &nbsp;<a href="../c/attribute-set.html"><code>c:attribute-set</code></a></li>
+   <li><a href="../c/break.html"><code>c:break</code></a></li>
+   <li><a href="../c/call-template.html"><code>c:call-template</code></a> &nbsp;<a href="../c/catch.html"><code>c:catch</code></a> &nbsp;<a href="../c/choose.html"><code>c:choose</code></a> &nbsp;<a href="../c/comment.html"><code>c:comment</code></a> &nbsp;<a href="../c/continue.html"><code>c:continue</code></a> &nbsp;<a href="../c/copy-of.html"><code>c:copy-of</code></a></li>
+   <li><a href="../c/delegate.html"><code>c:delegate</code></a> &nbsp;<a href="../c/document.html"><code>c:document</code></a></li>
+   <li><a href="../c/element.html"><code>c:element</code></a> &nbsp;<a href="../c/evaluate-delegate.html"><code>c:evaluate-delegate</code></a> &nbsp;<a href="../c/evaluate-package.html"><code>c:evaluate-package</code></a></li>
+   <li><a href="../c/fallback.html"><code>c:fallback</code></a> &nbsp;<a href="../c/finally.html"><code>c:finally</code></a> &nbsp;<a href="../c/for-each.html"><code>c:for-each</code></a> &nbsp;<a href="../c/for-each-group.html"><code>c:for-each-group</code></a> &nbsp;<a href="../c/function.html"><code>c:function</code></a></li>
+   <li><a href="../c/if.html"><code>c:if</code></a> &nbsp;<a href="../c/import.html"><code>c:import</code></a> &nbsp;<a href="../c/import-namespace.html"><code>c:import-namespace</code></a></li>
+   <li><a href="../c/map.html"><code>c:map</code></a> &nbsp;<a href="../c/map-entry.html"><code>c:map-entry</code></a> &nbsp;<a href="../c/member.html"><code>c:member</code></a> &nbsp;<a href="../c/message.html"><code>c:message</code></a> &nbsp;<a href="../c/metadata.html"><code>c:metadata</code></a> &nbsp;<a href="../c/module.html"><code>c:module</code></a></li>
+   <li><a href="../c/namespace.html"><code>c:namespace</code></a> &nbsp;<a href="../c/next-template.html"><code>c:next-template</code></a></li>
+   <li><a href="../c/object.html"><code>c:object</code></a> &nbsp;<a href="../c/otherwise.html"><code>c:otherwise</code></a> &nbsp;<a href="../c/output.html"><code>c:output</code></a> &nbsp;<a href="../c/override.html"><code>c:override</code></a></li>
+   <li><a href="../c/package.html"><code>c:package</code></a> &nbsp;<a href="../c/param.html"><code>c:param</code></a> &nbsp;<a href="../c/processing-instruction.html"><code>c:processing-instruction</code></a></li>
+   <li><a href="../c/result-document.html"><code>c:result-document</code></a> &nbsp;<a href="../c/return.html"><code>c:return</code></a></li>
+   <li><a href="../c/script.html"><code>c:script</code></a> &nbsp;<a href="../c/serialize.html"><code>c:serialize</code></a> &nbsp;<a href="../c/set.html"><code>c:set</code></a> &nbsp;<a href="../c/sort.html"><code>c:sort</code></a></li>
+   <li><a href="../c/template.html"><code>c:template</code></a> &nbsp;<a href="../c/text.html"><code>c:text</code></a> &nbsp;<a href="../c/try.html"><code>c:try</code></a> &nbsp;<a href="../c/type.html"><code>c:type</code></a></li>
+   <li><a href="../c/use-package.html"><code>c:use-package</code></a> &nbsp;<a href="../c/using.html"><code>c:using</code></a></li>
+   <li><a href="../c/validation.html"><code>c:validation</code></a> &nbsp;<a href="../c/value-of.html"><code>c:value-of</code></a> &nbsp;<a href="../c/variable.html"><code>c:variable</code></a> &nbsp;<a href="../c/void.html"><code>c:void</code></a></li>
+   <li><a href="../c/when.html"><code>c:when</code></a> &nbsp;<a href="../c/while.html"><code>c:while</code></a> &nbsp;<a href="../c/with-param.html"><code>c:with-param</code></a></li>
+</ul>
