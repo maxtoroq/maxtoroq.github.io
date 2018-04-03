@@ -1,3 +1,19 @@
 <script>
-document.addEventListener("DOMContentLoaded",function(e){var t,n,r,a=document.querySelectorAll("article h2"),i=[];if(Array.prototype.forEach.call(a,function(e,a){null!=e.offsetParent&&(n=e.innerHTML,r="#"+e.getAttribute("id"),t="<li><a href='"+r+"'>"+n+"</a></li>",i.push(t))}),i.length>1){var l="<nav role='navigation' class='toc'><div><h3>In this article</h3><ul>";l+=i.join(""),l+="</ul></div></nav>",document.querySelector("article header").insertAdjacentHTML("afterend",l)}});
+   document.addEventListener('DOMContentLoaded', function (event) {
+      var headings = document.querySelectorAll('article h2');
+      var items = [];
+      var newItem;
+      Array.prototype.forEach.call(headings, function (el, i) {
+         if (el.offsetParent != null) {
+            newItem = "<li>" + "<a href='#" + el.getAttribute('id') + "'>" + el.innerHTML + "</a>" + "</li>";
+            items.push(newItem)
+         }
+      });
+      if (items.length > 1) {
+         var ToC = "<nav role='navigation' class='toc'><div><h3>In this article</h3><ul>";
+         ToC += items.join('');
+         ToC += "</ul></div></nav>";
+         document.querySelector('article header').insertAdjacentHTML('afterend', ToC)
+      }
+   })
 </script>
