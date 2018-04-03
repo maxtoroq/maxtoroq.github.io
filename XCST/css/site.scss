@@ -72,14 +72,14 @@ div.note {
 
 nav.browser {
    position: fixed;
-   top: 5em;
-   left: 1em;
-   height: calc(100% - 5em - #{$footer-height});
+   top: 5rem;
+   left: 1rem;
+   height: calc(100% - 4rem - #{$footer-height});
    overflow-y: scroll;
    font-size: .9em;
 
    > div {
-      padding: 0 calc(.5em + 2px);
+      padding: 0 calc(.5rem + 2px);
    }
 
    h3 {
@@ -106,8 +106,8 @@ nav.browser {
       &.active {
          font-weight: bold;
          border-left: 2px solid;
-         padding-left: .5em;
-         margin-left: calc(-.5em - 2px);
+         padding-left: .5rem;
+         margin-left: calc(-.5rem - 2px);
       }
    }
 }
@@ -131,7 +131,7 @@ nav.browser {
    }
 
    nav.browser {
-      width: calc(20% - 1.5em);
+      width: calc(20% - 1.5rem);
    }
 
    .ref-element-list {
@@ -151,10 +151,10 @@ nav.browser {
 @media (min-width: 1200px) {
 
    nav.browser {
-      width: calc(((100% - 790px) / 2) - 3em);
+      width: calc(((100% - 790px) / 2) - 3rem);
 
       > div {
-         padding: 0 1em;
+         padding: 0 1rem;
       }
    }
 }

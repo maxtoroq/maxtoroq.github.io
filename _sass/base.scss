@@ -10,7 +10,7 @@ html, body {
 .container {
    max-width: 790px;
    margin: 0 auto;
-   padding: 1em;
+   padding: 1rem;
 }
 
 html {
@@ -92,7 +92,7 @@ div.note {
 blockquote, 
 div.note {
    
-   padding: 0.5em 1em;
+   padding: .5em 1em;
    border-left-width: 6px;
    border-left-style: solid;
    
@@ -112,19 +112,19 @@ div.note {
 
 blockquote {
    font-size: $base-font-size + 2px;
-   border-color: rgba(0, 0, 0, 0.1);
+   border-color: rgba(0, 0, 0, .1);
    margin-left: 0;
    margin-right: 0;
 }
 
 div.note {
    
-   background: rgba(255, 237, 173, 0.5);
-   border-color: rgba(255, 229, 134, 0.7);
+   background: rgba(255, 237, 173, .5);
+   border-color: rgba(255, 229, 134, .7);
    
    &.danger {
-      background: rgba(253, 203, 203, 0.5);
-      border-color: rgba(255, 134, 134, 0.7);
+      background: rgba(253, 203, 203, .5);
+      border-color: rgba(255, 134, 134, .7);
    }
 }
 
@@ -196,7 +196,7 @@ table code {
 
 .breadcrumbs {
    font-size: $base-font-size - 4px;
-   margin-bottom: 1.5em;
+   margin-bottom: 1.5rem;
 }
 
 nav.toc {
@@ -294,17 +294,17 @@ nav.toc {
          margin-right: -100px;
       }
    }*/
-   
+
    nav.toc {
 
       position: fixed;
-      right: 1em;
+      right: 1rem;
+      width: calc(((100% - 790px) / 2) - 2.2rem);
       border-left: 1px solid rgba(0, 0, 0, 0.1);
-      font-size: 0.8em;
-      width: calc(((100% - 790px) / 2) - 3em);
+      font-size: .8em;
 
       > div {
-         padding: 1em 1.5em;
+         padding: 1rem 1.2rem;
       }
 
       h3 {
