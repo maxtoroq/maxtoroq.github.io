@@ -52,8 +52,8 @@ div.note {
    }
 
    &.eg {
-      background: rgba(197, 232, 255, 0.5);
-      border-color: rgba(135, 207, 255, 0.7);
+      background: rgba(197, 232, 255, .5);
+      border-color: rgba(135, 207, 255, .7);
    }
 }
 
@@ -73,10 +73,12 @@ div.note {
 nav.browser {
    position: fixed;
    top: 4.5rem;
-   left: 1rem;
+   left: 0;
    height: calc(100% - 4.5rem - #{$footer-height});
    overflow-y: scroll;
    font-size: .9em;
+   background-color: #fff;
+   z-index: 1;
 
    > div {
       padding: 0 calc(.5rem + 2px);
@@ -131,7 +133,7 @@ nav.browser {
    }
 
    nav.browser {
-      width: calc(20% - 1.5rem);
+      width: calc(20% - .5rem);
    }
 
    .ref-element-list {
@@ -151,7 +153,7 @@ nav.browser {
 @media (min-width: 1200px) {
 
    nav.browser {
-      width: calc(((100% - 790px) / 2) - 3rem);
+      width: calc(((100% - 790px) / 2) - 2rem);
 
       > div {
          padding: 0 1rem;
