@@ -74,7 +74,7 @@ nav.browser {
    position: fixed;
    top: 4.5rem;
    left: 0;
-   height: calc(100% - 4.5rem - #{$footer-height});
+   height: calc(100% - 4.5rem);
    overflow-y: scroll;
    font-size: .9em;
    background-color: #fff;
