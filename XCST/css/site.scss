@@ -58,15 +58,19 @@ div.note {
 }
 
 @media (max-width: 767px) {
+
    body > footer {
       .edit {
          display: none;
       }
    }
+
+   nav.browser {
+      display: none;
+   }
 }
 
 nav.browser {
-   display: none;
    position: fixed;
    top: 5em;
    left: 1em;
@@ -128,7 +132,6 @@ nav.browser {
    }
 
    nav.browser {
-      display: block;
       width: calc(20% - 2em);
    }
 
@@ -139,8 +142,10 @@ nav.browser {
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
-   .container {
-      margin-left: 20%;
+   body.left-nav {
+      .container {
+         margin-left: 20%;
+      }
    }
 }
 
