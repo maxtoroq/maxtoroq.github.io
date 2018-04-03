@@ -1,4 +1,3 @@
 <script>
-document.addEventListener('DOMContentLoaded',function(event){var headings=document.querySelectorAll('article h2');if(headings.length<2){return}
-var ToC="<nav role='navigation' class='toc'>"+"<div>"+"<h3>In this article</h3>"+"<ul>";var newLine,el,title,link;Array.prototype.forEach.call(headings,function(el,i){title=el.innerHTML;link='#'+el.getAttribute('id');newLine="<li>"+"<a href='"+link+"'>"+title+"</a>"+"</li>";ToC+=newLine});ToC+="</ul>"+"</div>"+"</nav>";document.querySelector('article header').insertAdjacentHTML('afterend',ToC)})
+document.addEventListener("DOMContentLoaded",function(e){var t,n,r=document.querySelectorAll("article h2"),a="";if(Array.prototype.forEach.call(r,function(e,r){null!=e.offsetParent&&(t=e.innerHTML,n="#"+e.getAttribute("id"),a+="<li><a href='"+n+"'>"+t+"</a></li>")}),a){var i="<nav role='navigation' class='toc'><div><h3>In this article</h3><ul>";i+=a,i+="</ul></div></nav>",document.querySelector("article header").insertAdjacentHTML("afterend",i)}});
 </script>
