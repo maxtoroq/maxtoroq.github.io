@@ -75,6 +75,7 @@ defaults:
       values:
          layout: XCST-docs
          element_ref: true
+         left_nav: true
          edit_link: true
    -
       scope:
@@ -83,4 +84,5 @@ defaults:
       values:
          layout: XCST-docs
          element_ref: true
+         left_nav: true
          edit_link: true

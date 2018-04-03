@@ -12,7 +12,7 @@
    {% endunless %}
    {% include analytics.html %}
 </head>
-<body>
+<body class="{% if page.left_nav %}left-nav{% endif %}">
    <header>
       <nav class="container">
          <a href="{{ page.base_url }}">home</a>
