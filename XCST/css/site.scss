@@ -72,9 +72,9 @@ div.note {
 
 nav.browser {
    position: fixed;
-   top: 5rem;
+   top: 4.5rem;
    left: 1rem;
-   height: calc(100% - 4rem - #{$footer-height});
+   height: calc(100% - 4.5rem - #{$footer-height});
    overflow-y: scroll;
    font-size: .9em;
 
