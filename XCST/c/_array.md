@@ -10,7 +10,7 @@ You can use [`c:object`](object.html) to add members to an array, or any other n
 
 ## Building Arrays
 
-`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object][System.Object]`[]`) that can hold any kind of values. Or you can create [JArray] arrays for JSON programming.
+`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object]`[]`) that can hold any kind of values. Or you can create [JArray] arrays for JSON programming.
 
 <div class="note eg" markdown="1">
 
