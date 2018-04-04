@@ -10,7 +10,7 @@ You can use [`c:object`](object.html) to add members to an array, or any other n
 
 ## Building Arrays
 
-`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object][System.Object]`[]`) that can hold any kind of values. Or you can create [JArray][Newtonsoft.Json.Linq.JArray] arrays for JSON programming.
+`c:array` supports two kinds of arrays. By default, it creates an array of object ([Object][System.Object]`[]`) that can hold any kind of values. Or you can create [JArray] arrays for JSON programming.
 
 <div class="note eg" markdown="1">
 
@@ -34,13 +34,75 @@ You can use [`c:object`](object.html) to add members to an array, or any other n
 
 If `c:array` is used when constructing complex or simple content then it serializes directly to JSON. It is typically used toghether with [`c:map`](map.html).
 
+<div class="note eg" markdown="1">
+
+###### Example: JSON output
+Use the `text` output method to serialize JSON.
+
+```xml
+<c:output method='text'/>
+
+<c:template name='c:initial-template'>
+   <c:array>
+      <c:map>
+         <c:map-entry key='"name"'>John</c:map-entry>
+      </c:map>
+   </c:array>
+</c:template>
+
+<!-- Outputs: [{"name":"John"}] -->
+```
+
+</div>
+
+<div class="note eg" markdown="1">
+
+###### Example: Building JSON for an attribute
+
+```xml
+<div>
+   <c:attribute name='data-options'>
+      <c:array>
+         <c:map>
+            <c:map-entry key='"name"'>John</c:map-entry>
+         </c:map>
+      </c:array>
+   </c:attribute>
+</div>
+
+<!-- Outputs: <div data-options="[{&quot;name&quot;:&quot;John&quot;}]"/> -->
+```
+
+</div>
+
+<div class="note eg" markdown="1">
+
+###### Example: Building a JSON string
+
+```xml
+<c:variable name='json'>
+   <c:value-of>
+      <c:array>
+         <c:map>
+            <c:map-entry key='"name"'>John</c:map-entry>
+         </c:map>
+      </c:array>
+   </c:value-of>
+</c:variable>
+
+<c:assert test='json is string'/>
+<c:assert test='json == "[{\"name\":\"John\"}]"'/>
+```
+
+</div>
+
 ## Error Conditions
 
-It is a compilation error if the required item type of the containing sequence constructor is not one of, or a super class of, [Object][System.Object] or [JArray][Newtonsoft.Json.Linq.JArray].
+It is a compilation error if the required item type of the containing sequence constructor is not one of, or a super class of, [Object] or [JArray].
 
 ## See Also
 
 - [`c:map`](map.html)
 
-[System.Object]: {{ page.bcl_url }}system.object
-[Newtonsoft.Json.Linq.JArray]: https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm
+[Object]: {{ page.bcl_url }}system.object
+[JArray]: https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JArray.htm
