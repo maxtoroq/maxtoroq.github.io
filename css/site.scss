@@ -78,8 +78,13 @@ nav.post {
       display: inline-block;
    }
    
+   a.prev {
+      margin-right: 1em;
+   }
+   
    a.next {
       float: right;
+      margin-left: 1em;
    }
 }
 
