@@ -3,8 +3,8 @@ title: Query Mapping
 ---
 **Query mapping** is about turning rows into objects, matching column names to properties and constructor parameters. Query mapping is:
 
-- Supported for both POCO and dynamic objects
-- Supported on all query APIs (using [SqlBuilder][1], [SqlSet][2] or `string`)
+- Supported for both <abbr title="Plain Old CLR Object">POCO</abbr> and dynamic objects
+- Supported on all query APIs (using [SqlBuilder], [SqlSet] or `string`)
 
 Basic mapping
 -------------
@@ -22,7 +22,7 @@ If the column names in your database exactly match your object's properties then
 
 <div class="note danger" markdown="1">
 
-It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
+It's not recommended to project onto an [annotated] entity type. Updating a partially loaded entity may cause data loss.
 
 </div>
 
@@ -126,7 +126,7 @@ var query = SQL
 return db.Map<SupplierInfo>(query);
 ```
 
-In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri][4] object.
+In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri] object.
 
 <pre>
 CompanyWebsite AS CompanyWebsite$1
@@ -162,8 +162,7 @@ In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite colu
 
 <div class="note">Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. The <em>number of numeric column names</em> determines which constructor to use (number of parameters), and the arguments are passed in <em>numeric column order</em>.</div>
 
-*[POCO]: Plain Old CLR Object
-[1]: SqlBuilder.html
-[2]: SqlSet.html
-[3]: explicit-mapping.html
-[4]: https://msdn.microsoft.com/en-us/library/system.uri
+[SqlBuilder]: SqlBuilder.html
+[SqlSet]: SqlSet.html
+[Uri]: https://msdn.microsoft.com/en-us/library/system.uri
+[annotations]: annotations.html
