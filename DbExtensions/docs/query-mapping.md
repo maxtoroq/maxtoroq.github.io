@@ -20,6 +20,12 @@ return db.Map<Product>(query);
 
 If the column names in your database exactly match your object's properties then there's nothing else to do. If a column name does not match a property it's simply ignored.
 
+<div class="note danger" markdown="1">
+
+It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
+
+</div>
+
 To map to dynamic objects omit the type:
 
 ```csharp
