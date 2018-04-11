@@ -206,7 +206,7 @@ SqlSet productNames = products.Select("ProductName");
 
 <div class="note danger" markdown="1">
 
-It's not recommended to project onto an [annotated][13] entity type, since an attempt to update a partially loaded entity may cause data loss.
+It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
 
 </div>
 
