@@ -190,6 +190,12 @@ SqlSet<Product> products = db.From<Product>("Products");
 SqlSet<ProductStock> productStocks = products.Select<ProductStock>("ProductID, ProductName, UnitsInStock");
 ```
 
+<div class="note danger" markdown="1">
+
+It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
+
+</div>
+
 You can also provide a custom mapping function:
 
 ```csharp
@@ -203,12 +209,6 @@ If you provide no result type or mapping function it turns into an untyped set.
 ```csharp
 SqlSet productNames = products.Select("ProductName");
 ```
-
-<div class="note danger" markdown="1">
-
-It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
-
-</div>
 
 Complex queries
 ---------------
