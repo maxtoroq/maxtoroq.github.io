@@ -204,6 +204,12 @@ If you provide no result type or mapping function it turns into an untyped set.
 SqlSet productNames = products.Select("ProductName");
 ```
 
+<div class="note danger" markdown="1">
+
+It's not recommended to project onto an [annotated][13] entity type, since an attempt to update a partially loaded entity may cause data loss.
+
+</div>
+
 Complex queries
 ---------------
 SqlSet doesn't support joins or grouping. After all, the goal is not to completely abstract the SQL language, but to provide a simple API for the most common queries. For complex queries use SqlBuilder instead, then you can pass the query to the From method and continue building using SqlSet:
