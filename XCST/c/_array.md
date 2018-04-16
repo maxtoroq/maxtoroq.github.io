@@ -1,9 +1,9 @@
 
 ## Remarks
 
-`c:array` exists for special purposes. The preferred way of building an array from a sequence constructor is simply using [`c:variable`](variable.html). `c:array` allows you to:
+`c:array` exists for special purposes. You can build an array from a sequence constructor simply using [`c:variable`](variable.html). `c:array` allows you to:
 
-- Nest arrays, avoiding flattening.
+- Add an array to the result of the containing sequence constructor, avoiding flattening.
 - Build or serialize a JSON array.
 
 You can use [`c:object`](object.html) to add members to an array, or any other non-void instruction.
