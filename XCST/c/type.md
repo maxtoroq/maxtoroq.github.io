@@ -89,7 +89,6 @@ regenerated.
    <dd><i>declaration</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="module.html"><code>c:module</code></a></dd>
-   <dd><a href="override.html"><code>c:override</code></a></dd>
    <dd><a href="package.html"><code>c:package</code></a></dd>
 </dl>
 <h2 id="attributes">Attributes</h2>

@@ -75,7 +75,7 @@ regenerated.
    </div>
 </nav>
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:override</span>&gt;
-  &lt;!-- Content: <span><span>(<a href="template.html">c:template</a> | <a href="function.html">c:function</a> | <a href="variable.html">c:variable</a> | <a href="param.html">c:param</a> | <a href="attribute-set.html">c:attribute-set</a> | <a href="type.html">c:type</a>)</span>*</span> --&gt;
+  &lt;!-- Content: <span><span>(<a href="template.html">c:template</a> | <a href="function.html">c:function</a> | <a href="variable.html">c:variable</a> | <a href="param.html">c:param</a> | <a href="attribute-set.html">c:attribute-set</a>)</span>*</span> --&gt;
 <span class="nt">&lt;/c:override&gt;</span></code></pre></div>
 <p>Container element for overriding components.</p>
 <dl>
