@@ -37,7 +37,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:model</span>
   <span>value</span>? = <i title="Expression.">expression</i>
   <span>as</span>? = <i>type_name</i>
-  <span>html-field-prefix</span>? = { <i>string</i> }
+  <span>field-prefix</span>? = { <i>string</i> }
   <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
@@ -57,11 +57,11 @@ regenerated.
          <td></td>
       </tr>
       <tr>
-         <td><code>helper-name</code></td>
+         <td><code>field-prefix</code></td>
          <td></td>
       </tr>
       <tr>
-         <td><code>html-field-prefix</code></td>
+         <td><code>helper-name</code></td>
          <td></td>
       </tr>
       <tr>
