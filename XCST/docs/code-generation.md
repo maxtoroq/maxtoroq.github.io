@@ -42,8 +42,6 @@ function GeneratePackages {
       Add-Type -Path $nugetPackages\Xcst.Compiler.*\lib\net46\Xcst.Compiler.dll
 
       $compilerFactory = New-Object Xcst.Compiler.XcstCompilerFactory
-      $compilerFactory.PackagesLocation = $startDirectory.FullName
-      $compilerFactory.PackageFileExtension = $pkgFileExtension
 
       # Enable Application Extension
 
@@ -60,6 +58,8 @@ function GeneratePackages {
          }
 
          $compiler = $compilerFactory.CreateCompiler()
+         $compiler.PackagesLocation = $startDirectory.FullName
+         $compiler.PackageFileExtension = $pkgFileExtension
          $compiler.NamedPackage = $true
 
          $xcstResult = $compiler.Compile((New-Object Uri $file.FullName))
