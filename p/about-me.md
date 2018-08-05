@@ -8,8 +8,6 @@ Programming is hard because our tools are bad. Even new technologies are based o
 
 Over the years my application toolkit has mutated from *VBScript/XSLT* to *JScript/XSLT* to *WebForms* to *Dynamic Data* to *MVC/ASPX* to *MVC/Razor* to *MVC/XSLT* to *[MvcPages](https://github.com/maxtoroq/MvcPages)* to *[XCST](/XCST/)*, the last two developed by myself. XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
-I’m on a mission to help developers write more maintainable code. I’m not satisfied with something that just works. If the standard solution to a problem does not translate in elegant code I will look for a better solution, or develop an alternative myself. Because code spends most of its lifespan in maintenance mode, bad decisions made in the earlier stages of development can largely increase the costs of maintenance later.
-
 Get in touch
 ------------
 Feel free to [email me](mailto:maxtoroq@gmail.com), or start a public conversation [here]({{ site.github.issues_url }}/new). You can also find me on [GitHub](https://github.com/maxtoroq), [Stack Overflow](http://stackoverflow.com/users/39923) and [Upwork](https://www.upwork.com/freelancers/~013968c95eab35c636).
