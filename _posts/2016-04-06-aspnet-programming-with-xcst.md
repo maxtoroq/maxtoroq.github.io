@@ -4,7 +4,7 @@ date: 2016-04-06 19:22:00 -0300
 tags: [xcst, asp.net]
 ---
 
-[XCST][1] is new page/view language available for ASP.NET. Just like Razor, it compiles to C#, but it offers much greater modularity, composability and extensibility. This post however won't go into much details, instead we'll jump right into building a contact form page. This will give you a guick idea about the look and feel of the language and learn some of its features.
+[XCST][1] is new page/view language available for ASP.NET. Just like Razor, it compiles to C#, but it offers much greater modularity, composability and extensibility. This post however won't go into much details, instead we'll jump right into building a contact form page. This will give you a quick idea about the look and feel of the language and learn some of its features.
 
 Model
 -----
