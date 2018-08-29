@@ -10,6 +10,9 @@ title: Change History
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
+### v6.2.0-preview1
+- Added #44: .NET Core 2.1 support
+
 ### v6.1.1
 - Fixed: Contains and ContainsKey ignores current query
 
