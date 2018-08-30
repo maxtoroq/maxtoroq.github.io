@@ -17,7 +17,7 @@ The DbExtensions assembly is no longer strong named.
 
 ### Target frameworks
 
-v6 targets .NET 4.5, ending support for .NET 4.0. .NET Core support is coming (waiting for some missing APIs).
+v6 targets .NET 4.5, ending support for .NET 4.0. .NET Core 2.1 is supported starting v6.2.0-preview1.
 
 ### Removed System.Data.Linq dependency
 
