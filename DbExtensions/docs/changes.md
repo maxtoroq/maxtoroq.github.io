@@ -2,11 +2,6 @@
 title: Change History
 ---
 
-<form onsubmit="window.location.href='{{ page.repository_url }}/issues/' + document.getElementById('issue_number').value; return false;">
-<input id='issue_number' type='number' placeholder='issue number' required min='1' style='width: 70px'/>
-<button>Go to issue tracker</button>
-</form>
-
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
@@ -106,3 +101,53 @@ BREAKING CHANGES:
 - IDataRecord.Get{TypeName}(string) extension methods
 - MapXml methods now return XmlReader, and take XmlMappingSettings parameter
 - Unified extension methods class
+
+<script>
+
+   function textNodesUnder(el) {
+      var n, a = [], walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+      while (n = walk.nextNode()) a.push(n);
+      return a;
+   }
+
+   document.addEventListener('DOMContentLoaded', function () {
+
+      var art = document.getElementsByTagName('article')[0];
+      var textNodes = textNodesUnder(art);
+
+      var notWsPattern = new RegExp("\\S");
+      var issuePattern = new RegExp("#[0-9]+");
+
+      Array.prototype.forEach.call(textNodes, function (node) {
+
+         var text = node.textContent;
+            
+         if (notWsPattern.test(text)) {
+
+            var matches = issuePattern.exec(text);
+
+            if (matches) {
+
+               Array.prototype.forEach.call(matches, function (s) {
+
+                  var index = text.indexOf(s);
+                  var beforeText = document.createTextNode(text.substr(0, index));
+                  var newText = document.createTextNode(s);
+                  var afterText = document.createTextNode(text.substr(index + s.length));
+
+                  var anchorNode = document.createElement('a');
+                  anchorNode.href = "{{ page.repository_url }}/issues/" + s.substr(1);
+                  anchorNode.appendChild(newText);
+
+                  var parentNode = node.parentNode;
+
+                  parentNode.insertBefore(beforeText, node);
+                  parentNode.insertBefore(anchorNode, node);
+                  parentNode.insertBefore(afterText, node);
+                  parentNode.removeChild(node);
+               });
+            }
+         }
+      });
+   });
+</script>
