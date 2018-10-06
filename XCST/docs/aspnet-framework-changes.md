@@ -38,6 +38,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Built-in Upload editor template** [9869018](https://github.com/maxtoroq/XCST-a/commit/9869018828224a5c0f0c8c0e7eb73b831cbc3ad0)
 - **Built-in ImageUrl display template** [ffbaeed](https://github.com/maxtoroq/XCST-a/commit/ffbaeed858d8562a7f1bd06cc13cdb54721f30b5)
 - **Built-in HttpPostedFileBase editor template** [daaf809](https://github.com/maxtoroq/XCST-a/commit/daaf8096b888f33ac3b90db8d9df4a92cca35bd7)
+ - **Show HttpPostedFileBase property on Object editor template** [66ad3bb](https://github.com/maxtoroq/XCST-a/commit/66ad3bb5fc9be45743c66cf9b8f7489208e1d7ff)
 - `a:editor/a:with-options` and use DropDownList template when options are available [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 
 ## Model binding
