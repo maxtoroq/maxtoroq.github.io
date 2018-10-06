@@ -10,7 +10,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Merged `a:text-box` and `a:password` into `a:input`** [5bd091e](https://github.com/maxtoroq/XCST-a/commit/5bd091ead81a2e55b8f60af5d1b0656dcd1ab4bd)
 - **Merged `a:drop-down-list` and `a:list-box` into `a:select`** [53e6c22](https://github.com/maxtoroq/XCST-a/commit/53e6c22b3f5e62876b4390128cab45548b75b7f2)
 - **Removed `a:http-method-override`**
-- **Get selected value from metadata on `a:select`** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
+- **`a:select` gets selected value from current model** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
 - Auto-create IEnumerable&lt;SelectListItem> from various types [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
 - `a:input`, `a:hidden`, `a:check-box` and `a:radio-button` can now get value/checked from current model [30cc474](https://github.com/maxtoroq/XCST-a/commit/30cc4743e899a9325b054f4ecc15b6ee44ac39d7)
 - **Excluding member errors by default on `a:validation-summary`** [14a00b5](https://github.com/maxtoroq/XCST-a/commit/14a00b56381eed57d9cf9e098010ebb1264a327d)
