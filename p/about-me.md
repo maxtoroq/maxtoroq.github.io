@@ -2,7 +2,7 @@
 title: About me
 ---
 
-<img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em; width: 250px; max-width: 100%"/>
+<img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" width="200" height="200"/>
 
 Programming is hard because our tools are bad. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. **Declarative is the answer**.
 
