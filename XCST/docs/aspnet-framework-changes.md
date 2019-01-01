@@ -32,6 +32,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - Support for `a:member-template` on built-in Object display/editor template [09827ff](https://github.com/maxtoroq/XCST-a/commit/09827ff136998450f1b8c4e4aa96dd544caeb1b5#diff-d9e4a150ec2ec7025b8cfa3d93460c97)
 - **Group properties on Object editor/display templates into fieldsets** [b4a90dd](https://github.com/maxtoroq/XCST-a/commit/b4a90dd6f23d7a953f95895a7396f00302db943e)
 - **Removed System.Data.EntityState dependency** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
+- **Removed Color editor template (System.Drawing dependency)** [99673eb](https://github.com/maxtoroq/XCST-a/commit/99673eb354f3f5d009a1a20b5c4f02e88546f84b)
 - ModelMetadata's ShowForEdit and ShowForDisplay can now report different values [3bbf772](https://github.com/maxtoroq/XCST-a/commit/3bbf7723d26befb6e22acc2de402777d751573c1)
 - Built-in DropDownList editor template [aedab4e](https://github.com/maxtoroq/XCST-a/commit/aedab4e351a26f2b3e10c93b6793acb506d1ec6f)
 - Built-in ListBox editor template [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
@@ -56,6 +57,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 
 ## Other
 
+- **Removed everything about request validation** [b661a1f](https://github.com/maxtoroq/XCST-a/commit/b661a1fc638dfe4996c4154744d4bbdbddb41832)
 - **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
 - **Removed static properties from HtmlHelper and moved defaults to ViewContext** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
 - **Removed Writer property and constructor parameter from ViewContext** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
