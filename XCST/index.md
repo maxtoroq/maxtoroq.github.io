@@ -97,7 +97,7 @@ Razor treats markup as text that outputs unchanged. In XCST, elements, attribute
 
 ### #3. Extensible
 
-Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for web application development based on ASP.NET MVC 5.
+Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for web application development based on ASP.NET MVC.
 
 ```xml
 <a:model as='RegisterViewModel'>
