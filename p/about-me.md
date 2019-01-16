@@ -33,7 +33,7 @@ I strongly believed I was on to something with MvcCodeRouting. Still found its n
 
 After many years I decided **[I was done with MVC](https://maxtoroq.github.io/2015/06/nomvc.html)** and all its **inherent complexity**. At the same time, MVC was full of useful features, so I created **[MvcPages](https://maxtoroq.github.io/2012/11/mvcpages-aspnet-mvc-without-routes-and-controllers.html)** using Razor <small>(similar to Razor Pages in ASP.NET Core, but 5 years earlier)</small>.
 
-Using MvcPages for a couple of years was very enjoyable and productive, but **Razor started to show its limitations**. Razor is great for what it was designed to do, but it wasn't designed to do much. **If I was to fully embrace the *pages* model I needed more than a simple template engine**. Inspired by XSLT 2 and 3 (which was right around the corner) I created **[XCST](https://maxtoroq.github.io/XCST/)**.
+Using MvcPages for a couple of years was very enjoyable and productive, but **Razor started to show its limitations**. Razor is great for what it was designed to do, but it wasn't designed to do much. **If I was to fully embrace the *pages* model I needed more than a simple template engine**. Inspired by XSLT 2 and 3 <small>(which was right around the corner)</small> I created **[XCST](https://maxtoroq.github.io/XCST/)**.
 
 XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
