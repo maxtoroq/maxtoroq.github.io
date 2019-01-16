@@ -4,18 +4,19 @@ title: About me
 
 <img src="{{ site.github.owner_gravatar_url }}" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;" width="200" height="200"/>
 
+<h2 markdown="1">
+
 **15+ years** programmer/architect.  
 **XSLT** expert; **C#** proficient.
 
-Dropped out of **design school** to work at my father's IT startup (remember Microsoft FrontPage?).  
-Taught myself HTML, CSS and XSLT (my first lang).  
-Learned **VBScript** to do XSLT on the server (remember MSXML?).  
-Then **JScript** and eventually **C#** (Visual Web Developer 2005).  
-Because VWD only supported Web Sites, I learned how to invoke `csc.exe` to create class libraries.  
-Used **WebForms** for a couple of years until I realized **how horrible it is** beneath its shiny appearance.  
+</h2>
+
+Dropped out of **design school** to work at my father's IT startup <small>(remember Microsoft FrontPage?)</small>. Taught myself HTML, CSS and XSLT (my first lang). Learned **VBScript** to do XSLT on the server <small>(remember MSXML?)</small>. Then **JScript** and eventually **C#** <small>(Visual Web Developer 2005)</small>. Because VWD only supported Web Sites, I learned how to invoke `csc.exe` to create class libraries. Used **WebForms** for a couple of years until I realized **how horrible it is** beneath its shiny appearance.  
 
 **C# 3** was an exciting release, it made me stick with the language. Add to that **MVC 1**, and there was hope again.  
+
 Created **[DbExtensions](https://maxtoroq.github.io/DbExtensions/)** to simplify DB programming, still using it.  
+
 Created **[MvcCodeRouting](https://github.com/maxtoroq/MvcCodeRouting)** to simplify working with large codebases, for [improved modularity](https://maxtoroq.github.io/2013/02/aspnet-mvc-workflow-per-controller.html) and [avoid common routing issues](https://maxtoroq.github.io/2014/02/why-aspnet-mvc-routing-sucks.html).  
 
 <div class="note" markdown="1">
