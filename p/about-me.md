@@ -11,7 +11,13 @@ title: About me
 
 </h2>
 
-Dropped out of **design school** to work at my father's IT startup <small>(remember Microsoft FrontPage?)</small>. Taught myself HTML, CSS and XSLT (my first lang). Learned **VBScript** to do XSLT on the server <small>(remember MSXML?)</small>. Then **JScript** and eventually **C#** <small>(Visual Web Developer 2005)</small>. Because VWD only supported Web Sites, I learned how to invoke `csc.exe` to create class libraries. Used **WebForms** for a couple of years until I realized **how horrible it is** beneath its shiny appearance.  
+Dropped out of **design school** to work at my father's IT startup <small>(remember Microsoft FrontPage?)</small>. Taught myself HTML, CSS and **XSLT** <small>(my first lang)</small>. Learned **VBScript** to do XSLT on the server <small>(remember MSXML?)</small>. Then **JScript** and eventually **C#** <small>(Visual Web Developer 2005)</small>. Used **WebForms** for a couple of years until I realized **how horrible it is** beneath its shiny appearance.
+
+<div class="note" markdown="1">
+
+Because VWD only supported Web Sites, I learned how to invoke `csc.exe` to create class libraries.
+
+</div>
 
 **C# 3** was an exciting release, it made me stick with the language. Add to that **MVC 1**, and there was hope again.  
 
@@ -25,11 +31,9 @@ I strongly believed I was on to something with MvcCodeRouting, thought it would 
 
 </div>
 
-After many years I decided **[I was done with MVC](https://maxtoroq.github.io/2015/06/nomvc.html)** and all its **inherent complexity**.  
-At the same time, MVC was full of useful features, so I created **[MvcPages](https://maxtoroq.github.io/2012/11/mvcpages-aspnet-mvc-without-routes-and-controllers.html)** using Razor (similar to Razor Pages in ASP.NET Core, but 5 years earlier).  
-Using MvcPages for a couple of years was very enjoyable and productive, but **Razor started to show its limitations**.  
-Razor is great for what it was designed to do, but it wasn't designed to do much.  
-**If I was to fully embrace the *pages* model I needed more than a simple template engine**. Inspired by XSLT 2 and 3 (which was right around the corner) I created **[XCST](https://maxtoroq.github.io/XCST/)**.
+After many years I decided **[I was done with MVC](https://maxtoroq.github.io/2015/06/nomvc.html)** and all its **inherent complexity**. At the same time, MVC was full of useful features, so I created **[MvcPages](https://maxtoroq.github.io/2012/11/mvcpages-aspnet-mvc-without-routes-and-controllers.html)** using Razor <small>(similar to Razor Pages in ASP.NET Core, but 5 years earlier)</small>.
+
+Using MvcPages for a couple of years was very enjoyable and productive, but **Razor started to show its limitations**. Razor is great for what it was designed to do, but it wasn't designed to do much. **If I was to fully embrace the *pages* model I needed more than a simple template engine**. Inspired by XSLT 2 and 3 (which was right around the corner) I created **[XCST](https://maxtoroq.github.io/XCST/)**.
 
 XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
