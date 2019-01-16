@@ -27,7 +27,7 @@ Created **[MvcCodeRouting](https://github.com/maxtoroq/MvcCodeRouting)** to simp
 
 <div class="note" markdown="1">
 
-I strongly believed I was on to something with MvcCodeRouting, thought it would become more popular. Still found its niche of passionate users. It's used as a core component in [Eleflex](https://github.com/ProductionReady/Eleflex/blob/9e285d9/V3.0/Documentation/Eleflex%20V3%20Design.pdf). It's also mentioned in Joshua Gough's [Implementing DDD](https://docs.google.com/presentation/d/1dNRuDwVIOApuLVrdjy0cKCSL7F5gHa2ecUsnnm3cZFo/edit#slide=id.gbbed5dc7_056) talk.
+I strongly believed I was on to something with MvcCodeRouting. Still found its niche of passionate users: it's a core component in [Eleflex](https://github.com/ProductionReady/Eleflex/blob/9e285d9/V3.0/Documentation/Eleflex%20V3%20Design.pdf); also mentioned in Joshua Gough's [Implementing DDD](https://docs.google.com/presentation/d/1dNRuDwVIOApuLVrdjy0cKCSL7F5gHa2ecUsnnm3cZFo/edit#slide=id.gbbed5dc7_056) talk.
 
 </div>
 
