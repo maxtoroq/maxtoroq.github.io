@@ -35,6 +35,12 @@ After many years I decided **[I was done with MVC](https://maxtoroq.github.io/20
 
 Using MvcPages for a couple of years was very enjoyable and productive, but **Razor started to show its limitations**. Razor is great for what it was designed to do, but it wasn't designed to do much. **If I was to fully embrace the *pages* model I needed more than a simple template engine**. Inspired by XSLT 2 and 3 <small>(which was right around the corner)</small> I created **[XCST](https://maxtoroq.github.io/XCST/)**.
 
+<div class="note" markdown="1">
+
+Packages in XCST are based on packages in XSLT 3, which was not complete at the time. Reported several bugs/suggestions to W3C, e.g. when using a package, accepted components are private by default, [thanks to me](https://www.w3.org/Bugs/Public/show_bug.cgi?id=29574) :)
+
+</div>
+
 XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
 Programming is hard because **we don't have the right tools**. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. ***Declarative* is the answer**.
