@@ -5,7 +5,7 @@ layout: default
 
 # {{ page.title }}
 
-Programming is hard because our tools are bad. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. **Declarative is the answer**. *[Read more...](/p/about-me.html)*
+Programming is hard because **we don't have the right tools**. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. ***Declarative* is the answer**. *[Read more...](/p/about-me.html)*
 
 ## Projects
 
