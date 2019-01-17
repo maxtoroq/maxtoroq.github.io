@@ -37,7 +37,7 @@ Using MvcPages for a couple of years was very enjoyable and productive, but **Ra
 
 XCST is the culmination of a decade-long search for a sane, sensible, enjoyable and healthy language for application development, optimized for extensibility, composibility, reusability and markup.
 
-Programming is hard because our tools are bad. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. **Declarative is the answer**.
+Programming is hard because **we don't have the right tools**. Even new technologies are based on old ideas. Code is not the answer, it's the workaround. Classes is where code goes to die, where knowledge goes to waste. We spend too much time dealing with tools, writing code that gets rewritten after a couple of years. ***Declarative is the answer***.
 
 Get in touch
 ------------
