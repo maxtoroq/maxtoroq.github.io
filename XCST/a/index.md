@@ -12,7 +12,7 @@ regenerated.
 
 <nav role="navigation" class="browser">
    <div>
-      <h3>Application Extension Elements</h3>
+      <h3><a href=".">Application Extension Elements</a></h3>
       <ul>
          <li><a href="anti-forgery-token.html">a:anti-forgery-token</a></li>
          <li><a href="check-box.html">a:check-box</a></li>

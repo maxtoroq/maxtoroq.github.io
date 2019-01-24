@@ -11,7 +11,7 @@ regenerated.
 
 <nav role="navigation" class="browser">
    <div>
-      <h3>XCST Elements</h3>
+      <h3><a href=".">XCST Elements</a></h3>
       <ul>
          <li><a href="array.html">c:array</a></li>
          <li><a href="assert.html">c:assert</a></li>

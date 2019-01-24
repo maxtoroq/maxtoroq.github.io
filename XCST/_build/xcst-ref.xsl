@@ -137,7 +137,9 @@
       <nav role="navigation" class="browser">
          <div>
             <h3>
-               <xsl:value-of select="$index-title"/>
+               <a href=".">
+                  <xsl:value-of select="$index-title"/>
+               </a>
             </h3>
             <ul>
                <xsl:for-each select="$all-elements">
