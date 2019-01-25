@@ -7,6 +7,7 @@ See [Migrating to v6](migrating/to-v6.html) for more information about the chang
 
 ### v6.2.0 (pre-release)
 - Added #44: .NET Core 2.1 support
+- Added: Database CRUD shortcuts
 
 ### v6.1.1
 - Fixed: Contains and ContainsKey ignores current query
