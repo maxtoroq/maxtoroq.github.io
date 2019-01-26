@@ -154,6 +154,10 @@ ins {
    border-bottom: 1px dotted;
 }
 
+del {
+   opacity: .7;
+}
+
 pre {
    
    font-size: $base-font-size - 2px;
