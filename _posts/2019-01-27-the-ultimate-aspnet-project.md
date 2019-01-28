@@ -35,7 +35,7 @@ ASP.NET Web Pages have always supported extensionless URLs. An IHttpModule is us
 
 My ideal ASP.NET project is not one project but multiple projects: one Web Site and several class libraries. For example:
 
-```text
+<pre>
 com.example/
 ├── Bin/
 ├── css/
@@ -55,7 +55,7 @@ com.example.checkout/
 ├── cart.page
 ├── ...
 ├── com.example.checkout.csproj
-```
+</pre>
 
 The Web Site only contains static files (css, js, img) and binaries. The Web Site has no pages.
 
