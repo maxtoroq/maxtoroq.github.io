@@ -7,15 +7,19 @@
    max-width: 700px;
 }
 
+html {
+   font-size: 20px;
+}
+
 body {
-   
+
+   font-family: Cardo, serif;
+   letter-spacing: normal;
+
    //background-color: #e2e3d9;
    // background colors:
    // #d9dfe3 pale blue
    // #cfd3d7 dark pale blue
-   
-   //font-family: Consolas, sans-serif;
-   //color: #000;
    
    > header {
       
@@ -90,6 +94,12 @@ nav.post {
 
 div#disqus_thread {
    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+   html {
+      font-size: 18px;
+   }
 }
 
 @media (min-width: 768px) {

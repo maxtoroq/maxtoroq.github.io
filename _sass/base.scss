@@ -1,5 +1,4 @@
 ﻿
-$base-font-size: 16px;
 $link-color: #0066c0;
 
 html, body {
@@ -14,13 +13,13 @@ html, body {
 }
 
 html {
+   font-size: 16px;
    -webkit-text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
 }
 
 body {
    font-family: Roboto, "Noto Sans", sans-serif;
-   font-size: $base-font-size;
    line-height: 1.6;
    letter-spacing: .013rem;
    color: #333;
@@ -28,7 +27,7 @@ body {
 
 body > header,
 body > footer {
-   font-size: $base-font-size - 2px;
+   font-size: calc(1rem - 2px);
 }
 
 a, a:hover, a:focus {
@@ -87,7 +86,7 @@ p {
 }
 
 div.note {
-   font-size: $base-font-size - 2px;
+   font-size: calc(1rem - 2px);
 }
 
 blockquote, 
@@ -112,7 +111,7 @@ div.note {
 }
 
 blockquote {
-   font-size: $base-font-size + 2px;
+   font-size: calc(1rem + 2px);
    border-color: rgba(0, 0, 0, .1);
    margin-left: 0;
    margin-right: 0;
@@ -160,7 +159,7 @@ del {
 
 pre {
    
-   font-size: $base-font-size - 2px;
+   font-size: calc(1em - 2px);
    line-height: 1.4;
    padding: 1em;
    overflow: auto;
@@ -200,7 +199,7 @@ table code {
 }
 
 .breadcrumbs {
-   font-size: $base-font-size - 4px;
+   font-size: calc(1rem - 4px);
    margin-bottom: 1.5rem;
 }
 
