@@ -34,15 +34,8 @@ body {
    }
 }
 
-.site-title {
-   
-   font-family: Consolas, monospace;
-   font-size: 2.2em;
-   line-height: 1.2;
-
-   a {
-      color: inherit;
-   }
+pre {
+   font-size: calc(1em - 4px);
 }
 
 article {
