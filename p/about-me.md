@@ -6,7 +6,7 @@ title: About me
 
 <h2 markdown="1">
 
-**15+ years** programmer/architect.  
+**15+ years** programmer, architect.  
 **XSLT** expert; **C#** proficient.
 
 </h2>
