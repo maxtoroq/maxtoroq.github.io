@@ -61,7 +61,7 @@ The Web Site only contains static files (css, js, img) and binaries. The Web Sit
 
 Each class library project represents a section (or module) of the site. In a pre-build event, the code for all the pages in the project is generated, and then compiled into the class library. Each generated page class is annotated (using an attribute) with the application relative path of the page. This info will be used at run-time to map a URL to a specific page class.
 
-The Web Site references each class library. When the solution is built, the Web Site becomes a precompiled site. No need for a publish step. And since the Web Site itself has no code, it doesn't need to reference the DotNetCompilerPlatform package.
+The Web Site references each class library. When the solution is built, the Web Site *becomes* a precompiled site. No need for a publish step. And since the Web Site itself has no code, it doesn't need to reference the DotNetCompilerPlatform package.
 
 When you split your precompiled site to several projects, you can update and deploy sections of your site without having to redeploy everything. **No marker files, no `.compiled` files, only assemblies**. That's a huge win.
 
