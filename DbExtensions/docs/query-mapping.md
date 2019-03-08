@@ -22,7 +22,6 @@ If the column names in your database exactly match your object's properties then
 
 <div class="note danger" markdown="1">
 
-###### Warning
 It's not recommended to project onto an [annotated][annotations] entity type. Updating a partially loaded entity may cause data loss.
 
 </div>
