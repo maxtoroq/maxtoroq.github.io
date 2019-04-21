@@ -37,7 +37,7 @@ Using MvcPages for a couple of years was very enjoyable and productive, but **Ra
 
 <div class="note" markdown="1">
 
-Packages in XCST are based on packages in XSLT 3, which was not complete at the time. Reported several bugs/suggestions to W3C, e.g. when using a package, accepted components are private by default, [thanks to me](https://www.w3.org/Bugs/Public/show_bug.cgi?id=29574) :)
+Packages in XCST are based on packages in XSLT 3, which was not complete at the time. Reported several bugs/suggestions to W3C, e.g. when using a package, accepted components are private by default, [thanks to me](https://lists.w3.org/Archives/Public/public-qt-comments/2016Apr/0067.html) :)
 
 </div>
 
