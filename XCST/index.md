@@ -3,9 +3,9 @@ title: XCST
 toc: false
 ---
 
-**XCST (eXtensible C-Sharp Templates)** is a language for transforming objects into XML documents. It is based on a subset of XSLT (no `apply-templates`) but using C# as expression language and data model, instead of XPath.
+**XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's based on a subset of XSLT, the main difference being there are no special features to work with XML data, instead of XPath you use C# or Visual Basic. XCST is therefore better suited when your primary source of data is not XML.
 
-XCST compiles to C#. The XCST compiler transforms XCST instructions to C# statements, using the expressions contained in the instructions. Here's an example:
+XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructions to statements, using the expressions contained in the instructions. Here's an example:
 
 ```xml
 <ul>
@@ -112,8 +112,8 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 </a:model>
 ```
 
-Why choose XCST over C#?
-------------------------
+Why choose XCST over C# and Visual Basic?
+-----------------------------------------
 
 ### Modularity out-of-the-box
 
