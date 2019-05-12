@@ -90,7 +90,7 @@ regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>language</code></td>
-         <td>The expression language for this module (usually "C#").</td>
+         <td>The expression language for this module (usually "C#" or "VisualBasic").</td>
       </tr>
       <tr>
          <td><code>name</code></td>
