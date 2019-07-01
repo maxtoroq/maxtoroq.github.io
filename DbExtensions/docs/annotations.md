@@ -41,6 +41,8 @@ public Collection<OrderDetail> OrderDetails { get; } = new Collection<OrderDetai
 
 The default for ThisKey and OtherKey, when not specified, is the type's primary key properties.
 
+For multi-column keys use a comma-separated list.
+
 [1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/TableAttribute/README.md
 [2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/ColumnAttribute/README.md
 [3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/AssociationAttribute/README.md
