@@ -1,5 +1,5 @@
 ---
-title: "c:catch"
+title: "c:accept"
 ---
 
 {% comment %}  
@@ -13,14 +13,14 @@ regenerated.
    <div>
       <h3><a href=".">XCST Elements</a></h3>
       <ul>
-         <li><a href="accept.html">c:accept</a></li>
+         <li><a href="accept.html" class="active">c:accept</a></li>
          <li><a href="array.html">c:array</a></li>
          <li><a href="assert.html">c:assert</a></li>
          <li><a href="attribute.html">c:attribute</a></li>
          <li><a href="attribute-set.html">c:attribute-set</a></li>
          <li><a href="break.html">c:break</a></li>
          <li><a href="call-template.html">c:call-template</a></li>
-         <li><a href="catch.html" class="active">c:catch</a></li>
+         <li><a href="catch.html">c:catch</a></li>
          <li><a href="choose.html">c:choose</a></li>
          <li><a href="comment.html">c:comment</a></li>
          <li><a href="continue.html">c:continue</a></li>
@@ -75,31 +75,26 @@ regenerated.
       </ul>
    </div>
 </nav>
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:catch</span>
-  <span>exception</span>? = <i title="Expression.">expression</i>
-  <span>when</span>? = <i title="Expression.">expression</i>
-  <span>value</span>? = <i title="Expression.">expression</i> &gt;
-  &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
-<span class="nt">&lt;/c:catch&gt;</span></code></pre></div>
-<p>Catches an exception.</p>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:accept</span>
+  <b>component</b> = <span><span class="s">"attribute-set"</span> | <span class="s">"function"</span> | <span class="s">"template"</span> | <span class="s">"type"</span> | <span class="s">"variable"</span></span>
+  <b>names</b> = <span><span><i>token</i>*</span> | <span class="s">"*"</span></span> /&gt;</code></pre></div>
+<p>Specifies component dependencies.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="try.html"><code>c:try</code></a></dd>
+   <dd><a href="use-package.html"><code>c:use-package</code></a></dd>
 </dl>
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>exception</code></td>
-         <td>The exception to catch.</td>
+         <td><code>component</code></td>
+         <td>The type of component to accept.</td>
       </tr>
       <tr>
-         <td><code>value</code></td>
-         <td>A value to output.</td>
-      </tr>
-      <tr>
-         <td><code>when</code></td>
-         <td>An exception filter.</td>
+         <td><code>names</code></td>
+         <td>A list of space separated component names, or "*" to accept all. Unprefixed qualified
+            names are in the null namespace.
+         </td>
       </tr>
    </table>
 </div>
@@ -107,4 +102,4 @@ regenerated.
       In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
 
-{% include_relative _catch.md %}
+{% include_relative _accept.md %}

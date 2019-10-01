@@ -14,6 +14,7 @@ regenerated.
    <div>
       <h3><a href=".">XCST Elements</a></h3>
       <ul>
+         <li><a href="accept.html">c:accept</a></li>
          <li><a href="array.html">c:array</a></li>
          <li><a href="assert.html">c:assert</a></li>
          <li><a href="attribute.html">c:attribute</a></li>
@@ -81,7 +82,7 @@ regenerated.
 <div class="ref-element-list">
    <h2 id="elements">Elements</h2>
    <ul>
-      <li><a href="array.html"><code>c:array</code></a> &nbsp;<a href="assert.html"><code>c:assert</code></a> &nbsp;<a href="attribute.html"><code>c:attribute</code></a> &nbsp;<a href="attribute-set.html"><code>c:attribute-set</code></a></li>
+      <li><a href="accept.html"><code>c:accept</code></a> &nbsp;<a href="array.html"><code>c:array</code></a> &nbsp;<a href="assert.html"><code>c:assert</code></a> &nbsp;<a href="attribute.html"><code>c:attribute</code></a> &nbsp;<a href="attribute-set.html"><code>c:attribute-set</code></a></li>
       <li><a href="break.html"><code>c:break</code></a></li>
       <li><a href="call-template.html"><code>c:call-template</code></a> &nbsp;<a href="catch.html"><code>c:catch</code></a> &nbsp;<a href="choose.html"><code>c:choose</code></a> &nbsp;<a href="comment.html"><code>c:comment</code></a> &nbsp;<a href="continue.html"><code>c:continue</code></a> &nbsp;<a href="copy-of.html"><code>c:copy-of</code></a></li>
       <li><a href="delegate.html"><code>c:delegate</code></a> &nbsp;<a href="document.html"><code>c:document</code></a></li>

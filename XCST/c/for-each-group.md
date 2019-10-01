@@ -13,6 +13,7 @@ regenerated.
    <div>
       <h3><a href=".">XCST Elements</a></h3>
       <ul>
+         <li><a href="accept.html">c:accept</a></li>
          <li><a href="array.html">c:array</a></li>
          <li><a href="assert.html">c:assert</a></li>
          <li><a href="attribute.html">c:attribute</a></li>

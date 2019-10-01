@@ -13,6 +13,7 @@ regenerated.
    <div>
       <h3><a href=".">XCST Elements</a></h3>
       <ul>
+         <li><a href="accept.html">c:accept</a></li>
          <li><a href="array.html">c:array</a></li>
          <li><a href="assert.html">c:assert</a></li>
          <li><a href="attribute.html">c:attribute</a></li>
@@ -76,7 +77,7 @@ regenerated.
 </nav>
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:use-package</span>
   <b>name</b> = <i title="Type name.">type_name</i> &gt;
-  &lt;!-- Content: <span><a href="override.html">c:override</a>*</span> --&gt;
+  &lt;!-- Content: <span><span>(<a href="accept.html">c:accept</a> | <a href="override.html">c:override</a>)</span>*</span> --&gt;
 <span class="nt">&lt;/c:use-package&gt;</span></code></pre></div>
 <p>Specifies a package dependency.</p>
 <dl>
