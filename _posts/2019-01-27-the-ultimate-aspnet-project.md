@@ -65,4 +65,4 @@ The Web Site references each class library. When the solution is built, the Web 
 
 When you split your precompiled site to several projects, you can update and deploy sections of your site without having to redeploy everything. **No marker files, no `.compiled` files, only assemblies**. That's a huge win.
 
-[ExtensionlessUrlModule]: https://github.com/maxtoroq/XCST-a/blob/a018020/src/Xcst.AspNet.Compilation/ExtensionlessUrlModule.cs
+[ExtensionlessUrlModule]: https://github.com/maxtoroq/XCST-a/blob/67a987c/src/Xcst.AspNet.Compilation/ExtensionlessUrlModule.cs
