@@ -47,7 +47,7 @@ function GeneratePackages {
       $compilerFactory = New-Object Xcst.Compiler.XcstCompilerFactory
       $compilerFactory.EnableExtensions = $true
 
-      # Enable Application Extension
+      # Enable "application" extension
       $appExtension = [Reflection.Assembly]::LoadFrom((Resolve-Path $nugetPackages\Xcst.AspNet.Extension.*\lib\net46\Xcst.AspNet.Extension.dll))
       $compilerFactory.RegisterExtensionsForAssembly($appExtension)
 
@@ -64,10 +64,8 @@ function GeneratePackages {
          $compiler.NamedPackage = $true
 
          $xcstResult = $compiler.Compile((New-Object Uri $file.FullName))
-
-         foreach ($src in $xcstResult.CompilationUnits) {
-            write $src
-         }
+         
+         $xcstResult.CompilationUnits | %{ write $_ }
       }
    } finally {
       # Detach the event handler (not detaching can lead to stack overflow issues when closing PS)
