@@ -2,7 +2,7 @@
 title: Code Generation
 ---
 
-To get started with code generation [install](installing.html) the `Xcst.Compiler` NuGet package.
+To get started with code generation install the `Xcst.Compiler` NuGet package.
 
 ## MSBuild
 
