@@ -16,6 +16,8 @@ The evaluation process takes an instance of your compiled package and produces a
 
 ## ASP.NET
 
-Taking advantage of ASP.NET's extensible build infrastructure, you can use XCST for web application development. The framework takes care of code generation and compilation at run-time. Compiled packages inherit a base class that provide access to HTTP objects, with properties like `Request`, `Response`, `Context`, `Session`, etc.
+XCST integrates with ASP.NET using a base class that provide access to HTTP objects, with properties like `Request`, `Response`, `Context`, `Session`, etc. Additionally, you can use a set of extension instructions known as [the application extension](../a/). These are based on the HTML helpers from ASP.NET MVC, and can greatly simplify the development of web forms.
 
-Additionally, you can use a set of extension instructions known as [the application extension](../a/). These are based on the HTML helpers from ASP.NET MVC, and can greatly simplify the development of web forms.
+You can either use run-time compilation or pre-compilation. Run-time compilation is what most developers are familiar with, and is a good choice for small to medium sized, content heavy sites. It takes advantage of ASP.NET's extensible build infrastructure.
+
+Pre-compilation is a good choice for medium to large sized, code heavy sites, as explained on [this post](/2019/01/the-ultimate-aspnet-project.html).
