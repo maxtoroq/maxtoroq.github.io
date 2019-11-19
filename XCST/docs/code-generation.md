@@ -27,9 +27,6 @@ function GeneratePackages {
 
       if ($assemblyName.StartsWith("saxon9he") -or $assemblyName.StartsWith("IKVM.")) {
          $assemblyPath = "$nugetPackages\Saxon-HE.*\lib\net40\$assemblyName.dll"
-      
-      } elseif ($assemblyName.StartsWith("Newtonsoft.Json")) {
-         $assemblyPath = "$nugetPackages\$assemblyName.*\lib\net45\$assemblyName.dll"
       }
       
       if (-not (Test-Path $assemblyPath)) {
