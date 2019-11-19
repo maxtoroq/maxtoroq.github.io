@@ -18,7 +18,7 @@ function GeneratePackages {
    $pkgFileExtension = "xcst"
    $nugetPackages = Resolve-Path ..\..\packages
 
-   # AssemblyResolve is used to enable loading **newer versions** of Xcst.Compiler's dependencies
+   # AssemblyResolve is used to enable loading (newer versions of) Xcst.Compiler's dependencies
    $onAssemblyResolve = [ResolveEventHandler] {
       param($sender, $e)
       
