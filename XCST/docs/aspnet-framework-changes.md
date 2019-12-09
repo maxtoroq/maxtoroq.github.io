@@ -64,3 +64,4 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Removed Writer property and constructor parameter from ViewContext** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
+- **Merged AjaxRequestExtensions and RequestExtensions into HttpRequestExtensions** [2f5f3f4](https://github.com/maxtoroq/XCST-a/commit/2f5f3f498efa39f57fbd635e57b12751fd1f568a)
