@@ -65,3 +65,5 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
 - **Merged AjaxRequestExtensions and RequestExtensions into HttpRequestExtensions** [2f5f3f4](https://github.com/maxtoroq/XCST-a/commit/2f5f3f498efa39f57fbd635e57b12751fd1f568a)
+- **Simplified ControllerContext implementation**: Removed RouteData; Removed HttpContext and RequestContext circular dependency; Setting empty RequestContext/HttpContext on default constructor [035168a](https://github.com/maxtoroq/XCST-a/commit/035168ac1c51124583d81cd6bfd2ef4c0d8e56e5)
+- **Simplified ViewContext implementation**: Added constructor that accepts HttpContextBase only; Made ViewData and TempData nullable (lazy-init on page) [da55789](https://github.com/maxtoroq/XCST-a/commit/da55789771fc029a8df659c9494d55d7772b824b)
