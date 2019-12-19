@@ -78,17 +78,16 @@ For structured data, fill-in-the-blanks type of templating, XSLT is simply too p
 
 Depending on your scenario, there might be more reasons for choosing XCST over XSLT.
 
-Why choose XCST over Razor?
+Why choose XCST over "X" template engine (Razor, ASPx…)?
 ---------------------------
-Razor is a great tool for simple tasks, but it breaks down if you want more out of the code you are writing.
 
 ### Improved modularity
 
-Razor doesn't support anything beyond a simple layout/content setup. In XCST, you can statically link modules, use import precedence to override templates and functions, import and override pre-compiled modules (called packages), use tunnel parameters to pass data *in the background* without having to rely on global variables, etc. Everything you write in XCST is strongly-typed and super reusable and extensible, in both source and compiled form.
+Most template engines don't support anything beyond a simple layout/content setup. In XCST, you can statically link modules, use import precedence to override templates and functions, import and override pre-compiled modules (called packages), use tunnel parameters to pass data *in the background* without having to rely on global variables, etc. Everything you write in XCST is strongly-typed and super reusable and extensible, in both source and compiled form.
 
 ### Markup is code
 
-Razor treats markup as text that outputs unchanged. In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at run-time. This has several benefits:
+In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at run-time. This has several benefits:
 
 - One source code, multiple outputs (XML, HTML, XHTML, text and JSON)
 - Whitespace control (indentation)
