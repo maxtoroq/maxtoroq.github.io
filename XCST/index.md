@@ -105,8 +105,8 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
       <a:anti-forgery-token/>
       <a:validation-summary/>
    
-       Email:  <a:editor for='Email' /><br />
-       Password: <a:editor for='Password' /><br />
+       Email:  <a:editor for='Email'/><br/>
+       Password: <a:editor for='Password'/><br/>
        <button type="submit">Register</button>
    </form>
 </a:model>
