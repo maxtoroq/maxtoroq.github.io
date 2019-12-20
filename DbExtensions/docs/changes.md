@@ -5,7 +5,8 @@ title: Change History
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
-### v6.2.0 (pre-release)
+### v6.2.0
+- Added: WITH and FROM overloads that accept SqlSet as subQuery
 - Added: Treat SqlSet as subquery on SqlBuilder 
 - Added #44: .NET Core 2.1 and .NET Standard 2.1 support
 - Added: Database CRUD shortcuts
