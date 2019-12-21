@@ -60,8 +60,8 @@ Here's a more complete example of an XCST module:
 - Dynamic loading
 - Extension instructions
 
-Why choose XCST over XSLT?
---------------------------
+Why choose XCST over XSLT
+-------------------------
 While XSLT is a great tool, there are several reasons why it might not be a good choice.
 
 ### Your data is not XML
@@ -78,8 +78,8 @@ For structured data, fill-in-the-blanks type of templating, XSLT is simply too p
 
 Depending on your scenario, there might be more reasons for choosing XCST over XSLT.
 
-Why choose XCST over "X" template engine (Razor, ASPx…)?
----------------------------
+Why choose XCST over "X" template engine
+----------------------------------------
 
 ### Improved modularity
 
@@ -111,8 +111,8 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 </a:model>
 ```
 
-Why choose XCST over C# and Visual Basic?
------------------------------------------
+Why choose XCST over C# and Visual Basic
+----------------------------------------
 
 ### Modularity out-of-the-box
 
