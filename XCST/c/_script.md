@@ -1,22 +1,5 @@
 <div class="note eg" markdown="1">
 
-###### Example: Implementing a Function in a Separate Script
-It is sometimes convenient to move code to a separate file for better organization, or for better tooling support (e.g. code completion). The following function references an external script which contains the body of the function.
-
-```xml
-<c:function name='Save' as='bool'>
-   <c:param name='input' as='Document'/>
-
-   <c:script src='_Save.csx'/>
-</c:function>
-```
-
-Note that the file contents are not modified in any way. The script cannot have `using` directives, the containing module must use [`c:import-namespace`](import-namespace.html) for any namespace required by the script.
-
-</div>
-
-<div class="note eg" markdown="1">
-
 ###### Example: Fetching Data to Pass to Other Templates
 ```xml
 <c:template name='c:initial-template'>
