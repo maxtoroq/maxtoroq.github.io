@@ -1,5 +1,5 @@
 ---
-title: "a:label"
+title: "a:form"
 ---
 
 {% comment %}  
@@ -19,10 +19,10 @@ regenerated.
          <li><a href="display-name.html">a:display-name</a></li>
          <li><a href="display-text.html">a:display-text</a></li>
          <li><a href="editor.html">a:editor</a></li>
-         <li><a href="form.html">a:form</a></li>
+         <li><a href="form.html" class="active">a:form</a></li>
          <li><a href="hidden.html">a:hidden</a></li>
          <li><a href="input.html">a:input</a></li>
-         <li><a href="label.html" class="active">a:label</a></li>
+         <li><a href="label.html">a:label</a></li>
          <li><a href="member-template.html">a:member-template</a></li>
          <li><a href="model.html">a:model</a></li>
          <li><a href="option.html">a:option</a></li>
@@ -35,12 +35,19 @@ regenerated.
       </ul>
    </div>
 </nav>
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:label</span>
-  <span>for</span>? = <i title="Expression.">expression</i>
-  <span>name</span>? = { <i>string</i> }
-  <span>text</span>? = { <i>string</i> }
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:form</span>
+  <b>method</b> = <span><span class="s">"post"</span> | <span class="s">"get"</span></span>
+  <span>model-value</span>? = <i title="Expression.">expression</i>
+  <span>model-type</span>? = <i>type_name</i>
+  <span>action</span>? = { <i>string</i> }
+  <span>autocomplete</span>? = { <i>string</i> }
+  <span>enctype</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
-  <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
+  <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>field-prefix</span>? = { <i>string</i> }
+  <span>helper-name</span>? = <i>identifier</i> &gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+<span class="nt">&lt;/a:form&gt;</span></code></pre></div>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
@@ -52,7 +59,15 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
+         <td><code>action</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>attributes</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>autocomplete</code></td>
          <td></td>
       </tr>
       <tr>
@@ -60,18 +75,30 @@ regenerated.
          <td></td>
       </tr>
       <tr>
-         <td><code>for</code></td>
+         <td><code>enctype</code></td>
          <td></td>
       </tr>
       <tr>
-         <td><code>name</code></td>
+         <td><code>field-prefix</code></td>
          <td></td>
       </tr>
       <tr>
-         <td><code>text</code></td>
+         <td><code>helper-name</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>method</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>model-type</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>model-value</code></td>
          <td></td>
       </tr>
    </table>
 </div>
 
-{% include_relative _label.md %}
+{% include_relative _form.md %}

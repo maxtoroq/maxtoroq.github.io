@@ -19,6 +19,7 @@ regenerated.
          <li><a href="display-name.html">a:display-name</a></li>
          <li><a href="display-text.html">a:display-text</a></li>
          <li><a href="editor.html">a:editor</a></li>
+         <li><a href="form.html">a:form</a></li>
          <li><a href="hidden.html">a:hidden</a></li>
          <li><a href="input.html" class="active">a:input</a></li>
          <li><a href="label.html">a:label</a></li>

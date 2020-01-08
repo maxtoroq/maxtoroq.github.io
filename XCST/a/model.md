@@ -19,6 +19,7 @@ regenerated.
          <li><a href="display-name.html">a:display-name</a></li>
          <li><a href="display-text.html">a:display-text</a></li>
          <li><a href="editor.html">a:editor</a></li>
+         <li><a href="form.html">a:form</a></li>
          <li><a href="hidden.html">a:hidden</a></li>
          <li><a href="input.html">a:input</a></li>
          <li><a href="label.html">a:label</a></li>
@@ -38,7 +39,6 @@ regenerated.
   <span>value</span>? = <i title="Expression.">expression</i>
   <span>as</span>? = <i>type_name</i>
   <span>field-prefix</span>? = { <i>string</i> }
-  <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:model&gt;</span></code></pre></div>
@@ -66,10 +66,6 @@ regenerated.
       </tr>
       <tr>
          <td><code>value</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>with-params</code></td>
          <td></td>
       </tr>
    </table>

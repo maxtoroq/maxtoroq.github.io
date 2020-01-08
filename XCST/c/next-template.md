@@ -75,7 +75,8 @@ regenerated.
       </ul>
    </div>
 </nav>
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-template</span>&gt;
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:next-template</span>
+  <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:next-template&gt;</span></code></pre></div>
 <p>Invokes the overridden template.</p>
@@ -86,5 +87,17 @@ regenerated.
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>
 </dl>
+<h2 id="attributes">Attributes</h2>
+<div class="table-responsive">
+   <table class="ref-attribs">
+      <tr>
+         <td><code>tunnel-params</code></td>
+         <td>An object with tunnel parameters.</td>
+      </tr>
+   </table>
+</div>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>
 
 {% include_relative _next-template.md %}
