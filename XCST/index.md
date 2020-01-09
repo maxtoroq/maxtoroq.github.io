@@ -99,16 +99,14 @@ In XCST, elements, attributes and text are compiled to method calls. Serializati
 Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for web application development based on ASP.NET MVC.
 
 ```xml
-<a:model as='RegisterViewModel'>
-   <form method='post'>
-      <a:anti-forgery-token/>
-      <a:validation-summary/>
-   
-       Email:  <a:editor for='Email'/><br/>
-       Password: <a:editor for='Password'/><br/>
-       <button type="submit">Register</button>
-   </form>
-</a:model>
+<a:form method='post' model-type='RegisterViewModel'>
+   <a:anti-forgery-token/>
+   <a:validation-summary/>
+
+    Email:  <a:editor for='Email'/><br/>
+    Password: <a:editor for='Password'/><br/>
+    <button type="submit">Register</button>
+</a:form>
 ```
 
 Why choose XCST over C# and Visual Basic
