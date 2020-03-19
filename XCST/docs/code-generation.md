@@ -2,90 +2,24 @@
 title: Code Generation
 ---
 
-To get started with code generation install the `Xcst.Compiler` NuGet package.
+To get started with code generation install the `Xcst.Compiler` NuGet package. XCST does not distribute an executable, you have to use the API. This means you have to include some boilerplate code in your project, but you also get more power to customize code generation to your needs.
+
+Download the [xcst-codegen](https://github.com/maxtoroq/XCST-a/tree/master/samples/xcst-codegen) sample project to get started. There's one change you need to make to the project: if you are working with ASP.NET, change the `Xcst.AspNet.Extension` project reference to a NuGet reference of `Xcst.AspNet.Extension`; otherwise, remove the reference.
 
 ## MSBuild
 
-Generating code for your C# project can done in a pre-build event. Add the following script to your project (e.g. `xcst.ps1`):
-
-```powershell
-$ErrorActionPreference = "Stop"
-Push-Location (Split-Path $script:MyInvocation.MyCommand.Path)
-
-function GeneratePackages {
-
-   $startDirectory = Get-Item .
-   $pkgFileExtension = "xcst"
-   $nugetPackages = Resolve-Path ..\..\packages
-
-   # AssemblyResolve is used to enable loading (newer versions of) Xcst.Compiler's dependencies
-   $onAssemblyResolve = [ResolveEventHandler] {
-      param($sender, $e)
-      
-      $assemblyName = $e.Name.Split(',')[0]
-      $assemblyPath = "$nugetPackages\$assemblyName.*\lib\net46\$assemblyName.dll"
-
-      if ($assemblyName.StartsWith("saxon9he") -or $assemblyName.StartsWith("IKVM.")) {
-         $assemblyPath = "$nugetPackages\Saxon-HE.*\lib\net40\$assemblyName.dll"
-      }
-      
-      if (-not (Test-Path $assemblyPath)) {
-         return $null
-      }
-
-      return [Reflection.Assembly]::LoadFrom((Resolve-Path $assemblyPath))
-   }
-
-   [AppDomain]::CurrentDomain.add_AssemblyResolve($onAssemblyResolve)
-   
-   try {
-      Add-Type -Path $nugetPackages\Xcst.Compiler.*\lib\net46\Xcst.Compiler.dll
-
-      $compilerFactory = New-Object Xcst.Compiler.XcstCompilerFactory
-      $compilerFactory.EnableExtensions = $true
-
-      # Enable "application" extension
-      $appExtension = [Reflection.Assembly]::LoadFrom((Resolve-Path $nugetPackages\Xcst.AspNet.Extension.*\lib\net46\Xcst.AspNet.Extension.dll))
-      $compilerFactory.RegisterExtensionsForAssembly($appExtension)
-
-      foreach ($file in ls $startDirectory.FullName *.$pkgFileExtension -Recurse) {
-
-         # Treat files starting with underscore as non-principal modules
-         if ($file.Name[0] -eq '_') {
-            continue
-         }
-
-         $compiler = $compilerFactory.CreateCompiler()
-         $compiler.PackagesLocation = $startDirectory.FullName
-         $compiler.PackageFileExtension = $pkgFileExtension
-         $compiler.NamedPackage = $true
-
-         $xcstResult = $compiler.Compile((New-Object Uri $file.FullName))
-         
-         $xcstResult.CompilationUnits | %{ write $_ }
-      }
-   } finally {
-      # Detach the event handler (not detaching can lead to stack overflow issues when closing PS)
-      [AppDomain]::CurrentDomain.remove_AssemblyResolve($onAssemblyResolve)
-   }
-}
-
-try {
-   GeneratePackages | Out-File xcst.generated.cs -Encoding utf8
-} finally {
-   Pop-Location
-}
-```
-
-...and add the following to your project file (`.csproj`):
+Generating code for your C# project can done in a pre-build event. Add the following to your project file (`.csproj`):
 
 ```xml
 <PropertyGroup>
-   <PreBuildEvent>powershell -NoProfile -ExecutionPolicy RemoteSigned -File $(ProjectDir)\xcst.ps1</PreBuildEvent>
-</PropertyGroup>
+    <PreBuildEventDependsOn>ResolveReferences</PreBuildEventDependsOn>
+    <PreBuildEvent>$(ProjectDir)\..\xcst-codegen\bin\$(ConfigurationName)\xcst-codegen.exe $(ProjectPath) $(ConfigurationName) -LibsAndPages</PreBuildEvent>
+  </PropertyGroup>
 ```
 
-When you build your project a `xcst.generated.cs` file will be generated. This file will include the code for all the [named packages](..\c\package.html#dt-named-package) in any subdirectory starting from the location of the powershell script.
+Note the `-LibsAndPages` flag, this is only relevant in ASP.NET; otherwise, remove it.
+
+When you build your project a `xcst.generated.cs` file will be generated. This file will include the code for all the [named packages](..\c\package.html#dt-named-package) in any subdirectory starting from the project directory.
 
 Next, add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
 
