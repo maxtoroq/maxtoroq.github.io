@@ -4,9 +4,9 @@ title: Code Generation
 
 To get started with code generation install the `Xcst.Compiler` NuGet package. XCST does not distribute an executable, you have to use the API. This means you have to include some boilerplate code in your project, but you also get more power to customize code generation to your needs.
 
-Download the [xcst-codegen](https://github.com/maxtoroq/XCST-a/tree/master/samples/xcst-codegen) sample project to get started. There's one change you need to make to the project: if you are working with ASP.NET, change the `Xcst.AspNet.Extension` project reference to a NuGet reference of `Xcst.AspNet.Extension`; otherwise, remove the reference.
-
 ## MSBuild
+
+Download the [xcst-codegen](https://github.com/maxtoroq/XCST-a/tree/master/samples/xcst-codegen) sample project to get started. There's one change you need to make to the project: if you are working with ASP.NET, change the `Xcst.AspNet.Extension` project reference to a NuGet reference of `Xcst.AspNet.Extension`; otherwise, remove the reference.
 
 Generating code for your C# project can done in a pre-build event. Add the following to your project file (`.csproj`):
 
