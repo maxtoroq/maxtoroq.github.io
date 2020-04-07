@@ -9,6 +9,8 @@ body > footer {
 
 body > header {
    
+   border-bottom: 1px solid #e0e1ef;
+   
    .container {
       padding-top: .5em;
       padding-bottom: .5em;
@@ -41,7 +43,7 @@ body > header {
 }
 
 body > footer {
-   
+   border-top: 1px solid #e0e1ef;
 }
 
 @media (max-width: 767px) {
