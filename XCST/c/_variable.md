@@ -21,7 +21,7 @@ present | present | present | Compilation error
 absent | absent | empty | Local variables are not initialized. Global variables are initialized with `null`. The type is [Object].
 absent | present | empty | Local variables are not initialized. Global variables are initialized with `default(T)`, where `T` is the type required by the `as` attribute.
 absent | absent | present | Value is obtained by evaluating the sequence constructor. The type is inferred from the content (see next section).
-absent | present | present | Value is obtained by evaluating the sequence constructor, casted to the type required by the `as` attribute.
+absent | present | present | Value is obtained by evaluating the sequence constructor, using the required sequence type specified by the `as` attribute.
 
 ## Type Inference from Content
 
