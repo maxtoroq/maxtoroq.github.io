@@ -1,8 +1,7 @@
 ---
 title: Code Generation
 ---
-
-To get started with code generation install the `Xcst.Compiler` NuGet package. XCST does not distribute an executable, you have to use the API. This means you have to include some boilerplate code in your project, but you also get more power to customize code generation to your needs.
+XCST does not distribute an executable, you have to use the API. This means you have to include some boilerplate code in your project, but you also get more power to customize code generation to your needs.
 
 ## MSBuild
 
