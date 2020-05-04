@@ -8,7 +8,9 @@
 </div>
 
 ```
-{ foo }}
+    Boolean value with attributes as dictionary:
+    @Html.Editor("Another.Boolean",
+        new { htmlAttributes = new Dictionary<string, object> {{ "foo", "bar" }, }})
 
 ```
 
