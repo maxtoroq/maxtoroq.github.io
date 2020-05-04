@@ -7,6 +7,11 @@
 **dsfds**
 </div>
 
+```
+{{ foo }}
+
+```
+
 <div markdown="1">
 
 **dsfds**
