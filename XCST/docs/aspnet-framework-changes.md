@@ -49,6 +49,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Removed System.Data.Linq.Binary dependency (model binder)** [d3a7912](https://github.com/maxtoroq/XCST-a/commit/d3a7912d4a4959c50f538a59fbcf9ec9e75ac168)
 - **DefaultModelBinder gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - Replaced JavaScriptSerializer with Json.NET [9a1ac0d](https://github.com/maxtoroq/XCST-a/commit/9a1ac0db954d54ecc58977a9ffe70cd428185947)
+- **Removed CancellationTokenModelBinder** [29c215b](https://github.com/maxtoroq/XCST-a/commit/29c215bd3c3d013b3f0c7aaf353a85ffdbce4e56)
 
 ## Pages
 
@@ -60,11 +61,15 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 ## Other
 
 - **Removed everything about request validation** [b661a1f](https://github.com/maxtoroq/XCST-a/commit/b661a1fc638dfe4996c4154744d4bbdbddb41832)
-- **Removed ViewContext.View (IView) property (circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
+- **Removed ViewContext.View (IView circular dependency)** [AspNetLib/6684e6f](https://github.com/maxtoroq/AspNetLib/commit/6684e6fd0a627e42600fce2afb131f02854ebc88)
+- **Removed ViewContext.ViewBag** [d61872e](https://github.com/maxtoroq/XCST-a/commit/d61872e24e83bbf253d980bb7bce1e9112ac5926)
 - **Removed static properties from HtmlHelper and moved defaults to ViewContext** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
-- **Removed Writer property and constructor parameter from ViewContext** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
+- **Removed ViewContext.Writer and constructor parameter** [840220d](https://github.com/maxtoroq/XCST-a/commit/840220d3434b5a8269d448bc34b13002bcf277bf)
 - AntiForgery.TryValidate [f655872](https://github.com/maxtoroq/XCST-a/commit/f655872a5430feb5c8cd9aa954c25e6dd37458c7)
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
 - **Merged AjaxRequestExtensions and RequestExtensions into HttpRequestExtensions** [2f5f3f4](https://github.com/maxtoroq/XCST-a/commit/2f5f3f498efa39f57fbd635e57b12751fd1f568a)
-- **Simplified ControllerContext implementation**: Removed RouteData; Removed HttpContext and RequestContext circular dependency; Setting empty RequestContext/HttpContext on default constructor [035168a](https://github.com/maxtoroq/XCST-a/commit/035168ac1c51124583d81cd6bfd2ef4c0d8e56e5)
+- **Simplified ControllerContext implementation**: Removed RouteData [035168a](https://github.com/maxtoroq/XCST-a/commit/035168ac1c51124583d81cd6bfd2ef4c0d8e56e5); Removed RequestContext [8cf48ac](https://github.com/maxtoroq/XCST-a/commit/8cf48acca3f6df9d8d18cb6cc6d11b087193189b)
 - **Simplified ViewContext implementation**: Added constructor that accepts HttpContextBase only; Made ViewData and TempData nullable (lazy-init on page) [da55789](https://github.com/maxtoroq/XCST-a/commit/da55789771fc029a8df659c9494d55d7772b824b)
+- **Removed HtmlHelper.RouteCollection** [166184c](https://github.com/maxtoroq/XCST-a/commit/166184c810e721683f40caba38f9c832b1eee94a)
+- **Removed UrlHelper.RequestContext and UrlHelper.RouteCollection** [8e00919](https://github.com/maxtoroq/XCST-a/commit/8e009190ab7ce1c91944d151939ec058a1a1bc3c)
+- **Removed FieldValidationMetadata**: Unobtrusive validation is the only client validation supported [8814ae3](https://github.com/maxtoroq/XCST-a/commit/8814ae3771f71e1cb61fc95171ca4d3565c0347c)
