@@ -43,6 +43,10 @@
                position: initial;
                width: initial;
                min-width: 200px;
+               
+               > div {
+                  position: fixed;
+               }
             }
 
             > .content {
