@@ -37,9 +37,10 @@ defaults:
       scope:
          path: "DbExtensions/docs"
          type: page
-         docs: true
+
       values:
          layout: DbExtensions-docs
+         docs: true
    -
       scope:
          path: "MvcCodeRouting"
