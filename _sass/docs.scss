@@ -37,7 +37,7 @@
          [itemprop="articleBody"] {
             display: flex;
             flex-direction: row-reverse;
-            justify-content: start;
+            justify-content: flex-end;
 
             > .toc {
                position: initial;
