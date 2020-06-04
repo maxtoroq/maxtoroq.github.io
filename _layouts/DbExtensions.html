@@ -25,14 +25,21 @@
          </a>
       </nav>
    </header>
-   <article class="container">
-      <header>
-         <h1>{{ page.title }}</h1>
-      </header>
-      <div itemprop="articleBody">
-         {{ content }}
+   <div id="_wrap">
+      <div id="_site_toc">
+
       </div>
-   </article>
+      <main>
+         <article class="container">
+            <header>
+               <h1>{{ page.title }}</h1>
+            </header>
+            <div itemprop="articleBody">
+               {{ content }}
+            </div>
+         </article>
+      </main>
+   </div>
    <footer>
       <div class="container">&copy; {{ site.author }}</div>
    </footer>
