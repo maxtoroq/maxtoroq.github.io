@@ -68,7 +68,7 @@ body > footer {
    }
 
    body {
-      padding-top: calc($logo-height + 1em - 1px);
+      padding-top: calc(#{$logo-height} + 1em - 1px);
       margin-bottom: $footer-height;
    }
    
