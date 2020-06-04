@@ -37,6 +37,7 @@
          [itemprop="articleBody"] {
             display: flex;
             flex-direction: row-reverse;
+            justify-content: start;
 
             > .toc {
                position: initial;
@@ -48,6 +49,7 @@
                flex: 1;
                overflow: auto;
                padding-right: 1rem;
+               max-width: 790px;
             }
          }
       }
