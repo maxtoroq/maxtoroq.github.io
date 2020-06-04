@@ -13,7 +13,7 @@
          var ToC = "<nav role='navigation' class='toc'><div><h3>In this article</h3><ul>";
          ToC += items.join('');
          ToC += "</ul></div></nav>";
-         document.querySelector('article header').insertAdjacentHTML('afterend', ToC)
+         document.querySelector('article *[itemprop="articleBody"]').insertAdjacentHTML('afterbegin', ToC)
       }
    })
 </script>
