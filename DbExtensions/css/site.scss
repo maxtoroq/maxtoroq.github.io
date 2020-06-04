@@ -79,4 +79,12 @@ body > footer {
       width: 100%;
       height: $footer-height;
    }
+
+   // See <https://stackoverflow.com/a/28824157/39923>
+   :target::before {
+      content: "";
+      display: block;
+      height: $header-height;
+      margin: calc(#{$header-height} * -1) 0 0;
+   }
 }
