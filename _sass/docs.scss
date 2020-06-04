@@ -21,10 +21,26 @@
          }
 
          > main {
+            flex: 1;
             overflow: auto;
-            max-width: 790px;
 
             article {
+
+               *[itemprop="articleBody"] {
+                  display: flex;
+                  flex-direction: row-reverse;
+
+                  > .toc {
+                     position: initial;
+                     width: initial;
+                     min-width: 200px;
+                  }
+
+                  > .content {
+                     flex: 1;
+                     overflow: auto;
+                  }
+               }
             }
          }
       }
