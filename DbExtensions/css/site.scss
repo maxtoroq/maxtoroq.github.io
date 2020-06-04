@@ -61,6 +61,7 @@ body > footer {
 @media (min-width: 768px) {
    
    $footer-height: 120px;
+   $header-height: calc(#{$logo-height} + 1em - 1px);
 
    html {
       position: relative;
@@ -68,7 +69,7 @@ body > footer {
    }
 
    body {
-      padding-top: calc(#{$logo-height} + 1em - 1px);
+      padding-top: $header-height;
       margin-bottom: $footer-height;
    }
    
@@ -78,4 +79,12 @@ body > footer {
       width: 100%;
       height: $footer-height;
    }
+
+   // See <https://stackoverflow.com/a/28824157/39923>
+   :target::before {
+      content: "";
+      display: block;
+      height: $header-height;
+      margin: calc(#{$header-height} * -1) 0 0;
+  }
 }
