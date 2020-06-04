@@ -1,47 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <title>{{ page.title }}{% unless page.omit_site_title %} — DbExtensions{% endunless %}</title>
-   <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
-   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
-   <link rel="apple-touch-icon" href="{{ page.base_url }}apple-touch-icon.png"/>
-   {% if page.toc == nil or page.toc %}
-   {% include toc.html %}
-   {% endif %}
-   {% include font-sans.html %}
-   {% include analytics.html %}
-</head>
-<body>
-   <header>
-      <nav class="container">
-         <a href="{{ page.base_url }}" title="DbExtensions">home</a>
-         <a href="{{ page.base_url }}docs/">documentation</a>
-         <a href="{{ page.support_url }}">support</a>
-         <a href="{{ page.repository_url }}">github</a>
-         <a href="{{ page.base_url }}about.html">about</a>
-         <a class="donate" href="/p/donate.html">
-            <img src="/img/btn_donate_SM.gif" alt="Donate"/>
-         </a>
-      </nav>
-   </header>
-   <div id="_wrap">
-      <div id="_site_toc">
-
+---
+layout: DbExtensions-base
+---
+<main>
+   <article class="container">
+      <header>
+         <h1>{{ page.title }}</h1>
+      </header>
+      <div itemprop="articleBody">
+         {{ content }}
       </div>
-      <main>
-         <article class="container">
-            <header>
-               <h1>{{ page.title }}</h1>
-            </header>
-            <div itemprop="articleBody">
-               {{ content }}
-            </div>
-         </article>
-      </main>
-   </div>
-   <footer>
-      <div class="container">&copy; {{ site.author }}</div>
-   </footer>
-</body>
-</html>
+   </article>
+</main>

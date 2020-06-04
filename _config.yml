@@ -35,6 +35,12 @@ defaults:
          support_url: https://github.com/maxtoroq/DbExtensions/issues?q=is%3Aissue+label%3Aquestion
    -
       scope:
+         path: "DbExtensions/docs"
+         type: page
+      values:
+         layout: DbExtensions-docs
+   -
+      scope:
          path: "MvcCodeRouting"
          type: page
       values:
