@@ -37,7 +37,6 @@ defaults:
       scope:
          path: "DbExtensions/docs"
          type: page
-
       values:
          layout: DbExtensions-docs
          docs: true
