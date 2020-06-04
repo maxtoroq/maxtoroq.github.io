@@ -25,25 +25,6 @@
             overflow: auto;
          }
       }
-
-      article {
-
-         [itemprop="articleBody"] {
-            display: flex;
-            flex-direction: row-reverse;
-
-            > .toc {
-               position: initial;
-               width: initial;
-               min-width: 200px;
-            }
-
-            > .content {
-               flex: 1;
-               overflow: auto;
-            }
-         }
-      }
    }
 }
 
