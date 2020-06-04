@@ -23,24 +23,49 @@
          > main {
             flex: 1;
             overflow: auto;
+         }
+      }
 
-            article {
+      article {
 
-               *[itemprop="articleBody"] {
-                  display: flex;
-                  flex-direction: row-reverse;
+         [itemprop="articleBody"] {
+            display: flex;
+            flex-direction: row-reverse;
 
-                  > .toc {
-                     position: initial;
-                     width: initial;
-                     min-width: 200px;
-                  }
+            > .toc {
+               position: initial;
+               width: initial;
+               min-width: 200px;
+            }
 
-                  > .content {
-                     flex: 1;
-                     overflow: auto;
-                  }
-               }
+            > .content {
+               flex: 1;
+               overflow: auto;
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 1200px) {
+
+   body.docs {
+
+      article {
+
+         [itemprop="articleBody"] {
+            display: flex;
+            flex-direction: row-reverse;
+
+            > .toc {
+               position: initial;
+               width: initial;
+               min-width: 200px;
+            }
+
+            > .content {
+               flex: 1;
+               overflow: auto;
             }
          }
       }
