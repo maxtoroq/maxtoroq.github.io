@@ -1,0 +1,14 @@
+<ul>
+   {% for item in include.toc %}
+      <li>
+      {% if item.url %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {% else %}
+      <span>{{ item.title }}</span>
+      {% endif %}
+      {% if item.toc %}
+         {% include site-toc.html toc=item.toc %}
+      {% endif %}
+   {% endfor %}
+ </ul>
+ 

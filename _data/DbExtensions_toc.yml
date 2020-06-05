@@ -1,0 +1,29 @@
+toc:
+  - title: Getting Started
+    toc:
+      - title: Installing
+        url: installing.html
+      - title: SqlBuilder Tutorial
+        url: SqlBuilder.html
+      - title: SqlSet Tutorial
+        url: SqlSet.html
+      - title: Query Mapping
+        url: query-mapping.html
+      - title: Annotations
+        url: annotations.html
+  - title: Migrating
+    toc:
+      - title: To v6
+        url: migrating/to-v6.html
+  - title: Reference
+    toc:
+      - title: DbExtensions API Reference
+        url: https://github.com/maxtoroq/DbExtensions/blob/master/docs/api/DbExtensions/README.md#readme
+      - title: Change History
+        url: changes.html
+  - title: Older Versions
+    toc:
+      - title: v5
+        url: https://github.com/maxtoroq/DbExtensions/blob/v5/docs/README.md
+      - title: v4
+        url: https://github.com/maxtoroq/DbExtensions/blob/v4/docs/README.md
