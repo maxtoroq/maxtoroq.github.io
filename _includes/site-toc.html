@@ -5,7 +5,7 @@
       {% assign path = include.base_url | append: item.url %}
       <a href="{{ path }}" {% if page.url == path %}class="active"{% endif %}>{{ item.title }}</a>
       {% else %}
-      <span>{{ item.title }}</span>
+      <b>{{ item.title }}</b>
       {% endif %}
       {% if item.toc %}
          {% include site-toc.html toc=item.toc base_url=include.base_url %}

@@ -16,13 +16,18 @@
       #_docs {
          display: flex;
 
+         a {
+            border-bottom-color: rgba(128, 56, 101, 0.3);
+         }
+
          > #_docs_toc {
             width: 250px;
             font-size: calc(1rem - 1px);
+            padding-right: 1rem;
 
             > ul {
                position: fixed;
-               padding-left: 0;
+               padding-left: 0 !important;
             }
 
             ul {
@@ -30,7 +35,7 @@
                padding: 0 0 0 1rem;
                
                li {
-                  > span {
+                  > b {
                      display: inline-block;
                      margin-top: .5em;
                      font-weight: 600;
