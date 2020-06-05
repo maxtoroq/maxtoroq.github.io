@@ -43,7 +43,8 @@
                   > b {
                      display: inline-block;
                      margin-top: .5em;
-                     font-weight: 600;
+                     font-weight: 400;
+                     color: purple;
                   }
                }
             
@@ -53,6 +54,7 @@
             }
 
             a {
+               color: rgba(0, 0, 0, .7);
                border-bottom-color: rgba(128, 56, 101, 0.3);
             }
          }
