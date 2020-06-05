@@ -7,7 +7,7 @@
       <span>{{ item.title }}</span>
       {% endif %}
       {% if item.toc %}
-         {% include site-toc.html toc=item.toc %}
+         {% include site-toc.html toc=item.toc base_url=include.base_url %}
       {% endif %}
    {% endfor %}
  </ul>
