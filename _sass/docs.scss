@@ -17,8 +17,13 @@
          display: flex;
 
          > #_docs_toc {
-            width: 200px;
+            width: $250px;
             font-size: calc(1rem - 1px);
+
+            > ul {
+               position: fixed;
+               padding-left: 0;
+            }
 
             ul {
                margin: 0;
