@@ -18,6 +18,24 @@
 
          > #_docs_toc {
             width: 200px;
+            font-size: calc(1rem - 1px);
+
+            ul {
+               margin: 0;
+               padding: 0 0 0 1rem;
+               
+               li {
+                  > span {
+                     display: inline-block;
+                     margin-top: .5em;
+                     font-weight: 600;
+                  }
+               }
+            
+               li:before {
+                  display: none;
+               }
+            }
          }
 
          > main {
