@@ -8,7 +8,7 @@
             {% assign path = include.base_url | append: item.url %}
          {% endif %}
       <a href="{{ path }}" {% if page.url == path %}class="active"{% endif %}>{{ item.title }}</a>
-      <!-- {% link page.path %} -->
+      <!-- {% link {{ page.path }} %} -->
       {% else %}
       <b>{{ item.title }}</b>
       {% endif %}
