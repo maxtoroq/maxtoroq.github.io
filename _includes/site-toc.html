@@ -2,7 +2,8 @@
    {% for item in include.toc %}
       <li>
       {% if item.url %}
-      <a href="{{ include.base_url }}{{ item.url }}" {% if page.url == include.base_url | append: item.url %}class="active"{% endif %}>{{ item.title }}</a>
+      {% assign path = include.base_url | append: item.url %}
+      <a href="{{ path }}" {% if page.url == path %}class="active"{% endif %}>{{ item.title }}</a>
       {% else %}
       <span>{{ item.title }}</span>
       {% endif %}
