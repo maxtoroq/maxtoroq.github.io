@@ -1,7 +1,7 @@
 ---
 title: Query Mapping
 ---
-**Query mapping** is about turning rows into objects, matching column names to properties and constructor parameters. Query mapping is:
+DbExtensions supports a special column alias syntax to match columns to properties and constructor parameters. This syntax is:
 
 - Supported for both <abbr title="Plain Old CLR Object">POCO</abbr> and dynamic objects
 - Supported on all query APIs (using [SqlBuilder], [SqlSet] or `string`)
