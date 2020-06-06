@@ -17,7 +17,7 @@ toc:
         url: migrating/to-v6.html
   - title: Reference
     toc:
-      - title: DbExtensions API Reference
+      - title: API Reference
         url: https://github.com/maxtoroq/DbExtensions/blob/master/docs/api/DbExtensions/README.md#readme
       - title: Change History
         url: changes.html
