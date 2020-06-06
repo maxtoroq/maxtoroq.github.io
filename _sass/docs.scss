@@ -81,6 +81,12 @@
 
       article {
          padding-left: 1.5rem;
+
+         [itemprop="articleBody"] {
+            > .content {
+               padding-right: 1.5rem;
+            }
+         }
       }
 
       h1, h2 {
@@ -113,7 +119,6 @@
             > .content {
                flex: 1 1 0;
                overflow: auto;
-               padding-right: 1.5rem;
                max-width: 790px;
             }
          }
