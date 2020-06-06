@@ -7,26 +7,26 @@ permalink: /:year/:month/:title.html
 sass:
   style: compressed
 
-gems:
+plugins:
    - jemoji
 
 defaults:
    -
       scope:
          path: ""
-         type: post
+         type: posts
       values:
          layout: post
    -
       scope:
          path: ""
-         type: page
+         type: pages
       values:
          layout: page
    -
       scope:
          path: "DbExtensions"
-         type: page
+         type: pages
       values:
          #layout: DbExtensions
          layout: DbExtensions-docs
@@ -37,7 +37,7 @@ defaults:
    -
       scope:
          path: "MvcCodeRouting"
-         type: page
+         type: pages
       values:
          layout: MvcCodeRouting
          base_url: /MvcCodeRouting/
@@ -46,14 +46,14 @@ defaults:
    -
       scope:
          path: "myxsl"
-         type: page
+         type: pages
       values:
          base_url: https://github.com/maxtoroq/myxsl
          repository_url: https://github.com/maxtoroq/myxsl
    -
       scope:
          path: "XCST"
-         type: page
+         type: pages
       values:
          layout: XCST
          base_url: /XCST/
@@ -65,14 +65,14 @@ defaults:
    -
       scope:
          path: "XCST/docs"
-         type: page
+         type: pages
       values:
          layout: XCST-docs
          edit_link: true
    -
       scope:
          path: "XCST/c"
-         type: page
+         type: pages
       values:
          layout: XCST-docs
          element_ref: true
@@ -81,7 +81,7 @@ defaults:
    -
       scope:
          path: "XCST/a"
-         type: page
+         type: pages
       values:
          layout: XCST-docs
          element_ref: true
