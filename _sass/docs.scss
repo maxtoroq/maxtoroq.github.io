@@ -1,10 +1,4 @@
 
-body.docs {
-   #_docs {
-      padding-top: 1.8rem;
-   }
-}
-
 @media (max-width: 767px) {
    body.docs {
       #_docs_toc {
@@ -23,12 +17,18 @@ body.docs {
    }
 
    body.docs {
+      background-color: #fafbfc;
+
       .container {
          max-width: 1400px;
       }
 
       #_docs {
          display: flex;
+
+         > * {
+            padding-top: .8rem;
+         }
 
          > #_docs_toc {
             width: 250px;
