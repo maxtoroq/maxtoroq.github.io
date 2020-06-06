@@ -112,9 +112,11 @@
                position: static;
                width: auto;
                min-width: 200px;
+               padding: 0 1rem;
                
                > div {
                   position: fixed;
+                  padding: 0;
                }
             }
 
