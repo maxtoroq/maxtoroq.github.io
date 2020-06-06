@@ -4,7 +4,7 @@
    {% assign cp_parts = cp_parts | pop | push: '' %}
 {% else %}
    {% assign html_last = cp_last | split: '.' | pop | push: 'html' | join: '.' %}
-   {% assign cp_parts = cp_parts | pop | push: cp_last | %}
+   {% assign cp_parts = cp_parts | pop | push: html_last %}
 {% endif %}
 {% assign current_path = cp_parts | join: '/' | prepend: '/' %}
 <!-- {{ current_path }} -->
