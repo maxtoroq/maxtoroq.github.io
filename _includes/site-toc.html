@@ -1,3 +1,12 @@
+{% assign cp_parts = page.path | split: '/' %}
+{% assign cp_last = cp_parts | last %}
+{% if cp_last == 'index.md' %}
+   {% assign cp_parts = cp_parts | pop | push: '' %}
+{% else %}
+   {% assign html_last = cp_last | split: '.' | pop | push: 'html' | join: '.' %}
+   {% assign cp_parts = cp_parts | pop | push: cp_last | %}
+{% endif %}
+{% assign current_path = new_parts | join: '/' | prepend: '/' %}
 <ul>
    {% for item in include.toc %}
    <li>
@@ -7,8 +16,7 @@
          {% else %}
             {% assign path = include.base_url | append: item.url %}
          {% endif %}
-      <a href="{{ path }}" {% if page.url == path %}class="active"{% endif %}>{{ item.title }}</a>
-      <!-- {% link {{ page.path }} %} -->
+      <a href="{{ path }}" {% if current_path == path %}class="active"{% endif %}>{{ item.title }}</a>
       {% else %}
       <b>{{ item.title }}</b>
       {% endif %}
