@@ -39,6 +39,8 @@ body.docs {
             > ul {
                position: fixed;
                padding-left: 0 !important;
+               padding-right: 1rem;
+               border-right: 1px solid #e0e1ef;
             }
 
             ul {
@@ -50,7 +52,6 @@ body.docs {
                      display: inline-block;
                      margin-top: .5em;
                      font-weight: 400;
-                     color: purple;
                   }
                }
             
@@ -62,6 +63,10 @@ body.docs {
             a {
                color: rgba(0, 0, 0, .7);
                border-bottom-color: rgba(128, 56, 101, 0.3);
+
+               .active {
+                  color: purple;
+               }
             }
          }
 
