@@ -7,7 +7,6 @@
    {% assign cp_parts = cp_parts | pop | push: html_last %}
 {% endif %}
 {% assign current_path = cp_parts | join: '/' | prepend: '/' %}
-<!-- {{ current_path }} -->
 <ul>
    {% for item in include.toc %}
    <li>
