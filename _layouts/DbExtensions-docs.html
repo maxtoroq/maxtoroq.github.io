@@ -3,7 +3,11 @@ layout: DbExtensions-base
 ---
 <div id="_docs" class="container">
    <nav id="_docs_toc">
-      {% include site-toc.html toc=site.data.DbExtensions_toc.toc base_url=page.documentation_url %}
+      {% assign cp_parts = page.path | split: '/' %}
+      {% if cp_parts.size >= 3 %}
+         {% assign section_base = '/' | append: cp_parts[0] | append: '/' | append: cp_parts[1] | append: '/'  %}
+         {% include site-toc.html toc=site.data.DbExtensions_toc[cp_parts[1]] base_url=section_base %}
+      {% endif %}
    </nav>
    <main>
       <article>
