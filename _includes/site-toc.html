@@ -16,7 +16,7 @@
          {% else %}
             {% assign path = include.base_url | append: item.url %}
          {% endif %}
-      <a href="{{ path }}" {% if page.url == path %}class="active"{% endif %}>{{ item.title }}</a>
+      <a href="{{ path }}" {% if current_path == path %}class="active"{% endif %}>{{ item.title }}</a>
       {% else %}
       <b>{{ item.title }}</b>
       {% endif %}
