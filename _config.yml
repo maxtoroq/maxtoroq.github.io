@@ -10,6 +10,8 @@ sass:
 plugins:
    - jemoji
 
+include: [DbExtensions/docs/api/_icons/]
+
 defaults:
    -
       scope:
@@ -87,6 +89,3 @@ defaults:
          element_ref: true
          left_nav: true
          edit_link: true
-
-include:
-   - DbExtensions/docs/api/_icons/
