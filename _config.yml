@@ -10,7 +10,7 @@ sass:
 plugins:
    - jemoji
 
-include: [DbExtensions/docs/api/**/_*.md]
+include: [DbExtensions/docs/api/DbExtensions/Database/_ctor_1.md]
 
 defaults:
    -
