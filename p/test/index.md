@@ -3,6 +3,8 @@ title: "
 dfd
 "
 ---
+{{ page.url }}
+
 {% comment %}
     This is a block comment in Liquid
 {% endcomment %}
