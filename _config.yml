@@ -2,7 +2,7 @@ title: maxtoroq
 author: Max Toro Q.
 url: https://maxtoroq.github.io
 timezone: America/Santiago
-permalink: /:year/:month/:title.html
+permalink: /:year/:month/:title:output_ext
 
 sass:
   style: compressed
