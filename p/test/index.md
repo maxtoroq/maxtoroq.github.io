@@ -22,7 +22,7 @@ dfd
 
 ```csharp
 namespace Foo {
-   <mark>class Bar {</mark>
+   {% raw %}<mark>{% endraw %}class Bar {{% raw %}</mark>{% endraw %}
    }
 }
 ```
