@@ -20,6 +20,13 @@ dfd
 {% endraw %}
 ```
 
+```csharp
+namespace Foo {
+   <mark>class Bar {</mark>
+   }
+}
+```
+
 <div markdown="1">
 
 **dsfds**
