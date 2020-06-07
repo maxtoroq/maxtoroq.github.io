@@ -89,4 +89,4 @@ defaults:
          edit_link: true
 
 include:
-   - DbExtensions/docs/api/_icons
+   - DbExtensions/docs/api/_icons/
