@@ -5,7 +5,7 @@ timezone: America/Santiago
 permalink: /:year/:month/:title:output_ext
 
 include:
-   - p/test/_incl.md
+   - p/**/_*.*
 
 sass:
   style: compressed
