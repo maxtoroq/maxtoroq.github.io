@@ -1,7 +1,7 @@
 
 @media (max-width: 767px) {
    body.docs {
-      #_docs_toc {
+      nav.section-toc {
          display: none;
       }
    }
@@ -23,15 +23,16 @@
          max-width: 1400px;
       }
 
-      #_docs {
+      > div.container {
          display: flex;
 
          > * {
             padding-top: .8rem;
          }
 
-         > #_docs_toc {
-            width: 250px;
+         > nav.section-toc {
+            min-width: 200px;
+            max-width: 250px;
             font-size: calc(1rem - 1px);
             line-height: 1.8;
 
@@ -106,7 +107,7 @@
             flex-direction: row-reverse;
             justify-content: flex-end;
 
-            > .toc {
+            > nav.toc {
                position: static;
                width: auto;
                min-width: 200px;
