@@ -48,6 +48,7 @@ h1 {
 }
 
 h2 {
+   margin-top: 1.5rem;
    margin-bottom: 0.5rem;
 }
 
@@ -312,7 +313,7 @@ nav.toc {
       top: 8rem;
       width: calc(((100% - 790px) / 2) - 2rem);
       border-left: 1px solid rgba(0, 0, 0, 0.1);
-      font-size: .8em;
+      font-size: .85em;
       word-break: break-word;
 
       > div {
