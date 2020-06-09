@@ -162,6 +162,11 @@ figure.code {
    margin: 0;
 }
 
+.highlight mark {
+   display: inline-block;
+   background-color: rgba(227, 224, 44, .35);
+}
+
 pre {
    
    font-size: calc(1em - 1px);
