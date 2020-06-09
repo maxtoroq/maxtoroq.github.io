@@ -4,8 +4,7 @@ url: https://maxtoroq.github.io
 timezone: America/Santiago
 permalink: /:year/:month/:title:output_ext
 
-include:
-   - p/**/_*.*
+include: ["p/test/_*.md"]
 
 sass:
   style: compressed
