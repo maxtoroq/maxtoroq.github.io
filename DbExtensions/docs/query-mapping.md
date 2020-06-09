@@ -36,6 +36,8 @@ Complex properties
 ------------------
 Given the types:
 
+<figure markdown="1" data-highlight-lines="5 6">
+
 ```csharp
 public class Product {
 
@@ -58,7 +60,11 @@ public class Supplier {
 }
 ```
 
+</figure>
+
 You can use the following query to return Product objects that include Category and Supplier:
+
+<figure markdown="1" data-highlight-lines="3 4">
 
 ```csharp
 var query = SQL
@@ -72,7 +78,11 @@ var query = SQL
 return db.Map<Product>(query);
 ```
 
+</figure>
+
 **Use the `$` character in column aliases to specify a path into a complex property**. There's no depth limit, e.g.:
+
+<figure markdown="1" data-highlight-lines="4">
 
 ```csharp
 var query = SQL
@@ -85,6 +95,8 @@ var query = SQL
 
 return db.Map<EmployeeTerritory>(query);
 ```
+
+</figure>
 
 <div class="note">If all columns related to a complex property are null, the property is set to null.</div>
 
