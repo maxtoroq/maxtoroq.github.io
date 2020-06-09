@@ -26,6 +26,16 @@ body > header {
          vertical-align: middle;
          margin-left: 0;
       }
+
+      &.github, &.donate {
+         float: right;
+         //margin-top: .5em;
+         border-bottom: none;
+      }
+      
+      &.github img {
+         height: 22px;
+      }
    }
 }
 
