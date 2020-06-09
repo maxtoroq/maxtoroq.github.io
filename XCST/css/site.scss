@@ -18,6 +18,16 @@ body > header {
    nav a {
       color: gray;
       margin-right: 1em;
+
+      &.github, &.donate {
+         float: right;
+         margin-top: .5em;
+         border-bottom: none;
+      }
+      
+      &.github img {
+         height: 22px;
+      }
    }
 }
 
