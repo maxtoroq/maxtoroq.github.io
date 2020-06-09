@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-   var pres = document.querySelectorAll('[data-highlight-lines]  code');
-   pres.forEach(function(el) {
-      var lines = el.innerHTML.split('\n');
-      var nums = el.parentNode.getAttribute('data-highlight-lines')
+   var figs = document.querySelectorAll('[data-highlight-lines]');
+   figs.forEach(function(el) {
+      var code = el.querySelector('code');
+      var lines = code.innerHTML.split('\n');
+      var nums = el.getAttribute('data-highlight-lines')
          .split(' ')
          .map(function(n) { return Number.parseInt(n); });
 
@@ -17,6 +18,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
          }
       }
 
-      el.innerHTML = hlLines.join('\n');
+      code.innerHTML = hlLines.join('\n');
    });
 });
