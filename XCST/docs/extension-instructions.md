@@ -3,6 +3,8 @@ title: Extension Instructions
 ---
 An **extension instruction** is an element, within a sequence constructor, in a namespace designated as an extension namespace. To designate a namespace as an extension namespace use the `[c:]extension-element-prefixes` [standard attribute](standard-attributes.html), e.g.:
 
+<figure class="code" data-highlight-lines="5" markdown="1">
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <c:module version='1.0' language='C#'
@@ -12,6 +14,8 @@ An **extension instruction** is an element, within a sequence constructor, in a 
    ...
 </c:module>
 ```
+
+</figure>
 
 If you forget to designate a namespace as an extension namespace then the elements will be treated as literal result elements.
 
