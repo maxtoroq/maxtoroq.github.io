@@ -4,7 +4,7 @@ feed: "/feed.xml"
 ---
 <a href="{{ page.feed }}">feed</a>
 
-{% for post in site.posts reverse %}
+{% for post in site.posts | reverse %}
    {% capture date %}{{ post.date }}{% endcapture %}
    {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
    {% unless year == this_year %}
