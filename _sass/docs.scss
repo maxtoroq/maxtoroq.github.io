@@ -63,7 +63,10 @@
 
             a {
                color: rgba(0, 0, 0, .7);
-               border-bottom-color: rgba(128, 56, 101, 0.3);
+
+               &:not(:hover):not(:focus) {
+                  border-bottom-color: rgba(128, 56, 101, .3);
+               }
 
                &.active {
                   color: purple;
