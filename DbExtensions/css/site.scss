@@ -46,7 +46,7 @@ body > header {
          text-indent: -999em;
          vertical-align: middle;
          margin-left: 0;
-         filter: invert() hue-rotate(186grad);
+         filter: invert(1) hue-rotate(186grad);
       }
 
       &.github, &.donate {
@@ -57,7 +57,7 @@ body > header {
       
       &.github img {
          height: 22px;
-         filter: invert();
+         filter: invert(1);
       }
    }
 }
