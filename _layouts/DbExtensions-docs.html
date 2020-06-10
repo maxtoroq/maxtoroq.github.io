@@ -13,9 +13,11 @@ layout: DbExtensions-base
    </nav>
    <main>
       <article>
+         {% unless page.omit_h1 %}
          <header>
             <h1>{{ page.title }}</h1>
          </header>
+         {% endunless %}
          <div itemprop="articleBody">
             <div class="content">
                {{ content }}
