@@ -11,7 +11,7 @@ body > footer {
    background-color: #2952a3;
    color: whitesmoke;
 
-   a {
+   a, a:hover, a:focus {
       //color: #404075;
       color: inherit;
    }
