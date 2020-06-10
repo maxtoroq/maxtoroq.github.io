@@ -7,12 +7,24 @@ $logo-height: 42px;
 
 body > header,
 body > footer {
-   background-color: aliceblue;
+   //background-color: aliceblue;
+   background-color: #2952a3;
+   color: whitesmoke;
+
+   a {
+      //color: #404075;
+      color: inherit;
+      border-bottom-color: rgba(255, 255, 255, 0.3);
+
+      &:hover, &:focus {
+         border-bottom-color: #fff;
+      }
+   }
 }
 
 body > header {
    
-   border-bottom: 1px solid #e0e1ef;
+   //border-bottom: 1px solid #e0e1ef;
    
    .container {
       padding-top: .5em;
@@ -21,7 +33,6 @@ body > header {
 
    nav a {
 
-      color: #404075;
       margin-left: 1em;
       
       &:first-child {
@@ -35,6 +46,7 @@ body > header {
          text-indent: -999em;
          vertical-align: middle;
          margin-left: 0;
+         filter: invert() hue-rotate(186grad);
       }
 
       &.github, &.donate {
@@ -45,12 +57,13 @@ body > header {
       
       &.github img {
          height: 22px;
+         filter: invert();
       }
    }
 }
 
 body > footer {
-   border-top: 1px solid #e0e1ef;
+   //border-top: 1px solid #e0e1ef;
 }
 
 @media (max-width: 767px) {
