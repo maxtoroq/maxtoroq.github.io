@@ -14,11 +14,6 @@ body > footer {
    a {
       //color: #404075;
       color: inherit;
-      border-bottom-color: rgba(255, 255, 255, 0.3);
-
-      &:hover, &:focus {
-         border-bottom-color: #fff;
-      }
    }
 }
 
@@ -87,6 +82,17 @@ body > footer {
 
    body {
       margin-bottom: $footer-height;
+   }
+
+   body > header,
+   body > footer {
+      a {
+         border-bottom-color: rgba(255, 255, 255, 0.3);
+
+         &:hover, &:focus {
+            border-bottom-color: #fff;
+         }
+      }
    }
    
    body > footer {
