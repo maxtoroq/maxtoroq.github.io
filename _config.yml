@@ -4,15 +4,11 @@ url: https://maxtoroq.github.io
 timezone: America/Santiago
 permalink: /:year/:month/:title:output_ext
 
-include: ["_incl.md"]
-
 sass:
   style: compressed
 
 plugins:
    - jemoji
-
-include: [DbExtensions/docs/api/DbExtensions/Database/_ctor_1.md]
 
 defaults:
    -
@@ -91,3 +87,12 @@ defaults:
          element_ref: true
          left_nav: true
          edit_link: true
+
+include:
+   # DbExtensions
+   - _ctor.md
+   - _ctor_?.md
+   - _.md
+   - _ForEach_*.md
+   - _If.md
+   - _OR_*.md
