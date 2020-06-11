@@ -43,8 +43,8 @@ The default for ThisKey and OtherKey, when not specified, is the type's primary 
 
 For multi-column keys use a comma-separated list.
 
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/TableAttribute/README.md
-[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/ColumnAttribute/README.md
-[3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/AssociationAttribute/README.md
+[1]: api/DbExtensions/TableAttribute/README.md
+[2]: api/DbExtensions/ColumnAttribute/README.md
+[3]: api/DbExtensions/AssociationAttribute/README.md
 [4]: https://msdn.microsoft.com/en-us/library/9eekhta0
 [5]: https://msdn.microsoft.com/en-us/library/ms132397
