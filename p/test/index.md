@@ -34,6 +34,11 @@ namespace Foo {
 {% if arr2 == arr3 %}arr2 == arr3{% endif %}
 
 {{ page.url | slice: -1 }}
+{% assign yes = 1 == 1 %}
+{{ yes }}
+{% if yes %}yes{% endif %}
+
+
 <div markdown="1">
 
 **dsfds**
