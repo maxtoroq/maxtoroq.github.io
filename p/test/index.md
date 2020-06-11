@@ -31,7 +31,7 @@ namespace Foo {
 {% assign arr3 = "b,a" | split: ',' %}
 {% if arr1 == arr2 %}arr1 == arr2{% endif %}
 {% if arr2 == arr1 %}arr2 == arr1{% endif %}
-{% if arr2 == arr1 %}arr2 == arr3{% endif %}
+{% if arr2 == arr3 %}arr2 == arr3{% endif %}
 
 <div markdown="1">
 
