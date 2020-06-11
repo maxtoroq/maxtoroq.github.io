@@ -132,5 +132,5 @@ See Also
 [41]: Where.md
 [42]: ../SqlSet/ResultType.md
 [43]: http://maxtoroq.github.io/DbExtensions/docs/SqlSet.html
-[Public method]: ../../_icons/pubmethod.gif "Public method"
-[Public property]: ../../_icons/pubproperty.gif "Public property"
+[Public method]: ../../icons/pubmethod.gif "Public method"
+[Public property]: ../../icons/pubproperty.gif "Public property"
