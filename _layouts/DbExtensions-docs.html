@@ -22,10 +22,10 @@ layout: DbExtensions-base
                {% assign crumbs = url_parts.size | minus: offset %}
                {% if crumbs > 1 %}
                <nav class="breadcrumbs">
-                  {% for i in (offset..crumbs) %}
+                  {% for i in (3..crumbs) %}
                      {% assign item = url_parts[i] | split: '/' %}
                      {% assign path_parts = path_parts | concat: item %}
-                  <a href="{{ page.base_url }}{{ path_parts | join: "/" }}/">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
+                  <a href="{{ page.base_url }}{{ path_parts | join: '/' }}/">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
                   {% endfor %}
                   <span>{{ url_parts | last | split: '.' | first }}</span>
                </nav>
