@@ -13,7 +13,6 @@ layout: DbExtensions-base
    </nav>
    <main>
       <article>
-         {% unless page.omit_h1 %}
          <header>
             {% if cp_parts[1] == 'docs' and cp_parts[2] == 'api' %}
                {% assign url_parts = page.url | split: '/' %}
@@ -32,9 +31,10 @@ layout: DbExtensions-base
                </nav>
                {% endif %}
             {% endif %}
+            {% unless page.omit_h1 %}
             <h1>{{ page.title }}</h1>
+            {% endunless %}
          </header>
-         {% endunless %}
          <div itemprop="articleBody">
             <div class="content">
                {{ content }}
