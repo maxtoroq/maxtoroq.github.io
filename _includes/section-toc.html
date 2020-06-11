@@ -7,17 +7,14 @@
          {% else %}
             {% assign abs_url = include.base_url | append: item.url %}
          {% endif %}
+         {% assign current_url = page.url %}
          {% assign last_char = item.url | slice: -1 %}
          {% if item.toc %}
-            {% assign active = page.url == abs_url %}
          {% elsif last_char == '/' %}
             {% assign base_size = abs_url | size %}
-            {% assign page_base = page.url | slice: 0, base_size %}
-            {% assign active = page_base == abs_url %}
-         {% else %}
-            {% assign active = page.url == abs_url %}
+            {% assign current_url = page.url | slice: 0, base_size %}
          {% endif %}
-      <a href="{{ abs_url }}"{% if active %} class="active"{% endif %}>{{ item.title }}</a>
+      <a href="{{ abs_url }}"{% if current_url == abs_url %} class="active"{% endif %}>{{ item.title }}</a>
       {% else %}
       <b>{{ item.title }}</b>
       {% endif %}

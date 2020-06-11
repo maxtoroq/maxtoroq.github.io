@@ -18,7 +18,7 @@ docs:
   - title: Reference
     toc:
       - title: API Reference
-        url: https://github.com/maxtoroq/DbExtensions/blob/master/docs/api/DbExtensions/README.md#readme
+        url: api/DbExtensions/
       - title: Change History
         url: changes.html
   - title: Older Versions
