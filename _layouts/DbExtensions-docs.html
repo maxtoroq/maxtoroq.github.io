@@ -18,10 +18,12 @@ layout: DbExtensions-base
             {% if cp_parts[1] == 'docs' and cp_parts[2] == 'api' %}
                {% assign url_parts = page.url | split: '/' %}
                {% assign path_parts = '' | split: '' %}
-               {% assign crumbs = url_parts.size | minus: 4 %}
+               {% assign offset = 4 %}
+               {% assign size = url_parts.size %}
+               {% assign crumbs = size | minus: offset %}
                {% if crumbs > 1 %}
                <nav class="breadcrumbs">
-                  {% for i in (4..url_parts.size) %}
+                  {% for i in (offset..size) %}
                      {% assign item = url_parts[i] | split: '/' %}
                      {% assign path_parts = path_parts | concat: item %}
                   <a href="{{ page.base_url }}{{ path_parts | join: '/' }}/">{{ url_parts[i] | capitalize }}</a>&nbsp; /&nbsp;
