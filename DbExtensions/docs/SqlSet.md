@@ -368,16 +368,16 @@ Conclusions
 -----------
 Having the power to write your own SQL is great. Not having to write the same simple queries over and over is even better. SqlSet helps you compose and reuse SQL in a database independent way. While SqlBuilder is meant for private use, SqlSet can be shared, allowing the caller to further refine the query. LINQ lovers should feel right at home with SqlSet.
 
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/README.md
-[2]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/From__1_2.md
-[3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/AsEnumerable.md
-[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/ToArray.md
-[5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/ToList.md
+[1]: api/DbExtensions/SqlSet/README.md
+[2]: api/DbExtensions/Database/From__1_2.md
+[3]: api/DbExtensions/SqlSet/AsEnumerable.md
+[4]: api/DbExtensions/SqlSet/ToArray.md
+[5]: api/DbExtensions/SqlSet/ToList.md
 [6]: SqlBuilder.html
-[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet_1/README.md
-[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Cast__1.md
+[7]: api/DbExtensions/SqlSet_1/README.md
+[8]: api/DbExtensions/SqlSet/Cast__1.md
 [9]: http://msdn.microsoft.com/en-us/library/system.data.idatarecord
 [10]: query-mapping.html
-[11]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlSet/Include.md
-[12]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/Table__1.md
+[11]: api/DbExtensions/SqlSet/Include.md
+[12]: api/DbExtensions/Database/Table__1.md
 [13]: annotations.html

@@ -196,8 +196,10 @@ WHERE CategoryID IN ({0}, {1}, {2})
 
 By using the [SQL.List][9] method you can expand a collection of values into a list of parameters, instead of being treated as a single parameter.
 
-<div class="note">
-In v5, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling <a href="{{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md">SQL.List</a>.
+<div class="note" markdown="1">
+
+In v5, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling [SQL.List][9].
+
 </div>
 
 Extending an existing query
@@ -308,28 +310,27 @@ Entity Framework maps columns to properties based on the column aliases used.
 
 Querying with DbExtensions
 --------------------------
-SqlBuilder is part of the [DbExtensions][18] library, which also supports mapping based on column aliases, see [Query Mapping][19].
+SqlBuilder is part of the DbExtensions library, which also supports mapping based on column aliases, see [Query Mapping][19].
 
 Conclusions
 -----------
 SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A generic query API like LINQ works great for simple queries, but its statically-typed nature tends to become a disadvantage for complex scenarios, and is very difficult to extend. Many ORM products have their own query APIs, but using them means marrying to a particular product and more APIs to learn. To optimize queries you require complete control of the executing SQL. SqlBuilder gives you that control, freeing you from dealing with low-level objects like DbCommand and DbParameter.
 
-[1]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/README.md
+[1]: api/DbExtensions/SqlBuilder/README.md
 [2]: http://msdn.microsoft.com/en-us/library/system.string.format
-[3]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/ToString.md
-[4]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/ParameterValues.md
-[5]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/Database/README.md
-[6]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/_.md
-[7]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/WHERE.md
-[8]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/_If.md
-[9]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SQL/List_1.md
-[10]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/VALUES.md
-[11]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/LIMIT_1.md
+[3]: api/DbExtensions/SqlBuilder/ToString.md
+[4]: api/DbExtensions/SqlBuilder/ParameterValues.md
+[5]: api/DbExtensions/Database/README.md
+[6]: api/DbExtensions/SqlBuilder/_.md
+[7]: api/DbExtensions/SqlBuilder/WHERE.md
+[8]: api/DbExtensions/SqlBuilder/_If.md
+[9]: api/DbExtensions/SQL/List_1.md
+[10]: api/DbExtensions/SqlBuilder/VALUES.md
+[11]: api/DbExtensions/SqlBuilder/LIMIT_1.md
 [12]: http://msdn.microsoft.com/en-us/library/system.text.stringbuilder
-[13]: {{ page.repository_url }}/blob/master/docs/api/DbExtensions/SqlBuilder/Buffer.md
+[13]: api/DbExtensions/SqlBuilder/Buffer.md
 [14]: http://msdn.microsoft.com/en-us/library/system.data.linq.datacontext.executequery
 [15]: http://msdn.microsoft.com/en-us/library/system.data.linq.datacontext.executecommand
 [16]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.sqlquery
 [17]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.executesqlcommand
-[18]: {{ page.base_url }}
 [19]: query-mapping.html
