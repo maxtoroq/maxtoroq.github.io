@@ -33,7 +33,7 @@ namespace Foo {
 {% if arr2 == arr1 %}arr2 == arr1{% endif %}
 {% if arr2 == arr3 %}arr2 == arr3{% endif %}
 
-{{ page.url | slice: page.url.size - 1 }}
+{{ page.url | slice: 1 }}
 <div markdown="1">
 
 **dsfds**
