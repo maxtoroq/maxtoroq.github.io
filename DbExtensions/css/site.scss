@@ -68,6 +68,12 @@ body > footer {
          display: none;
       }
    }
+
+   article.api {
+      nav.toc {
+         display: none;
+      }
+   }
 }
 
 @media (min-width: 768px) {

@@ -1,9 +1,12 @@
 ---
 layout: DbExtensions-base
 ---
+{% assign cp_parts = page.path | split: '/' %}
+{% if cp_parts[1] == 'docs' and cp_parts[2] == 'api' %}
+   {% assign api_docs = true %}
+{% endif %}
 <div class="container">
    <nav class="section-toc">
-      {% assign cp_parts = page.path | split: '/' %}
       {% if cp_parts.size >= 3 %}
          {% assign section_base = '/' | append: cp_parts[0] | append: '/' | append: cp_parts[1] | append: '/' %}
          {% assign section = cp_parts[1] %}
@@ -12,9 +15,9 @@ layout: DbExtensions-base
       {% endif %}
    </nav>
    <main>
-      <article>
+      <article {% if api_docs %}class="api"{% endif %}>
          <header>
-            {% if cp_parts[1] == 'docs' and cp_parts[2] == 'api' %}
+            {% if api_docs %}
                {% assign url_parts = page.url | split: '/' %}
                {% assign path_parts = '' | split: '' %}
                {% assign offset = 4 %}
@@ -25,13 +28,13 @@ layout: DbExtensions-base
             <nav class="breadcrumbs">
                   {% for i in (offset..end) %}
                      {% assign path_parts = path_parts | push: url_parts[i] %}
-               <a href="{{ page.documentation_url }}api/{{ path_parts | join: '/' }}/">{{ url_parts[i] }}</a>&nbsp; /&nbsp;
+               <a href="/docs/api/{{ path_parts | join: '/' }}/">{{ url_parts[i] }}</a>&nbsp; /&nbsp;
                   {% endfor %}
                <span>{{ page.title }}</span>
             </nav>
                {% endif %}
             {% endif %}
-            {% unless page.omit_h1 %}
+            {% unless api_docs %}
             <h1>{{ page.title }}</h1>
             {% endunless %}
          </header>
