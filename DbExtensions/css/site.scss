@@ -68,6 +68,9 @@ body > footer {
          display: none;
       }
    }
+}
+
+@media (max-width: 1999px) {
 
    article.api {
       nav.toc {
@@ -116,3 +119,4 @@ body > footer {
       margin: calc(#{$header-height} * -1) 0 0;
    }
 }
+
