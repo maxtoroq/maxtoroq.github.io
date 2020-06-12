@@ -8,7 +8,7 @@ layout: DbExtensions-base
 <div class="container">
    <nav class="section-toc">
       {% if cp_parts.size >= 3 %}
-         {% assign section_base = '/' | append: cp_parts[0] | append: '/' | append: cp_parts[1] | append: '/' %}
+         {% assign section_base = cp_parts | slice: 0,2 | join: '/' | prepend: '/' | append: '/' %}
          {% assign section = cp_parts[1] %}
          {% assign toc = site.data.DbExtensions_toc[section] %}
          {% include section-toc.html toc=toc base_url=section_base %}
