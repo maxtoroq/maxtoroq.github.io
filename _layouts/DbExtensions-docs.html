@@ -19,7 +19,7 @@ layout: DbExtensions-base
                {% assign path_parts = '' | split: '' %}
                {% assign offset = 4 %}
                {% assign size = url_parts.size %}
-               {% assign end = size | minus: 3 %}
+               {% assign end = size | minus: 2 %}
                {% assign crumbs = size | minus: offset %}
                {% if crumbs > 1 %}
             <nav class="breadcrumbs">
