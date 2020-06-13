@@ -169,11 +169,11 @@ figure.code {
    }
 
    [role="tab"] {
-      border-bottom: none;
+      border-bottom: none !important;
       border-color: rgba(125, 123, 0, .05) !important;
 
-      &[aria-selected="true"] {
-         background-color: rgba(125, 123, 0, .05);
+      &[aria-selected="true"], &:hover {
+         background-color: rgba(125, 123, 0, .1);
       }
 
       &:hover:not([aria-selected="true"]) {
