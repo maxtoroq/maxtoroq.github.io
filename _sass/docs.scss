@@ -77,7 +77,7 @@
 
          > main {
             flex: 1 1 0;
-            overflow: auto;
+            min-width: 0; // prevent overflow
             background-color: #fff;
             border: 1px solid #e0e1ef;
          }
