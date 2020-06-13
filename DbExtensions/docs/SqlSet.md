@@ -87,7 +87,8 @@ Product[] topFiveWithLeastStock = products
 
 ...which executes:
 
-<ul id="output1" data-tabs>
+<figure class="code">
+<ul id="output1">
 	<li><a data-tabby-default href="#output1-1">Default</a></li>
 	<li><a href="#output1-2">SQL Server</a></li>
 </ul>
@@ -115,6 +116,7 @@ ORDER BY UnitsInStock
 
 </div>
 <script>new Tabby('#output1');</script>
+</figure>
 
 ...but if we call Take first and then OrderBy:
 
@@ -127,18 +129,14 @@ Product[] firstFiveOrderedByStock = products
 
 ...it executes:
 
-```sql
--- SQL Server
-SELECT *
-FROM (
-   SELECT TOP(@p0) *
-   FROM Products) dbex_set4
-ORDER BY UnitsInStock
-OFFSET 0 ROWS
--- @p0: Input Int32 (Size = 0) [5]
--- [-1] records affected.
+<figure class="code">
+<ul id="output2">
+	<li><a data-tabby-default href="#output2-1">Default</a></li>
+	<li><a href="#output2-2">SQL Server</a></li>
+</ul>
+<div id="output2-1" markdown="1">
 
--- MySQL, SQLite
+```sql
 SELECT *
 FROM (
    SELECT *
@@ -148,6 +146,24 @@ ORDER BY UnitsInStock
 -- @p0: Input Int32 (Size = 0) [5]
 -- [-1] records affected.
 ```
+
+</div>
+<div id="output2-2" markdown="1">
+
+```sql
+SELECT *
+FROM (
+   SELECT TOP(@p0) *
+   FROM Products) dbex_set4
+ORDER BY UnitsInStock
+OFFSET 0 ROWS
+-- @p0: Input Int32 (Size = 0) [5]
+-- [-1] records affected.
+```
+
+</div>
+<script>new Tabby('#output2');</script>
+</figure>
 
 Again, if you know LINQ this shouldn't come as a surprise.
 
@@ -247,23 +263,14 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
 
 ...which executes:
 
-```sql
--- SQL Server
-SELECT *
-FROM (
-   SELECT p.ProductID, p.ProductName, p.CategoryID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName
-   FROM Products p
-   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID) dbex_set6
-WHERE CategoryID = @p0
-ORDER BY ProductID DESC
-OFFSET @p1 ROWS
-FETCH NEXT @p2 ROWS ONLY
--- @p0: Input Int32 (Size = 0) [1]
--- @p1: Input Int32 (Size = 0) [0]
--- @p2: Input Int32 (Size = 0) [20]
--- [-1] records affected.
+<figure class="code">
+<ul id="output3">
+	<li><a data-tabby-default href="#output3-1">Default</a></li>
+	<li><a href="#output3-2">SQL Server</a></li>
+</ul>
+<div id="output3-1" markdown="1">
 
--- MySQL, SQLite
+```sql
 SELECT *
 FROM (
    SELECT p.ProductID, p.ProductName, p.CategoryID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName
@@ -278,6 +285,29 @@ OFFSET @p2
 -- @p2: Input Int32 (Size = 0) [0]
 -- [-1] records affected.
 ```
+
+</div>
+<div id="output3-2" markdown="1">
+
+```sql
+SELECT *
+FROM (
+   SELECT p.ProductID, p.ProductName, p.CategoryID, c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName
+   FROM Products p
+   LEFT JOIN Categories c ON p.CategoryID = c.CategoryID) dbex_set6
+WHERE CategoryID = @p0
+ORDER BY ProductID DESC
+OFFSET @p1 ROWS
+FETCH NEXT @p2 ROWS ONLY
+-- @p0: Input Int32 (Size = 0) [1]
+-- @p1: Input Int32 (Size = 0) [0]
+-- @p2: Input Int32 (Size = 0) [20]
+-- [-1] records affected.
+```
+
+</div>
+<script>new Tabby('#output3');</script>
+</figure>
 
 Include
 -------
@@ -299,25 +329,14 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
 
 ...which executes:
 
-```sql
--- SQL Server
-SELECT *
-FROM (
-   SELECT [dbex_l].*, [dbex_r1].[CategoryID] AS Category$CategoryID, [dbex_r1].[CategoryName] AS Category$CategoryName, [dbex_r1].[Description] AS Category$Description, [dbex_r1].[Picture] AS Category$Picture
-   FROM (
-      SELECT [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]
-      FROM [Products]) [dbex_l]
-   LEFT JOIN [Categories] [dbex_r1] ON ([dbex_l].[CategoryID] = [dbex_r1].[CategoryID])) dbex_set6
-WHERE CategoryID = @p0
-ORDER BY ProductID DESC
-OFFSET @p1 ROWS
-FETCH NEXT @p2 ROWS ONLY
--- @p0: Input Int32 (Size = 0) [1]
--- @p1: Input Int32 (Size = 0) [0]
--- @p2: Input Int32 (Size = 0) [20]
--- [-1] records affected.
+<figure class="code">
+<ul id="output4">
+	<li><a data-tabby-default href="#output4-1">MySQL</a></li>
+	<li><a href="#output4-2">SQL Server</a></li>
+</ul>
+<div id="output4-1" markdown="1">
 
--- MySQL
+```sql
 SELECT *
 FROM (
    SELECT `dbex_l`.*, `dbex_r1`.`CategoryID` AS Category$CategoryID, `dbex_r1`.`CategoryName` AS Category$CategoryName, `dbex_r1`.`Description` AS Category$Description, `dbex_r1`.`Picture` AS Category$Picture
@@ -334,6 +353,33 @@ OFFSET @p2
 -- @p2: Input Int32 (Size = 0) [0]
 -- [-1] records affected.
 ```
+
+</div>
+<div id="output4-2" markdown="1">
+
+```sql
+SELECT *
+FROM (
+   SELECT [dbex_l].*, [dbex_r1].[CategoryID] AS Category$CategoryID, [dbex_r1].[CategoryName] AS Category$CategoryName, [dbex_r1].[Description] AS Category$Description, [dbex_r1].[Picture] AS Category$Picture
+   FROM (
+      SELECT [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]
+      FROM [Products]) [dbex_l]
+   LEFT JOIN [Categories] [dbex_r1] ON ([dbex_l].[CategoryID] = [dbex_r1].[CategoryID])) dbex_set6
+WHERE CategoryID = @p0
+ORDER BY ProductID DESC
+OFFSET @p1 ROWS
+FETCH NEXT @p2 ROWS ONLY
+-- @p0: Input Int32 (Size = 0) [1]
+-- @p1: Input Int32 (Size = 0) [0]
+-- @p2: Input Int32 (Size = 0) [20]
+-- [-1] records affected.
+```
+
+</div>
+<script>new Tabby('#output4');</script>
+</figure>
+
+
 
 Note that I called the [Database.Table][12] method instead of Database.From. Although using Database.From would also work, with Database.Table you don't need to specify the table name. Both Database.Table and Include only work for [annotated types][13].
 
