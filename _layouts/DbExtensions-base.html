@@ -1,25 +1,25 @@
 <!DOCTYPE html>
+{% assign baseurl = page.path | split: '/' | first | prepend: '/' %}
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
    <title>{{ page.title }}{% unless page.omit_site_title %} — DbExtensions{% endunless %}</title>
-   <link href="{{ page.base_url }}css/site.css" rel="stylesheet"/>
-   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
-   <link rel="apple-touch-icon" href="{{ page.base_url }}apple-touch-icon.png"/>
+   <link href="{{ baseurl }}/css/site.css" rel="stylesheet"/>
+   <link rel="shortcut icon" href="{{ baseurl }}/favicon.ico"/>
+   <link rel="apple-touch-icon" href="{{ baseurl }}/apple-touch-icon.png"/>
    {% if page.toc == nil or page.toc %}
    {% include toc.html %}
    {% endif %}
    {% include font-sans.html %}
-   <script src="/js/hl-line.js"></script>
    {% include analytics.html %}
 </head>
 <body class="docs">
    <header>
       <nav class="container">
-         <a href="{{ page.base_url }}" title="DbExtensions">home</a>
-         <a href="{{ page.base_url }}docs/">documentation</a>
+         <a href="{{ baseurl }}/" title="DbExtensions">home</a>
+         <a href="{{ baseurl }}/docs/">documentation</a>
          <a href="{{ page.support_url }}">support</a>
-         <a href="{{ page.base_url }}about.html">about</a>
+         <a href="{{ baseurl }}/about.html">about</a>
          <a class="donate" href="/p/donate.html">
             <img src="/img/btn_donate_SM.gif" alt="Donate"/>
          </a>
@@ -32,5 +32,7 @@
    <footer>
       <div class="container">&copy; {{ site.author }}</div>
    </footer>
+   <script src="/js/hl-line.js"></script>
+   <script src="/lib/tabby-12.0.3/dist/js/tabby.min.js"></script>
 </body>
 </html>

@@ -30,9 +30,7 @@ defaults:
       values:
          #layout: DbExtensions
          layout: DbExtensions-docs
-         base_url: /DbExtensions/
          repository_url: https://github.com/maxtoroq/DbExtensions
-         documentation_url: /DbExtensions/docs/
          support_url: https://github.com/maxtoroq/DbExtensions/issues?q=is%3Aissue+label%3Aquestion
    -
       scope:
