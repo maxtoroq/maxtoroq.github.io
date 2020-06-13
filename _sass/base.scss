@@ -276,9 +276,8 @@ nav.toc {
    body > header,
    body > footer,
    .breadcrumbs {
-      a {
+      a:not(:hover):not(:focus) {
          border-bottom-color: rgba(128, 56, 101, 0.3);
-         //background-image: linear-gradient(to bottom, rgba(128, 56, 101, 0.3) 50%,rgba(0,0,0,0) 50%);
       }
    }
    
