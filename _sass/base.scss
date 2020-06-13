@@ -179,6 +179,7 @@ figure.code {
 
       &:not([aria-selected="true"]):hover {
          background-color: rgba(125, 123, 0, .1);
+         border-color: transparent;
       }
    }
 }
