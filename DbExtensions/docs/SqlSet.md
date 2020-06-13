@@ -87,15 +87,13 @@ Product[] topFiveWithLeastStock = products
 
 ...which executes:
 
-```sql
--- SQL Server
-SELECT TOP(@p0) * 
-FROM Products
-ORDER BY UnitsInStock
--- @p0: Input Int32 (Size = 0) [5]
--- [-1] records affected.
+<ul id="output1" data-tabs>
+	<li><a data-tabby-default href="#output1-1">Default</a></li>
+	<li><a href="#output1-2">SQL Server</a></li>
+</ul>
+<div id="output1-1" markdown="1">
 
--- MySQL, SQLite
+```sql
 SELECT *
 FROM Products
 ORDER BY UnitsInStock
@@ -103,6 +101,20 @@ LIMIT @p0
 -- @p0: Input Int32 (Size = 0) [5]
 -- [-1] records affected.
 ```
+
+</div>
+<div id="output1-2" markdown="1">
+
+```sql
+SELECT TOP(@p0) * 
+FROM Products
+ORDER BY UnitsInStock
+-- @p0: Input Int32 (Size = 0) [5]
+-- [-1] records affected.
+```
+
+</div>
+<script>new Tabby('#output1');</script>
 
 ...but if we call Take first and then OrderBy:
 
