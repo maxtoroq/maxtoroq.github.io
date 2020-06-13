@@ -274,15 +274,18 @@ nav.toc {
    }
    
    body > header,
-   body > footer,
-   .breadcrumbs {
-      a:not(:hover):not(:focus) {
+   body > footer {
+      a {
          border-bottom-color: rgba(128, 56, 101, 0.3);
       }
    }
    
    .breadcrumbs a {
       color: gray;
+
+      &:not(:hover):not(:focus) {
+         border-bottom-color: rgba(128, 56, 101, 0.3);
+      }
    }
 }
 
