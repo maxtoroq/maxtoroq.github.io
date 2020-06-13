@@ -171,10 +171,14 @@ figure.code {
    [role="tab"] {
       border-bottom: none !important;
       background-color: transparent;
+      margin-bottom: 0;
 
-      &[aria-selected="true"], &:hover {
-         border-color: rgba(125, 123, 0, .1);
+      &[aria-selected="true"] {
          background-color: rgba(125, 123, 0, .05);
+      }
+
+      &:not([aria-selected="true"]):hover {
+         background-color: rgba(125, 123, 0, .1);
       }
    }
 }
