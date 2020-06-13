@@ -78,7 +78,7 @@ ul:not([role="tablist"]) {
    }
 }
 
-p, table, div.note {
+p, table, div.note, pre {
    margin-top: 0;
    margin-bottom: 1rem;
 }
@@ -164,6 +164,21 @@ figure.code {
 
    [role="tablist"] {
       font-size: calc(1rem - 2px);
+      margin: 0 .5em;
+      border-bottom: none;
+   }
+
+   [role="tab"] {
+      border-bottom: none;
+      border-color: rgba(125, 123, 0, .05) !important;
+
+      &[aria-selected="true"] {
+         background-color: rgba(125, 123, 0, .05);
+      }
+
+      &:hover:not([aria-selected="true"]) {
+         background-color: transparent;
+      }
    }
 }
 
@@ -319,7 +334,7 @@ nav.toc {
       top: 8rem;
       width: calc(((100% - 790px) / 2) - 2rem);
       border-left: 1px solid rgba(0, 0, 0, 0.1);
-      font-size: .85em;
+      font-size: calc(1rem - 2px);
       word-break: break-word;
 
       > div {
