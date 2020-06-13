@@ -19,7 +19,7 @@ docs:
     toc:
       - title: API Reference
         url: api/DbExtensions/
-      - title: Change History
+      - title: Changelog
         url: changes.html
   - title: Older Versions
     toc:

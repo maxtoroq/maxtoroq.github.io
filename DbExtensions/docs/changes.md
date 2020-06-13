@@ -1,5 +1,5 @@
 ---
-title: Change History
+title: Changelog
 ---
 
 ## v6.x
