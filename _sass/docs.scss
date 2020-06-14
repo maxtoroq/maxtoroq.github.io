@@ -1,4 +1,6 @@
 
+$nav-sticky-top: 70px;
+
 @media (max-width: 767px) {
    body.docs {
       nav.section-toc {
@@ -8,8 +10,6 @@
 }
 
 @media (min-width: 768px) {
-
-   $nav-sticky-top: 70px;
 
    body > header {
       position: -webkit-sticky;
