@@ -11,14 +11,12 @@ docs:
         url: query-mapping.html
       - title: Annotations
         url: annotations.html
-  - title: Migrating
-    toc:
-      - title: To v6
-        url: migrating/to-v6.html
   - title: Reference
     toc:
       - title: API Reference
         url: api/DbExtensions/
+      - title: Migrating to v6
+        url: migrating/to-v6.html
       - title: Changelog
         url: changes.html
   - title: Older Versions
