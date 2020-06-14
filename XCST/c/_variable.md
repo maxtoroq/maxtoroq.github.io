@@ -30,14 +30,26 @@ When the `as` attribute is omitted, XCST tries to infer the type of the variable
 content | type
 ------- | ----
 Text node | [String]
+Literal result element | [XElement]
 [`c:array`](array.html) | [Object]
 [`c:delegate`](delegate.html) | Xcst.XcstDelegate&lt;TItem> (see [Type of a Delegate](delegate.html#type-of-a-delegate) for more info)
 [`c:document`](document.html) | [XDocument]
+[`c:element`](element.html) | [XElement]
 [`c:map`](map.html) | [Object]
 [`c:object`](object.html) | Inferred by the expression
 [`c:serialize`](serialize.html) | [String]
 [`c:text`](text.html) | [String]
 [`c:value-of`](value-of.html) | [String]
+
+When using multiple elements of the same type, the inferred type is an array of that type. For example:
+
+```xml
+<c:variable name='a'>
+   <foo/>
+   <c:element name='bar'/>
+</c:variable>
+<c:assert test='a is XElement[]'/>
+```
 
 <div class="note" markdown="1">
 
@@ -57,3 +69,4 @@ It is a compilation error if the `value` attribute is present when the content o
 [Object]: {{ page.bcl_url }}system.object
 [String]: {{ page.bcl_url }}system.string
 [XDocument]: {{ page.bcl_url }}system.xml.linq.xdocument
+[XElement]: {{ page.bcl_url }}system.xml.linq.xelement

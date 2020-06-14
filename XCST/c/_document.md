@@ -19,6 +19,8 @@
 
 </div>
 
+You can also work with temporary trees rooted at element nodes, using literal result elements or [`c:element`](element.html).
+
 ## Error Conditions
 
 It is a compilation error if the required item type of the containing sequence constructor is not one of, or a super class of, [Object][System.Object], [XDocument][System.Xml.Linq.XDocument] or [XmlDocument][System.Xml.XmlDocument].
