@@ -25,7 +25,7 @@
 <c:assert test='"baz" == foo.Value'/>
 ```
 
-You can also create an [XElement] using literal result elements.
+You can also create an [XElement] using a literal result element.
 
 </div>
 

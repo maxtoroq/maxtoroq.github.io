@@ -41,15 +41,7 @@ Literal result element | [XElement]
 [`c:text`](text.html) | [String]
 [`c:value-of`](value-of.html) | [String]
 
-When using multiple elements of the same type, the inferred type is an array of that type. For example:
-
-```xml
-<c:variable name='a'>
-   <foo/>
-   <c:element name='bar'/>
-</c:variable>
-<c:assert test='a is XElement[]'/>
-```
+When using multiple elements of the same type, the inferred type is an array of that type.
 
 <div class="note" markdown="1">
 
