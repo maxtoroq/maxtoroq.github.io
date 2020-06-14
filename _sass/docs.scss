@@ -48,6 +48,12 @@ $nav-sticky-top: 70px;
                      margin-top: .5em;
                      font-weight: 400;
                   }
+
+                  &:first-child {
+                     > b {
+                        margin-top: 0;
+                     }
+                  }
                }
             
                li:before {
