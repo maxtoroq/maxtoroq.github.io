@@ -164,22 +164,28 @@ figure.code {
 
    [role="tablist"] {
       font-size: calc(1rem - 2px);
-      margin: 0 .5em;
+      padding: .3em .5em 0;
       border-bottom: none;
+      background-color: rgba(125,123,0,0.1);
+      border-radius: .5em;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
    }
 
    [role="tab"] {
-      border-bottom: none !important;
-      background-color: transparent;
+      background-color: transparent !important;
+      border: none !important;
       margin-bottom: 0;
 
       &[aria-selected="true"] {
-         background-color: rgba(125, 123, 0, .05);
+         border-bottom: 2px solid green !important;
       }
+   }
 
-      &:not([aria-selected="true"]):hover {
-         background-color: rgba(125, 123, 0, .1);
-         border-color: transparent;
+   [role="tabpanel"] {
+      pre.highlight {
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
       }
    }
 }
