@@ -15,7 +15,7 @@ Let's take a look at the first example:
 var query = new SqlBuilder()
    .SELECT("*")
    .FROM("Products")
-   .WHERE("Name LIKE {0}", "A%")
+   .WHERE("Name LIKE {0}", "A%");
 ```
 
 What makes SqlBuilder very easy to learn/use is that all methods have the same signature:
