@@ -14,7 +14,6 @@ ul[role="tree"] {
  }
  
  ul[role="tree"] a {
-   text-decoration: underline;
    border-color: transparent;
  }
  
@@ -33,13 +32,13 @@ ul[role="tree"] {
  }
  
  [role="treeitem"][aria-expanded="false"] > span::before {
-   content: url(../images/right-arrow-brown.png);
+   content: "►";
    position: relative;
    left: -0.25em;
  }
  
  [role="treeitem"][aria-expanded="true"] > span::before {
-   content: url(../images/down-arrow-brown.png);
+   content: "▼";
    position: relative;
    left: -0.25em;
  }
