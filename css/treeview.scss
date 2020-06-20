@@ -32,15 +32,31 @@ ul[role="tree"] {
  }
  
  [role="treeitem"][aria-expanded="false"] > span::before {
-   content: "►";
+   content: "";
    position: relative;
-   left: -0.25em;
+
+   display: inline-block;
+   background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M2 6.99l-.505-.504 2.99-2.99-2.99-2.99L2 0l3.495 3.495z'/%3E%3C/svg%3E);
+   width: 1em;
+   height: 1em;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   background-size: 50%;
+   background-position: center;
  }
  
  [role="treeitem"][aria-expanded="true"] > span::before {
-   content: "▼";
+   content: "";
    position: relative;
-   left: -0.25em;
+   
+   display: inline-block;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M3.495 5.495L0 2l.505-.505 2.99 2.99 2.99-2.99L6.99 2z'/%3E%3C/svg%3E");
+   width: 1em;
+   height: 1em;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   background-size: 50%;
+   background-position: center;
  }
  
  [role="treeitem"],
