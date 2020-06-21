@@ -1,159 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="treeview.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       font-size: calc(1rem - 1px);
-      padding-left: 300px;
+      padding-left: 30%;
     }
   </style>
-  <style>
-    ul[role="tree"] {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+  <script src="/js/tree.js"></script>
+  <script>
+    window.addEventListener('load', function () {
 
-    ul[role="tree"] li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+      var trees = document.querySelectorAll('[role="tree"]');
 
-    ul[role="tree"] a {
-      border-color: transparent;
-    }
-
-    [role="treeitem"] ul {
-      margin: 0;
-      padding: 0;
-      margin-left: -2px;
-      margin-left: .8em;
-    }
-
-    [role="treeitem"][aria-expanded="false"]>ul {
-      display: none;
-    }
-
-    [role="treeitem"][aria-expanded="true"]>ul {
-      display: block;
-    }
-
-    [role="treeitem"][aria-expanded]>span::before {
-      content: "";
-      position: relative;
-
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      background-repeat: no-repeat;
-      vertical-align: middle;
-      background-size: 50%;
-      background-position: center;
-    }
-
-    [role="treeitem"][aria-expanded="false"]>span::before {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M2 6.99l-.505-.504 2.99-2.99-2.99-2.99L2 0l3.495 3.495z'/%3E%3C/svg%3E");
-    }
-
-    [role="treeitem"][aria-expanded="true"]>span::before {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M3.495 5.495L0 2l.505-.505 2.99 2.99 2.99-2.99L6.99 2z'/%3E%3C/svg%3E");
-    }
-
-    [role="treeitem"],
-    [role="treeitem"] span {
-      width: 16em;
-      margin: 0;
-      padding: 0.125em;
-      border: 2px transparent solid;
-      display: block;
-      cursor: pointer;
-    }
-
-    a[role="treeitem"] {
-      margin-left: -1em;
-      padding-left: 1em;
-    }
-
-    [role="treeitem"] span {
-      margin-left: calc(-1em - 2px);
-    }
-
-    /* disable default keyboard focus styling for treeitems
-  Keyboard focus is styled with the following CSS */
-    [role="treeitem"]:focus {
-      outline: 0;
-    }
-
-    [role="treeitem"].focus,
-    [role="treeitem"] span.focus {
-      border-color: black;
-      background-color: #eee;
-    }
-
-    [role="treeitem"].hover,
-    [role="treeitem"] span.hover {
-      background-color: #ddd;
-    }
-  </style>
+      for (var i = 0; i < trees.length; i++) {
+        var t = new TreeLinks(trees[i]);
+        t.init();
+      }
+    });
+  </script>
 </head>
-
 <body>
   <h3 id="tree1">Foods</h3>
   <ul role="tree" aria-labelledby="tree1">
     <li role="none">
-      <a role="treeitem" href="#">Foo</a>
+      <a role="treeitem" href="javascript:void(0)">Foo</a>
     </li>
     <li role="none">
-      <a role="treeitem" href="#">Bar</a>
+      <a role="treeitem" href="javascript:void(0)">Bar</a>
     </li>
     <li role="treeitem" aria-expanded="true">
       <span>Fruits</span>
       <ul>
         <li role="none">
-          <a role="treeitem" href="#">Oranges</a>
+          <a role="treeitem" href="javascript:void(0)">Oranges</a>
         </li>
         <li role="none">
-          <a role="treeitem" href="#">Pineapple</a>
+          <a role="treeitem" href="javascript:void(0)">Pineapple</a>
         </li>
         <li role="treeitem" aria-expanded="false">
           <span>Apples</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Macintosh</a>
+              <a role="treeitem" href="javascript:void(0)">Macintosh</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Granny Smith</a>
+              <a role="treeitem" href="javascript:void(0)">Granny Smith</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Fuji</a>
+              <a role="treeitem" href="javascript:void(0)">Fuji</a>
             </li>
           </ul>
         </li>
         <li role="none">
-          <a role="treeitem" href="#">Bananas</a>
+          <a role="treeitem" href="javascript:void(0)">Bananas</a>
         </li>
         <li role="treeitem" aria-expanded="false">
           <span>Pears</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Anjou</a>
+              <a role="treeitem" href="javascript:void(0)">Anjou</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Bartlett</a>
+              <a role="treeitem" href="javascript:void(0)">Bartlett</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Bosc</a>
+              <a role="treeitem" href="javascript:void(0)">Bosc</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Concorde</a>
+              <a role="treeitem" href="javascript:void(0)">Concorde</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Seckel</a>
+              <a role="treeitem" href="javascript:void(0)">Seckel</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Starkrimson</a>
+              <a role="treeitem" href="javascript:void(0)">Starkrimson</a>
             </li>
           </ul>
         </li>
@@ -166,13 +89,13 @@
           <span>Podded Vegetables</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Lentil</a>
+              <a role="treeitem" href="javascript:void(0)">Lentil</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Pea</a>
+              <a role="treeitem" href="javascript:void(0)">Pea</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Peanut</a>
+              <a role="treeitem" href="javascript:void(0)">Peanut</a>
             </li>
           </ul>
         </li>
@@ -180,16 +103,16 @@
           <span>Bulb and Stem Vegetables</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Asparagus</a>
+              <a role="treeitem" href="javascript:void(0)">Asparagus</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Celery</a>
+              <a role="treeitem" href="javascript:void(0)">Celery</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Leek</a>
+              <a role="treeitem" href="javascript:void(0)">Leek</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Onion</a>
+              <a role="treeitem" href="javascript:void(0)">Onion</a>
             </li>
           </ul>
         </li>
@@ -197,16 +120,16 @@
           <span>Root and Tuberous Vegetables</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Carrot</a>
+              <a role="treeitem" href="javascript:void(0)">Carrot</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Ginger</a>
+              <a role="treeitem" href="javascript:void(0)">Ginger</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Parsnip</a>
+              <a role="treeitem" href="javascript:void(0)">Parsnip</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Potato</a>
+              <a role="treeitem" href="javascript:void(0)">Potato</a>
             </li>
           </ul>
         </li>
@@ -219,13 +142,13 @@
           <span>Cereal Grains</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Barley</a>
+              <a role="treeitem" href="javascript:void(0)">Barley</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Oats</a>
+              <a role="treeitem" href="javascript:void(0)">Oats</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Rice</a>
+              <a role="treeitem" href="javascript:void(0)">Rice</a>
             </li>
           </ul>
         </li>
@@ -233,16 +156,16 @@
           <span>Pseudocereal Grains</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">Amaranth</a>
+              <a role="treeitem" href="javascript:void(0)">Amaranth</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Bucketwheat</a>
+              <a role="treeitem" href="javascript:void(0)">Bucketwheat</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Chia</a>
+              <a role="treeitem" href="javascript:void(0)">Chia</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Quinoa</a>
+              <a role="treeitem" href="javascript:void(0)">Quinoa</a>
             </li>
           </ul>
         </li>
@@ -250,23 +173,21 @@
           <span>Oilseeds</span>
           <ul role="group">
             <li role="none">
-              <a role="treeitem" href="#">India Mustard</a>
+              <a role="treeitem" href="javascript:void(0)">India Mustard</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Safflower</a>
+              <a role="treeitem" href="javascript:void(0)">Safflower</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Flax Seed</a>
+              <a role="treeitem" href="javascript:void(0)">Flax Seed</a>
             </li>
             <li role="none">
-              <a role="treeitem" href="#">Poppy Seed</a>
+              <a role="treeitem" href="javascript:void(0)">Poppy Seed</a>
             </li>
           </ul>
         </li>
       </ul>
     </li>
   </ul>
-
-  <script src="../../js/treeview.js"></script>
 </body>
 </html>

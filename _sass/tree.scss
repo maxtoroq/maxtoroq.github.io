@@ -1,0 +1,85 @@
+
+ul[role="tree"] {
+
+   $arrow-width: 1em;
+   $item-padding: .125em;
+   $item-border-width: 2px;
+
+   &, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+
+   a[role="treeitem"],
+   li[role="treeitem"] > span {
+      padding: $item-padding;
+      border: $item-border-width transparent solid;
+      display: block;
+      cursor: pointer;
+   }
+
+   a[role="treeitem"] {
+      padding-left: $arrow-width + $item-padding;
+   }
+
+   li[role="treeitem"] {
+      
+      &[aria-expanded] > span::before {
+         content: "";
+         position: relative;
+         display: inline-block;
+         width: 1em;
+         height: 1em;
+         background-repeat: no-repeat;
+         vertical-align: middle;
+         background-size: 50%;
+         background-position: center;
+      }
+
+      &[aria-expanded="false"] {
+
+         > span::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M2 6.99l-.505-.504 2.99-2.99-2.99-2.99L2 0l3.495 3.495z'/%3E%3C/svg%3E");
+         }
+
+         > ul {
+            display: none;
+          }
+      }
+
+      &[aria-expanded="true"] {
+
+         > span::before {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6.991' height='6.991'%3E%3Cpath d='M3.495 5.495L0 2l.505-.505 2.99 2.99 2.99-2.99L6.99 2z'/%3E%3C/svg%3E");
+         }
+
+         > ul {
+            display: block;
+          }
+      }
+
+      ul {
+         margin-left: $item-border-width * -1;
+         margin-left: .8em;
+      }
+   }
+
+   [role="treeitem"] {
+
+      &:focus {
+         outline: 0;
+      }
+
+      &.focus,
+      > span.focus {
+         border-color: black;
+         background-color: #eee;
+      }
+
+      &.hover,
+      > span.hover {
+         background-color: #ddd;
+      }
+   }
+}
