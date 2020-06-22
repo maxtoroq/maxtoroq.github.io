@@ -1,5 +1,7 @@
 
-$nav-sticky-top: 70px;
+@import "tree";
+
+$nav-sticky-top: 10px;
 
 @media (max-width: 767px) {
    body.docs {
@@ -10,13 +12,6 @@ $nav-sticky-top: 70px;
 }
 
 @media (min-width: 768px) {
-
-   body > header {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-   }
 
    body.docs {
       background-color: #fafbfc;
@@ -38,6 +33,7 @@ $nav-sticky-top: 70px;
             font-size: calc(1rem - 1px);
             line-height: 1.8;
 
+            /*
             ul {
                margin: 0;
                padding: 0 0 0 1rem;
@@ -59,13 +55,14 @@ $nav-sticky-top: 70px;
                   display: none;
                }
             }
+            */
 
             > ul {
                position: -webkit-sticky;
                position: sticky;
                top: $nav-sticky-top;
-               padding-left: 0;
-               padding-right: 1rem;
+               // padding-left: 0;
+               // padding-right: 1rem;
             }
 
             a {

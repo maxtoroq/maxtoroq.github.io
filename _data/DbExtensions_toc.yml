@@ -1,5 +1,6 @@
 docs:
   - title: Getting Started
+    expanded: true
     toc:
       - title: Installing
         url: installing.html
@@ -12,9 +13,45 @@ docs:
       - title: Annotations
         url: annotations.html
   - title: Reference
+    expanded: true
     toc:
       - title: API Reference
-        url: api/DbExtensions/
+        url: api/
+        toc: 
+          - title: DbExtensions
+            url: DbExtensions/
+            toc:
+              - title: AssociationAttribute
+                url: DbExtensions/AssociationAttribute/
+              - title: AutoSync
+                url: DbExtensions/AutoSync/
+              - title: ChangeConflictException
+                url: DbExtensions/ChangeConflictException/
+              - title: ColumnAttribute
+                url: DbExtensions/ColumnAttribute/
+              - title: Database
+                url: DbExtensions/Database/
+              - title: DatabaseConfiguration
+                url: DbExtensions/DatabaseConfiguration/
+              - title: Extensions
+                url: DbExtensions/Extensions/
+              - title: SQL
+                url: DbExtensions/SQL/
+              - title: SqlBuilder
+                url: DbExtensions/SqlBuilder/
+              - title: SqlCommandBuilder<TEntity>
+                url: DbExtensions/SqlCommandBuilder_1/
+              - title: SqlSet
+                url: DbExtensions/SqlSet/
+              - title: SqlSet<TResult>
+                url: DbExtensions/SqlSet_1/
+              - title: SqlTable
+                url: DbExtensions/SqlTable/
+              - title: SqlTable<TEntity>
+                url: DbExtensions/SqlTable_1/
+              - title: TableAttribute
+                url: DbExtensions/TableAttribute/
+            
       - title: Migrating to v6
         url: migrating/to-v6.html
       - title: Changelog
@@ -25,3 +62,4 @@ docs:
         url: https://github.com/maxtoroq/DbExtensions/blob/v5/docs/README.md
       - title: v4
         url: https://github.com/maxtoroq/DbExtensions/blob/v4/docs/README.md
+

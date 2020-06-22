@@ -91,6 +91,13 @@ body > footer {
 
    body {
       margin-bottom: $footer-height;
+
+      &.sticky-header > header {
+         position: -webkit-sticky;
+         position: sticky;
+         top: 0;
+         z-index: 999;
+      }
    }
 
    body > header,
@@ -120,3 +127,20 @@ body > footer {
    }
 }
 
+@media (min-width: 1200px) {
+
+   body.sticky-header {
+
+      article {
+
+         [itemprop="articleBody"] {
+
+            > nav.toc {
+               > div {
+                  top: 70px;
+               }
+            }
+         }
+      }
+   }
+}

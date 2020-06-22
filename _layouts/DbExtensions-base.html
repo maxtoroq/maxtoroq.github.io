@@ -14,7 +14,7 @@
    {% include font-sans.html %}
    {% include analytics.html %}
 </head>
-<body class="docs">
+<body class="docs{% if page.sticky_header %} sticky-header{% endif %}">
    <header>
       <nav class="container">
          <a href="{{ baseurl }}/" title="DbExtensions">home</a>

@@ -11,7 +11,7 @@ layout: DbExtensions-base
          {% assign section_base = cp_parts | slice: 0,2 | join: '/' | prepend: '/' | append: '/' %}
          {% assign section = cp_parts[1] %}
          {% assign toc = site.data.DbExtensions_toc[section] %}
-         {% include section-toc.html toc=toc base_url=section_base %}
+         {% include tree-toc.html toc=toc base_url=section_base %}
       {% endif %}
    </nav>
    <main>
@@ -45,4 +45,12 @@ layout: DbExtensions-base
          </div>
       </article>
    </main>
+   <script src="/js/tree.js"></script>
+   <script>
+      (function(d) {
+         var toc = d.querySelector('nav.section-toc ul[role="tree"]');
+         var tree = new TreeLinks(toc);
+         tree.init();
+      })(document);
+   </script>
 </div>
