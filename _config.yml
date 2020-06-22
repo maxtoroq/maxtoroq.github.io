@@ -8,89 +8,88 @@ sass:
   style: compressed
 
 plugins:
-   - jemoji
+  - jemoji
 
 defaults:
-   -
-      scope:
-         path: ""
-         type: posts
-      values:
-         layout: post
-   -
-      scope:
-         path: ""
-         type: pages
-      values:
-         layout: page
-   -
-      scope:
-         path: "DbExtensions"
-         type: pages
-      values:
-         #layout: DbExtensions
-         layout: DbExtensions-docs
-         repository_url: https://github.com/maxtoroq/DbExtensions
-         support_url: https://github.com/maxtoroq/DbExtensions/issues?q=is%3Aissue+label%3Aquestion
-   -
-      scope:
-         path: "MvcCodeRouting"
-         type: pages
-      values:
-         layout: MvcCodeRouting
-         base_url: /MvcCodeRouting/
-         repository_url: https://github.com/maxtoroq/MvcCodeRouting
-         documentation_url: https://github.com/maxtoroq/MvcCodeRouting/blob/master/docs/README.md
-   -
-      scope:
-         path: "myxsl"
-         type: pages
-      values:
-         base_url: https://github.com/maxtoroq/myxsl
-         repository_url: https://github.com/maxtoroq/myxsl
-   -
-      scope:
-         path: "XCST"
-         type: pages
-      values:
-         layout: XCST
-         base_url: /XCST/
-         repository_url: https://github.com/maxtoroq/XCST
-         documentation_url: /XCST/docs/
-         support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
-         bcl_url: https://msdn.microsoft.com/en-us/library/
-         csharp_spec_url: https://github.com/dotnet/csharplang/blob/master/spec/
-   -
-      scope:
-         path: "XCST/docs"
-         type: pages
-      values:
-         layout: XCST-docs
-         edit_link: true
-   -
-      scope:
-         path: "XCST/c"
-         type: pages
-      values:
-         layout: XCST-docs
-         element_ref: true
-         left_nav: true
-         edit_link: true
-   -
-      scope:
-         path: "XCST/a"
-         type: pages
-      values:
-         layout: XCST-docs
-         element_ref: true
-         left_nav: true
-         edit_link: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+  - scope:
+      path: "DbExtensions"
+      type: pages
+    values:
+      #layout: DbExtensions
+      layout: DbExtensions-docs
+      repository_url: https://github.com/maxtoroq/DbExtensions
+      support_url: https://github.com/maxtoroq/DbExtensions/issues?q=is%3Aissue+label%3Aquestion
+
+  - scope:
+      path: "MvcCodeRouting"
+      type: pages
+    values:
+      layout: MvcCodeRouting
+      base_url: /MvcCodeRouting/
+      repository_url: https://github.com/maxtoroq/MvcCodeRouting
+      documentation_url: https://github.com/maxtoroq/MvcCodeRouting/blob/master/docs/README.md
+
+  - scope:
+      path: "myxsl"
+      type: pages
+    values:
+      base_url: https://github.com/maxtoroq/myxsl
+      repository_url: https://github.com/maxtoroq/myxsl
+
+  - scope:
+      path: "XCST"
+      type: pages
+    values:
+      layout: XCST
+      base_url: /XCST/
+      repository_url: https://github.com/maxtoroq/XCST
+      documentation_url: /XCST/docs/
+      support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
+      bcl_url: https://msdn.microsoft.com/en-us/library/
+      csharp_spec_url: https://github.com/dotnet/csharplang/blob/master/spec/
+
+  - scope:
+      path: "XCST/docs"
+      type: pages
+    values:
+      layout: XCST-docs
+      edit_link: true
+
+  - scope:
+      path: "XCST/c"
+      type: pages
+    values:
+      layout: XCST-docs
+      element_ref: true
+      left_nav: true
+      edit_link: true
+
+  - scope:
+      path: "XCST/a"
+      type: pages
+    values:
+      layout: XCST-docs
+      element_ref: true
+      left_nav: true
+      edit_link: true
 
 include:
-   # DbExtensions
-   - _ctor.md
-   - _ctor_?.md
-   - _.md
-   - _ForEach_*.md
-   - _If.md
-   - _OR_*.md
+  # DbExtensions
+  - _ctor.md
+  - _ctor_?.md
+  - _.md
+  - _ForEach_*.md
+  - _If.md
+  - _OR_*.md
