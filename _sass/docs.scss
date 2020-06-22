@@ -32,9 +32,13 @@ $nav-sticky-top: 10px;
             max-width: 250px;
             font-size: calc(1rem - 1px);
             line-height: 1.8;
+            
+            a {
+               border-bottom-color: transparent;
+            }
 
-            /*
             ul {
+               /*
                margin: 0;
                padding: 0 0 0 1rem;
                
@@ -50,12 +54,11 @@ $nav-sticky-top: 10px;
                      }
                   }
                }
-            
+               */
                li:before {
                   display: none;
                }
             }
-            */
 
             > ul {
                position: -webkit-sticky;
