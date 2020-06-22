@@ -33,8 +33,8 @@ $nav-sticky-top: 10px;
             font-size: calc(1rem - 1px);
             line-height: 1.8;
             
-            a:not(:hover):not(:focus) {
-               border-bottom-color: transparent;
+            a {
+               border-bottom-color: transparent !important;
             }
 
             ul {
