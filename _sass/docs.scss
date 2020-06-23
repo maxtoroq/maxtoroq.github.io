@@ -84,7 +84,7 @@ ul[role="tree"] {
 
       a[role="treeitem"] {
          &.active {
-            color: purple;
+            font-weight: 600;
             background-color: #eee;
          }
       }
