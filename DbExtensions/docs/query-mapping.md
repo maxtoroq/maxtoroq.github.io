@@ -103,6 +103,8 @@ return db.Map<EmployeeTerritory>(query);
 Constructors
 ------------
 
+<figure class="code" data-highlight-lines="6 13" markdown="1">
+
 ```csharp
 public class SupplierInfo {
   
@@ -122,7 +124,11 @@ var query = SQL
 return db.Map<SupplierInfo>(query);
 ```
 
+</figure>
+
 **Use numbers to map columns to constructor arguments**. This also works for complex properties, e.g:
+
+<figure class="code" data-highlight-lines="4 8" markdown="1">
 
 ```csharp
 public class SupplierInfo {
@@ -138,6 +144,8 @@ var query = SQL
 return db.Map<SupplierInfo>(query);
 ```
 
+</figure>
+
 In the example above, `CompanyWebsite AS CompanyWebsite$1` means *map the CompanyWebsite column to the first constructor parameter of the CompanyWebsite property*, which in this case is a [Uri] object.
 
 <pre>
@@ -150,6 +158,8 @@ Supplier table    SupplierInfo    in property's
 </pre>
 
 Let's use the Uri type again, but as parameter in SupplierInfo:
+
+<figure class="code" data-highlight-lines="6 13" markdown="1">
 
 ```csharp
 public class SupplierInfo {
@@ -169,6 +179,8 @@ var query = SQL
 
 return db.Map<SupplierInfo>(query);
 ```
+
+</figure>
 
 In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite column to the first constructor parameter (of Uri) of the second constructor parameter (of SupplierInfo)*.
 
