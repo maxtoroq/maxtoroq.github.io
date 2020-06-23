@@ -16,7 +16,8 @@ docs:
     expanded: true
     toc:
       - title: API Reference
-        url: api/
+        url: api/DbExtensions/
+        scope: true
         toc: 
           - title: DbExtensions
             url: DbExtensions/

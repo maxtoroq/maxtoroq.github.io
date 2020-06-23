@@ -1,6 +1,6 @@
 <ul role="{% if include.recurse %}group{% else %}tree{% endif %}">
    {% for item in include.toc %}
-      {% if item.toc %}
+      {% if item.toc and item.scope == nil or item.scope == false %}
          {% assign base_url = include.base_url | append: item.url %}
    <li class="treeitem" aria-expanded="{% if item.expanded %}true{% else %}false{% endif %}">
       <span>{{ item.title }}</span>

@@ -17,6 +17,7 @@ docs:
     toc:
       - title: API Reference
         url: api/DbExtensions/
+        scope: true
         toc: # {{API-TOC-PLACEHOLDER}}
       - title: Migrating to v6
         url: migrating/to-v6.html
