@@ -16,7 +16,6 @@ ul[role="tree"] {
    a[role="treeitem"],
    li[role="treeitem"] > span {
       padding: $item-padding;
-      padding-right: 1em;
       border: $item-border-width transparent solid;
       display: block;
       cursor: pointer;
