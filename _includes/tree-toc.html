@@ -20,6 +20,7 @@
             {% assign current_url = page.url | slice: 0, base_size %}
          {% endif %}
    <li role="none">
+      <!-- {{ current_url }} == {{ abs_url }} -->
       <a href="{{ abs_url }}" role="treeitem"
          {% if current_url == abs_url %} class="active"{% endif %}>{{ item.title }}</a>
    </li>
