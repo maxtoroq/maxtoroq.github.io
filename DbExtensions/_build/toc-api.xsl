@@ -5,7 +5,7 @@
    exclude-result-prefixes="#all">
 
    <param name="indent-chars" select="'  '" as="xs:string"/>
-   <param name="initial-indent" select="5" as="xs:integer"/>
+   <param name="initial-indent" select="0" as="xs:integer"/>
 
    <output method="text"/>
 
@@ -21,7 +21,12 @@
    <template match="topic">
       <param name="indent" as="xs:integer" tunnel="yes"/>
 
-      <variable name="url" select="replace(replace(@file, '/README\.md$', '/'), '.md$', '.html')"/>
+      <variable name="topic-kind" select="substring-before(@id, ':')"/>
+      <variable name="url-parts" select="tokenize(replace(replace(@file, '/README\.md$', '/'), '.md$', '.html'), '/')"/>
+      <variable name="url" select="string-join($url-parts[
+         if ($topic-kind eq 'N') then true()
+         else if ($topic-kind eq 'T') then position() gt 1
+         else position() eq last()], '/')"/>
 
       <call-template name="new-line-indented">
          <with-param name="indent" select="$indent - 1" tunnel="yes"/>
@@ -31,7 +36,7 @@
       <call-template name="new-line-indented"/>
       <text>url: </text>
       <value-of select="$url"/>
-      <if test="topic and not(starts-with(@id, 'T:'))">
+      <if test="topic and not($topic-kind eq 'T')">
          <call-template name="new-line-indented"/>
          <text>toc:</text>
          <apply-templates select="topic">

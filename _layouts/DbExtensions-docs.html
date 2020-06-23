@@ -7,11 +7,11 @@ layout: DbExtensions-base
 {% endif %}
 <div class="container">
    <nav class="section-toc">
-      {% if cp_parts.size >= 3 %}
-         {% assign section_base = cp_parts | slice: 0,2 | join: '/' | prepend: '/' | append: '/' %}
-         {% assign section = cp_parts[1] %}
-         {% assign toc = site.data.DbExtensions_toc[section] %}
-         {% include toc.html toc=toc base_url=section_base %}
+      {% if page.toc %}
+         {% assign toc = site.data[page.toc] %}
+         {% if page.toc %}
+            {% include toc.html toc=toc base_url=page.toc_base_url %}
+         {% endif %}
       {% endif %}
    </nav>
    <main>
