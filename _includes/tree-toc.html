@@ -1,6 +1,6 @@
 <ul role="{% if include.recurse %}group{% else %}tree{% endif %}">
    {% for item in include.toc %}
-      {% if item.toc and item.scope == nil or item.scope == false %}
+      {% if item.toc and item.scope == false %}
          {% assign base_url = include.base_url | append: item.url %}
    <li class="treeitem" aria-expanded="{% if item.expanded %}true{% else %}false{% endif %}">
       <span>{{ item.title }}</span>
@@ -11,16 +11,15 @@
             {% assign abs_url = item.url %}
          {% else %}
             {% assign abs_url = include.base_url | append: item.url %}
-         {% endif %}
-         {% assign current_url = page.url %}
-         {% assign last_char = item.url | slice: -1 %}
-         {% if item.toc %}
-         {% elsif last_char == '/' %}
-            {% assign base_size = abs_url | size %}
-            {% assign current_url = page.url | slice: 0, base_size %}
+            {% assign current_url = page.url %}
+            {% assign last_char = item.url | slice: -1 %}
+            {% if item.toc and item.scope == false %}
+            {% elsif last_char == '/' %}
+               {% assign base_size = abs_url | size %}
+               {% assign current_url = page.url | slice: 0, base_size %}
+            {% endif %}
          {% endif %}
    <li role="none">
-      <!-- {{ current_url }} == {{ abs_url }} -->
       <a href="{{ abs_url }}" role="treeitem"
          {% if current_url == abs_url %} class="active"{% endif %}>{{ item.title }}</a>
    </li>
