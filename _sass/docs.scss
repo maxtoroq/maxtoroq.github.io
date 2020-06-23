@@ -3,6 +3,17 @@
 
 $nav-sticky-top: 10px;
 
+ul[role="tree"] {
+
+   li:before {
+      display: none;
+   }
+
+   a {
+      border-bottom-color: transparent;
+   }
+}
+
 @media (max-width: 767px) {
    body.docs {
       nav.section-toc {
@@ -34,33 +45,6 @@ $nav-sticky-top: 10px;
             max-width: 250px;
             font-size: calc(1rem - 1px);
             
-            a:not(:hover):not(:focus) {
-               border-bottom-color: transparent !important;
-            }
-
-            ul {
-               /*
-               margin: 0;
-               padding: 0 0 0 1rem;
-               
-               li {
-                  > span {
-                     display: inline-block;
-                     margin-top: .5em;
-                  }
-
-                  &:first-child {
-                     > span {
-                        margin-top: 0;
-                     }
-                  }
-               }
-               */
-               li:before {
-                  display: none;
-               }
-            }
-
             > ul {
                position: -webkit-sticky;
                position: sticky;
@@ -70,19 +54,6 @@ $nav-sticky-top: 10px;
                margin-left: -1rem; // .container padding * -1
                margin-top: $container-item-padding-top * -1;
                padding-top: $container-item-padding-top;
-            }
-
-            a {
-               color: rgba(0, 0, 0, .7);
-
-               &:not(:hover):not(:focus) {
-                  border-bottom-color: rgba(128, 56, 101, .3);
-               }
-
-               &.active {
-                  color: purple;
-                  font-weight: 600;
-               }
             }
          }
 
@@ -101,6 +72,20 @@ $nav-sticky-top: 10px;
             > .content {
                padding-right: 1.5rem;
             }
+         }
+      }
+   }
+
+   ul[role="tree"] {
+      
+      &, a {
+         color: rgba(0, 0, 0, .7);
+      }
+
+      a[role="treeitem"] {
+         &.active {
+            color: purple;
+            background-color: #eee;
          }
       }
    }
