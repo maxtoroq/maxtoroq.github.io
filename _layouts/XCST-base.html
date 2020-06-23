@@ -6,9 +6,7 @@
    <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
    {% unless page.element_ref %}
-   {% if page.toc == nil or page.toc %}
-   {% include toc.html %}
-   {% endif %}
+      {% include article-toc.html %}
    {% endunless %}
    {% include font-sans.html %}
    <script src="/js/hl-line.js"></script>

@@ -1,19 +1,33 @@
-<script>
-   document.addEventListener('DOMContentLoaded', function (event) {
-      var headings = document.querySelectorAll('article h2');
-      var items = [];
-      var newItem;
-      Array.prototype.forEach.call(headings, function (el, i) {
-         if (el.offsetParent != null) {
-            newItem = "<li>" + "<a href='#" + el.getAttribute('id') + "'>" + el.innerHTML + "</a>" + "</li>";
-            items.push(newItem)
-         }
-      });
-      if (items.length > 1) {
-         var ToC = "<nav role='navigation' class='toc'><div><h3>In this article</h3><ul>";
-         ToC += items.join('');
-         ToC += "</ul></div></nav>";
-         document.querySelector('article *[itemprop="articleBody"]').insertAdjacentHTML('afterbegin', ToC)
-      }
-   })
-</script>
+<ul role="{% if include.recurse %}group{% else %}tree{% endif %}">
+   {% for item in include.toc %}
+      {% if item.toc and item.scope %}
+         {% assign scoped = true %}
+      {% else %}
+         {% assign scoped = false %}
+      {% endif %}
+      {% if item.toc and scoped == false %}
+         {% assign base_url = include.base_url | append: item.url %}
+   <li class="treeitem" aria-expanded="{% if item.expanded %}true{% else %}false{% endif %}">
+      <span>{{ item.title }}</span>
+         {% include toc.html toc=item.toc base_url=base_url recurse=true %}
+   </li>
+      {% elsif item.url %}
+         {% if item.url contains '://' %}
+            {% assign abs_url = item.url %}
+         {% else %}
+            {% assign abs_url = include.base_url | append: item.url %}
+            {% assign current_url = page.url %}
+            {% assign last_char = item.url | slice: -1 %}
+            {% if item.toc and scoped == false %}
+            {% elsif last_char == '/' %}
+               {% assign base_size = abs_url | size %}
+               {% assign current_url = page.url | slice: 0, base_size %}
+            {% endif %}
+         {% endif %}
+   <li role="none">
+      <a href="{{ abs_url }}" role="treeitem"
+         {% if current_url == abs_url %} class="active"{% endif %}>{{ item.title }}</a>
+   </li>
+      {% endif %}
+   {% endfor %}
+ </ul>
