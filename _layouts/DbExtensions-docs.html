@@ -51,6 +51,17 @@ layout: DbExtensions-base
          var toc = d.querySelector('nav.section-toc ul[role="tree"]');
          var tree = new TreeLinks(toc);
          tree.init();
+
+         var active = toc.querySelector('a.active');
+         
+         if (active) {
+
+            var currentNode = active;
+            
+            while ((currentNode = currentNode.closest('li[role="treeitem"]')) != null) {
+               currentNode.setAttribute('aria-expanded', 'true');
+            }
+         }
       })(document);
    </script>
 </div>
