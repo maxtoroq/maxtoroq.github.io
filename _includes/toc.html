@@ -2,7 +2,7 @@
    {% for item in include.toc %}
       {% if item.toc %}
          {% assign base_url = include.base_url | append: item.url %}
-   <li class="treeitem" aria-expanded="{% if item.expanded or page.url == base_url %}true{% else %}false{% endif %}">
+   <li role="treeitem" aria-expanded="{% if item.expanded or page.url == base_url %}true{% else %}false{% endif %}">
       <span>{{ item.title }}</span>
          {% include toc.html toc=item.toc base_url=base_url recurse=true %}
    </li>
