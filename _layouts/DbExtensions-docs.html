@@ -58,7 +58,7 @@ layout: DbExtensions-base
 
             var currentNode = active;
             
-            while ((currentNode = currentNode.closest('li[role="treeitem"]')) != null) {
+            while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
                currentNode.setAttribute('aria-expanded', 'true');
             }
          }
