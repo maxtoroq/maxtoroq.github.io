@@ -28,7 +28,7 @@ layout: DbExtensions-base
             <nav class="breadcrumbs">
                   {% for i in (offset..end) %}
                      {% assign path_parts = path_parts | push: url_parts[i] %}
-               <a href="{{ cp_parts | slice: 0,offset | concat: path_parts | join: '/' }}/">{{ url_parts[i] }}</a>&nbsp; /&nbsp;
+               <a href="{{ url_parts | slice: 0,offset | concat: path_parts | join: '/' }}/">{{ url_parts[i] }}</a>&nbsp; /&nbsp;
                   {% endfor %}
                <span>{{ page.title }}</span>
             </nav>
