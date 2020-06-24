@@ -9,14 +9,25 @@
 
    <output method="text"/>
 
-   <template match="/*/topic">
-      <!-- Ignore root topic, added on static toc -->
-      <apply-templates>
+   <template match="text()"/>
+   
+   <template match="/*">
+      <apply-templates select="topic">
          <with-param name="indent" select="$initial-indent + 1" tunnel="yes"/>
       </apply-templates>
    </template>
 
-   <template match="text()"/>
+   <template match="/*/topic">
+      <param name="indent" as="xs:integer" tunnel="yes"/>
+
+      <call-template name="new-line-indented">
+         <with-param name="indent" select="$indent - 1" tunnel="yes"/>
+      </call-template>
+      <text>- title: API Reference</text>
+      <call-template name="new-line-indented"/>
+      <text>url: ""</text>
+      <apply-templates select="topic"/>
+   </template>
 
    <template match="topic">
       <param name="indent" as="xs:integer" tunnel="yes"/>
@@ -47,7 +58,7 @@
    </template>
 
    <template name="new-line-indented">
-      <param name="indent" as="xs:integer" tunnel="yes"/>
+      <param name="indent" select="0" as="xs:integer" tunnel="yes"/>
 
       <text>&#xD;&#xA;</text>
       <value-of select="for $p in (1 to $indent) return $indent-chars" separator=""/>
