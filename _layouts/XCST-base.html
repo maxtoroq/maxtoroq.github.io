@@ -5,7 +5,7 @@
    <title>{{ page.title }}</title>
    <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet"/>
    <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
-   {% unless page.element_ref %}
+   {% unless page.element_ref or page.article_toc == false %}
       {% include article-toc.html %}
    {% endunless %}
    {% include font-sans.html %}

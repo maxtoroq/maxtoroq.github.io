@@ -1,7 +1,7 @@
 ---
 title: Documentation
 layout: XCST
-toc: false
+article_toc: false
 ---
 
 - [Project Overview](overview.html)

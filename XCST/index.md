@@ -1,6 +1,6 @@
 ---
 title: XCST
-toc: false
+article_toc: false
 ---
 
 **XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's based on a subset of XSLT, the main difference being there are no special features to work with XML data, instead of XPath you use C# or Visual Basic. XCST is therefore better suited when your primary source of data is not XML.
