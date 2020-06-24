@@ -12,6 +12,12 @@
          {% else %}
             {% assign abs_url = include.base_url | append: item.url %}
             {% assign current_url = page.url %}
+            {% assign last_char = item.url | slice: -1 %}
+            {% if item.toc %}
+            {% elsif last_char == '/' %}
+               {% assign base_size = abs_url | size %}
+               {% assign current_url = page.url | slice: 0, base_size %}
+            {% endif %}
          {% endif %}
    <li role="none">
       <a href="{{ abs_url }}" role="treeitem"
