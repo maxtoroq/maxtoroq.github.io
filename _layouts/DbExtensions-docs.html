@@ -20,7 +20,7 @@ layout: DbExtensions-base
             {% if api_docs %}
                {% assign url_parts = page.url | split: '/' %}
                {% assign path_parts = '' | split: '' %}
-               {% assign offset = 4 %}
+               {% assign offset = 2 %}
                {% assign size = url_parts.size %}
                {% assign end = size | minus: 2 %}
                {% assign crumbs = size | minus: offset %}
