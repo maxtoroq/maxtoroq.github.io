@@ -4,6 +4,10 @@
 @import "docs";
 
 $logo-height: 42px;
+$footer-height: 120px;
+$header-padding-tb: .4em;
+$header-height: calc(#{$logo-height} + #{$header-padding-tb * 2});
+$docs-header-height: $header-height;
 
 body > header,
 body > footer {
@@ -22,8 +26,8 @@ body > header {
    //border-bottom: 1px solid #e0e1ef;
    
    .container {
-      padding-top: .4em;
-      padding-bottom: .4em;
+      padding-top: $header-padding-tb;
+      padding-bottom: $header-padding-tb;
    }
 
    nav a {
@@ -81,9 +85,6 @@ body > footer {
 
 @media (min-width: 768px) {
    
-   $footer-height: 120px;
-   $header-height: calc(#{$logo-height} + 1em - 1px);
-
    html {
       position: relative;
       min-height: 100%;
