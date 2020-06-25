@@ -15,7 +15,8 @@
          {% include toc.html toc=item.toc parent_node=item base_url=base_url recurse=true %}
    </li>
       {% elsif item.url %}
-         {% if item.url contains '://' %}
+         {% assign first_char = item.url | slice: 0 %}
+         {% if item.url contains '://' or first_char == '/' %}
             {% assign abs_url = item.url %}
          {% else %}
             {% assign abs_url = include.base_url | append: item.url %}

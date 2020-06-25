@@ -11,9 +11,9 @@
 - title: Language Reference
   toc:
     - title: XCST Elements
-      url: c
+      url: /XCST/c/
     - title: Application Extension Elements
-      url: a
+      url: /XCST/a/
     - title: Standard Attributes
       url: standard-attributes.html
     - title: Reserved Namespaces
