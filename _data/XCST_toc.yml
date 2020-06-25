@@ -12,9 +12,9 @@
   expanded: true
   toc:
     - title: XCST Elements
-      url: /XCST/c/
+      url: ../c/
     - title: Application Extension Elements
-      url: /XCST/a/
+      url: ../a/
     - title: Standard Attributes
       url: standard-attributes.html
     - title: Reserved Namespaces

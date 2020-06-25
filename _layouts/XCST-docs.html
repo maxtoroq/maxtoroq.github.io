@@ -13,6 +13,7 @@ layout: XCST-base
    <main>
       <article>
          <header>
+            {% if page.element_ref %}
             <nav class="breadcrumbs">
                <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
                {% if page.element_ref %}
@@ -21,6 +22,7 @@ layout: XCST-base
                {% endif %}
                <span>{{ page.title }}</span>
             </nav>
+            {% endif %}
             <h1>{{ page.title }}</h1>
          </header>
          <div itemprop="articleBody">
