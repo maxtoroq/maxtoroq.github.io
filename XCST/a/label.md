@@ -9,32 +9,6 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<nav role="navigation" class="browser">
-   <div>
-      <h3><a href=".">Application Extension Elements</a></h3>
-      <ul>
-         <li><a href="anti-forgery-token.html">a:anti-forgery-token</a></li>
-         <li><a href="check-box.html">a:check-box</a></li>
-         <li><a href="display.html">a:display</a></li>
-         <li><a href="display-name.html">a:display-name</a></li>
-         <li><a href="display-text.html">a:display-text</a></li>
-         <li><a href="editor.html">a:editor</a></li>
-         <li><a href="form.html">a:form</a></li>
-         <li><a href="hidden.html">a:hidden</a></li>
-         <li><a href="input.html">a:input</a></li>
-         <li><a href="label.html" class="active">a:label</a></li>
-         <li><a href="member-template.html">a:member-template</a></li>
-         <li><a href="model.html">a:model</a></li>
-         <li><a href="option.html">a:option</a></li>
-         <li><a href="radio-button.html">a:radio-button</a></li>
-         <li><a href="select.html">a:select</a></li>
-         <li><a href="textarea.html">a:textarea</a></li>
-         <li><a href="validation-message.html">a:validation-message</a></li>
-         <li><a href="validation-summary.html">a:validation-summary</a></li>
-         <li><a href="with-options.html">a:with-options</a></li>
-      </ul>
-   </div>
-</nav>
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:label</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }

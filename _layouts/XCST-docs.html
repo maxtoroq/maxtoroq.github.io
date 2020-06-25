@@ -1,19 +1,52 @@
 ---
 layout: XCST-base
 ---
-<article>
-   <header>
-      <nav class="breadcrumbs">
-         <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
-         {% if page.element_ref %}
-         {% assign path_parts = page.path | split: '/' %}
-         <a href=".">{% if (path_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;
+<div class="container">
+   <nav class="section-toc">
+      {% if page.toc %}
+         {% assign toc = site.data[page.toc] %}
+         {% if page.toc %}
+            {% include toc.html toc=toc base_url=page.toc_base_url %}
          {% endif %}
-         <span>{{ page.title }}</span>
-      </nav>
-      <h1>{{ page.title }}</h1>
-   </header>
-   <div itemprop="articleBody">
-      {{ content }}
-   </div>
-</article>
+      {% endif %}
+   </nav>
+   <main>
+      <article>
+         <header>
+            <nav class="breadcrumbs">
+               <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
+               {% if page.element_ref %}
+                  {% assign path_parts = page.path | split: '/' %}
+               <a href=".">{% if (path_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;
+               {% endif %}
+               <span>{{ page.title }}</span>
+            </nav>
+            <h1>{{ page.title }}</h1>
+         </header>
+         <div itemprop="articleBody">
+            <div class="content">
+               {{ content }}
+            </div>
+         </div>
+      </article>
+   </main>
+   <script src="/js/tree.js"></script>
+   <script>
+      (function(d) {
+         var toc = d.querySelector('nav.section-toc ul[role="tree"]');
+         var tree = new TreeLinks(toc);
+         tree.init();
+
+         var active = toc.querySelector('a.active');
+
+         if (active) {
+
+            var currentNode = active;
+
+            while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
+               currentNode.setAttribute('aria-expanded', 'true');
+            }
+         }
+      })(document);
+   </script>
+</div>

@@ -1,38 +1,37 @@
 <!DOCTYPE html>
+{% assign baseurl = page.path | split: '/' | first | prepend: '/' %}
 <html lang="en">
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>{{ page.title }}</title>
-   <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet"/>
-   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico"/>
+   <link href="{{ baseurl }}css/site.css?v=170805" rel="stylesheet" />
+   <link rel="shortcut icon" href="{{ baseurl }}favicon.ico" />
    {% include font-sans.html %}
    {% include analytics.html %}
 </head>
-<body class="{% if page.left_nav %}left-nav{% endif %}">
+<body class="docs{% if page.sticky_header %} sticky-header{% endif %}">
    <header>
       <nav class="container">
-         <a href="{{ page.base_url }}">home</a>
+         <a href="{{ baseurl }}">home</a>
          <a href="{{ page.documentation_url }}">documentation</a>
-         <a href="{{ page.base_url }}support.html">support</a>
+         <a href="{{ baseurl }}support.html">support</a>
          <a class="github" href="{{ page.repository_url }}" title="GitHub">
-            <img src="https://github.com/favicon.ico" alt="GitHub"/>
+            <img src="https://github.com/favicon.ico" alt="GitHub" />
          </a>
       </nav>
    </header>
-   <div class="container">
-      {{ content }}
-   </div>
+   {{ content }}
    <footer>
       <div class="container">
          &copy; {{ site.author }}
          {% if page.edit_link %}
-            {% if page.element_ref or page.path == 'XCST/docs/standard-attributes.md' %}
-               {% assign path_parts = page.path | split: '/' %}
-               {% assign new_last = path_parts | last | prepend: '_' %}
-               {% assign new_parts = path_parts | pop | push: new_last %}
-               {% assign new_path = new_parts | join: '/' %}
-            {% endif %}
-            <a class="edit" href="{{ site.github.repository_url }}/edit/master/{% if new_path %}{{ new_path }}{% else %}{{ page.path }}{% endif %}">Edit Page</a>
+         {% if page.element_ref or page.path == 'XCST/docs/standard-attributes.md' %}
+         {% assign path_parts = page.path | split: '/' %}
+         {% assign new_last = path_parts | last | prepend: '_' %}
+         {% assign new_parts = path_parts | pop | push: new_last %}
+         {% assign new_path = new_parts | join: '/' %}
+         {% endif %}
+         <a class="edit" href="{{ site.github.repository_url }}/edit/master/{% if new_path %}{{ new_path }}{% else %}{{ page.path }}{% endif %}">Edit Page</a>
          {% endif %}
       </div>
    </footer>

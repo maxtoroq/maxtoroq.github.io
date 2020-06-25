@@ -35,6 +35,12 @@
       <xsl:call-template name="standard-attributes-page">
          <xsl:with-param name="std-attribs-def" select="$grammar-c//rng:define[@name = 'standard-attributes']"/>
       </xsl:call-template>
+
+      <xsl:call-template name="toc">
+         <xsl:with-param name="elements-c" select="$elements-c"/>
+         <xsl:with-param name="elements-a" select="$elements-a"/>
+         <xsl:with-param name="indent" select="1" tunnel="yes"/>
+      </xsl:call-template>
    </xsl:template>
 
    <xsl:template name="output-elements">
@@ -73,7 +79,6 @@
          <xsl:text>element_ref: no&#xA;</xsl:text>
          <xsl:text>---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
-         <xsl:call-template name="nav-browser"/>
          <xsl:if test="unparsed-text-available($pre-path)">
             <xsl:text>&#xA;&#xA;{% include_relative </xsl:text>
             <xsl:value-of select="$pre-file"/>
@@ -122,11 +127,69 @@
          <xsl:value-of select="$name"/>
          <xsl:text>"&#xA;---&#xA;</xsl:text>
          <xsl:call-template name="generated-warning"/>
-         <xsl:call-template name="nav-browser">
-            <xsl:with-param name="name" select="$name"/>
-         </xsl:call-template>
          <xsl:apply-templates select="$elements" mode="doc"/>
       </xsl:result-document>
+   </xsl:template>
+
+   <xsl:template name="toc">
+      <xsl:param name="elements-c" as="element(rng:element)+"/>
+      <xsl:param name="elements-a" as="element(rng:element)+"/>
+
+      <xsl:result-document href="../../_data/XCST_elements_toc.yml" method="text">
+         <xsl:call-template name="toc-element-set">
+            <xsl:with-param name="elements" select="$elements-c"/>
+         </xsl:call-template>
+         <xsl:call-template name="toc-element-set">
+            <xsl:with-param name="elements" select="$elements-a"/>
+         </xsl:call-template>
+      </xsl:result-document>
+   </xsl:template>
+
+   <xsl:template name="toc-element-set">
+      <xsl:param name="elements" as="element(rng:element)+"/>
+      <xsl:param name="indent" as="xs:integer" tunnel="yes"/>
+
+      <xsl:variable name="prefix" select="prefix-from-QName(ref:name($elements[1]))"/>
+
+      <xsl:call-template name="new-line-indented">
+         <xsl:with-param name="indent" select="$indent - 1" tunnel="yes"/>
+      </xsl:call-template>
+      <xsl:text>- title: </xsl:text>
+      <xsl:choose>
+         <xsl:when test="$prefix eq 'c'">XCST Elements</xsl:when>
+         <xsl:otherwise>Application Extension Elements</xsl:otherwise>
+      </xsl:choose>
+      <xsl:call-template name="new-line-indented"/>
+      <xsl:text>url: </xsl:text>
+      <xsl:value-of select="$prefix"/>
+      <xsl:call-template name="new-line-indented"/>
+      <xsl:text>toc:</xsl:text>
+      <xsl:apply-templates select="$elements" mode="toc-element">
+         <xsl:with-param name="indent" select="$indent + 2" tunnel="yes"/>
+         <xsl:sort select="local-name-from-QName(ref:name(.))"/>
+      </xsl:apply-templates>
+   </xsl:template>
+
+   <xsl:template match="rng:element" mode="toc-element">
+      <xsl:param name="indent" as="xs:integer" tunnel="yes"/>
+
+      <xsl:variable name="name" select="ref:name(.)"/>
+
+      <xsl:call-template name="new-line-indented">
+         <xsl:with-param name="indent" select="$indent - 1" tunnel="yes"/>
+      </xsl:call-template>
+      <xsl:text>- title: </xsl:text>
+      <xsl:value-of select="$name"/>
+      <xsl:call-template name="new-line-indented"/>
+      <xsl:text>url: </xsl:text>
+      <xsl:value-of select="local-name-from-QName($name)"/>
+   </xsl:template>
+
+   <xsl:template name="new-line-indented">
+      <xsl:param name="indent" select="0" as="xs:integer" tunnel="yes"/>
+
+      <xsl:text>&#xD;&#xA;</xsl:text>
+      <xsl:value-of select="for $p in (1 to $indent) return '  '" separator=""/>
    </xsl:template>
 
    <xsl:template name="nav-browser">

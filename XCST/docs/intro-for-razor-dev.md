@@ -549,7 +549,6 @@ Any other Razor feature you are not sure how to translate to XCST? [Let me know]
 
 - [ASP.NET programming with XCST][4] (or *How to build a contact form* with what you learned here)
 
-[1]: {{ page.base_url }}
 [2]: https://msdn.microsoft.com/en-us/library/dn961160
 [3]: https://www.w3.org/TR/html5/infrastructure.html#boolean-attributes
 [4]: /2016/04/aspnet-programming-with-xcst.html

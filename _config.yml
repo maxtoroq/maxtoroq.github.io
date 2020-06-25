@@ -27,7 +27,6 @@ defaults:
       path: DbExtensions
       type: pages
     values:
-      #layout: DbExtensions
       layout: DbExtensions-docs
       repository_url: https://github.com/maxtoroq/DbExtensions
       support_url: https://github.com/maxtoroq/DbExtensions/issues?q=is%3Aissue+label%3Aquestion
@@ -66,8 +65,7 @@ defaults:
       path: XCST
       type: pages
     values:
-      layout: XCST
-      base_url: /XCST/
+      layout: XCST-docs
       repository_url: https://github.com/maxtoroq/XCST
       documentation_url: /XCST/docs/
       support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
@@ -78,14 +76,16 @@ defaults:
       path: XCST/docs
       type: pages
     values:
-      layout: XCST-docs
+      toc: XCST_toc
+      toc_base_url: /XCST/docs/
       edit_link: true
 
   - scope:
       path: XCST/c
       type: pages
     values:
-      layout: XCST-docs
+      toc: XCST_elements_toc
+      toc_base_url: /XCST/
       element_ref: true
       left_nav: true
       edit_link: true
@@ -94,7 +94,8 @@ defaults:
       path: XCST/a
       type: pages
     values:
-      layout: XCST-docs
+      toc: XCST_elements_toc
+      toc_base_url: /XCST/
       element_ref: true
       left_nav: true
       edit_link: true

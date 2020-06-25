@@ -1,26 +1,7 @@
 ---
 title: Documentation
-layout: XCST
-article_toc: false
 ---
-
-- [Project Overview](overview.html)
-- [Installing](installing.html)
-- [Code Generation](code-generation.html)
-- [Evaluation](evaluation.html)
-
-Reference
----------
-- [XCST Elements](../c/)
-- [Application Extension Elements](../a/)
-- [Standard Attributes](standard-attributes.html)
-- [Reserved Namespaces](reserved-namespaces.html)
-- [Extension Instructions](extension-instructions.html)
-- [Text Transformation](text-transformation.html)
-- [ASP.NET Framework Changes](aspnet-framework-changes.html)
-
-Tutorials
----------
-- [XCST Introduction for the Razor Developer](intro-for-razor-dev.html)
-- [ASP.NET programming with XCST](/2016/04/aspnet-programming-with-xcst.html) <sup>[blog post]</sup>
-- [ASP.NET Code Samples](https://github.com/maxtoroq/XCST-a/tree/master/samples)
+<style>
+h1 { display: none }
+@media (max-width: 767px) { nav.section-toc { display: block !important; } }
+</style>
