@@ -18,7 +18,9 @@ layout: XCST-base
                <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
                {% if page.element_ref %}
                   {% assign path_parts = page.path | split: '/' %}
+                  {% if path_parts.last != 'index.md' %}
                <a href=".">{% if (path_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;
+                  {% endif %}
                {% endif %}
                <span>{{ page.title }}</span>
             </nav>
