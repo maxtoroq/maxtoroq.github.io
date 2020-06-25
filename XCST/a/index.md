@@ -1,6 +1,5 @@
 ---
 title: "Application Extension Elements"
-element_ref: no
 ---
 
 {% comment %}  
