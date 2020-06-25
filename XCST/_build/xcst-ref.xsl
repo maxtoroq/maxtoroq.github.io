@@ -184,6 +184,7 @@
       <xsl:call-template name="new-line-indented"/>
       <xsl:text>url: </xsl:text>
       <xsl:value-of select="local-name-from-QName($name)"/>
+      <xsl:text>.html</xsl:text>
    </xsl:template>
 
    <xsl:template name="new-line-indented">
