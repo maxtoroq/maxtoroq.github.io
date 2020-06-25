@@ -9,6 +9,7 @@
   url: evaluation.html
 
 - title: Language Reference
+  expanded: true
   toc:
     - title: XCST Elements
       url: /XCST/c/
@@ -24,6 +25,7 @@
       url: text-transformation.html
 
 - title: ASP.NET
+  expanded: true
   toc:
     - title: XCST Introduction for the Razor Developer
       url: intro-for-razor-dev.html

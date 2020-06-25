@@ -162,6 +162,7 @@
       <xsl:call-template name="new-line-indented"/>
       <xsl:text>url: </xsl:text>
       <xsl:value-of select="$prefix"/>
+      <xsl:text>/</xsl:text>
       <xsl:call-template name="new-line-indented"/>
       <xsl:text>toc:</xsl:text>
       <xsl:apply-templates select="$elements" mode="toc-element">

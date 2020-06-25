@@ -1,6 +1,6 @@
 
 - title: XCST Elements
-  url: c
+  url: c/
   toc:
     - title: c:accept
       url: accept
@@ -121,7 +121,7 @@
     - title: c:with-param
       url: with-param
 - title: Application Extension Elements
-  url: a
+  url: a/
   toc:
     - title: a:anti-forgery-token
       url: anti-forgery-token
