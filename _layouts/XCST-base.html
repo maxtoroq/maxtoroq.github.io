@@ -4,17 +4,17 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>{{ page.title }}</title>
-   <link href="{{ baseurl }}css/site.css?v=170805" rel="stylesheet" />
-   <link rel="shortcut icon" href="{{ baseurl }}favicon.ico" />
+   <link href="{{ baseurl }}/css/site.css?v=170805" rel="stylesheet" />
+   <link rel="shortcut icon" href="{{ baseurl }}/favicon.ico" />
    {% include font-sans.html %}
    {% include analytics.html %}
 </head>
 <body class="docs{% if page.sticky_header %} sticky-header{% endif %}">
    <header>
       <nav class="container">
-         <a href="{{ baseurl }}">home</a>
+         <a href="{{ baseurl }}/">home</a>
          <a href="{{ page.documentation_url }}">documentation</a>
-         <a href="{{ baseurl }}support.html">support</a>
+         <a href="{{ baseurl }}/support.html">support</a>
          <a class="github" href="{{ page.repository_url }}" title="GitHub">
             <img src="https://github.com/favicon.ico" alt="GitHub" />
          </a>
