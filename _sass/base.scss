@@ -21,13 +21,16 @@ html {
 body {
    font-family: Roboto, 'Segoe UI', sans-serif;
    line-height: 1.6;
-   //letter-spacing: .013rem;
    color: #333;
 }
 
 body > header,
 body > footer {
    font-size: calc(1rem - 2px);
+}
+
+article {
+   letter-spacing: .013rem;
 }
 
 a, a:hover, a:focus {
