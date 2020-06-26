@@ -31,8 +31,8 @@ The first parameter is a composite format string, as used on [String.Format][2],
 
 ```sql
 SELECT *
-FROM products
-WHERE name LIKE {0}
+FROM Products
+WHERE Name LIKE {0}
 ```
 
 Pretty much the same. The parameter placeholder is still there, and the 'A%' value is kept in the [ParameterValues][4] collection. To turn this into a command you use the [Database][5] class:
