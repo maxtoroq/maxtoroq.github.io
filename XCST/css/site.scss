@@ -12,7 +12,7 @@ $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2} + 1px);
 body > header {
 
    color: whitesmoke;
-   background-color: #c25b3b;
+   background-color: #91619b;
 
    a, a:hover, a:focus {
       color: inherit;
@@ -45,7 +45,7 @@ body > header {
 
 body > footer {
 
-   background-color: rgba(211, 193, 179, .3);
+   background-color: rgba(181, 169, 184, .3);
    
    .edit {
       float: right;
