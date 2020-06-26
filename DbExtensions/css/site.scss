@@ -8,8 +8,8 @@ $footer-height: 120px;
 $header-padding-tb: .4em;
 $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2});
 
-body > header,
-body > footer {
+body > header {
+
    //background-color: aliceblue;
    background-color: #265899;
    color: whitesmoke;
@@ -18,9 +18,6 @@ body > footer {
       //color: #404075;
       color: inherit;
    }
-}
-
-body > header {
    
    //border-bottom: 1px solid #e0e1ef;
    
@@ -62,6 +59,7 @@ body > header {
 
 body > footer {
    //border-top: 1px solid #e0e1ef;
+   background-color: rgba(187, 206, 222, .3);
 }
 
 @media (max-width: 767px) {

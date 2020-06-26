@@ -9,13 +9,10 @@ $footer-height: 120px;
 $header-padding-tb: .4em;
 $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2} + 1px);
 
-body > header,
-body > footer {
+body > header {
+
    color: whitesmoke;
    background-color: #c25b3b;
-}
-
-body > header {
 
    a, a:hover, a:focus {
       color: inherit;
@@ -46,16 +43,18 @@ body > header {
    }
 }
 
-body > .container {
-   // fix header overflow
-   clear: both;
-}
-
 body > footer {
+
+   background-color: rgba(211, 193, 179, .3);
    
    .edit {
       float: right;
    }
+}
+
+body > .container {
+   // fix header overflow
+   clear: both;
 }
 
 div.ref-element-syntax {
