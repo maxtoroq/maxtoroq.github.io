@@ -17,12 +17,12 @@
       url: ../a/
     - title: Standard Attributes
       url: standard-attributes.html
-    - title: Reserved Namespaces
-      url: reserved-namespaces.html
-    - title: Extension Instructions
-      url: extension-instructions.html
     - title: Text Transformation
       url: text-transformation.html
+    - title: Extension Instructions
+      url: extension-instructions.html
+    - title: Reserved Namespaces
+      url: reserved-namespaces.html
 
 - title: ASP.NET
   expanded: true
