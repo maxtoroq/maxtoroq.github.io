@@ -38,17 +38,18 @@ layout: XCST-base
    <script>
       (function(d) {
          var toc = d.querySelector('nav.section-toc ul[role="tree"]');
-         var tree = new TreeLinks(toc);
-         tree.init();
 
-         var active = toc.querySelector('a.active');
+         if (toc) {
+            var tree = new TreeLinks(toc);
+            tree.init();
 
-         if (active) {
-
-            var currentNode = active;
-
-            while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
-               currentNode.setAttribute('aria-expanded', 'true');
+            var active = toc.querySelector('a.active');
+            
+            if (active) {
+               var currentNode = active;
+               while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
+                  currentNode.setAttribute('aria-expanded', 'true');
+               }
             }
          }
       })(document);
