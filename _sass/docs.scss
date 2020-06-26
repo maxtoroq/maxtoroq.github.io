@@ -85,6 +85,18 @@ ul[role="tree"] {
          }
       }
    }
+
+   h1, h2 {
+      font-weight: 400;
+   }
+
+   h1 {
+      font-size: 2.4rem;
+   }
+
+   h2 {
+      font-size: 1.8rem;
+   }
 }
 
 @media (min-width: 1200px) {
