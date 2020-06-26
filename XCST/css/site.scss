@@ -11,8 +11,8 @@ $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2} + 1px);
 
 body > header {
 
-   color: whitesmoke;
    background-color: #91619b;
+   color: #fff;
 
    a, a:hover, a:focus {
       color: inherit;

@@ -10,16 +10,12 @@ $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2});
 
 body > header {
 
-   //background-color: aliceblue;
    background-color: #265899;
-   color: whitesmoke;
+   color: #fff;
 
    a, a:hover, a:focus {
-      //color: #404075;
       color: inherit;
    }
-   
-   //border-bottom: 1px solid #e0e1ef;
    
    .container {
       padding-top: $header-padding-tb;
