@@ -41,6 +41,7 @@ body > header {
 
       &.github img {
          height: 22px;
+         filter: invert(1);
       }
    }
 }
