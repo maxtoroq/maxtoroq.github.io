@@ -25,7 +25,8 @@ ul[role="tree"] {
    $container-item-padding-top: .8rem;
 
    body.docs {
-      background-color: #fafbfc;
+      //background-color: #fafbfc;
+      background-color: #f0f2f5;
 
       .container {
          max-width: 1400px;
@@ -62,7 +63,9 @@ ul[role="tree"] {
          > main {
             min-width: 0; // prevent overflow
             background-color: #fff;
-            border: 1px solid #e0e1ef;
+            border: 1px solid;
+            //border-color: #e0e1ef;
+            border-color: rgba(0, 0, 0, .17);
          }
       }
 
