@@ -81,7 +81,7 @@ ul[role="tree"] {
       a[role="treeitem"] {
          &.active {
             font-weight: 600;
-            background-color: #eee;
+            background-color: rgba(0, 0, 0, .07);
          }
       }
    }

@@ -76,12 +76,12 @@ ul[role="tree"] {
       &.focus,
       > span.focus {
          border-color: black;
-         background-color: #eee;
+         background-color: rgba(0, 0, 0, .07);
       }
 
       &.hover,
       > span.hover {
-         background-color: #ddd;
+         background-color: rgba(0, 0, 0, .135);
       }
    }
 }
