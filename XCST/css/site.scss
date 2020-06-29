@@ -44,9 +44,10 @@ body > header {
 }
 
 body > footer {
-
    background-color: rgba(181, 169, 184, .3);
-   
+}
+
+main > footer {
    .edit {
       float: right;
    }
@@ -92,7 +93,7 @@ div.note {
 
 @media (max-width: 767px) {
 
-   body > footer {
+   main > footer {
       .edit {
          display: none;
       }
@@ -107,7 +108,7 @@ div.note {
    }
 
    body {
-      margin-bottom: $footer-height;
+      //margin-bottom: $footer-height;
 
       &.sticky-header {
          > header {
