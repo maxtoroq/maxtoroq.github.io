@@ -69,6 +69,8 @@ main {
 
       main {
          min-width: 0; // prevent overflow
+         display: flex;
+         flex-direction: column;
 
          > footer {
             padding: 1.5rem;
@@ -83,7 +85,7 @@ main {
          box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
          border-radius: 2px;
          padding: 1.5rem;
-         height: calc(100% - #{ 1.5rem * 2 });
+         flex: 1;
 
          [itemprop="articleBody"] {
             > .content {
