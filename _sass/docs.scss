@@ -12,6 +12,12 @@ ul[role="tree"] {
    }
 }
 
+main {
+   > footer {
+      color: rgba(0, 0, 0, .5);
+   }
+}
+
 @media (max-width: 767px) {
    body.docs {
       nav.section-toc {
@@ -36,31 +42,36 @@ ul[role="tree"] {
          > * {
             flex: 1;
          }
+      }
 
-         > nav.section-toc {
-            $padding-top: .8rem;
+      nav.section-toc {
+         $padding-top: .8rem;
 
-            min-width: 200px;
-            //max-width: 250px;
-            max-width: 17.5%;
+         min-width: 200px;
+         //max-width: 250px;
+         max-width: 17.5%;
+         padding-top: $padding-top;
+         font-size: calc(1rem - 1px);
+         
+         > ul {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            max-height: calc(100vh - #{$padding-top});
+            overflow-y: auto;
+            margin-left: -1rem; // .container padding * -1
+            margin-top: $padding-top * -1;
             padding-top: $padding-top;
-            font-size: calc(1rem - 1px);
-            
-            > ul {
-               position: -webkit-sticky;
-               position: sticky;
-               top: 0;
-               width: 100%;
-               max-height: calc(100vh - #{$padding-top});
-               overflow-y: auto;
-               margin-left: -1rem; // .container padding * -1
-               margin-top: $padding-top * -1;
-               padding-top: $padding-top;
-            }
          }
+      }
 
-         > main {
-            min-width: 0; // prevent overflow
+      main {
+         min-width: 0; // prevent overflow
+
+         > footer {
+            padding: 1.5rem;
+            font-size: calc(1rem - 2px);
          }
       }
 
