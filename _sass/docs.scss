@@ -22,8 +22,6 @@ ul[role="tree"] {
 
 @media (min-width: 768px) {
 
-   $container-item-padding-top: .8rem;
-
    body.docs {
       //background-color: #fafbfc;
       background-color: #f0f2f5;
@@ -37,14 +35,15 @@ ul[role="tree"] {
 
          > * {
             flex: 1;
-            padding-top: $container-item-padding-top;
          }
 
          > nav.section-toc {
+            $container-item-padding-top: 1.5rem;
+
             min-width: 200px;
             //max-width: 250px;
             max-width: 17.5%;
-
+            padding-top: $container-item-padding-top;
             font-size: calc(1rem - 1px);
             
             > ul {
@@ -62,17 +61,17 @@ ul[role="tree"] {
 
          > main {
             min-width: 0; // prevent overflow
-            background-color: #fff;
-            //border: 1px solid;
-            //border-color: #e0e1ef;
-            border-color: rgba(0, 0, 0, .17);
-            box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-            border-radius: 2px;
          }
       }
 
       article {
-         padding-left: 1.5rem;
+         background-color: #fff;
+         //border: 1px solid;
+         //border-color: #e0e1ef;
+         border-color: rgba(0, 0, 0, .17);
+         box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+         border-radius: 2px;
+         padding: 1.5rem;
 
          [itemprop="articleBody"] {
             > .content {
@@ -120,7 +119,7 @@ ul[role="tree"] {
                width: auto;
                min-width: 200px;
                max-width: 250px;
-               padding: 0 1rem;
+               padding-left: 1rem;
                
                > div {
                   position: -webkit-sticky;
