@@ -38,12 +38,12 @@ ul[role="tree"] {
          }
 
          > nav.section-toc {
-            $container-item-padding-top: 1.5rem;
+            $padding-top: .8rem;
 
             min-width: 200px;
             //max-width: 250px;
             max-width: 17.5%;
-            padding-top: $container-item-padding-top;
+            padding-top: $padding-top;
             font-size: calc(1rem - 1px);
             
             > ul {
@@ -51,11 +51,11 @@ ul[role="tree"] {
                position: sticky;
                top: 0;
                width: 100%;
-               max-height: calc(100vh - #{$container-item-padding-top});
+               max-height: calc(100vh - #{$padding-top});
                overflow-y: auto;
                margin-left: -1rem; // .container padding * -1
-               margin-top: $container-item-padding-top * -1;
-               padding-top: $container-item-padding-top;
+               margin-top: $padding-top * -1;
+               padding-top: $padding-top;
             }
          }
 
