@@ -16,6 +16,10 @@ main {
    > footer {
       font-size: calc(1rem - 2px);
       color: rgba(0, 0, 0, .5);
+
+      a {
+         border-bottom-color: rgba(0, 0, 0, .3);
+      }
    }
 }
 
