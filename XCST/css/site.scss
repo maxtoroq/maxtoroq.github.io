@@ -11,8 +11,8 @@ $header-height: calc(#{$logo-height} + #{$header-padding-tb * 2} + 1px);
 
 body > header {
 
-   background-color: #508a8a;
-   color: #fff;
+   background-color: #dfe98e;
+   //color: #fff;
 
    a, a:hover, a:focus {
       color: inherit;
@@ -132,7 +132,7 @@ div.note {
          border-bottom-color: rgba(255, 255, 255, 0.3);
 
          &:hover, &:focus {
-            border-bottom-color: #fff;
+            //border-bottom-color: #fff;
          }
       }
    }
