@@ -1,10 +1,8 @@
-## Package Parameters
+## Scope of Parameters
 
-A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable).
+<span id="dt-package-parameter"></span>A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable).
 
 Package parameters are visible to all other components in the containing package. Package parameters have an implicit `public` visibility, which also makes them visible to components in using packages.
-
-Package parameters must omit the `tunnel` attribute, or have its value set to `false`.
 
 ## Values and Types of Parameters
 
@@ -21,6 +19,8 @@ Function parameters must omit the `tunnel` attribute, or have its value set to `
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
 It is a compilation error if a required parameter specifies a default value.
+
+It is a compilation error if a package parameter uses `tunnel='yes'`.
 
 It is a run-time error if no value is supplied for a required package parameter, a required and tunnel [`c:template`](template.html) parameter, or a required [`c:delegate`](delegate.html) parameter.
 
