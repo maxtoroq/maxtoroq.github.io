@@ -4,11 +4,19 @@
 
 Global variables are visible to all other components in the containing package.
 
+## Initialization of Variables
+
+The value of a variable can be supplied by the `value` attribute or by its contents (child nodes).
+
+Global variables are initialized lazily when the variable is referenced and evaluated for the first time. If not referenced, or if reassigned before evaluating for the first time, then its initialization expression or instructions are never executed. The order of global variables is not significant.
+
+Local variables are initialized when the execution of the program reaches the variable declaration.
+
+Both global and local variables can be left uninitialized by ommiting both the `value` attribute and contents. A value can then be assigned using the [`c:set`](set.html) instruction, or from C# code.
+
 ## Values and Types of Variables
 
-The value of a variable can be supplied by the `value` attribute or by its contents (child nodes). Global variables are always initialized as these are backed by C# fields, which always have a default value. Local variables can be left uninitialized by ommiting both the `value` attribute and contents. A value can then be assigned using the [`c:set`](set.html) instruction, or from C# code.
-
-The type of a variable can be specified by the `as` attribute, or inferred if possible. For global variables, type inference does not work when the value is supplied by the `value` attribute. This is a limitation of the C# language, which does not allow the use of `var` on fields.
+The type of a variable can be specified by the `as` attribute, or inferred if possible. For global variables, type inference does not work when the value is supplied by the `value` attribute.
 
 The table below summarizes.
 
