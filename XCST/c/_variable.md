@@ -8,7 +8,7 @@ Global variables are visible to all other components in the containing package.
 
 The value of a variable can be supplied by the `value` attribute or by its contents (child nodes).
 
-Global variables are initialized lazily when the variable is referenced and evaluated for the first time. If not referenced, or if reassigned before evaluating for the first time, then its initialization expression or instructions are never executed. The order of global variables is not significant.
+Global variables (except for required package parameters) are initialized lazily when the variable is referenced and evaluated for the first time. If not referenced, or if reassigned before evaluating for the first time, then its initialization expression or instructions are never executed. The order of global variables is not significant.
 
 Local variables are initialized when the execution of the program reaches the variable declaration.
 
