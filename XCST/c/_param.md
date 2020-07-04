@@ -1,12 +1,20 @@
 ## Scope of Parameters
 
-<span id="dt-package-parameter"></span>A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable).
+<span id="dt-package-parameter"></span>A `c:param` whose parent is [`c:module`](module.html), [`c:package`](package.html) or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable). A parameter that is not a package parameter is also a [local variable](variable.html#dt-local-variable).
 
 Package parameters are visible to all other components in the containing package. Package parameters have an implicit `public` visibility, which also makes them visible to components in using packages.
 
+## Initialization of Parameters
+
+Package parameters that are not required follow the same rules as global variables. See [Initialization of Variables](variable.html#initialization-of-variables).
+
+Package parameters that use `required='yes'` are initialized before the invocation of the initial component (usually the `c:initial-template` template).
+
+Parameters that are not package parameters are initialized when the containing component or instruction is evaluated, as if the parameters where part of the following sequence constructor, even though formally they are not.
+
 ## Values and Types of Parameters
 
-A parameter is basically a [local variable](variable.html#dt-local-variable) whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). However, parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameter is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
+A parameter is basically a variable whose value can be supplied by the caller. See [Values and Types of Variables](variable.html#values-and-types-of-variables). However, parameters are always initialized, even when no value is supplied by the caller and no default value is specified, in which case the parameter is initialized with the default value of the parameter's type, e.g. `default(T)` in C#.
 
 ## Function Parameters
 
