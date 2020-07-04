@@ -8,19 +8,18 @@
    scrollbar-width: thin;
    scrollbar-color: $thumb-color transparent;
 
-   &:hover {
-      scrollbar-color: #007bff transparent;
-   }
-
    &::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
+      width: 8px;
    }
 
    &::-webkit-scrollbar-thumb {
       background-color: $thumb-color;
+   }
 
-      &:hover {
+   &:hover {
+      scrollbar-color: #007bff transparent;
+
+      &::-webkit-scrollbar-thumb {
          background-color: $thumb-color-hover;
       }
    }
