@@ -3,7 +3,7 @@
 
 @mixin custom-scrollbar {
    $thumb-color: rgba(0, 0, 0, .32);
-   $thumb-color-hover: #007bff;
+   $thumb-color-hover: rgba(0, 0, 0, .52);
    
    scrollbar-width: thin;
    scrollbar-color: $thumb-color transparent;
@@ -17,7 +17,7 @@
    }
 
    &:hover {
-      scrollbar-color: #007bff transparent;
+      scrollbar-color: $thumb-color-hover transparent;
 
       &::-webkit-scrollbar-thumb {
          background-color: $thumb-color-hover;
