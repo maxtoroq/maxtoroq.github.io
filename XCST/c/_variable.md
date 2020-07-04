@@ -8,9 +8,9 @@ Global variables are visible to all other components in the containing package.
 
 The value of a variable can be supplied by the `value` attribute or by its contents (child nodes).
 
-Global variables (except for required package parameters) are initialized lazily when the variable is referenced and evaluated for the first time. If not referenced, or if assigned before evaluating for the first time, then its initialization expression or instructions are never executed. The order of global variables is not significant.
+Global variables (except for required [package parameters](c:param#dt-package-parameter)) are initialized lazily when the variable is referenced and evaluated for the first time. If not referenced, or if assigned before evaluating for the first time, then its initialization expression or instructions are never executed. The order of global variables is not significant.
 
-Local variables are initialized when the evaluation of the containing sequence consructor reaches the variable declaration.
+Local variables are initialized when the evaluation of the containing sequence constructor reaches the variable declaration.
 
 Both global and local variables can be left uninitialized by ommiting both the `value` attribute and contents. A value can then be assigned using the [`c:set`](set.html) instruction, or from C# code.
 
