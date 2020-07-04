@@ -2,11 +2,27 @@
 @import "tree";
 
 @mixin custom-scrollbar {
+   $thumb-color: rgba(0, 0, 0, .32);
+   $thumb-color-hover: #007bff;
+   
    scrollbar-width: thin;
-   scrollbar-color: rgba(0, 0, 0, .32) transparent;
+   scrollbar-color: $thumb-color transparent;
 
    &:hover {
       scrollbar-color: #007bff transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: $thumb-color;
+
+      &:hover {
+         background-color: $thumb-color-hover;
+      }
    }
 }
 
