@@ -1,6 +1,15 @@
 
 @import "tree";
 
+@mixin custom-scrollbar {
+   scrollbar-width: thin;
+   scrollbar-color: rgba(0, 0, 0, .32) transparent;
+
+   &:hover {
+      scrollbar-color: #007bff transparent;
+   }
+}
+
 ul[role="tree"] {
 
    li:before {
@@ -64,10 +73,11 @@ main {
             top: 0;
             width: 100%;
             max-height: calc(100vh - #{$padding-top});
-            overflow-y: auto;
             margin-left: -1rem; // .container padding * -1
             margin-top: $padding-top * -1;
             padding-top: $padding-top;
+            overflow-y: auto;
+            @include custom-scrollbar();
          }
       }
 
@@ -146,6 +156,7 @@ main {
                   padding: 0;
                   max-height: calc(100vh - 10px);
                   overflow-y: auto;
+                  @include custom-scrollbar();
                }
             }
 
