@@ -14,3 +14,11 @@
 ```
 
 </div>
+
+
+<div class="note" markdown="1">
+
+###### Differences with `xsl:use-package`
+While `xsl:use-package` can be used only at the highest import precedence level, `c:use-package` can be used at any level.
+
+</div>
