@@ -1,5 +1,5 @@
 ---
-title: "a:check-box"
+title: "a:checkbox"
 ---
 
 {% comment %}  
@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:check-box</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:checkbox</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
   <span>checked</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
@@ -58,4 +58,4 @@ regenerated.
    </table>
 </div>
 
-{% include_relative _check-box.md %}
+{% include_relative _checkbox.md %}

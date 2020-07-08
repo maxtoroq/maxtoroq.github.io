@@ -16,7 +16,7 @@ regenerated.
    <h2 id="elements">Elements</h2>
    <ul>
       <li><a href="anti-forgery-token.html"><code>a:anti-forgery-token</code></a></li>
-      <li><a href="check-box.html"><code>a:check-box</code></a></li>
+      <li><a href="checkbox.html"><code>a:checkbox</code></a></li>
       <li><a href="display.html"><code>a:display</code></a> &nbsp;<a href="display-name.html"><code>a:display-name</code></a> &nbsp;<a href="display-text.html"><code>a:display-text</code></a></li>
       <li><a href="editor.html"><code>a:editor</code></a></li>
       <li><a href="form.html"><code>a:form</code></a></li>
@@ -25,7 +25,7 @@ regenerated.
       <li><a href="label.html"><code>a:label</code></a></li>
       <li><a href="member-template.html"><code>a:member-template</code></a> &nbsp;<a href="model.html"><code>a:model</code></a></li>
       <li><a href="option.html"><code>a:option</code></a></li>
-      <li><a href="radio-button.html"><code>a:radio-button</code></a></li>
+      <li><a href="radio.html"><code>a:radio</code></a></li>
       <li><a href="select.html"><code>a:select</code></a></li>
       <li><a href="textarea.html"><code>a:textarea</code></a></li>
       <li><a href="validation-message.html"><code>a:validation-message</code></a> &nbsp;<a href="validation-summary.html"><code>a:validation-summary</code></a></li>

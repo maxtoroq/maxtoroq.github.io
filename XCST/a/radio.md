@@ -1,5 +1,5 @@
 ---
-title: "a:radio-button"
+title: "a:radio"
 ---
 
 {% comment %}  
@@ -9,7 +9,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:radio-button</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:radio</span>
   <b>value</b> = <i title="Expression.">expression</i>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
@@ -63,4 +63,4 @@ regenerated.
    </table>
 </div>
 
-{% include_relative _radio-button.md %}
+{% include_relative _radio.md %}

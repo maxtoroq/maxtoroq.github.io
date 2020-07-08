@@ -125,8 +125,8 @@
   toc:
     - title: a:anti-forgery-token
       url: anti-forgery-token.html
-    - title: a:check-box
-      url: check-box.html
+    - title: a:checkbox
+      url: checkbox.html
     - title: a:display
       url: display.html
     - title: a:display-name
@@ -149,8 +149,8 @@
       url: model.html
     - title: a:option
       url: option.html
-    - title: a:radio-button
-      url: radio-button.html
+    - title: a:radio
+      url: radio.html
     - title: a:select
       url: select.html
     - title: a:textarea
