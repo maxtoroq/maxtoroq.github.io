@@ -12,7 +12,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - **Removed `a:http-method-override`**
 - **`a:select` gets selected value from metadata** [aa38519](https://github.com/maxtoroq/XCST-a/commit/aa38519525292c672093054d964e12eb39067bec)
 - Auto-create IEnumerable&lt;SelectListItem> from various types [cf3d8a4](https://github.com/maxtoroq/XCST-a/commit/cf3d8a441d159cde2e25990d6b9b7cd12d81c9fc)
-- `a:input`, `a:hidden`, `a:check-box` and `a:radio-button` can now get value/checked from current model [30cc474](https://github.com/maxtoroq/XCST-a/commit/30cc4743e899a9325b054f4ecc15b6ee44ac39d7)
+- `a:input`, `a:hidden`, `a:checkbox` and `a:radio` can now get value/checked from current model [30cc474](https://github.com/maxtoroq/XCST-a/commit/30cc4743e899a9325b054f4ecc15b6ee44ac39d7)
 - **Excluding member errors by default on `a:validation-summary`** [14a00b5](https://github.com/maxtoroq/XCST-a/commit/14a00b56381eed57d9cf9e098010ebb1264a327d)
 - **Validation helpers gets messages from config object instead of global resource** [63ec292](https://github.com/maxtoroq/XCST-a/commit/63ec2929636d16873b90aecb389bb787f26b8cb3)
 - **Use built-in adapters for derived validation attributes** [AspNetLib/0168c4c](https://github.com/maxtoroq/AspNetLib/commit/0168c4cf7d390f14f0d043fb6811bffc8174245e)
