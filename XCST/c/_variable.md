@@ -40,7 +40,7 @@ content | type
 Text node | [String]
 Literal result element | [XElement]
 [`c:array`](array.html) | [Object]
-[`c:delegate`](delegate.html) | Xcst.XcstDelegate&lt;TItem> (see [Type of a Delegate](delegate.html#type-of-a-delegate) for more info)
+[`c:delegate`](delegate.html) | Xcst.XcstDelegate&lt;TItem>
 [`c:document`](document.html) | [XDocument]
 [`c:element`](element.html) | [XElement]
 [`c:map`](map.html) | [Object]
