@@ -399,8 +399,11 @@ In XCST you have to call the `content` template instead.
 </c:template>
 ```
 
-<div class="note">
+<div class="note" markdown="1">
+
+###### Note
 Razor has <em>start pages</em> where you can set the layout for the whole site if you want. XCST has no such mechanism, to use a layout you have to explicitly import it.
+
 </div>
 
 Working with data and postbacks
