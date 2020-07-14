@@ -76,21 +76,6 @@ table.ref-attribs {
    }
 }
 
-div.note {
-
-   h6 {
-      font-size: 1em;
-      color: inherit;
-      font-weight: bold;
-      margin: 0 0 1em 0;
-   }
-
-   &.eg {
-      background: rgba(197, 232, 255, .5);
-      border-color: rgba(135, 207, 255, .7);
-   }
-}
-
 @media (max-width: 767px) {
 
    main > footer {
