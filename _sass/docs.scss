@@ -189,28 +189,31 @@ div.note {
    background-color: transparent !important;
    border-radius: 2px;
    border-left-width: 4px;
+   border-left-color: rgba(236, 193, 37, .7);
    border-right: 1px solid rgba(0, 0, 0, .08);
    border-bottom: 1px solid rgba(0, 0, 0, .08);
    page-break-inside: avoid;
 
    h6 {
       font-size: 1em;
-      color: inherit;
+      color: #111;
       font-weight: bold;
-      padding: .8em 1em;
+      padding: .7em 1em;
       margin: -1em;
       margin-bottom: 1em;
       background: rgba(255, 237, 173, .5);
    }
 
    &.danger {
+      border-left-color: rgba(237, 53, 53, .7);
+
       h6 {
          background: rgba(253, 203, 203, .5);
       }
    }
 
    &.eg {
-      border-left-color: rgba(135, 207, 255, .7);
+      border-left-color: rgba(63, 166, 234, .7);
 
       h6 {
          background: rgba(197, 232, 255, .5);
