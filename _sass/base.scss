@@ -90,46 +90,30 @@ p {
    //text-indent: 1.5em;
 }
 
-div.note {
-   font-size: calc(1rem - 2px);
-}
-
 blockquote, 
 div.note {
-   
    padding: 1em;
+   padding-bottom: 1px;
    border-left-width: 6px;
    border-left-style: solid;
-   
-   > *:last-child {
-
-      margin-bottom: 0;
-
-      > *:last-child {
-         margin-bottom: 0;
-
-         > *:last-child {
-            margin-bottom: 0;
-         }
-      }
-   }
 }
 
 blockquote {
    font-size: calc(1rem + 2px);
-   border-color: rgba(0, 0, 0, .1);
+   border-left-color: rgba(0, 0, 0, .1);
    margin-left: 0;
    margin-right: 0;
 }
 
 div.note {
    
+   font-size: calc(1rem - 2px);
    background: rgba(255, 237, 173, .5);
-   border-color: rgba(255, 229, 134, .7);
+   border-left-color: rgba(255, 229, 134, .7);
    
    &.danger {
       background: rgba(253, 203, 203, .5);
-      border-color: rgba(255, 134, 134, .7);
+      border-left-color: rgba(255, 134, 134, .7);
    }
 }
 

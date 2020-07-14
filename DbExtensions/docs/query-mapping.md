@@ -22,6 +22,7 @@ If the column names in your database exactly match your object's properties then
 
 <div class="note danger" markdown="1">
 
+###### Warning
 It's not recommended to project onto an [annotated][annotations] entity type. Updating a partially loaded entity may cause data loss.
 
 </div>
@@ -98,7 +99,12 @@ return db.Map<EmployeeTerritory>(query);
 
 </figure>
 
-<div class="note">If all columns related to a complex property are null, the property is set to null.</div>
+<div class="note" markdown="1">
+
+###### Note
+If all columns related to a complex property are null, the property is set to null.
+
+</div>
 
 Constructors
 ------------
@@ -186,6 +192,7 @@ In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite colu
 
 <div class="note" markdown="1">
 
+###### Note
 Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. The number of <em>numeric</em> column names determines which constructor to use (number of parameters), and the arguments are ordered based on the column names.
 
 </div>

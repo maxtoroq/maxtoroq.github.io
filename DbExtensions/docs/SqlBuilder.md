@@ -198,6 +198,8 @@ By using the [SQL.List][9] method you can expand a collection of values into a l
 
 <div class="note" markdown="1">
 
+
+###### Note
 In v5, SqlBuilder automatically expands any array value as a list of parameters. This turned out to be problematic for various reasons, so in v6 you now have to explicitly opt-in into this feature by calling [SQL.List][9].
 
 </div>

@@ -220,6 +220,7 @@ SqlSet<ProductStock> productStocks = products.Select<ProductStock>("ProductID, P
 
 <div class="note danger" markdown="1">
 
+###### Warning
 It's not recommended to project onto an [annotated][13] entity type. Updating a partially loaded entity may cause data loss.
 
 </div>
