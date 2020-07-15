@@ -1,10 +1,33 @@
+## Tunnel Parameters
+
+Tunnel parameters are parameters that are automatically and recursively passed on to further [`c:template`](template.html) and [`c:delegate`](delegate.html) calls, without requiring each template to be aware of them. They are passed *in the background* so to speak.
+
 <div class="note eg" markdown="1">
 
-###### Example
+###### Example: Using Tunnel Parameters
+On the following example, the `c:initial-template` template calls the `layout` template, which in turn calls the `content` template that recieves the `product`  tunnel parameter sent by `c:initial-template`, which `layout` is unaware of. 
+
 ```xml
-<c:call-template name='layout'>
-   <c:with-param name='product' value='product' tunnel='yes'/>
-</c:call-template>
+<c:template name='c:initial-template'>
+   <c:variable name='product' value='FindProduct()'/>
+   <c:call-template name='layout'>
+      <c:with-param name='product' value='product' tunnel='yes'/>
+   </c:call-template>
+</c:template>
+
+<c:template name='layout'>
+   <html>
+      <body>
+         <c:call-template name='content'/>
+      </body>
+   </html>
+</c:template>
+
+<c:template name='content' expand-text='yes'>
+   <c:param name='product' as='Product' tunnel='yes'/>
+   
+   Product Name: {product.Name}
+</c:template>
 ```
 
 </div>
