@@ -7,7 +7,7 @@ feature | `c:template` | `c:function`
 Implicit output | yes | no
 Invocation method | [`c:call-template`](call-template.html) | C# (e.g. `Foo()`)
 Parameter binding | by name | by position
-Tunnel parameters | yes | no
+[Tunnel parameters](call-template.html#dt-tunnel-parameter) | yes | no
 
 Because functions don't have an implicit output, to return a value you need to use the [`c:return`](return.html) instruction, or return from code in a [`c:script`](script.html) element.
 
