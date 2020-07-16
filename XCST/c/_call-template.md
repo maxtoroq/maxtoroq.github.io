@@ -2,7 +2,7 @@
 
 <span id="dt-tunnel-parameter"></span>A **tunnel parameter** is a parameter that is automatically and recursively passed on to further [`c:template`](template.html) and [`c:delegate`](delegate.html) calls, without requiring each template to be aware of it. It is passed *in the background* so to speak.
 
-A tunnel parameter is created by a [`c:with-param`](with-param.html) element with `tunnel='yes'`, or by using the `tunnel-params` attribute on `c:call-template` or [`c:next-template`](next-template.html).
+A tunnel parameter is created by a [`c:with-param`](with-param.html) element with `tunnel='yes'`, or by using the `tunnel-params` attribute on `c:call-template` or [`c:next-template`](next-template.html). If the same parameter is specified using both [`c:with-param`](with-param.html) and the `tunnel-params` attribute, the `tunnel-params` parameter takes precedence.
 
 <div class="note eg" markdown="1">
 
