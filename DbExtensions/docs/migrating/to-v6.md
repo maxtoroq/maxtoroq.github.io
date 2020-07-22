@@ -45,7 +45,7 @@ ConfigurationManager is not available on .NET Core, so all dependencies on Syste
 var db = new Database("name=Northwind");
 ```
 
-Instead you can use a new constructor and pass in the connection string and provider invariant name. Your application can still use ConfigurationManager on .NET Full, e.g.:
+Instead you can use a new constructor and pass in the connection string and provider invariant name. Your application can still use ConfigurationManager on .NET Framework, e.g.:
 
 ```csharp
 ConnectionStringSetings connSettings = ConfigurationManager.ConnectionStrings["Northwind"];
