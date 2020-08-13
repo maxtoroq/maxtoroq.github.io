@@ -5,6 +5,10 @@ title: Changelog
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
+### v6.3.0 (planning)
+- [ ] Persistent complex properties
+- [ ] Debuggable binaries (SourceLink)
+
 ### v6.2.0
 - Added: WITH and FROM overloads that accept SqlSet as subQuery
 - Added: Treat SqlSet as subquery on SqlBuilder 
