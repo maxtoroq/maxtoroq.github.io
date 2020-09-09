@@ -123,8 +123,8 @@
 - title: Application Extension Elements
   url: a/
   toc:
-    - title: a:anti-forgery-token
-      url: anti-forgery-token.html
+    - title: a:antiforgery
+      url: antiforgery.html
     - title: a:checkbox
       url: checkbox.html
     - title: a:display

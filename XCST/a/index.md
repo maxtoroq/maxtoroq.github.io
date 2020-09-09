@@ -15,7 +15,7 @@ regenerated.
 <div class="ref-element-list">
    <h2 id="elements">Elements</h2>
    <ul>
-      <li><a href="anti-forgery-token.html"><code>a:anti-forgery-token</code></a></li>
+      <li><a href="antiforgery.html"><code>a:antiforgery</code></a></li>
       <li><a href="checkbox.html"><code>a:checkbox</code></a></li>
       <li><a href="display.html"><code>a:display</code></a> &nbsp;<a href="display-name.html"><code>a:display-name</code></a> &nbsp;<a href="display-text.html"><code>a:display-text</code></a></li>
       <li><a href="editor.html"><code>a:editor</code></a></li>
