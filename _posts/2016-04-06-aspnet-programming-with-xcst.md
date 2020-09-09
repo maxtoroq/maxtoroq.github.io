@@ -117,7 +117,7 @@ Contact form
          </div>
       </c:if>
       <form method='post' class='form-horizontal'>
-         <a:anti-forgery-token/>
+         <a:antiforgery/>
          <a:validation-summary/>
          <a:editor with-params='new { labelColumnClass = "col-md-3", fieldColumnClass = "col-md-9" }'/>
          <div class='form-group'>
