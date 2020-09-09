@@ -467,7 +467,7 @@ Razor                                                 | XCST
 ----------------------------------------------------- | -------------------------
 `Html.Action()`                                       | n/a
 `Html.ActionLink()`                                   | n/a
-`Html.AntiForgeryToken()`                             | `<a:anti-forgery-token/>`
+`Html.AntiForgeryToken()`                             | `<a:antiforgery/>`
 `Html.BeginForm()`                                    | n/a
 `Html.BeginRouteForm()`                               | n/a
 `Html.CheckBox("foo")`                                | `<a:check-box name='foo'/>`
