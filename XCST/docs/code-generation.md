@@ -23,3 +23,13 @@ When you build your project a `xcst.generated.cs` file will be generated. This f
 Next, add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
 
 Lastly, make sure your project references the `Xcst.Runtime` NuGet package.
+
+### SDK-style projects
+
+When targeting .NET 5+ or other *SDK-style* projects, the pre-build setup is different:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent" DependsOnTargets="ResolveReferences">
+  <Exec Command="$(ProjectDir)\..\xcst-codegen\bin\$(Configuration)\xcst-codegen.exe $(ProjectPath) $(Configuration) -LibsAndPages" />
+</Target>
+```
