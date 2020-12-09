@@ -47,7 +47,7 @@ Programming is hard because **we don't have the right tools**. Even new technolo
 
 Get in touch
 ------------
-Feel free to [email me](mailto:maxtoroq@gmail.com), or start a public conversation [here]({{ site.github.discussions_url }}). You can also find me on [GitHub](https://github.com/maxtoroq) and [Stack Overflow](http://stackoverflow.com/users/39923).
+Feel free to [email me](mailto:maxtoroq@gmail.com), or start a public conversation [here]({{ site.github.repository_url }}/discussions). You can also find me on [GitHub](https://github.com/maxtoroq) and [Stack Overflow](http://stackoverflow.com/users/39923).
 
 If you'd like to show your appreciation you can [donate](donate.html).
 
