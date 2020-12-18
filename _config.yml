@@ -68,7 +68,7 @@ defaults:
       layout: XCST-docs
       repository_url: https://github.com/maxtoroq/XCST
       documentation_url: /XCST/docs/
-      support_url: https://github.com/maxtoroq/XCST/issues?q=is%3Aissue+label%3Aquestion
+      support_url: https://github.com/maxtoroq/XCST/discussions
       bcl_url: https://msdn.microsoft.com/en-us/library/
       csharp_spec_url: https://github.com/dotnet/csharplang/blob/master/spec/
 
