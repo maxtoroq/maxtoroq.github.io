@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:sort</span>
-  <span>value</span>? = <i title="Lambda expression.">lambda_expression</i>
+  <span>by</span>? = <i title="Lambda expression.">lambda_expression</i>
   <span>order</span>? = { <span><span class="s">"ascending"</span> | <span class="s">"descending"</span></span> } /&gt;</code></pre></div>
 <p>Defines how to sort sequences of items.</p>
 <dl>
@@ -22,12 +22,12 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>order</code></td>
-         <td>Specifies the sort direction ("ascending" or "descending").</td>
+         <td><code>by</code></td>
+         <td>A lambda expression that computes the sorting key.</td>
       </tr>
       <tr>
-         <td><code>value</code></td>
-         <td>A lambda expression that computes the sorting key.</td>
+         <td><code>order</code></td>
+         <td>Specifies the sort direction ("ascending" or "descending").</td>
       </tr>
    </table>
 </div>
