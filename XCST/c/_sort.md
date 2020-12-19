@@ -8,7 +8,7 @@ When used within [`c:for-each`](for-each.html), `c:sort` defines the order used 
 ###### Example: Using `c:sort` in `c:for-each`
 ```xml
 <c:for-each name='address' in='addressBook'>
-  <c:sort value='a => a.last_used' order='descending'/>
+  <c:sort by='a => a.last_used' order='descending'/>
 
   <address>
      ...
