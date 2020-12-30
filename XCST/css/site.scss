@@ -28,6 +28,16 @@ body > header {
 
       &:first-child {
          margin-left: 0;
+         
+         display: inline-block;
+         width: 60px;
+         height: 25px;
+         background-image: url(../nuget/icon.png);
+         background-size: 60px;
+         background-position-y: -18px;
+         border-bottom: none;
+         text-indent: -999em;
+         vertical-align: middle;
       }
 
       &.github, &.donate {
