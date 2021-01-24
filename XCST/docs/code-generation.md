@@ -31,5 +31,9 @@ When targeting .NET 5+ or other *SDK-style* projects, the pre-build setup is dif
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent" DependsOnTargets="ResolveReferences">
   <Exec Command="$(ProjectDir)\..\xcst-codegen\bin\$(Configuration)\xcst-codegen.exe $(ProjectPath) $(Configuration) -LibsAndPages" />
+  <ItemGroup>
+    <Compile Remove="xcst.generated.cs" />
+    <Compile Include="xcst.generated.cs" />
+  </ItemGroup>
 </Target>
 ```
