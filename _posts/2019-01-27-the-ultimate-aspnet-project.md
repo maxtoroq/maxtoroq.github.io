@@ -63,6 +63,6 @@ Each class library project represents a section (or module) of the site. In a pr
 
 The Web Site references each class library. When the solution is built, the Web Site *becomes* a precompiled site. No need for a publish step. And since the Web Site itself has no code, it doesn't need to reference the DotNetCompilerPlatform package.
 
-When you split your precompiled site to several projects, you can update and deploy sections of your site without having to redeploy everything. **No marker files, no `.compiled` files, only assemblies**. That's a huge win.
+When you split your precompiled site into several projects, you can update and deploy sections of your site without having to redeploy everything. **No marker files, no `.compiled` files, only assemblies**. That's a huge win.
 
 [ExtensionlessUrlModule]: https://github.com/maxtoroq/XCST-a/blob/67a987c/src/Xcst.AspNet.Compilation/ExtensionlessUrlModule.cs
