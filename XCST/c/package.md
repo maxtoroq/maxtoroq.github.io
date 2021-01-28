@@ -11,6 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:package</span>
   <span>name</span>? = <i title="Type name.">type_name</i>
+  <span>visibility</span>? = <span><span class="s">"internal"</span> | <span class="s">"public"</span></span>
   <b>version</b> = <i>decimal</i>
   <b>language</b> = <i>language</i> &gt;
   &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><i>declaration</i></span>*</span>) --&gt;
@@ -34,6 +35,10 @@ regenerated.
       <tr>
          <td><code>version</code></td>
          <td>The XCST version for the current and descendant elements (usually "1.0").</td>
+      </tr>
+      <tr>
+         <td><code>visibility</code></td>
+         <td>Specifies how the current package can be used from other assemblies.</td>
       </tr>
    </table>
 </div>
