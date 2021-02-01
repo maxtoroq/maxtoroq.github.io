@@ -18,7 +18,7 @@ Generating code for your C# project can done in a pre-build event. Add the follo
 
 Note the `-LibsAndPages` flag, this is only relevant in ASP.NET; otherwise, remove it.
 
-When you build your project a `xcst.generated.cs` file will be generated. This file will include the code for all the [named packages](..\c\package.html#dt-named-package) in any subdirectory starting from the project directory.
+When you build your project a `xcst.generated.cs` file will be generated. This file will include the code for all packages located in any subdirectory starting from the project directory.
 
 Next, add `xcst.generated.cs` to your project. Note that, because we are using a pre-build event, this file does not need to exist when you build and generate code for the first time.
 
