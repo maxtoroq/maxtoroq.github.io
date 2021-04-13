@@ -12,7 +12,7 @@ The evaluation API starts with the `Xcst.XcstEvaluator` class, which provides a 
 // pass new instance of compiled package
 XcstEvaluator.Using(new FooPackage())
    
-   // optionally set a global parameter
+   // optionally set a package parameter
    .WithParam("a", 5)
    
    // call initial template (or CallTemplate("bar"))
