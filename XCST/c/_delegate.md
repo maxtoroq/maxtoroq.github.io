@@ -4,4 +4,4 @@
 
 ## See Also
 
-- [`c:evaluate-delegate`](evaluate-delegate.html)
+- [`c:invoke-delegate`](invoke-delegate.html)

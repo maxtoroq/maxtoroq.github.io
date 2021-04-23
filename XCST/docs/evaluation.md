@@ -33,4 +33,4 @@ XcstEvaluator.Using(new FooPackage())
 
 ## Evaluating from XCST
 
-If you are evaluating from XCST, instead of using the API you can use the [`c:evaluate-package`](../c/evaluate-package.html) instruction.
+If you are evaluating from XCST, instead of using the API you can use the [`c:invoke-package`](../c/invoke-package.html) instruction.

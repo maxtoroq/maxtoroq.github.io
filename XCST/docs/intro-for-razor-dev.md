@@ -520,10 +520,10 @@ In Razor you use `RenderPage` or `RenderPartial` to execute another page.
 @{ RenderPartial("~/_MyPartial.cshtml", new ViewDataDictionary { { "foo", "foo" } }); }
 ```
 
-In XCST you use [`c:evaluate-package`](../c/evaluate-package.html) in conjunction with the `LoadPage` method.
+In XCST you use [`c:invoke-package`](../c/invoke-package.html) in conjunction with the `LoadPage` method.
 
 ```xml
-<c:evaluate-package package='LoadPage("~/mypartial.xcst")' global-params='new { foo = "foo" }'/>
+<c:invoke-package package='LoadPage("~/mypartial.xcst")' package-params='new { foo = "foo" }'/>
 ```
 
 `model` directive

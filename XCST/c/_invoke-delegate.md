@@ -16,8 +16,8 @@
 </c:variable>
 
 <ul class='pagination'>
-   <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
-   <c:evaluate-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
+   <c:invoke-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
+   <c:invoke-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
    ...
 </ul>
 ```
@@ -36,8 +36,8 @@
    <c:param name='pagerItem' as='XcstDelegate<object>'/>
    
    <ul class='pagination'>
-      <c:evaluate-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
-      <c:evaluate-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
+      <c:invoke-delegate delegate='pagerItem' with-params='new { page = currentPage - 1, text = "← Previous", @class = "page-prev" }'/>
+      <c:invoke-delegate delegate='pagerItem' with-params='new { page = 1 }'/>
       ...
    </ul>
 </c:template>
