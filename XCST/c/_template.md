@@ -8,7 +8,7 @@
 </c:template>
 ```
 
-<\div>
+</div>
 
 <div class="note eg" markdown="1">
 
