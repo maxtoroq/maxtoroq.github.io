@@ -11,7 +11,8 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:module</span>
   <b>version</b> = <i>decimal</i>
-  <b>language</b> = <i>language</i> &gt;
+  <b>language</b> = <i>language</i>
+  <span>default-mode</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> &gt;
   &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><i>declaration</i></span>*</span>) --&gt;
 <span class="nt">&lt;/c:module&gt;</span></code></pre></div>
 <p>Represents an XCST module.</p>
@@ -22,6 +23,10 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>default-mode</code></td>
+         <td>The default mode of template rules for the current module.</td>
+      </tr>
       <tr>
          <td><code>language</code></td>
          <td>The expression language for this module (usually "C#" or "VisualBasic").</td>

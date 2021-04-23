@@ -10,12 +10,14 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:template</span>
-  <b>name</b> = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>
-  <span>as</span>? = <i title="Type name.">type_name</i>
-  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span></span> &gt;
+  <span>name</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>
+  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span></span>
+  <span>match</span>? = <i title="Pattern expression.">pattern</i>
+  <span>mode</span>? = <span><span class="s">"#all"</span> | <span><span>(<i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> | <span class="s">"#default"</span>)</span>+</span></span>
+  <span>as</span>? = <i title="Type name.">type_name</i> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:template&gt;</span></code></pre></div>
-<p>Defines a template.</p>
+<p>Defines a named template or template rule.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>declaration</i></dd>
@@ -30,6 +32,16 @@ regenerated.
       <tr>
          <td><code>as</code></td>
          <td>The return type.</td>
+      </tr>
+      <tr>
+         <td><code>match</code></td>
+         <td>A pattern expression.</td>
+      </tr>
+      <tr>
+         <td><code>mode</code></td>
+         <td>A space separated list of either eqname or "#default"; or "#all". Unprefixed qualified
+            names are in the null namespace.
+         </td>
       </tr>
       <tr>
          <td><code>name</code></td>

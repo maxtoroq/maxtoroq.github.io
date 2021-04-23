@@ -13,7 +13,8 @@ regenerated.
   <span>name</span>? = <i title="Type name.">type_name</i>
   <span>visibility</span>? = <span><span class="s">"internal"</span> | <span class="s">"public"</span></span>
   <b>version</b> = <i>decimal</i>
-  <b>language</b> = <i>language</i> &gt;
+  <b>language</b> = <i>language</i>
+  <span>default-mode</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> &gt;
   &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><i>declaration</i></span>*</span>) --&gt;
 <span class="nt">&lt;/c:package&gt;</span></code></pre></div>
 <p>Represents an XCST package.</p>
@@ -24,6 +25,10 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>default-mode</code></td>
+         <td>The default mode of template rules for the current module.</td>
+      </tr>
       <tr>
          <td><code>language</code></td>
          <td>The expression language for this module (usually "C#" or "VisualBasic").</td>

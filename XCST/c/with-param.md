@@ -19,8 +19,10 @@ regenerated.
 <p>Defines parameter arguments for a template or delegate.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
+   <dd><a href="apply-templates.html"><code>c:apply-templates</code></a></dd>
    <dd><a href="call-template.html"><code>c:call-template</code></a></dd>
-   <dd><a href="evaluate-delegate.html"><code>c:evaluate-delegate</code></a></dd>
+   <dd><a href="invoke-delegate.html"><code>c:invoke-delegate</code></a></dd>
+   <dd><a href="next-match.html"><code>c:next-match</code></a></dd>
    <dd><a href="next-template.html"><code>c:next-template</code></a></dd>
 </dl>
 <h2 id="attributes">Attributes</h2>

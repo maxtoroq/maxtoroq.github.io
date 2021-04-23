@@ -1,5 +1,5 @@
 ---
-title: "c:evaluate-delegate"
+title: "c:invoke-delegate"
 ---
 
 {% comment %}  
@@ -9,12 +9,13 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-delegate</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:invoke-delegate</span>
   <b>delegate</b> = @(<span title="Xcst.XcstDelegate<TItem&gt;">XcstDelegate&lt;TItem&gt;</span> | <a href="{{ page.bcl_url }}system.delegate" title="System.Delegate">Delegate</a>)
-  <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
+  <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
-<span class="nt">&lt;/c:evaluate-delegate&gt;</span></code></pre></div>
-<p>Evaluates a template delegate.</p>
+<span class="nt">&lt;/c:invoke-delegate&gt;</span></code></pre></div>
+<p>Invokes a template delegate.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
@@ -30,6 +31,10 @@ regenerated.
          <td>The template delegate instance.</td>
       </tr>
       <tr>
+         <td><code>tunnel-params</code></td>
+         <td>An object with tunnel parameters.</td>
+      </tr>
+      <tr>
          <td><code>with-params</code></td>
          <td>An object with parameters.</td>
       </tr>
@@ -39,4 +44,4 @@ regenerated.
       In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
 
-{% include_relative _evaluate-delegate.md %}
+{% include_relative _invoke-delegate.md %}

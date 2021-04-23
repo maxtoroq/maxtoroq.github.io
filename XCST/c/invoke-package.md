@@ -1,5 +1,5 @@
 ---
-title: "c:evaluate-package"
+title: "c:invoke-package"
 ---
 
 {% comment %}  
@@ -9,15 +9,17 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:evaluate-package</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:invoke-package</span>
   <b>package</b> = <i title="Expression.">expression</i>
-  <span>global-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>package-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>initial-template</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>initial-mode</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>initial-match-selection</span>? = <i title="Expression.">expression</i>
   <span>template-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>base-output-uri</span>? = { <i>uri</i> }
   <span>base-uri</span>? = { <i>uri</i> } /&gt;</code></pre></div>
-<p>Evaluates a dynamically loaded package.</p>
+<p>Invokes a dynamically loaded package.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>instruction</i></dd>
@@ -37,8 +39,12 @@ regenerated.
          <td>The base URI, used to resolve relative URIs.</td>
       </tr>
       <tr>
-         <td><code>global-params</code></td>
-         <td>An object with global parameters.</td>
+         <td><code>initial-match-selection</code></td>
+         <td>The value of the initial match selection.</td>
+      </tr>
+      <tr>
+         <td><code>initial-mode</code></td>
+         <td>The name of the initial mode.</td>
       </tr>
       <tr>
          <td><code>initial-template</code></td>
@@ -49,12 +55,16 @@ regenerated.
          <td>The package instance.</td>
       </tr>
       <tr>
+         <td><code>package-params</code></td>
+         <td>An object with package parameters.</td>
+      </tr>
+      <tr>
          <td><code>template-params</code></td>
          <td>An object with template parameters.</td>
       </tr>
       <tr>
          <td><code>tunnel-params</code></td>
-         <td>An object with tunnel template parameters.</td>
+         <td>An object with tunnel parameters.</td>
       </tr>
    </table>
 </div>
@@ -62,4 +72,4 @@ regenerated.
       In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
 
-{% include_relative _evaluate-package.md %}
+{% include_relative _invoke-package.md %}

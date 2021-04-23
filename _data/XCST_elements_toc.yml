@@ -4,6 +4,8 @@
   toc:
     - title: c:accept
       url: accept.html
+    - title: c:apply-templates
+      url: apply-templates.html
     - title: c:array
       url: array.html
     - title: c:assert
@@ -32,10 +34,6 @@
       url: document.html
     - title: c:element
       url: element.html
-    - title: c:evaluate-delegate
-      url: evaluate-delegate.html
-    - title: c:evaluate-package
-      url: evaluate-package.html
     - title: c:fallback
       url: fallback.html
     - title: c:finally
@@ -52,6 +50,10 @@
       url: import.html
     - title: c:import-namespace
       url: import-namespace.html
+    - title: c:invoke-delegate
+      url: invoke-delegate.html
+    - title: c:invoke-package
+      url: invoke-package.html
     - title: c:map
       url: map.html
     - title: c:map-entry
@@ -66,6 +68,8 @@
       url: module.html
     - title: c:namespace
       url: namespace.html
+    - title: c:next-match
+      url: next-match.html
     - title: c:next-template
       url: next-template.html
     - title: c:object
