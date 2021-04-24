@@ -21,7 +21,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - Fixed [aspnet/AspNetWebStack#7](https://github.com/aspnet/AspNetWebStack/issues/7) [02e8172](https://github.com/maxtoroq/XCST-a/commit/02e8172da9f38201ba432ca5a26a6131cac1ef3f)
 - **Value/ValueFor uses EditFormatString by default** [0738bbe](https://github.com/maxtoroq/XCST-a/commit/0738bbe7ff78e505f10ee28e2374953cf07b1a4a)
 - **Omit `value` for `file` input** [017ad20](https://github.com/maxtoroq/XCST-a/commit/017ad20b559e73f2858e03c35740b11ada895337)
-- **`a:display-text` shows display name for Enum**
+- **`a:display-text` shows display name for Enum** [315d431](https://github.com/maxtoroq/XCST-a/commit/315d43176d671124088b87d63a28222c7e145d6c)
 
 ### Built-in display/editor templates
 
