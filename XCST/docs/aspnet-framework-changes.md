@@ -21,6 +21,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - Fixed [aspnet/AspNetWebStack#7](https://github.com/aspnet/AspNetWebStack/issues/7) [02e8172](https://github.com/maxtoroq/XCST-a/commit/02e8172da9f38201ba432ca5a26a6131cac1ef3f)
 - **Value/ValueFor uses EditFormatString by default** [0738bbe](https://github.com/maxtoroq/XCST-a/commit/0738bbe7ff78e505f10ee28e2374953cf07b1a4a)
 - **Omit `value` for `file` input** [017ad20](https://github.com/maxtoroq/XCST-a/commit/017ad20b559e73f2858e03c35740b11ada895337)
+- **`a:display-text` shows display name for Enum**
 
 ### Built-in display/editor templates
 
@@ -69,7 +70,7 @@ This page lists the changes made to existing features taken from ASP.NET MVC 5. 
 - ModelMetadata.GroupName [184cf25](https://github.com/maxtoroq/XCST-a/commit/184cf25ba5850fb6efb482002b243d9fa35702f4)
 - **Merged AjaxRequestExtensions and RequestExtensions into HttpRequestExtensions** [2f5f3f4](https://github.com/maxtoroq/XCST-a/commit/2f5f3f498efa39f57fbd635e57b12751fd1f568a)
 - **Simplified ControllerContext implementation**: Removed RouteData [035168a](https://github.com/maxtoroq/XCST-a/commit/035168ac1c51124583d81cd6bfd2ef4c0d8e56e5); Removed RequestContext [8cf48ac](https://github.com/maxtoroq/XCST-a/commit/8cf48acca3f6df9d8d18cb6cc6d11b087193189b)
-- **Simplified ViewContext implementation**: Added constructor that accepts HttpContextBase only; Made ViewData and TempData nullable (lazy-init on page) [da55789](https://github.com/maxtoroq/XCST-a/commit/da55789771fc029a8df659c9494d55d7772b824b)
+- **Simplified ViewContext implementation**: Added constructor that accepts HttpContextBase only; Removed ViewData and TempData [a675d21](https://github.com/maxtoroq/XCST-a/commit/a675d2105a1b84c1ec8cad102068c5abbc508f77)
 - **Removed HtmlHelper.RouteCollection** [166184c](https://github.com/maxtoroq/XCST-a/commit/166184c810e721683f40caba38f9c832b1eee94a)
 - **Removed UrlHelper.RequestContext and UrlHelper.RouteCollection** [8e00919](https://github.com/maxtoroq/XCST-a/commit/8e009190ab7ce1c91944d151939ec058a1a1bc3c)
 - **Removed FieldValidationMetadata**: Unobtrusive validation is the only client validation supported [8814ae3](https://github.com/maxtoroq/XCST-a/commit/8814ae3771f71e1cb61fc95171ca4d3565c0347c)
