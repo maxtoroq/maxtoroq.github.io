@@ -15,8 +15,6 @@ regenerated.
 <span class="nt">&lt;/c:on-empty&gt;</span></code></pre></div>
 <p>Evaluates only if the current sequence constructor has not appended any items so far.</p>
 <dl>
-   <dt><b>Category</b></dt>
-   <dd><i>sequence-constructor</i></dd>
    <dt><b>Permitted parent elements</b></dt>
    <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
    <dd>Any literal result element</dd>

@@ -263,7 +263,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
       <xsl:param name="attribs" select="ref:attribs(.), ref:extension-attributes($name)"/>
       <xsl:param name="parents" select="ref:parents(., -1)[not(self::rng:element[ref:name(.) eq xs:QName('a:option')])]"/>
       <xsl:param name="categories" select="
-         ref:parents(., 1)[self::rng:define and @docs:display-type/xs:boolean(.)]/@name/string()"/>
+         ref:parents(., 1)[self::rng:define and @docs:display-type/xs:boolean(.) and @name != 'sequence-constructor']/@name/string()"/>
       <xsl:param name="contents" select="ref:contents(.)"/>
       
       <xsl:variable name="heading" select="concat('h', last() + 1)"/>
