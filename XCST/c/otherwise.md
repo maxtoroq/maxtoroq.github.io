@@ -9,13 +9,29 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:otherwise</span>&gt;
-  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:otherwise</span>
+  <span>value</span>? = <i title="Expression.">expression</i> &gt;
+  &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:otherwise&gt;</span></code></pre></div>
-<p>Represents a fallback in a c:choose instruction in case no other choice is selected.</p>
+<p>Represents a fallback in a c:choose or c:switch instruction in case no other choice
+   is selected.
+</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="choose.html"><code>c:choose</code></a></dd>
+   <dd><a href="switch.html"><code>c:switch</code></a></dd>
 </dl>
+<h2 id="attributes">Attributes</h2>
+<div class="table-responsive">
+   <table class="ref-attribs">
+      <tr>
+         <td><code>value</code></td>
+         <td>The value to output.</td>
+      </tr>
+   </table>
+</div>
+<p><small>
+      In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
+      </small></p>
 
 {% include_relative _otherwise.md %}

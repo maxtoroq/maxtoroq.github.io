@@ -1,5 +1,5 @@
 ---
-title: "c:when"
+title: "c:on-empty"
 ---
 
 {% comment %}  
@@ -9,24 +9,21 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:when</span>
-  <b>test</b> = <i title="Expression.">expression</i>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:on-empty</span>
   <span>value</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
-<span class="nt">&lt;/c:when&gt;</span></code></pre></div>
-<p>Represents a choice in a c:choose or c:switch instruction.</p>
+<span class="nt">&lt;/c:on-empty&gt;</span></code></pre></div>
+<p>Evaluates only if the current sequence constructor has not appended any items so far.</p>
 <dl>
+   <dt><b>Category</b></dt>
+   <dd><i>sequence-constructor</i></dd>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="choose.html"><code>c:choose</code></a></dd>
-   <dd><a href="switch.html"><code>c:switch</code></a></dd>
+   <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
+   <dd>Any literal result element</dd>
 </dl>
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
-      <tr>
-         <td><code>test</code></td>
-         <td>The condition to check for the current choice to be selected.</td>
-      </tr>
       <tr>
          <td><code>value</code></td>
          <td>The value to output.</td>
@@ -37,4 +34,4 @@ regenerated.
       In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
 
-{% include_relative _when.md %}
+{% include_relative _on-empty.md %}

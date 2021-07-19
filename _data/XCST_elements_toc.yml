@@ -74,6 +74,8 @@
       url: next-template.html
     - title: c:object
       url: object.html
+    - title: c:on-empty
+      url: on-empty.html
     - title: c:otherwise
       url: otherwise.html
     - title: c:output
@@ -98,6 +100,8 @@
       url: set.html
     - title: c:sort
       url: sort.html
+    - title: c:switch
+      url: switch.html
     - title: c:template
       url: template.html
     - title: c:text

@@ -11,7 +11,9 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:message</span>
   <span>value</span>? = <i title="Expression.">expression</i>
-  <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
+  <span>terminate</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>error-code</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>error-data</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:message&gt;</span></code></pre></div>
 <p>Signals a message.</p>
@@ -25,6 +27,14 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
+      <tr>
+         <td><code>error-code</code></td>
+         <td>An error code associated with the message.</td>
+      </tr>
+      <tr>
+         <td><code>error-data</code></td>
+         <td>An arbitrary object used to convey additional information about the error.</td>
+      </tr>
       <tr>
          <td><code>terminate</code></td>
          <td>Specifies whether to stop the execution of the program.</td>
