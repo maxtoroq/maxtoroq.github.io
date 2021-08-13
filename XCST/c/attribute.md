@@ -38,7 +38,7 @@ regenerated.
       </tr>
       <tr>
          <td><code>separator</code></td>
-         <td>A string to intersperse between values.</td>
+         <td>A string to intersperse between items.</td>
       </tr>
       <tr>
          <td><code>value</code></td>

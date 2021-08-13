@@ -11,8 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:using</span>
   <b>value</b> = <i title="Expression.">expression</i>
-  <span>name</span>? = <i title="Identifier.">identifier</i>
-  <span>as</span>? = <i title="Type name.">type_name</i> &gt;
+  <span>name</span>? = <i title="Identifier.">identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/c:using&gt;</span></code></pre></div>
 <p>Facilitates the unconditional disposing of an object.</p>
@@ -26,10 +25,6 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
-      <tr>
-         <td><code>as</code></td>
-         <td>The type of the disposable variable.</td>
-      </tr>
       <tr>
          <td><code>name</code></td>
          <td>The name of the disposable variable.</td>

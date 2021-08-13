@@ -12,7 +12,8 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:apply-templates</span>
   <b>value</b> = <i title="Expression.">expression</i>
   <span>mode</span>? = <span><span class="s">"#current"</span> | <span class="s">"#default"</span> | <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i></span>
-  <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
+  <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>separator</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:apply-templates&gt;</span></code></pre></div>
 <dl>
@@ -30,6 +31,10 @@ regenerated.
          <td>An eqname or "#current" or "#default". Unprefixed qualified names are in the null
             namespace.
          </td>
+      </tr>
+      <tr>
+         <td><code>separator</code></td>
+         <td>A string to intersperse between the results of each processed item.</td>
       </tr>
       <tr>
          <td><code>tunnel-params</code></td>

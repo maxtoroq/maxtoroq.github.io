@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
   <b>in</b> = <i title="Expression.">expression</i>
-  <span>as</span>? = <i title="Type name.">type_name</i> &gt;
+  <span>separator</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:for-each&gt;</span></code></pre></div>
 <p>Processes each item in a sequence of items.</p>
@@ -27,16 +27,16 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>as</code></td>
-         <td>The type of the item.</td>
-      </tr>
-      <tr>
          <td><code>in</code></td>
          <td>The source of the items.</td>
       </tr>
       <tr>
          <td><code>name</code></td>
          <td>The name of the item.</td>
+      </tr>
+      <tr>
+         <td><code>separator</code></td>
+         <td>A string to intersperse between the results of each processed item.</td>
       </tr>
    </table>
 </div>

@@ -21,15 +21,12 @@ regenerated.
   <span>encoding</span>? = { <i>string</i> }
   <span>escape-uri-attributes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>html-version</span>? = { <i>decimal</i> }
-  <span>include-content-type</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>indent</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>indent-spaces</span>? = { <i>integer</i> }
   <span>item-separator</span>? = { <i>string</i> }
   <span>media-type</span>? = { <i>string</i> }
   <span>omit-xml-declaration</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>standalone</span>? = { <span><i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> | <span class="s">"omit"</span></span> }
-  <span>suppress-indentation</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span> }
-  <span>undeclare-prefixes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>output-version</span>? = { <i>nmtoken</i> }
   <span>skip-character-check</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
@@ -82,12 +79,6 @@ regenerated.
          <td>Specifies the HTML version.</td>
       </tr>
       <tr>
-         <td><code>include-content-type</code></td>
-         <td>Specifies whether to include a meta element in the head of HTML and XHTML documents,
-            specifying the used character encoding.
-         </td>
-      </tr>
-      <tr>
          <td><code>indent</code></td>
          <td>Specifies whether to indent the output.</td>
       </tr>
@@ -97,7 +88,7 @@ regenerated.
       </tr>
       <tr>
          <td><code>item-separator</code></td>
-         <td>A string to intersperse when outputting multiple items.</td>
+         <td>A string to intersperse between items.</td>
       </tr>
       <tr>
          <td><code>media-type</code></td>
@@ -130,14 +121,6 @@ regenerated.
       <tr>
          <td><code>standalone</code></td>
          <td>Specifies whether to include the standalone document declaration.</td>
-      </tr>
-      <tr>
-         <td><code>suppress-indentation</code></td>
-         <td>Specifies elements that should not be indented.</td>
-      </tr>
-      <tr>
-         <td><code>undeclare-prefixes</code></td>
-         <td>Specifies whether to undeclare namespaces when outputting XML 1.1.</td>
       </tr>
    </table>
 </div>
