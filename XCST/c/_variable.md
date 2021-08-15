@@ -60,11 +60,11 @@ When using multiple elements of the same type, the inferred type is an array of 
 
 ## Error Conditions
 
+It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
+
 It is a compilation error if the `visibility` attribute is used on a local variable.
 
 It is a compilation error if a global variable with `visibility='abstract'` has a default value.
-
-It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
 
 [Object]: {{ page.bcl_url }}system.object
 [String]: {{ page.bcl_url }}system.string
