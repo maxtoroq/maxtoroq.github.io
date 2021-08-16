@@ -52,18 +52,27 @@ layout: XCST-base
          var toc = d.querySelector('nav.section-toc ul[role="tree"]');
 
          if (toc) {
+
             var tree = new TreeLinks(toc);
             tree.init();
 
             var active = toc.querySelector('a.active');
             
             if (active) {
+               
                var currentNode = active;
+               
                while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
                   currentNode.setAttribute('aria-expanded', 'true');
                }
 
-               toc.scrollTop = active.offsetTop - 15;
+               var clientHeight = toc.clientHeight;
+               var halfHeight = Math.round(clientHeight / 2);
+               var offsetTop = active.offsetTop;
+               
+               if (offsetTop > halfHeight) {
+                  toc.scrollTop = halfHeight;
+               }
             }
          }
       })(document);
