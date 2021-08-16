@@ -62,6 +62,8 @@ layout: XCST-base
                while ((currentNode = currentNode.parentNode.closest('li[role="treeitem"]')) != null) {
                   currentNode.setAttribute('aria-expanded', 'true');
                }
+
+               toc.scrollTop = active.offsetTop - 15;
             }
          }
       })(document);
