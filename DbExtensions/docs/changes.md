@@ -6,7 +6,7 @@ title: Changelog
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
 ### v6.3.0 (planning)
-- [ ] Persistent complex properties
+- [x] Persistent complex properties
 - [ ] Debuggable binaries (SourceLink)
 
 ### v6.2.0
