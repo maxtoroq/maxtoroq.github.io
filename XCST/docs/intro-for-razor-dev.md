@@ -128,7 +128,7 @@ In XCST, like in the previous example, use [`c:attribute`](../c/attribute.html) 
 </input>
 ```
 
-There are even more tricks related to attributes in Razor. It should be clear by now that Razor was designed specifically for HTML generation, while XCST is suitable for generating XML, HTML, XHTML and text.
+There are even more tricks related to attributes in Razor. It should be clear by now that Razor was designed specifically for HTML generation, while XCST is suitable for generating XML, HTML and text.
 
 Last attribute trick, URL resolution in Razor:
 

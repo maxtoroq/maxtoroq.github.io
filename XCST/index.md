@@ -91,7 +91,7 @@ Most template engines don't support anything beyond a simple layout/content setu
 
 In XCST, elements, attributes and text are compiled to method calls. Serialization (the generation of text) occurs at run-time. This has several benefits:
 
-- One source code, multiple outputs (XML, HTML, XHTML, text and JSON)
+- One source code, multiple outputs (XML, HTML, text and JSON)
 - Whitespace control (indentation)
 - Create an in-memory DOM
 - Use an XML-aware tool like XPath or XSLT for unit-testing or post-processing your output
