@@ -18,7 +18,7 @@ Generating code for your C# project can done in a pre-build event. Add the follo
   
   ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent" DependsOnTargets="ResolveReferences">
-  <Exec Command="$(ProjectDir)\..\xcst-codegen\bin\$(Configuration)\xcst-codegen.exe $(ProjectPath) $(Configuration) -LibsAndPages" />
+  <Exec Command="$(ProjectDir)..\xcst-codegen\bin\$(Configuration)\xcst-codegen.exe $(ProjectPath) $(Configuration) -LibsAndPages" />
   <ItemGroup>
     <Compile Remove="xcst.generated.cs" />
     <Compile Include="xcst.generated.cs" />
@@ -32,7 +32,7 @@ Generating code for your C# project can done in a pre-build event. Add the follo
 ```xml
 <PropertyGroup>
   <PreBuildEventDependsOn>ResolveReferences</PreBuildEventDependsOn>
-  <PreBuildEvent>$(ProjectDir)\..\xcst-codegen\bin\$(ConfigurationName)\xcst-codegen.exe $(ProjectPath) $(ConfigurationName) -LibsAndPages</PreBuildEvent>
+  <PreBuildEvent>$(ProjectDir)..\xcst-codegen\bin\$(ConfigurationName)\xcst-codegen.exe $(ProjectPath) $(ConfigurationName) -LibsAndPages</PreBuildEvent>
 </PropertyGroup>
 ```
 
