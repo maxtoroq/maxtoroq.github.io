@@ -10,6 +10,6 @@ In v2 SqlBuilder was completely rewritten to use strings and capitalized method 
 
 v3 was an API simplification release.
 
-v4 marked the introduction of **SqlSet**, a middle-ground between LINQ and SqlBuilder. SqlSet is in my opinion this project's greatest achivement.
+v4 marked the introduction of **SqlSet**, a middle-ground between LINQ and SqlBuilder. SqlSet is in my opinion this project's greatest achievement.
 
 v5 and v6 are both API refinement releases. The codebase has been pretty much stable since v4. DbExtensions is now a mature product that fullfiled its goal to provide better APIs for dynamic SQL programming.
