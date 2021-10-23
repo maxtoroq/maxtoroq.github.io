@@ -107,4 +107,6 @@ include:
   - _.md
   - _ForEach_*.md
   - _If.md
+  - _ElseIf.md
+  - _Else.md
   - _OR_*.md
