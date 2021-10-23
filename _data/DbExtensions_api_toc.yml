@@ -12,6 +12,8 @@
       url: ChangeConflictException/
     - title: ColumnAttribute
       url: ColumnAttribute/
+    - title: ComplexPropertyAttribute
+      url: ComplexPropertyAttribute/
     - title: Database
       url: Database/
     - title: DatabaseConfiguration
