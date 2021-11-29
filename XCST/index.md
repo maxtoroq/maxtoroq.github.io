@@ -6,30 +6,7 @@ sticky_header: true
 
 **XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's a more general-purpose version of XSLT.
 
-XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructions to statements, using the expressions contained in the instructions. Here's an example:
-
-```xml
-<ul>
-   <c:for-each name='n' in='System.Linq.Enumerable.Range(1, 5)' expand-text='yes'>
-      <li>{n}</li>
-   </c:for-each>
-</ul>
-```
-
-...which compiles to:
-
-```csharp
-WriteStartElement("ul", ""); {
-   foreach (var n in System.Linq.Enumerable.Range(1, 5)) {
-      WriteStartElement("li", "");
-      WriteString($@"{n}");
-      WriteEndElement();
-   }
-}
-WriteEndElement();
-```
-
-Here's a more complete example of an XCST module:
+XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructions to statements, using the expressions contained in the instructions. Here's an of an XCST module:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
