@@ -6,7 +6,7 @@ sticky_header: true
 
 **XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's a more general-purpose version of XSLT.
 
-XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructions to statements, using the expressions contained in the instructions. Here's an of an XCST module:
+XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructions to statements, using the expressions contained in the instructions. Here's an example of an XCST module:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
