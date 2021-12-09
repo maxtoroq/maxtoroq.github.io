@@ -87,7 +87,7 @@ main {
             position: -webkit-sticky;
             position: sticky;
             top: 0;
-            width: cacl(100% + 1rem);
+            width: calc(100% + 1rem);
             max-height: calc(100vh - #{$padding-top});
             margin-left: -1rem; // .container padding * -1
             margin-top: $padding-top * -1;
