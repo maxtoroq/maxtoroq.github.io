@@ -67,6 +67,7 @@ main {
 
       > div.container {
          display: flex;
+         padding-top: 0;
 
          > * {
             flex: 1 1 0;
@@ -110,9 +111,9 @@ main {
          background-color: #fff;
          //border: 1px solid;
          //border-color: #e0e1ef;
-         border-color: rgba(0, 0, 0, .17);
-         box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-         border-radius: 2px;
+         //border-color: rgba(0, 0, 0, .17);
+         //box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+         //border-radius: 2px;
          padding: 1.5rem;
          flex: 1 1 0;
 
