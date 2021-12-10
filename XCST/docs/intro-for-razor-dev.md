@@ -48,7 +48,7 @@ Because sometimes you need to use curly braces in content such as CSS and JavaSc
 Value templates always work for attribute values. To output curly braces you have to double them.
 
 ```xml
-<div data-opts='{{"foo":1}}'/>
+<div data-opts='{{'{{'}}"foo":1{{'}}'}}'/>
 ```
 
 An alternative to value templates is the [`c:value-of`](../c/value-of.html) instruction.
