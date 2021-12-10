@@ -31,11 +31,25 @@ An XCST page has no body, only declarations. You can define a template named `c:
 
 Value templates
 ---------------
-In Razor you use the `@` symbol to mix expressions with text and markup, e.g. `@DateTime.Now`. In XCST you use curly braces, just like in [interpolated strings][2], e.g. `{DateTime.Now}`.
+In Razor you use the `@` symbol to mix expressions with text and markup.
+
+```csharp
+Hello World, it's @DateTime.Now
+```
+
+In XCST you use curly braces, just like in [interpolated strings][2].
+
+```xml
+Hello World, it's {DateTime.Now}
+```
 
 Because sometimes you need to use curly braces in content such as CSS and JavaScript, you declare `[c:]expand-text='yes'` to enable this feature. `[c:]expand-text` is a [standard attribute][7] that can be used on any XCST element and any literal result element (prefixed).
 
 Value templates always work for attribute values. To output curly braces you have to double them.
+
+```xml
+<div data-opts='{{"foo":1}}'/>
+```
 
 An alternative to value templates is the [`c:value-of`](../c/value-of.html) instruction.
 
