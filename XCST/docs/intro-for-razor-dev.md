@@ -54,7 +54,7 @@ Value templates always work for attribute values. To output curly braces you hav
 An alternative to value templates is the [`c:value-of`](../c/value-of.html) instruction.
 
 ```xml
-<c:value-of value='DateTime.Now'/>
+Hello World, it's <c:value-of value='DateTime.Now'/>
 ```
 
 Instructions
