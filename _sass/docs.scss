@@ -68,6 +68,7 @@ main {
       > div.container {
          display: flex;
          padding-top: 0;
+         padding-right: 0;
 
          > * {
             flex: 1 1 0;
