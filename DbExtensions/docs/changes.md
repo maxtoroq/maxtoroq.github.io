@@ -7,8 +7,9 @@ See [Migrating to v6](migrating/to-v6.html) for more information about the chang
 
 ### v6.3.0 (preview)
 - Persistent complex properties
-- Debuggable binaries (SourceLink) and portable PDBs
+- Named arguments constructor mapping
 - _ElseIf and _Else clause continuation methods
+- Debuggable binaries (SourceLink) and portable PDBs
 
 ### v6.2.0
 - Added: WITH and FROM overloads that accept SqlSet as subQuery
