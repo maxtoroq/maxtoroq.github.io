@@ -9,6 +9,7 @@ See [Migrating to v6](migrating/to-v6.html) for more information about the chang
 - Persistent complex properties
 - Named arguments constructor mapping
 - _ElseIf and _Else clause continuation methods
+- SqlTable.Name property #82
 - Debuggable binaries (SourceLink) and portable PDBs
 
 ### v6.2.0
