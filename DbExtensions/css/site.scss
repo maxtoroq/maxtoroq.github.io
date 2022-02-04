@@ -53,6 +53,16 @@ body > header {
    }
 }
 
+article.api {
+   tr.inherited {
+      color: gray;
+
+      a {
+         color: inherit;
+      }
+   }
+}
+
 body > footer {
    //border-top: 1px solid #e0e1ef;
    background-color: rgba(187, 206, 222, .3);
