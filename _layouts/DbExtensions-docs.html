@@ -66,4 +66,10 @@ layout: DbExtensions-base
          }
       })(document);
    </script>
+   {% if api_docs %}
+   <script>
+      [].filter.call(document.getElementsByTagName('td'), t => t.innerText.includes(" (Inherited from "))
+         .forEach(t => t.parentNode.classList.add('inherited'));
+   </script>
+   {% endif %}
 </div>
