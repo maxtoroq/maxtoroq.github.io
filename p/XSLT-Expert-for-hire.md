@@ -12,7 +12,7 @@ Need an XSLT expert? Look no further. I can help you with your new project or ex
 ## Achievements
 
 - Rank #43 on Stack Overflow for the XSLT tag. Top 2% overall
-- Rank #1 in Chile for XSLT in GitHub, according to [Git Awards](http://git-awards.com/users/search?login=maxtoroq). Top 3% worldwide
+- Rank #1 in Chile for XSLT in GitHub, according to [Git Awards](http://159.100.250.9/users/search?login=maxtoroq). Top 3% worldwide
 - Reported several bugs/suggestions to W3C, e.g. when using a package, accepted components are private by default, [thanks to me](https://lists.w3.org/Archives/Public/public-qt-comments/2016Apr/0067.html) :)
 - Wrote a [Relax NG validator in XSLT]({{ site.github.owner_url }}/rng.xsl), just for fun
 - Created [XCST](/XCST/), a language heavily inspired by XSLT, but for non-XML data
