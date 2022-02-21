@@ -10,7 +10,7 @@ Package parameters that are not required follow the same rules as global variabl
 
 Package parameters that use `required='yes'` are initialized before the invocation of the initial component (usually the `c:initial-template` template).
 
-Parameters that are not package parameters are initialized when the containing component or instruction is evaluated, as if the parameters where part of the following sequence constructor, even though formally they are not.
+Parameters that are not package parameters are initialized when the containing component or instruction is evaluated, as if the parameters were part of the following sequence constructor, even though formally they are not.
 
 ## Values and Types of Parameters
 
