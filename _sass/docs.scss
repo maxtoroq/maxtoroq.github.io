@@ -132,12 +132,18 @@ main {
          &.active {
             font-weight: 600;
             background-color: rgba(0, 0, 0, .07);
+            color: #525252;
          }
       }
    }
 
-   h1, h2, b, strong {
+   b, strong {
       font-weight: 600;
+   }
+
+   h1, h2 {
+      //font-weight: 600;
+      font-weight: 400;
    }
 
    h1 {
