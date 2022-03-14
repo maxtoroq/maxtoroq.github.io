@@ -35,7 +35,8 @@ return db.Map(query);
 
 Complex properties
 ------------------
-Given the types:
+Use the `$` character in column aliases to specify a path into a complex property. For example,
+given the types:
 
 <figure class="code" data-highlight-lines="5 6" markdown="1">
 
@@ -81,7 +82,7 @@ return db.Map<Product>(query);
 
 </figure>
 
-**Use the `$` character in column aliases to specify a path into a complex property**. There's no depth limit, e.g.:
+ There's no depth limit, e.g.:
 
 <figure class="code" data-highlight-lines="4" markdown="1">
 
@@ -110,7 +111,7 @@ Constructors
 ------------
 
 ### Positional arguments
-**Use numbers to map columns to constructor arguments**. e.g.:
+Use numbers to map columns to constructor arguments. e.g.:
 
 <figure class="code" data-highlight-lines="6 13" markdown="1">
 
