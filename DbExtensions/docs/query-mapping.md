@@ -109,6 +109,9 @@ If all columns related to a complex property are null, the property is set to nu
 Constructors
 ------------
 
+### Positional arguments
+**Use numbers to map columns to constructor arguments**. e.g.:
+
 <figure class="code" data-highlight-lines="6 13" markdown="1">
 
 ```csharp
@@ -132,7 +135,7 @@ return db.Map<SupplierInfo>(query);
 
 </figure>
 
-**Use numbers to map columns to constructor arguments**. This also works for complex properties, e.g:
+This also works for complex properties, e.g:
 
 <figure class="code" data-highlight-lines="4 8" markdown="1">
 
@@ -196,6 +199,10 @@ In the example above, `CompanyWebsite AS 2$1` means *map the CompanyWebsite colu
 Numbers only have meaning relative to each other. For instance, instead of using 1 and 2, you can use 0 and 1, 100 and 200, or -68 and 17. The number of <em>numeric</em> column names determines which constructor to use (number of parameters), and the arguments are ordered based on the column names.
 
 </div>
+
+### Named arguments
+Starting v6.3 you can use the same syntax for complex properties to map columns to arguments by name instead of position. This only works for types that have a single public constructor.
+
 
 [SqlBuilder]: SqlBuilder.html
 [SqlSet]: SqlSet.html
