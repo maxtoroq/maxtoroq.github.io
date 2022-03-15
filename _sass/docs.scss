@@ -200,6 +200,7 @@ main {
 }
 
 div.note {
+   font-size: calc(1rem - 1px);
    background-color: transparent !important;
    border-radius: 2px;
    border-left-width: 4px;
