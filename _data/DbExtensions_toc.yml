@@ -1,4 +1,6 @@
 
+- title: Home
+  url: /
 - title: Getting Started
   expanded: true
   toc:

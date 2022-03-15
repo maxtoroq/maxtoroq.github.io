@@ -30,11 +30,6 @@ defaults:
       layout: DbExtensions-docs
       repository_url: https://github.com/maxtoroq/DbExtensions
       support_url: https://github.com/maxtoroq/DbExtensions/discussions
-
-  - scope:
-      path: DbExtensions/docs
-      type: pages
-    values:
       toc: DbExtensions_toc
       toc_base_url: /DbExtensions/docs/
 
