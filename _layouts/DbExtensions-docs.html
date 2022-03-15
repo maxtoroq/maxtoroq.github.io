@@ -17,7 +17,7 @@ layout: DbExtensions-base
    <main>
       <article {% if api_docs %}class="api"{% endif %}>
          <header>
-            {% if api_docs %}
+            {% if cp_parts[1] == 'docs' %}
                {% assign url_parts = page.url | split: '/' %}
                {% assign path_parts = '' | split: '' %}
                {% assign offset = 2 %}
