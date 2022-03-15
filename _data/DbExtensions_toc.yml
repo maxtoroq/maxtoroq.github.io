@@ -1,19 +1,14 @@
 
-- title: Home
-  url: /
-- title: Getting Started
-  expanded: true
-  toc:
-    - title: Installing
-      url: installing.html
-    - title: SqlBuilder Tutorial
-      url: SqlBuilder.html
-    - title: SqlSet Tutorial
-      url: SqlSet.html
-    - title: Query Mapping
-      url: query-mapping.html
-    - title: Annotations
-      url: annotations.html
+- title: Installing
+  url: installing.html
+- title: SqlBuilder Tutorial
+  url: SqlBuilder.html
+- title: SqlSet Tutorial
+  url: SqlSet.html
+- title: Query Mapping
+  url: query-mapping.html
+- title: Annotations
+  url: annotations.html
 - title: Reference
   expanded: true
   toc:
