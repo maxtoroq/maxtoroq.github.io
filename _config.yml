@@ -68,13 +68,13 @@ defaults:
       support_url: https://github.com/maxtoroq/XCST/discussions
       bcl_url: https://msdn.microsoft.com/en-us/library/
       csharp_spec_url: https://github.com/dotnet/csharplang/blob/main/spec/
+      toc: XCST_toc
+      toc_base_url: /XCST/docs/
 
   - scope:
       path: XCST/docs
       type: pages
     values:
-      toc: XCST_toc
-      toc_base_url: /XCST/docs/
       edit_link: true
 
   - scope:
