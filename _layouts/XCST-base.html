@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-{% assign baseurl = page.path | split: '/' | first | prepend: '/' %}
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>{{ page.title }}</title>
-   <link href="{{ baseurl }}/css/site.css?v=170805" rel="stylesheet" />
-   <link rel="shortcut icon" href="{{ baseurl }}/favicon.ico" />
+   <link href="{{ page.base_url }}css/site.css?v=170805" rel="stylesheet" />
+   <link rel="shortcut icon" href="{{ page.base_url }}favicon.ico" />
    <link href="/lib/tabby-12.0.3/dist/css/tabby-ui.min.css" rel="stylesheet"/>
    {% include font-sans.html %}
    {% include analytics.html %}
@@ -13,9 +12,9 @@
 <body class="docs{% if page.sticky_header %} sticky-header{% endif %}">
    <header>
       <nav class="container">
-         <a href="{{ baseurl }}/">home</a>
+         <a href="{{ page.base_url }}">home</a>
          <a href="{{ page.documentation_url }}">documentation</a>
-         <a href="{{ baseurl }}/support.html">support</a>
+         <a href="{{ baseurl }}support.html">support</a>
          <a class="github" href="{{ page.repository_url }}" title="GitHub">
             <img src="https://github.com/favicon.ico" alt="GitHub" />
          </a>

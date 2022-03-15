@@ -1,6 +1,7 @@
 ---
 layout: XCST-base
 ---
+{% assign cp_parts = page.path | split: '/' %}
 <div class="container">
    <nav class="section-toc">
       {% if page.toc %}
@@ -13,13 +14,12 @@ layout: XCST-base
    <main>
       <article>
          <header>
-            {% if page.element_ref %}
+            {% if cp_parts[1] == 'docs' or page.element_ref %}
             <nav class="breadcrumbs">
                <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
                {% if page.element_ref %}
-                  {% assign path_parts = page.path | split: '/' %}
-                  {% if path_parts.last != 'index.md' %}
-               <a href=".">{% if (path_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;
+                  {% if cp_parts.last != 'index.md' %}
+               <a href=".">{% if (cp_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;
                   {% endif %}
                {% endif %}
                <span>{{ page.title }}</span>
@@ -37,9 +37,8 @@ layout: XCST-base
          &copy; {{ site.author }}
          {% if page.edit_link %}
             {% if page.element_ref or page.path == 'XCST/docs/standard-attributes.md' %}
-               {% assign path_parts = page.path | split: '/' %}
-               {% assign new_last = path_parts | last | prepend: '_' %}
-               {% assign new_parts = path_parts | pop | push: new_last %}
+               {% assign new_last = cp_parts | last | prepend: '_' %}
+               {% assign new_parts = cp_parts | pop | push: new_last %}
                {% assign new_path = new_parts | join: '/' %}
             {% endif %}
          <a class="edit" href="{{ site.github.repository_url }}/edit/master/{% if new_path %}{{ new_path }}{% else %}{{ page.path }}{% endif %}">Edit Page</a>
