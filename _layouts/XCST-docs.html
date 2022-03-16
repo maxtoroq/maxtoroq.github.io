@@ -2,11 +2,12 @@
 layout: XCST-base
 ---
 {% assign cp_parts = page.path | split: '/' %}
+{% assign docs_index = cp_parts[1] == 'docs' and cp_parts[2] == 'index.md' %}
 <div class="container">
    <nav class="section-toc">
       {% if page.toc %}
          {% assign toc = site.data[page.toc] %}
-         {% if page.toc %}
+         {% if toc %}
             {% include toc.html toc=toc base_url=page.toc_base_url %}
          {% endif %}
       {% endif %}
@@ -14,7 +15,7 @@ layout: XCST-base
    <main>
       <article>
          <header>
-            {% if cp_parts[1] == 'docs' or page.element_ref %}
+            {% if page.element_ref or cp_parts[1] == 'docs' and docs_index != true %}
             <nav class="breadcrumbs">
                <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
                {% if page.element_ref %}
