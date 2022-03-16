@@ -2,7 +2,6 @@
 layout: XCST-base
 ---
 {% assign cp_parts = page.path | split: '/' %}
-{% assign docs_index = cp_parts[1] == 'docs' and cp_parts[2] == 'index.md' %}
 <div class="container">
    <nav class="section-toc">
       {% if page.toc %}
@@ -15,9 +14,9 @@ layout: XCST-base
    <main>
       <article>
          <header>
-            {% if page.element_ref or cp_parts[1] == 'docs' and docs_index != true %}
+            {% if page.element_ref or cp_parts[1] == 'docs' and cp_parts[2] != 'index.md' %}
             <nav class="breadcrumbs">
-               <a href="{{ page.documentation_url }}">Documentation</a>&nbsp; /&nbsp;
+               <a href="{{ page.documentation_url }}">docs</a>&nbsp; /&nbsp;
                {% if page.element_ref %}
                   {% if cp_parts.last != 'index.md' %}
                <a href=".">{% if (cp_parts[1] == 'a') %}Application Extension Elements{% else %}XCST Elements{% endif %}</a>&nbsp; /&nbsp;

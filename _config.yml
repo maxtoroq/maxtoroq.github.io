@@ -84,7 +84,6 @@ defaults:
       toc: XCST_elements_toc
       toc_base_url: /XCST/
       element_ref: true
-      left_nav: true
       edit_link: true
 
   - scope:
@@ -94,7 +93,6 @@ defaults:
       toc: XCST_elements_toc
       toc_base_url: /XCST/
       element_ref: true
-      left_nav: true
       edit_link: true
 
 include:
