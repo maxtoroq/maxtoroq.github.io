@@ -84,8 +84,15 @@ public Contact Contact { get; set; }
 
 <div class="note" markdown="1">
 
-###### Automatic query mapping of complex properties
+###### Tip: Automatic query mapping of complex properties
 If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex property populated, as explained in [Query Mapping](query-mapping.md#complex-properties).
+
+</div>
+
+<div class="note" markdown="1">
+
+###### Tip: Nesting complex types
+You can nest the complex type definition in the entity type that uses it, to avoid polluting the namespace.
 
 </div>
 
