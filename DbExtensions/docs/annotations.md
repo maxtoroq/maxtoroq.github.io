@@ -82,14 +82,14 @@ Use the [Separator][ComplexPropertyAttribute.Separator] property if the columns 
 public Contact Contact { get; set; }
 ```
 
-<div class="note" markdown="1">
+<div class="note tip" markdown="1">
 
 ###### Tip: Automatic query mapping of complex properties
 If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex properties populated, as explained in [Query Mapping](query-mapping.md#complex-properties).
 
 </div>
 
-<div class="note" markdown="1">
+<div class="note tip" markdown="1">
 
 ###### Tip: Nesting complex types
 You can nest the complex type definition in the type that uses it, to avoid polluting the namespace.

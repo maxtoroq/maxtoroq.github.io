@@ -233,4 +233,12 @@ div.note {
          background: rgba(207, 236, 255, .5);
       }
    }
+
+   &.tip {
+      border-left-color: #00bfa5;
+
+      h6 {
+         background: rgba(0, 191, 165, .1);
+      }
+   }
 }
