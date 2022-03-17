@@ -85,7 +85,7 @@ public Contact Contact { get; set; }
 <div class="note" markdown="1">
 
 ###### Tip: Automatic query mapping of complex properties
-If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex property populated, as explained in [Query Mapping](query-mapping.md#complex-properties).
+If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex properties populated, as explained in [Query Mapping](query-mapping.md#complex-properties).
 
 </div>
 
