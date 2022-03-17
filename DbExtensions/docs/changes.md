@@ -5,7 +5,7 @@ title: Changelog
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
-### v6.3.0 (preview)
+### v6.3.0
 - Persistent complex properties
 - Named arguments constructor mapping
 - _ElseIf and _Else clause continuation methods
