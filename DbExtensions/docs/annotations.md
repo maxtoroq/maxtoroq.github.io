@@ -92,7 +92,7 @@ If you use `$` as separator, then you can query your table using [SqlBuilder] wi
 <div class="note" markdown="1">
 
 ###### Tip: Nesting complex types
-You can nest the complex type definition in the entity type that uses it, to avoid polluting the namespace.
+You can nest the complex type definition in the type that uses it, to avoid polluting the namespace.
 
 </div>
 
