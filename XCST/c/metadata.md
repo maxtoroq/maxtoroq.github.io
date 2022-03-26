@@ -11,7 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:metadata</span>
   <b>name</b> = <i title="Type name.">type_name</i>
-  <span>value</span>? = <i title="Expression.">expression</i> /&gt;</code></pre></div>
+  <span>args</span>? = <i title="Expression.">expression</i> /&gt;</code></pre></div>
 <p>Defines type or member custom metadata.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
@@ -22,12 +22,12 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>name</code></td>
-         <td>The metadata name.</td>
+         <td><code>args</code></td>
+         <td>The metadata arguments.</td>
       </tr>
       <tr>
-         <td><code>value</code></td>
-         <td>The metadata expression.</td>
+         <td><code>name</code></td>
+         <td>The metadata name.</td>
       </tr>
    </table>
 </div>

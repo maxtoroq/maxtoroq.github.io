@@ -17,6 +17,7 @@ regenerated.
   <span>initial-match-selection</span>? = <i title="Expression.">expression</i>
   <span>template-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>tunnel-passthru</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>base-output-uri</span>? = { <i>uri</i> }
   <span>base-uri</span>? = { <i>uri</i> } /&gt;</code></pre></div>
 <p>Invokes a dynamically loaded package.</p>
@@ -65,6 +66,10 @@ regenerated.
       <tr>
          <td><code>tunnel-params</code></td>
          <td>An object with tunnel parameters.</td>
+      </tr>
+      <tr>
+         <td><code>tunnel-passthru</code></td>
+         <td>Specifies whether to pass the current tunnel parameters.</td>
       </tr>
    </table>
 </div>
