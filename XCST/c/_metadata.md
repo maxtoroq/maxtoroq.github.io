@@ -6,7 +6,7 @@
 
 <c:type name='Document'>
    <c:member name='created_on' as='DateTime'>
-      <c:metadata name='Editable' value='false'/>
+      <c:metadata name='Editable' args='false'/>
    </c:member>
 </c:type>
 ```
