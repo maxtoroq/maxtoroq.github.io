@@ -289,7 +289,7 @@ In Razor you use the `@functions` directive to define methods, fields or any oth
 ```csharp
 @functions {
 
-   MyDatabase db = new MyDatabase();
+   MyDatabase db = new();
 
    Product Edit(object id) {
       return db.Products.Find(id);
@@ -300,7 +300,7 @@ In Razor you use the `@functions` directive to define methods, fields or any oth
 In XCST you use [`c:function`](../c/function.html) to define a method and [`c:variable`](../c/variable.html) to define a property.
 
 ```xml
-<c:variable name='db' value='new MyDatabase()' as='MyDatabase'/>
+<c:variable name='db' value='new()' as='MyDatabase'/>
 
 <c:function name='Edit' as='Product'>
    <c:param name='id'/>
