@@ -15,7 +15,7 @@ Because functions don't have an implicit output, to return a value you need to u
 
 ###### Example: Returning from a [`c:script`](script.html) Element
 ```xml
-<c:function name='Truncate' as='string' visibility='public'>
+<c:function name='Truncate' as='string'>
    <c:param name='s' as='string'/>
    <c:param name='maxLength' as='int'/>
    <c:param name='suffix'>…</c:param>
