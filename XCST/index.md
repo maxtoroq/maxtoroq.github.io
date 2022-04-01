@@ -1,7 +1,6 @@
 ---
 title: XCST
 article_toc: false
-sticky_header: true
 ---
 
 **XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's a more general-purpose version of XSLT.
