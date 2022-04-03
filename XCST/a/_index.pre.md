@@ -7,5 +7,5 @@
    <dd><code>a</code></dd>
 
    <dt><b>Schemas</b></dt>
-   <dd><a href="https://github.com/maxtoroq/XCST-a/tree/master/schemas">https://github.com/maxtoroq/XCST-a/tree/master/schemas</a></dd>
+   <dd><a href="https://github.com/maxtoroq/XCST-a/tree/v1/schemas">https://github.com/maxtoroq/XCST-a/tree/v1/schemas</a></dd>
 </dl>
