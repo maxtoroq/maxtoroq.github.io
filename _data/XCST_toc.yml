@@ -32,6 +32,6 @@
     - title: ASP.NET programming with XCST (post)
       url: /2016/04/aspnet-programming-with-xcst.html
     - title: ASP.NET Code Samples
-      url: https://github.com/maxtoroq/XCST-a/tree/master/samples
+      url: https://github.com/maxtoroq/XCST-a/tree/v1/samples
     - title: Framework Changes
       url: aspnet-framework-changes.html
