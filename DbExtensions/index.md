@@ -23,7 +23,10 @@ if (productsToReorder.Any()) {
    }
 }
 ```
-[SqlSet](docs/SqlSet.html) provides a LINQish API for making queries, but using SQL instead of lambda expressions. The above code executes the following queries:
+[SqlSet](docs/SqlSet.html) provides a LINQish API for making queries, but using SQL instead of lambda expressions.
+
+<details markdown="1">
+<summary>The above code executes the following queries (click to expand).</summary>
 
 ```sql
 SELECT (CASE WHEN EXISTS (
@@ -69,6 +72,8 @@ OFFSET @p3
 -- @p3: Input Int32 (Size = 0) [1]
 -- [-1] records affected.
 ```
+
+</details>
 
 Building queries with SqlBuilder
 --------------------------------
