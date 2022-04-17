@@ -15,6 +15,7 @@ regenerated.
   <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
+<p>Creates an &lt;option&gt; element.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="select.html"><code>a:select</code></a></dd>

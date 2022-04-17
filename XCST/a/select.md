@@ -21,6 +21,7 @@ regenerated.
   <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="option.html">a:option</a>*</span> --&gt;
 <span class="nt">&lt;/a:select&gt;</span></code></pre></div>
+<p>Creates a &lt;select&gt; element.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

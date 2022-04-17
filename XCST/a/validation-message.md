@@ -15,6 +15,7 @@ regenerated.
   <span>message</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
   <span>attributes</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
+<p>Creates a &lt;span&gt; element with a validation message if it exists.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

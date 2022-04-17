@@ -10,6 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:antiforgery</span>/&gt;</code></pre></div>
+<p>Creates an &lt;input&gt; element of type 'hidden' containing the antiforgery token.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

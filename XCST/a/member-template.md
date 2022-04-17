@@ -13,6 +13,7 @@ regenerated.
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:member-template&gt;</span></code></pre></div>
+<p>Defines a custom template for the members of a model.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="display.html"><code>a:display</code></a></dd>

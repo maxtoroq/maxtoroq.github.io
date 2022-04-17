@@ -12,6 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:display-text</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> } /&gt;</code></pre></div>
+<p>The text representation of a model's member suitable for UI.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

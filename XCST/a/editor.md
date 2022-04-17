@@ -24,6 +24,7 @@ regenerated.
   <span>readonly</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: (<span><a href="with-options.html">a:with-options</a>*</span>, <span><a href="member-template.html">a:member-template</a>?</span>) --&gt;
 <span class="nt">&lt;/a:editor&gt;</span></code></pre></div>
+<p>Creates a form control for a model's member, or an "edit view" for a whole model.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>

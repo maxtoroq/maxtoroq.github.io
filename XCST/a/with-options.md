@@ -15,6 +15,7 @@ regenerated.
   <span>options</span>? = @(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<span title="System.Web.Mvc.SelectListItem">SelectListItem</span>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping">IGrouping</a>&lt;<span title="TGroupKey">TGroupKey</span>, <a href="{{ page.bcl_url }}5tbh8a42" title="System.Collections.Generic.KeyValuePair<TKey, TValue&gt;">KeyValuePair&lt;TKey, TValue&gt;</a>&gt;&gt; | <a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<a href="{{ page.bcl_url }}bb344977" title="System.Linq.IGrouping<TKey, TElement&gt;">IGrouping&lt;TKey, TElement&gt;</a>&gt; | <a href="{{ page.bcl_url }}system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>) &gt;
   &lt;!-- Content: <span><a href="option.html">a:option</a>*</span> --&gt;
 <span class="nt">&lt;/a:with-options&gt;</span></code></pre></div>
+<p>Defines options for a model's member form control.</p>
 <dl>
    <dt><b>Permitted parent elements</b></dt>
    <dd><a href="display.html"><code>a:display</code></a></dd>

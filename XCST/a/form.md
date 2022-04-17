@@ -24,6 +24,7 @@ regenerated.
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:form&gt;</span></code></pre></div>
+<p>Creates a &lt;form&gt; element and defines a model for descendant instructions.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
