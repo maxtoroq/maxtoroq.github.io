@@ -112,8 +112,6 @@
       url: type.html
     - title: c:use-package
       url: use-package.html
-    - title: c:using
-      url: using.html
     - title: c:validation
       url: validation.html
     - title: c:value-of

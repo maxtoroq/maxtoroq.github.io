@@ -29,7 +29,7 @@ regenerated.
       <li><a href="result-document.html"><code>c:result-document</code></a> &nbsp;<a href="return.html"><code>c:return</code></a></li>
       <li><a href="script.html"><code>c:script</code></a> &nbsp;<a href="serialize.html"><code>c:serialize</code></a> &nbsp;<a href="set.html"><code>c:set</code></a> &nbsp;<a href="sort.html"><code>c:sort</code></a> &nbsp;<a href="switch.html"><code>c:switch</code></a></li>
       <li><a href="template.html"><code>c:template</code></a> &nbsp;<a href="text.html"><code>c:text</code></a> &nbsp;<a href="try.html"><code>c:try</code></a> &nbsp;<a href="type.html"><code>c:type</code></a></li>
-      <li><a href="use-package.html"><code>c:use-package</code></a> &nbsp;<a href="using.html"><code>c:using</code></a></li>
+      <li><a href="use-package.html"><code>c:use-package</code></a></li>
       <li><a href="validation.html"><code>c:validation</code></a> &nbsp;<a href="value-of.html"><code>c:value-of</code></a> &nbsp;<a href="variable.html"><code>c:variable</code></a> &nbsp;<a href="void.html"><code>c:void</code></a></li>
       <li><a href="when.html"><code>c:when</code></a> &nbsp;<a href="while.html"><code>c:while</code></a> &nbsp;<a href="with-param.html"><code>c:with-param</code></a></li>
    </ul>

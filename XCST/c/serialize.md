@@ -13,12 +13,11 @@ regenerated.
   <span>format</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
   <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"text"</span> | <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i></span> }
   <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>cdata-section-elements</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the default namespace.">eqname</i>*</span> }
+  <span>cdata-section-elements</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>*</span> }
   <span>doctype-public</span>? = { <i>string</i> }
   <span>doctype-system</span>? = { <i>string</i> }
   <span>encoding</span>? = { <i>string</i> }
   <span>escape-uri-attributes</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>html-version</span>? = { <i>decimal</i> }
   <span>indent</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>indent-spaces</span>? = { <i>integer</i> }
   <span>item-separator</span>? = { <i>string</i> }
@@ -67,10 +66,6 @@ regenerated.
       <tr>
          <td><code>format</code></td>
          <td>The name of the output definition to get serialization parameters from.</td>
-      </tr>
-      <tr>
-         <td><code>html-version</code></td>
-         <td>Specifies the HTML version.</td>
       </tr>
       <tr>
          <td><code>indent</code></td>

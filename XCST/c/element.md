@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:element</span>
-  <b>name</b> = { <i title="A qualified name. Unprefixed names are in the default namespace.">qname</i> }
+  <b>name</b> = { <i title="A qualified name. Unprefixed names are in the null namespace.">qname</i> }
   <span>namespace</span>? = { <i>uri</i> }
   <span>use-attribute-sets</span>? = <span><i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>*</span> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
