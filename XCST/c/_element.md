@@ -29,7 +29,7 @@ You can also create an [XElement] using a literal result element.
 
 </div>
 
-<div class="note">
+<div class="note" markdown="1">
 
 ###### Differences with `xsl:element`
 When the 'namespace' attribute is omitted and the 'name' attribute specifies an un-prefixed qualified name, the namespace for `c:element` is resolved at run-time. This allows you to write code that works the same way for any namespace. For example:
@@ -53,7 +53,7 @@ When the 'namespace' attribute is omitted and the 'name' attribute specifies an 
 
 <c:template name='table'>
    <c:element name='table'>
-      …
+      ...
    </c:element>
 </c:template>
 ```
