@@ -24,7 +24,7 @@
 <div class="note" markdown="1">
 
 ###### Note: Differences with `xsl:template`
-Template is either rule or named, not both.
+`c:template` is either rule or named, not both.
 
 </div>
 
