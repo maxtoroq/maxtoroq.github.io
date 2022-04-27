@@ -406,7 +406,6 @@ In XCST you have to call the `content` template instead.
          <c:call-template name='content'/>
       </c:when>
       <c:otherwise>
-         <!-- You can also use <c:next-template/> instead -->
          <c:call-template name='layout'/>
       </c:otherwise>
    </c:choose>
