@@ -7,6 +7,8 @@ DbExtensions is a data-access framework with a strong focus on **query compositi
 
 Querying with SqlSet
 --------------------
+[SqlSet](docs/SqlSet.html) provides a LINQish API for making queries, but using SQL instead of lambda expressions.
+
 ```csharp
 var db = new Database("<connection string>", "<provider invariant name>");
 
@@ -23,7 +25,6 @@ if (productsToReorder.Any()) {
    }
 }
 ```
-[SqlSet](docs/SqlSet.html) provides a LINQish API for making queries, but using SQL instead of lambda expressions.
 
 <details markdown="1">
 <summary>The above code executes the following queries (click to expand).</summary>
@@ -77,6 +78,8 @@ OFFSET @p3
 
 Building queries with SqlBuilder
 --------------------------------
+With [SqlBuilder](docs/SqlBuilder.html) you have complete control of the executing SQL.
+
 ```csharp
 var query = SQL
    .SELECT("p.ProductID, p.ProductName, p.UnitPrice, p.CategoryID")
@@ -88,7 +91,6 @@ var query = SQL
 
 IEnumerable<Product> products = db.Map<Product>(query);
 ```
-With [SqlBuilder](docs/SqlBuilder.html) you have complete control of the executing SQL.
 
 Changing data
 -------------
