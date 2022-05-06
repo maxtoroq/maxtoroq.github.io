@@ -96,9 +96,6 @@ Changing data
 -------------
 ```csharp
 public class NorthwindDatabase : Database {
-   
-   public SqlTable<Product> Products // SqlTable inherits from SqlSet
-      => Table<Product>();
 
    public NorthwindDatabase() 
       : base("<connection string>", "<provider invariant name>") { }
@@ -106,10 +103,10 @@ public class NorthwindDatabase : Database {
 
 var db = new NorthwindDatabase();
 
-Product prod = db.Products.Find(1);
+Product prod = db.Find<Product>(1);
 prod.UnitPrice = prod.UnitPrice * 1.1;
 
-db.Products.Update(prod);
+db.Update(prod);
 ```
 You can also use SqlBuilder to build insert, update and delete commands.
 
