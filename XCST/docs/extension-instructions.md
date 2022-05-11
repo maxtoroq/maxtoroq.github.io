@@ -19,7 +19,7 @@ An **extension instruction** is an element, within a sequence constructor, in a 
 
 If you forget to designate a namespace as an extension namespace then the elements will be treated as literal result elements.
 
-It is a compilation error to designate a [reserved namespace](../c/index.md#reserved-namespaces) as an extension namespace, except for extensions made available by this project.
+It is a compilation error to designate a [reserved namespace](../c/#reserved-namespaces) as an extension namespace, except for extensions made available by this project.
 
 ## Fallback
 
