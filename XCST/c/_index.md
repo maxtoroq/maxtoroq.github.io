@@ -25,3 +25,7 @@ name                     | description
 `@T`                     | A C# expression that is implicitly castable to `T`, e.g. `@IDictionary<String, Object>`.
 
 If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) it indicates a whitespace separated list of values that conform to that particular type, e.g. `cdata-section-elements='script style'`.
+
+## Reserved Namespaces
+
+The XCST namespace `http://maxtoroq.github.io/XCST` and any other namespace that starts with `http://maxtoroq.github.io/XCST/` (note the trailing slash) are **reserved namespaces**. In general, reserved namespaces cannot be used to name [`c:template`](template.html), [`c:attribute-set`](attribute-set.html) and [`c:output`](output.html) declarations, see the documentation for these elements for more information.
