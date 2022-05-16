@@ -5,7 +5,7 @@ XCST does not distribute an executable, you have to use the API. This means you 
 
 ## MSBuild
 
-Download the [xcst-codegen](https://github.com/maxtoroq/XCST-a/tree/v1/samples/xcst-codegen) sample project to get started. There's one change you need to make to the project: if you are working with ASP.NET, change the `Xcst.AspNet.Extension` project reference to a NuGet reference of `Xcst.AspNet.Extension`; otherwise, remove the reference.
+Download the [xcst-codegen](https://github.com/maxtoroq/XCST-a/tree/v2/samples/xcst-codegen) sample project to get started. There's one change you need to make to the project: if you are working with ASP.NET, change the `Xcst.AspNet.Extension` project reference to a NuGet reference of `Xcst.AspNet.Extension`; otherwise, remove the reference.
 
 Open your project file and import `xcst-codegen.targets`:
 
