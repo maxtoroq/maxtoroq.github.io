@@ -14,6 +14,7 @@ name                     | description
 `ncname`                 | An [`xsd:NCName`](https://www.w3.org/TR/xmlschema-2/#NCName)
 `uri`                    | An [`xsd:anyURI`](https://www.w3.org/TR/xmlschema-2/#anyURI)
 `nmtoken`                | An [`xsd:NMTOKEN`](https://www.w3.org/TR/xmlschema-2/#NMTOKEN)
+`token`                  | An [`xsd:token`](https://www.w3.org/TR/xmlschema-2/#token)
 `expression`             | A C# [`expression`]({{page.csharp_spec_url}}expressions.md#expression)
 `identifier`             | A C# [`identifier`]({{page.csharp_spec_url}}lexical-structure.md#identifiers)
 `type_name`              | A C# [`type_name`]({{page.csharp_spec_url}}basic-concepts.md#namespace-and-type-names)
