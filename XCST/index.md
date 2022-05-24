@@ -1,6 +1,5 @@
 ---
 title: XCST
-article_toc: false
 ---
 
 **XCST (eXtensible C-Sharp Templates)** is a language optimized for the production of XML and other formats. It's a more general-purpose version of XSLT.
@@ -101,7 +100,8 @@ Dependency injection is a burden on the programmer. You cannot just write your p
 
 Whether it's generating web pages or sending XML to a remote API, using XCST means you don't need a two-language *code + template* setup, or deal with `TextWriter` or similar APIs that make it hard to visualize what the output will finally look like.
 
-### Built on proven technologies
+Built on proven technologies
+----------------------------
 
 XCST is a glue technology that focuses on being a great language while leaving the hard/boring stuff to other libraries:
 
