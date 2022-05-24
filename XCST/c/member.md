@@ -25,7 +25,7 @@ regenerated.
   <span>format</span>? = <i>string</i>
   <span>apply-format-in-edit-mode</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>null-display-text</span>? = <i>string</i>
+  <span>null-text</span>? = <i>string</i>
   <span>template</span>? = <i>string</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
@@ -36,7 +36,7 @@ regenerated.
   <span>max</span>? = <i>string</i>
   <span>equal-to</span>? = <i title="Identifier.">identifier</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
+  <span>text-member</span>? = <i title="Identifier.">identifier</i>
   <span>data-type-message</span>? = <i>string</i>
   <span>required-message</span>? = <i>string</i>
   <span>min-length-message</span>? = <i>string</i>
@@ -109,10 +109,6 @@ regenerated.
          <td>A name suitable for UI.</td>
       </tr>
       <tr>
-         <td><code>display-text-member</code></td>
-         <td>The name of the member to use as the text representation for this type.</td>
-      </tr>
-      <tr>
          <td><code>edit-hint</code></td>
          <td>A hint to the user of what can be entered in a control for this member.</td>
       </tr>
@@ -125,7 +121,7 @@ regenerated.
          <td>A name that is used to group members in a UI.</td>
       </tr>
       <tr>
-         <td><code>null-display-text</code></td>
+         <td><code>null-text</code></td>
          <td>A text that is displayed for this member when the value is null.</td>
       </tr>
       <tr>
@@ -141,6 +137,10 @@ regenerated.
       <tr>
          <td><code>template</code></td>
          <td>The name of a template to use when displaying this member in a UI.</td>
+      </tr>
+      <tr>
+         <td><code>text-member</code></td>
+         <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
          <th colspan="2">Validation</th>

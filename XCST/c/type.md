@@ -13,7 +13,7 @@ regenerated.
   <b>name</b> = <i title="Identifier.">identifier</i>
   <span>visibility</span>? = <span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
-  <span>display-text-member</span>? = <i title="Identifier.">identifier</i>
+  <span>text-member</span>? = <i title="Identifier.">identifier</i>
   <span>resource-type</span>? = <i title="Type name.">type_name</i>
   <span>validation-resource-type</span>? = <i title="Type name.">type_name</i> &gt;
   &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
@@ -34,10 +34,6 @@ regenerated.
          <td>Specifies if an empty string is a valid value for this member.</td>
       </tr>
       <tr>
-         <td><code>display-text-member</code></td>
-         <td>The name of the member to use as the text representation for this type.</td>
-      </tr>
-      <tr>
          <td><code>name</code></td>
          <td>The name of the type.</td>
       </tr>
@@ -46,6 +42,10 @@ regenerated.
          <td>A type that contains resources for description, display-name, edit-hint, group and
             short-name attributes.
          </td>
+      </tr>
+      <tr>
+         <td><code>text-member</code></td>
+         <td>The name of the member to use as the text representation for this type.</td>
       </tr>
       <tr>
          <td><code>validation-resource-type</code></td>
