@@ -101,6 +101,17 @@ Dependency injection is a burden on the programmer. You cannot just write your p
 
 Whether it's generating web pages or sending XML to a remote API, using XCST means you don't need a two-language *code + template* setup, or deal with `TextWriter` or similar APIs that make it hard to visualize what the output will finally look like.
 
+### Built on proven technologies
+
+XCST is a glue technology that focuses on being a great language while leaving the hard/boring stuff to other libraries:
+
+- Inspiration: XSLT
+- Format and decentralized extensibility: XML with namespaces
+- Parsing and serialization: System.Xml
+- Document object model: System.Xml.Linq
+- JSON object model and serialization: Newtonsoft.Json
+- Target languages: C# and Visual Basic
+
 For more information see the [documentation][1].
 
 <div style="text-align: center; margin-top: 2em">
