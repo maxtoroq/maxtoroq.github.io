@@ -38,7 +38,7 @@ In XCST, elements, attributes and text are compiled to method calls. Serializati
 
 ### Extensible
 
-Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for web application development based on ASP.NET MVC.
+Not only the programs you write in XCST are extensible, but XCST itself is extensible with extension instructions. This project supports a set of extension instructions for [web application development](/2016/04/aspnet-programming-with-xcst.html) based on ASP.NET MVC.
 
 ```xml
 <a:form method='post' model-type='RegisterViewModel' antiforgery='yes'>
