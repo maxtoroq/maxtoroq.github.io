@@ -4,7 +4,7 @@ title: Getting Started
 
 ## Code Generation
 
-While you can use the `Xcst.Compiler` API to generate code for your XCST programs yourself, the most common scenario is to ship compiled code and generate it as part of your build process in Visual Studio.
+While you can use the `Xcst.Compiler` API to generate code for your XCST packages yourself, the most common scenario is to ship compiled code and generate it as part of your build process in Visual Studio.
 
 ### MSBuild
 
