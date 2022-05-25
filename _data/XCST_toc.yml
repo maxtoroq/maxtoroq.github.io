@@ -1,12 +1,8 @@
 
-- title: Project Overview
-  url: overview.html
-- title: Installing
-  url: installing.html
-- title: Code Generation
-  url: code-generation.html
-- title: Evaluation
-  url: evaluation.html
+- title: Why XCST
+  url: why-xcst.html
+- title: Getting Started
+  url: getting-started.html
 
 - title: Language Reference
   expanded: true
