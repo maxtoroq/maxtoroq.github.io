@@ -23,7 +23,5 @@
   toc:
     - title: XCST Introduction for the Razor Developer
       url: intro-for-razor-dev.html
-    - title: ASP.NET Code Samples
+    - title: Code Samples
       url: https://github.com/maxtoroq/XCST-a/tree/v2/samples
-    - title: Framework Changes
-      url: aspnet-framework-changes.html
