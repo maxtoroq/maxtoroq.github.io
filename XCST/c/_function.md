@@ -70,10 +70,14 @@ Because functions don't have an implicit output, to return a value you need to u
 
 </div>
 
+## Function Parameters
+
+Function parameters have several limitations, due to the fact that they compile to method parameters in C#. Type inference does not work when the value is supplied by the `value` attribute (defaults to [Object][System.Object]). Default values are limited to [constant expressions]({{ page.csharp_spec_url}}expressions.md#constant-expressions). The order of parameters is significant. Cannot have a parameter without a default value after one with a default value.
+
 <div class="note" markdown="1">
 
 ###### Note: Differences with `xsl:function`
-As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters have several limitations, see [Function Parameters](param.html#function-parameters). `c:function` parameters can have default values.
+As explained above, values must be returned explicitly, there's no implicit output. `c:function` parameters [have several limitations](#function-parameters). `c:function` parameters can have default values.
 
 </div>
 
@@ -87,3 +91,6 @@ It is a compilation error if there's another `c:function` declaration in the con
 
 - [Function Parameters](param.html#function-parameters)
 - [`c:template`](template.html)
+
+
+[System.Object]: {{ page.bcl_url }}system.object

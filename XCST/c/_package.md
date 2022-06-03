@@ -8,6 +8,18 @@ A package consists of one or more modules. Modules are linked together by means 
 
 <span id="dt-named-package"></span>A `c:package` that uses the `name` attribute is a **named package**. Named packages can be used by other packages by means of a [`c:use-package`](use-package.html) declaration.
 
+## Scope of Package Parameters
+
+<span id="dt-package-parameter"></span>A `c:param` whose parent is [`c:module`](module.html), `c:package` or [`c:override`](override.html) is a **package parameter**. A package parameter is also a [global variable](variable.html#dt-global-variable).
+
+Package parameters are visible to all other components in the containing package. Package parameters have an implicit `public` visibility, which also makes them visible to components in using packages.
+
+## Initialization of Package Parameters
+
+Package parameters that are not required follow the same rules as global variables. See [Initialization of Variables](variable.html#initialization-of-variables).
+
+Package parameters that use `required='yes'` are initialized before the invocation of the initial component (usually the `c:initial-template` template).
+
 ## See Also
 
 - [`c:module`](module.html)
