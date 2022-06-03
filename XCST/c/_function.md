@@ -89,7 +89,6 @@ It is a compilation error if there's another `c:function` declaration in the con
 
 ## See Also
 
-- [Function Parameters](param.html#function-parameters)
 - [`c:template`](template.html)
 
 
