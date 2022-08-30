@@ -10,9 +10,9 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:invoke-delegate</span>
-  <b>delegate</b> = @<span title="Xcst.XcstDelegate<TItem&gt;">XcstDelegate&lt;TItem&gt;</span>
-  <span>with-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
-  <span>tunnel-params</span>? = @(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
+  <b>delegate</b> = <i title="Expression.">expression</i><span title="Xcst.XcstDelegate<TItem&gt;">XcstDelegate&lt;TItem&gt;</span>
+  <span>with-params</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
+  <span>tunnel-params</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) &gt;
   &lt;!-- Content: <span><a href="with-param.html">c:with-param</a>*</span> --&gt;
 <span class="nt">&lt;/c:invoke-delegate&gt;</span></code></pre></div>
 <p>Invokes a template delegate.</p>

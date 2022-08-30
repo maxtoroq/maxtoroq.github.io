@@ -35,6 +35,7 @@ regenerated.
   <span>min</span>? = <i>string</i>
   <span>max</span>? = <i>string</i>
   <span>equal-to</span>? = <i title="Identifier.">identifier</i>
+  <span>serialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>text-member</span>? = <i title="Identifier.">identifier</i>
   <span>data-type-message</span>? = <i>string</i>
@@ -224,6 +225,15 @@ regenerated.
       <tr>
          <td><code>a:file-max-length-message</code></td>
          <td>An error message for the a:file-max-length attribute.</td>
+      </tr>
+      <tr>
+         <th colspan="2">Serialization</th>
+      </tr>
+      <tr>
+         <td><code>serialize</code></td>
+         <td>Specifies if this member should be considered when serializing an instance of the
+            type.
+         </td>
       </tr>
       <tr>
          <th colspan="2">Model Binding</th>

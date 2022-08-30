@@ -474,7 +474,7 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
    
    <xsl:template match="rng:ref[@name = 'expression'][docs:expression-type]" mode="ref:type-display">
       <xsl:variable name="choice" select="count(docs:expression-type) gt 1"/>
-      <xsl:text>@</xsl:text>
+      <xsl:next-match/>
       <xsl:if test="$choice">(</xsl:if>
       <xsl:for-each select="docs:expression-type">
          <xsl:if test="position() gt 1"> | </xsl:if>

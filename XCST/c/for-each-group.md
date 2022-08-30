@@ -11,7 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:for-each-group</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
-  <b>in</b> = @(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable<T&gt;">IEnumerable&lt;T&gt;</a> | <a href="{{ page.bcl_url }}system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>)
+  <b>in</b> = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable<T&gt;">IEnumerable&lt;T&gt;</a> | <a href="{{ page.bcl_url }}system.collections.ienumerable" title="System.Collections.IEnumerable">IEnumerable</a>)
   <span>group-by</span>? = <i title="Lambda expression.">lambda_expression</i>
   <span>group-size</span>? = { <i>integer</i> } &gt;
   &lt;!-- Content: (<span><a href="sort.html">c:sort</a>*</span>, <i>sequence-constructor</i>) --&gt;
