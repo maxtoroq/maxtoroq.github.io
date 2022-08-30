@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:assert</span>
-  <b>test</b> = <i title="Expression.">expression</i><a href="{{ page.bcl_url }}system.boolean" title="System.Boolean">Boolean</a>
+  <b>test</b> = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.boolean" title="System.Boolean">Boolean</a>)
   <span>value</span>? = <i title="Expression.">expression</i> &gt;
   &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:assert&gt;</span></code></pre></div>
