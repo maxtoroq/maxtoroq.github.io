@@ -64,6 +64,8 @@
       url: message.html
     - title: c:metadata
       url: metadata.html
+    - title: c:mode
+      url: mode.html
     - title: c:module
       url: module.html
     - title: c:namespace

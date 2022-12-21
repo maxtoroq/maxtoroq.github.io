@@ -10,7 +10,7 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:accept</span>
-  <b>component</b> = <span><span class="s">"attribute-set"</span> | <span class="s">"function"</span> | <span class="s">"template"</span> | <span class="s">"type"</span> | <span class="s">"variable"</span></span>
+  <b>component</b> = <span><span class="s">"attribute-set"</span> | <span class="s">"function"</span> | <span class="s">"mode"</span> | <span class="s">"template"</span> | <span class="s">"type"</span> | <span class="s">"variable"</span></span>
   <b>names</b> = <span><span><i>token</i>*</span> | <span class="s">"*"</span></span> /&gt;</code></pre></div>
 <p>Specifies component dependencies.</p>
 <dl>
