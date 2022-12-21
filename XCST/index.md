@@ -29,7 +29,7 @@ XCST compiles to C# or Visual Basic. The XCST compiler transforms XCST instructi
 
 - Packages and modules
 - Named templates, functions, attribute sets and output definitions
-- Template rules and shallow copy modes (XML only)
+- Template rules and modes declarations
 - Strongly typed sequence constructors
 - Attribute and text value templates
 - Temporary trees
