@@ -28,4 +28,4 @@ If a type is suffixed with an asterix (e.g. `cdata-section-elements = eqname*`) 
 
 ## Reserved Namespaces
 
-The XCST namespace `http://maxtoroq.github.io/XCST` and any other namespace that starts with `http://maxtoroq.github.io/XCST/` (note the trailing slash) are **reserved namespaces**. In general, reserved namespaces cannot be used to name [`c:template`](template.html), [`c:attribute-set`](attribute-set.html) and [`c:output`](output.html) declarations, see the documentation for these elements for more information.
+The XCST namespace `http://maxtoroq.github.io/XCST` and any other namespace that starts with `http://maxtoroq.github.io/XCST/` (note the trailing slash) are **reserved namespaces**. In general, reserved namespaces cannot be used to name [`c:attribute-set`](attribute-set.html), [`c:mode`](mode.html), [`c:output`](output.html) and [`c:template`](template.html) declarations, see the documentation for these elements for more information.
