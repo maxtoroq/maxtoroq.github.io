@@ -34,9 +34,9 @@ It is a compilation error if both attributes `name` and `match` are present.
 
 It is a compilation error if the `name` attribute uses a [reserved namespace](./#reserved-namespaces), except the name `c:initial-template`.
 
-It is a compilation error if the 'mode' attribute is present when the `name` attribute is used.
+It is a compilation error if the `mode` attribute is present when the `name` attribute is used.
 
-It is a compilation error if the 'visibility' attribute is present when the `match` attribute is used.
+It is a compilation error if the `visibility` attribute is present when the `match` attribute is used.
 
 It is a compilation error if a named template has `visibility='abstract'` and the content of the element, excluding any `c:param` elements, is non-empty.
 
