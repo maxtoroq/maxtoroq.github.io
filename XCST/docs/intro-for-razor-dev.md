@@ -483,8 +483,8 @@ Razor                                                 | XCST
 `Html.AntiForgeryToken()`                             | `<a:antiforgery/>`
 `Html.BeginForm()`                                    | n/a
 `Html.BeginRouteForm()`                               | n/a
-`Html.CheckBox("foo")`                                | `<a:check-box name='foo'/>`
-`Html.CheckBoxFor(p => p.foo)`                        | `<a:check-box for='foo'/>`
+`Html.CheckBox("foo")`                                | `<a:checkbox name='foo'/>`
+`Html.CheckBoxFor(p => p.foo)`                        | `<a:checkbox for='foo'/>`
 `Html.Display("foo")`                                 | `<a:display name='foo'/>`
 `Html.DisplayFor(p => p.foo)`                         | `<a:display for='foo'/>`
 `Html.DisplayForModel()`                              | `<a:display/>`
@@ -511,8 +511,8 @@ Razor                                                 | XCST
 `Html.Partial()`                                      | see [RenderPage/RenderPartial](#renderpagerenderpartial)
 `Html.Password("foo")`                                | `<a:input type='password' name='foo'/>`
 `Html.PasswordFor(p => p.foo)`                        | `<a:input type='password' for='foo'/>`
-`Html.RadioButton("foo")`                             | `<a:radio-button name='foo'/>`
-`Html.RadioButtonFor(p => p.foo)`                     | `<a:radio-button for='foo'/>`
+`Html.RadioButton("foo")`                             | `<a:radio name='foo'/>`
+`Html.RadioButtonFor(p => p.foo)`                     | `<a:radio for='foo'/>`
 `Html.Raw("<foo>")`                                   | `<c:value-of value='"&lt;foo>"' disable-output-escaping='yes'/>`
 `Html.RenderAction()`                                 | n/a
 `Html.RenderPartial()`                                | see [RenderPage/RenderPartial](#renderpagerenderpartial)
