@@ -150,10 +150,10 @@ Last attribute trick, URL resolution in Razor:
 <script src="~/myscript.js"></script>
 ```
 
-In XCST pages/views you can use `Href` or `Url.Content`.
+In XCST pages/views you can use `Url.Href` or `Url.Content`.
 
 ```xml
-<script src='{Href("~/myscript.js")}'></script>
+<script src='{Url.Href("~/myscript.js")}'></script>
 <script src='{Url.Content("~/myscript.js")}'></script>
 ```
 
