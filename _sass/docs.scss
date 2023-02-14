@@ -85,7 +85,8 @@ main {
          max-width: 17.5%;
          padding-top: $padding-top;
          font-size: calc(1rem - 1px);
-         color: #525252;
+         //color: #525252;
+         color: #000000b0;
          
          > ul {
             position: -webkit-sticky;
@@ -134,7 +135,7 @@ main {
          &.active {
             font-weight: 600;
             background-color: rgba(0, 0, 0, .07);
-            color: #525252;
+            //color: #525252;
          }
       }
    }
