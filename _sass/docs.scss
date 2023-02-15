@@ -120,12 +120,12 @@ main {
          //border-color: rgba(0, 0, 0, .17);
          border-color: rgba(0, 0, 0, .13);
          padding: 1.5rem;
-         padding-left: 2rem;
+         padding-left: 2.5rem;
          flex: 1 1 0;
 
          [itemprop="articleBody"] {
             > .content {
-               padding-right: .5rem;
+               padding-right: 1rem;
             }
          }
       }
@@ -196,7 +196,7 @@ main {
                flex: 1 1 0;
                overflow: auto;
                max-width: 790px;
-               padding-right: 2rem;
+               padding-right: 2.5rem;
             }
          }
       }
