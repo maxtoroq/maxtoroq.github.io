@@ -165,7 +165,7 @@ figure.code {
    [role="tablist"] {
       font-size: calc(1rem - 2px);
       padding: .3em .5em 0;
-      border: 1px solid rgba(0, 0, 0, .06);
+      //border: 1px solid rgba(0, 0, 0, .06);
       border-bottom: none;
       //background-color: rgba(125, 123, 0, .1);
       background-color: rgba(0, 0, 0, .08);
@@ -219,7 +219,7 @@ pre {
       text-shadow: 0 1px rgba(255, 255, 255, 0.3);
       //border-radius: .5em;
       border-radius: 2px;
-      border: 1px solid rgba(0, 0, 0, .06);
+      //border: 1px solid rgba(0, 0, 0, .06);
    }
 }
 
