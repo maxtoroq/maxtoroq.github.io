@@ -61,7 +61,7 @@ main {
       //background-color: #fafbfc;
       //background-color: #f0f2f5;
       //background-color: #ededed;
-      background-color: #f5f6fa;
+      //background-color: #f5f6fa;
 
       .container {
          max-width: 1500px;
@@ -98,7 +98,7 @@ main {
             margin-top: $padding-top * -1;
             padding-top: $padding-top;
             overflow-y: auto;
-            @include custom-scrollbar();
+            //@include custom-scrollbar();
          }
       }
 
@@ -114,8 +114,8 @@ main {
 
       article {
          background-color: #fff;
-         border-left: 2px solid;
-         border-bottom: 2px solid;
+         //border-left: 2px solid;
+         //border-bottom: 2px solid;
          //border-color: #e0e1ef;
          //border-color: rgba(0, 0, 0, .17);
          border-color: rgba(0, 0, 0, .13);
@@ -188,7 +188,7 @@ main {
                   padding: 0;
                   max-height: calc(100vh - 10px);
                   overflow-y: auto;
-                  @include custom-scrollbar();
+                  //@include custom-scrollbar();
                }
             }
 
