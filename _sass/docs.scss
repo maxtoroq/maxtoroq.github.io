@@ -93,10 +93,10 @@ main {
             position: sticky;
             top: 0;
             width: calc(100% + 1rem);
-            max-height: calc(100vh - #{$padding-top});
+            max-height: calc(100vh/* - #{$padding-top}*/);
             margin-left: -1rem; // .container padding * -1
-            margin-top: $padding-top * -1;
-            padding-top: $padding-top;
+            //margin-top: $padding-top * -1;
+            //padding-top: $padding-top;
             overflow-y: auto;
             //@include custom-scrollbar();
          }
