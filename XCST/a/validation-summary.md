@@ -11,10 +11,12 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:validation-summary</span>
   <span>include-member-errors</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>message</span>? = { <i>string</i> }
-  <span>class</span>? = { <i>string</i> }
-  <span>attributes</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
-<p>Creates an unordered list (&lt;ul&gt; element) of validation messages.</p>
+  <span>class</span>? = { <i>string</i> } &gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+<span class="nt">&lt;/a:validation-summary&gt;</span></code></pre></div>
+<p>Creates a &lt;div&gt; element that includes an unordered list (&lt;ul&gt; element) of validation
+   messages.
+</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
@@ -26,19 +28,11 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>attributes</code></td>
-         <td></td>
-      </tr>
-      <tr>
          <td><code>class</code></td>
          <td></td>
       </tr>
       <tr>
          <td><code>include-member-errors</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>message</code></td>
          <td></td>
       </tr>
    </table>

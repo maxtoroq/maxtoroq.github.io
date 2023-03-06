@@ -12,9 +12,9 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:validation-message</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
-  <span>message</span>? = { <i>string</i> }
-  <span>class</span>? = { <i>string</i> }
-  <span>attributes</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;) /&gt;</code></pre></div>
+  <span>class</span>? = { <i>string</i> } &gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+<span class="nt">&lt;/a:validation-message&gt;</span></code></pre></div>
 <p>Creates a &lt;span&gt; element with a validation message if it exists.</p>
 <dl>
    <dt><b>Category</b></dt>
@@ -27,19 +27,11 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>attributes</code></td>
-         <td></td>
-      </tr>
-      <tr>
          <td><code>class</code></td>
          <td></td>
       </tr>
       <tr>
          <td><code>for</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>message</code></td>
          <td></td>
       </tr>
       <tr>

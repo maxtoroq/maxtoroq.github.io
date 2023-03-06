@@ -17,9 +17,12 @@ regenerated.
 <span class="nt">&lt;/a:option&gt;</span></code></pre></div>
 <p>Creates an &lt;option&gt; element.</p>
 <dl>
+   <dt><b>Category</b></dt>
+   <dd><i>extension-instruction</i></dd>
    <dt><b>Permitted parent elements</b></dt>
-   <dd><a href="select.html"><code>a:select</code></a></dd>
    <dd><a href="with-options.html"><code>a:with-options</code></a></dd>
+   <dd>Any XCST element whose content model is <i>sequence-constructor</i></dd>
+   <dd>Any literal result element</dd>
 </dl>
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">

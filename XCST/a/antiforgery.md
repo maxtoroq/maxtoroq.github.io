@@ -9,7 +9,9 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:antiforgery</span>/&gt;</code></pre></div>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:antiforgery</span>&gt;
+  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+<span class="nt">&lt;/a:antiforgery&gt;</span></code></pre></div>
 <p>Creates an &lt;input&gt; element of type 'hidden' containing the antiforgery token.</p>
 <dl>
    <dt><b>Category</b></dt>
