@@ -180,6 +180,7 @@ main {
                min-width: 200px;
                max-width: 250px;
                padding-left: 1rem;
+               color: #000000b0;
                
                > div {
                   position: -webkit-sticky;
@@ -189,6 +190,14 @@ main {
                   max-height: calc(100vh - 10px);
                   overflow-y: auto;
                   //@include custom-scrollbar();
+               }
+
+               a {
+                  color: inherit;
+
+                  &:hover, &:focus, &:active {
+                     color: #0066c0;
+                  }
                }
             }
 
