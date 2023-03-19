@@ -6,14 +6,15 @@
 $logo-height: 38px;
 $footer-height: 120px;
 $header-padding-tb: .4em;
-$header-height: calc(#{$logo-height} + #{$header-padding-tb * 2});
+$header-height: calc(#{$logo-height} + #{$header-padding-tb * 2} + 1px);
 
 body > header {
 
    //background-color: #265899;
-   background-color: #1a4c8e;
+   //background-color: #1a4c8e;
    //color: #fff;
-   color: #ffffffb0;
+   //color: #ffffffb0;
+   border-bottom: 1px solid #9eb7d8;
    letter-spacing: .1em;
 
    a, a:hover, a:focus {
@@ -40,7 +41,7 @@ body > header {
          text-indent: -999em;
          vertical-align: middle;
          margin-left: 0;
-         filter: invert(1) hue-rotate(186grad);
+         //filter: invert(1) hue-rotate(186grad);
       }
 
       &.github, &.donate {
@@ -51,7 +52,7 @@ body > header {
       
       &.github img {
          height: 22px;
-         filter: invert(1);
+         //filter: invert(1);
       }
    }
 }
@@ -119,10 +120,10 @@ body > footer {
 
    body > header {
       a {
-         border-bottom-color: rgba(255, 255, 255, 0.3);
+         //border-bottom-color: rgba(255, 255, 255, 0.3);
 
          &:hover, &:focus {
-            border-bottom-color: #fff;
+            //border-bottom-color: #fff;
          }
       }
    }
