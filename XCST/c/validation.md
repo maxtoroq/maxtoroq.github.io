@@ -10,7 +10,6 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:validation</span>
-  <span>data-type-message</span>? = <i>string</i>
   <span>required-message</span>? = <i>string</i>
   <span>min-length-message</span>? = <i>string</i>
   <span>max-length-message</span>? = <i>string</i>
@@ -31,10 +30,6 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
-      <tr>
-         <td><code>data-type-message</code></td>
-         <td>An error message for the data-type attribute.</td>
-      </tr>
       <tr>
          <td><code>equal-to-message</code></td>
          <td>An error message for the equal-to attribute.</td>

@@ -26,8 +26,8 @@ regenerated.
   <span>apply-format-in-edit-mode</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>disable-output-escaping</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>null-text</span>? = <i>string</i>
-  <span>template</span>? = <i>string</i>
   <span>data-type</span>? = <span><span class="s">"CreditCard"</span> | <span class="s">"Currency"</span> | <span class="s">"Date"</span> | <span class="s">"DateTime"</span> | <span class="s">"Duration"</span> | <span class="s">"EmailAddress"</span> | <span class="s">"Html"</span> | <span class="s">"ImageUrl"</span> | <span class="s">"MultilineText"</span> | <span class="s">"Password"</span> | <span class="s">"PhoneNumber"</span> | <span class="s">"PostalCode"</span> | <span class="s">"Text"</span> | <span class="s">"Time"</span> | <span class="s">"Upload"</span> | <span class="s">"Url"</span></span>
+  <span>template</span>? = <i>string</i>
   <span>required</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>max-length</span>? = <i>integer</i>
   <span>min-length</span>? = <i>integer</i>
@@ -38,7 +38,6 @@ regenerated.
   <span>serialize</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>allow-empty-string</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>text-member</span>? = <i title="Identifier.">identifier</i>
-  <span>data-type-message</span>? = <i>string</i>
   <span>required-message</span>? = <i>string</i>
   <span>min-length-message</span>? = <i>string</i>
   <span>max-length-message</span>? = <i>string</i>
@@ -50,7 +49,7 @@ regenerated.
   <span>a:bind</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i>
   <span>a:file-extensions-message</span>? = <i>string</i>
   <span>a:file-max-length-message</span>? = <i>string</i> &gt;
-  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
+  &lt;!-- Content: (<span><a href="meta.html">c:meta</a>*</span>, <span><span><a href="member.html">c:member</a>*</span></span>) --&gt;
 <span class="nt">&lt;/c:member&gt;</span></code></pre></div>
 <p>Defines a type member.</p>
 <dl>
@@ -90,6 +89,13 @@ regenerated.
       <tr>
          <td><code>apply-format-in-edit-mode</code></td>
          <td>Specifies if the display format should be used in an edit control for this member.</td>
+      </tr>
+      <tr>
+         <td><code>data-type</code></td>
+         <td>A more specific type. Using this attribute can be a way to provide default values
+            to the 'format' and 'template' attributes, and for using a specific input type in
+            HTML.
+         </td>
       </tr>
       <tr>
          <td><code>description</code></td>
@@ -149,14 +155,6 @@ regenerated.
       <tr>
          <td><code>allow-empty-string</code></td>
          <td>Specifies if an empty string is a valid value for this member.</td>
-      </tr>
-      <tr>
-         <td><code>data-type</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>data-type-message</code></td>
-         <td>An error message for the data-type attribute.</td>
       </tr>
       <tr>
          <td><code>equal-to</code></td>

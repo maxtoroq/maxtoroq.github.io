@@ -62,8 +62,8 @@
       url: member.html
     - title: c:message
       url: message.html
-    - title: c:metadata
-      url: metadata.html
+    - title: c:meta
+      url: meta.html
     - title: c:mode
       url: mode.html
     - title: c:module

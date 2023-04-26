@@ -1,5 +1,5 @@
 ---
-title: "c:metadata"
+title: "c:meta"
 ---
 
 {% comment %}  
@@ -9,8 +9,8 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:metadata</span>
-  <b>name</b> = <i title="Type name.">type_name</i>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:meta</span>
+  <b>type</b> = <i title="Type name.">type_name</i>
   <span>args</span>? = <i title="Expression.">expression</i> /&gt;</code></pre></div>
 <p>Defines type or member custom metadata.</p>
 <dl>
@@ -26,8 +26,8 @@ regenerated.
          <td>The metadata arguments.</td>
       </tr>
       <tr>
-         <td><code>name</code></td>
-         <td>The metadata name.</td>
+         <td><code>type</code></td>
+         <td>The metadata type.</td>
       </tr>
    </table>
 </div>
@@ -35,4 +35,4 @@ regenerated.
       In addition to the attributes in the preceding table, there are a number of <a href="../docs/standard-attributes.html">standard attributes</a> that may appear on any XCST element.
       </small></p>
 
-{% include_relative _metadata.md %}
+{% include_relative _meta.md %}

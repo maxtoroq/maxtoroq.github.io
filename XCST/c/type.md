@@ -16,7 +16,7 @@ regenerated.
   <span>text-member</span>? = <i title="Identifier.">identifier</i>
   <span>resource-type</span>? = <i title="Type name.">type_name</i>
   <span>validation-resource-type</span>? = <i title="Type name.">type_name</i> &gt;
-  &lt;!-- Content: (<span><a href="metadata.html">c:metadata</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
+  &lt;!-- Content: (<span><a href="meta.html">c:meta</a>*</span>, <span><a href="member.html">c:member</a>*</span>) --&gt;
 <span class="nt">&lt;/c:type&gt;</span></code></pre></div>
 <p>Defines a type.</p>
 <dl>
