@@ -11,7 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:template</span>
   <span>name</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>
-  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span></span>
+  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span> | <span class="s">"hidden"</span></span>
   <span>match</span>? = <i title="Pattern expression.">pattern</i>
   <span>mode</span>? = <span><span class="s">"#all"</span> | <span><span>(<i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> | <span class="s">"#default"</span>)</span>+</span></span>
   <span>as</span>? = <i title="Type name.">type_name</i> &gt;
