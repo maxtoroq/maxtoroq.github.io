@@ -151,8 +151,8 @@ thead, tfoot {
 }
 
 ins {
-   text-decoration: none;
-   border-bottom: 1px dotted;
+   text-decoration-style: dotted;
+   text-underline-offset: .21rem;
 }
 
 del {
@@ -281,8 +281,8 @@ nav.toc {
 
    a, a:hover, a:focus {
       color: inherit;
-      text-decoration: none;
-      border-bottom: 1px solid #0066c0;
+      text-underline-offset: .21rem;
+      text-decoration-color: #0066c0;
    }
    
    h1, h2, h3, h4, h5, h6 {
