@@ -100,6 +100,10 @@ main {
             overflow-y: auto;
             //@include custom-scrollbar();
          }
+
+         a {
+            text-decoration: none;
+         }
       }
 
       main {
