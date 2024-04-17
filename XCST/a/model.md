@@ -11,7 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:model</span>
   <span>value</span>? = <i title="Expression.">expression</i>
-  <span>as</span>? = <i>type_name</i>
+  <span>type</span>? = <i>type_name</i>
   <span>field-prefix</span>? = { <i>string</i> }
   <span>helper-name</span>? = <i>identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
@@ -28,15 +28,15 @@ regenerated.
 <div class="table-responsive">
    <table class="ref-attribs">
       <tr>
-         <td><code>as</code></td>
-         <td></td>
-      </tr>
-      <tr>
          <td><code>field-prefix</code></td>
          <td></td>
       </tr>
       <tr>
          <td><code>helper-name</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>type</code></td>
          <td></td>
       </tr>
       <tr>
