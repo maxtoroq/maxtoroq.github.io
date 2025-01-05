@@ -31,7 +31,7 @@ regenerated.
       <tr>
          <td><code>on-no-match</code></td>
          <td>Specifies the behavior when an item does not match any of the available template rules.
-            The default is shallow-copy.
+            The default is fail.
          </td>
       </tr>
       <tr>
