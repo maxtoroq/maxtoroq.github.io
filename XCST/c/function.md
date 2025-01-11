@@ -12,7 +12,8 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:function</span>
   <b>name</b> = <i title="Identifier.">identifier</i>
   <span>as</span>? = <i title="Type name.">type_name</i>
-  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span> | <span class="s">"hidden"</span></span> &gt;
+  <span>visibility</span>? = <span><span><span class="s">"public"</span> | <span class="s">"private"</span> | <span class="s">"final"</span></span> | <span class="s">"abstract"</span> | <span class="s">"hidden"</span></span>
+  <span>partial</span>? = <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> &gt;
   &lt;!-- Content: (<span><a href="param.html">c:param</a>*</span>, <i>sequence-constructor</i>) --&gt;
 <span class="nt">&lt;/c:function&gt;</span></code></pre></div>
 <p>Defines a function.</p>
@@ -34,6 +35,10 @@ regenerated.
       <tr>
          <td><code>name</code></td>
          <td>The name of the function.</td>
+      </tr>
+      <tr>
+         <td><code>partial</code></td>
+         <td>Specifies if the function should be implemented in another partial declaration.</td>
       </tr>
       <tr>
          <td><code>visibility</code></td>

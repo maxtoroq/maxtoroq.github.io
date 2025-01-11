@@ -10,8 +10,9 @@ regenerated.
 {% endcomment %}
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:if</span>
-  <b>test</b> = <i title="Boolean expression.">boolean_expression</i> &gt;
-  &lt;!-- Content: <i>sequence-constructor</i> --&gt;
+  <b>test</b> = <i title="Boolean expression.">boolean_expression</i>
+  <span>value</span>? = <i title="Expression.">expression</i> &gt;
+  &lt;!-- Content: <span><i>sequence-constructor</i></span> --&gt;
 <span class="nt">&lt;/c:if&gt;</span></code></pre></div>
 <p>Defines conditional behavior.</p>
 <dl>
@@ -27,6 +28,10 @@ regenerated.
       <tr>
          <td><code>test</code></td>
          <td>The condition to check for the contents to be processed.</td>
+      </tr>
+      <tr>
+         <td><code>value</code></td>
+         <td>The value to output.</td>
       </tr>
    </table>
 </div>
