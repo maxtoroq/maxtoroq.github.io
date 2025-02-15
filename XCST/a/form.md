@@ -13,11 +13,11 @@ regenerated.
   <b>method</b> = <span><span class="s">"post"</span> | <span class="s">"get"</span></span>
   <span>model-value</span>? = <i title="Expression.">expression</i>
   <span>model-type</span>? = <i>type_name</i>
-  <span>id</span>? = { <i>string</i> }
   <span>action</span>? = { <i>string</i> }
   <span>autocomplete</span>? = { <i>string</i> }
   <span>enctype</span>? = { <i>string</i> }
   <span>antiforgery</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
   <span>field-prefix</span>? = { <i>string</i> }
   <span>helper-name</span>? = <i>identifier</i> &gt;

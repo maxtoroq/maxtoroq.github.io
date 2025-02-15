@@ -11,6 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:validation-summary</span>
   <span>include-member-errors</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:validation-summary&gt;</span></code></pre></div>
@@ -29,6 +30,10 @@ regenerated.
    <table class="ref-attribs">
       <tr>
          <td><code>class</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>id</code></td>
          <td></td>
       </tr>
       <tr>

@@ -12,6 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:validation-message</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
+  <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:validation-message&gt;</span></code></pre></div>
@@ -32,6 +33,10 @@ regenerated.
       </tr>
       <tr>
          <td><code>for</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>id</code></td>
          <td></td>
       </tr>
       <tr>
