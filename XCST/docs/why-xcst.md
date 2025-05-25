@@ -44,8 +44,8 @@ Not only the programs you write in XCST are extensible, but XCST itself is exten
 <a:form method='post' model-type='RegisterViewModel' antiforgery='yes'>
    <a:validation-summary/>
 
-    Email:  <a:editor for='Email'/><br/>
-    Password: <a:editor for='Password'/><br/>
+    Email:  <a:input for='Email'/><br/>
+    Password: <a:input for='Password'/><br/>
     <button type="submit">Register</button>
 </a:form>
 ```
