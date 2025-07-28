@@ -12,6 +12,13 @@
 
 </div>
 
+<div class="note" markdown="1">
+
+###### Note: Differences with `xsl:attribute`
+The default separator for sequence constructors of `c:attribute` is a single space (consistent with all other simple content instructions), while `xsl:attribute` uses an empty string.
+
+</div>
+
 ## Error Conditions
 
 It is a compilation error if the `value` attribute is present when the content of the element is non-empty.
