@@ -5,6 +5,11 @@ title: Changelog
 ## v6.x
 See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
 
+### v6.4.0
+- New cached compiled mapping implementation for POCO objects (to use set `Configuration.UseCompiledMapping` to `true`)
+- Improved POCO mapping efficiency on property read/write/add and object instantiation
+- New binaries for .NET Framework 4.7.2 and .NET 6.0
+
 ### v6.3.0
 - Persistent complex properties
 - Named arguments constructor mapping
