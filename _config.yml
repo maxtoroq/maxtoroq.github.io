@@ -8,6 +8,7 @@ sass:
   style: compressed
 
 plugins:
+  - jekyll-redirect-from
   - jemoji
 
 defaults:

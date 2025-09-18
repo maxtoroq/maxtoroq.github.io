@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/index.html
+---
+
 DbExtensions Namespaces
 =======================
 
