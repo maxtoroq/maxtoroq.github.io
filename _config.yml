@@ -37,6 +37,7 @@ defaults:
       path: DbExtensions/docs/api
       type: pages
     values:
+      api_docs: true
       toc: DbExtensions_api_toc
       toc_base_url: /DbExtensions/docs/api/
 
@@ -44,6 +45,7 @@ defaults:
       path: DbExtensions/docs/7/api
       type: pages
     values:
+      api_docs: true
       toc: DbExtensions_api_toc_7
       toc_base_url: /DbExtensions/docs/7/api/
 

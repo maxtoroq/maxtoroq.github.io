@@ -2,9 +2,7 @@
 layout: DbExtensions-base
 ---
 {% assign cp_parts = page.path | split: '/' %}
-{% if cp_parts[1] == 'docs' and cp_parts[2] == 'api' %}
-   {% assign api_docs = true %}
-{% endif %}
+{% assign api_docs = page.api_docs %}
 <div class="container">
    <nav class="section-toc">
       {% if page.toc %}
