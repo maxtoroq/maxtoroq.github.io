@@ -1,6 +1,6 @@
 
 - title: Installing
-  url: ../installing.html
+  url: installing.html
 - title: SqlBuilder Tutorial
   url: SqlBuilder.html
 - title: SqlSet Tutorial
@@ -15,13 +15,13 @@
     - title: API Reference
       url: api/DbExtensions/
     - title: Migrating to v6
-      url: ../migrating/to-v6.html
+      url: migrating-to-v6.html
     - title: Changelog
       url: ../changes.html
 - title: Versions
   toc:
     - title: v6
-      url: ./
+      url: ""
     - title: v5
       url: https://github.com/maxtoroq/DbExtensions/blob/v5/docs/README.md
     - title: v4

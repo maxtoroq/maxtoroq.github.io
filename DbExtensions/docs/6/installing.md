@@ -1,5 +1,6 @@
 ---
 title: Installing
+redirect_from: /DbExtensions/docs/installing.html
 ---
 
 DbExtensions' binaries are hosted on [NuGet.org](https://www.nuget.org/packages/DbExtensions).

@@ -1,5 +1,6 @@
 ---
 title: Migrating to v6
+redirect_from: /DbExtensions/docs/migrating/to-v6.html
 ---
 
 Overview
