@@ -1,0 +1,27 @@
+DatabaseConfiguration.CommandTimeout Property
+=============================================
+Specifies a timeout to assign to commands. This setting is ignored if less or equal to -1. The default is -1.
+  
+**Namespace:** [DbExtensions][1]  
+**Assembly:** DbExtensions.dll
+
+Syntax
+------
+
+```csharp
+public int CommandTimeout { get; set; }
+```
+
+#### Property Value
+[Int32][2]
+
+See Also
+--------
+
+#### Reference
+[DatabaseConfiguration Class][3]  
+[DbExtensions Namespace][1]  
+
+[1]: ../README.md
+[2]: https://learn.microsoft.com/dotnet/api/system.int32
+[3]: README.md

@@ -41,6 +41,13 @@ defaults:
       toc_base_url: /DbExtensions/docs/api/
 
   - scope:
+      path: DbExtensions/docs/7/api
+      type: pages
+    values:
+      toc: DbExtensions_api_toc_7
+      toc_base_url: /DbExtensions/docs/7/api/
+
+  - scope:
       path: MvcCodeRouting
       type: pages
     values:
