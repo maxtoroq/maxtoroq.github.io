@@ -1,5 +1,5 @@
 ---
-redirect_from: /DbExtensions/docs/api/DbExtensions/index.html
+redirect_from: /DbExtensions/docs/api/DbExtensions/
 ---
 
 DbExtensions Namespace
