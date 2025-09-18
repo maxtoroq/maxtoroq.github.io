@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/index.html
+---
+
 DbExtensions Namespace
 ======================
 DbExtensions is a data-access framework with a strong focus on query composition, granularity and code aesthetics. [Database][1] is the entry point of the **DbExtensions** API.

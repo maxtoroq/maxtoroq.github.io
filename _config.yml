@@ -35,12 +35,12 @@ defaults:
       toc_base_url: /DbExtensions/docs/
 
   - scope:
-      path: DbExtensions/docs/api
+      path: DbExtensions/docs/6/api
       type: pages
     values:
       api_docs: true
-      toc: DbExtensions_api_toc
-      toc_base_url: /DbExtensions/docs/api/
+      toc: DbExtensions_api_toc_6
+      toc_base_url: /DbExtensions/docs/6/api/
 
   - scope:
       path: DbExtensions/docs/7/api
