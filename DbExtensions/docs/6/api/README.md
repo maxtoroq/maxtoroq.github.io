@@ -1,5 +1,5 @@
 ---
-permalink: /:path/index:output_ext
+permalink: /:path/
 redirect_from: /DbExtensions/docs/api/
 ---
 
