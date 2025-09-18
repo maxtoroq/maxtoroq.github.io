@@ -1,5 +1,6 @@
 ---
 title: SqlSet Tutorial
+redirect_from: /DbExtensions/docs/SqlSet.html
 ---
 
 Overview

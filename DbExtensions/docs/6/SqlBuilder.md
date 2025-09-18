@@ -1,5 +1,6 @@
 ---
 title: SqlBuilder Tutorial
+redirect_from: /DbExtensions/docs/SqlBuilder.html
 ---
 
 Overview

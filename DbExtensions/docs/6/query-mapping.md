@@ -1,5 +1,6 @@
 ---
 title: Query Mapping
+redirect_from: /DbExtensions/docs/query-mapping.html
 ---
 DbExtensions supports a special column alias syntax to match columns to properties and constructor parameters. This syntax is:
 
