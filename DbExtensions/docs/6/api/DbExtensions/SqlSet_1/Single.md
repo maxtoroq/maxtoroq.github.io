@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Single.html
+---
+
 SqlSet&lt;TResult>.Single Method
 ================================
 The single element of the set.

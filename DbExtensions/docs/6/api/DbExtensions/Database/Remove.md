@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Remove.html
+---
+
 Database.Remove Method
 ======================
 Executes a DELETE command for the specified *entity*.

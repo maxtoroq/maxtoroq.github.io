@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/AppendToCurrentClause.html
+---
+
 SqlBuilder.AppendToCurrentClause Method
 =======================================
 Appends *format* to the current clause.

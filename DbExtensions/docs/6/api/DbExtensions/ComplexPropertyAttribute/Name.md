@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ComplexPropertyAttribute/Name.html
+---
+
 ComplexPropertyAttribute.Name Property
 ======================================
 The base name for the columns on the complex property. The default is the property name.

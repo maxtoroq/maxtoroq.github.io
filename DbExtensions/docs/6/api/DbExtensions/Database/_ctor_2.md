@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/_ctor_2.html
+---
+
 Database(String) Constructor
 ============================
 Initializes a new instance of the [Database][1] class using the provided connection string.

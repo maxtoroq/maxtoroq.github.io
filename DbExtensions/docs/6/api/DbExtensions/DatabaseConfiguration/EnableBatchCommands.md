@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/EnableBatchCommands.html
+---
+
 DatabaseConfiguration.EnableBatchCommands Property
 ==================================================
 true to execute batch commands when possible; otherwise, false. The default is true.

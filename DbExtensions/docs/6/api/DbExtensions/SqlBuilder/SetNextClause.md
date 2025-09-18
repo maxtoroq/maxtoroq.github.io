@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/SetNextClause.html
+---
+
 SqlBuilder.SetNextClause Method
 ===============================
 Sets *clauseName* as the next SQL clause.

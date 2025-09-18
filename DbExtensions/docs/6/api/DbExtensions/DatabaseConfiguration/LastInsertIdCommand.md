@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/LastInsertIdCommand.html
+---
+
 DatabaseConfiguration.LastInsertIdCommand Property
 ==================================================
 Gets or sets the SQL command that returns the last identity value generated on the database.

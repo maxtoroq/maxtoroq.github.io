@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Map__1_1.html
+---
+
 Database.Map&lt;TResult>(SqlBuilder, Func&lt;IDataRecord, TResult>) Method
 ==========================================================================
 Maps the results of the *query* to TResult objects, using the provided *mapper* delegate.

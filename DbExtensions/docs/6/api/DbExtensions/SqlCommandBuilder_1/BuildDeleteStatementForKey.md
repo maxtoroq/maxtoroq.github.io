@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildDeleteStatementForKey.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildDeleteStatementForKey Method
 ===============================================================
 Creates and returns a DELETE command for the entity whose primary key matches the *id* parameter.

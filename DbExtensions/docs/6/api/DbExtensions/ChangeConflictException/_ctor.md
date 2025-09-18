@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ChangeConflictException/_ctor.html
+---
+
 ChangeConflictException Constructor
 ===================================
 Initializes a new instance of the [ChangeConflictException][1] class with a specified error message.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Single_1.html
+---
+
 SqlSet.Single(String, Object[]) Method
 ======================================
 Returns the only element of the set that satisfies a specified condition, and throws an exception if more than one such element exists.

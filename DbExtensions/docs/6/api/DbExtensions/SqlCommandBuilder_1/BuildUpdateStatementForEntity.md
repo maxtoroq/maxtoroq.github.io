@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildUpdateStatementForEntity.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildUpdateStatementForEntity(TEntity) Method
 ===========================================================================
 Creates and returns an UPDATE command for the specified *entity*.

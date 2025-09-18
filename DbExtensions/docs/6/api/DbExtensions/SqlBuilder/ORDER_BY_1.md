@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/ORDER_BY_1.html
+---
+
 SqlBuilder.ORDER_BY(String, Object[]) Method
 ============================================
 Appends the ORDER BY clause using the provided *format* string and parameters.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Select.html
+---
+
 SqlSet.Select(String, Object[]) Method
 ======================================
 Projects each element of the set into a new form.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetByte.html
+---
+
 Extensions.GetByte Method
 =========================
 Gets the value of the specified column as a [Byte][1].

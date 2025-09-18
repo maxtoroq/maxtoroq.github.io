@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Any_1.html
+---
+
 SqlSet.Any(String, Object[]) Method
 ===================================
 Determines whether any element of the set satisfies a condition.

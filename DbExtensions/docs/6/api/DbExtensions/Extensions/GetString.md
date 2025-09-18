@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetString.html
+---
+
 Extensions.GetString Method
 ===========================
 Gets the value of the specified column as a [String][1].

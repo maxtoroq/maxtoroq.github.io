@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Map_1.html
+---
+
 Database.Map(Type, SqlBuilder) Method
 =====================================
 Maps the results of the *query* to objects of type specified by the *resultType* parameter. The query is deferred-executed.

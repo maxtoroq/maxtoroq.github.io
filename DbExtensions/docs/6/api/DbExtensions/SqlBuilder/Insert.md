@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/Insert.html
+---
+
 SqlBuilder.Insert Method
 ========================
 Inserts a string into this instance at the specified character position.

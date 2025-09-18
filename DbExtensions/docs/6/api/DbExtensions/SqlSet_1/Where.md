@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Where.html
+---
+
 SqlSet&lt;TResult>.Where Method
 ===============================
 Filters the set based on a predicate.

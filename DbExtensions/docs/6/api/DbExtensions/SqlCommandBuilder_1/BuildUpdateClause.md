@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildUpdateClause.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildUpdateClause Method
 ======================================================
 Creates and returns an UPDATE command for the current table that includes the UPDATE clause.

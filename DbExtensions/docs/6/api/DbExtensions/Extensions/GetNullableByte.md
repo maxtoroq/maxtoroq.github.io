@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableByte.html
+---
+
 Extensions.GetNullableByte(IDataRecord, Int32) Method
 =====================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Byte][2].

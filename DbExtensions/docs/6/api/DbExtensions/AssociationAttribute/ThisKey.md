@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/AssociationAttribute/ThisKey.html
+---
+
 AssociationAttribute.ThisKey Property
 =====================================
 Gets or sets members of this entity class to represent the key values on this side of the association.

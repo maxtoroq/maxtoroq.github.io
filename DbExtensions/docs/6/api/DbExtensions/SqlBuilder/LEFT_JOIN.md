@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/LEFT_JOIN.html
+---
+
 SqlBuilder.LEFT_JOIN Method
 ===========================
 Appends the LEFT JOIN clause using the provided *format* string and parameters.

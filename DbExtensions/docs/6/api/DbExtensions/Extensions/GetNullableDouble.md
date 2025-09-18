@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableDouble.html
+---
+
 Extensions.GetNullableDouble(IDataRecord, Int32) Method
 =======================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Double][2].

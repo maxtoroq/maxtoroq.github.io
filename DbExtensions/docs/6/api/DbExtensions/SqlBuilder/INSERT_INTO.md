@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/INSERT_INTO.html
+---
+
 SqlBuilder.INSERT_INTO Method
 =============================
 Appends the INSERT INTO clause using the provided *format* string and parameters.

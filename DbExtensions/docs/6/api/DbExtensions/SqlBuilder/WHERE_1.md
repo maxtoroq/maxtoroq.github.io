@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/WHERE_1.html
+---
+
 SqlBuilder.WHERE(String, Object[]) Method
 =========================================
 Appends the WHERE clause using the provided *format* string and parameters.

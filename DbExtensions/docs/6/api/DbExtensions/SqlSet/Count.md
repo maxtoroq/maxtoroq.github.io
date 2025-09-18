@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Count.html
+---
+
 SqlSet.Count Method
 ===================
 Returns the number of elements in the set.

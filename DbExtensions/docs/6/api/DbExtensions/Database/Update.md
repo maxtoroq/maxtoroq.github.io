@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Update.html
+---
+
 Database.Update(Object) Method
 ==============================
 Executes an UPDATE command for the specified *entity*.

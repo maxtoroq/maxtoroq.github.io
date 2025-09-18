@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/
+---
+
 Database Class
 ==============
 Provides simple data access using [SqlSet][1], [SqlBuilder][2] and [SqlTable&lt;TEntity>][3].

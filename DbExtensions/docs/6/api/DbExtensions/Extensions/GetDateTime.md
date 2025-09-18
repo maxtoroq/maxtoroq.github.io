@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetDateTime.html
+---
+
 Extensions.GetDateTime Method
 =============================
 Gets the value of the specified column as a [DateTime][1].

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SQL/DELETE_FROM.html
+---
+
 SQL.DELETE_FROM Method
 ======================
 Creates and returns a new [SqlBuilder][1] initialized by appending the DELETE FROM clause using the provided *format* and *args*.

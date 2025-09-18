@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildSelectStatement_1.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildSelectStatement(String) Method
 =================================================================
 Creates and returns a SELECT query for the current table that includes the SELECT and FROM clauses. All column names are qualified with the provided *tableAlias*.

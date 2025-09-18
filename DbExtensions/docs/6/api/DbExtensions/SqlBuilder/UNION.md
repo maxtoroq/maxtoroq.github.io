@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/UNION.html
+---
+
 SqlBuilder.UNION Method
 =======================
 Appends the UNION clause.

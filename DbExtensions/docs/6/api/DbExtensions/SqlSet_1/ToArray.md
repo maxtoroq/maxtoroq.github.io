@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/ToArray.html
+---
+
 SqlSet&lt;TResult>.ToArray Method
 =================================
 Creates an array from the set.

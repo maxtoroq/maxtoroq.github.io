@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/_ctor.html
+---
+
 ColumnAttribute Constructor
 ===========================
 Initializes a new instance of the [ColumnAttribute][1] class

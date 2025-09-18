@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/FROM.html
+---
+
 SqlBuilder.FROM(SqlBuilder, String) Method
 ==========================================
 Appends the FROM clause using the provided *subQuery* as body named after *alias*.

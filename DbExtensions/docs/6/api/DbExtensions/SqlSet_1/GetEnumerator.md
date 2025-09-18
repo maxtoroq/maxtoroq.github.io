@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/GetEnumerator.html
+---
+
 SqlSet&lt;TResult>.GetEnumerator Method
 =======================================
 Returns an enumerator that iterates through the set.

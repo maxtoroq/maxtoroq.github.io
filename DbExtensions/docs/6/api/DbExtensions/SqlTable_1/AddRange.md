@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/AddRange.html
+---
+
 SqlTable&lt;TEntity>.AddRange(IEnumerable&lt;TEntity>) Method
 =============================================================
 Recursively executes INSERT commands for the specified *entities* and all their one-to-one and one-to-many associations.

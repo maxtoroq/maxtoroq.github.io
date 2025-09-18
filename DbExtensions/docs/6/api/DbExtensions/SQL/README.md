@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/SQL/
+---
+
 SQL Class
 =========
 Provides a set of static (Shared in Visual Basic) methods to create [SqlBuilder][1] instances.

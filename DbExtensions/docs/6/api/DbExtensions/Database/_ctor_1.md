@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/_ctor_1.html
+---
+
 Database(IDbConnection) Constructor
 ===================================
 Initializes a new instance of the [Database][1] class using the provided connection.

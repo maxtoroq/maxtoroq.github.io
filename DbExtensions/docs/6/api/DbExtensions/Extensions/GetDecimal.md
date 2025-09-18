@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetDecimal.html
+---
+
 Extensions.GetDecimal Method
 ============================
 Gets the value of the specified column as a [Decimal][1].

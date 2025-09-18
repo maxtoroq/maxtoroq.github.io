@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/EnsureInTransaction.html
+---
+
 Database.EnsureInTransaction Method
 ===================================
 Returns a virtual transaction that you can use to ensure a code block is always executed in a transaction, new or existing.

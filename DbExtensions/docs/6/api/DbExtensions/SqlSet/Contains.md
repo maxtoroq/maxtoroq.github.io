@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Contains.html
+---
+
 SqlSet.Contains Method
 ======================
 Checks the existance of the *entity*, using the primary key value.

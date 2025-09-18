@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/WITH_1.html
+---
+
 SqlBuilder.WITH(SqlSet, String) Method
 ======================================
 Appends the WITH clause using the provided *subQuery* as body named after *alias*.

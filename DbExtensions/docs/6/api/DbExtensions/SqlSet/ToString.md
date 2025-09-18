@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/ToString.html
+---
+
 SqlSet.ToString Method
 ======================
 Returns the SQL query of the set.

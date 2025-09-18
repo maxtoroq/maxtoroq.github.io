@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/UpdateRange.html
+---
+
 SqlTable.UpdateRange(IEnumerable&lt;Object>) Method
 ===================================================
 Executes UPDATE commands for the specified *entities*.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/ResultType.html
+---
+
 SqlSet.ResultType Property
 ==========================
 The type of objects this set returns. This property can be null.

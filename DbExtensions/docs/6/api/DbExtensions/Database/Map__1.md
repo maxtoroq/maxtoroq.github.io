@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Map__1.html
+---
+
 Database.Map&lt;TResult>(SqlBuilder) Method
 ===========================================
 Maps the results of the *query* to TResult objects. The query is deferred-executed.

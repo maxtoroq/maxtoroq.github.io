@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/CommandBuilder.html
+---
+
 SqlTable&lt;TEntity>.CommandBuilder Property
 ============================================
 Gets a [SqlCommandBuilder&lt;TEntity>][1] object for the current table.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/Log.html
+---
+
 DatabaseConfiguration.Log Property
 ==================================
 Specifies the destination to write the SQL query or command.

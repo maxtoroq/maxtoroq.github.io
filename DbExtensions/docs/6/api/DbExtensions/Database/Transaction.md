@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Transaction.html
+---
+
 Database.Transaction Property
 =============================
 Gets or sets a transaction to associate with new commands.

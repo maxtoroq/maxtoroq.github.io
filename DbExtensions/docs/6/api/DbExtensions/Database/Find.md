@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Find.html
+---
+
 Database.Find(Type, Object) Method
 ==================================
 Gets the entity whose primary key matches the *id* parameter.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/Remove.html
+---
+
 SqlTable&lt;TEntity>.Remove Method
 ==================================
 Executes a DELETE command for the specified *entity*.

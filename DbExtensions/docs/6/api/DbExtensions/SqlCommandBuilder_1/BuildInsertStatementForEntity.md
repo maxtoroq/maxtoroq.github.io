@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildInsertStatementForEntity.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildInsertStatementForEntity Method
 ==================================================================
 Creates and returns an INSERT command for the specified *entity*.

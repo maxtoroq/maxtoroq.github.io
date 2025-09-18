@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/First.html
+---
+
 SqlSet&lt;TResult>.First Method
 ===============================
 Returns the first element of the set.

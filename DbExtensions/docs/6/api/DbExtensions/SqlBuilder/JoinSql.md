@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/JoinSql.html
+---
+
 SqlBuilder.JoinSql(String, SqlBuilder[]) Method
 ===============================================
 Concatenates a specified separator [String][1] between each element of a specified [SqlBuilder][2] array, yielding a single concatenated [SqlBuilder][2].

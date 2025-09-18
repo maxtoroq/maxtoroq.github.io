@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Table.html
+---
+
 Database.Table(Type) Method
 ===========================
 Returns the [SqlTable][1] instance for the specified *entityType*.

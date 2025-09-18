@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/AssociationAttribute/
+---
+
 AssociationAttribute Class
 ==========================
 Designates a property to represent a database association, such as a foreign key relationship.

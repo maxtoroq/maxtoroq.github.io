@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Find.html
+---
+
 SqlSet&lt;TResult>.Find Method
 ==============================
 Gets the entity whose primary key matches the *id* parameter.

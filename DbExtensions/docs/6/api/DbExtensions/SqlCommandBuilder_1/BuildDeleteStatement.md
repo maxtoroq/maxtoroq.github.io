@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildDeleteStatement.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildDeleteStatement Method
 =========================================================
 Creates and returns a DELETE command for the current table that includes the DELETE and FROM clauses.

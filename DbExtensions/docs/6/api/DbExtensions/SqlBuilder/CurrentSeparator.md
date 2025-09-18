@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/CurrentSeparator.html
+---
+
 SqlBuilder.CurrentSeparator Property
 ====================================
 Gets or sets the separator of the current SQL clause body.

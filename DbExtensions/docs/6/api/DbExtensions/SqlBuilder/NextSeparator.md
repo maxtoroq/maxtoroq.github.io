@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/NextSeparator.html
+---
+
 SqlBuilder.NextSeparator Property
 =================================
 Gets or sets the separator of the next SQL clause body.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/CreateCommand.html
+---
+
 Database.CreateCommand(SqlBuilder) Method
 =========================================
 Creates and returns an [IDbCommand][1] object from the specified *sqlBuilder*.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/Name.html
+---
+
 SqlTable.Name Property
 ======================
 Gets the name of the table.

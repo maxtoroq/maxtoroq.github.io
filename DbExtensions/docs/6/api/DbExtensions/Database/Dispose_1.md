@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Dispose_1.html
+---
+
 Database.Dispose(Boolean) Method
 ================================
 Releases the resources used by this [Database][1] instance.

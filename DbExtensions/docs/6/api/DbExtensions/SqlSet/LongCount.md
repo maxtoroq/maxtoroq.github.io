@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/LongCount.html
+---
+
 SqlSet.LongCount Method
 =======================
 Returns an [Int64][1] that represents the total number of elements in the set.

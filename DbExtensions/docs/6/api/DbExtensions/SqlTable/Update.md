@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/Update.html
+---
+
 SqlTable.Update(Object) Method
 ==============================
 Executes an UPDATE command for the specified *entity*.

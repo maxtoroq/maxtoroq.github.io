@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/Append.html
+---
+
 SqlBuilder.Append(SqlBuilder) Method
 ====================================
 Appends *sql* to this instance.

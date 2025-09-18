@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/DefaultConnectionString.html
+---
+
 DatabaseConfiguration.DefaultConnectionString Property
 ======================================================
 The connection string to use as default.

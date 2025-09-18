@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetInt16.html
+---
+
 Extensions.GetInt16 Method
 ==========================
 Gets the value of the specified column as an [Int16][1].

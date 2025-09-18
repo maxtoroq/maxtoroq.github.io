@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/AppendClause.html
+---
+
 SqlBuilder.AppendClause Method
 ==============================
 Appends the SQL clause specified by *clauseName* using the provided *format* string and parameters.

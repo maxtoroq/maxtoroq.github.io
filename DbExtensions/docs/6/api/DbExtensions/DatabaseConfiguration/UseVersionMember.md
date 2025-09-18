@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/UseVersionMember.html
+---
+
 DatabaseConfiguration.UseVersionMember Property
 ===============================================
 true to include version column check in SQL statements' predicates; otherwise, false. The default is true.

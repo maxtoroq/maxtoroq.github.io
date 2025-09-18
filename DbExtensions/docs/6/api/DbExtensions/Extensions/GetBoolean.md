@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetBoolean.html
+---
+
 Extensions.GetBoolean Method
 ============================
 Gets the value of the specified column as a [Boolean][1].

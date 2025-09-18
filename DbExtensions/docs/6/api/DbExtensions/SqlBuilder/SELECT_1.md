@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/SELECT_1.html
+---
+
 SqlBuilder.SELECT(String, Object[]) Method
 ==========================================
 Appends the SELECT clause using the provided *format* string and parameters.

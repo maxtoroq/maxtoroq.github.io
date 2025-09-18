@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetFloat.html
+---
+
 Extensions.GetFloat Method
 ==========================
 Gets the value of the specified column as a [Single][1].

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/AutoSync.html
+---
+
 ColumnAttribute.AutoSync Property
 =================================
 Gets or sets the **AutoSync** enumeration.

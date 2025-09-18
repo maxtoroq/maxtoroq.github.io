@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/AssociationAttribute/_ctor.html
+---
+
 AssociationAttribute Constructor
 ================================
 Initializes a new instance of the [AssociationAttribute][1] class

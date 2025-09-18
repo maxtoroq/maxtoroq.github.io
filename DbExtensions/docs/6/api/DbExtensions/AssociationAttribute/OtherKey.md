@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/AssociationAttribute/OtherKey.html
+---
+
 AssociationAttribute.OtherKey Property
 ======================================
 Gets or sets one or more members of the target entity class as key values on the other side of the association.

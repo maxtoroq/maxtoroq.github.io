@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SQL/List_1.html
+---
+
 SQL.List(Object[]) Method
 =========================
 Returns a special parameter value that is expanded into a list of comma-separated placeholder items.

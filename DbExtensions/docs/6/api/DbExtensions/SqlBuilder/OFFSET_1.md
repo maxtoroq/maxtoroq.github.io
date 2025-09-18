@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/OFFSET_1.html
+---
+
 SqlBuilder.OFFSET(Int32) Method
 ===============================
 Appends the OFFSET clause using the provided *startIndex* parameter.

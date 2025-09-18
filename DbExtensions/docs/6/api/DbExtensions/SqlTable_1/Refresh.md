@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/Refresh.html
+---
+
 SqlTable&lt;TEntity>.Refresh Method
 ===================================
 Sets all column members of *entity* to their most current persisted value.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/TableAttribute/Name.html
+---
+
 TableAttribute.Name Property
 ============================
 Gets or sets the name of the table or view.

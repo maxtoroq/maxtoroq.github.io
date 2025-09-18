@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Contains.html
+---
+
 Database.Contains Method
 ========================
 Checks the existance of the *entity*, using the primary key value.

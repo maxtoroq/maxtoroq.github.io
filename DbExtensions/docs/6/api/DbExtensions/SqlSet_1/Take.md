@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Take.html
+---
+
 SqlSet&lt;TResult>.Take Method
 ==============================
 Returns a specified number of contiguous elements from the start of the set.

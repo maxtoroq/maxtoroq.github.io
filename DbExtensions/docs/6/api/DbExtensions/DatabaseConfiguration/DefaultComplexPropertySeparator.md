@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/DefaultComplexPropertySeparator.html
+---
+
 DatabaseConfiguration.DefaultComplexPropertySeparator Property
 ==============================================================
 The default separator to use when mapping complex properties. The default value is null, which means no separator is used, unless an explicit separator is specified on [Separator][1].

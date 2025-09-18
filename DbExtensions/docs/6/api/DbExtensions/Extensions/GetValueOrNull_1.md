@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetValueOrNull_1.html
+---
+
 Extensions.GetValueOrNull(IDataRecord, String) Method
 =====================================================
 Gets the value of the specified column as an [Object][1], or null (Nothing in Visual Basic).

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/RIGHT_JOIN.html
+---
+
 SqlBuilder.RIGHT_JOIN Method
 ============================
 Appends the RIGHT JOIN clause using the provided *format* string and parameters.

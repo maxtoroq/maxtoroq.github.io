@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/VALUES.html
+---
+
 SqlBuilder.VALUES Method
 ========================
 Appends the VALUES clause using the provided parameters.

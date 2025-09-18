@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/ToList.html
+---
+
 SqlSet.ToList Method
 ====================
 Creates a List&lt;object> from the set.

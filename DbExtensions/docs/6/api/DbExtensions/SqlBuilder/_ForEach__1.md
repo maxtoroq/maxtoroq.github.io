@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/_ForEach__1.html
+---
+
 SqlBuilder._ForEach&lt;T> Method
 ================================
 Appends to the current clause the string made by concatenating an *itemFormat* for each element in *items*, interspersed with *separator*.

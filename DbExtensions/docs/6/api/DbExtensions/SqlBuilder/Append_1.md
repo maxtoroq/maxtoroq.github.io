@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/Append_1.html
+---
+
 SqlBuilder.Append(String, Object[]) Method
 ==========================================
 Appends *format* to this instance.

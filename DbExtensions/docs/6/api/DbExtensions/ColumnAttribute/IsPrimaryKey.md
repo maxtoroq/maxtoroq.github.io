@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/IsPrimaryKey.html
+---
+
 ColumnAttribute.IsPrimaryKey Property
 =====================================
 Gets or sets whether this class member represents a column that is part or all of the primary key of the table.

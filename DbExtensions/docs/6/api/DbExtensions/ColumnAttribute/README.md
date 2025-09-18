@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/
+---
+
 ColumnAttribute Class
 =====================
 Associates a property with a column in a database table.

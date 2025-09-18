@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/_ctor.html
+---
+
 SqlBuilder Constructor
 ======================
 Initializes a new instance of the [SqlBuilder][1] class.

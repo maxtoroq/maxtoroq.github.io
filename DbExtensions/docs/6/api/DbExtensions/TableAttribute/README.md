@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/TableAttribute/
+---
+
 TableAttribute Class
 ====================
 Designates a class as an entity class that is associated with a database table.

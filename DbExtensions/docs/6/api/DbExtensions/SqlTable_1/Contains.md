@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/Contains.html
+---
+
 SqlTable&lt;TEntity>.Contains(TEntity) Method
 =============================================
 Checks the existance of the *entity*, using the primary key value.

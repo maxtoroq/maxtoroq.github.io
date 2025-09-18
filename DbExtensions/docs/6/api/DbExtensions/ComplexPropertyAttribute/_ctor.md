@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ComplexPropertyAttribute/_ctor.html
+---
+
 ComplexPropertyAttribute Constructor
 ====================================
 Initializes a new instance of the [ComplexPropertyAttribute][1] class

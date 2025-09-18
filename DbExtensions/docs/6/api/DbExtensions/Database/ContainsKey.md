@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/ContainsKey.html
+---
+
 Database.ContainsKey(Type, Object) Method
 =========================================
 Checks the existance of an entity whose primary matches the *id* parameter.

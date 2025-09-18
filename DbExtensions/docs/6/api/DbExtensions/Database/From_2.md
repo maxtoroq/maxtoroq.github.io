@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/From_2.html
+---
+
 Database.From(String) Method
 ============================
 Creates and returns a new [SqlSet][1] using the provided table name.

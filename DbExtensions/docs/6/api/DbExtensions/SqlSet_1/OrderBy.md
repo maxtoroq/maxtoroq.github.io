@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/OrderBy.html
+---
+
 SqlSet&lt;TResult>.OrderBy Method
 =================================
 Sorts the elements of the set according to the *columnList*.

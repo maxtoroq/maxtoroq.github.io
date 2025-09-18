@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/FirstOrDefault_1.html
+---
+
 SqlSet&lt;TResult>.FirstOrDefault(String, Object[]) Method
 ==========================================================
 Returns the first element of the set that satisfies a condition or a default value if no such element is found.

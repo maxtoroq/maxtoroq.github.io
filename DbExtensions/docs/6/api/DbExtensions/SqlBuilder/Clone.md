@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/Clone.html
+---
+
 SqlBuilder.Clone Method
 =======================
 Creates and returns a copy of this instance.

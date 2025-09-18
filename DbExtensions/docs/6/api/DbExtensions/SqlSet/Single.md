@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Single.html
+---
+
 SqlSet.Single Method
 ====================
 The single element of the set.

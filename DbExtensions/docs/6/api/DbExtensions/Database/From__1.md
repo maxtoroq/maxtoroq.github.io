@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/From__1.html
+---
+
 Database.From&lt;TResult>(SqlBuilder) Method
 ============================================
 Creates and returns a new [SqlSet&lt;TResult>][1] using the provided defining query.

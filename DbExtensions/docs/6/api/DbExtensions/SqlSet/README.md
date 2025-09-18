@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/
+---
+
 SqlSet Class
 ============
 Represents an immutable, connected SQL query. This class cannot be instantiated, to get an instance use the [From(String)][1] method.

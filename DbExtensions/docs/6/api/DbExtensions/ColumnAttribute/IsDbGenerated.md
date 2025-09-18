@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/IsDbGenerated.html
+---
+
 ColumnAttribute.IsDbGenerated Property
 ======================================
 Gets or sets whether a column contains values that the database auto-generates.

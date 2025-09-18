@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableFloat.html
+---
+
 Extensions.GetNullableFloat(IDataRecord, Int32) Method
 ======================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Single][2].

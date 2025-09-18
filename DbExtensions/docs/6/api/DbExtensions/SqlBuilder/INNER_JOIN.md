@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/INNER_JOIN.html
+---
+
 SqlBuilder.INNER_JOIN Method
 ============================
 Appends the INNER JOIN clause using the provided *format* string and parameters.

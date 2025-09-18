@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Contains.html
+---
+
 SqlSet&lt;TResult>.Contains(Object) Method
 ==========================================
 Checks the existance of the *entity*, using the primary key value.

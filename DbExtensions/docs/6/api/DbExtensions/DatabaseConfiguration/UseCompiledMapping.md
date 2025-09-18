@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/UseCompiledMapping.html
+---
+
 DatabaseConfiguration.UseCompiledMapping Property
 =================================================
 true to use the new cached compiled mapping implementation for POCO objects; otherwise, false. The default is false.

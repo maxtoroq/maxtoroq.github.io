@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/LIMIT_1.html
+---
+
 SqlBuilder.LIMIT(Int32) Method
 ==============================
 Appends the LIMIT clause using the provided *maxRecords* parameter.

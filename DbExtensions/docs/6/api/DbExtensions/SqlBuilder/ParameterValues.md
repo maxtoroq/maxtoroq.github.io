@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/ParameterValues.html
+---
+
 SqlBuilder.ParameterValues Property
 ===================================
 The parameter objects to be included in the database command.

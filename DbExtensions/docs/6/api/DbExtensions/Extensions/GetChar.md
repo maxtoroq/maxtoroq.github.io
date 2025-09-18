@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetChar.html
+---
+
 Extensions.GetChar Method
 =========================
 Gets the value of the specified column as a [Char][1].

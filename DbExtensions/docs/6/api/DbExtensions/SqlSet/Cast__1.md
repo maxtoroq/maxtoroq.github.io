@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Cast__1.html
+---
+
 SqlSet.Cast&lt;TResult> Method
 ==============================
 Casts the elements of the set to the specified type.

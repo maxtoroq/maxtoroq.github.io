@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/GROUP_BY_1.html
+---
+
 SqlBuilder.GROUP_BY(String, Object[]) Method
 ============================================
 Appends the GROUP BY clause using the provided *format* string and parameters.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/ContainsKey.html
+---
+
 SqlTable&lt;TEntity>.ContainsKey Method
 =======================================
 Checks the existance of an entity whose primary matches the *id* parameter.

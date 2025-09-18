@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/JOIN_1.html
+---
+
 SqlBuilder.JOIN(String, Object[]) Method
 ========================================
 Appends the JOIN clause using the provided *format* string and parameters.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/NextClause.html
+---
+
 SqlBuilder.NextClause Property
 ==============================
 Gets or sets the next SQL clause. Used by clause continuation methods, such as [AppendToCurrentClause(String, Object[])][1] and the methods that start with "_".

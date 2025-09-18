@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableInt16_1.html
+---
+
 Extensions.GetNullableInt16(IDataRecord, String) Method
 =======================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Int16][2].

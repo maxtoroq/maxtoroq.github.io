@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/Name.html
+---
+
 ColumnAttribute.Name Property
 =============================
 Gets or sets the name of a column.

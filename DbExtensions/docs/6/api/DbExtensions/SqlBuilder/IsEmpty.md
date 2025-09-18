@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/IsEmpty.html
+---
+
 SqlBuilder.IsEmpty Property
 ===========================
 Returns true if the buffer is empty.

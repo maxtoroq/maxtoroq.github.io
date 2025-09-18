@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/AssociationAttribute/Name.html
+---
+
 AssociationAttribute.Name Property
 ==================================
 Gets or sets the name of a constraint.

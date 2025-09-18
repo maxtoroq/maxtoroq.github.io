@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Execute.html
+---
+
 Database.Execute(SqlBuilder, Int32, Boolean) Method
 ===================================================
 Executes the *nonQuery* command. Optionally uses a transaction and validates affected records value before committing.

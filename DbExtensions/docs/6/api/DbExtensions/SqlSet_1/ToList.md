@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/ToList.html
+---
+
 SqlSet&lt;TResult>.ToList Method
 ================================
 Creates a List&lt;TResult> from the set.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildDeleteStatementForEntity.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildDeleteStatementForEntity Method
 ==================================================================
 Creates and returns a DELETE command for the specified *entity*.

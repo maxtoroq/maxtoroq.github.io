@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/HAVING_1.html
+---
+
 SqlBuilder.HAVING(String, Object[]) Method
 ==========================================
 Appends the HAVING clause using the provided *format* string and parameters.

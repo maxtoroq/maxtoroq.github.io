@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/ParameterNameBuilder.html
+---
+
 DatabaseConfiguration.ParameterNameBuilder Property
 ===================================================
 Specifies a function that prepares a parameter name to be used on [ParameterName][1].

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlCommandBuilder_1/BuildSelectClause_1.html
+---
+
 SqlCommandBuilder&lt;TEntity>.BuildSelectClause(String) Method
 ==============================================================
 Creates and returns a SELECT query for the current table that includes the SELECT clause only. All column names are qualified with the provided *tableAlias*.

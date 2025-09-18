@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/CommandTimeout.html
+---
+
 DatabaseConfiguration.CommandTimeout Property
 =============================================
 Specifies a timeout to assign to commands. This setting is ignored if less or equal to -1. The default is -1.

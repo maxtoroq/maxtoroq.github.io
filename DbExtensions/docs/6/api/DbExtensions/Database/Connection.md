@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Connection.html
+---
+
 Database.Connection Property
 ============================
 Gets the connection to associate with new commands.

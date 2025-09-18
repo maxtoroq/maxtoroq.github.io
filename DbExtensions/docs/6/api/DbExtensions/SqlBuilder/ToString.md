@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/ToString.html
+---
+
 SqlBuilder.ToString Method
 ==========================
 Converts the value of this instance to a [String][1].

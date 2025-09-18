@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/Buffer.html
+---
+
 SqlBuilder.Buffer Property
 ==========================
 The underlying [StringBuilder][1].

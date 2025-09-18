@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/RemoveKey.html
+---
+
 SqlTable.RemoveKey Method
 =========================
 Executes a DELETE command for the entity whose primary key matches the *id* parameter.

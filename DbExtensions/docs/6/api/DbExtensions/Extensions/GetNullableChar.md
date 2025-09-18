@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableChar.html
+---
+
 Extensions.GetNullableChar(IDataRecord, Int32) Method
 =====================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Char][2].

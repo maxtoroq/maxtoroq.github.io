@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/IsVersion.html
+---
+
 ColumnAttribute.IsVersion Property
 ==================================
 Gets or sets whether the column type of the member is a database timestamp or version number.

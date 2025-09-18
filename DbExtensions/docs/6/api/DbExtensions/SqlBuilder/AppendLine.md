@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/AppendLine.html
+---
+
 SqlBuilder.AppendLine Method
 ============================
 Appends the default line terminator to this instance.

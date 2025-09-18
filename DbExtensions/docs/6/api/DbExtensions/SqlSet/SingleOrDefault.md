@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/SingleOrDefault.html
+---
+
 SqlSet.SingleOrDefault Method
 =============================
 Returns the only element of the set, or a default value if the set is empty; this method throws an exception if there is more than one element in the set.

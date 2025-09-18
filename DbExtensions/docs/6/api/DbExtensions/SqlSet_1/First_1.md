@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/First_1.html
+---
+
 SqlSet&lt;TResult>.First(String, Object[]) Method
 =================================================
 Returns the first element in the set that satisfies a specified condition.

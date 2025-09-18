@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetValue.html
+---
+
 Extensions.GetValue Method
 ==========================
 Gets the value of the specified column.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/CurrentClause.html
+---
+
 SqlBuilder.CurrentClause Property
 =================================
 Gets or sets the current SQL clause, used to identify consecutive appends to the same clause.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/Cast__1.html
+---
+
 SqlTable.Cast&lt;TEntity> Method
 ================================
 Casts the current [SqlTable][1] to the generic [SqlTable&lt;TEntity>][2] instance.

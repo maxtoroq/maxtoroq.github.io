@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/LIMIT_2.html
+---
+
 SqlBuilder.LIMIT(String, Object[]) Method
 =========================================
 Appends the LIMIT clause using the provided *format* string and parameters.

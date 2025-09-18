@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Configuration.html
+---
+
 Database.Configuration Property
 ===============================
 Provides access to configuration options for this instance.

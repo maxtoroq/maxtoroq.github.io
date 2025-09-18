@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SQL/INSERT_INTO.html
+---
+
 SQL.INSERT_INTO Method
 ======================
 Creates and returns a new [SqlBuilder][1] initialized by appending the INSERT INTO clause using the provided *format* and *args*.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Include.html
+---
+
 SqlSet&lt;TResult>.Include Method
 =================================
 Specifies the related objects to include in the query results.

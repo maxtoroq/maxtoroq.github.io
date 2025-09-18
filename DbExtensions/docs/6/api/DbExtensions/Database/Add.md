@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Add.html
+---
+
 Database.Add Method
 ===================
 Recursively executes INSERT commands for the specified *entity* and all its one-to-one and one-to-many associations.

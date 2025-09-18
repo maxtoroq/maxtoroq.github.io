@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/OFFSET_2.html
+---
+
 SqlBuilder.OFFSET(String, Object[]) Method
 ==========================================
 Appends the OFFSET clause using the provided *format* string and parameters.

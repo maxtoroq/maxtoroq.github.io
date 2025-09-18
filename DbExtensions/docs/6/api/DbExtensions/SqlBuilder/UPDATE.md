@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/UPDATE.html
+---
+
 SqlBuilder.UPDATE Method
 ========================
 Appends the UPDATE clause using the provided *format* string and parameters.

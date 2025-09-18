@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Count_1.html
+---
+
 SqlSet.Count(String, Object[]) Method
 =====================================
 Returns a number that represents how many elements in the set satisfy a condition.

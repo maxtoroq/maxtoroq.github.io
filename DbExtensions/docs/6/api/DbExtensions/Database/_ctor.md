@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/_ctor.html
+---
+
 Database Constructor
 ====================
 Initializes a new instance of the [Database][1] class.

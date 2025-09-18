@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableDateTime_1.html
+---
+
 Extensions.GetNullableDateTime(IDataRecord, String) Method
 ==========================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [DateTime][2].

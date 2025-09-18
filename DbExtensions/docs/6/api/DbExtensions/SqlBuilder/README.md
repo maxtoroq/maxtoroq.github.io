@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/
+---
+
 SqlBuilder Class
 ================
 Represents a mutable SQL string.

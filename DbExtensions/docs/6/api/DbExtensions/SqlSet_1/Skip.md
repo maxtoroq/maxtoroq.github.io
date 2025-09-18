@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/Skip.html
+---
+
 SqlSet&lt;TResult>.Skip Method
 ==============================
 Bypasses a specified number of elements in the set and then returns the remaining elements.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/TableAttribute/_ctor.html
+---
+
 TableAttribute Constructor
 ==========================
 Initializes a new instance of the [TableAttribute][1] class

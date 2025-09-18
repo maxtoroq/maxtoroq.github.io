@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/AsEnumerable.html
+---
+
 SqlSet&lt;TResult>.AsEnumerable Method
 ======================================
 Gets all TResult objects in the set. The query is deferred-executed.

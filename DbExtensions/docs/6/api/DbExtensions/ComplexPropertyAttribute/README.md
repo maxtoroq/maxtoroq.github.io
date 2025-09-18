@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/ComplexPropertyAttribute/
+---
+
 ComplexPropertyAttribute Class
 ==============================
 Designates a property as a complex property that groups columns of a table that share the same base name.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetDouble.html
+---
+
 Extensions.GetDouble Method
 ===========================
 Gets the value of the specified column as a [Double][1].

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/GetDefiningQuery.html
+---
+
 SqlSet.GetDefiningQuery Method
 ==============================
 Returns the SQL query that is the source of data for the set.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/WITH_2.html
+---
+
 SqlBuilder.WITH(String, Object[]) Method
 ========================================
 Appends the WITH clause using the provided *format* string and parameters.

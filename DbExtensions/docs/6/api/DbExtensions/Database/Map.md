@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Map.html
+---
+
 Database.Map(SqlBuilder) Method
 ===============================
 Maps the results of the *query* to dynamic objects. The query is deferred-executed.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet_1/SingleOrDefault_1.html
+---
+
 SqlSet&lt;TResult>.SingleOrDefault(String, Object[]) Method
 ===========================================================
 Returns the only element of the set that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.

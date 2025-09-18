@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/SET.html
+---
+
 SqlBuilder.SET Method
 =====================
 Appends the SET clause using the provided *format* string and parameters.

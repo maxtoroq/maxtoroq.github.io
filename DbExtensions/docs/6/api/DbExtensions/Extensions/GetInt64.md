@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetInt64.html
+---
+
 Extensions.GetInt64 Method
 ==========================
 Gets the value of the specified column as an [Int64][1].

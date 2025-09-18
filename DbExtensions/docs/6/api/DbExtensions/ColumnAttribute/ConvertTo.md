@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/ColumnAttribute/ConvertTo.html
+---
+
 ColumnAttribute.ConvertTo Property
 ==================================
 Gets or sets the type to convert this member to before sending to the database.

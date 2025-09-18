@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableBoolean.html
+---
+
 Extensions.GetNullableBoolean(IDataRecord, Int32) Method
 ========================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Boolean][2].

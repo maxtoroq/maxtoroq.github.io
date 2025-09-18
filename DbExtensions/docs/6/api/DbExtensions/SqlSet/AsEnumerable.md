@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/AsEnumerable.html
+---
+
 SqlSet.AsEnumerable Method
 ==========================
 Gets all elements in the set. The query is deferred-executed.

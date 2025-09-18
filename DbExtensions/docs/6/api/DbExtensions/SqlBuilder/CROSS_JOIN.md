@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/CROSS_JOIN.html
+---
+
 SqlBuilder.CROSS_JOIN Method
 ============================
 Appends the CROSS JOIN clause using the provided *format* string and parameters.

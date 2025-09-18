@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/_If.html
+---
+
 SqlBuilder._If Method
 =====================
 Appends *format* to the current clause if *condition* is true.

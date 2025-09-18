@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/SetCurrentClause.html
+---
+
 SqlBuilder.SetCurrentClause Method
 ==================================
 Sets *clauseName* as the current SQL clause.

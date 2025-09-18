@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableInt64_1.html
+---
+
 Extensions.GetNullableInt64(IDataRecord, String) Method
 =======================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Int64][2].

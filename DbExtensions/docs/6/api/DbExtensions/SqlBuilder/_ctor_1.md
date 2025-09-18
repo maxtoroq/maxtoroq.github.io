@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/_ctor_1.html
+---
+
 SqlBuilder(String, Object[]) Constructor
 ========================================
 Initializes a new instance of the [SqlBuilder][1] class using the provided format string and parameters.

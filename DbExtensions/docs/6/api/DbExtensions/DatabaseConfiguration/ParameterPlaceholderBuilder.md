@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/ParameterPlaceholderBuilder.html
+---
+
 DatabaseConfiguration.ParameterPlaceholderBuilder Property
 ==========================================================
 Specifies a function that builds a parameter placeholder to be used in SQL statements.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/Table__1.html
+---
+
 Database.Table&lt;TEntity> Method
 =================================
 Returns the [SqlTable&lt;TEntity>][1] instance for the specified TEntity.

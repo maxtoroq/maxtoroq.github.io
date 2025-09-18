@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/AutoSync/
+---
+
 AutoSync Enumeration
 ====================
 Used to specify for during INSERT and UPDATE operations when a data member should be read back after the operation completes.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/LongCount_1.html
+---
+
 SqlSet.LongCount(String, Object[]) Method
 =========================================
 Returns an [Int64][1] that represents how many elements in the set satisfy a condition.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/_OR__1.html
+---
+
 SqlBuilder._OR&lt;T> Method
 ===========================
 Appends to the current clause the string made by concatenating an *itemFormat* for each element in *items*, interspersed with the OR operator.

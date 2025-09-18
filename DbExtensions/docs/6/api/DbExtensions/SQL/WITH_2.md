@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SQL/WITH_2.html
+---
+
 SQL.WITH(String, Object[]) Method
 =================================
 Creates and returns a new [SqlBuilder][1] initialized by appending the WITH clause using the provided *format* and *args*.

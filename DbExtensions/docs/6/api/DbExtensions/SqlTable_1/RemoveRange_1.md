@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable_1/RemoveRange_1.html
+---
+
 SqlTable&lt;TEntity>.RemoveRange(TEntity[]) Method
 ==================================================
 Executes DELETE commands for the specified *entities*.

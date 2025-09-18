@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/JoinSql_1.html
+---
+
 SqlBuilder.JoinSql(String, IEnumerable&lt;SqlBuilder>) Method
 =============================================================
 Concatenates the members of a constructed [IEnumerable&lt;T>][1] collection of type [SqlBuilder][2], using the specified *separator* between each member.

@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlTable/UpdateRange_1.html
+---
+
 SqlTable.UpdateRange(Object[]) Method
 =====================================
 Executes UPDATE commands for the specified *entities*.

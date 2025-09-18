@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/EnsureConnectionOpen.html
+---
+
 Database.EnsureConnectionOpen Method
 ====================================
 Opens [Connection][1] (if it's not open) and returns an [IDisposable][2] object you can use to close it (if it wasn't open).

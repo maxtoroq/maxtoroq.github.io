@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/DatabaseConfiguration/DefaultProviderInvariantName.html
+---
+
 DatabaseConfiguration.DefaultProviderInvariantName Property
 ===========================================================
 The provider's invariant name to use as default.

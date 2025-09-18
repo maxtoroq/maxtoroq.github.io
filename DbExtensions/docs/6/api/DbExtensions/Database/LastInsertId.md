@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Database/LastInsertId.html
+---
+
 Database.LastInsertId Method
 ============================
 Gets the identity value of the last inserted record.

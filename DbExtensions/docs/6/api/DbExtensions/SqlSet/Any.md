@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlSet/Any.html
+---
+
 SqlSet.Any Method
 =================
 Determines whether the set contains any elements.

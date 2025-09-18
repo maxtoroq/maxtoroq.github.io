@@ -1,3 +1,8 @@
+---
+permalink: /:path/
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/
+---
+
 Extensions Class
 ================
 Provides extension methods for common ADO.NET objects.

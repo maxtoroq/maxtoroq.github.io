@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/SqlBuilder/FROM_2.html
+---
+
 SqlBuilder.FROM(String, Object[]) Method
 ========================================
 Appends the FROM clause using the provided *format* string and parameters.

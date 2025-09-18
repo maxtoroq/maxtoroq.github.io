@@ -1,3 +1,7 @@
+---
+redirect_from: /DbExtensions/docs/api/DbExtensions/Extensions/GetNullableDecimal_1.html
+---
+
 Extensions.GetNullableDecimal(IDataRecord, String) Method
 =========================================================
 Gets the value of the specified column as a [Nullable&lt;T>][1] of [Decimal][2].
