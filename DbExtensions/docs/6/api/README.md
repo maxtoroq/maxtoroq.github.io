@@ -1,5 +1,6 @@
 ---
-redirect_from: /DbExtensions/docs/api/index.html
+permalink: /:path:output_ext
+redirect_from: /DbExtensions/docs/api/
 ---
 
 DbExtensions Namespaces
