@@ -31,8 +31,15 @@ defaults:
       layout: DbExtensions-docs
       base_url: /DbExtensions/
       repository_url: https://github.com/maxtoroq/DbExtensions
-      toc: DbExtensions_toc
-      toc_base_url: /DbExtensions/docs/
+      toc: DbExtensions_toc_6
+      toc_base_url: /DbExtensions/docs/6/
+
+  - scope:
+      path: DbExtensions/docs/6
+      type: pages
+    values:
+      toc: DbExtensions_toc_6
+      toc_base_url: /DbExtensions/docs/6/
 
   - scope:
       path: DbExtensions/docs/6/api
@@ -41,6 +48,13 @@ defaults:
       api_docs: true
       toc: DbExtensions_api_toc_6
       toc_base_url: /DbExtensions/docs/6/api/
+
+  - scope:
+      path: DbExtensions/docs/7
+      type: pages
+    values:
+      toc: DbExtensions_toc_7
+      toc_base_url: /DbExtensions/docs/7/
 
   - scope:
       path: DbExtensions/docs/7/api
