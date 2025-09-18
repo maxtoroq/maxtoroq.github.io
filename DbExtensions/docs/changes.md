@@ -3,7 +3,7 @@ title: Changelog
 ---
 
 ## v6.x
-See [Migrating to v6](migrating/to-v6.html) for more information about the changes in v6.
+See [Migrating to v6](6/migrating-to-v6.html) for more information about the changes in v6.
 
 ### v6.4.0
 - New cached compiled mapping implementation for POCO objects (to use set `Configuration.UseCompiledMapping` to `true`)
