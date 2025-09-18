@@ -136,6 +136,7 @@ table {
    border-spacing: 0;
    background: #fff;
    border: 1px solid #ddd;
+   font-size: 14px;
 }
 
 tr:nth-of-type(even) {
@@ -143,7 +144,9 @@ tr:nth-of-type(even) {
 }
 
 td, th {
-   padding: .1em .3em;
+   //padding: .1em .3em;
+   padding: .5rem;
+   border-block-start: 1px solid #ddd;
 }
 
 thead, tfoot {
