@@ -1,6 +1,5 @@
 ---
 title: SqlSet Tutorial
-redirect_from: /DbExtensions/docs/SqlSet.html
 ---
 
 Overview
@@ -229,10 +228,10 @@ It's not recommended to project onto an [annotated][13] entity type. Updating a 
 You can also provide a custom mapping function:
 
 ```csharp
-SqlSet<string> productNames = products.Select(r => r.GetString(0), "ProductName");
+SqlSet<string> productNames = products.Select("ProductName", r => r.GetString(0));
 ```
 
-The function takes an [IDataRecord][9] and can return anything you want, which means you can also use SqlSet for simple values like `string` or `int`.
+The function takes a [DbDataReader][9] and can return anything you want, which means you can also use SqlSet for simple values like `string` or `int`.
 
 If you provide no result type or mapping function it turns into an untyped set.
 
@@ -255,7 +254,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
 
    return this.db
       .From<Product>(query)
-      .Where("CategoryID = {0}", categoryId)
+      .Where($"CategoryID = {categoryId}")
       .OrderBy("ProductID DESC")
       .Skip(skip)
       .Take(take)
@@ -321,7 +320,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
    return this.db
       .Table<Product>()
       .Include("Category")
-      .Where("CategoryID = {0}", categoryId)
+      .Where($"CategoryID = {categoryId}")
       .OrderBy("ProductID DESC")
       .Skip(skip)
       .Take(take)
@@ -436,7 +435,7 @@ Having the power to write your own SQL is great. Not having to write the same si
 [6]: SqlBuilder.md
 [7]: api/DbExtensions/SqlSet_1/README.md
 [8]: api/DbExtensions/SqlSet/Cast__1.md
-[9]: http://msdn.microsoft.com/en-us/library/system.data.idatarecord
+[9]: https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbdatareader
 [10]: query-mapping.md
 [11]: api/DbExtensions/SqlSet/Include.md
 [12]: api/DbExtensions/Database/Table__1.md

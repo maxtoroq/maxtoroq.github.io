@@ -1,6 +1,5 @@
 ---
 title: Query Mapping
-redirect_from: /DbExtensions/docs/query-mapping.html
 ---
 DbExtensions supports a special column alias syntax to match columns to properties and constructor parameters. This syntax is:
 
@@ -203,10 +202,10 @@ Numbers only have meaning relative to each other. For instance, instead of using
 </div>
 
 ### Named arguments
-Starting v6.3 you can use the same syntax for complex properties to map columns to arguments by name instead of position. This only works for types that have a single public constructor.
+You can also use the same syntax for complex properties to map columns to arguments by name instead of position. This only works for types that have a single public constructor.
 
 
 [SqlBuilder]: SqlBuilder.md
 [SqlSet]: SqlSet.md
-[Uri]: https://msdn.microsoft.com/en-us/library/system.uri
+[Uri]: https://learn.microsoft.com/en-us/dotnet/api/system.uri
 [annotations]: annotations.md

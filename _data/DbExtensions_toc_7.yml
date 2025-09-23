@@ -1,4 +1,12 @@
 
+- title: Installing
+  url: installing.html
+- title: SqlSet Tutorial
+  url: SqlSet.html
+- title: Query Mapping
+  url: query-mapping.html
+- title: Annotations
+  url: annotations.html
 - title: Reference
   expanded: true
   toc:
@@ -8,6 +16,8 @@
       url: ../changes.html
 - title: Versions
   toc:
+    - title: v7
+      url: ../7/
     - title: v6
       url: ../6/
     - title: v5

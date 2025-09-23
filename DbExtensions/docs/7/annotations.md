@@ -1,6 +1,5 @@
 ---
 title: Annotations
-redirect_from: /DbExtensions/docs/annotations.html
 ---
 Annotations provide metadata about your objects that allows DbExtensions generate commands for you. There are four attributes available for this purpose: [TableAttribute], [ColumnAttribute], [AssociationAttribute] and [ComplexPropertyAttribute]. The use of these attributes is always required, DbExtensions doesn't infer any mapping between your objects and your database (no conventions).
 
@@ -37,7 +36,7 @@ For one-to-many relationships, use a type that implements [IEnumerable&lt;T>][4]
 
 ```csharp
 [Association(OtherKey = nameof(OrderDetail.ProductID))]
-public Collection<OrderDetail> OrderDetails { get; } = new Collection<OrderDetail>();
+public Collection<OrderDetail> OrderDetails { get; } = new();
 ```
 
 The default for ThisKey and OtherKey, when not specified, is the type's primary key properties.
@@ -46,7 +45,7 @@ For multi-column keys use a comma-separated list.
 
 ComplexPropertyAttribute
 -----------------------
-Use the ComplexPropertyAttribute (starting v6.3) to group columns into a separate type. Some ORMs call these objects *value objects*. If no name is specified, the property name is used as base name, which is prepended to the column names as defined in the complex type. 
+Use the ComplexPropertyAttribute to group columns into a separate type. Some ORMs call these objects *value objects*. If no name is specified, the property name is used as base name, which is prepended to the column names as defined in the complex type. 
 
 <figure class="code" data-highlight-lines="10 16 19" markdown="1">
 
@@ -86,7 +85,7 @@ public Contact Contact { get; set; }
 <div class="note tip" markdown="1">
 
 ###### Tip: Automatic query mapping of complex properties
-If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex properties populated, as explained in [Query Mapping].
+If you use `$` as separator, then you can query your table using [SqlBuilder] with a simple `SELECT *` and get your complex properties populated, as explained in [Query Mapping](query-mapping.md#complex-properties).
 
 </div>
 
@@ -105,6 +104,5 @@ You can nest the complex type definition in the type that uses it, to avoid poll
 [ComplexPropertyAttribute]: api/DbExtensions/ComplexPropertyAttribute/README.md
 [ComplexPropertyAttribute.Separator]: api/DbExtensions/ComplexPropertyAttribute/Separator.md
 [SqlBuilder]: SqlBuilder.md
-[Query Mapping]: query-mapping.md#complex-properties
-[4]: https://msdn.microsoft.com/en-us/library/9eekhta0
-[5]: https://msdn.microsoft.com/en-us/library/ms132397
+[4]: https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1
+[5]: https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.collection-1

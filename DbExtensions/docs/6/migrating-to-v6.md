@@ -119,7 +119,7 @@ Instead having methods that looked like SqlBuilder methods, it now has methods w
 [2]: api/DbExtensions/ChangeConflictException/README.md
 [3]: api/DbExtensions/DatabaseConfiguration/README.md#properties
 [4]: api/DbExtensions/SQL/List_1.md
-[5]: SqlBuilder.html#lists
+[5]: SqlBuilder.md#lists
 [6]: api/DbExtensions/Database/CreateCommand.md
 [7]: api/DbExtensions/Database/From.md
 [8]: api/DbExtensions/Database/From__1.md

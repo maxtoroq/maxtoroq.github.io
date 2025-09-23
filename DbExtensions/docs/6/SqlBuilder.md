@@ -335,4 +335,4 @@ SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A gen
 [15]: http://msdn.microsoft.com/en-us/library/system.data.linq.datacontext.executecommand
 [16]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.sqlquery
 [17]: http://msdn.microsoft.com/en-us/library/system.data.entity.database.executesqlcommand
-[19]: query-mapping.html
+[19]: query-mapping.md
