@@ -1,6 +1,8 @@
 
 - title: Installing
   url: installing.html
+- title: SqlBuilder Tutorial
+  url: SqlBuilder.html
 - title: SqlSet Tutorial
   url: SqlSet.html
 - title: Query Mapping
@@ -12,6 +14,8 @@
   toc:
     - title: API Reference
       url: api/DbExtensions/
+    - title: Migrating to v7
+      url: migrating-to-v7.html
     - title: Changelog
       url: ../changes.html
 - title: Versions
