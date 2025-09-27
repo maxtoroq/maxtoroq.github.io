@@ -6,6 +6,17 @@ Overview
 --------
 DbExtensions v7 builds on the success of v6 by providing better performance and an optimized overall experience for .NET (Core) and C#.
 
+General features
+----------------
+
+### Target frameworks
+
+v7 targets .NET 8, ending support for .NET Framework and .NET Standard.
+
+### Depending on System.Data.Common classes instead of System.Data interfaces
+
+Every reference to IDbConnection, IDbCommand, etc. has been replaced with DbConnection, DbCommand, etc. Interfaces don't have all the features that DbExtensions now need, like async methods or the DbDataReader.GetFieldValue method.
+
 String Interpolation
 --------------------
 <div class="note" markdown="1">
@@ -50,27 +61,15 @@ query.WHERE("(Foo = {0}" + (someCondition ? " OR Bar = {1})" : ")"), foo, bar);
 
 Trying to make the above code work in v7 would result in the compiler choosing the string overload of the WHERE method, which leads to SQL injection of `foo` and `bar`.
 
-In v7, do this instead:
-
-```csharp
-query.WHERE($"(Foo = {foo}");
-
-if (someCondition) {
-   query.Append($"OR Bar = {bar})");
-} else {
-   query.Append(")");
-}
-```
-
-... or use the new AppendIf/AppendElseIf/AppendElse methods:
+In v7 you can use the new AppendIf/AppendElseIf/AppendElse methods:
 
 ```csharp
 query.WHERE($"(Foo = {foo}")
-   .AppendIf(someCondition, $"OR Bar = {bar})")
-   .AppendElse($")");
+   .AppendIf(someCondition, $"OR Bar = {bar}")
+   .Append(")");
 ```
 
-Note that the AppendElse call above uses an interpolated string even though it doesn't include any parameters. These conditional methods don't have overloads that accept string, you must use an interpolated string. These methods take advantage of the string interpolation handler pattern's support for conditional appends, which means any expressions inside the placeholders are never evaluated. The same is true for _If/_ElseIf/_Else. You can now write code like this:
+These conditional methods don't have overloads that accept string, you must use an interpolated string. These methods take advantage of the string interpolation handler pattern's support for conditional appends, which means any expressions inside the placeholders are never evaluated. The same is true for _If/_ElseIf/_Else. You can now write code like this:
 
 ```csharp
 query.WHERE()
@@ -122,3 +121,42 @@ SqlBuilder query = $$"""
 query.ParameterValues.Add(discount);
 query.ParameterValues.Add(categoryId);
 ```
+
+Database
+--------
+
+### Removed DefaultConnectionString and DefaultProviderInvariantName
+
+... and the Database constructors that used them. Subclassing Database is the preferred alternative.
+
+### Changed parameters order on Map(Type, SqlBuilder)
+
+| v6                            | v7
+| ----------------------------- | -----------
+| `Map(typeof(Product), query)` | `Map(query, typeof(Product))`
+
+Having the query as first parameter is more consistent with the rest of the Map overloads.
+
+### Removed TransactionScope support
+
+I personally never used TransactionScope, so I don't even know if the integration worked correctly. Just use EnsureInTransaction() which provides a similar API experience.
+
+SqlSet
+------
+
+### Changed parameters order on Select overloads
+
+The column list string or interpolated string handler parameter now always goes first:
+
+| v6                                      | v7
+| --------------------------------------- | -----------
+| `Select(r => r.GetInt32(0), "OrderId")` | `Select("OrderId", r => r.GetInt32(0))`
+
+Now that the params array is not needed the column list can go first as originally intended.
+
+SqlTable
+--------
+
+### Removed hiding Contains() and ContainsKey() from SqlTable and SqlTable&lt;T>
+
+These methods remained only for back-compat since they are now inherited from SqlSet and SqlSet&lt;T>.
