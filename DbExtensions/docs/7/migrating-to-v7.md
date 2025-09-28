@@ -88,7 +88,7 @@ var query = new SqlBuilder("""
    SELECT ProductID, ProductName
    FROM Products
    WHERE CategoryID = {0}
-   """, 1);
+   """, categoryId);
 ```
 
 Because of how the string interpolation handler pattern works, using a constructor to initialize the query is not practical, since you need an instance of SqlBuilder before you call the constructor. However, there's a simpler way, because SqlBuilder itself is also a string interpolation handler, so you can simply assign an interpolated string to a SqlBuilder variable:
@@ -98,14 +98,14 @@ Because of how the string interpolation handler pattern works, using a construct
 SqlBuilder query = $"""
    SELECT ProductID, ProductName
    FROM Products
-   WHERE CategoryID = {1}
+   WHERE CategoryID = {categoryId}
    """;
 ```
 
 Any method that accepts a SqlBuilder can now be called with an interpolated string, like Database.Map or Database.Execute:
 
 ```csharp
-db.Execute($"CALL myProc({1})");
+db.Execute($"CALL myProc({foo})");
 var products = db.Map($"SELECT * FROM Products", r => new { ... });
 ```
 
