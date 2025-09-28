@@ -26,11 +26,11 @@ At the time of first release of v7, F# and Visual Basic don't implement the stri
 
 </div>
 
-Historically, DbExtensions has extensively used composite formatting as part of main APIs in types like SqlBuilder, SqlSet, and other methods like Database.Execute. v7 finally makes the switch to string interpolation for better performance and code aesthetics. Every method that in v6 accepted a `string` and an `object[]` params array, now accepts a type that implements the string interpolation handler pattern (the type will vary depending on the declaring type and/or specific method). An overload that accepts a `string` is also provided so you are not forced to use an interpolated string if you don't need to. For example, in SqlBuilder:
+Historically, DbExtensions has extensively used composite formatting as part of main APIs in types like SqlBuilder, SqlSet, and other methods like Database.Execute. v7 finally makes the switch to string interpolation for better performance and code aesthetics. Every method that in v6 accepted a string and an object[] params array, now accepts a type that implements the string interpolation handler pattern (the type will vary depending on the declaring type and/or specific method). An overload that accepts a string is also provided so you are not forced to use an interpolated string if you don't need to. For example, in SqlBuilder:
 
-| v6                         | v7
-| -------------------------- | -----------
-| `SELECT(string, object[])` | `SELECT(ref ClauseStringHandler&lt;SELECT> handler)`<br/>`SELECT(string)`
+| v6                       | v7
+| ------------------------ | -----------
+| SELECT(string, object[]) | SELECT(ref ClauseStringHandler&lt;SELECT> handler)<br/>SELECT(string)
 
 Usage example:
 
@@ -59,7 +59,7 @@ One consequence of using the string interpolation handler pattern is that you ca
 query.WHERE("(Foo = {0}" + (someCondition ? " OR Bar = {1})" : ")"), foo, bar);
 ```
 
-Trying to make the above code work in v7 would result in the compiler choosing the string overload of the WHERE method, which leads to SQL injection of `foo` and `bar`.
+Trying to make the above code work in v7 would result in the compiler choosing the string overload of the WHERE method, which leads to SQL injection of *foo* and *bar*.
 
 In v7 you can use the new AppendIf/AppendElseIf/AppendElse methods:
 
@@ -76,7 +76,7 @@ query.WHERE()
    ._If(cat != null, $"CategoryId = {cat.Id}");
 ```
 
-Note the `cat.Id` expression doesn't need to check again if `cat` is not null. The above code would result in a NullReferenceException in v6.
+Note the `cat.Id` expression doesn't need to check again if *cat* is not null. The above code would result in a NullReferenceException in v6.
 
 ### Static Queries
 
@@ -131,15 +131,15 @@ Database
 
 ### Changed parameters order on Map(Type, SqlBuilder)
 
-| v6                            | v7
-| ----------------------------- | -----------
-| `Map(typeof(Product), query)` | `Map(query, typeof(Product))`
+| v6                      | v7
+| ----------------------- | -----------
+| `Map(Type, SqlBuilder)` | `Map(SqlBuilder, Type)`
 
 Having the query as first parameter is more consistent with the rest of the Map overloads.
 
-### Removed TransactionScope support
+### EnsureInTransaction is no longer System.Transactions aware
 
-I personally never used TransactionScope, so I don't even know if the integration worked correctly. Just use EnsureInTransaction() which provides a similar API experience.
+In v6, EnsureInTransaction uses a TransactionScope if Transaction.Current is not null. v7 only deals with ADO.NET transactions. You can override EnsureInTransaction to use TransactionScope if you need to.
 
 SqlSet
 ------
@@ -157,6 +157,6 @@ Now that the params array is not needed the column list can go first as original
 SqlTable
 --------
 
-### Removed hiding Contains() and ContainsKey() from SqlTable and SqlTable&lt;T>
+### Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
 
 These methods remained only for back-compat since they are now inherited from SqlSet and SqlSet&lt;T>.
