@@ -131,9 +131,9 @@ Database
 
 ### Changed parameters order on Map(Type, SqlBuilder)
 
-| v6                      | v7
-| ----------------------- | -----------
-| `Map(Type, SqlBuilder)` | `Map(SqlBuilder, Type)`
+| v6                    | v7
+| --------------------- | -----------
+| Map(Type, SqlBuilder) | Map(SqlBuilder, Type)
 
 Having the query as first parameter is more consistent with the rest of the Map overloads.
 
