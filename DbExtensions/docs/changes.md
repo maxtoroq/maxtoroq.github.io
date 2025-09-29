@@ -2,6 +2,14 @@
 title: Changelog
 ---
 
+## v7.x
+See [Migrating to v7](7/migrating-to-v7.html) for more information about the changes in v7.
+
+### v7.0 (pre-release)
+- String interpolation in all APIs that previously used composite formatting (SqlBuilder, SqlSet and others)
+- Full Async APIs
+- Full null reference type annotations
+
 ## v6.x
 See [Migrating to v6](6/migrating-to-v6.html) for more information about the changes in v6.
 

@@ -129,6 +129,34 @@ Database
 
 ... and the Database constructors that used them. Subclassing Database is the preferred alternative.
 
+### EnsureInTransaction is no longer System.Transactions aware
+
+In v6, EnsureInTransaction uses a TransactionScope if Transaction.Current is not null. v7 only deals with ADO.NET transactions. You can override EnsureInTransaction to use TransactionScope if you need to.
+
+### Using Microsoft.Data.SqlClient invariant name
+
+... and removed deprecated System.Data.SqlClient.
+
+### Using SCOPE_IDENTITY() in LastInsertIdCommand
+
+This change makes the LastInsertId method useless when using SqlClient because of how SqlClient is implemented, SCOPE_IDENTITY() will always return null unless you use it in the same command after the INSERT statement. I decided I prefer to make LastInsertId unusable rather than risking returning the wrong value with @@IDENTITY. When using SqlClient, SqlTable uses the OUTPUT clause when doing inserts.
+
+### Removed SQL Server CE defaults
+
+No need to have default settings for discontinued products. You can always manually configure.
+
+### Removed some CRUD shortcut methods
+
+The following methods have been removed to declutter the API:
+
+| Method removed            | Fix
+| ------------------------- | ---------
+| Contains(object)	        | `db.Table(entity.GetType()).Contains(entity)`
+| ContainsKey&lt;T>(object) | `db.Table<T>().ContainsKey(id)`
+| ContainsKey(Type, object) | `db.Table(typeof(MyEntity)).ContainsKey(id)`
+| Find(Type, object)        | `db.Table(typeof(MyEntity)).Find(id)`
+| RemoveKey(Type, object)   | `db.Table(typeof(MyEntity)).RemoveKey(id)`
+
 ### Changed parameters order on Map(Type, SqlBuilder)
 
 | v6                    | v7
@@ -137,9 +165,12 @@ Database
 
 Having the query as first parameter is more consistent with the rest of the Map overloads.
 
-### EnsureInTransaction is no longer System.Transactions aware
+SqlBuilder
+----------
 
-In v6, EnsureInTransaction uses a TransactionScope if Transaction.Current is not null. v7 only deals with ADO.NET transactions. You can override EnsureInTransaction to use TransactionScope if you need to.
+### Renamed Append(SqlBuilder) to AppendSql
+
+This change is to avoid conflicts with Append(AppendStringHandler) since SqlBuilder is also an interpolated string handler.
 
 SqlSet
 ------
