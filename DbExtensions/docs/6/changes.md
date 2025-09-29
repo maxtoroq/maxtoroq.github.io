@@ -3,7 +3,6 @@ title: Changelog (v6)
 redirect_from: /DbExtensions/docs/changes.html
 ---
 
-## v6.x
 See [Migrating to v6](migrating-to-v6.md) for more information about the changes in v6.
 
 ### v6.4.0
