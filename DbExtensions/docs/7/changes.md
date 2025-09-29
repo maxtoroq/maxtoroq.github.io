@@ -2,7 +2,6 @@
 title: Changelog (v7)
 ---
 
-## v7.x
 See [Migrating to v7](migrating-to-v7.md) for more information about the changes in v7.
 
 ### v7.0 (pre-release)
