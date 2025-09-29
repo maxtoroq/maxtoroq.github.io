@@ -27,14 +27,14 @@ layout: DbExtensions-base
                {% assign path_parts = '' | split: '' %}
                {% assign offset = 3 %}
                {% assign size = url_parts.size %}
-               {% assign end = size | minus: offset %}
-               {% if end > 1 %}
+               {% assign end = size | minus: 2 %}
+               {% assign crumbs = size | minus: offset %}
+               {% if crumbs > 1 %}
             <nav class="breadcrumbs">
                   {% for i in (offset..end) %}
                      {% assign path_parts = path_parts | push: url_parts[i] %}
                <a href="{{ url_parts | slice: 0,offset | concat: path_parts | join: '/' }}/">
-                     {% if i == offset %}docs{% else %}{{ url_parts[i] }}{% endif %}
-               </a>&nbsp; /&nbsp;
+                     {% if i == offset %}docs{% else %}{{ url_parts[i] }}{% endif %}</a>&nbsp; /&nbsp;
                   {% endfor %}
                <span>{{ page.title }}</span>
             </nav>
