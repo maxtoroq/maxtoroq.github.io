@@ -8,8 +8,8 @@ layout: DbExtensions-base
       <div id="version-selector">
          <b>Version </b>
          <select onchange="window.location.href=this.value">
-            <option value="{{ page.base_url }}docs/7/" {% if cp_parts[1] == '7' %}selected{% endif %}>7</option>
-            <option value="{{ page.base_url }}docs/6/" {% if cp_parts[1] == '6' %}selected{% endif %}>6</option>
+            <option value="{{ page.base_url }}docs/7/" {% if cp_parts[2] == '7' %}selected{% endif %}>7</option>
+            <option value="{{ page.base_url }}docs/6/" {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
          </select>
       </div>
       {% if page.toc %}
