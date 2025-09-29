@@ -18,13 +18,3 @@
       url: migrating-to-v7.html
     - title: Changelog
       url: ../changes.html
-- title: Versions
-  toc:
-    - title: v7
-      url: ""
-    - title: v6
-      url: ../6/
-    - title: v5
-      url: https://github.com/maxtoroq/DbExtensions/blob/v5/docs/README.md
-    - title: v4
-      url: https://github.com/maxtoroq/DbExtensions/blob/v4/docs/README.md

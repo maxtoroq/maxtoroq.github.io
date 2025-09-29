@@ -5,6 +5,13 @@ layout: DbExtensions-base
 {% assign api_docs = page.api_docs %}
 <div class="container">
    <nav class="section-toc">
+      <div id="version-selector">
+         <b>Version </b>
+         <select onchange="window.location.href=this.value">
+            <option value="{{ page.base_url }}docs/7/" {% if cp_parts[1] == '7' %}selected{% endif %}>7</option>
+            <option value="{{ page.base_url }}docs/6/" {% if cp_parts[1] == '6' %}selected{% endif %}>6</option>
+         </select>
+      </div>
       {% if page.toc %}
          {% assign toc = site.data[page.toc] %}
          {% if toc %}
