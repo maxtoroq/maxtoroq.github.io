@@ -30,7 +30,7 @@ Historically, DbExtensions has extensively used composite formatting as part of 
 
 | v6                       | v7
 | ------------------------ | -----------
-| SELECT(string, object[]) | SELECT(ref ClauseStringHandler&lt;SELECT> handler)<br/>SELECT(string)
+| SELECT(string, object[]) | SELECT(ref ClauseStringHandler&lt;SELECT>)<br/>SELECT(string)
 
 Usage example:
 
