@@ -5,13 +5,13 @@ layout: DbExtensions-base
 {% assign api_docs = page.api_docs %}
 <div class="container">
    <nav class="section-toc">
-      <div id="version-selector">
+      <form id="version-selector">
          <b>Version </b>
-         <select autocomplete="new-password">
+         <select>
             <option {% if cp_parts[2] == '7' %}selected{% endif %}>7</option>
             <option {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
          </select>
-      </div>
+      </form>
       {% if page.toc %}
          {% assign toc = site.data[page.toc] %}
          {% if toc %}
@@ -82,6 +82,10 @@ layout: DbExtensions-base
                   w.location.href = '{{ page.base_url }}docs/' + this.value;
                }
             });
+
+         w.addEventListener('pageshow', function () {
+            d.querySelector('#version-selector').reset();
+         });
 
       })(window,document);
    </script>
