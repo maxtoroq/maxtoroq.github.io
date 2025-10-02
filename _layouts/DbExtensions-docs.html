@@ -7,7 +7,7 @@ layout: DbExtensions-base
    <nav class="section-toc">
       <div id="version-selector">
          <b>Version </b>
-         <select onchange="a=location.pathname.split('/');if(a.length>3){a[3]=this.value;location.href=a.join('/')}else{location.href='{{ page.base_url }}docs/'}">
+         <select>
             <option {% if cp_parts[2] == '7' %}selected{% endif %}>7</option>
             <option {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
          </select>
@@ -54,7 +54,8 @@ layout: DbExtensions-base
    </main>
    <script src="/js/tree.js"></script>
    <script>
-      (function(d) {
+      (function(w,d) {
+
          var toc = d.querySelector('nav.section-toc ul[role="tree"]');
 
          if (toc) {
@@ -70,7 +71,19 @@ layout: DbExtensions-base
                }
             }
          }
-      })(document);
+
+         d.querySelector('#version-selector select')
+            .addEventListener('change', function () {
+               var a = w.location.pathname.split('/');
+               if (a.length > 3) {
+                  a[3] = this.value;
+                  w.location.href = a.join('/');
+               } else {
+                  w.location.href = '{{ page.base_url }}docs/' + this.value;
+               }
+            });
+
+      })(window,document);
    </script>
    {% if api_docs %}
    <script>
