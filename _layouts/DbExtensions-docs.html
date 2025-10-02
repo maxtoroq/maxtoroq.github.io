@@ -8,8 +8,8 @@ layout: DbExtensions-base
       <div id="version-selector">
          <b>Version </b>
          <select onchange="a=location.pathname.split('/');if(a.length>3){a[3]=this.value;location.href=a.join('/')}else{location.href='{{ page.base_url }}docs/'}">
-            <option>7</option>
-            <option>6</option>
+            <option {% if cp_parts[2] == '7' %}selected{% endif %}>7</option>
+            <option {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
          </select>
       </div>
       {% if page.toc %}
