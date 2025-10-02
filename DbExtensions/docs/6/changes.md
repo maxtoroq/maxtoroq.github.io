@@ -3,7 +3,7 @@ title: Changelog (v6)
 redirect_from: /DbExtensions/docs/changes.html
 ---
 
-See [Migrating to v6](migrating-to-v6.md) for more information about the changes in v6.
+See [Migrating to v6](migrating.md) for more information about the changes in v6.
 
 ### v6.4.0
 - New cached compiled mapping implementation for POCO objects (to use set `Configuration.UseCompiledMapping` to `true`)
