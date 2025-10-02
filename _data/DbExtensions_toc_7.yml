@@ -9,12 +9,9 @@
   url: query-mapping.html
 - title: Annotations
   url: annotations.html
-- title: Reference
-  expanded: true
-  toc:
-    - title: API Reference
-      url: api/DbExtensions/
-    - title: Migrating to v7
-      url: migrating-to-v7.html
-    - title: Changelog
-      url: changes.html
+- title: Migrating to v7
+  url: migrating-to-v7.html
+- title: API Reference
+  url: api/DbExtensions/
+- title: Changelog
+  url: changes.html
