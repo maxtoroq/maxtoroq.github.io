@@ -2,8 +2,6 @@
 title: Changelog (v7)
 ---
 
-See [Migrating to v7](migrating.md) for more information about the changes in v7.
-
 ### v7.0 (pre-release)
 - String interpolation in all APIs that previously used composite formatting (SqlBuilder, SqlSet and others)
 - Full Async APIs
