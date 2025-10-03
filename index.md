@@ -18,9 +18,6 @@ Programming is hard because **we don't have the right tools**. Even new technolo
 {% for post in site.posts | reverse | limit: 4 %}- [{{post.title}}]({{post.url}})
 {% endfor %}- *[more...](/p/archive.html)*
 
-## About
-
-- [Me](/p/about-me.html)
 
 <small>This site is sponsored by <i>Ana Trujillo Emparedados y helados (ANATR)</i></small>
 
