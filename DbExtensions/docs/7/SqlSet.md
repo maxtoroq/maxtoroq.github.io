@@ -429,14 +429,14 @@ Having the power to write your own SQL is great. Not having to write the same si
 
 [1]: api/DbExtensions/SqlSet/README.md
 [2]: api/DbExtensions/Database/From__1.md
-[3]: api/DbExtensions/SqlSet/AsEnumerable.md
-[4]: api/DbExtensions/SqlSet/ToArray.md
-[5]: api/DbExtensions/SqlSet/ToList.md
+[3]: api/DbExtensions/SqlSet_1/AsEnumerable.md
+[4]: api/DbExtensions/SqlSet_1/ToArray.md
+[5]: api/DbExtensions/SqlSet_1/ToList.md
 [6]: SqlBuilder.md
 [7]: api/DbExtensions/SqlSet_1/README.md
 [8]: api/DbExtensions/SqlSet/Cast__1.md
 [9]: https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbdatareader
 [10]: query-mapping.md
-[11]: api/DbExtensions/SqlSet/Include.md
+[11]: api/DbExtensions/SqlSet_1/Include.md
 [12]: api/DbExtensions/Database/Table__1.md
 [13]: annotations.md
