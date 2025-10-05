@@ -1,6 +1,6 @@
 Database.QuoteIdentifier Method
 ===============================
-Given an unquoted identifier in the correct catalog case, returns the correct quoted form of that identifier, including properly escaping any embedded quotes in the identifier.
+Given an unquoted identifier in the correct catalog case, returns the correct quoted form of that identifier.
   
 **Namespace:** [DbExtensions][1]  
 **Assembly:** DbExtensions.dll
@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public virtual string QuoteIdentifier(
-	string unquotedIdentifier
+public string QuoteIdentifier(
+	string identifier
 )
 ```
 
 #### Parameters
 
-##### *unquotedIdentifier*  [String][2]
-The original unquoted identifier.
+##### *identifier*  [String][2]
+The original identifier.
 
 #### Return Value
 [String][2]  
-The quoted version of the identifier. Embedded quotes within the identifier are properly escaped.
+The quoted version of the identifier. If the indentifier is already quoted it's returned unchanged.
 
 See Also
 --------

@@ -1,6 +1,6 @@
-SqlBuilder._If Method
-=====================
-Appends the interpolated string *handler* to the current clause if *condition* is `true`.
+SqlBuilder.AppendIf Method
+==========================
+Appends the interpolated string *handler* if *condition* is `true`.
   
 **Namespace:** [DbExtensions][1]  
 **Assembly:** DbExtensions.dll
@@ -9,19 +9,19 @@ Syntax
 ------
 
 ```csharp
-public SqlBuilder _If(
+public SqlBuilder AppendIf(
 	bool condition,
-	ref ConditionalStringHandler handler
+	ref AppendStringHandler handler
 )
 ```
 
 #### Parameters
 
 ##### *condition*  [Boolean][2]
-`true` to append *handler* to the current clause; otherwise, `false`.
+`true` to append *handler*; otherwise, `false`.
 
-##### *handler*  ConditionalStringHandler
-The interpolated string that represents the body of the current clause.
+##### *handler*  AppendStringHandler
+The interpolated string to append.
 
 #### Return Value
 [SqlBuilder][3]  

@@ -26,8 +26,6 @@
       url: SqlBuilder/
     - title: SqlClause
       url: SqlClause/
-    - title: SqlCommandBuilder<TEntity>
-      url: SqlCommandBuilder_1/
     - title: SqlSet
       url: SqlSet/
     - title: SqlSet<TResult>
