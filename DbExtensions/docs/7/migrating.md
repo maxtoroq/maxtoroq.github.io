@@ -125,25 +125,13 @@ query.ParameterValues.Add(categoryId);
 Database
 --------
 
-### Removed DefaultConnectionString and DefaultProviderInvariantName
-
-... and the Database constructors that used them. Subclassing Database is the preferred alternative.
-
 ### EnsureInTransaction is no longer System.Transactions aware
 
 In v6, EnsureInTransaction uses a TransactionScope if Transaction.Current is not null. v7 only deals with ADO.NET transactions. You can override EnsureInTransaction to use TransactionScope if you need to.
 
-### Using Microsoft.Data.SqlClient invariant name
+### Using `SCOPE_IDENTITY()` in LastInsertIdCommand
 
-... and removed deprecated System.Data.SqlClient.
-
-### Using SCOPE_IDENTITY() in LastInsertIdCommand
-
-This change makes the LastInsertId method useless when using SqlClient because of how SqlClient is implemented, SCOPE_IDENTITY() will always return null unless you use it in the same command after the INSERT statement. I decided I prefer to make LastInsertId unusable rather than risking returning the wrong value with @@IDENTITY. When using SqlClient, SqlTable uses the OUTPUT clause when doing inserts.
-
-### Removed SQL Server CE defaults
-
-No need to have default settings for discontinued products. You can always manually configure.
+This change makes the LastInsertId method useless when using SqlClient because of how SqlClient is implemented, `SCOPE_IDENTITY()` will always return null unless you use it in the same command after the INSERT statement. I decided I prefer to make LastInsertId unusable rather than risking returning the wrong value with `@@IDENTITY`. When using SqlClient, SqlTable uses the OUTPUT clause when doing inserts.
 
 ### Removed some CRUD shortcut methods
 
@@ -157,21 +145,6 @@ The following methods have been removed to declutter the API:
 | Find(Type, object)        | `db.Table(typeof(MyEntity)).Find(id)`
 | RemoveKey(Type, object)   | `db.Table(typeof(MyEntity)).RemoveKey(id)`
 
-### Changed parameters order on Map(Type, SqlBuilder)
-
-| v6                    | v7
-| --------------------- | -----------
-| Map(Type, SqlBuilder) | Map(SqlBuilder, Type)
-
-Having the query as first parameter is more consistent with the rest of the Map overloads.
-
-SqlBuilder
-----------
-
-### Renamed Append(SqlBuilder) to AppendSql
-
-This change is to avoid conflicts with Append(AppendStringHandler) since SqlBuilder is also an interpolated string handler.
-
 SqlSet
 ------
 
@@ -184,10 +157,3 @@ The column list string or interpolated string handler parameter now always goes 
 | `Select(r => r.GetInt32(0), "OrderId")` | `Select("OrderId", r => r.GetInt32(0))`
 
 Now that the params array is not needed the column list can go first as originally intended.
-
-SqlTable
---------
-
-### Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
-
-These methods remained only for back-compat since they are now inherited from SqlSet and SqlSet&lt;T>.

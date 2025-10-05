@@ -3,9 +3,22 @@ title: Changelog (v7)
 ---
 
 ### v7.0 (pre-release)
+- Removed .NET Framework and .NET Standard targets
 - String interpolation in all APIs that previously used composite formatting (SqlBuilder, SqlSet and others)
 - Full Async APIs
 - Full null reference type annotations
+- Depending on System.Data.Common classes instead of System.Data interfaces
+- Removed DefaultConnectionString and DefaultProviderInvariantName
+- EnsureInTransaction is no longer System.Transactions aware
+- Removed some CRUD shortcut methods (Database)
+- Using Microsoft.Data.SqlClient invariant name, and removed deprecated System.Data.SqlClient
+- Using `SCOPE_IDENTITY()` in LastInsertIdCommand (SqlClient)
+- Removed SQL Server CE defaults
+- Changed parameters order on Map(Type, SqlBuilder) to Map(SqlBuilder, Type)
+- Renamed Append(SqlBuilder) to AppendSql
+- Added AppendIf/AppendElseIf/AppendElse methods
+- Changed parameters order on SqlSet.Select overloads
+- Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
 
 
 <script>
