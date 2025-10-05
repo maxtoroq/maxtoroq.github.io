@@ -5,20 +5,29 @@ title: Changelog (v7)
 ### v7.0 (pre-release)
 - Removed .NET Framework and .NET Standard targets
 - String interpolation in all APIs that previously used composite formatting (SqlBuilder, SqlSet and others)
-- Full Async APIs
-- Full null reference type annotations
+- Full Async APIs #51
+- Full null reference type annotations #69
 - Depending on System.Data.Common classes instead of System.Data interfaces
-- Removed DefaultConnectionString and DefaultProviderInvariantName
+- Removed reflection based POCO mapping
+- Removed Database's DefaultConnectionString and DefaultProviderInvariantName
 - EnsureInTransaction is no longer System.Transactions aware
-- Removed some CRUD shortcut methods (Database)
+- EnsureInTransaction is now virtual
+- Fixed #85: Database.Execute might start a transaction but not set it on the command
+- Removed some CRUD shortcut methods from Database
 - Using Microsoft.Data.SqlClient invariant name, and removed deprecated System.Data.SqlClient
 - Using `SCOPE_IDENTITY()` in LastInsertIdCommand (SqlClient)
 - Removed SQL Server CE defaults
-- Changed parameters order on Map(Type, SqlBuilder) to Map(SqlBuilder, Type)
-- Renamed Append(SqlBuilder) to AppendSql
-- Added AppendIf/AppendElseIf/AppendElse methods
+- Changed parameters order on Database.Map(Type, SqlBuilder) to Map(SqlBuilder, Type)
+- Renamed Database.From(SqlBuilder) to FromQuery
+- Stopped escaping suffix on QuoteIdentifier
+- QuoteIdentifier is no longer virtual
+- SqlBuilder is now sealed
+- Renamed SqlBuilder.Append(SqlBuilder) to AppendSql
+- Added AppendIf/AppendElseIf/AppendElse methods to SqlBuilder
 - Changed parameters order on SqlSet.Select overloads
+- Return bool on SqlTable's Remove and RemoveKey
 - Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
+- Removed SqlCommandBuilder&lt;T>
 
 
 <script>
