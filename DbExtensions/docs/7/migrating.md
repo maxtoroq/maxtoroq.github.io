@@ -145,6 +145,41 @@ The following methods have been removed to declutter the API:
 | Find(Type, object)        | `db.Table(typeof(MyEntity)).Find(id)`
 | RemoveKey(Type, object)   | `db.Table(typeof(MyEntity)).RemoveKey(id)`
 
+### Signature changes
+
+The following methods have been renamed, or their parameters' order have changed:
+
+| Original method              | New
+| ---------------------------- | ---------
+| Map(Type, SqlBuilder)        | Map(SqlBuilder, Type)
+| From(SqlBuilder)             | **FromQuery**(SqlBuilder)
+| From(SqlBuilder, Type)       | **FromQuery**(SqlBuilder, Type)
+| From&lt;TResult>(SqlBuilder) | **FromQuery**&lt;TResult>(SqlBuilder)
+| From&lt;TResult>(SqlBuilder, Func&lt;DbDataReader, TResult>) | **FromQuery**&lt;TResult>(SqlBuilder, Func&lt;DbDataReader, TResult>)
+
+SqlBuilder
+----------
+
+### New SqlClause class for CurrentClause and NextClause
+
+The new SqlClause class now encapsulates the clause name and separator, so the properties CurrentSeparator and NextSeparator were removed and can be replaced by `CurrentClause.Separator` and `NextClause.Separator`.
+
+The AppendClause method has also changed to accept either a SqlClause instance or type parameter. There are subclasses of SqlClause available as nested classes for all of the clauses used by SqlBuilder.
+
+| v6                        | v7
+| ------------------------- | ---------
+| `sql.AppendClause("WHERE", " AND ", "foo IS NULL")` | `sql.AppendClause<SqlClause.WHERE>("foo IS NULL")`
+
+The AppendToCurrentClause method was removed and now you have to use `sql.AppendClause<SqlClause.Current>("foo IS NULL")`.
+
+### Signature changes
+
+The following methods have been renamed, or their parameters' order have changed:
+
+| Original method              | New
+| ---------------------------- | ---------
+| Append(SqlBuilder)           | **AppendSql**(SqlBuilder)
+
 SqlSet
 ------
 
