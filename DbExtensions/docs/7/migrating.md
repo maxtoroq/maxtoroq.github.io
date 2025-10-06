@@ -149,7 +149,7 @@ The following methods have been removed to declutter the API:
 
 The following methods have been renamed, or their parameters' order have changed:
 
-| Original method              | New
+| v6                           | v7
 | ---------------------------- | ---------
 | Map(Type, SqlBuilder)        | Map(SqlBuilder, Type)
 | From(SqlBuilder)             | **FromQuery**(SqlBuilder)
@@ -176,7 +176,7 @@ The AppendToCurrentClause method was removed and now you have to use `sql.Append
 
 The following methods have been renamed, or their parameters' order have changed:
 
-| Original method              | New
+| v6                           | v7
 | ---------------------------- | ---------
 | Append(SqlBuilder)           | **AppendSql**(SqlBuilder)
 
