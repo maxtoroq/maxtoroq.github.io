@@ -23,6 +23,7 @@ title: Changelog (v7)
 - QuoteIdentifier is no longer virtual
 - SqlBuilder is now sealed
 - Renamed SqlBuilder.Append(SqlBuilder) to AppendSql
+- Renamed SqlBuilder.Insert(int, string) to InsertText
 - Added AppendIf/AppendElseIf/AppendElse methods to SqlBuilder
 - Changed parameters order on SqlSet.Select overloads
 - Return bool on SqlTable's Remove and RemoveKey

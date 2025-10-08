@@ -26,7 +26,7 @@ At the time of first release of v7, F# and Visual Basic don't implement the stri
 
 </div>
 
-Historically, DbExtensions has extensively used composite formatting as part of main APIs in types like SqlBuilder, SqlSet, and other methods like Database.Execute. v7 finally makes the switch to string interpolation for better performance and code aesthetics. Every method that in v6 accepted a string and an object[] params array, now accepts a type that implements the string interpolation handler pattern (the type will vary depending on the declaring type and/or specific method). An overload that accepts a string is also provided so you are not forced to use an interpolated string if you don't need to. For example, in SqlBuilder:
+Historically, DbExtensions has extensively used composite formatting as part of main APIs in types like SqlBuilder, SqlSet, and other methods like Database.Execute. v7 finally makes the switch to string interpolation for better performance and code aesthetics. Every method that in v6 accepted a string and a params array, now accepts a type that implements the string interpolation handler pattern (the type will vary depending on the declaring type and/or specific method). An overload that accepts a string is also provided so you are not forced to use an interpolated string if you don't need to. For example, in SqlBuilder:
 
 | v6                       | v7
 | ------------------------ | -----------
@@ -166,11 +166,10 @@ The new SqlClause class now encapsulates the clause name and separator, so the p
 
 The AppendClause method has also changed to accept either a SqlClause instance or type parameter. There are subclasses of SqlClause available as nested classes for all of the clauses used by SqlBuilder.
 
-| v6                        | v7
-| ------------------------- | ---------
-| `sql.AppendClause("WHERE", " AND ", "foo IS NULL")` | `sql.AppendClause<SqlClause.WHERE>("foo IS NULL")`
-
-The AppendToCurrentClause method was removed and now you have to use `sql.AppendClause<SqlClause.Current>("foo IS NULL")`.
+| v6                                                  | v7
+| --------------------------------------------------- | ---------
+| `sql.AppendClause("WHERE", " AND ", "foo IS NULL")` | `sql.AppendClause<SqlClause.WHERE>().Append("foo IS NULL")`
+| `sql.AppendToCurrentClause("foo IS NULL")`          | `sql.AppendClause<SqlClause.Current>().Append("foo IS NULL")`
 
 ### Signature changes
 
@@ -179,6 +178,7 @@ The following methods have been renamed, or their parameters' order have changed
 | v6                           | v7
 | ---------------------------- | ---------
 | Append(SqlBuilder)           | **AppendSql**(SqlBuilder)
+| Insert(int, string)          | **InsertText**(int, string)
 
 SqlSet
 ------
