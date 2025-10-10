@@ -241,7 +241,7 @@ SqlSet productNames = products.Select("ProductName");
 
 Complex queries
 ---------------
-SqlSet doesn't support joins or grouping. After all, the goal is not to completely abstract the SQL language, but to provide a simple API for the most common queries. For complex queries use SqlBuilder instead, then you can pass the query to the From method and continue building using SqlSet:
+SqlSet doesn't support joins or grouping. After all, the goal is not to completely abstract the SQL language, but to provide a simple API for the most common queries. For complex queries use SqlBuilder instead, then you can pass the query to the [FromQuery][14] method and continue building using SqlSet:
 
 ```csharp
 public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, int take = 20) {
@@ -253,7 +253,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
       .LEFT_JOIN("Categories c ON p.CategoryID = c.CategoryID");
 
    return this.db
-      .From<Product>(query)
+      .FromQuery<Product>(query)
       .Where($"CategoryID = {categoryId}")
       .OrderBy("ProductID DESC")
       .Skip(skip)
@@ -440,3 +440,4 @@ Having the power to write your own SQL is great. Not having to write the same si
 [11]: api/DbExtensions/SqlSet_1/Include.md
 [12]: api/DbExtensions/Database/Table__1.md
 [13]: annotations.md
+[14]: api/DbExtensions/Database/FromQuery__1.md
