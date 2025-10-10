@@ -54,7 +54,7 @@ var query = SQL
    .SELECT("Name")
    .FROM("Products")
    .WHERE($"Name LIKE {"A%"}")
-   .WHERE($"CategoryID = {2}"); 
+   .WHERE($"CategoryID = {categoryId}");
 
 Console.WriteLine(query);
 ```
@@ -77,7 +77,7 @@ var query = SQL
    ._("Name")
    .FROM("Products")
    .WHERE($"Name LIKE {"A%"}")
-   ._($"CategoryID = {2}");
+   ._($"CategoryID = {categoryId}");
 ```
 
 Dynamic SQL
@@ -192,11 +192,11 @@ Extending an existing query
 If there's a large portion of the query that is static, there's no need to convert everything to method calls, just cast the interpolated string to SqlBuilder, or assign to a SqlBuilder variable or parameter:
 
 ```csharp
-var query = (SqlBuilder)$"""
+var query = ((SqlBuilder)$"""
    SELECT ProductID, ProductName
    FROM Products
-   WHERE CategoryID = {1}
-   """;
+   """)
+   .WHERE($"CategoryID = {categoryId}");
 
 Console.WriteLine(query);
 ```
@@ -208,8 +208,6 @@ SELECT ProductID, ProductName
 FROM Products
 WHERE CategoryID = {0}
 ```
-
-You can continue to build the query using method calls.
 
 Inserts, Updates, Deletes
 -------------------------
@@ -223,11 +221,11 @@ var insert = SQL
 var update = SQL
    .UPDATE("Products")
    .SET($"Discontinued = {true}")
-   .WHERE($"ProductID = {1}");
+   .WHERE($"ProductID = {id}");
 
 var delete = SQL
    .DELETE_FROM("Products")
-   .WHERE($"ProductID = {1}")
+   .WHERE($"ProductID = {id}")
    .LIMIT(1);
 
 Console.WriteLine(insert);
@@ -257,16 +255,33 @@ Extensibility
 To understand how SqlBuilder can be extended let's take a look at how the SELECT clause is implemented:
 
 ```csharp
-public SqlBuilder SELECT([InterpolatedStringHandlerArgument("")] ref ClauseStringHandler<SqlClause.SELECT> handler) {
+public SqlBuilder SELECT([InterpolatedStringHandlerArgument("")] ref SqlBuilder.ClauseStringHandler<SqlClause.SELECT> handler) {
    return this;
 }
 
 public SqlBuilder SELECT(string? text) {
-   return AppendClause<SqlClause.SELECT>().Append(text);
+   return AppendClause<SqlClause.SELECT>()
+      .Append(text);
 }
 ```
 
-As you can see implementing a clause can be as easy as writing one line of code. Alternatively, you can access the underlying [StringBuilder][12] directly to append text, through the [Buffer][13] property.
+The above code can be used as a starting point to create an extension clause. Let's create a FETCH clause for SQL Server:
+
+```csharp
+public static class SqlBuilderExtensions {
+
+   public sealed record class FetchClause() : SqlClause("FETCH", null);
+
+   public static SqlBuilder FETCH(this SqlBuilder sql, [InterpolatedStringHandlerArgument(nameof(sql))] ref SqlBuilder.ClauseStringHandler<FetchClause> handler) {
+      return sql;
+   }
+
+   public static SqlBuilder FETCH(this SqlBuilder sql, string? text) {
+      return sql.AppendClause<FetchClause>()
+         .Append(text);
+   }
+}
+```
 
 Querying with Entity Framework Core
 -----------------------------------
