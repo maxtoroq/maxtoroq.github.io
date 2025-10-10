@@ -263,7 +263,7 @@ WHERE ProductID = {1}
 
 DELETE FROM Products
 WHERE ProductID = {0}
-LIMIT 1
+LIMIT {1}
 ```
 
 You can see here some methods that do not take the format string, like [VALUES][10] and [LIMIT][11]. Since the format of these clauses is well known, all you need to pass in are parameters.

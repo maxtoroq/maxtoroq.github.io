@@ -67,7 +67,7 @@ FROM Products
 WHERE Name LIKE {0} AND CategoryID = {1}
 ```
 
-This is how you can dynamically construct the clause's body. This *separator* feature does not apply for all clauses. For example, calling JOIN two times will append JOIN on both calls. Also notice we used a zero index for both parameter placeholders, but the output shows zero and one indexes. The format string must always use method-call-relative placeholders, SqlBuilder takes care of translating those into instance-relative.
+This is how you can dynamically construct the clause's body. This *separator* feature does not apply for all clauses. For example, calling JOIN two times will append JOIN on both calls.
 
 To keep things DRY you can also use the [_][6] method for clause continuation:
 
@@ -247,7 +247,7 @@ WHERE ProductID = {1}
 
 DELETE FROM Products
 WHERE ProductID = {0}
-LIMIT 1
+LIMIT {1}
 ```
 
 You can see here some methods where we pass parameters directly, like [VALUES][10] and [LIMIT][11]. Since it's very common to use these clauses with parameters only there are special overloads, although you can still use an interpolated string if you need to.
@@ -270,7 +270,7 @@ As you can see implementing a clause can be as easy as writing one line of code.
 
 Querying with Entity Framework Core
 -----------------------------------
-As stated in the design goals, getting and mapping data is beyond the scope of SqlBuilder, so to get data we need a data access component. Entity Framework Core allows you to query using composite format syntax with the [FromSqlRaw][16] and [ExecuteSqlCommand][17] methods:
+As stated in the design goals, getting and mapping data is beyond the scope of SqlBuilder, so to get data we need a data access component. Entity Framework Core allows you to query using composite format syntax with the [FromSqlRaw][16] and [ExecuteSqlRaw][17] methods:
 
 ```csharp
 readonly NorthwindContext context = new NorthwindContext();
@@ -306,7 +306,7 @@ SqlBuilder helps your build dynamic SQL in a database/ORM independent way. A gen
 [8]: api/DbExtensions/SqlBuilder/_If.md
 [10]: api/DbExtensions/SqlBuilder/VALUES_1.md
 [11]: api/DbExtensions/SqlBuilder/LIMIT_2.md
-[12]: http://msdn.microsoft.com/en-us/library/system.text.stringbuilder
+[12]: https://learn.microsoft.com/dotnet/api/system.text.stringbuilder
 [13]: api/DbExtensions/SqlBuilder/Buffer.md
 [16]: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.relationalqueryableextensions.fromsqlraw?view=efcore-9.0
 [17]: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.relationaldatabasefacadeextensions.executesqlraw?view=efcore-9.0
