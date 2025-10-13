@@ -29,8 +29,10 @@ WHERE Name LIKE {0}
 Pretty much the same. The parameter placeholder is still there but now with an index that refers to the location of the parameter in the [ParameterValues][4] collection. To turn this into a command you use the [Database][5] class:
 
 ```csharp
-var db = new Database();
-Console.WriteLine(db.CreateCommand(query).CommandText);
+var db = new Database("<connection string>", "<provider invariant name>");
+var cmd = db.CreateCommand(query);
+
+Console.WriteLine(cmd.CommandText);
 ```
 
 Outputs:
@@ -187,9 +189,32 @@ WHERE CategoryID IN ({0}, {1}, {2})
 
 By using the `list` format string you can expand a collection of values into a list of parameters, instead of being treated as a single parameter.
 
+Injecting non-parameter parts
+-----------------------------
+If you need to dynamically supply a part of the query that is not a parameter, e.g. a column name or a table alias, you can use the `sql` format string:
+
+```csharp
+var tblAlias = "t0";
+
+var query = SQL
+   .SELECT($"{tblAlias:sql}.*")
+   .FROM($"Products {tblAlias:sql}")
+   .WHERE($"{tblAlias:sql}.CategoryID = {categoryId}");
+
+Console.WriteLine(query);
+```
+
+Outputs:
+
+```sql
+SELECT t0.*
+FROM Products t0
+WHERE t0.CategoryID = {0}
+```
+
 Extending an existing query
 ---------------------------
-If there's a large portion of the query that is static, there's no need to convert everything to method calls, just cast the interpolated string to SqlBuilder, or assign to a SqlBuilder variable or parameter:
+If there's a large portion of the query that is static, there's no need to convert everything to method calls, just cast the interpolated string to SqlBuilder, or assign to a SqlBuilder variable:
 
 ```csharp
 var query = ((SqlBuilder)$"""
@@ -208,6 +233,8 @@ SELECT ProductID, ProductName
 FROM Products
 WHERE CategoryID = {0}
 ```
+
+The initial query string must be an interpolated string and can contain parameters.
 
 Inserts, Updates, Deletes
 -------------------------
