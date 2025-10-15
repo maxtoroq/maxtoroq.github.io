@@ -315,8 +315,6 @@ Querying with Entity Framework Core
 As stated in the design goals, getting and mapping data is beyond the scope of SqlBuilder, so to get data we need a data access component. Entity Framework Core allows you to query using composite format syntax with the [FromSqlRaw][16] and [ExecuteSqlRaw][17] methods:
 
 ```csharp
-readonly NorthwindContext context = new NorthwindContext();
-
 public IEnumerable<Product> GetProducts(int? categoryId) {
 
    var query = SQL
@@ -326,7 +324,8 @@ public IEnumerable<Product> GetProducts(int? categoryId) {
       ._If(categoryId.HasValue, $"CategoryID = {categoryId}")
       .ORDER_BY("ProductName");
 
-   return this.context.Products.FromSqlRaw(query.ToString(), query.ParameterValues.ToArray());
+   return _context.Set<Product>()
+      .FromSqlRaw(query.ToString(), query.ParameterValues.ToArray());
 }
 ```
 
