@@ -320,7 +320,7 @@ readonly NorthwindContext context = new NorthwindContext();
 public IEnumerable<Product> GetProducts(int? categoryId) {
 
    var query = SQL
-      .SELECT("ProductID, ProductName, UnitPrice")
+      .SELECT("*")
       .FROM("Products")
       .WHERE()
       ._If(categoryId.HasValue, $"CategoryID = {categoryId}")
