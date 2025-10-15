@@ -166,6 +166,30 @@ ORDER BY t0.TotalProducts DESC
 
 If the sub-query contains any parameter values, these are copied to the outer query. SqlBuilder doesn't keep any reference to sub-queries, all instances are completely independent and composability is achieved by copying state from one instance to the other.
 
+Extending an existing query
+---------------------------
+If there's a large portion of the query that is static, there's no need to convert everything to method calls, just cast the interpolated string to SqlBuilder, or assign to a SqlBuilder variable:
+
+```csharp
+var query = ((SqlBuilder)$"""
+   SELECT ProductID, ProductName
+   FROM Products
+   """)
+   .WHERE($"CategoryID = {categoryId}");
+
+Console.WriteLine(query);
+```
+
+Outputs:
+
+```sql
+SELECT ProductID, ProductName
+FROM Products
+WHERE CategoryID = {0}
+```
+
+The initial query string must be an interpolated string and can contain parameters.
+
 Lists
 -----
 A very common requirement is to use a list of values as the right expression of the `IN` operator:
@@ -211,30 +235,6 @@ SELECT t0.*
 FROM Products t0
 WHERE t0.CategoryID = {0}
 ```
-
-Extending an existing query
----------------------------
-If there's a large portion of the query that is static, there's no need to convert everything to method calls, just cast the interpolated string to SqlBuilder, or assign to a SqlBuilder variable:
-
-```csharp
-var query = ((SqlBuilder)$"""
-   SELECT ProductID, ProductName
-   FROM Products
-   """)
-   .WHERE($"CategoryID = {categoryId}");
-
-Console.WriteLine(query);
-```
-
-Outputs:
-
-```sql
-SELECT ProductID, ProductName
-FROM Products
-WHERE CategoryID = {0}
-```
-
-The initial query string must be an interpolated string and can contain parameters.
 
 Inserts, Updates, Deletes
 -------------------------
