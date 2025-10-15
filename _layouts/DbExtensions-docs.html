@@ -8,8 +8,8 @@ layout: DbExtensions-base
       <form id="version-selector">
          <b>Version </b>
          <select>
-            <option {% if cp_parts[2] == '7' %}selected{% endif %}>7</option>
-            <option {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
+            <option value="7" {% if cp_parts[2] == '7' %}selected{% endif %}>7 (preview)</option>
+            <option value="6" {% if cp_parts[2] != '7' %}selected{% endif %}>6</option>
          </select>
       </form>
       {% if page.toc %}

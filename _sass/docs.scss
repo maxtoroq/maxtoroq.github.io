@@ -47,6 +47,21 @@ main {
    }
 }
 
+#version-selector {
+   margin-bottom: .5rem;
+
+   select {
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, .1);
+      border-radius: .25rem;
+      padding: .25rem .5rem;
+      font-weight: 600;
+      font-family: inherit;
+   }
+}
+
 @media (max-width: 767px) {
    body.docs {
       nav.section-toc {
