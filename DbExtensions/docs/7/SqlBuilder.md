@@ -137,7 +137,7 @@ The [WHERE][7] method that takes no parameters only sets WHERE as the next claus
 
 Sub-queries
 -----------
-Parameter placeholders are always used for command parameters, except when you pass another SqlBuilder instance, in which case the supplied builder's text is injected at the placeholder. This is how SqlBuilder supports sub-queries:
+When you use another SqlBuilder instance in a placeholder the supplied builder's text is injected at the placeholder. This is how SqlBuilder supports sub-queries:
 
 ```csharp
 var query = SQL
