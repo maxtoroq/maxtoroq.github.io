@@ -179,6 +179,15 @@ The following methods have been renamed, or their parameters' order have changed
 | ---------------------------- | ---------
 | Append(SqlBuilder)           | **AppendSql**(SqlBuilder)
 | Insert(int, string)          | **InsertText**(int, string)
+| WITH(SqlBuilder, string)     | WITH(string, SqlBuilder)
+| WITH(SqlSet, string)         | WITH(string, SqlSet)
+
+The following methods on the SQL class have also changed accordingly:
+
+| v6                           | v7
+| ---------------------------- | ---------
+| WITH(SqlBuilder, string)     | WITH(string, SqlBuilder)
+| WITH(SqlSet, string)         | WITH(string, SqlSet)
 
 SqlSet
 ------
