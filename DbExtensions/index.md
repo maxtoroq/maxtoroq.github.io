@@ -7,13 +7,13 @@ DbExtensions is a data-access framework with a strong focus on **query compositi
 
 Querying with SqlSet
 --------------------
-[SqlSet](docs/SqlSet.html) provides a LINQish API for making queries, but using SQL instead of lambda expressions.
+[SqlSet] provides a LINQish API for making queries, but using SQL instead of lambda expressions.
 
 ```csharp
 var db = new Database("<connection string>", "<provider invariant name>");
 
 SqlSet<Product> products = db.From<Product>("Products");
-SqlSet<Product> productsToReorder = products.Where("UnitsInStock < {0}", 10);
+SqlSet<Product> productsToReorder = products.Where($"UnitsInStock < {10}");
 
 if (productsToReorder.Any()) {
 
@@ -78,7 +78,7 @@ OFFSET @p3
 
 Building queries with SqlBuilder
 --------------------------------
-With [SqlBuilder](docs/SqlBuilder.html) you have complete control of the executing SQL.
+With [SqlBuilder] you have complete control of the executing SQL.
 
 ```csharp
 var query = SQL
@@ -87,7 +87,7 @@ var query = SQL
    .FROM("Products p")
    .JOIN("Categories c ON p.CategoryID = c.CategoryID")
    .WHERE()
-   ._If(categoryId.HasValue, "p.CategoryID = {0}", categoryId);
+   ._If(categoryId.HasValue, $"p.CategoryID = {categoryId}");
 
 IEnumerable<Product> products = db.Map<Product>(query);
 ```
@@ -118,6 +118,7 @@ Features
   - Mapping to constructor arguments
 - Attribute mapping for inserts, updates and deletes
 - Generic and non-generic APIs (for when the type of the entity is not known at build time)
+- Async and sync APIs
 - Automatic connection management (no need to explicitly open connection, but you are allowed to)
 - Eager loading
 - Optimistic concurrency (using version column)
@@ -137,3 +138,6 @@ DbExtensions doesn't provide the following functionality:
 <div style="text-align: center">
    <iframe src="/github-btn.html?user={{site.github.owner_name}}&repo=DbExtensions&type=star&size=large" frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
 </div>
+
+[SqlSet]: {{ page.toc_base_url }}SqlSet.html
+[SqlBuilder]: {{ page.toc_base_url }}SqlBuilder.html

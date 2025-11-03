@@ -144,6 +144,7 @@ The following methods have been removed to declutter the API:
 | ContainsKey(Type, object) | `db.Table(typeof(MyEntity)).ContainsKey(id)`
 | Find(Type, object)        | `db.Table(typeof(MyEntity)).Find(id)`
 | RemoveKey(Type, object)   | `db.Table(typeof(MyEntity)).RemoveKey(id)`
+| RemoveKey&lt;T>(object)   | `db.Table<T>().RemoveKey(id)`
 
 ### Signature changes
 

@@ -25,9 +25,12 @@ title: Changelog (v7)
 - Renamed SqlBuilder.Append(SqlBuilder) to AppendSql
 - Renamed SqlBuilder.Insert(int, string) to InsertText
 - Added AppendIf/AppendElseIf/AppendElse methods to SqlBuilder
+- Fixed #87: VALUES clause should use comma as separator
 - Changed parameters order on SqlSet.Select overloads
+- Added SqlSet.Database property
 - Return bool on SqlTable's Remove and RemoveKey
 - Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
+- Fixed #86: duplicate AddDescendants call for one-to-many associations
 - Removed SqlCommandBuilder&lt;T>
 
 
