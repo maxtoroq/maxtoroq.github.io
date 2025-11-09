@@ -3,6 +3,13 @@ title: SqlSet Tutorial
 redirect_from: /DbExtensions/docs/SqlSet.html
 ---
 
+<div class="note" markdown="1">
+
+###### Note
+There's a newer version of this article, see **[Version 7](../7/SqlSet.md)**.
+
+</div>
+
 Overview
 --------
 [SqlSet][1] is a class designed to build and optionally execute SQL queries. It's a LINQ-inspired query API that uses SQL instead of lambda expressions. The main design goals are:

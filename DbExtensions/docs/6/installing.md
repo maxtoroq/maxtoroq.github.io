@@ -3,6 +3,13 @@ title: Installing
 redirect_from: /DbExtensions/docs/installing.html
 ---
 
+<div class="note" markdown="1">
+
+###### Note
+There's a newer version of this article, see **[Version 7](../7/installing.md)**.
+
+</div>
+
 DbExtensions' binaries are hosted on [NuGet.org](https://www.nuget.org/packages/DbExtensions).
 
 ```powershell

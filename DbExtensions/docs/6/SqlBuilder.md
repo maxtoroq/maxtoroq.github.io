@@ -3,6 +3,13 @@ title: SqlBuilder Tutorial
 redirect_from: /DbExtensions/docs/SqlBuilder.html
 ---
 
+<div class="note" markdown="1">
+
+###### Note
+There's a newer version of this article, see **[Version 7](../7/SqlBuilder.md)**.
+
+</div>
+
 Overview
 --------
 [SqlBuilder][1] is a class designed to make dynamic SQL tasks easier. The main design goals are:

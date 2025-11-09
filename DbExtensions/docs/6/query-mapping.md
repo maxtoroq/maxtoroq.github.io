@@ -2,6 +2,14 @@
 title: Query Mapping
 redirect_from: /DbExtensions/docs/query-mapping.html
 ---
+
+<div class="note" markdown="1">
+
+###### Note
+There's a newer version of this article, see **[Version 7](../7/query-mapping.md)**.
+
+</div>
+
 DbExtensions supports a special column alias syntax to match columns to properties and constructor parameters. This syntax is:
 
 - Supported for both <abbr title="Plain Old CLR Object">POCO</abbr> and dynamic objects
