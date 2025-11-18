@@ -252,7 +252,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, 
       .FROM("Products p")
       .LEFT_JOIN("Categories c ON p.CategoryID = c.CategoryID");
 
-   return this.db
+   return _db
       .FromQuery<Product>(query)
       .Where($"CategoryID = {categoryId}")
       .OrderBy("ProductID DESC")
@@ -317,9 +317,9 @@ The previous example used [query mapping][10] syntax to eagerly-load the Categor
 ```csharp
 public IEnumerable<Product> GetProductsByCategory(int categoryId, int skip = 0, int take = 20) {
 
-   return this.db
+   return _db
       .Table<Product>()
-      .Include("Category")
+      .Include(p => p.Category)
       .Where($"CategoryID = {categoryId}")
       .OrderBy("ProductID DESC")
       .Skip(skip)
@@ -380,35 +380,33 @@ FETCH NEXT @p2 ROWS ONLY
 <script>new Tabby('#output4');</script>
 </figure>
 
-
-
 Note that I called the [Database.Table][12] method instead of Database.From. Although using Database.From would also work, with Database.Table you don't need to specify the table name. Both Database.Table and Include only work for [annotated types][13].
 
 Include can be called many times:
 
 ```csharp
-return this.db
+return _db
    .Table<Product>()
-   .Include("Category")
-   .Include("Supplier")
+   .Include(p => p.Category)
+   .Include(p => p.Supplier)
    .AsEnumerable();
 ```
 
 And you can use a deep path:
 
 ```csharp
-return this.db
+return _db
    .Table<EmployeeTerritory>()
-   .Include("Territory.Region")
+   .Include(p => p.Territory.Region)
    .AsEnumerable();
 ```
 
-And load one-to-many associations:
+To load one-to-many associations use [IncludeMany][15]:
 
 ```csharp
-return this.db
+return _db
    .Table<Order>()
-   .Include("OrderDetails.Product")
+   .IncludeMany(p => p.OrderDetails, q => q.Product)
    .AsEnumerable();
 ```
 
@@ -417,9 +415,9 @@ Find
 Find is another method that only works for annotated types. You can use it to get a single result (or null) that matches the given primary key value.
 
 ```csharp
-Order order = db
+Order order = _db
    .Table<Order>()
-   .Include("OrderDetails.Product")
+   .IncludeMany(p => p.OrderDetails, q => q.Product)
    .Find(orderId);
 ```
 
@@ -441,3 +439,4 @@ Having the power to write your own SQL is great. Not having to write the same si
 [12]: api/DbExtensions/Database/Table__1.md
 [13]: annotations.md
 [14]: api/DbExtensions/Database/FromQuery__1.md
+[15]: api/DbExtensions/SqlSet_1/IncludeMany__1.md
