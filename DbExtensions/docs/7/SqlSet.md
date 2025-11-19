@@ -410,6 +410,8 @@ return _db
    .AsEnumerable();
 ```
 
+In the example above the Product property is loaded for each OrderDetail in the collection.
+
 Find
 ----
 Find is another method that only works for annotated types. You can use it to get a single result (or null) that matches the given primary key value.
