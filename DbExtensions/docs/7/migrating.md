@@ -52,7 +52,7 @@ Another format string supported is `list`, use it instead of SQL.List:
 
 ### Conditional Appends
 
-One consequence of using the string interpolation handler pattern is that you cannot conditionally concatenate strings and have those strings handled by the handler. For example:
+One consequence of using the string interpolation handler pattern is that you cannot conditionally concatenate strings and have those strings handled by the handler. For example, in v6:
 
 ```csharp
 // This is a v6 example
@@ -202,3 +202,30 @@ The column list string or interpolated string handler parameter now always goes 
 | `Select(r => r.GetInt32(0), "OrderId")` | `Select("OrderId", r => r.GetInt32(0))`
 
 Now that the params array is not needed the column list can go first as originally intended.
+
+### Include and IncludeMany methods, with typed lambda overloads
+
+The Include method is now used only for `N:1` associations, and IncludeMany was added for `1:N` associations. On SqlSet these methods accept string. On SqlSet&lt;T> there are overloads that accept a lambda expression.
+
+| v6                                | v7
+| --------------------------------- | -----------
+| `Include("OrderDetails.Product")` | `IncludeMany("OrderDetails", "Product")`
+
+The second parameter of IncludeMany is used to specify a path to include from the related type, think of it like calling Include on the related table.
+
+If you are loading a collection in a `N:1` association you have to first call Include to load that association. For example, in v6:
+
+```csharp
+// This is a v6 example
+var set = _db.Table<EmployeeTerritory>()
+   .Include("Employee.Orders");
+```
+
+In v7:
+
+```csharp
+// This is a v7 example
+var set = _db.Table<EmployeeTerritory>()
+   .Include("Employee")
+   .IncludeMany("Employee.Orders");
+```

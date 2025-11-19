@@ -28,10 +28,14 @@ title: Changelog (v7)
 - Fixed #87: VALUES clause should use comma as separator
 - Changed parameters order on SqlSet.Select overloads
 - Added SqlSet.Database property
+- Fixed #88: Include uses wrong key column name when member name differs
+- Include and IncludeMany methods, with typed lambda overloads
+- IncludeMany must be used to load collections
 - Return bool on SqlTable's Remove and RemoveKey
 - Removed hiding Contains and ContainsKey methods from SqlTable and SqlTable&lt;T>
 - Fixed #86: duplicate AddDescendants call for one-to-many associations
 - Removed SqlCommandBuilder&lt;T>
+- New DbExtensions-QE package
 
 
 <script>
