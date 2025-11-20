@@ -206,14 +206,15 @@ code, kbd, pre, samp {
 }
 
 pre {
-   
+   border: .125rem solid #e6e6e6;
+   border-radius: .375rem;
+   padding: .5rem;
+   overflow: auto;
    font-size: 14px;
    line-height: 1.4;
-   padding: 1em;
-   overflow: auto;
-   word-wrap: normal;
    letter-spacing: normal;
-   
+   word-wrap: normal;
+
    &.highlight {
       //background-color: rgba(0, 0, 0, 0.04);
       //background-color: rgba(125, 123, 0, 0.05);
