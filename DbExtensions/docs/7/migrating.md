@@ -205,7 +205,7 @@ Now that the params array is not needed the column list can go first as original
 
 ### Include and IncludeMany methods, with typed lambda overloads
 
-The Include method is now used only for `N:1` associations, and IncludeMany was added for `1:N` associations. On SqlSet these methods accept string. On SqlSet&lt;T> there are overloads that accept a lambda expression.
+The Include method is now used only for `*:1` associations, and IncludeMany was added for `1:N` associations. On SqlSet these methods accept string. On SqlSet&lt;T> there are overloads that accept a lambda expression.
 
 | v6                                | v7
 | --------------------------------- | -----------
@@ -213,7 +213,7 @@ The Include method is now used only for `N:1` associations, and IncludeMany was 
 
 The second parameter of IncludeMany is used to specify a path to include from the related type, think of it like calling Include on the related table.
 
-If you are loading a collection in a `N:1` association you have to first call Include to load that association. For example, in v6:
+If you are loading a collection in a `*:1` association you have to first call Include to load that association. For example, in v6:
 
 ```csharp
 // This is a v6 example
