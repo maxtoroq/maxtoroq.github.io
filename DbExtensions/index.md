@@ -10,7 +10,7 @@ Querying with SqlSet
 [SqlSet] provides a LINQish API for making queries, but using SQL instead of lambda expressions.
 
 ```csharp
-var db = new Database("<connection string>", "<provider invariant name>");
+Database db = new("<connection string>", "<provider invariant name>");
 
 SqlSet<Product> products = db.From<Product>("Products");
 SqlSet<Product> productsToReorder = products.Where($"UnitsInStock < {10}");
@@ -81,7 +81,7 @@ Building queries with SqlBuilder
 With [SqlBuilder] you have complete control of the executing SQL.
 
 ```csharp
-var query = SQL
+SqlBuilder query = SQL
    .SELECT("p.ProductID, p.ProductName, p.UnitPrice, p.CategoryID")
    ._("c.CategoryID AS Category$CategoryID, c.CategoryName AS Category$CategoryName")
    .FROM("Products p")
@@ -101,7 +101,7 @@ public class NorthwindDatabase : Database {
       : base("<connection string>", "<provider invariant name>") { }
 }
 
-var db = new NorthwindDatabase();
+NorthwindDatabase db = new();
 
 Product prod = db.Find<Product>(1);
 prod.UnitPrice = prod.UnitPrice * 1.1;
