@@ -209,9 +209,9 @@ The Include method is now used only for `*:1` associations, and IncludeMany was 
 
 | v6                                | v7
 | --------------------------------- | -----------
-| `Include("OrderDetails.Product")` | `IncludeMany("OrderDetails", "Product")`
+| `Include("OrderDetails.Product")` | `IncludeMany("OrderDetails", set => set.Include("Product"))`
 
-The second parameter of IncludeMany is used to specify a path to include from the related type, think of it like calling Include on the related table.
+The second parameter of IncludeMany can be used to customize how the collection is loaded, like including related objects, sorting, limiting the number of objects to load, etc.
 
 If you are loading a collection in a `*:1` association you have to first call Include to load that association. For example, in v6:
 

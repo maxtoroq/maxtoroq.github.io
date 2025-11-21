@@ -406,7 +406,8 @@ To load one-to-many associations use [IncludeMany][15]:
 ```csharp
 return _db
    .Table<Order>()
-   .IncludeMany(p => p.OrderDetails, q => q.Product)
+   .IncludeMany(p => p.OrderDetails, set => set
+      .Include(p => p.Product))
    .AsEnumerable();
 ```
 
@@ -419,7 +420,8 @@ Find is another method that only works for annotated types. You can use it to ge
 ```csharp
 Order order = _db
    .Table<Order>()
-   .IncludeMany(p => p.OrderDetails, q => q.Product)
+   .IncludeMany(p => p.OrderDetails, set => set
+      .Include(p => p.Product))
    .Find(orderId);
 ```
 
