@@ -422,7 +422,7 @@ Order order = _db
    .Table<Order>()
    .IncludeMany(p => p.OrderDetails, set => set
       .Include(p => p.Product))
-   .Find(orderId);
+   .Find(orderId) ?? throw new ArgumentException($"Order #{orderId} not found.", nameof(orderId));
 ```
 
 Conclusions

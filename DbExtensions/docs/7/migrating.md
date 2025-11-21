@@ -226,6 +226,6 @@ In v7:
 ```csharp
 // This is a v7 example
 var set = _db.Table<EmployeeTerritory>()
-   .Include("Employee")
-   .IncludeMany("Employee.Orders");
+   .Include(p => p.Employee)
+   .IncludeMany(p => p.Employee.Orders);
 ```
