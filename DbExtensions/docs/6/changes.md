@@ -3,6 +3,11 @@ title: Changelog (v6)
 redirect_from: /DbExtensions/docs/changes.html
 ---
 
+### v6.4.1
+- Fixed #85: Database.Execute() might start a transaction but not set it on the command
+- Fixed #86: duplicate AddDescendants call for one-to-many associations
+- Fixed #88: Include() uses wrong key column name when member name differs
+
 ### v6.4.0
 - New cached compiled mapping implementation for POCO objects (to use set `Configuration.UseCompiledMapping` to `true`)
 - Improved POCO mapping efficiency on property read/write/add and object instantiation
