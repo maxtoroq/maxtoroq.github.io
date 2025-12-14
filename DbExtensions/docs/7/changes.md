@@ -2,7 +2,7 @@
 title: Changelog (v7)
 ---
 
-### v7.0 (pre-release)
+### v7.0.0
 - Removed .NET Framework and .NET Standard targets
 - String interpolation in all APIs that previously used composite formatting (SqlBuilder, SqlSet and others)
 - Full Async APIs #51
