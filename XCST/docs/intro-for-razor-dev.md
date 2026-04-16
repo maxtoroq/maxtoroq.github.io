@@ -547,12 +547,13 @@ In a Razor view you use the `@model` directive to specify the type of the `Model
 @model System.DateTime
 ```
 
-In XCST you use the `model` processing instruction.
+In XCST you use the `a:model-type` attribute:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<?model System.DateTime ?>
-<c:module version='1.0' language='C#' xmlns:c='http://maxtoroq.github.io/XCST'>
+<c:module version='1.0' language='C#' a:model-type='System.DateTime'
+   xmlns:c='http://maxtoroq.github.io/XCST'
+   xmlns:a='http://maxtoroq.github.io/XCST/application'>
    ...
 </c:module>
 ```
