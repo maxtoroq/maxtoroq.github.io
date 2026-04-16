@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:form</span>
   <b>method</b> = <span><span class="s">"post"</span> | <span class="s">"get"</span></span>
   <span>model-value</span>? = <i title="Expression.">expression</i>
-  <span>model-type</span>? = <i>type_name</i>
+  <span>model-type</span>? = <i title="Type name.">type_name</i>
   <span>action</span>? = { <i>string</i> }
   <span>autocomplete</span>? = { <i>string</i> }
   <span>enctype</span>? = { <i>string</i> }
@@ -20,7 +20,7 @@ regenerated.
   <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
   <span>field-prefix</span>? = { <i>string</i> }
-  <span>helper-name</span>? = <i>identifier</i> &gt;
+  <span>helper-name</span>? = <i title="Identifier.">identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:form&gt;</span></code></pre></div>
 <p>Creates a &lt;form&gt; element and defines a model for descendant instructions.</p>

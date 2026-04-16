@@ -12,7 +12,10 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:module</span>
   <b>version</b> = <i>decimal</i>
   <b>language</b> = <i>language</i>
-  <span>default-mode</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> &gt;
+  <span>default-mode</span>? = <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>
+  <span>inherits</span>? = <i title="Type name.">type_name</i>
+  <span>a:model-type</span>? = <i title="Type name.">type_name</i>
+  <span>a:slug</span>? = <i>slug</i> &gt;
   &lt;!-- Content: (<span><a href="import-namespace.html">c:import-namespace</a>*</span>, <span><span><i>declaration</i></span>*</span>) --&gt;
 <span class="nt">&lt;/c:module&gt;</span></code></pre></div>
 <p>Represents an XCST module.</p>
@@ -28,12 +31,24 @@ regenerated.
          <td>The default mode of template rules for the current module.</td>
       </tr>
       <tr>
+         <td><code>inherits</code></td>
+         <td>A base type for the current package.</td>
+      </tr>
+      <tr>
          <td><code>language</code></td>
          <td>The expression language for this module (usually "C#" or "VisualBasic").</td>
       </tr>
       <tr>
          <td><code>version</code></td>
          <td>The XCST version for the current and descendant elements (usually "1.0").</td>
+      </tr>
+      <tr>
+         <td><code>a:model-type</code></td>
+         <td>A type that represents the model for the current page.</td>
+      </tr>
+      <tr>
+         <td><code>a:slug</code></td>
+         <td>A string to be used in the URL for the current page, instead of the file name.</td>
       </tr>
    </table>
 </div>

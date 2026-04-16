@@ -11,9 +11,9 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:model</span>
   <span>value</span>? = <i title="Expression.">expression</i>
-  <span>type</span>? = <i>type_name</i>
+  <span>type</span>? = <i title="Type name.">type_name</i>
   <span>field-prefix</span>? = { <i>string</i> }
-  <span>helper-name</span>? = <i>identifier</i> &gt;
+  <span>helper-name</span>? = <i title="Identifier.">identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:model&gt;</span></code></pre></div>
 <p>Defines a model for descendant instructions.</p>

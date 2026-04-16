@@ -12,8 +12,8 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:editor</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
-  <span>members</span>? = <span><i>identifier</i>*</span>
-  <span>members-names</span>? = { <span><i>identifier</i>*</span> }
+  <span>members</span>? = <span><i title="Identifier.">identifier</i>*</span>
+  <span>members-names</span>? = { <span><i title="Identifier.">identifier</i>*</span> }
   <span>template</span>? = { <i>string</i> }
   <span>field-name</span>? = { <i>string</i> }
   <span>attributes</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
