@@ -11,7 +11,7 @@ regenerated.
 
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:use-package</span>
   <b>name</b> = <i title="Type name.">type_name</i> &gt;
-  &lt;!-- Content: <span><span>(<a href="accept.html">c:accept</a> | <a href="override.html">c:override</a>)</span>*</span> --&gt;
+  &lt;!-- Content: <span><span>(<a href="accept.html">c:accept</a> | <a href="override.html">c:override</a> | <a href="with-param.html">c:with-param</a>)</span>*</span> --&gt;
 <span class="nt">&lt;/c:use-package&gt;</span></code></pre></div>
 <p>Specifies a package dependency.</p>
 <dl>

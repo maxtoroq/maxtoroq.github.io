@@ -24,6 +24,7 @@ regenerated.
    <dd><a href="invoke-delegate.html"><code>c:invoke-delegate</code></a></dd>
    <dd><a href="next-match.html"><code>c:next-match</code></a></dd>
    <dd><a href="next-template.html"><code>c:next-template</code></a></dd>
+   <dd><a href="use-package.html"><code>c:use-package</code></a></dd>
 </dl>
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
