@@ -12,7 +12,7 @@ regenerated.
 <div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;c:result-document</span>
   <span>href</span>? = { <i>uri</i> }
   <span>output</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.io.stream" title="System.IO.Stream">Stream</a> | <a href="{{ page.bcl_url }}system.io.textwriter" title="System.IO.TextWriter">TextWriter</a> | <a href="{{ page.bcl_url }}system.xml.xmlwriter" title="System.Xml.XmlWriter">XmlWriter</a> | <span title="Xcst.XcstWriter">XcstWriter</span>)
-  <span>format</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
+  <span>use-format</span>? = { <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i> }
   <span>method</span>? = { <span><span class="s">"xml"</span> | <span class="s">"html"</span> | <span class="s">"text"</span> | <i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i></span> }
   <span>byte-order-mark</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>cdata-section-elements</span>? = { <span><i title="An expanded qualified name. Unprefixed qualified names are in the null namespace.">eqname</i>*</span> }
@@ -66,10 +66,6 @@ regenerated.
          <td>Specifies whether to escape URI attributes in HTML documents.</td>
       </tr>
       <tr>
-         <td><code>format</code></td>
-         <td>The name of the output definition to get serialization parameters from.</td>
-      </tr>
-      <tr>
          <td><code>href</code></td>
          <td>The relative or absolute URI to send the result to.</td>
       </tr>
@@ -116,6 +112,10 @@ regenerated.
       <tr>
          <td><code>standalone</code></td>
          <td>Specifies whether to include the standalone document declaration.</td>
+      </tr>
+      <tr>
+         <td><code>use-format</code></td>
+         <td>The name of the output definition to get serialization parameters from.</td>
       </tr>
    </table>
 </div>
