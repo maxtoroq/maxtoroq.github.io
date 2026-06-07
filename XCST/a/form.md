@@ -19,6 +19,7 @@ regenerated.
   <span>antiforgery</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
+  <span>hidden</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
   <span>field-prefix</span>? = { <i>string</i> }
   <span>helper-name</span>? = <i title="Identifier.">identifier</i> &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
@@ -60,6 +61,10 @@ regenerated.
       </tr>
       <tr>
          <td><code>helper-name</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>hidden</code></td>
          <td></td>
       </tr>
       <tr>

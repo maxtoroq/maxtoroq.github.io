@@ -1,5 +1,5 @@
 ---
-title: "a:label"
+title: "a:fieldset"
 ---
 
 {% comment %}  
@@ -9,15 +9,17 @@ Changes to this file may cause incorrect behavior and will be lost if the page i
 regenerated.  
 {% endcomment %}
 
-<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:label</span>
+<div class="ref-element-syntax language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;a:fieldset</span>
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
+  <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
+  <span>helper-name</span>? = <i title="Identifier.">identifier</i>
   <span>id</span>? = { <i>string</i> }
   <span>class</span>? = { <i>string</i> }
   <span>hidden</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
-<span class="nt">&lt;/a:label&gt;</span></code></pre></div>
-<p>Creates a &lt;label&gt; element.</p>
+<span class="nt">&lt;/a:fieldset&gt;</span></code></pre></div>
+<p>Creates a &lt;fieldset&gt; element and defines a model for descendant instructions.</p>
 <dl>
    <dt><b>Category</b></dt>
    <dd><i>extension-instruction</i></dd>
@@ -33,7 +35,15 @@ regenerated.
          <td></td>
       </tr>
       <tr>
+         <td><code>disabled</code></td>
+         <td></td>
+      </tr>
+      <tr>
          <td><code>for</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>helper-name</code></td>
          <td></td>
       </tr>
       <tr>
@@ -51,4 +61,4 @@ regenerated.
    </table>
 </div>
 
-{% include_relative _label.md %}
+{% include_relative _fieldset.md %}

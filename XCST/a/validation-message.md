@@ -13,7 +13,8 @@ regenerated.
   <span>for</span>? = <i title="Expression.">expression</i>
   <span>name</span>? = { <i>string</i> }
   <span>id</span>? = { <i>string</i> }
-  <span>class</span>? = { <i>string</i> } &gt;
+  <span>class</span>? = { <i>string</i> }
+  <span>hidden</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
   &lt;!-- Content: <i>sequence-constructor</i> --&gt;
 <span class="nt">&lt;/a:validation-message&gt;</span></code></pre></div>
 <p>Creates a &lt;span&gt; element with a validation message if it exists.</p>
@@ -33,6 +34,10 @@ regenerated.
       </tr>
       <tr>
          <td><code>for</code></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><code>hidden</code></td>
          <td></td>
       </tr>
       <tr>

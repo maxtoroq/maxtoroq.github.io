@@ -143,6 +143,8 @@
       url: display-text.html
     - title: a:editor
       url: editor.html
+    - title: a:fieldset
+      url: fieldset.html
     - title: a:form
       url: form.html
     - title: a:hidden

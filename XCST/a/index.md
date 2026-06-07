@@ -19,7 +19,7 @@ regenerated.
       <li><a href="checkbox.html"><code>a:checkbox</code></a></li>
       <li><a href="display.html"><code>a:display</code></a> &nbsp;<a href="display-name.html"><code>a:display-name</code></a> &nbsp;<a href="display-text.html"><code>a:display-text</code></a></li>
       <li><a href="editor.html"><code>a:editor</code></a></li>
-      <li><a href="form.html"><code>a:form</code></a></li>
+      <li><a href="fieldset.html"><code>a:fieldset</code></a> &nbsp;<a href="form.html"><code>a:form</code></a></li>
       <li><a href="hidden.html"><code>a:hidden</code></a></li>
       <li><a href="input.html"><code>a:input</code></a></li>
       <li><a href="label.html"><code>a:label</code></a></li>
