@@ -16,12 +16,8 @@ regenerated.
   <span>members-names</span>? = { <span><i title="Identifier.">identifier</i>*</span> }
   <span>template</span>? = { <i>string</i> }
   <span>field-name</span>? = { <i>string</i> }
-  <span>attributes</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
   <span>with-params</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a> | <a href="{{ page.bcl_url }}s4ys34ea" title="System.Collections.Generic.IDictionary">IDictionary</a>&lt;<a href="{{ page.bcl_url }}system.string" title="System.String">String</a>, <a href="{{ page.bcl_url }}system.object" title="System.Object">Object</a>&gt;)
-  <span>options</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<span title="System.Web.Mvc.SelectListItem">SelectListItem</span>&gt;)
-  <span>autofocus</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>disabled</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> }
-  <span>readonly</span>? = { <i title="One of the values &#34;yes&#34;, &#34;no&#34;, &#34;true&#34;, &#34;false&#34;, &#34;1&#34; or &#34;0&#34;.">boolean</i> } &gt;
+  <span>options</span>? = <i title="Expression.">expression</i>(<a href="{{ page.bcl_url }}9eekhta0" title="System.Collections.Generic.IEnumerable">IEnumerable</a>&lt;<span title="System.Web.Mvc.SelectListItem">SelectListItem</span>&gt;) &gt;
   &lt;!-- Content: (<span><a href="with-options.html">a:with-options</a>*</span>, <span><a href="member-template.html">a:member-template</a>?</span>) --&gt;
 <span class="nt">&lt;/a:editor&gt;</span></code></pre></div>
 <p>Creates a form control for a model's member, or an "edit view" for a whole model.</p>
@@ -35,18 +31,6 @@ regenerated.
 <h2 id="attributes">Attributes</h2>
 <div class="table-responsive">
    <table class="ref-attribs">
-      <tr>
-         <td><code>attributes</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>autofocus</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>disabled</code></td>
-         <td></td>
-      </tr>
       <tr>
          <td><code>field-name</code></td>
          <td></td>
@@ -69,10 +53,6 @@ regenerated.
       </tr>
       <tr>
          <td><code>options</code></td>
-         <td></td>
-      </tr>
-      <tr>
-         <td><code>readonly</code></td>
          <td></td>
       </tr>
       <tr>
